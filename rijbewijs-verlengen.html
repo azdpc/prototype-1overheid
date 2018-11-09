@@ -1,0 +1,1408 @@
+<!DOCTYPE html>
+<html lang="nl-NL"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Rijbewijs verlengen | 1overheid</title>
+  <meta name="description" content="Prototype voor 1overheid: informatie, diensten, beleid en bestuur">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/additional.css">
+
+</head>
+
+<body cz-shortcut-listen="true">
+<header>
+    <div class="container-fluid">
+        <div class="notVisibleInFrame">
+            <nav class="navbar navbar-light">
+                <a href="home.html" class="navbar-brand">
+                    <img src="img/een-overheid.svg" alt="1overheid">
+                    <em class="payoff">alles regelen op 1 plek</em>
+                </a>
+                
+                <div class="navbar-options">
+                    <div class="search-wrapper">
+                        <button class="dropdown-toggle" type="button" id="dropdownSearchButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span>zoeken</span>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownSearchButton">
+                            <div class="container-fluid">
+
+<div class="row">
+    <div class="col-lg-10 offset-lg-1 col-md-12">
+        <div class="container-fluid">
+            <form action="#">
+                <fieldset>
+                    <input type="search" />
+                    <input class="btn btn-primary btn-lg" type="submit" value="zoeken" />
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</div>
+
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="account-wrapper">
+                        <div class="loggedInElm">
+                            <a class="button" href="mijn-overheid.html">
+                                <span>mijn overheid</span>
+                                <strong class="notification">3 <span class="visually-hidden">nieuwe berichten</span></strong>
+                            </a>
+                        </div>
+                        <div class="loggedOutElm">
+                            <button type="button" id="loginAccountButton" data-toggle="modal" data-target="#loginForm">
+                                <span>inloggen</span>
+                            </button>
+
+<!--
+                            <button class="dropdown-toggle" type="button" id="dropdownAccountButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span>inloggen</span>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownAccountButton">
+                                <div class="container-fluid">
+
+<div class="row">
+    <div class="col-lg-10 offset-lg-1 col-md-12">
+                                    <p>
+                                        Lorem ipsum account.
+                                    </p>
+    </div>
+</div>
+
+
+                                </div>
+                            </div>
+-->
+                        </div>
+                    </div>
+                    
+                    <div class="contact-wrapper">
+                        <button class="dropdown-toggle" type="button" id="dropdownContactButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span>contact</span>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownContactButton">
+                            <div class="container-fluid">
+
+<div class="row">
+    <div class="col-lg-10 offset-lg-1 col-md-12">
+                                    <p>Contactinformatie</p>
+    </div>
+</div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-wrapper">
+                        <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span>menu</span>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <div class="container-fluid">
+
+
+<div class="row">
+    <div class="col-lg-10 offset-lg-1 col-md-12">
+
+                    <div class="row themes-list">
+                        
+                        <!-- START thema geld -->
+                        <div class="col-sm-4">
+
+<a href="#thema-geld">
+    <h3>
+        <div class="icon">
+            <img src="content/icons/9000-budget.svg" />
+        </div>
+        Geld
+    </h3>
+    <p>Bijstand aanvragen, Voorwaarden WW bekijken, Aangifte doen, ...</p>
+</a>
+
+                        </div>
+                        <!-- EINDE thema geld -->
+
+                        <!-- START thema wonen -->
+                        <div class="col-sm-4">
+<a href="#thema-wonen">
+    <h3>
+        <div class="icon">
+            <img src="content/icons/5202-laag-huis.svg" />
+        </div>
+        Wonen
+    </h3>
+    <p>Woning huren, Woning kopen, Energielabel aanvragen, ...</p>
+</a>
+
+                        </div>
+                        <!-- EINDE thema wonen -->
+
+                        <!-- START thema -->
+                        <div class="col-sm-4">
+
+<a href="#thema-familie">
+    <h3>
+        <div class="icon">
+            <img src="content/icons/4029-familie.svg" />
+        </div>
+        Familie
+    </h3>
+    <p>Geboorte aangeven, Kind erkennen, Jeugdhulp aanvragen, ...</p>
+</a>
+
+                        </div>
+                        <!-- EINDE thema -->
+
+                        <!-- START thema -->
+                        <div class="col-sm-4">
+
+<a href="#thema-reizen">
+    <h3>
+        <div class="icon">
+            <img src="content/icons/8012-reisbagage.svg" />
+        </div>
+        Reizen
+    </h3>
+    <p>Paspoort of ID-kaart aanvragen, Nederlandse nationaliteit verkrijgen, ...</p>
+</a>
+
+                        </div>
+                        <!-- EINDE thema -->
+
+                        <!-- START thema -->
+                        <div class="col-sm-4">
+
+<a href="#thema-onderwijs">
+    <h3>
+        <div class="icon">
+            <img src="content/icons/4082-onderwijs.svg" />
+        </div>        
+        Onderwijs
+    </h3>
+    <p>Overzicht schoolvakanties, Studiefinanciering aanvragen, Inschrijven voor studie, ...</p>
+</a>
+
+                        </div>
+                        <!-- EINDE thema -->
+
+                        <!-- START thema -->
+                        <div class="col-sm-4">
+
+<a href="#thema-recht">
+    <h3>
+        <div class="icon">
+            <img src="content/icons/7001-recht-aka-veiligheid-en-justitie.svg" />
+        </div>
+        Recht
+    </h3>
+    <p>Identiteitsfraude melden, Geluidsoverlast doorgeven, ...</p>
+</a>
+
+                        </div>
+                        <!-- EINDE thema -->
+
+                        <!-- START thema -->
+                        <div class="col-sm-4">
+
+<a href="verkeer.html">
+    <h3>
+        <div class="icon">
+            <img src="content/icons/5003-auto.svg" />
+        </div>
+        Verkeer
+    </h3>
+    <p>Rijbewijs verlengen, Verkeersregels checken,OV-chipkaart aanvragen ...</p>
+</a>
+
+                        </div>
+                        <!-- EINDE thema -->
+
+                        <!-- START thema -->
+                        <div class="col-sm-4">
+
+<a href="#thema-gezondheid">
+    <h3>
+        <div class="icon">
+            <img src="content/icons/4028-zorg.svg" />
+        </div>
+        Gezondheid
+    </h3>
+    <p>WMO-aanvragen, Aangifte doen van overlijden, Vergoedingen basisverzekering bekijken ...</p>
+</a>
+
+                        </div>
+                        <!-- EINDE thema -->
+
+
+                    </div>
+
+
+
+    </div>
+</div>
+
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                
+
+<!--
+<div id="" class="navBtns collapse">
+    <div>
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Vul hier uw zoekterm in" aria-label="zoekterm">
+            <div class="input-group-append">
+                <button class="btn-outline-secondary search-btn" type="submit">&nbsp;</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="loggedInElm">
+        <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span>U bent ingelogd als</span>
+            <span class="defaultName">
+              Tobias <span id="radioValue">het Voorbeeld</span>
+            </span>
+        </button>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="aanvragen.html">Mijn aanvragen</a>
+              <button class="dropdown-item logoutBtn">Uitloggen</button>
+        </div>
+    </div>
+
+    <div class="loggedOutElm">
+        <button type="button" class="btn btn-light loginBtn" data-toggle="modal" data-target="#loginForm">Inloggen
+            <img src="img/digid-logo.svg" alt="digid">
+        </button>
+    </div>
+    <div>
+        <a class="btn btn-light" data-toggle="modal" data-target="#contactModal" href="#">Contact</a>
+    </div>
+</div>
+-->
+            </nav>
+        </div>
+
+        <div class="visibleInFrame">
+            <nav class="navbar navbar-light">
+        <a href="index.html" class="navbar-brand">
+          <img src="img/een-overheid.svg" alt="1overheid">
+                </a>
+                <div class="justify-content-end">
+                    <div class="dropdown loggedInElm">
+                        <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Maarten
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton1">
+                            <a class="dropdown-item" href="aanvragen.html">Mijn aanvragen</a>
+                            <a class="dropdown-item logoutBtn" href="l#">Uitloggen</a>
+                        </div>
+                    </div>
+                    <div class="loggedOutElm">
+                        <button type="button" class="btn btn-light loginBtn" data-toggle="modal" data-target="#loginForm">Inloggen
+              <img src="img/digid-logo.svg" alt="digid">
+                        </button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>    
+</header>
+
+<banner>
+    <div class="loggedInElm">
+        <div id="login-foldout" class="navbar-pinned expanded">
+            <div class="container-fluid">
+
+                <div class="navbar-pinned-content">
+                    <div class="row align-items-center">
+                        <div class="col-8">
+                                Ingelogd als Asha Martinez
+                        </div>
+                        <div class="col-4">
+                            <div class="button-wrapper float-right">
+                                <button class="btn btn-sm btn-success logoutBtn">Uitloggen</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</banner>
+
+<div class="modal fade loginmodal" id="loginForm" tabindex="-1" role="dialog" aria-labelledby="modal-header" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="modal-header">
+          <img src="img/digid-logo.svg" alt="digid">Login met DigiD
+                    </h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <form>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="gebruikersnaam">DigiD gebruikersnaam</label>
+            <input type="text" class="form-control" id="gebruikersnaam" placeholder="DigiD gebruikersnaam" value="asha_madhavan">
+                        </div>
+                        <div class="form-group">
+                            <label for="wachtwoord">Wachtwoord</label>
+                            <input type="password" class="form-control" id="wachtwoord" placeholder="Wachtwoord" value="********">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" id="loginBtn">Inloggen</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+<div class="modal fade contactModal" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contact-modal-header" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="contact-modal-header">Heeft u een vraag of hulp nodig?</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <form>
+                <div class="modal-body">
+                    <p>U kunt op contact met ons opnemen via:</p>
+                    <ul>
+                        <li class="phone">
+                            <a href="tel:1400">Bel naar 1400</a>
+                        </li>
+                        <li class="app">
+                            <a href="#">App uw vraag naar 1400</a>
+                        </li>
+                        <li class="chat">
+                            <a class="openChat" data-toggle="modal" data-target="#chatModal" href="#">Direct chatten</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade chatModal" id="chatModal" tabindex="-1" role="dialog" aria-labelledby="chat-modal-header" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="chat-modal-header">Direct chatten</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <form>
+                    <div class="modal-body">
+                        
+                            <div class="messages">
+                                <div class="message">
+                                    <div class="avatar">
+                <img class="img-fluid" src="img/avatar.svg">
+                                    </div>
+                                    <div class="content">
+                                        <span class="name">Medewerker:</span>
+                                        <p>Goedemiddag, waarmee kan ik u helpen?</p>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            
+                            <div class="messageForm">
+                                <div class="inputField">
+                                    <input class="form-control form-control-lg" type="text" placeholder="Typ hier uw vraag">
+                                </div>
+                                <div class="submitBtn">
+                                    <button type="button" class="btn btn-primary btn-lg">Verstuur</button>
+                                </div>
+                            </div>
+                            
+                        
+                    </div>
+                    <div class="modal-footer">
+                        
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    
+  
+  <main role="main" class="actionable">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <ul class="breadcrumb">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="verkeer.html">Verkeer</a></li>
+                    <li><a href="rijbewijs.html">Rijbewijs</a></li>
+                </ul>                
+            </div>
+        </div>
+
+      <div class="row">
+    <div class="col-lg-10 offset-lg-1 col-md-12">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 notVisibleInFrame">
+                    <h1>Rijbewijs verlengen</h1>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid checkContainer">
+    <div class="row">
+        <div class="col-md-8"> <!-- Use 8 of 12 columns from medium screens onward, to keep form focussed -->
+
+            <form class="questions" action="#">
+                <div class="start active">
+                    <div class="questionWrapper">
+                          <div class="questionHeader">
+                                <div class="row">
+                                
+                                <div class="col-sm-6">
+                                    <h3 class="vireo-light">
+                                        U heeft nodig
+                                    </h3>
+                                                                <ul class="vireo-list">
+                                                                    <li>
+                                                                        Een (digitale) pasfoto
+                                                                    </li>
+                                                                    <li>
+                                                                        Uw huidige rijbewijs
+                                                                    </li>
+                                                                    <li>
+                                                                        In sommige gevallen: een nieuwe gezondheidsverklaring
+                                                                    </li>
+                                                                </ul>
+                                </div>
+
+                                <div class="col-sm-4 separator">
+                                    <h3 class="vireo-light">
+                                        Kosten
+                                    </h3>
+
+                                 <p>
+                                     <strong class="vireo-cost vireo-cost-xl">&euro;&thinsp;45,00</strong>
+                                 </p>
+                               </div>
+                                
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="notPreFilledElm">
+                                <div class="col-md-12 loggedInElm">
+                                            <div class="form-control">
+                                        <div class="button-wrapper">
+                                                <button type="button" class="btn btn-primary btn-lg" id="startFlowBtn">Nu verlengen</button>
+                                                </div>
+                                            </div>
+                                </div>
+                                        <div class="col-md-12 loggedOutElm">
+                                            <div class="form-control">
+                                        <div class="button-wrapper digid">
+                                                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#loginToStartForm">Inloggen en verlengen
+                                                                <img src="img/digid-logo.svg" alt="digid" />
+                                                </button>
+                                                </div>
+                                            </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="questionHelp">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="grouped">
+                                                                    <button type="button" class="btn btn-toggle toggle-next">Hulp bij rijbewijs verlengen</button>
+                                                                    <div class="helpItems">
+                                                                        <h3 class="helpQuestion toggle-next">Eisen aan de pasfoto</h3>
+                                                                        <div class="helpAnswer">
+                                                                            <p>De pasfoto op uw rijbewijs moet voldoen aan bepaalde eisen. Bijvoorbeeld wat betreft het formaat, de fotokwaliteit, de achtergrond en uw gezichtsuitdrukking.
+                                                                            </p>
+                                                                            <p>
+                                                                             <a href="https://www.rijksoverheid.nl/onderwerpen/paspoort-en-identiteitskaart/eisen-pasfoto-paspoort-id-kaart">Bekijk alle eisen aan de pasfoto</a>
+                                                                            </p>
+                                                                        </div>
+
+                                                                        <h3 class="helpQuestion toggle-next">Heb ik een nieuwe gezondheidsverklaring nodig?</h3>
+                                                                        <div class="helpAnswer">
+                                                                            <p>Een nieuwe gezondheidsverklaring is verplicht bij het verlengen van het rijbewijs, als u:
+                                                                            <ul> 
+                                                                                <li>ouder bent dan 75 jaar; of</li>
+                                                                                <li>rijbewijs C (vrachtauto) of D (bus) wilt verlengen.</li>
+                                                                            </ul>
+                                                                            </p>
+                                                                            <p>
+                                                                            U heeft ook een nieuwe gezondheidsverklaring nodig als uw gezondheid is veranderd. Bijvoorbeeld door de ontwikkeling van een oogaandoening of een psychiatrische stoornis
+                                                                            </p>
+                                                                            <p><a href="https://www.cbr.nl/nl/rijbewijs-houden/nl/gezondheidsverklaring/uw-gezondheidsverklaring.htm">Meer over de gezondheidsverklaring</a></p>
+                                                                        </div>
+                                                                        <h3 class="helpQuestion toggle-next">Rijbewijs verloren of gestolen?</h3>
+                                                                        <div class="helpAnswer">
+                                                                            <p>Als u uw rijbewijs kwijt bent, kunt u een verklaring invullen zodat anderen er geen misbruik van kunnen maken. Het maakt niet uit of het gaat om verlies of diefstal. U hoeft geen aangifte te doen bij de politie.
+                                                                            </p>
+                                                                            <p>
+                                                                             <a href="dolor-sit">Vul de verklaring in</a>
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    </div>
+                    
+<!-- START overzicht -->
+                <div class="question">
+                    <div class="questionWrapper">
+                        <div class="progress mb-4">
+                            <div class="progress-bar" role="progressbar" style="width: 13%" aria-valuenow="13" aria-valuemin="0" aria-valuemax="100"><span>12,5%</span></div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-sm-12 questionHeader">
+                                <p>De volgende gegevens komen op uw nieuwe rijbewijs:</p>
+                                <ul class="vireo-list">
+                                    <li>
+                                        Asha Martinez
+                                    </li>
+                                    <li>
+                                        Geboren op 17 april 1977 in Den Haag
+                                    </li>
+                                    <li>
+                                        Rijbewijs B
+                                    </li>
+                                    <li>
+                                        BSN: 465039182
+                                    </li>
+                                    <li>
+                                        E-mail: ashamartinez@gmail.com
+                                    </li>
+                                </ul>
+<!--
+                                <button class="toggleHint collapsed" type="button" data-toggle="collapse" data-target="#nl-check-hint-txt" aria-expanded="false" aria-controls="nl-check-hint-txt">Hint</button>
+                                <div class="hintTxt collapse" id="nl-check-hint-txt">
+                                    <p>Om in aanmerking te komen voor een bijstandsuitkering, moet u ingeschreven staan bij
+                                        een Nederlandse gemeente.</p>
+                                </div>
+-->
+                            </div>
+                        </div>
+                        <div class="preFilledElm">
+                            <div class="form-row">
+<!--
+                                <div class="form-group col-md-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="nl-check" id="nl-check1-li" value="ja" checked="">
+                                        <label class="form-check-label" for="nl-check1-li">
+                                            Ja
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="nl-check" id="nl-check2-li" data-stop="country" value="nee">
+                                        <label class="form-check-label" for="nl-check2-li">
+                                            Nee
+                                        </label>
+                                    </div>
+                                </div>
+-->
+                            </div>
+                        </div>
+                        <div class="notPreFilledElm">
+                            <div class="form-row">
+<!--
+                                <div class="form-group col-md-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="nl-check" id="nl-check1" value="ja">
+                                        <label class="form-check-label" for="nl-check1">
+                                            Ja
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="nl-check" id="nl-check2" data-stop="country" value="nee">
+                                        <label class="form-check-label" for="nl-check2">
+                                            Nee
+                                        </label>
+                                    </div>
+                                </div>
+-->
+
+                                <div class="form-control">
+                                            <button type="button" class="btn btn-link">Foutje gezien?</button>
+                                            <div class="button-wrapper button-next">
+                                                <button type="submit" class="btn btn-primary btn-next-question">Ja, alles klopt</button>
+                                            </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="questionHelp">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="grouped">
+                                                                    <!--
+                                                                    <button type="button" class="btn btn-toggle toggle-next">Let op!</button>
+                                                                    <div class="helpItems">
+                                                                        <h3 class="helpQuestion toggle-next">Uw pasfoto is ouder dan 5 jaar</h3>
+                                                                        <div class="helpAnswer">
+                                                                            <p>De pasfoto op uw rijbewijs moet goedgelijkend zijn. Dat betekent dat u herkenbaar moet zijn.</p>
+                                                                            <p><a href="dolor-sit">Check of de pasfoto goedgelijkend is</a></p>
+                                                                        </div>
+                                                                    </div>
+                                                                    -->
+                                                                    <button type="button" class="btn btn-toggle toggle-next">Hulp bij dit overzicht</button>
+                                                                    <div class="helpItems">
+                                                                        <h3 class="helpQuestion toggle-next">Wat is het burgerservicenummer (BSN)?</h3>
+                                                                        <div class="helpAnswer">
+                                                                            <p>Het burgerservicenummer (BSN) is uw eigen persoonsnummer voor contact met de overheid. Bijvoorbeeld voor zorg of belastingen. U krijgt een BSN toegekend als u zich inschrijft in de Basisregistratie Personen (BRP).</p>
+                                                                            <p><a href="https://www.rijksoverheid.nl/onderwerpen/privacy-en-persoonsgegevens/vraag-en-antwoord/wat-is-het-burgerservicenummer-bsn">Meer over het BSN</a></p>
+                                                                        </div>
+                                                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+<!-- EINDE overzicht -->
+
+<!-- START pasfoto -->
+                <div class="question">
+                    <div class="questionWrapper">
+                        <div class="progress mb-4">
+                            <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><span>25%</span></div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="col-sm-12 questionHeader">
+
+                                    <p>Uw pasfoto moet goed op u lijken en aan bepaalde eisen voldoen</p>
+
+                                    <div class="grouped aft-space subtask">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div class="frame-35-45">
+                                                    <img src="content/pasfoto-asha.jpg" alt="Uw huidige pasfoto" />
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <ul class="vireo-list">
+                                                    <li class="check">Pasfoto voldoet</li>
+                                                    <li class="attention">Uw pasfoto is ouder dan 5 jaar</li>
+                                                </ul>
+                                                <p>Wij raden u aan om een nieuwe pasfoto toe te voegen.</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <button class="btn btn-secondary" onclick="return false;">Nieuwe pasfoto toevoegen</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                            </div>
+                        </div>
+                        <div class="preFilledElm">
+                            <div class="form-row">
+                            </div>
+                        </div>
+                        <div class="notPreFilledElm">
+                                <div class="form-control">
+                                            <button type="button" class="btn btn-link btn-prev-question mr-2">Vorige</button>
+                                            <div class="button-wrapper button-next">
+                                                <button type="submit" class="btn btn-primary btn-next-question">Volgende</button>
+                                            </div>
+                                </div>
+                        </div>
+
+                        <div class="questionHelp">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="grouped">
+                                                                    <button type="button" class="btn btn-toggle toggle-next">Hulp bij pasfoto</button>
+                                                                    <div class="helpItems">
+                                                                        <h3 class="helpQuestion toggle-next">Eisen aan de pasfoto</h3>
+                                                                        <div class="helpAnswer">
+                                                                            <p>De pasfoto op uw rijbewijs moet voldoen aan bepaalde eisen. Bijvoorbeeld wat betreft het formaat, de fotokwaliteit, de achtergrond en uw gezichtsuitdrukking.
+                                                                            </p>
+                                                                            <p>
+                                                                             <a href="https://www.rijksoverheid.nl/onderwerpen/paspoort-en-identiteitskaart/eisen-pasfoto-paspoort-id-kaart">Bekijk alle eisen aan de pasfoto</a>
+                                                                            </p>
+                                                                        </div>
+                                                                        
+                                                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+<!-- EINDE pasfoto -->
+
+<!-- START medische verklaring -->
+                <div class="question">
+
+                    <div class="questionWrapper">
+                        <div class="progress mb-4">
+                            <div class="progress-bar" role="progressbar" style="width: 37%" aria-valuenow="37" aria-valuemin="0" aria-valuemax="100"><span>37,5%</span></div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-sm-12 questionHeader">
+                                                                <p>Volgens de gezondheidsverklaring die bij ons bekend is, bent u geschikt om te rijden. Is uw medische situatie veranderd?</p>
+                            </div>
+                        </div>
+                        <div class="preFilledElm">
+                            <div class="form-row">
+<!--
+                                <div class="form-group col-md-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="env-check" id="env-check1-li" value="alleen" checked="">
+                                        <label class="form-check-label" for="env-check1-li">
+                                            Ik ben alleenstaand
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="env-check" id="env-check2-li" value="alleen-ouder">
+                                        <label class="form-check-label" for="env-check2-li">
+                                            Ik ben alleenstaande ouder
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="env-check" id="env-check3-li" value="samen">
+                                        <label class="form-check-label" for="env-check3-li">
+                                            Ik woon samen met mijn partner
+                                        </label>
+                                    </div>
+                                </div>
+-->
+                            </div>
+                        </div>
+                        <div class="notPreFilledElm">
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
+                                    <fieldset class="grouped">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="env-health" id="env-health1-li" value="ophalen-gemeente" checked="checked">
+                                        <label class="form-check-label" for="env-health1-li">
+                                            Mijn medische situatie is hetzelfde
+                                            <small>Een nieuwe gezondheidsverklaring is niet nodig</small>
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="env-health" id="env-health2-li" value="ophalen-hema">
+                                        <label class="form-check-label" for="env-health2-li">
+                                            Mijn medische situatie is veranderd
+                                            <small>Ik heb een nieuwe gezondheidsverklaring nodig</small>
+                                        </label>
+                                    </div>
+                                    </fieldset><!-- .grouped -->
+                                </div>
+
+
+                                <div class="form-control">
+                                            <button type="button" class="btn btn-link btn-prev-question mr-2">Vorige</button>
+                                            <div class="button-wrapper button-next">
+                                                <button type="submit" class="btn btn-primary btn-next-question">Volgende</button>
+                                            </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="questionHelp">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="grouped">
+                                                                    <button type="button" class="btn btn-toggle toggle-next">Hulp bij gezondheidsverklaring</button>
+                                                                    <div class="helpItems">
+                                                                        <h3 class="helpQuestion toggle-next">Heb ik een nieuwe gezondheidsverklaring nodig?</h3>
+                                                                        <div class="helpAnswer">
+                                                                            <p>Is uw gezondheid veranderd, bijvoorbeeld door een oogaandoening of een psychiatrische stoornis? Dan heeft u een nieuwe gezondheidsverklaring nodig.</p>
+                                                                            <p><a href="https://www.cbr.nl/nl/rijbewijs-houden/nl/gezondheidsverklaring/uw-gezondheidsverklaring.htm">Meer over de gezondheidsverklaring</a></p>
+                                                                        </div>
+                                                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+<!-- EINDE medische verklaring -->
+
+<!-- START spoed of niet -->
+                <div class="question">
+
+                    <div class="questionWrapper">
+                        <div class="progress mb-4">
+                            <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"><span>50%</span></div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-sm-8 questionHeader">
+                                                                <p>Hoe snel wilt u het rijbewijs hebben?</p>
+<!--
+                                <button class="toggleHint collapsed" type="button" data-toggle="collapse" data-target="#ink-check-hint-txt" aria-expanded="false" aria-controls="ink-check-hint-txt">Hint</button>
+                                <div class="hintTxt collapse" id="ink-check-hint-txt">
+                                    <p>Bijstand is er voor mensen die niet genoeg geld hebben om van te leven. Als u voldoende
+                                        inkomen heeft, heeft u geen recht op een bijstandsuitkering.</p>
+                                    <p class="h3">Wat telt mee als inkomen?</p>
+                                    <p>Salaris, uitkering, alimentatie en heffingskortingen van de belastingdienst.</p>
+                                </div>
+-->
+                            </div>
+                        </div>
+                        <div class="preFilledElm">
+                            <div class="form-row">
+<!--
+                                <div class="form-group col-md-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="ink-check" id="ink-check1-li" value="ja" checked="">
+                                        <label class="form-check-label" for="ink-check1-li">
+                                            Ja
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="ink-check" id="ink-check2-li" data-stop="ink" value="nee">
+                                        <label class="form-check-label" for="ink-check2-li">
+                                            Nee
+                                        </label>
+                                    </div>
+                                </div>
+-->
+                            </div>
+                        </div>
+                        <div class="notPreFilledElm">
+                            <div class="form-row">
+                                <div class="form-group col-6">
+                                    <div class="grouped">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="ink-check" id="ink-check1" value="nee" checked="checked">
+                                        <label class="form-check-label" for="ink-check1">
+                                            Over 5 werkdagen
+                                            <small>Standaard</small>
+                                                                                        <strong class="vireo-cost">&euro;&thinsp;45,00</strong>
+                                        </label>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="form-group col-6">
+                                    <div class="grouped">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="ink-check" id="ink-check2" data-stop="ink" value="ja">
+                                        <label class="form-check-label" for="ink-check2">
+                                            Over 2 werkdagen
+                                            <small>Mits voor 14.00 uur besteld</small>
+                                                                                        <strong class="vireo-cost">&euro;&thinsp;75,00</strong>
+                                        </label>
+                                    </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-control">
+                                            <button type="button" class="btn btn-link btn-prev-question mr-2">Vorige</button>
+                                            <div class="button-wrapper button-next">
+                                                <button type="submit" class="btn btn-primary btn-next-question">Volgende</button>
+                                            </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+<!-- EINDE spoed of niet -->
+
+<!-- START ophalen bezorgen -->
+                <div class="question">
+                    <div class="questionWrapper">
+                        <div class="progress mb-4">
+                            <div class="progress-bar" role="progressbar" style="width: 63%" aria-valuenow="63" aria-valuemin="0" aria-valuemax="100"><span>62,5%</span></div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-sm-8 questionHeader">
+                                    <p>Wilt u uw rijbewijs ophalen of laten bezorgen?</p>
+                            </div>
+                        </div>
+                        <div class="preFilledElm">
+                            <div class="form-row">
+                            </div>
+                        </div>
+                        <div class="notPreFilledElm">
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
+                                    <fieldset class="grouped">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="env-check" id="env-check1-li" value="ophalen-gemeente" checked="checked">
+                                        <label class="form-check-label" for="env-check1-li">
+                                            Ophalen bij gemeente Den Haag
+                                            <small>Kies zelf een stadsdeelkantoor</small>
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="env-check" id="env-check2-li" value="ophalen-hema">
+                                        <label class="form-check-label" for="env-check2-li">
+                                            Ophalen bij een PostNL servicepunt
+                                            <small>Kies een servicepunt bij u in de buurt</small>
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="env-check" id="env-check3-li" value="bezorgen-thuis">
+                                        <label class="form-check-label" for="env-check3-li">
+                                            Bezorgen op mijn thuisadres
+                                            <small>Kootwijkstraat 38, 2573 XR Den Haag</small>
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="env-check" id="env-check4-li" value="bezorgen-elders">
+                                        <label class="form-check-label" for="env-check4-li">
+                                            Bezorgen op een ander adres
+                                            <small>Geef zelf een adres op</small>
+                                        </label>
+                                    </div>
+                                    </fieldset><!-- .grouped -->
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-control">
+                                            <button type="button" class="btn btn-link btn-prev-question mr-2">Vorige</button>
+                                            <div class="button-wrapper button-next">
+                                                <button type="submit" class="btn btn-primary btn-next-question">Volgende</button>
+                                            </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+<!--
+                    <div data-stop-reason="verm" class="reason">
+                        <div class="progress mb-4">
+                            <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
+                        </div>
+                        <h2>U heeft geen recht op bijstand.</h2>
+                        <p>Omdat u voldoende vermogen heeft.</p>
+                        <h3>Wat valt onder vermogen?</h3>
+                        <p>Onder vermogen vallen eigendommen, bijvoorbeeld waardevolle sieraden, een auto of spaargeld. Ook
+                            grond of een huis in Nederland of in het buitenland horen tot het vermogen.</p>
+                        <button type="button" class="btn btn-primary changeAwnser btn-sm">Antwoord wijzigen</button>
+                        <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#contactModal">Heeft u hulp nodig?</button>
+                    </div>
+-->
+                </div>
+<!-- EINDE ophalen bezorgen -->
+
+<!-- START ophalen locatie kiezen -->
+                <div class="question">
+                    <div class="questionWrapper">
+                        <div class="progress mb-4">
+                            <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"><span>75%</span></div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-sm-8 questionHeader">
+                                    <p>Op welk stadsdeelkantoor wilt u uw rijbewijs ophalen?</p>
+                            </div>
+                        </div>
+                        <div class="preFilledElm">
+                            <div class="form-row">
+                            </div>
+                        </div>
+                        <div class="notPreFilledElm">
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <div class="grouped">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="env-location" id="env-location1-li" value="ophalen-gemeente" checked="checked">
+                                            <label class="form-check-label" for="env-location1-li">
+                                                Centrum <em>dichtbij</em>
+                                                <small>ma, di, woe, vrij: 8.30 - 16.30 uur</small>
+                                                <small>donderdag: 12.00 - 20.00 uur</small>
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="env-location" id="env-location2-li" value="ophalen-hema">
+                                            <label class="form-check-label" for="env-location2-li">
+                                                Laak
+                                                <small>di, woe, do, vrij: 8.30 - 16.30 uur</small>
+                                                <small>ma: 12.00 - 20.00 uur</small>
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="env-location" id="env-location3-li" value="bezorgen-thuis">
+                                            <label class="form-check-label" for="env-location3-li">
+                                                Escamp
+                                                <small>ma, woe, do, vrij: 8.30 - 16.30 uur</small>
+                                                <small>di: 12.00 - 20.00 uur</small>
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="env-location" id="env-location4-li" value="bezorgen-elders">
+                                            <label class="form-check-label" for="env-location4-li">
+                                                Segbroek
+                                                <small>ma, di, do, vrij: 8.30 - 16.30 uur</small>
+                                                <small>woensdag: 12.00 - 20.00 uur</small>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>                                    
+                                    
+                                <div class="form-group col-md-6">
+                                    <div class="grouped">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="env-location" id="env-location5-li" value="bezorgen-elders">
+                                            <label class="form-check-label" for="env-location5-li">
+                                                Leidschenveen-Ypenburg
+                                                <small>ma, di, do, vrij: 8.30 - 12.30 uur</small>
+                                                <small>woensdag: 12.00 - 20.00 uur</small>
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="env-location" id="env-location6-li" value="bezorgen-elders">
+                                            <label class="form-check-label" for="env-location6-li">
+                                                Loosduinen
+                                                <small>ma, di, woe, do: 8.30 - 16.30 uur</small>
+                                                <small>vrijdag: 12.00 - 20.00 uur</small>
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="env-location" id="env-location7-li" value="bezorgen-elders">
+                                            <label class="form-check-label" for="env-location7-li">
+                                                Haagse Hout
+                                                <small>alle werkdagen: 8.30 - 12.30 uur</small>
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="env-location" id="env-location8-li" value="bezorgen-elders">
+                                            <label class="form-check-label" for="env-location8-li">
+                                                Scheveningen
+                                                <small>alle werkdagen: 8.30 - 12.30 uur</small>
+                                            </label>
+                                        </div>
+                                    </div><!-- .grouped -->
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-control">
+                                            <button type="button" class="btn btn-link btn-prev-question mr-2">Vorige</button>
+                                            <div class="button-wrapper button-next">
+                                                <button type="submit" class="btn btn-primary btn-next-question">Volgende</button>
+                                            </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+<!-- EINDE ophalen locatie kiezen -->
+
+<!-- START betalen -->
+                <div class="question">
+                    <div class="questionWrapper">
+                        <div class="progress mb-4">
+                            <div class="progress-bar" role="progressbar" style="width: 88%" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"><span>87,5%</span></div>
+                        </div>
+                        <div class="questionHeader">
+
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                        <h3 class="vireo-light">Uw nieuwe rijbewijs</h3>
+                                        <ul class="vireo-list vireo-summary-list">
+                                            <li>
+                                                Rijbewijs B
+                                            </li>
+                                            <li>
+                                                10 jaar geldig
+                                            </li>
+                                            <li>
+                                                Klaar na 5 werkdagen
+                                            </li>
+                                            <li>
+                                                Ophalen in stadsdeelkantoor Centrum in Den Haag
+                                            </li>
+                                        </ul>
+                                        </div>
+
+                                        <div class="col-sm-4 separator">
+                                        <h3 class="vireo-light">
+                                            Totaalbedrag
+                                        </h3>
+                                         <p>
+                                             <strong class="vireo-cost">&euro;&thinsp;45,00</strong>
+                                         </p>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="row">
+                                    <div class="col-sm-12">
+
+
+                                        <p>Hoe wilt u uw nieuwe rijbewijs betalen?</p>
+                                        </div>
+                                    </div>
+
+
+                        </div>
+                        <div class="preFilledElm">
+                            <div class="form-row">
+                            </div>
+                        </div>
+                        <div class="notPreFilledElm">
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
+                                    <div class="grouped">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="env-payment" id="env-check1-tr" value="ideal" checked="checked">
+                                        <label class="form-check-label" for="env-check1-tr">
+                                            iDeal
+                                        </label>
+                                        <div class="payment-options">
+                                            <select>
+                                                <option>Kies uw bank ...</option>
+                                                <option>ABN Amro</option>
+                                                <option>ASN</option>
+                                                <option>Bunq</option>
+                                                <option>ING</option>
+                                                <option>Knab</option>
+                                                <option>Rabobank</option>
+                                                <option>SNS bank</option>
+                                                <option>Triodos</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="grouped">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="env-payment" id="env-check2-tr" value="paypal">
+                                        <label class="form-check-label" for="env-check2-tr">
+                                            Paypal 
+                                        </label>
+                                    </div>
+                                    </div>
+                                    <div class="grouped">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="env-payment" id="env-check3-tr" value="creditcard">
+                                        <label class="form-check-label" for="env-check3-tr">
+                                            Creditcard
+                                        </label>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-control">
+                                            <button type="button" class="btn btn-link btn-prev-question mr-2">Vorige</button>
+                                            <div class="button-wrapper button-next">
+                                                <button type="submit" class="btn btn-primary btn-next-question">Betalen</button>
+                                            </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+<!-- EINDE betalen -->
+
+<!-- START klaar en afgerond! -->
+                <div class="question">
+                    <div class="questionWrapper">
+                        <!-- Geen progress bar aan eind! <div class="progress mb-4">
+                            <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"><span>100%</span></div>
+                        </div> -->
+                        <div class="form-row">
+                            <div class="col-sm-12 questionHeader">
+                                    <p class="success">We hebben uw betaling ontvangen en gaan aan de slag!</p>
+                                    
+                                    <p>We sturen een bevestiging naar ashamartinez@gmail.com.</p>
+
+                                    <p>U kunt uw rijbewijs ophalen bij stadsdeelkantoor Centrum in Den Haag. Uw rijbewijs ligt klaar vanaf <strong>dinsdag 13 november</strong>. Een afspraak maken is niet nodig.</p>
+
+                                                                <div class="grouped">
+                                                                    <div>
+                                                                        <h3>Let op!</h3>
+                                                                        <p>U moet het rijbewijs zelf ophalen binnen 3 maanden.</p>
+                                                                        <p>Neem uw oude rijbewijs mee; deze moet u inleveren.</p>
+
+<!--
+                                                                        <h3 class="helpQuestion toggle-next">Inclusief rijbewijs T</h3>
+                                                                        <div class="helpAnswer">
+                                                                            <p>U krijgt automatisch rijbewijs T bijgeschreven. Dit rijbewijs geldt voor landbouwtractoren, bosbouwtractoren, en voertuigen met een beperkte snelheid (zoals wegtreintjes). </p>
+                                                                            <p><a href="beleid-rijbewijs-t.html">Meer over rijbewijs T</a></p>
+                                                                        </div>
+-->
+                                                                    </div>
+                                                                </div>
+                                                            
+                                                                <div class="grouped">
+                                                                    <h4>Stadsdeelkantoor Centrum</h4>
+                                                                    <p>Spui 70 <br>2511 BT Den Haag</p>
+                                                                    
+                                                                    <h4>Openingstijden</h4>
+                                                                    <dl class="opening-hours">
+                                                                        <dt>Maandag</dt>
+                                                                        <dd>8.30 &ndash; 16.30 uur</dd>
+                                                                        <dt>Dinsdag</dt>
+                                                                        <dd>8.30 &ndash; 16.30 uur</dd>
+                                                                        <dt>Woensdag</dt>
+                                                                        <dd>8.30 &ndash; 16.30 uur</dd>
+                                                                        <dt>Donderdag</dt>
+                                                                        <dd>12.00 &ndash; 20.00 uur</dd>
+                                                                        <dt>Vrijdag</dt>
+                                                                        <dd>8.30 &ndash; 16.30 uur</dd>
+                                                                    </dl>
+                                                                </div>
+                            </div>
+                        </div>
+
+<!--
+                       <div class="questionHelp">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="grouped">
+                                                                    <button type="button" class="btn btn-link toggle-next">Let op!</button>
+                                                                    <div class="helpItems">
+                                                                        <h3 class="helpQuestion toggle-next">Zelf ophalen binnen 3 maanden</h3>
+                                                                        <div class="helpAnswer">
+                                                                            <p>U kunt het rijbewijs alleen zelf ophalen.</p>
+                                                                        </div>
+                                                                        <h3 class="helpQuestion toggle-next">Oude rijbewijs meenemen</h3>
+                                                                        <div class="helpAnswer">
+                                                                            <p>U moet uw oude rijbewijs inleveren.</p>
+                                                                        </div>
+                                                                        <h3 class="helpQuestion toggle-next">Inclusief rijbewijs T</h3>
+                                                                        <div class="helpAnswer">
+                                                                            <p>U krijgt automatisch rijbewijs T bijgeschreven. Dit rijbewijs geldt voor landbouwtractoren, bosbouwtractoren, en voertuigen met een beperkte snelheid (zoals wegtreintjes). </p>
+                                                                            <p><a href="https://www.rijksoverheid.nl/onderwerpen/rijbewijs/rijbewijs-trekker-rijbewijs-t">Meer over rijbewijs T</a></p>
+                                                                            <p><a href="beleid-rijbewijs-t.html">Meer over rijbewijs T</a></p>
+                                                                        </div>
+                                                                    </div>
+                                                                    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+-->
+
+
+                       <div class="preFilledElm">
+                            <div class="form-row">
+                            </div>
+                        </div>
+                        <div class="notPreFilledElm">
+                            <div class="form-row">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+<!-- EINDE klaar en afgerond! -->
+
+
+            </form>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade loginmodal" id="loginToStartForm" tabindex="-1" role="dialog" aria-labelledby="modal-header" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="modal-header">
+      <img src="img/digid-logo.svg" alt="digid"> Login met DigiD
+                </h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <form>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="gebruikersnaam">DigiD gebruikersnaam</label>
+        <input type="text" class="form-control" id="gebruikersnaam" placeholder="DigiD gebruikersnaam" value="asha_madhavan">
+                    </div>
+                    <div class="form-group">
+                        <label for="wachtwoord">Wachtwoord</label>
+                        <input type="password" class="form-control" id="wachtwoord" placeholder="Wachtwoord" value="********">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" id="loginAndStartBtn">Inloggen</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade sendModal" id="sendModal" tabindex="-1" role="dialog" aria-labelledby="send-modal-header" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="send-modal-header">
+                    Uw aanvraag is verstuurd 
+                </h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <form>
+                <div class="modal-body">
+                    <p>Wij hebben uw aanvraag voor een bijstandsuitkering in behandeling genomen. Binnen 8 weken krijgt u een beslissing op uw aanvraag. Heeft u recht op bijstand? Dan krijgt u dit vanaf het moment dat u de aanvraag heeft gedaan.</p>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+  </main>
+  <footer>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <span class="align-middle lead">1overheid: voor al uw overheidszaken.</span>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="modal fade contactModal" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contact-modal-header" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="contact-modal-header">
+                        Contact
+                    </h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+               
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Direct chatten</button>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+
+</body></html>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="183.04px" height="182px" viewBox="0 0 183.04 182" enable-background="new 0 0 183.04 182" xml:space="preserve">
+<g id="Capa_1">
+	<circle fill="#007bc7" stroke="#064182" stroke-width="8" stroke-miterlimit="10" cx="92.083" cy="90.499" r="85.501"/>
+	<g>
+		<path fill="#FFFFFF" d="M129.711,98.592v24.475H54.847V98.592H40.459v31.669c0,3.97,3.216,7.19,7.205,7.19h89.23
+			c3.983,0,7.207-3.219,7.207-7.19V98.592H129.711z"/>
+		<path fill="#FFFFFF" d="M90.96,96.164L70.361,71.272c0,0-3.135-2.959,0.264-2.959s11.608,0,11.608,0s0-1.99,0-5.06
+			c0-8.752,0-24.681,0-31.174c0,0-0.461-1.766,2.198-1.766c2.681,0,14.42,0,16.339,0c1.917,0,1.873,1.487,1.873,1.487
+			c0,6.297,0,22.776,0,31.242c0,2.745,0,4.525,0,4.525s6.584,0,10.716,0c4.123,0,1.019,3.099,1.019,3.099
+			S96.852,93.93,94.407,96.371C92.649,98.141,90.96,96.164,90.96,96.164z"/>
+	</g>
+</g>
+</svg>

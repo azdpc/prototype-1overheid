@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="nl-NL"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Duurzame energie | Beleid en bestuur | 1overheid</title>
+  <meta name="description" content="Prototype voor 1overheid: informatie, diensten, beleid en bestuur">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/additional.css">
+
+</head>
+
+<body cz-shortcut-listen="true" class="government">
+<header>
+<div class="container-fluid">
+    <div>
+        <nav class="navbar navbar-light">
+            <a href="beleid-en-bestuur.html" class="navbar-brand">
+                <img src="img/een-overheid-beleid-en-bestuur.svg" alt="1overheid">
+                <em class="payoff">beleid en bestuur</em>
+            </a>
+            
+            <div class="navbar-options">
+                <div class="search-wrapper">
+                    <button class="dropdown-toggle" type="button" id="dropdownSearchButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span>zoeken</span>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownSearchButton">
+                        <div class="container-fluid">
+
+<div class="row">
+<div class="col-lg-10 offset-lg-1 col-md-12">
+    <div class="container-fluid">
+        <form action="#">
+            <fieldset>
+                <input type="search" />
+                <input class="btn btn-primary btn-lg" type="submit" value="zoeken" />
+            </fieldset>
+        </form>
+    </div>
+</div>
+</div>
+
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="account-wrapper">
+                    <div class="loggedInElm">
+                        <a class="button" href="mijn-overheid.html">
+                            <span>mijn overheid</span>
+                            <strong class="notification">3 <span class="visually-hidden">nieuwe berichten</span></strong>
+                        </a>
+                    </div>
+                    <div class="loggedOutElm">
+                        <button type="button" id="loginAccountButton" data-toggle="modal" data-target="#loginForm">
+                            <span>inloggen</span>
+                        </button>
+
+                    </div>
+                </div>
+                
+                <div class="contact-wrapper">
+                    <button class="dropdown-toggle" type="button" id="dropdownContactButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span>contact</span>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownContactButton">
+                        <div class="container-fluid">
+
+<div class="row">
+<div class="col-lg-10 offset-lg-1 col-md-12">
+                                <p>Contactinformatie</p>
+</div>
+</div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-wrapper">
+                    <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span>menu</span>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <div class="container-fluid">
+
+
+<div class="row">
+<div class="col-lg-10 offset-lg-1 col-md-12">
+                            <p>
+                                Hoofdmenu van 1Overheid beleid en bestuur
+                            </p>
+</div>
+</div>
+
+                            
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+
+        </nav>
+    </div>
+
+</div>    
+</header>
+
+<banner>
+    <div class="loggedInElm">
+        <div id="login-foldout" class="navbar-pinned expanded">
+            <div class="container-fluid">
+
+                <div class="navbar-pinned-content">
+                    <div class="row align-items-center">
+                        <div class="col-8">
+                                Ingelogd als Asha Martinez
+                        </div>
+                        <div class="col-4">
+                            <div class="button-wrapper float-right">
+                                <button class="btn btn-sm btn-success logoutBtn">Uitloggen</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</banner>
+
+<div class="modal fade loginmodal" id="loginForm" tabindex="-1" role="dialog" aria-labelledby="modal-header" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="modal-header">
+          <img src="img/digid-logo.svg" alt="digid">Login met DigiD
+                    </h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <form>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="gebruikersnaam">DigiD gebruikersnaam</label>
+            <input type="text" class="form-control" id="gebruikersnaam" placeholder="DigiD gebruikersnaam" value="asha_madhavan">
+                        </div>
+                        <div class="form-group">
+                            <label for="wachtwoord">Wachtwoord</label>
+                            <input type="password" class="form-control" id="wachtwoord" placeholder="Wachtwoord" value="********">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" id="loginBtn">Inloggen</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+<div class="modal fade contactModal" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contact-modal-header" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="contact-modal-header">Heeft u een vraag of hulp nodig?</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <form>
+                <div class="modal-body">
+                    <p>U kunt op contact met ons opnemen via:</p>
+                    <ul>
+                        <li class="phone">
+                            <a href="tel:1400">Bel naar 1400</a>
+                        </li>
+                        <li class="app">
+                            <a href="#">App uw vraag naar 1400</a>
+                        </li>
+                        <li class="chat">
+                            <a class="openChat" data-toggle="modal" data-target="#chatModal" href="#">Direct chatten</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade chatModal" id="chatModal" tabindex="-1" role="dialog" aria-labelledby="chat-modal-header" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="chat-modal-header">Direct chatten</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <form>
+                    <div class="modal-body">
+                        
+                            <div class="messages">
+                                <div class="message">
+                                    <div class="avatar">
+                <img class="img-fluid" src="img/avatar.svg">
+                                    </div>
+                                    <div class="content">
+                                        <span class="name">Medewerker:</span>
+                                        <p>Goedemiddag, waarmee kan ik u helpen?</p>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            
+                            <div class="messageForm">
+                                <div class="inputField">
+                                    <input class="form-control form-control-lg" type="text" placeholder="Typ hier uw vraag">
+                                </div>
+                                <div class="submitBtn">
+                                    <button type="button" class="btn btn-primary btn-lg">Verstuur</button>
+                                </div>
+                            </div>
+                            
+                        
+                    </div>
+                    <div class="modal-footer">
+                        
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    
+  
+<main role="main magazine">
+
+    <!-- START visual with main page title and breadcrumb -->
+    <div class="headerImage magazineHeaderImage">
+            <div class="slide" data-widescreen="true" data-img="content/gallery/large/windpark-noordoostpolder.jpg">
+                    <picture>
+                        <source srcset="content/gallery/medium/windpark-noordoostpolder.jpg" media="(max-width: 830px)">
+                        <source srcset="content/gallery/large/windpark-noordoostpolder.jpg" media="(max-width: 1250px)">
+                        <source srcset="content/gallery/widescreen/windpark-noordoostpolder.jpg" media="(min-width: 1250px)">
+                        <img src="content/gallery/large/windpark-noordoostpolder.jpg" alt="">
+                    </picture>
+                    <div class="darken"></div>
+                    <p class="copyright">
+                        <span>&copy;</span> Windpark Noordoostpolder
+                    </p>
+            </div>
+
+            <!-- START overlay broodkruimel -->
+            <div class="overlay breadcrumb">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <ul>
+                                <li><a href="beleid-en-bestuur.html">Home</a></li>
+                                <li><a href="beleid-organisaties.html">Beleidsthema&rsquo;s</a></li>
+                            </ul>
+                        </div>            
+                    </div>
+                    <!-- .row -->
+                </div>    <!-- .container-fluid -->
+            </div>
+            <!-- EINDE overlay broodkruimel -->
+            
+            <div class="overlay pagetitle">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="container-fluid">
+                                <h1>Duurzame energie</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- .row -->
+                </div>    <!-- .container-fluid -->
+            </div>
+            <!-- END overlay -->
+
+            <div class="overlay payoff">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-10 offset-lg-1 col-md-12">
+                            <div class="container-fluid">
+                                        
+                                <div class="policy-challenge">
+                                    <p>
+Transitie naar duurzaam:
+CO<sub>2</sub>-arm, veilig, betrouwbaar en betaalbaar
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- .col-lg-10 .offset-lg-1 col-md-12 -->
+            
+                    </div>
+                    <!-- .row -->
+                </div>    <!-- .container-fluid -->
+            </div>
+            <!-- END overlay -->
+            
+    </div>    
+    <!-- END visual -->
+
+
+
+    <section class="government">
+
+        <!-- START intro en navigatie naar onderliggende pagina's -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1 col-md-12">
+    
+                    <div class="container-fluid">
+            
+                        <div class="row">
+                            <div class="col-md-9">
+                                <div class="intro">
+                                    <p>
+De hoge CO<sub>2</sub>-uitstoot is een mondiaal probleem. Het kabinet streeft daarom, in internationaal verband, naar een CO<sub>2</sub>-arme energievoorziening. Dat doen we op een manier die kansen biedt voor het innovatieve bedrijfsleven. Nederland is goed gepositioneerd om de transitie te realiseren.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <ul class="row subnav topics-list">
+                            <li class="col-md-4"><a href="##aardwarmte">Aardwarmte</a></li>
+                            <li class="col-md-4"><a href="#bio-energie">Bio-energie</a></li>
+                            <li class="col-md-4"><a href="#kernenergie">Kernenergie</a></li>
+                            <li class="col-md-4"><a href="#windenergie">Windenergie</a></li>
+                            <li class="col-md-4"><a href="#zonne-energie">Zonne-energie</a></li>
+                            <li class="col-md-4"><a href="#samenwerken">Grote energieprojecten</a></li>
+                            <li class="col-md-4"><a href="#fossiel">Toekomst fossiele brandstoffen</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- EINDE intro en subnavigatie-->
+
+
+
+    <!-- START content area -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-10 offset-lg-1 col-md-12">
+                <div class="container-fluid">
+                    <div class="row content-item spotlight spotlight-large">
+                        <div class="col-md-12">
+                            <h2 class="with-bar">Nu in de aandacht</h2>
+                        </div>                        
+        
+                        <div class="col-lg-6">
+                            <div class="spotlight-item">
+                                <a href="#lorem-ipsum-beleid">
+                                    <div class="spotlight-summary">
+                                        <h3>“Einde oefening voor niet-duurzame bedrijven”</h3>
+                                        <p>Interview met Ed Nijpels, voorzitter Klimaatberaad</p>
+                                    </div>
+                                    <img src="content/ed-nijpels.jpg" alt="Ed Nijpels aan het woord tijdens een vergadering" />
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="spotlight-item">
+                                <a href="#lorem-ipsum-beleid">
+                                    <div class="spotlight-summary">
+                                        <h3>Duurzaamheidsverslag 2018</h3>
+                                        <p>Werken aan een klimaatneutrale en circulaire organisatie</p>
+                                    </div>
+                                    <img src="content/molentjes-aan-de-dijk.jpg" alt="Moeder fietst met kinderen langs rij molens op een ringdijk" />
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+<!--
+                    <div class="row content-item policy-themes-list">
+                        <div class="col-md-12">
+                            <h2 class="with-bar">Alle beleidsthema&rsquo;s</h2>
+                        </div>   
+                        
+                        <div class="col-md-4">
+                            <ul class="topics-list">
+                                <li><a href="#voorbeeld">Belastingen, uitkeringen en toeslagen</a></li>
+                                <li><a href="#voorbeeld">Bouwen en wonen</a></li>
+                                <li><a href="#voorbeeld">Economie</a></li>
+                                <li><a href="#voorbeeld">Internationale samenwerking</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-4">
+                            <ul class="topics-list">
+                                <li><a href="#voorbeeld">Milieu en natuur</a></li>
+                                <li><a href="#voorbeeld">Familie, zorg en gezondheid</a></li>
+                                <li><a href="#voorbeeld">Migratie en reizen</a></li>
+                                <li><a href="#voorbeeld">Onderwijs</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="col-md-4">
+                            <ul class="topics-list">
+                                <li><a href="#voorbeeld">Overheid en democratie</a></li>
+                                <li><a href="#voorbeeld">Recht, veiligheid en defensie</a></li>
+                                <li><a href="beleid-verkeer-en-vervoer.html">Verkeer en vervoer</a></li>
+                                <li><a href="#voorbeeld">Werk</a></li>
+                            </ul>
+                        </div>                     
+                        
+                    </div>
+-->
+
+
+<!--
+                    <div class="row content-item">
+                        <div class="col-md-8">
+<p>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p>
+                        </div>
+                    </div>
+-->
+
+<!--
+                    <div class="row content-item news">
+                        <div class="col-md-12">
+                            <h2 class="with-bar">Nieuws</h2>
+                        </div>                        
+                        
+                    </div>
+-->
+
+                </div>
+
+            </div>
+            <!-- .col-lg-10 .offset-lg-1 col-md-12 -->
+
+        </div>
+        <!-- .row -->
+    </div>    <!-- .container-fluid -->
+    <!-- END content area -->
+
+    <section class="actionable">
+        <!-- START content area -->
+        <div class="container-fluid">
+            <div class="row content-item do-it-yourself">
+                <div class="col-md-8">
+                    <a href="#lorem">
+                        <img src="content/video-still.jpg" />
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <blockquote>
+                        &ldquo;Het klimaat is gewoon belangrijk voor ons.&rdquo;
+                    </blockquote>
+                    <p>
+Marjanne en Gerard hebben hun <a href="energiezuinig-huis.html">huis energiezuiniger</a> gemaakt door de cv-ketel met subsidie te vervangen door een warmtepomp.
+                    </p>
+                    
+                    <div class="immediate">
+                        <h3 class="vireo-light">
+                            Meteen regelen
+                        </h3>
+                        <p>
+                            <a href="#energielabel" class="btn btn-primary">Energielabel aanvragen</a>
+                        </p>
+                        <p>
+                            <a href="#energielabel" class="btn btn-primary">Subsidie aanvragen voor warmtepomp</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </section>
+
+
+    <!-- START content area -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-10 offset-lg-1 col-md-12">
+                <div class="container-fluid">
+
+                    <!-- START policy -->
+                    <div class="row content-item">
+                        <div class="col-md-5">
+                            <h2 class="with-bar">Beleid en toekomstplannen</h2>
+
+                            <ul class="topics-list">
+                                <li>
+                                    <a href="#lorem">Alles over het Energieakkoord</a></li>
+                                </li>
+                                <li>
+                                    <a href="#lorem">De energieagenda tot 2050</a></li>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-6 offset-md-1">
+                            <div class="loggedOutElm">
+                                <h2 class="with-bar">Beleid <span class="local">in uw gemeente</span></h2>
+    
+                                <p>Wat doet uw gemeente aan duurzame energie?</p>
+                                
+                                <div class="main-actions">
+                                    <div class="button-wrapper digid">
+                                        <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#loginForm">Log in voor het lokale beleid
+                                            <img src="img/digid-logo.svg" alt="digid" />
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="loggedInElm">
+                                <h2 class="with-bar">Beleid <span class="local">in Den Haag</span></h2>
+    
+                                <h4>Den Haag Aardgasvrij</h4>
+<p>De gemeente wil dat in 2030 er in alle gebouwen in de stad geen aardgas wordt gebruikt. Samen met inwoners, ondernemers en maatschappelijke instellingen in de stad gaat ze aan de slag om dit voor elkaar te krijgen. U kunt zelf ook maatregelen nemen.</p>
+<p class="follow-up tight"><a href="#lorem">Lees meer over Den Haag aardgasvrij</a></p>
+
+<ul class="topics-list tight">
+    <li><a href="#kliaamtbestendig" data-orig-href="https://www.denhaag.nl/nl/in-de-stad/natuur-en-milieu/duurzaamheid/den-haag-klimaatbestendig-maken.htm">Den Haag klimaatbestendig</a></li>
+    <li><a href="#duurzaam-ondernemen" data-orig-href="https://www.denhaag.nl/nl/in-de-stad/ondernemen/zaken-doen-met-de-gemeente/ondersteuning-voor-duurzame-ondernemers.htm">Ondersteuning voor duurzame ondernemers</a></li>
+    <li><a href="#elektrisch-rijden" data-orig-href="https://www.denhaag.nl/nl/in-de-stad/verkeer-en-vervoer/snellaadstations-elektrische-autos.htm">Elektrisch rijden in Den Haag</a></li>
+</ul>
+
+
+                            </div>
+                            
+                            
+
+                        </div>
+                    </div>
+                    <!-- EINDE policy -->
+
+                    
+                    <!-- START news -->
+                    <div class="row content-item news">
+                        <div class="col-md-12">
+                            <h2 class="with-bar">Nieuws</h2>
+                        </div>
+                        
+                        <div class="brick col-md-4">
+                            <a href="#nieuws-19337"> 
+                                <h3>Minister-president Rutte bij P4G-top in Denemarken</h3>
+                                <time class="published">16-10-2018</time>
+                            </a>
+                        </div>
+                    
+                        <div class="brick col-md-4">
+                            <a href="#nieuws-1837"> 
+                                <h3>Nationale omgevingsvisie helpt bij energietransitie, extra woningbouw en kringlooplandbouw</h3>
+                                <time class="published">05-10-2018</time>
+                            </a>
+                        </div>
+                    
+                        <div class="brick col-md-4">
+                            <a href="#nieuws-193847"> 
+                                <h3>Kabinet kiest richting op weg naar Klimaatakkoord</h3>
+                                <time class="published">05-10-2018</time>
+                            </a>
+                        </div>
+                    
+                        <div class="brick col-md-4">
+                            <a href="#nieuws-19337"> 
+                                <h3>Extra laadpunten Nederland voor duurzaam vervoer</h3>
+                                <time class="published">18-07-2018</time>
+                            </a>
+                        </div>
+                    
+                        <div class="brick col-md-4">
+                            <a href="#nieuws-1837"> 
+                                <h3>Projecten windparken op land: later dan gepland, maar meer dan voorzien</h3>
+                                <time class="published">10-07-2018</time>
+                            </a>
+                        </div>
+                    
+                        <div class="brick col-md-4">
+                            <a href="#nieuws-193847"> 
+                                <h3>SDE+ regeling voor hernieuwbare energie opnieuw opengesteld</h3>
+                                <time class="published">10-07-2018</time>
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div class="row content-item">
+                        <div class="col-sm-12">
+                            <h2 class="with-bar">Betrokken overheidsinstanties</h2>
+                        </div>
+                        
+                        <div class="col-sm-6">
+                            <ul class="topics-list">
+                                <li>
+                                    <a href="beleid-ministerie-ienw.html">Ministerie van Economische Zaken en Klimaat</a></li>
+                                </li>
+                                <li>
+                                    <a href="beleid-ministerie-ienw.html">Ministerie van Infrastructuur en Waterstaat </a></li>
+                                </li>
+                                <li>
+                                    <a href="#lorem">Rijksdienst voor Ondernemend Nederland</a></li>
+                                </li>
+                                <li>
+                                    <a href="#lorem">Milieu Centraal</a></li>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</main>
+
+
+
+
+
+  <footer>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <span class="align-middle lead">1overheid: voor al uw overheidszaken.</span>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="modal fade contactModal" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contact-modal-header" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="contact-modal-header">
+                        Contact
+                    </h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+               
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Direct chatten</button>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+  <script src="js/main.js"></script>
+
+</body></html>

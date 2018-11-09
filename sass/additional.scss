@@ -1,0 +1,13 @@
+/**
+ * File:        additional.scss
+ * Description: Stylesheet for additional one government presentation
+ * Author:      Jeroen Visser | vizi
+ */
+
+/* NOTE: colors are set in CSS variables in style.css */
+
+/* FIELDLAB ADDITIONS */
+@import "_additional_fieldlab.scss";
+
+/* PROJECT VIREO STYLES */
+@import "_additional_vireo.scss";

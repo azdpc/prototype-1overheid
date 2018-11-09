@@ -1,0 +1,189 @@
+/* ADDITIONAL FIELDLAB PROTOTYPE STYLING */
+/*
+@font-face {
+	font-family: 'rijksoverheidsanstextregular';
+	src: url('../font/rijksoverheidsanstexttt-regular_2_0-webfont.eot');
+	src: url('../font/rijksoverheidsanstexttt-regular_2_0-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../font/rijksoverheidsanstexttt-regular_2_0-webfont.woff2') format('woff2'),
+	url('../font/rijksoverheidsanstexttt-regular_2_0-webfont.woff') format('woff'),
+	url('../font/rijksoverheidsanstexttt-regular_2_0-webfont.ttf') format('truetype');
+	font-weight:normal; font-style:normal;
+}
+*/
+body {
+//   	font-family: 'rijksoverheidsanstextregular';
+  	font-family: 'RijksoverheidSansWebText';
+}
+
+h3, h4 { font-weight: bold;}
+h4 { font-size:1.1rem}
+main a { text-decoration: underline;}
+legend { font-size:1.1rem; font-weight: bold;}
+.primary { color:var(--primary)}
+
+.module-cards .module-card {
+  -webkit-transition:all 0.3s;
+  -webkit-transition:all 0.15s;
+  transition:all 0.15s;
+}
+
+.cta {
+  color:var(--dark);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.module-card:hover .cta { color:var(--white)}
+.hidden {
+  left:-9999px;
+  top:-9999px;
+  position: absolute !important;
+  z-index: -1;
+}
+.afterLogin,
+.blauwe-button { display: none; }
+.afterLogin .modal { display: block;}
+#first, #second { overflow:auto}
+
+html.loggedin .afterLogin,
+html.loggedin .blauwe-button { display:block; }
+html.loggedin .beforeLogin{ display:none; }
+
+.search-btn{
+  background: no-repeat center center;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 250 250' width='20' height='20'%3E%3Crect fill='%23003366' x='0' y='158' width='60' height='130' rx='25' ry='25' transform='translate%282 47%29 rotate%28-45%29'/%3E%3Ccircle fill='none' stroke='%23003366' stroke-miterlimit='10' stroke-width='25' cx='95' cy='90' r='75'/%3E%3C/svg%3E");
+  cursor: pointer;
+  width: 30px;
+  border:0;
+}
+
+.module-card { border-radius:0.25rem; }
+.module-card a { text-decoration: none; }
+
+.module-card.alert, .modal.alert .modal-content { background: var(--warning); color:var(--dark); }
+.module-cards .module-card a h2, .modal.alert a { color:var(--dark); }
+.module-card.alert a { padding-left:20px; }
+.module-card.alert a:before, .modal.alert .modal-content:before {
+  background:url('../img/icon-alert.svg') no-repeat 0 0;
+  background-size: contain;
+  content:"";
+  display:inline-block;
+  height:38px;
+  width:38px;
+  left:20px;
+  top:20px;
+  position: absolute;
+}
+
+.modal.alert { display:block; }
+.modal.alert .modal-dialog { max-width:860px }
+.modal.alert .modal-header,
+.modal.alert .modal-footer { border:0; text-align: center;}
+.modal.alert .modal-header { padding-top:0.5rem; padding-bottom:0.5rem;}
+.modal.alert .modal-header,
+.modal.alert .modal-body { padding-left:80px;}
+.modal.alert h2 { margin-top:20px;}
+.modal.alert a.cta {
+  background:var(--dark);
+  border-radius:10px;
+  color:var(--white);
+  display:inline-block;
+  margin:auto;
+  padding:0.15em 15px;
+  text-align:center;
+  text-decoration:none;
+  text-transform:uppercase;
+}
+.modal.alert p { margin:0;}
+
+.blauwe-button { float:right; }
+.blauwe-button a { display:inline-block; margin:0 0.5em; }
+.blauwe-button img {
+  height:56px;
+  width:56px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* Forms */
+#filtertool-container { width: 100%;}
+.filtertool .filtertool-contentblocks-section .filtertool-contentblocks-list .filtertool-contentblock { padding:1em; }
+.filtertool-contentblocks-header-grouping { margin:0 0 2em 0; }
+
+.filtertool-contentblocks-group,
+.filtertool-feedback-list { margin-bottom:2em; }
+.filtertool .filtertool-contentblocks-section .filtertool-contentblocks-list .filtertool-contentblock .filtertool-contentblock-header .filtertool-contentblock-title { font-size: 1.15rem}
+.filtertool-contentblock-body { padding-right:2em; }
+.filtertool-contentblock-body .form-group { margin:0; }
+
+.filtertool .filtertool-questions-form .filtertool-question { background: none;}
+.filtertool .filtertool-feedback-section .filtertool-feedback-list,
+.filtertool-questions-form,
+.filtertool-feedback-section { background: var(--light); }
+.filtertool-questions-form,
+.filtertool-feedback-section { padding: 15px; }
+
+.filtertool input.submit,
+.filtertool-nav button,
+.filtertool-groupingButton button,
+.filtertool-feedback-footer button,
+button.filtertool-savePDFButton,
+button.filtertool-groupingButton {
+    margin: 0 20px 0 0;
+    padding: 0.4em 10px 0.4em 10px;
+    border: 0;
+    border-radius: 0;
+    background-color: var(--primary);
+    color: #fff;
+    font-size: 1em;
+    line-height: 1.625em;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.filtertool input.submit:disabled,
+.filtertool-nav button:disabled,
+.filtertool-groupingButton button:disabled,
+.filtertool-feedback-footer button:disabled,
+button.filtertool-savePDFButton:disabled,
+button.filtertool-groupingButton:disabled {
+   -webkit-transition: background 0.3s ease-in-out;
+   transition: background 0.3s ease-in-out;
+   background: var(--gray);
+   cursor: initial;
+}
+
+button.filtertool-question-help-text-button,
+button.filtertool-contentblock-toggle-button {
+  background-color: var(--primary);
+  color:#fff;
+  border: 0;
+  border-radius: 0;
+  padding: 0.4em 10px 0.4em 10px;
+}
+
+.filtertool-feedback-section li button{
+  background:none!important;
+  border:none;
+  padding:0!important;
+  color:var(--primary);
+  text-decoration:underline;
+  cursor:pointer;
+}
+
+button.beforeLogin span {
+  display: inline-block;
+  line-height: 25px;
+  margin: 0 0.6em 0 0;
+  vertical-align: bottom;
+}
+button.beforeLogin img {
+  height: 38px;
+  width:38px;
+}
+
+.filtertool .filtertool-questions-form .filtertool-question-progress .filtertool-question-progress-bar,
+.filtertool .filtertool-questions-form .filtertool-question-progress .filtertool-question-progress-bar .filtertool-question-progress-bar-progress { height: 10px;}
+#filtertool-container .filtertool-question-progress-bar-progress {
+  background-color:var(--primary);
+    border-radius:20px;
+}
