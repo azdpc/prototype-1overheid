@@ -1361,7 +1361,7 @@ blockquote {
         }
 
         &.breadcrumb {
-            bottom: auto;
+            bottom: auto !important; // Added to force breadcrumb to normal height, always.
             z-index: 15;
         }
         

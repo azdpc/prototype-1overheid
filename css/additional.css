@@ -1228,7 +1228,7 @@ blockquote {
       left: 0;
       bottom: 1rem; }
     .headerImage .overlay.breadcrumb {
-      bottom: auto;
+      bottom: auto !important;
       z-index: 15; }
     .headerImage .overlay.breadcrumb {
       position: absolute;
@@ -1347,8 +1347,7 @@ blockquote {
     .headerImage.magazineHeaderImage h1 {
       font-size: 2.4rem;
       line-height: 1.1;
-      text-align: center;
-	margin-top: 1em; }
+      text-align: center; }
     .headerImage.magazineHeaderImage .policy-challenge {
       font-size: 1.2rem; } }
   @media (min-width: 576px) {
