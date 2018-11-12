@@ -201,12 +201,20 @@ section, main {
 	background-color: transparent;
     display: block;
 	border-radius: 0;
-    margin-left: -1em;
+    margin-left: -0.5em; // Margin for breadcrumb on actionable pages
+
+    @media screen and (min-width: 768px) {
+        margin-left: -1em;
+    }
 
     ul {
         margin: 0;
-        margin-left: -1em;
+        margin-left: -0.5em; // Margin for breadcrumb on policy pages with headerImage
         padding: 0;
+
+        @media screen and (min-width: 768px) {
+            margin-left: -1em;
+        }
         
         &:after {
             content: "";
@@ -221,16 +229,23 @@ section, main {
 		position: relative;
 		margin-bottom: 0;
 		padding: 0;
-		font-size: 1.25rem;
+		font-size: 1rem;
 
         &:first-child a {
             font-weight: bold;
+        }
+        
+        @media screen and (min-width: 481px) {
+            font-size: 1.125rem;
+        }
+        @media screen and (min-width: 768px) {
+            font-size: 1.25rem;
         }
 	}
 
 	a {
     	display: block;
-		padding: 0.8em 1.6em 0.8em 1em;
+		padding: 0.4em 1.2em 0.4em 0.5em;
 		//background-color: var(--vireo-blue-misty);
 		color: var(--vireo-blue-clear);
 		text-decoration: none;
@@ -239,6 +254,14 @@ section, main {
         background-position: right center;
         background-size: 1em;
         background-repeat: no-repeat;
+
+        @media screen and (min-width: 481px) {
+            padding: 0.6em 1.2em 0.6em 0.5em;
+        }
+        @media screen and (min-width: 768px) {
+    		padding: 0.8em 1.6em 0.8em 1em;
+        }
+
 
 		&:hover,
 		&:focus {
@@ -407,6 +430,10 @@ section, main {
 	
 	.grouped .form-check {
 		margin-bottom: 10px;  // Overrule specificity from base rule in style.css
+	}
+	
+	.grouped .form-group {
+    	margin-bottom: 0;
 	}
 }
 
@@ -725,6 +752,10 @@ section, main {
 	letter-spacing: 0.1em;
 	text-transform: uppercase;
 	color: var(--vireo-blue-shade);
+
+    &:first-child {
+        margin-top: 0;
+    }
 }
 
 .vireo-list {
@@ -915,6 +946,9 @@ blockquote {
 }
 .actionable,
 .government .actionable {
+    a:not(.btn) {
+        color: var(--vireo-blue-clear);        
+    }
     .follow-up {
         a {
             background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='12' viewBox='-1.305 -0.312 16 12'%3E%3Cpath fill='%23007BC7' d='M9.333 11.275L7.654 9.689l2.718-2.992-.598.115H0V4.513h9.774l.598.091L7.6 1.587 9.278 0l5.117 5.662z'/%3E%3C/svg%3E"); // Blue arrow right;
@@ -924,7 +958,10 @@ blockquote {
 }
 
 .government,
-.actionalble .government {
+.actionable .government {
+    a:not(.btn) {
+        color: var(--vireo-green-shade);        
+    }
     .follow-up {
         a {
             background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='12' viewBox='-1.305 -0.312 16 12'%3E%3Cpath fill='%23009F85' d='M9.333 11.275L7.654 9.689l2.718-2.992-.598.115H0V4.513h9.774l.598.091L7.6 1.587 9.278 0l5.117 5.662z'/%3E%3C/svg%3E"); // Green arrow right;
@@ -1310,12 +1347,22 @@ blockquote {
         bottom: 0;
         z-index: 12;               
 
-        
         h1 {
             font-weight: bold;
             color: var(--white);
             text-shadow: 0px 0px 0.4em rgba(0,0,0,0.6);
-//             text-align: center;
+//             text-shadow: 0px 0px 0.4emrgba(0,84,70,0.8);
+        }
+
+        &.payoff {
+            top: auto;
+            left: 0;
+            bottom: 1rem;
+        }
+
+        &.breadcrumb {
+            bottom: auto;
+            z-index: 15;
         }
         
         &.breadcrumb {
@@ -1390,23 +1437,116 @@ blockquote {
         }
     }   
 
-    
-    &.magazineHeaderImage {
+    &.personHeaderImage {
+        .role {
+            max-width: 20em;
+            margin: 0;
+            font-family: "RO Serif", serif;
+            font-style: italic;
+            font-size: 1.125rem;
+            line-height: 1.1;
+            color: var(--white);
+            text-shadow: 0px 0px 0.4em rgba(0,0,0,0.6);
+        }
+        
+        h1 {
+            font-size: 1.6rem;
+            line-height: 1.1;
+        }
+        
+
         .overlay {
             &.payoff {
-                top: auto;
-                left: 0;
-                bottom: 2rem;
-            }
-    
-            &.breadcrumb {
-                bottom: auto;
-                z-index: 15;
+                bottom: 0;
             }
             
             &.pagetitle {
+                bottom: 3rem;
+            }
+        }
+
+        @media (min-width: 321px) {
+            h1 {
+                font-size: 2rem;
+                line-height: 1.1;
+            }
+            .overlay {
+                &.pagetitle {
+                    bottom: 2rem;
+                }
+            }
+
+            .role {
+                font-size: 1.2rem;                
+            }
+        }
+        @media (min-width: 576px) {
+            .overlay {
+                &.breadcrumb {
+                    bottom: auto;
+                }                
+                &.pagetitle {
+                    bottom: 4rem;
+                }
+                &.payoff {
+                    bottom: 1rem;
+                }
+            }
+            h1 {
+                font-size: 3rem;
+                line-height: 1.1;
+            }
+            .role {
+                font-size: 1.5rem;
+                line-height: 1.3;
+            }
+        }
+        @media (min-width: 768px) {
+            h1 {
+                font-size: 4rem;
+            }
+            .role {
+                font-size: 2rem;                
+            }
+        }
+        @media (min-width: 1024px) {
+            .overlay {
+                &.pagetitle {
+                    bottom: 5rem;
+                }
+            }
+/*
+            h1 {
+                font-size: 7rem;
+            }
+*/
+            .role {
+                font-size: 2.4rem;                
+            }
+        }
+        @media (min-width: 1200px) {
+            .overlay {
+                &.pagetitle {
+                    bottom: 6rem;
+                }
+            }
+/*
+            h1 {
+                font-size: 8rem;
+            }
+*/
+            .role {
+                font-size: 3rem;
+            }
+        }   
+    }
+
+    
+    &.magazineHeaderImage {
+        .overlay {
+            &.pagetitle {
                 bottom: auto;
-                top: 3rem; 
+                top: 4rem; 
             }
         }
         
@@ -1415,9 +1555,10 @@ blockquote {
         }
         .policy-challenge {
             max-width: 20em;
-            margin-top: 1em;
             font-family: "RO Serif", serif;
             font-style: italic;
+            font-size: 1.125rem;
+            line-height: 1.3;
             color: var(--white);
         }
         
@@ -1446,7 +1587,6 @@ blockquote {
             }
             .policy-challenge {
                 font-size: 1.5rem;                
-                line-height: 1.3;
             }
         }
         @media (min-width: 768px) {
