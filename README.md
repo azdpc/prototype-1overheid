@@ -3,7 +3,7 @@ Prototype van één ingang waar de burger al zijn overheidszaken kan regelen en 
 
 Dit prototype bouwt voort op:
 
--  Het prototype 'overheidsbrede onderwerpen' van de Dienst Publiek & Communicatie van het ministerie van Algemene Zaken.
+- Het prototype 'overheidsbrede onderwerpen' van de Dienst Publiek & Communicatie van het ministerie van Algemene Zaken.
 - Het Fieldlab prototype 1overheid, dat is ontwikkeld tijdens de Fieldlab Dienstverlening van 24 tot en met 28 september 2018 in Zwolle.
 
 ## Doel van het prototype
@@ -39,5 +39,5 @@ Het prototype 1overheid is gelieerd aan het programma Mens Centraal van het mini
 
 
 ## Versies
-Huidige versie: v1.1 | 12 november 2018 (vireo)
-Gebaseerd op: v1.0 | 28 september 2018 (Fieldlab Zwolle)
+- Huidige versie: v1.1 | 12 november 2018 (vireo)
+- Gebaseerd op: v1.0 | 28 september 2018 (Fieldlab Zwolle)
