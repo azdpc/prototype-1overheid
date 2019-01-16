@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="nl-NL"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Rijbewijs | 1overheid</title>
+  <meta name="description" content="Prototype voor 1overheid: informatie, diensten, beleid en bestuur">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/additional.css">
+
+</head>
+
+<body cz-shortcut-listen="true">
+  <header>
+    <div class="container-fluid">
+        <div class="notVisibleInFrame">
+            <nav class="navbar navbar-light">
+                <a href="home.html" class="navbar-brand">
+                    <img src="img/een-overheid.svg" alt="1overheid">
+                    <em class="payoff">alles regelen op 1 plek</em>
+                </a>
+                
+                <div class="navbar-options">
+                    <div class="search-wrapper">
+                        <button class="dropdown-toggle" type="button" id="dropdownSearchButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span>zoeken</span>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownSearchButton">
+                            <div class="container-fluid">
+
+<div class="row">
+    <div class="col-lg-10 offset-lg-1 col-md-12">
+        <div class="container-fluid">
+            <form action="#">
+                <fieldset>
+                    <input type="search" />
+                    <input class="btn btn-primary btn-lg" type="submit" value="zoeken" />
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</div>
+
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="account-wrapper">
+                        <div class="loggedInElm">
+                            <a class="button" href="mijn-overheid.html">
+                                <span>mijn overheid</span>
+                                <strong class="notification">3 <span class="visually-hidden">nieuwe berichten</span></strong>
+                            </a>
+                        </div>
+                        <div class="loggedOutElm">
+                            <button type="button" id="loginAccountButton" data-toggle="modal" data-target="#loginForm">
+                                <span>inloggen</span>
+                            </button>
+
+                        </div>
+                    </div>
+                    
+                    <div class="contact-wrapper">
+                        <button class="dropdown-toggle" type="button" id="dropdownContactButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span>contact</span>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownContactButton">
+                            <div class="container-fluid">
+
+<div class="row">
+    <div class="col-lg-10 offset-lg-1 col-md-12">
+                                    <p>Contactinformatie</p>
+    </div>
+</div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-wrapper">
+                        <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span>menu</span>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <div class="container-fluid">
+
+
+<div class="row">
+    <div class="col-lg-10 offset-lg-1 col-md-12">
+
+                    <div class="row themes-list">
+                        
+                        <!-- START thema geld -->
+                        <div class="col-sm-4">
+
+<a href="#thema-geld">
+    <h3>
+        <div class="icon">
+            <img src="content/icons/9000-budget.svg" />
+        </div>
+        Geld
+    </h3>
+    <p>Bijstand aanvragen, Voorwaarden WW bekijken, Aangifte doen, ...</p>
+</a>
+
+                        </div>
+                        <!-- EINDE thema geld -->
+
+                        <!-- START thema wonen -->
+                        <div class="col-sm-4">
+<a href="#thema-wonen">
+    <h3>
+        <div class="icon">
+            <img src="content/icons/5202-laag-huis.svg" />
+        </div>
+        Wonen
+    </h3>
+    <p>Woning huren, Woning kopen, Energielabel aanvragen, ...</p>
+</a>
+
+                        </div>
+                        <!-- EINDE thema wonen -->
+
+                        <!-- START thema -->
+                        <div class="col-sm-4">
+
+<a href="#thema-familie">
+    <h3>
+        <div class="icon">
+            <img src="content/icons/4029-familie.svg" />
+        </div>
+        Familie
+    </h3>
+    <p>Geboorte aangeven, Kind erkennen, Jeugdhulp aanvragen, ...</p>
+</a>
+
+                        </div>
+                        <!-- EINDE thema -->
+
+                        <!-- START thema -->
+                        <div class="col-sm-4">
+
+<a href="#thema-reizen">
+    <h3>
+        <div class="icon">
+            <img src="content/icons/8012-reisbagage.svg" />
+        </div>
+        Reizen
+    </h3>
+    <p>Paspoort of ID-kaart aanvragen, Nederlandse nationaliteit verkrijgen, ...</p>
+</a>
+
+                        </div>
+                        <!-- EINDE thema -->
+
+                        <!-- START thema -->
+                        <div class="col-sm-4">
+
+<a href="#thema-onderwijs">
+    <h3>
+        <div class="icon">
+            <img src="content/icons/4082-onderwijs.svg" />
+        </div>        
+        Onderwijs
+    </h3>
+    <p>Overzicht schoolvakanties, Studiefinanciering aanvragen, Inschrijven voor studie, ...</p>
+</a>
+
+                        </div>
+                        <!-- EINDE thema -->
+
+                        <!-- START thema -->
+                        <div class="col-sm-4">
+
+<a href="#thema-recht">
+    <h3>
+        <div class="icon">
+            <img src="content/icons/7001-recht-aka-veiligheid-en-justitie.svg" />
+        </div>
+        Recht
+    </h3>
+    <p>Identiteitsfraude melden, Geluidsoverlast doorgeven, ...</p>
+</a>
+
+                        </div>
+                        <!-- EINDE thema -->
+
+                        <!-- START thema -->
+                        <div class="col-sm-4">
+
+<a href="verkeer.html">
+    <h3>
+        <div class="icon">
+            <img src="content/icons/5003-auto.svg" />
+        </div>
+        Verkeer
+    </h3>
+    <p>Rijbewijs verlengen, Verkeersregels checken,OV-chipkaart aanvragen ...</p>
+</a>
+
+                        </div>
+                        <!-- EINDE thema -->
+
+                        <!-- START thema -->
+                        <div class="col-sm-4">
+
+<a href="#thema-gezondheid">
+    <h3>
+        <div class="icon">
+            <img src="content/icons/4028-zorg.svg" />
+        </div>
+        Gezondheid
+    </h3>
+    <p>WMO-aanvragen, Aangifte doen van overlijden, Vergoedingen basisverzekering bekijken ...</p>
+</a>
+
+                        </div>
+                        <!-- EINDE thema -->
+
+
+                    </div>
+
+    </div>
+</div>
+
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                
+
+            </nav>
+        </div>
+
+    </div>    
+</header>
+
+<banner>
+    <div class="loggedInElm">
+        <div id="login-foldout" class="navbar-pinned expanded">
+            <div class="container-fluid">
+
+                <div class="navbar-pinned-content">
+                    <div class="row align-items-center">
+                        <div class="col-8">
+                                Ingelogd als Asha Martinez
+                        </div>
+                        <div class="col-4">
+                                <button class="btn btn-success logoutBtn float-right">Uitloggen</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</banner>
+
+
+<div class="modal fade loginmodal" id="loginForm" tabindex="-1" role="dialog" aria-labelledby="modal-header" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="modal-header">
+          <img src="img/digid-logo.svg" alt="digid">Login met DigiD
+                    </h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <form>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="gebruikersnaam">DigiD gebruikersnaam</label>
+            <input type="text" class="form-control" id="gebruikersnaam" placeholder="DigiD gebruikersnaam" value="asha_madhavan">
+                        </div>
+                        <div class="form-group">
+                            <label for="wachtwoord">Wachtwoord</label>
+                            <input type="password" class="form-control" id="wachtwoord" placeholder="Wachtwoord" value="********">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" id="loginBtn">Inloggen</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+<div class="modal fade contactModal" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contact-modal-header" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="contact-modal-header">Heeft u een vraag of hulp nodig?</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <form>
+                <div class="modal-body">
+                    <p>U kunt op contact met ons opnemen via:</p>
+                    <ul>
+                        <li class="phone">
+                            <a href="tel:1400">Bel naar 1400</a>
+                        </li>
+                        <li class="app">
+                            <a href="#">App uw vraag naar 1400</a>
+                        </li>
+                        <li class="chat">
+                            <a class="openChat" data-toggle="modal" data-target="#chatModal" href="#">Direct chatten</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade chatModal" id="chatModal" tabindex="-1" role="dialog" aria-labelledby="chat-modal-header" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="chat-modal-header">Direct chatten</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <form>
+                    <div class="modal-body">
+                        
+                            <div class="messages">
+                                <div class="message">
+                                    <div class="avatar">
+                <img class="img-fluid" src="img/avatar.svg">
+                                    </div>
+                                    <div class="content">
+                                        <span class="name">Medewerker:</span>
+                                        <p>Goedemiddag, waarmee kan ik u helpen?</p>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            
+                            <div class="messageForm">
+                                <div class="inputField">
+                                    <input class="form-control form-control-lg" type="text" placeholder="Typ hier uw vraag">
+                                </div>
+                                <div class="submitBtn">
+                                    <button type="button" class="btn btn-primary btn-lg">Verstuur</button>
+                                </div>
+                            </div>
+                            
+                        
+                    </div>
+                    <div class="modal-footer">
+                        
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    
+  
+<main role="main" class="actionable">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <ul class="breadcrumb">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="verkeer.html">Verkeer</a></li>
+                </ul>                
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-10 offset-lg-1 col-md-12">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12 notVisibleInFrame">
+                            <h1>Rijbewijs</h1>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            
+                            <h2 class="vireo-light">Meteen regelen</h2>
+                            
+                            <div class="main-actions">
+                                <table>
+ <caption>Zomervakantie 2019</caption>
+ <thead>
+  <tr>
+   <th scope="col">Regio Noord</th>
+   <th scope="col">Regio Midden</th>
+   <th scope="col">Regio Zuid</th>
+  </tr>
+ </thead>
+ <tbody>
+  <tr>
+   <td>13 juli t&#x2F;m 25 augustus 2019</td>
+   <td>20 juli t&#x2F;m 1 september 2019</td>
+   <td>6 juli t&#x2F;m 18 augustus 2019</td>
+  </tr>
+ </tbody>
+</table>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<main class="informative">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-10 offset-lg-1 col-md-12">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+
+                            <h2 class="vireo-light">Opzoeken</h2>
+
+                                                                    <div class="toggleSet">
+                                                                        <h3 class="toggleTopic toggle-next">Soorten rijbewijzen</h3>
+                                                                        <div class="toggleContent">
+                                                                            <p>
+                                                                             <a href="#een-dummy-link-die-niets-doet">Welke rijbewijzen (rijbewijscategorieën) zijn er?</a>
+                                                                            </p>
+                                                                            <p>
+                                                                             <a href="#een-dummy-link-die-niets-doet">Autorijbewijs</a>
+                                                                            </p>
+                                                                            <p>
+                                                                             <a href="#een-dummy-link-die-niets-doet">Motorrijbewijs</a>
+                                                                            </p>
+                                                                             <p>
+                                                                             <a href="#een-dummy-link-die-niets-doet">Brommerrijbewijs</a>
+                                                                            </p>
+                                                                             <p>
+                                                                             <a href="#een-dummy-link-die-niets-doet">Tractorrijbewijs</a>
+                                                                            </p>
+                                                                             <p>
+                                                                             <a href="#een-dummy-link-die-niets-doet">Busrijbewijs</a>
+                                                                            </p>
+                                                                             <p>
+                                                                             <a href="#een-dummy-link-die-niets-doet">Vrachtwagen</a>
+                                                                            </p>
+                                                                             <p>
+                                                                             <a href="#een-dummy-link-die-niets-doet">Welk rijbewijs heb ik nodig om in een camper te rijden?</a>
+                                                                            </p>
+                                                                             <p>
+                                                                             <a href="#een-dummy-link-die-niets-doet">Welk rijbewijs heb ik nodig om met een aanhanger, oplegger of caravan achter mijn auto te rijden?</a>
+                                                                            </p>
+                                                                             <p>
+                                                                             <a href="#een-dummy-link-die-niets-doet">Wanneer heb ik een Nationaal certificaat personenvervoer nodig?</a>
+                                                                            </p>
+                                                                        </div>
+
+                                                                        <h3 class="toggleTopic toggle-next">Aanvraag eerste rijbewijs</h3>
+                                                                        <div class="toggleContent">
+                                                                            <p>
+                                                                             <a href="#een-dummy-link-die-niets-doet">Hoe vraag ik mijn eerste rijbewijs aan?</a>
+                                                                            </p>
+                                                                            <p>
+                                                                             <a href="#een-dummy-link-die-niets-doet">Hoe vraag ik een begeleiderspas aan?</a>
+                                                                            </p>
+                                                                        </div>
+
+                                                                        <h3 class="toggleTopic toggle-next">Medische keuring en rijvaardigheid</h3>
+                                                                        <div class="toggleContent">
+                                                                            <p>
+                                                                             <a href="#een-dummy-link-die-niets-doet">Moet ik me medisch laten keuren om brommer te mogen rijden?</a>
+                                                                            </p>
+                                                                            <p>
+                                                                             <a href="#een-dummy-link-die-niets-doet">Hoe werkt de medische keuring voor een groot rijbewijs?</a>
+                                                                            </p>
+                                                                            <p>
+                                                                             <a href="#een-dummy-link-die-niets-doet">Wanneer moet ik een medische keuring laten doen voor mijn autorijbewijs of motorrijbewijs?</a>
+                                                                            </p>
+                                                                        </div>
+
+                                                                        <h3 class="toggleTopic toggle-next">Bekeuring en invordering rijbewijs</h3>
+                                                                        <div class="toggleContent">
+                                                                            <p>
+                                                                             <a href="#een-dummy-link-die-niets-doet">Welke strafbare feiten tellen mee voor het beginnersrijbewijs?</a>
+                                                                            </p>
+                                                                            <p>
+                                                                             <a href="#een-dummy-link-die-niets-doet">Kan ik een boete (bekeuring) krijgen voor het rijden zonder rijbewijs?</a>
+                                                                            </p>
+                                                                            <p>
+                                                                             <a href="#een-dummy-link-die-niets-doet">Raak ik mijn rijbewijs kwijt als ik dronken op de fiets word aangehouden door de politie?</a>
+                                                                            </p>
+                                                                            <p>
+                                                                             <a href="#een-dummy-link-die-niets-doet">Wanneer krijg ik een beginnersrijbewijs?</a>
+                                                                            </p>
+                                                                            <p>
+                                                                             <a href="#een-dummy-link-die-niets-doet">Wanneer wordt mijn rijbewijs ingevorderd?</a>
+                                                                            </p>
+                                                                            <p>
+                                                                             <a href="#een-dummy-link-die-niets-doet">Wat houdt het onderzoek naar uw rijvaardigheid in?</a>
+                                                                            </p>
+                                                                            <p>
+                                                                             <a href="#een-dummy-link-die-niets-doet">Wat is het puntenrijbewijs?</a>
+                                                                            </p>
+                                                                        </div>
+
+                                                                        <h3 class="toggleTopic toggle-next">Rijbewijs in het buitenland</h3>
+                                                                        <div class="toggleContent">
+                                                                            <p>
+                                                                             <a href="#een-dummy-link-die-niets-doet">Wat moet ik doen als mijn rijbewijs is gestolen of als ik hem heb verloren in het buitenland?</a>
+                                                                            </p>
+                                                                            <p>
+                                                                             <a href="#een-dummy-link-die-niets-doet">Wanneer heb ik een internationaal rijbewijs nodig?</a>
+                                                                            </p>
+                                                                            <p>
+                                                                             <a href="#een-dummy-link-die-niets-doet">Mag ik met mijn Nederlandse rijbewijs in het buitenland rijden?</a>
+                                                                            </p>
+                                                                            <p>
+                                                                             <a href="#een-dummy-link-die-niets-doet">Kan ik mijn buitenlandse rijbewijs omwisselen voor een Nederlands rijbewijs?</a>
+                                                                            </p>
+                                                                            <p>
+                                                                             <a href="#een-dummy-link-die-niets-doet">Kan mijn Nederlandse rijbewijs in het buitenland worden ingevorderd?</a>
+                                                                            </p>
+                                                                            <p>
+                                                                             <a href="#een-dummy-link-die-niets-doet">Mag ik met mijn buitenlandse rijbewijs in Nederland rijden?</a>
+                                                                            </p>
+                                                                        </div>
+
+                                                                        <h3 class="toggleTopic toggle-next">Rijles en rijexamen</h3>
+                                                                        <div class="toggleContent">
+                                                                            <p>
+                                                                             <a href="#een-dummy-link-die-niets-doet">Hoe oud moet ik zijn voor ik rijles mag nemen en rijexamen mag doen voor mijn autorijbewijs?</a>
+                                                                            </p>
+                                                                            <p>
+                                                                             <a href="#een-dummy-link-die-niets-doet">Hoe oud moet ik zijn voor ik rijles mag nemen en rijexamen mag doen voor mijn motorrijbewijs?</a>
+                                                                            </p>
+                                                                            <p>
+                                                                             <a href="#een-dummy-link-die-niets-doet">Wanneer mag ik rijles nemen en rijexamen doen voor mijn bromfietsrijbewijs?</a>
+                                                                            </p>
+                                                                        </div>
+
+                                                                    </div>
+
+<!--
+                                                                    <div class="toggleSet">
+                                                                        <h3 class="toggleTopic toggle-next">Rijbewijs en soort vervoermiddel</h3>
+                                                                        <div class="toggleContent">
+                                                                            <p>
+                                                                             <a href="#een-dummy-link-die-niets-doet">Link naar onderwerp 1</a>
+                                                                            </p>
+                                                                            <p>
+                                                                             <a href="#een-dummy-link-die-niets-doet">Link naar onderwerp 2</a>
+                                                                            </p>
+                                                                            <p>
+                                                                             <a href="#een-dummy-link-die-niets-doet">Link naar onderwerp 3</a>
+                                                                            </p>
+                                                                        </div>
+                                                                        <h3 class="toggleTopic toggle-next">Certificaat personenvervoer</h3>
+                                                                        <div class="toggleContent">
+                                                                            <p>
+                                                                             <a href="#een-dummy-link-die-niets-doet">Link naar onderwerp 1</a>
+                                                                            </p>
+                                                                            <p>
+                                                                             <a href="#een-dummy-link-die-niets-doet">Link naar onderwerp 2</a>
+                                                                            </p>
+                                                                        </div>
+                                                                        <h3 class="toggleTopic toggle-next">Medische keuring en rijvaardigheid</h3>
+                                                                        <div class="toggleContent">
+                                                                            <p>
+                                                                             <a href="#een-dummy-link-die-niets-doet">Link naar onderwerp 1</a>
+                                                                            </p>
+                                                                            <p>
+                                                                             <a href="#een-dummy-link-die-niets-doet">Link naar onderwerp 2</a>
+                                                                            </p>
+                                                                            <p>
+                                                                             <a href="#een-dummy-link-die-niets-doet">Link naar onderwerp 3</a>
+                                                                            </p>
+                                                                        </div>
+                                                                        <h3 class="toggleTopic toggle-next">Bekeuring en invordering rijbewijs</h3>
+                                                                        <div class="toggleContent">
+                                                                            <p>
+                                                                             <a href="#een-dummy-link-die-niets-doet">Link naar onderwerp 1</a>
+                                                                            </p>
+                                                                            <p>
+                                                                             <a href="#een-dummy-link-die-niets-doet">Link naar onderwerp 2</a>
+                                                                            </p>
+                                                                            <p>
+                                                                             <a href="#een-dummy-link-die-niets-doet">Link naar onderwerp 3</a>
+                                                                            </p>
+                                                                        </div>
+                                                                        <h3 class="toggleTopic toggle-next">Rijbewijs in het buitenland</h3>
+                                                                        <div class="toggleContent">
+                                                                            <p>
+                                                                             <a href="#een-dummy-link-die-niets-doet">Link naar onderwerp 1</a>
+                                                                            </p>
+                                                                            <p>
+                                                                             <a href="#een-dummy-link-die-niets-doet">Link naar onderwerp 2</a>
+                                                                            </p>
+                                                                            <p>
+                                                                             <a href="#een-dummy-link-die-niets-doet">Link naar onderwerp 3</a>
+                                                                            </p>
+                                                                        </div>
+                                                                        <h3 class="toggleTopic toggle-next">Buitenlands rijbewijs in Nederland</h3>
+                                                                        <div class="toggleContent">
+                                                                            <p>
+                                                                             <a href="#een-dummy-link-die-niets-doet">Link naar onderwerp 1</a>
+                                                                            </p>
+                                                                            <p>
+                                                                             <a href="#een-dummy-link-die-niets-doet">Link naar onderwerp 2</a>
+                                                                            </p>
+                                                                        </div>
+                                                                        <h3 class="toggleTopic toggle-next">Rijles en examen</h3>
+                                                                        <div class="toggleContent">
+                                                                            <p>
+                                                                             <a href="#een-dummy-link-die-niets-doet">Link naar onderwerp 1</a>
+                                                                            </p>
+                                                                            <p>
+                                                                             <a href="#een-dummy-link-die-niets-doet">Link naar onderwerp 2</a>
+                                                                            </p>
+                                                                            <p>
+                                                                             <a href="#een-dummy-link-die-niets-doet">Link naar onderwerp 3</a>
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+-->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+    <div class="modal fade loginmodal" id="loginToStartForm" tabindex="-1" role="dialog" aria-labelledby="modal-header" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="modal-header">
+          <img src="img/digid-logo.svg" alt="digid"> Login met DigiD
+                    </h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <form>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="gebruikersnaam">DigiD gebruikersnaam</label>
+            <input type="text" class="form-control" id="gebruikersnaam" placeholder="DigiD gebruikersnaam" value="asha_madhavan">
+                        </div>
+                        <div class="form-group">
+                            <label for="wachtwoord">Wachtwoord</label>
+                            <input type="password" class="form-control" id="wachtwoord" placeholder="Wachtwoord" value="********">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" id="loginAndStartBtn">Inloggen</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+</main>
+
+
+
+<footer>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <span class="align-middle lead">1overheid: voor al uw overheidszaken.</span>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="modal fade contactModal" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contact-modal-header" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="contact-modal-header">
+                        Contact
+                    </h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+               
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Direct chatten</button>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+  <script src="js/main.js"></script>
+
+</body></html>
