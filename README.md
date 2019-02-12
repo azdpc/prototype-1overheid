@@ -40,4 +40,4 @@ Het prototype 1overheid is gelieerd aan het programma Mens Centraal van het mini
 
 ## Versies
 - Huidige versie: v1.1 - 12 november 2018 (Vireo)
-- Gebaseerd op: v1.0 - 28 september 2018 (Fieldlab Zwolle)
+- Gebaseerd op: v1.0 - 28 september 2018 (Fieldlab Zwolle, https://github.com/RDBreed/fieldlab)
