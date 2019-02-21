@@ -10,7 +10,7 @@
 	--vireo-blue-shade:  #0073AD;
 
 	--vireo-green-misty: #F0F8F8;
-	--vireo-green-light: #DFF7F5;
+	--vireo-green-light: #DAEFEC; // was: DFF7F5
 	--vireo-green-smoke: #B7E5DC;
 	--vireo-green-clear: #009F85;
 	--vireo-green-shade: #00856F;
@@ -528,7 +528,7 @@ section, main {
         border-style: solid;
         border-width: .6em;
         border-color: transparent;
-        border-bottom-color: var(--vireo-blue-smoke);
+        border-bottom-color: var(--vireo-blue-light);
     }
     
     .dropdown-menu.show > .container-fluid:before {
@@ -572,7 +572,7 @@ section, main {
         padding: 0;
         border: 0;
         border-radius: 0;
-    	background-color: var(--vireo-blue-smoke);
+    	background-color: var(--vireo-blue-light); // was smoke
     	border-bottom: 4px solid var(--white);
         
         .container-fluid {
@@ -690,11 +690,11 @@ section, main {
 
         .show button:before,
         a.button:before {
-            border-bottom-color: var(--vireo-green-smoke);
+            border-bottom-color: var(--vireo-green-light);
         }
         
         .dropdown-menu {
-        	background-color: var(--vireo-green-smoke);
+        	background-color: var(--vireo-green-light); // was smoke
         }
     }
 
@@ -1515,11 +1515,6 @@ blockquote {
                     bottom: 5rem;
                 }
             }
-/*
-            h1 {
-                font-size: 7rem;
-            }
-*/
             .role {
                 font-size: 2.4rem;                
             }
@@ -1530,11 +1525,6 @@ blockquote {
                     bottom: 6rem;
                 }
             }
-/*
-            h1 {
-                font-size: 8rem;
-            }
-*/
             .role {
                 font-size: 3rem;
             }
