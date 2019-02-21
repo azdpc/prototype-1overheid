@@ -267,6 +267,8 @@ button.beforeLogin img {
   --vireo-green-smoke: #B7E5DC;
   --vireo-green-clear: #009F85;
   --vireo-green-shade: #00856F;
+  --vireo-yellow:         #ffb612;
+  --vireo-yellow-light:   #fefbdd;
   --vireo-green-misty-trans:  rgba(240,248,248,0.85);
   --vireo-green-light-trans:  rgba(223,247,245,0.85);
   --vireo-button-green:       #50AA00;
@@ -1632,3 +1634,55 @@ section .policy-government-switch {
   background-color: #ffb612;
   height: 8rem;
   margin-top: -4rem; }
+
+/* PROJECT VIREO STYLES */
+.impact {
+  position: relative;
+  background-color: var(--vireo-green-misty);
+  padding-top: 1rem;
+  padding-bottom: 8rem; }
+
+.impactbar {
+  position: absolute;
+  z-index: 9;
+  background-color: #ca005d;
+  background-color: var(--vireo-yellow-light);
+  background-color: #efb2ce;
+  background-color: #ca005d;
+  color: white;
+  width: 100%;
+  padding: 2rem 2rem;
+  margin-top: -3rem;
+  border: 4px solid white;
+  font-size: 30px; }
+
+.impactbar__header {
+  display: flex; }
+
+.impactbar__fact {
+  margin-right: 1rem;
+  font-size: 98px;
+  line-height: .75;
+  font-weight: bold; }
+
+.impactbar__explanation {
+  position: relative;
+  font-size: 24px;
+  line-height: 1.1;
+  font-family: "RO Serif", serif;
+  font-style: italic;
+  max-width: 16em;
+  padding-top: 1rem; }
+  .impactbar__explanation::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 8rem;
+    height: 1px;
+    background-color: white; }
+
+.impactbar__body {
+  height: auto; }
+
+/* PROJECT VIREO STYLES */
