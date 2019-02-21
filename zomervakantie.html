@@ -2,7 +2,7 @@
 <html lang="nl-NL"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Homepagina | 1overheid</title>
+  <title>Rijbewijs | 1overheid</title>
   <meta name="description" content="Prototype voor 1overheid: informatie, diensten, beleid en bestuur">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="css/style.css">
@@ -10,18 +10,17 @@
 
 </head>
 
-<body cz-shortcut-listen="true" class="home">
+<body cz-shortcut-listen="true">
   <header>
     <div class="container-fluid">
         <div class="notVisibleInFrame">
             <nav class="navbar navbar-light">
-                <h1 class="navbar-brand">
+                <a href="home.html" class="navbar-brand">
                     <img src="img/een-overheid.svg" alt="1overheid">
                     <em class="payoff">alles regelen op 1 plek</em>
-                </h1>
+                </a>
                 
                 <div class="navbar-options">
-                    <!--
                     <div class="search-wrapper">
                         <button class="dropdown-toggle" type="button" id="dropdownSearchButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <span>zoeken</span>
@@ -45,7 +44,6 @@
                             </div>
                         </div>
                     </div>
-                    -->
                     
                     <div class="account-wrapper">
                         <div class="loggedInElm">
@@ -59,25 +57,6 @@
                                 <span>inloggen</span>
                             </button>
 
-<!--
-                            <button class="dropdown-toggle" type="button" id="dropdownAccountButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span>inloggen</span>
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownAccountButton">
-                                <div class="container-fluid">
-
-<div class="row">
-    <div class="col-lg-10 offset-lg-1 col-md-12">
-                                    <p>
-                                        Lorem ipsum account.
-                                    </p>
-    </div>
-</div>
-
-
-                                </div>
-                            </div>
--->
                         </div>
                     </div>
                     
@@ -161,14 +140,14 @@
                         <!-- START thema -->
                         <div class="col-sm-4">
 
-<a href="reizen.html">
+<a href="#thema-reizen">
     <h3>
         <div class="icon">
             <img src="content/icons/8012-reisbagage.svg" />
         </div>
         Reizen
     </h3>
-    <p>Paspoort of ID-kaart aanvragen, reisadviezen, ...</p>
+    <p>Paspoort of ID-kaart aanvragen, Nederlandse nationaliteit verkrijgen, ...</p>
 </a>
 
                         </div>
@@ -177,7 +156,7 @@
                         <!-- START thema -->
                         <div class="col-sm-4">
 
-<a href="onderwijs.html">
+<a href="#thema-onderwijs">
     <h3>
         <div class="icon">
             <img src="content/icons/4082-onderwijs.svg" />
@@ -238,8 +217,9 @@
                         </div>
                         <!-- EINDE thema -->
 
+
                     </div>
-    
+
     </div>
 </div>
 
@@ -249,6 +229,7 @@
                     </div>
 
                 </div>
+                
 
             </nav>
         </div>
@@ -273,29 +254,6 @@
                 </div>
 
             </div>
-        </div>
-    </div>
-</banner>
-
-<banner role="search">
-    <div class="navbar-pinned expanded search-wrapper">
-        <div class="navbar-pinned-content">
-
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-10 offset-lg-1 col-md-12">
-                        <div class="container-fluid">
-                            <form action="#">
-                                <fieldset>
-                                    <input type="search" />
-                                    <input class="btn btn-primary btn-lg" type="submit" value="zoeken" />
-                                </fieldset>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
         </div>
     </div>
 </banner>
@@ -412,136 +370,46 @@
 <main role="main" class="actionable">
     <div class="container-fluid">
         <div class="row">
+            <div class="col-12">
+                <ul class="breadcrumb">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="verkeer.html">Verkeer</a></li>
+                </ul>                
+            </div>
+        </div>
+
+        <div class="row">
             <div class="col-lg-10 offset-lg-1 col-md-12">
                 <div class="container-fluid">
-                    <div class="row themes-list">
-                        
-                        <!-- START thema geld -->
-                        <div class="col-sm-6">
+                    <div class="row">
+                        <div class="col-md-12 notVisibleInFrame">
+                            <h1>Zomervakantie</h1>
+                        </div>
+                    </div>
+                </div>
 
-<a href="#thema-geld">
-    <h3>
-        <div class="icon">
-            <img src="content/icons/9000-budget.svg" />
-        </div>
-        Geld
-    </h3>
-    <p>Bijstand aanvragen, Voorwaarden WW bekijken, Aangifte doen, ...</p>
-</a>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            
+                            <h2 class="vireo-light">2019</h2>
+                            
+                            <div class="main-actions">
+                                <table>
+ <thead>
+  <tr>
+   <th scope="col">Regio Noord</th>
+  </tr>
+ </thead>
+ <tbody>
+  <tr>
+   <td>13 juli t&#x2F;m 25 augustus 2019</td>
+  </tr>
+ </tbody>
+</table>
+                            </div>
 
                         </div>
-                        <!-- EINDE thema geld -->
-
-                        <!-- START thema wonen -->
-                        <div class="col-sm-6">
-<a href="#thema-wonen">
-    <h3>
-        <div class="icon">
-            <img src="content/icons/5202-laag-huis.svg" />
-        </div>
-        Wonen
-    </h3>
-    <p>Woning huren, Woning kopen, Energielabel aanvragen, ...</p>
-</a>
-
-                        </div>
-                        <!-- EINDE thema wonen -->
-
-                        <!-- START thema -->
-                        <div class="col-sm-6">
-
-<a href="#thema-familie">
-    <h3>
-        <div class="icon">
-            <img src="content/icons/4029-familie.svg" />
-        </div>
-        Familie
-    </h3>
-    <p>Geboorte aangeven, Kind erkennen, Jeugdhulp aanvragen, ...</p>
-</a>
-
-                        </div>
-                        <!-- EINDE thema -->
-
-                        <!-- START thema -->
-                        <div class="col-sm-6">
-
-<a href="reizen.html">
-    <h3>
-        <div class="icon">
-            <img src="content/icons/8012-reisbagage.svg" />
-        </div>
-        Reizen
-    </h3>
-    <p>Paspoort of ID-kaart aanvragen, reisadviezen, ...</p>
-</a>
-
-                        </div>
-                        <!-- EINDE thema -->
-
-                        <!-- START thema -->
-                        <div class="col-sm-6">
-
-<a href="onderwijs.html">
-    <h3>
-        <div class="icon">
-            <img src="content/icons/4082-onderwijs.svg" />
-        </div>        
-        Onderwijs
-    </h3>
-    <p>Overzicht schoolvakanties, Studiefinanciering aanvragen, Inschrijven voor studie, ...</p>
-</a>
-
-                        </div>
-                        <!-- EINDE thema -->
-
-                        <!-- START thema -->
-                        <div class="col-sm-6">
-
-<a href="#thema-recht">
-    <h3>
-        <div class="icon">
-            <img src="content/icons/7001-recht-aka-veiligheid-en-justitie.svg" />
-        </div>
-        Recht
-    </h3>
-    <p>Identiteitsfraude melden, Geluidsoverlast doorgeven, ...</p>
-</a>
-
-                        </div>
-                        <!-- EINDE thema -->
-
-                        <!-- START thema -->
-                        <div class="col-sm-6">
-
-<a href="verkeer.html">
-    <h3>
-        <div class="icon">
-            <img src="content/icons/5003-auto.svg" />
-        </div>
-        Verkeer
-    </h3>
-    <p>Rijbewijs verlengen, Verkeersregels checken,OV-chipkaart aanvragen ...</p>
-</a>
-
-                        </div>
-                        <!-- EINDE thema -->
-
-                        <!-- START thema -->
-                        <div class="col-sm-6">
-
-<a href="#thema-gezondheid">
-    <h3>
-        <div class="icon">
-            <img src="content/icons/4028-zorg.svg" />
-        </div>
-        Gezondheid
-    </h3>
-    <p>WMO-aanvragen, Aangifte doen van overlijden, Vergoedingen basisverzekering bekijken ...</p>
-</a>
-
-                        </div>
-                        <!-- EINDE thema -->
 
                     </div>
                 </div>
@@ -556,8 +424,22 @@
             <div class="col-lg-10 offset-lg-1 col-md-12">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-md-12">
-<!--                             Rest van de content -->
+                        <div class="col-12">
+
+                            <h2 class="vireo-light">Opzoeken</h2>
+
+                                                                    <div class="toggleSet">
+                                                                        <h3 class="toggleTopic toggle-next">Andere vakanties</h3>
+                                                                        <div class="toggleContent">
+                                                                            <p>
+                                                                             <a href="#een-dummy-link-die-niets-doet">....</a>
+                                                                            </p>
+                                                                            <p>
+                                                                             <a href="#een-dummy-link-die-niets-doet">....</a>
+                                                                            </p>
+                                                                            
+-->
+
                         </div>
                     </div>
                 </div>

@@ -15,6 +15,9 @@
 	--vireo-green-clear: #009F85;
 	--vireo-green-shade: #00856F;
 
+    --vireo-yellow:         #ffb612;
+    --vireo-yellow-light:   #fefbdd;
+
 	--vireo-green-misty-trans:  rgba(240,248,248,0.85);
 	--vireo-green-light-trans:  rgba(223,247,245,0.85);
 
@@ -1956,4 +1959,16 @@ section {
     .content-item {
         margin-top: 0;    
     }
+}
+
+
+.impactbar {
+    position: relative;
+    z-index: 9;
+    background-color: rgb(202,0,93);
+    //background-color: #a90061;
+    background-color: #ffb612;
+    height: 8rem;
+    margin-top: -4rem;
+
 }

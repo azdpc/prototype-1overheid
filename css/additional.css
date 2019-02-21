@@ -257,21 +257,23 @@ button.beforeLogin img {
 :root {
   --black: #000;
   --tarmac: #222;
-  --vireo-blue-misty: #F0FAFF;
-  --vireo-blue-light: #E6F9FF;
-  --vireo-blue-smoke: #C2E2F2;
-  --vireo-blue-clear: #007BC7;
-  --vireo-blue-shade: #0073AD;
+  --vireo-blue-misty:  #F0FAFF;
+  --vireo-blue-light:  #E6F9FF;
+  --vireo-blue-smoke:  #C2E2F2;
+  --vireo-blue-clear:  #007BC7;
+  --vireo-blue-shade:  #0073AD;
   --vireo-green-misty: #F0F8F8;
   --vireo-green-light: #DFF7F5;
   --vireo-green-smoke: #B7E5DC;
   --vireo-green-clear: #009F85;
   --vireo-green-shade: #00856F;
-  --vireo-green-misty-trans: rgba(240, 248, 248, 0.85);
-  --vireo-green-light-trans: rgba(223, 247, 245, 0.85);
-  --vireo-button-green: #50AA00;
+  --vireo-yellow:         #ffb612;
+  --vireo-yellow-light:   #fefbdd;
+  --vireo-green-misty-trans:  rgba(240,248,248,0.85);
+  --vireo-green-light-trans:  rgba(223,247,245,0.85);
+  --vireo-button-green:       #50AA00;
   --vireo-button-green-hover: #4A9600;
-  --vireo-warning-red: #CC0000; }
+  --vireo-warning-red:        #CC0000; }
 
 /* Import RO webfonts */
 @font-face {
@@ -1244,7 +1246,7 @@ blockquote {
     top: 0;
     bottom: 0;
     z-index: 8;
-    background: linear-gradient(180deg, transparent 0%, transparent 33%, rgba(0, 84, 70, 0.8) 100%); }
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 33%, rgba(0, 84, 70, 0.8) 100%); }
   @media (min-width: 361px) {
     .headerImage .overlay h1 {
       font-size: 2rem;
@@ -1624,3 +1626,63 @@ section .policy-government-switch {
       margin: 4rem 0; } }
   .organisations .content-item {
     margin-top: 0; }
+
+.impactbar {
+  position: relative;
+  z-index: 9;
+  background-color: #ca005d;
+  background-color: #ffb612;
+  height: 8rem;
+  margin-top: -4rem; }
+
+/* PROJECT VIREO STYLES */
+.impact {
+  position: relative;
+  background-color: var(--vireo-green-misty);
+  padding-top: 1rem;
+  padding-bottom: 8rem; }
+
+.impactbar {
+  position: absolute;
+  z-index: 9;
+  background-color: #ca005d;
+  background-color: var(--vireo-yellow-light);
+  background-color: #efb2ce;
+  background-color: #ca005d;
+  color: white;
+  width: 100%;
+  padding: 2rem 2rem;
+  margin-top: -3rem;
+  border: 4px solid white;
+  font-size: 30px; }
+
+.impactbar__header {
+  display: flex; }
+
+.impactbar__fact {
+  margin-right: 1rem;
+  font-size: 98px;
+  line-height: .75;
+  font-weight: bold; }
+
+.impactbar__explanation {
+  position: relative;
+  font-size: 24px;
+  line-height: 1.1;
+  font-family: "RO Serif", serif;
+  font-style: italic;
+  max-width: 16em;
+  padding-top: 1rem; }
+  .impactbar__explanation::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 8rem;
+    height: 1px;
+    background-color: white; }
+
+.impactbar__body {
+  height: auto; }
+
+/* PROJECT VIREO STYLES */
