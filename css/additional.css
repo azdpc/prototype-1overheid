@@ -1635,7 +1635,7 @@ section .policy-government-switch {
   height: 8rem;
   margin-top: -4rem; }
 
-/* PROJECT VIREO STYLES */
+/* COMPONENTS */
 .impact {
   position: relative;
   background-color: var(--vireo-green-misty);
@@ -1685,4 +1685,5 @@ section .policy-government-switch {
 .impactbar__body {
   height: auto; }
 
-/* PROJECT VIREO STYLES */
+.pioneers.gradient {
+  background: linear-gradient(var(--vireo-green-misty) 20%, var(--vireo-yellow-light) 80%); }
