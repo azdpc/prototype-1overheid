@@ -263,7 +263,7 @@ button.beforeLogin img {
   --vireo-blue-clear:  #007BC7;
   --vireo-blue-shade:  #0073AD;
   --vireo-green-misty: #F0F8F8;
-  --vireo-green-light: #DFF7F5;
+  --vireo-green-light: #DAEFEC;
   --vireo-green-smoke: #B7E5DC;
   --vireo-green-clear: #009F85;
   --vireo-green-shade: #00856F;
@@ -631,7 +631,7 @@ section, main {
   border-style: solid;
   border-width: .6em;
   border-color: transparent;
-  border-bottom-color: var(--vireo-blue-smoke); }
+  border-bottom-color: var(--vireo-blue-light); }
 
 .navbar-options .dropdown-menu.show > .container-fluid:before {
   content: "";
@@ -671,7 +671,7 @@ section, main {
   padding: 0;
   border: 0;
   border-radius: 0;
-  background-color: var(--vireo-blue-smoke);
+  background-color: var(--vireo-blue-light);
   border-bottom: 4px solid var(--white); }
   .navbar-options .dropdown-menu .container-fluid {
     position: relative; }
@@ -754,10 +754,10 @@ section, main {
 
 .government .navbar-options .show button:before,
 .government .navbar-options a.button:before {
-  border-bottom-color: var(--vireo-green-smoke); }
+  border-bottom-color: var(--vireo-green-light); }
 
 .government .navbar-options .dropdown-menu {
-  background-color: var(--vireo-green-smoke); }
+  background-color: var(--vireo-green-light); }
 
 .government .navbar-pinned {
   background-color: var(--vireo-green-smoke); }
@@ -1312,27 +1312,15 @@ blockquote {
     .headerImage.personHeaderImage .role {
       font-size: 2rem; } }
   @media (min-width: 1024px) {
-    .headerImage.personHeaderImage {
-      /*
-            h1 {
-                font-size: 7rem;
-            }
-*/ }
-      .headerImage.personHeaderImage .overlay.pagetitle {
-        bottom: 5rem; }
-      .headerImage.personHeaderImage .role {
-        font-size: 2.4rem; } }
+    .headerImage.personHeaderImage .overlay.pagetitle {
+      bottom: 5rem; }
+    .headerImage.personHeaderImage .role {
+      font-size: 2.4rem; } }
   @media (min-width: 1200px) {
-    .headerImage.personHeaderImage {
-      /*
-            h1 {
-                font-size: 8rem;
-            }
-*/ }
-      .headerImage.personHeaderImage .overlay.pagetitle {
-        bottom: 6rem; }
-      .headerImage.personHeaderImage .role {
-        font-size: 3rem; } }
+    .headerImage.personHeaderImage .overlay.pagetitle {
+      bottom: 6rem; }
+    .headerImage.personHeaderImage .role {
+      font-size: 3rem; } }
   .headerImage.magazineHeaderImage .overlay.pagetitle {
     bottom: auto;
     top: 4rem; }
@@ -1627,14 +1615,6 @@ section .policy-government-switch {
   .organisations .content-item {
     margin-top: 0; }
 
-.impactbar {
-  position: relative;
-  z-index: 9;
-  background-color: #ca005d;
-  background-color: #ffb612;
-  height: 8rem;
-  margin-top: -4rem; }
-
 /* COMPONENTS */
 .impact {
   position: relative;
@@ -1651,19 +1631,29 @@ section .policy-government-switch {
   background-color: #ca005d;
   color: white;
   width: 100%;
-  padding: 2rem 2rem;
+  padding: 3rem 2rem 3rem 2rem;
   margin-top: -3rem;
   border: 4px solid white;
-  font-size: 30px; }
+  display: grid;
+  grid-template-columns: [fact-start] repeat(3, 1fr) [description-start] repeat(7, 1fr) [description-end] 2fr [toggle-end];
+  grid-gap: 15px; }
 
 .impactbar__header {
-  display: flex; }
+  display: contents;
+  align-items: flex-end;
+  position: relative;
+  margin-left: -19%; }
 
 .impactbar__fact {
+  /*		position: absolute;
+		right: 100%;
+		width: 40%;*/
+  text-align: right;
   margin-right: 1rem;
-  font-size: 98px;
+  font-size: 72px;
   line-height: .75;
-  font-weight: bold; }
+  font-weight: bold;
+  grid-column: fact-start / description-start; }
 
 .impactbar__explanation {
   position: relative;
@@ -1671,8 +1661,8 @@ section .policy-government-switch {
   line-height: 1.1;
   font-family: "RO Serif", serif;
   font-style: italic;
-  max-width: 16em;
-  padding-top: 1rem; }
+  padding-top: 1.5rem;
+  grid-column: description; }
   .impactbar__explanation::before {
     content: '';
     position: absolute;
@@ -1683,7 +1673,39 @@ section .policy-government-switch {
     background-color: white; }
 
 .impactbar__body {
-  height: auto; }
+  padding: 3rem 0;
+  height: auto;
+  grid-column: description; }
+  .impactbar__body a:not(.btn) {
+    color: white; }
+
+.impactbar__toggle {
+  position: absolute;
+  right: 2rem;
+  top: 4rem; }
+  .impactbar__toggle button {
+    background-color: transparent;
+    border: none;
+    color: white; }
+    .impactbar__toggle button svg {
+      transform-origin: 50% 50%;
+      transition: transform .1s ease-in; }
+
+.impactbar {
+  height: auto;
+  max-height: 9.5rem;
+  overflow: hidden;
+  transition: max-height .2s ease-out; }
+  .impactbar.is-expanded {
+    max-height: 21rem; }
+    .impactbar.is-expanded button svg {
+      transform: rotate(180deg); }
 
 .pioneers.gradient {
   background: linear-gradient(var(--vireo-green-misty) 20%, var(--vireo-yellow-light) 80%); }
+
+.policy-priorities {
+  display: flex;
+  align-items: center; }
+  .policy-priorities > * {
+    flex: 0 1 30%; }

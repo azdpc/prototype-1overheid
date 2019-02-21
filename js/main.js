@@ -330,6 +330,29 @@ function handleHelpTexts() {
 
 
 
+function toggleButton() {
+
+	$('.toggle-button').each( function() {
+		var thisButton = $(this);
+		//console.log(thisButton);
+		
+		thisButton.on('click', function(e) {
+			e.preventDefault();
+			var thisButton = $(this);
+			console.log(thisButton.attr('aria-controls'));
+			toggleEl = $('#' + thisButton.attr('aria-controls'));
+			
+			toggleEl.toggleClass('is-expanded');
+
+		});
+//
+		
+	});
+
+}
+
+
+
 
 //$(function() {
 $.when($.ready).then(function() {
@@ -339,4 +362,5 @@ $.when($.ready).then(function() {
     handleModuleForm();
     setIframeStatus();
     handleHelpTexts();
+    toggleButton();
 });
