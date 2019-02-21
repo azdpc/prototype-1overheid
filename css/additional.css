@@ -1701,11 +1701,17 @@ section .policy-government-switch {
     .impactbar.is-expanded button svg {
       transform: rotate(180deg); }
 
-.pioneers.gradient {
-  background: linear-gradient(var(--vireo-green-misty) 20%, var(--vireo-yellow-light) 80%); }
+.spotlight img {
+  width: 100%; }
 
 .policy-priorities {
   display: flex;
   align-items: center; }
   .policy-priorities > * {
     flex: 0 1 30%; }
+
+.background--pioneers {
+  background: linear-gradient(var(--vireo-green-misty) 30%, var(--vireo-yellow-light) 70%); }
+
+.background--change {
+  background-color: var(--vireo-yellow-light); }
