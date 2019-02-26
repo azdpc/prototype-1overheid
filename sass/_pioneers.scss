@@ -1,8 +1,78 @@
+// Staat deze er wel of niet?
 .pioneers {
 
+    .pioneer-case {
+        position: relative;    
+    }
+    
+    .map {
+        img {
+            display: block;
+            width: 60vw;
+        }
+    }
+    
+    .spotlight {
+        border: 8px solid var(--white);
+        width: 60vw;
+        position: absolute;
+        top: 22.5%;
+        right: 15vw;
+    }
+    
+    .line {
+        width: 8vw;
+        height: auto;
+        position: absolute;
+        right: 100%;
+        top: 0;
+        margin-right: 1.7rem;
+        
+        svg {
+            width: 100%;
+        }
+    }
+        
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50%;
+        background: var(--white);
+        padding: 0 2rem 1rem 0;
+    }
+    
+    h3 {
+        position: relative;
+        padding: 0.9rem 0;
+        margin: 0;
+        font-size: 1.3125rem;
+        font-weight: normal;
 
+        @media screen and (min-width: 576px) {
+            font-size: 1.5rem;
+        }
 
+		&:before {
+			content: "";
+			display: block;
+			width: 10rem;
+			position: absolute;
+			left: -2rem;
+			top: 0;
+			border-top: 4px solid var(--vireo-green-clear);			
+		}
+        
+        .label-pioneers {
+            font-weight: bold;
+            color: var(--vireo-green-clear);            
+        }
+    }
+    
+    
 }
+
+
 
 
 .spotlight img {
