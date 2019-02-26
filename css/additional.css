@@ -1675,11 +1675,11 @@ section .policy-government-switch {
 
 .impactbar__explanation {
   position: relative;
-  font-size: 24px;
+  font-size: 22px;
   line-height: 1.1;
   font-family: "RO Serif", serif;
   font-style: italic;
-  padding-top: 1.5rem;
+  padding-top: 0.5rem;
   grid-column: description; }
   .impactbar__explanation::before {
     content: '';
