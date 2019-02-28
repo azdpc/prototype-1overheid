@@ -1893,7 +1893,7 @@ section .policy-government-switch {
     .milestones dt.past {
       color: var(--vireo-green-shade); }
   .milestones dd {
-    margin: 0 0 2rem;
+    margin: 0 0 1.8rem;
     padding-top: 0.4rem; }
 
 .background--pioneers {
