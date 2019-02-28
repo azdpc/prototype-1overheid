@@ -1,0 +1,84 @@
+.impact {
+  position: relative;
+  background-color: var(--vireo-green-misty);
+  padding-top: 1rem;
+  padding-bottom: 8rem; }
+
+.impactbar {
+  position: absolute;
+  z-index: 9;
+  background-color: #ca005d;
+  background-color: var(--vireo-yellow-light);
+  background-color: #efb2ce;
+  background-color: #ca005d;
+  color: white;
+  width: 100%;
+  padding: 3rem 2rem 3rem 2rem;
+  margin-top: -3rem;
+  border: 4px solid white;
+  display: grid;
+  grid-template-columns: [fact-start] repeat(3, 1fr) [description-start] repeat(7, 1fr) [description-end] 2fr [toggle-end];
+  grid-gap: 15px; }
+
+.impactbar__header {
+  display: contents;
+  align-items: flex-end;
+  position: relative;
+  margin-left: -19%; }
+
+.impactbar__fact {
+  /*		position: absolute;
+		right: 100%;
+		width: 40%;*/
+  text-align: right;
+  margin-right: 1rem;
+  font-size: 72px;
+  line-height: .75;
+  font-weight: bold;
+  grid-column: fact-start / description-start; }
+
+.impactbar__explanation {
+  position: relative;
+  font-size: 22px;
+  line-height: 1.1;
+  font-family: "RO Serif", serif;
+  font-style: italic;
+  padding-top: 0.5rem;
+  grid-column: description; }
+  .impactbar__explanation::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 8rem;
+    height: 1px;
+    background-color: white; }
+
+.impactbar__body {
+  padding: 3rem 0;
+  height: auto;
+  grid-column: description; }
+  .impactbar__body a:not(.btn) {
+    color: white; }
+
+.impactbar__toggle {
+  position: absolute;
+  right: 2rem;
+  top: 4rem; }
+  .impactbar__toggle button {
+    background-color: transparent;
+    border: none;
+    color: white; }
+    .impactbar__toggle button svg {
+      transform-origin: 50% 50%;
+      transition: transform .1s ease-in; }
+
+.impactbar {
+  height: auto;
+  max-height: 9.5rem;
+  overflow: hidden;
+  transition: max-height .2s ease-out; }
+  .impactbar.is-expanded {
+    max-height: 21rem; }
+    .impactbar.is-expanded button svg {
+      transform: rotate(180deg); }
