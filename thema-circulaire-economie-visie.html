@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/additional.css">
-
+  <link rel="stylesheet" href="css/impactbar.css">
 </head>
 
 <body cz-shortcut-listen="true" class="government">
@@ -132,13 +132,15 @@
 
     <!-- START visual with main page title and breadcrumb -->
     <div class="headerImage magazineHeaderImage magazineHeaderImageSmall headerImageDark">
+<!--
         <picture>
             <source srcset="content/circulair-paper.jpg" media="(max-width: 830px)">
             <source srcset="content/circulair-paper.jpg" media="(max-width: 1250px)">
             <source srcset="content/circulair-paper.jpg" media="(min-width: 1250px)">
             <img src="content/circulair-paper.jpg" alt="">
         </picture>
-<!--         <video src="img/bottles.mp4" type="video/mp4" autoplay="true" loop="true" /> -->
+-->
+        <video src="img/bottles.mp4" type="video/mp4" loop="true" id="headervideo"></video>
 
         <div class="darken"></div>
         <p class="copyright">
@@ -153,7 +155,9 @@
                         <div class="col-md-12">
                             <ul>
                                 <li><a href="beleid-en-bestuur.html">Home</a></li>
-                                <li><a href="beleid-organisaties.html">Beleidsthema&rsquo;s</a></li>
+                                <li><a href="beleid-themas.html">Beleidsthema&rsquo;s</a></li>
+                                <li><a href="beleid-klimaat.html">Klimaat en duurzaamheid</a></li>
+                                <li><a href="thema-circulaire-economie.html">Circulaire economie</a></li>
                             </ul>
                         </div>            
                     </div>
@@ -207,8 +211,6 @@
                                 </button>
                             </div>
                         </div>
-
-                        
                     </div>
                 </div>
             </div>
@@ -236,18 +238,20 @@
                         <div class="row">
                             <div class="col-md-5">
                                 <p>
-In het Uitvoeringsprogramma circulaire economie 2019-2023 zet het kabinet met bedrijven, financiële instellingen, kennisinstituten, overheden en andere organisaties in op een voortvarende aanpak om de economie circulair te maken. Wat is er concreet nodig aan beleid om de overgang naar een circulaire economie te versnellen en op te schalen? De Rijksoverheid is hier vaak aan zet als onder meer facilitator en regelgever. Doel is onder meer om producenten en consumenten te prikkelen, belemmeringen in regelgeving weg te nemen, nieuwe vormen van financiering te stimuleren en kennis en ervaring op te bouwen.
+In het <em>Uitvoeringsprogramma circulaire economie 2019&ndash;2023</em> zet het kabinet met bedrijven, financiële instellingen, kennisinstituten, overheden en andere organisaties in op een voortvarende aanpak om de economie circulair te maken. Wat is er concreet nodig aan beleid om de overgang naar een circulaire economie te versnellen en op te schalen? De Rijksoverheid is hier vaak aan zet als onder meer facilitator en regelgever. Doel is onder meer om producenten en consumenten te prikkelen, belemmeringen in regelgeving weg te nemen, nieuwe vormen van financiering te stimuleren en kennis en ervaring op te bouwen.
                                 </p>
                             </div>
                             <div class="col-md-6 offset-md-1">
                     <blockquote>
                         &ldquo;Ik ben een optimist. We kunnen met 10 miljard mensen op deze planeet leven. Maar alleen als we veel zuiniger omgaan met schaarse grondstoffen.&rdquo;
                     </blockquote>
+<!--
                     <p>
-Interview in <em>Vakblad voor mobiliteit</em>.
+<em>&mdash; Staatssecretaris Stientje van Veldhoven</em>
                     </p>
+-->
                     <p class="follow-up">
-                        <a href="#">Lees het hele interview</a>
+                        <a href="#">Staatssecretaris Stientje van Veldhoven</a>
                     </p>
 
                             </div>
@@ -267,9 +271,11 @@ Interview in <em>Vakblad voor mobiliteit</em>.
                     <div class="row">
                         <div class="content-item col-md-9">
                             <h2 class="with-bar">Vijf prioriteiten</h2>
-                            <p>
-In het programma wordt ingezoomd op vijf sectoren die belangrijk zijn voor onze economie maar ook het milieu belasten.
-                            </p>
+                            <div class="intro">
+                                <p>
+    In het programma wordt ingezoomd op vijf sectoren die belangrijk zijn voor onze economie maar ook het milieu belasten.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -285,7 +291,11 @@ In het programma wordt ingezoomd op vijf sectoren die belangrijk zijn voor onze 
                             Biomassa en voedsel
                         </h3>
                         <p>
-Biomassa wordt gebruikt voor veevoer, chemie, transportbrandstoffen en energie. Met biomassa kunnen we veel sectoren groener maken en CO2-uitstoot verminderen. Duurzaam produceren waarbij we optimaal biomassa en restromen benutten is nodig voor een circulaire, biobased economie.                        </p>
+Biomassa wordt gebruikt voor veevoer, chemie, transportbrandstoffen en energie. Met biomassa kunnen we veel sectoren groener maken en CO2-uitstoot verminderen. Duurzaam produceren waarbij we optimaal biomassa en restromen benutten is nodig voor een circulaire, biobased economie.
+                        </p>
+                        <p class="follow-up">
+                            <a href="#doorlink-1">Biomassa en voedsel</a>
+                        </p>
                     </div>
 
                     <div class="priority">
@@ -295,6 +305,9 @@ Biomassa wordt gebruikt voor veevoer, chemie, transportbrandstoffen en energie. 
                         </h3>
                         <p>
 Kunststof is overal. Het is nuttig, maar het tast het milieu en het klimaat aan. Van plastic soep, zwerfafval tot microplastics in water en voeding. Met het Plastic Pact gaan overheid, bedrijfsleven en milieuorganisaties de strijd aan tegen plastic afval. 
+                        </p>
+                        <p class="follow-up">
+                            <a href="thema-circulaire-economie-visie-kunststoffen.html">Kunststoffen</a>
                         </p>
                     </div>
 
@@ -306,6 +319,9 @@ Kunststof is overal. Het is nuttig, maar het tast het milieu en het klimaat aan.
                         <p>
 Maakindustrie verwerkt materialen, zoals metalen, tot nieuwe producten. Bijvoorbeeld in accu's van elektrische voertuigen. Productie en het opnieuw smelten van metalen zijn schadelijk voor milieu en klimaat. Een circulair ontwerp voor hoogwaardig duurzaam hergebruik van metalen is geboden. 
                         </p>
+                        <p class="follow-up">
+                            <a href="#doorlink-3">Maakindustrie</a>
+                        </p>
                     </div>
 
                     <div class="priority">
@@ -316,6 +332,9 @@ Maakindustrie verwerkt materialen, zoals metalen, tot nieuwe producten. Bijvoorb
                         <p>
 De bouwsector neemt 50% van het grondstoffenverbruik in Nederland voor zijn rekening. Veel afval is sloopafval. Om onze leefomgeving duurzaam in te richten is een versnelling van innovaties (circulair en modulair bouwen) binnen de bouwsector nodig. 
                         </p>
+                        <p class="follow-up">
+                            <a href="#doorlink-4">Bouw</a>
+                        </p>
                     </div>
 
                     <div class="priority">
@@ -325,6 +344,9 @@ De bouwsector neemt 50% van het grondstoffenverbruik in Nederland voor zijn reke
                         </h3>
                         <p>
 Consumptiegoederen zijn goederen in verpakkingen die wij allemaal gebruiken: van koffiebekers tot kleding en van frisdranken tot stofzuigers. De inzet is om de kringloop van productie en consumptie te sluiten door grondstoffen niet meer te verspillen maar te hergebruiken.
+                        </p>
+                        <p class="follow-up">
+                            <a href="#doorlink-5">Consumptie&shy;goederen</a>
                         </p>
                     </div>
 
@@ -368,9 +390,14 @@ Consumptiegoederen zijn goederen in verpakkingen die wij allemaal gebruiken: van
     In de Maasstad werken een tiental pioniers aan een circulaire droom. Oesterzwammen kweken op koffiedik uit de horeca, of leer maken van afgedankte citrusschillen, in het voormalige zwemparadijs Tropicana. Wat kunnen we leren van deze pioniers van de circulaire economie?
                     </p>
                     <p class="follow-up">
-                    <a href="#link-naar-deze-pionier">Ontdek de pioniers van Blue City</a>
+                        <a href="#link-naar-deze-pionier">Ontdek de pioniers van Blue City</a>
+                    </p>
+
+                    <p class="quote">
+                        Zonder actieve steun van de gemeente Rotterdam was dit niet van de grond gekomen.
                     </p>
                 </div>
+                
                 
                 <div class="line">
     <svg version="1.1"
@@ -387,58 +414,101 @@ Consumptiegoederen zijn goederen in verpakkingen die wij allemaal gebruiken: van
         <!-- .pioneer-case -->
     </section>
     
-    <section class="background--change">
+    <section class="timeline background--change">
 
-
-
-
-    <!-- START content area -->
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-10 offset-lg-1 col-md-12">
-                <div class="container-fluid">
-
+        <!-- START content area -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1 col-md-12">
+                    <div class="container-fluid">
+    
                         <div class="row">
-                            <div class="col-md-9">
-                                <h2>Tijdlijn Nederland circulair</h2>
-
+                            <div class="col-md-9 content-item">
+                                <h2 class="with-bar">Tijdlijn Nederland circulair</h2>    
                             </div>
                         </div>
-
-
-
-                    
- 
-
-
-                    <div class="row content-item">
-                        <div class="col-sm-12">
-                            <h2 class="with-bar">Betrokken overheidsinstanties</h2>
-                        </div>
-                        
-                        <div class="col-sm-6">
-                            <ul class="topics-list">
-                                <li>
-                                    <a href="beleid-ministerie-ienw.html">Ministerie van Economische Zaken en Klimaat</a></li>
-                                </li>
-                                <li>
-                                    <a href="beleid-ministerie-ienw.html">Ministerie van Infrastructuur en Waterstaat </a></li>
-                                </li>
-                                <li>
-                                    <a href="#lorem">Rijksdienst voor Ondernemend Nederland</a></li>
-                                </li>
-                                <li>
-                                    <a href="#lorem">Milieu Centraal</a></li>
-                                </li>
-                            </ul>
-                        </div>
+    
                     </div>
-
-
                 </div>
             </div>
         </div>
-    </div>
+        <!-- EINDE content area -->
+
+        <!-- START tijdlijn -->
+        <div class="timeline-wrapper">
+            <ul class="to-end">
+                <li class="above" style="left: 5%;">
+                    <time>Juli 2018</time>
+                    <p>
+                        <span class="timeline--type">Mijlpaal</span>
+                        <span class="timeline--label">PACE</span>
+                    </p>
+                    <h3>
+                        <a href="https://www.rijksoverheid.nl/documenten/toespraken/2019/02/21/spreektekst-staatssecretaris-van-veldhoven-bij-opening-nationale-conferentie-circulaire-economie">
+                            Nederland wordt lid van <em>Platform for Accelerating the Circular Economy</em>
+                        </a>
+                    </h3>
+                </li>
+
+
+                <li class="below" style="left: 22.5%;">
+                    <time>Februari 2019</time>
+                    <p>
+                        <span class="timeline--type">Event</span>
+                        <span class="timeline--label">Conferentie</span>
+                    </p>
+                    <h3>
+                        <a href="https://www.rijksoverheid.nl/documenten/toespraken/2019/02/21/spreektekst-staatssecretaris-van-veldhoven-bij-opening-nationale-conferentie-circulaire-economie">
+                            Van Veldhoven opent eerste Nationale Conferentie Circulaire Economie 
+                        </a>
+                    </h3>
+                </li>
+
+                <li class="above" style="left: 25%;">
+                    <time>21-02-2019</time>
+                    <p>
+                        <span class="timeline--type">Nieuws</span>
+                        <span class="timeline--label">Plastic Pact</span>
+                    </p>
+                    <h3>
+                        <a href="https://www.rijksoverheid.nl/actueel/nieuws/2019/02/21/van-veldhoven-sluit-deal-voor-minder-en-beter-gebruik-plastic">
+                            Van Veldhoven sluit deal voor minder en beter gebruik plastic
+                        </a>
+                    </h3>
+                </li>
+
+                <li class="below" style="left: 50%;">
+                    <time>2030</time>
+                    <p>
+                        <span class="timeline--type">Doel</span>
+                        <span class="timeline--label">50%</span>
+                    </p>
+                    <h3>
+                        Nederland is voor de helft circulair
+                    </h3>
+                </li>
+
+                <li class="above endpoint align-right">
+                    <time>2050</time>
+                    <p>
+                        <span class="timeline--type">Doel</span>
+                        <span class="timeline--label">100%</span>
+                    </p>
+                    <h3>
+                        Nederland geheel circulair
+                    </h3>
+                </li>
+
+
+            </ul>
+
+        </div>
+        <!-- EINDE tijdlijn -->
+    
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section>
@@ -446,20 +516,6 @@ Consumptiegoederen zijn goederen in verpakkingen die wij allemaal gebruiken: van
         <div class="row">
             <div class="col-lg-10 offset-lg-1 col-md-12">
                 <div class="container-fluid">
-
-                        <div class="row">
-                            <div class="col-md-9">
-                                <h2>Nederland circulair in 2050</h2>
-
-                                <div class="intro">
-                                    <p>
-                                        Het kabinet wil dat de Nederlandse economie in 2050 volledig circulair is. Met als tussendoel in 2030 50% minder gebruik van primaire grondstoffen (zoals mineraal, fossiel en metalen).  Om dat te bereiken moeten we nu volop aan de bak. Bedrijven, overheid, industrie, maar ook de consument is aan zet. Hoe worden we met z’n allen <em>circulair</em>?
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-
 
                     
  
@@ -533,5 +589,11 @@ Consumptiegoederen zijn goederen in verpakkingen die wij allemaal gebruiken: van
         </div>
     </div>
   <script src="js/main.js"></script>
+  <script type="text/javascript">
+document.querySelector('#headervideo').playbackRate = 0.33;
+document.addEventListener('click', function(){
+    document.querySelector('#headervideo').play();
+});
+  </script>
 
 </body></html>

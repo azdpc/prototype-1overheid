@@ -1,11 +1,61 @@
 .policy-priorities {
-	display: flex;
-	align-items: center;
+    padding-top: 2rem;
 
-	> * {
-		flex: 0 1 30%;
-	}
+    h2 + .intro {
+        margin: 0.5em 0 1.0em;
+    }
 
-	
+    .intro p {
+        font-size: 0.875em;
+    }
 
+    .priority-tiles {
+    	display: flex;
+        justify-content: center;
+    	flex-wrap: wrap;
+    }
+    
+    .priority {
+        position: relative;
+		flex: 0 0 27.5%;
+		margin: 0 2.5%;
+		padding: 0 0 4rem 3.6rem;
+		
+		h3 {
+    		font-family: "RO Serif",serif;
+    		font-style: italic;
+    		font-size: 1.5em;
+    		padding: 0.75em 0;
+    		line-height: 1;
+
+            &:before {
+    			content: "";
+    			display: block;
+    			width: 8rem;
+    			position: absolute;
+    			left: 3.6rem;
+    			top: 0;
+    			border-top: 1px solid var(--black);
+            }
+
+    		strong {
+        		width: 2rem;
+        		text-align: right;
+        		position: absolute;
+        		top: -0.15em;
+        		left: 0;
+        		font-family: "RO Sans", sans-serif;
+        		font-style: normal;
+        		font-size: 2.5em;
+            }
+		}
+		
+		.follow-up {
+    		line-height: 1.25;
+    		
+    		a {
+        		background-position: 0 0.2em;
+    		}
+		}
+    }
 }

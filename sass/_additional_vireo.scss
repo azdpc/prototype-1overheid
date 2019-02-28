@@ -25,6 +25,8 @@
     --vireo-button-green-hover: #4A9600;
 
     --vireo-warning-red:        #CC0000;
+    
+    --vireo-ruby:               #CA005D;
 }
 
 
@@ -1002,6 +1004,10 @@ blockquote {
     
     .government & {
         font-family: "RO Serif", serif;
+    }
+
+    p {
+        font-size: 1em;
     }
 }
 

@@ -1,0 +1,34 @@
+.milestones {
+    padding-top: 2rem;
+    margin-bottom: -10rem;
+    
+    
+    dl {
+        position: relative;
+        z-index: 10;
+        margin: 2rem 0 0;
+        padding-left: 7rem;
+    }
+    
+    dt {
+        float: left;
+        position: relative;
+        left: -7rem;
+        margin: 0 -7rem 0 0;
+        font-size: 2em;
+        font-weight: normal;
+        clear: left;
+        
+        &.now {
+            font-weight: bold;
+        }
+        &.past {
+            color: var(--vireo-green-shade);
+        }
+    }
+    
+    dd {
+        margin: 0 0 2rem;
+        padding-top: 0.4rem;
+    }
+}
