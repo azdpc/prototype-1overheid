@@ -293,7 +293,7 @@
                 
                 &.pagetitle {
                     bottom: auto;
-                    top: 10rem;                
+                    top: 8rem;                
                 }
             }
             h1 {
@@ -309,7 +309,7 @@
                 
                 &.pagetitle {
                     bottom: auto;
-                    top: 10rem;                
+                    top: 8rem;                
                 }
             }
             h1 {
@@ -324,6 +324,13 @@
     
     &.magazineHeaderImageSmall {
         max-height: 480px;
+    }
+
+    &.magazineHeaderLeftAligned {
+        h1 {
+            text-align: left;
+        }
+
     }
 
     &.smallHeaderImage {
