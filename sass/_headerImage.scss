@@ -372,5 +372,9 @@
             .darken {
                 background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 33%, rgba(0,0,0,0.8) 100%);
             }  
+
+            .overlay.payoff {
+                color: white !important;
+            }
     }
 }

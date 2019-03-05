@@ -1642,6 +1642,8 @@ section .policy-government-switch {
     color: white !important; }
   .headerImage.headerImageBlack .darken {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 33%, rgba(0, 0, 0, 0.8) 100%); }
+  .headerImage.headerImageBlack .overlay.payoff {
+    color: white !important; }
 
 .pioneers .spotlight img {
   width: 100%; }
