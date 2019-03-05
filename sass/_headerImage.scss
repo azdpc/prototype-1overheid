@@ -51,7 +51,7 @@
         &.payoff {
             top: auto;
             left: 0;
-            bottom: 1rem;
+            bottom: 0rem;
         }
 
         &.breadcrumb {
@@ -309,7 +309,7 @@
                 
                 &.pagetitle {
                     bottom: auto;
-                    top: 12rem;                
+                    top: 10rem;                
                 }
             }
             h1 {
@@ -323,7 +323,7 @@
     }
     
     &.magazineHeaderImageSmall {
-        max-height: 600px;
+        max-height: 480px;
     }
 
     &.smallHeaderImage {
