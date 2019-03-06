@@ -1,5 +1,33 @@
 .form-island {
 	padding: 2rem 0 ;
 	margin-bottom: 1rem;
-	//background-color: white;
 }
+
+.loader {
+	display: none;
+
+	position: relative;
+	margin-left: 5px;
+	top: 2px;
+	
+	box-sizing: border-box;
+	width: 30px;
+	height: 30px;
+	height: 1em;
+	width: 1em;
+	border-radius: 100%;
+	border: 3px solid rgba(white, .2);
+	border-top-color: rgba(white, 1);
+	animation: spin 1.3s infinite linear;
+}
+
+.is-loading .loader {
+	display: inline-block;
+}
+
+
+@keyframes spin { 
+  100% { 
+    transform: rotate(360deg); 
+  } 
+} 
