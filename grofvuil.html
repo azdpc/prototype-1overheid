@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="nl-NL">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Grofvuil wegbrengen | 1overheid</title>
+    <meta name="description" content="Prototype voor 1overheid: informatie, diensten, beleid en bestuur">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/additional.css">
+</head>
+
+<body cz-shortcut-listen="true">
+    <header>
+        <div class="container-fluid">
+            <div class="notVisibleInFrame">
+                <nav class="navbar navbar-light">
+                    <a href="home.html" class="navbar-brand">
+                        <img src="img/een-overheid.svg" alt="1overheid">
+                        <em class="payoff">alles regelen op 1 plek</em>
+                    </a>
+                    <div class="navbar-options">
+                        <div class="search-wrapper">
+                            <button class="dropdown-toggle" type="button" id="dropdownSearchButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span>zoeken</span>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownSearchButton">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-lg-10 offset-lg-1 col-md-12">
+                                            <div class="container-fluid">
+                                                <form action="#">
+                                                    <fieldset>
+                                                        <input type="search" />
+                                                        <input class="btn btn-primary btn-lg" type="submit" value="zoeken" />
+                                                    </fieldset>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="account-wrapper">
+                            <div class="loggedInElm">
+                                <a class="button" href="mijn-overheid.html">
+                                    <span>mijn overheid</span>
+                                    <strong class="notification">3 <span class="visually-hidden">nieuwe berichten</span></strong>
+                                </a>
+                            </div>
+                            <div class="loggedOutElm">
+                                <button type="button" id="loginAccountButton" data-toggle="modal" data-target="#loginForm">
+                                    <span>inloggen</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="contact-wrapper">
+                            <button class="dropdown-toggle" type="button" id="dropdownContactButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span>contact</span>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownContactButton">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-lg-10 offset-lg-1 col-md-12">
+                                            <p>Contactinformatie</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-wrapper">
+                            <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span>menu</span>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-lg-10 offset-lg-1 col-md-12">
+                                            <div class="row themes-list">
+                                                <!-- START thema geld -->
+                                                <div class="col-sm-4">
+                                                    <a href="#thema-geld">
+                                                        <h3>
+                                                            <div class="icon">
+                                                                <img src="content/icons/9000-budget.svg" />
+                                                            </div>
+                                                            Geld
+                                                        </h3>
+                                                        <p>Bijstand aanvragen, Voorwaarden WW bekijken, Aangifte doen, ...</p>
+                                                    </a>
+                                                </div>
+                                                <!-- EINDE thema geld -->
+                                                <!-- START thema wonen -->
+                                                <div class="col-sm-4">
+                                                    <a href="#thema-wonen">
+                                                        <h3>
+                                                            <div class="icon">
+                                                                <img src="content/icons/5202-laag-huis.svg" />
+                                                            </div>
+                                                            Wonen
+                                                        </h3>
+                                                        <p>Woning huren, Woning kopen, Energielabel aanvragen, ...</p>
+                                                    </a>
+                                                </div>
+                                                <!-- EINDE thema wonen -->
+                                                <!-- START thema -->
+                                                <div class="col-sm-4">
+                                                    <a href="#thema-familie">
+                                                        <h3>
+                                                            <div class="icon">
+                                                                <img src="content/icons/4029-familie.svg" />
+                                                            </div>
+                                                            Familie
+                                                        </h3>
+                                                        <p>Geboorte aangeven, Kind erkennen, Jeugdhulp aanvragen, ...</p>
+                                                    </a>
+                                                </div>
+                                                <!-- EINDE thema -->
+                                                <!-- START thema -->
+                                                <div class="col-sm-4">
+                                                    <a href="#thema-reizen">
+                                                        <h3>
+                                                            <div class="icon">
+                                                                <img src="content/icons/8012-reisbagage.svg" />
+                                                            </div>
+                                                            Reizen
+                                                        </h3>
+                                                        <p>Paspoort of ID-kaart aanvragen, Nederlandse nationaliteit verkrijgen, ...</p>
+                                                    </a>
+                                                </div>
+                                                <!-- EINDE thema -->
+                                                <!-- START thema -->
+                                                <div class="col-sm-4">
+                                                    <a href="#thema-onderwijs">
+                                                        <h3>
+                                                            <div class="icon">
+                                                                <img src="content/icons/4082-onderwijs.svg" />
+                                                            </div>
+                                                            Onderwijs
+                                                        </h3>
+                                                        <p>Overzicht schoolvakanties, Studiefinanciering aanvragen, Inschrijven voor studie, ...</p>
+                                                    </a>
+                                                </div>
+                                                <!-- EINDE thema -->
+                                                <!-- START thema -->
+                                                <div class="col-sm-4">
+                                                    <a href="#thema-recht">
+                                                        <h3>
+                                                            <div class="icon">
+                                                                <img src="content/icons/7001-recht-aka-veiligheid-en-justitie.svg" />
+                                                            </div>
+                                                            Recht
+                                                        </h3>
+                                                        <p>Identiteitsfraude melden, Geluidsoverlast doorgeven, ...</p>
+                                                    </a>
+                                                </div>
+                                                <!-- EINDE thema -->
+                                                <!-- START thema -->
+                                                <div class="col-sm-4">
+                                                    <a href="verkeer.html">
+                                                        <h3>
+                                                            <div class="icon">
+                                                                <img src="content/icons/5003-auto.svg" />
+                                                            </div>
+                                                            Verkeer
+                                                        </h3>
+                                                        <p>Rijbewijs verlengen, Verkeersregels checken,OV-chipkaart aanvragen ...</p>
+                                                    </a>
+                                                </div>
+                                                <!-- EINDE thema -->
+                                                <!-- START thema -->
+                                                <div class="col-sm-4">
+                                                    <a href="#thema-gezondheid">
+                                                        <h3>
+                                                            <div class="icon">
+                                                                <img src="content/icons/4028-zorg.svg" />
+                                                            </div>
+                                                            Gezondheid
+                                                        </h3>
+                                                        <p>WMO-aanvragen, Aangifte doen van overlijden, Vergoedingen basisverzekering bekijken ...</p>
+                                                    </a>
+                                                </div>
+                                                <!-- EINDE thema -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <banner>
+        <div class="loggedInElm">
+            <div id="login-foldout" class="navbar-pinned expanded">
+                <div class="container-fluid">
+                    <div class="navbar-pinned-content">
+                        <div class="row align-items-center">
+                            <div class="col-8">
+                                Ingelogd als Asha Martinez
+                            </div>
+                            <div class="col-4">
+                                <button class="btn btn-success logoutBtn float-right">Uitloggen</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </banner>
+    <div class="modal fade loginmodal" id="loginForm" tabindex="-1" role="dialog" aria-labelledby="modal-header" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="modal-header">
+                        <img src="img/digid-logo.svg" alt="digid">Login met DigiD
+                    </h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <form>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="gebruikersnaam">DigiD gebruikersnaam</label>
+                            <input type="text" class="form-control" id="gebruikersnaam" placeholder="DigiD gebruikersnaam" value="asha_madhavan">
+                        </div>
+                        <div class="form-group">
+                            <label for="wachtwoord">Wachtwoord</label>
+                            <input type="password" class="form-control" id="wachtwoord" placeholder="Wachtwoord" value="********">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" id="loginBtn">Inloggen</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade contactModal" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contact-modal-header" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="contact-modal-header">Heeft u een vraag of hulp nodig?</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <form>
+                    <div class="modal-body">
+                        <p>U kunt op contact met ons opnemen via:</p>
+                        <ul>
+                            <li class="phone">
+                                <a href="tel:1400">Bel naar 1400</a>
+                            </li>
+                            <li class="app">
+                                <a href="#">App uw vraag naar 1400</a>
+                            </li>
+                            <li class="chat">
+                                <a class="openChat" data-toggle="modal" data-target="#chatModal" href="#">Direct chatten</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade chatModal" id="chatModal" tabindex="-1" role="dialog" aria-labelledby="chat-modal-header" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="chat-modal-header">Direct chatten</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <form>
+                    <div class="modal-body">
+                        <div class="messages">
+                            <div class="message">
+                                <div class="avatar">
+                                    <img class="img-fluid" src="img/avatar.svg">
+                                </div>
+                                <div class="content">
+                                    <span class="name">Medewerker:</span>
+                                    <p>Goedemiddag, waarmee kan ik u helpen?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="messageForm">
+                            <div class="inputField">
+                                <input class="form-control form-control-lg" type="text" placeholder="Typ hier uw vraag">
+                            </div>
+                            <div class="submitBtn">
+                                <button type="button" class="btn btn-primary btn-lg">Verstuur</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <main>
+        <section class="actionable">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <ul class="breadcrumb">
+                            <li><a href="home.html">Home</a></li>
+                            <li><a href="wonen.html">Wonen en omgeving</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-10 offset-lg-1 col-md-12">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-12 notVisibleInFrame">
+                                    <h1>Grofvuil wegbrengen</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p>
+                                        U kunt uw grofvuil zelf wegbrengen naar de milieustraat van uw gemeente. Daar moet u het afval scheiden in verschillende containers. Sommige gemeenten vragen een vergoeding voor het grofvuil.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-actions">
+                            <div class="form-island">
+                                <h2>Waar kan ik mijn grofvuil wegbrengen?</h2>
+                                <form action="grofvuil-locaties.html" method="POST">
+                                    <label for="gemeente">Uw gemeente</label>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                    <div class="input-group mb-3">
+                                        
+                                        <input type="text" class="form-control" id="gemeente" placeholder="" value="" list="list-gemeenten">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-primary" id="button-addon2">Verstuur</button>
+                                        </div>
+                                    </div>
+                                        </div>
+                                    </div>
+
+                                </form>
+                            </div>
+
+                            <!-- <p><a class="btn btn-link" href="rijbewijs-verlengen.html">Grofvuil laten ophalen</a></p> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <main class="informative">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-10 offset-lg-1 col-md-12">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="toggleSet">
+                                        <h2 class="toggleTopic toggle-next">Wat is grofvuil?</h2>
+                                        <div class="toggleContent">
+                                            <p>
+                                                Grofvuil is groot huishoudelijk afval dat niet in een vuilniszak past. U kunt dit afval zelf wegbrengen naar de milieustraat of het milieustation van uw gemeente.
+                                            </p>
+                                            <h3>Voorbeelden</h3>
+                                            <ul>
+                                                <li>Meubels  zoals banken en kasten</li>
+                                                <li>Grote elektrische apparaten  zoals koelkasten en wasmachines</li>
+                                                <li>Snoeihout  zoals takken en boomstronken</li>
+                                                <li>Bouwafval en sloopafval  zoals hout, dakpannen, steen en zand</li>
+                                            </ul>
+                                        </div>
+
+                                        <h2 class="toggleTopic toggle-next">Kan ik het grofvuil laten ophalen?</h2>
+                                        <div class="toggleContent">
+                                            <p>
+                                                Als u uw grofvuil wilt laten ophalen dan kunt u een afspraak maken met uw gemeente. 
+                                            </p>
+                                            <a href="#grofvuil-ophalen">Lees meer</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </main>
+    <div class="modal fade loginmodal" id="loginToStartForm" tabindex="-1" role="dialog" aria-labelledby="modal-header" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="modal-header">
+                        <img src="img/digid-logo.svg" alt="digid"> Login met DigiD
+                    </h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <form>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="gebruikersnaam">DigiD gebruikersnaam</label>
+                            <input type="text" class="form-control" id="gebruikersnaam" placeholder="DigiD gebruikersnaam" value="asha_madhavan">
+                        </div>
+                        <div class="form-group">
+                            <label for="wachtwoord">Wachtwoord</label>
+                            <input type="password" class="form-control" id="wachtwoord" placeholder="Wachtwoord" value="********">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" id="loginAndStartBtn">Inloggen</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <span class="align-middle lead">1overheid: voor al uw overheidszaken.</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="modal fade contactModal" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contact-modal-header" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="contact-modal-header">
+                        Contact
+                    </h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Direct chatten</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+
+        <datalist id="list-gemeenten">
+                                <option value="Aa en Hunze">
+                                <option value="Aalsmeer">
+                                <option value="Aalten">
+                                <option value="Achtkarspelen">
+                                <option value="Alblasserdam">
+                                <option value="Albrandswaard">
+                                <option value="Alkmaar">
+                                <option value="Almelo">
+                                <option value="Almere">
+                                <option value="Alphen aan den Rijn">
+                                <option value="Alphen-Chaam">
+                                <option value="Altena">
+                                <option value="Ameland">
+                                <option value="Amersfoort">
+                                <option value="Amstelveen">
+                                <option value="Amsterdam">
+                                <option value="Apeldoorn">
+                                <option value="Appingedam">
+                                <option value="Arnhem">
+                                <option value="Assen">
+                                <option value="Asten">
+                                <option value="Baarle-Nassau">
+                                <option value="Baarn">
+                                <option value="Barendrecht">
+                                <option value="Barneveld">
+                                <option value="Beek">
+                                <option value="Beekdaelen">
+                                <option value="Beemster">
+                                <option value="Beesel">
+                                <option value="Berg en Dal">
+                                <option value="Bergeijk">
+                                <option value="Bergen (Limburg)">
+                                <option value="Bergen (Noord-Holland)">
+                                <option value="Bergen op Zoom">
+                                <option value="Berkelland">
+                                <option value="Bernheze">
+                                <option value="Best">
+                                <option value="Beuningen">
+                                <option value="Beverwijk">
+                                <option value="Bladel">
+                                <option value="Blaricum">
+                                <option value="Bloemendaal">
+                                <option value="Bodegraven-Reeuwijk">
+                                <option value="Boekel">
+                                <option value="Borger-Odoorn">
+                                <option value="Borne">
+                                <option value="Borsele">
+                                <option value="Boxmeer">
+                                <option value="Boxtel">
+                                <option value="Breda">
+                                <option value="Brielle">
+                                <option value="Bronckhorst">
+                                <option value="Brummen">
+                                <option value="Brunssum">
+                                <option value="Bunnik">
+                                <option value="Bunschoten">
+                                <option value="Buren">
+                                <option value="Capelle aan den IJssel">
+                                <option value="Castricum">
+                                <option value="Coevorden">
+                                <option value="Cranendonck">
+                                <option value="Cuijk">
+                                <option value="Culemborg">
+                                <option value="Dalfsen">
+                                <option value="Dantumadiel">
+                                <option value="De Bilt">
+                                <option value="De Fryske Marren">
+                                <option value="De Ronde Venen">
+                                <option value="De Wolden">
+                                <option value="Delft">
+                                <option value="Delfzijl">
+                                <option value="Den Haag">
+                                <option value="Den Helder">
+                                <option value="Deurne">
+                                <option value="Deventer">
+                                <option value="Diemen">
+                                <option value="Dinkelland">
+                                <option value="Doesburg">
+                                <option value="Doetinchem">
+                                <option value="Dongen">
+                                <option value="Dordrecht">
+                                <option value="Drechterland">
+                                <option value="Drimmelen">
+                                <option value="Dronten">
+                                <option value="Druten">
+                                <option value="Duiven">
+                                <option value="Echt-Susteren">
+                                <option value="Edam-Volendam">
+                                <option value="Ede">
+                                <option value="Eemnes">
+                                <option value="Eersel">
+                                <option value="Eijsden-Margraten">
+                                <option value="Eindhoven">
+                                <option value="Elburg">
+                                <option value="Emmen">
+                                <option value="Enkhuizen">
+                                <option value="Enschede">
+                                <option value="Epe">
+                                <option value="Ermelo">
+                                <option value="Etten-Leur">
+                                <option value="Geertruidenberg">
+                                <option value="Geldrop-Mierlo">
+                                <option value="Gemert-Bakel">
+                                <option value="Gennep">
+                                <option value="Gilze en Rijen">
+                                <option value="Goeree-Overflakkee">
+                                <option value="Goes">
+                                <option value="Goirle">
+                                <option value="Gooise Meren">
+                                <option value="Gorinchem">
+                                <option value="Gouda">
+                                <option value="Grave">
+                                <option value="Groningen">
+                                <option value="Gulpen-Wittem">
+                                <option value="Haaksbergen">
+                                <option value="Haaren">
+                                <option value="Haarlem">
+                                <option value="Haarlemmermeer">
+                                <option value="Halderberge">
+                                <option value="Hardenberg">
+                                <option value="Harderwijk">
+                                <option value="Hardinxveld-Giessendam">
+                                <option value="Harlingen">
+                                <option value="Hattem">
+                                <option value="Heemskerk">
+                                <option value="Heemstede">
+                                <option value="Heerde">
+                                <option value="Heerenveen">
+                                <option value="Heerhugowaard">
+                                <option value="Heerlen">
+                                <option value="Heeze-Leende">
+                                <option value="Heiloo">
+                                <option value="Hellendoorn">
+                                <option value="Hellevoetsluis">
+                                <option value="Helmond">
+                                <option value="Hendrik-Ido-Ambacht">
+                                <option value="Hengelo">
+                                <option value="Het Hogeland">
+                                <option value="Heumen">
+                                <option value="Heusden">
+                                <option value="Hillegom">
+                                <option value="Hilvarenbeek">
+                                <option value="Hilversum">
+                                <option value="Hoeksche Waard">
+                                <option value="Hof van Twente">
+                                <option value="Hollands Kroon">
+                                <option value="Hoogeveen">
+                                <option value="Hoorn">
+                                <option value="Horst aan de Maas">
+                                <option value="Houten">
+                                <option value="Huizen">
+                                <option value="Hulst">
+                                <option value="IJsselstein">
+                                <option value="Kaag en Braassem">
+                                <option value="Kampen">
+                                <option value="Kapelle">
+                                <option value="Katwijk">
+                                <option value="Kerkrade">
+                                <option value="Koggenland">
+                                <option value="Krimpen aan den IJssel">
+                                <option value="Krimpenerwaard">
+                                <option value="Laarbeek">
+                                <option value="Landerd">
+                                <option value="Landgraaf">
+                                <option value="Landsmeer">
+                                <option value="Langedijk">
+                                <option value="Lansingerland">
+                                <option value="Laren">
+                                <option value="Leeuwarden">
+                                <option value="Leiden">
+                                <option value="Leiderdorp">
+                                <option value="Leidschendam-Voorburg">
+                                <option value="Lelystad">
+                                <option value="Leudal">
+                                <option value="Leusden">
+                                <option value="Lingewaard">
+                                <option value="Lisse">
+                                <option value="Lochem">
+                                <option value="Loon op Zand">
+                                <option value="Lopik">
+                                <option value="Loppersum">
+                                <option value="Losser">
+                                <option value="Maasdriel">
+                                <option value="Maasgouw">
+                                <option value="Maassluis">
+                                <option value="Maastricht">
+                                <option value="Medemblik">
+                                <option value="Meerssen">
+                                <option value="Meierijstad">
+                                <option value="Meppel">
+                                <option value="Middelburg">
+                                <option value="Midden-Delfland">
+                                <option value="Midden-Drenthe">
+                                <option value="Midden-Groningen">
+                                <option value="Mill en Sint Hubert">
+                                <option value="Moerdijk">
+                                <option value="Molenlanden">
+                                <option value="Montferland">
+                                <option value="Montfoort">
+                                <option value="Mook en Middelaar">
+                                <option value="Neder-Betuwe">
+                                <option value="Nederweert">
+                                <option value="Nieuwegein">
+                                <option value="Nieuwkoop">
+                                <option value="Nijkerk">
+                                <option value="Nijmegen">
+                                <option value="Nissewaard">
+                                <option value="Noardeast-Frysl?">
+                                <option value="Noord-Beveland">
+                                <option value="Noordenveld">
+                                <option value="Noordoostpolder">
+                                <option value="Noordwijk">
+                                <option value="Nuenen, Gerwen en Nederwetten">
+                                <option value="Nunspeet">
+                                <option value="Oegstgeest">
+                                <option value="Oirschot">
+                                <option value="Oisterwijk">
+                                <option value="Oldambt">
+                                <option value="Oldebroek">
+                                <option value="Oldenzaal">
+                                <option value="Olst-Wijhe">
+                                <option value="Ommen">
+                                <option value="Oost Gelre">
+                                <option value="Oosterhout">
+                                <option value="Ooststellingwerf">
+                                <option value="Oostzaan">
+                                <option value="Opmeer">
+                                <option value="Opsterland">
+                                <option value="Oss">
+                                <option value="Oude IJsselstreek">
+                                <option value="Ouder-Amstel">
+                                <option value="Oudewater">
+                                <option value="Overbetuwe">
+                                <option value="Papendrecht">
+                                <option value="Peel en Maas">
+                                <option value="Pekela">
+                                <option value="Pijnacker-Nootdorp">
+                                <option value="Purmerend">
+                                <option value="Putten">
+                                <option value="Raalte">
+                                <option value="Reimerswaal">
+                                <option value="Renkum">
+                                <option value="Renswoude">
+                                <option value="Reusel de mierden">
+                                <option value="Rheden">
+                                <option value="Rhenen">
+                                <option value="Ridderkerk">
+                                <option value="Rijssen-Holten">
+                                <option value="Rijswijk">
+                                <option value="Roerdalen">
+                                <option value="Roermond">
+                                <option value="Roosendaal">
+                                <option value="Rotterdam">
+                                <option value="Rozendaal">
+                                <option value="Rucphen">
+                                <option value="Schagen">
+                                <option value="Scherpenzeel">
+                                <option value="Schiedam">
+                                <option value="Schiermonnikoog">
+                                <option value="Schouwen-Duiveland">
+                                <option value="s-Hertogenbosch">
+                                <option value="Simpelveld">
+                                <option value="Sint Anthonis">
+                                <option value="Sint-Michielsgestel">
+                                <option value="Sittard-Geleen">
+                                <option value="Sliedrecht">
+                                <option value="Sluis">
+                                <option value="Smallingerland">
+                                <option value="Soest">
+                                <option value="Someren">
+                                <option value="Son en Breugel">
+                                <option value="Stadskanaal">
+                                <option value="Staphorst">
+                                <option value="Stede Broec">
+                                <option value="Steenbergen">
+                                <option value="Steenwijkerland">
+                                <option value="Stein">
+                                <option value="Stichtse Vecht">
+                                <option value="Súdwest-Fryslân">
+                                <option value="Terneuzen">
+                                <option value="Terschelling">
+                                <option value="Texel">
+                                <option value="Teylingen">
+                                <option value="Tholen">
+                                <option value="Tiel">
+                                <option value="Tilburg">
+                                <option value="Tubbergen">
+                                <option value="Twenterand">
+                                <option value="Tynaarlo">
+                                <option value="Tytsjerksteradiel">
+                                <option value="Uden">
+                                <option value="Uitgeest">
+                                <option value="Uithoorn">
+                                <option value="Urk">
+                                <option value="Utrecht">
+                                <option value="Utrechtse Heuvelrug">
+                                <option value="Vaals">
+                                <option value="Valkenburg aan de Geul">
+                                <option value="Valkenswaard">
+                                <option value="Veendam">
+                                <option value="Veenendaal">
+                                <option value="Veere">
+                                <option value="Veldhoven">
+                                <option value="Velsen">
+                                <option value="Venlo">
+                                <option value="Venray">
+                                <option value="Vijfheerenlanden">
+                                <option value="Vlaardingen">
+                                <option value="Vlieland">
+                                <option value="Vlissingen">
+                                <option value="Voerendaal">
+                                <option value="Voorschoten">
+                                <option value="Voorst">
+                                <option value="Vught">
+                                <option value="Waadhoeke">
+                                <option value="Waalre">
+                                <option value="Waalwijk">
+                                <option value="Waddinxveen">
+                                <option value="Wageningen">
+                                <option value="Wassenaar">
+                                <option value="Waterland">
+                                <option value="Weert">
+                                <option value="Weesp">
+                                <option value="West Betuwe">
+                                <option value="West Maas en Waal">
+                                <option value="Westerkwartier">
+                                <option value="Westerveld">
+                                <option value="Westervoort">
+                                <option value="Westerwolde">
+                                <option value="Westland">
+                                <option value="Weststellingwerf">
+                                <option value="Westvoorne">
+                                <option value="Wierden">
+                                <option value="Wijchen">
+                                <option value="Wijdemeren">
+                                <option value="Wijk bij Duurstede">
+                                <option value="Winterswijk">
+                                <option value="Woensdrecht">
+                                <option value="Woerden">
+                                <option value="Wormerland">
+                                <option value="Woudenberg">
+                                <option value="Zaanstad">
+                                <option value="Zaltbommel">
+                                <option value="Zandvoort">
+                                <option value="Zeewolde">
+                                <option value="Zeist">
+                                <option value="Zevenaar">
+                                <option value="Zoetermeer">
+                                <option value="Zoeterwoude">
+                                <option value="Zuidplas">
+                                <option value="Zundert">
+                                <option value="Zutphen">
+                                <option value="Zwartewaterland">
+                                <option value="Zwijndrecht">
+                                <option value="Zwolle">
+                            </datalist>
+</body>
+
+</html>

@@ -1427,6 +1427,25 @@ section .policy-government-switch {
   .organisations .content-item {
     margin-top: 0; }
 
+/* GENERIC */
+table {
+  margin-bottom: 1rem; }
+
+td {
+  padding: 5px 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25); }
+  td:first-child {
+    padding-left: 0; }
+  td:last-child {
+    padding-right: 0; }
+
+.form-island {
+  padding: 2rem 0;
+  margin-bottom: 1rem; }
+
+.image--padded {
+  margin-bottom: 1rem; }
+
 /* COMPONENTS */
 /* HEADER VISUAL on governance and policy branch */
 .headerImage {

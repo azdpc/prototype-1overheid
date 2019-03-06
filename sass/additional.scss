@@ -12,6 +12,11 @@
 /* PROJECT VIREO STYLES */
 @import "_additional_vireo.scss";
 
+/* GENERIC */
+@import "_table.scss";
+@import "_forms.scss";
+@import "_images.scss";
+
 /* COMPONENTS */
 @import "_headerImage.scss";
 @import "_impactbar.scss";
