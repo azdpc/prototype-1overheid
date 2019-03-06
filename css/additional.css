@@ -847,7 +847,8 @@ section, main {
     width: 100%; }
 
 .success {
-  padding: 0.4rem 0.4rem 0.4rem 2rem;
+  position: relative;
+  padding: 0.4rem 4.4rem 0.4rem 2rem;
   border: 2px solid #6CAA30;
   border-radius: 0.5rem;
   background-color: var(--white);
@@ -855,6 +856,11 @@ section, main {
   background-repeat: no-repeat;
   background-size: 1.2em;
   background-position: 0.4rem 0.6rem; }
+  .success .logoutBtn {
+    position: absolute;
+    right: 0.4rem;
+    top: 0.3rem;
+    border-width: 0; }
 
 .opening-hours dt {
   float: left;
