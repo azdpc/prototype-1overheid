@@ -42,10 +42,10 @@
         z-index: 12;               
 
         h1 {
+            margin: 0;
             font-weight: bold;
             color: var(--white);
             text-shadow: 0px 0px 0.4em rgba(0,0,0,0.6);
-//             text-shadow: 0px 0px 0.4emrgba(0,84,70,0.8);
         }
 
         &.payoff {
@@ -55,13 +55,8 @@
         }
 
         &.breadcrumb {
-            bottom: auto !important; // Added to force breadcrumb to normal height, always.
-            z-index: 15;
-        }
-        
-        &.breadcrumb {
         	position: absolute;
-        	bottom: auto;
+            bottom: auto !important; // Added to force breadcrumb to normal height, always.
         	top: 0;
         	z-index: 15;
         	width: 100%;
@@ -80,10 +75,8 @@
         top: 0;
         bottom: 0;
         z-index: 8;
-//             background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 50%, rgba(0,133,111,0.8) 80%, rgba(0,133,111,0.8) 100%);
-//             background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 50%, rgba(0,84,70,0.8) 80%, rgba(0,84,70,0.8) 100%);
-        background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 33%, rgba(0,84,70,0.8) 100%);
-//             background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 65%, rgba(0,84,70,0.8) 100%);
+        background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 33%, rgba(0,84,70,0.2) 100%),
+                    linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.2) 25%, rgba(0,0,0,0.4) 100%);
     }
 
 
@@ -99,12 +92,16 @@
     @media (min-width: 576px) {
         .overlay {                
             &.pagetitle {
-                bottom: 2rem;                
+                bottom: 1.5rem;
             }
 
             h1 {
                 font-size: 2.7rem;
             }
+        }
+        .site-branch {
+            margin: -0.1em 0 0;
+            font-size: 1.25rem;                
         }
     }
     @media (min-width: 768px) {
@@ -113,27 +110,36 @@
                 font-size: 3rem;
             }
         }
+        .site-branch {
+            font-size: 1.5rem;                
+        }
     }
     @media (min-width: 1024px) {
         .overlay {                
             &.pagetitle {
-                bottom: 2.4rem;                
+                bottom: 1.8rem;                
             }
 
             h1 {
                 font-size: 3.6rem;
             }
         }
+        .site-branch {
+            font-size: 1.8rem;                
+        }
     }
     @media (min-width: 1200px) {
         .overlay {
             &.pagetitle {
-                bottom: 3rem;                
+                bottom: 2.4rem;                
             }
 
             h1 {
                 font-size: 4rem;
             }
+        }
+        .site-branch {
+            font-size: 1.8rem;                
         }
     }   
 
@@ -233,6 +239,8 @@
 
     
     &.magazineHeaderImage {
+        max-height: 640px;
+
         .overlay {
             &.pagetitle {
                 bottom: auto;
@@ -242,6 +250,7 @@
         
         h1 {
             font-size: 2rem;
+            max-width: 12em;
         }
         .policy-challenge {
             max-width: 20em;
@@ -324,6 +333,65 @@
     
     &.magazineHeaderImageSmall {
         max-height: 480px;
+        
+
+        @media (min-width: 361px) {
+            h1 {
+                font-size: 2rem;
+                line-height: 1.1;
+                text-align: center;
+            }
+            .site-branch,
+            .policy-challenge {
+                font-size: 1.2rem;                
+            }
+        }
+        @media (min-width: 576px) {
+            .overlay.pagetitle {
+                bottom: auto;
+                top: 6rem;                
+            }
+            h1 {
+                font-size: 2.4rem;
+                line-height: 1.1;
+            }
+            .site-branch {
+                font-size: 1.25rem;                
+            }
+        }
+        @media (min-width: 768px) {
+            h1 {
+                font-size: 3rem;
+            }
+            .site-branch {
+                font-size: 1.33rem;                
+            }
+        }
+        @media (min-width: 1024px) {
+            .overlay.pagetitle {
+                top: 8rem;                
+            }
+            h1 {
+                font-size: 4rem;
+            }
+            .site-branch {
+                font-size: 1.5rem;                
+            }
+        }
+        @media (min-width: 1200px) {
+            .overlay.pagetitle {
+                top: 8rem;                
+            }
+            h1 {
+                font-size: 5rem;
+            }
+            .site-branch {
+                font-size: 1.8rem;
+            }
+            .policy-challenge {
+                font-size: 2.4rem;
+            }
+        }
     }
 
     &.magazineHeaderLeftAligned {
@@ -355,16 +423,20 @@
     }
 
 
+/*
     &.headerImageDark {
             .darken {
-                background: linear-gradient(180deg, rgba(0,84,70,.5) 0%, rgba(#00211C,1) 100%);
-            }  
+                background: linear-gradient(180deg, rgba(0,84,70,.25) 0%, rgba(#00211C,.5) 100%);
+            }
+            
 
             .overlay.payoff {
                 color: white !important;
             }
     }
+*/
 
+/*
     &.headerImageDarker {
             .darken {
                 background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 25%, rgba(0,84,70,0.9) 100%);
@@ -374,7 +446,9 @@
                 color: white !important;
             }
     }
+*/
 
+/*
     &.headerImageBlack {
             .darken {
                 background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 33%, rgba(0,0,0,0.8) 100%);
@@ -384,4 +458,5 @@
                 color: white !important;
             }
     }
+*/
 }

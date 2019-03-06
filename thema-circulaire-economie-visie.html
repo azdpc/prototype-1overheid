@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/additional.css">
-  <!--link rel="stylesheet" href="css/impactbar.css"-->
+
 </head>
 
 <body cz-shortcut-listen="true" class="government">
@@ -28,18 +28,18 @@
                     <div class="dropdown-menu" aria-labelledby="dropdownSearchButton">
                         <div class="container-fluid">
 
-                            <div class="row">
-                            <div class="col-lg-10 offset-lg-1 col-md-12">
-                                <div class="container-fluid">
-                                    <form action="#">
-                                        <fieldset>
-                                            <input type="search" />
-                                            <input class="btn btn-primary btn-lg" type="submit" value="zoeken" />
-                                        </fieldset>
-                                    </form>
-                                </div>
-                            </div>
-                            </div>
+<div class="row">
+<div class="col-lg-10 offset-lg-1 col-md-12">
+    <div class="container-fluid">
+        <form action="#">
+            <fieldset>
+                <input type="search" />
+                <input class="btn btn-primary btn-lg" type="submit" value="zoeken" />
+            </fieldset>
+        </form>
+    </div>
+</div>
+</div>
 
                         </div>
                     </div>
@@ -67,11 +67,11 @@
                     <div class="dropdown-menu" aria-labelledby="dropdownContactButton">
                         <div class="container-fluid">
 
-                            <div class="row">
-                            <div class="col-lg-10 offset-lg-1 col-md-12">
-                                                            <p>Contactinformatie</p>
-                            </div>
-                            </div>
+<div class="row">
+<div class="col-lg-10 offset-lg-1 col-md-12">
+                                <p>Contactinformatie</p>
+</div>
+</div>
 
                         </div>
                     </div>
@@ -84,13 +84,15 @@
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                         <div class="container-fluid">
 
-                            <div class="row">
-                                <div class="col-lg-10 offset-lg-1 col-md-12">
-                                    <p>
-                                        Hoofdmenu van 1Overheid beleid en bestuur
-                                    </p>
-                                </div>
-                            </div>
+
+<div class="row">
+<div class="col-lg-10 offset-lg-1 col-md-12">
+                            <p>
+                                Hoofdmenu van 1Overheid beleid en bestuur
+                            </p>
+</div>
+</div>
+
                             
                         </div>
                     </div>
@@ -105,7 +107,7 @@
 </div>    
 </header>
 
-<header>
+<banner>
     <div class="loggedInElm">
         <div id="login-foldout" class="navbar-pinned expanded">
             <div class="container-fluid">
@@ -126,38 +128,113 @@
             </div>
         </div>
     </div>
-</header>
+</banner>
 
+<div class="modal fade loginmodal" id="loginForm" tabindex="-1" role="dialog" aria-labelledby="modal-header" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="modal-header">
+          <img src="img/digid-logo.svg" alt="digid">Login met DigiD
+                    </h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <form>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="gebruikersnaam">DigiD gebruikersnaam</label>
+            <input type="text" class="form-control" id="gebruikersnaam" placeholder="DigiD gebruikersnaam" value="asha_madhavan">
+                        </div>
+                        <div class="form-group">
+                            <label for="wachtwoord">Wachtwoord</label>
+                            <input type="password" class="form-control" id="wachtwoord" placeholder="Wachtwoord" value="********">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" id="loginBtn">Inloggen</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+<div class="modal fade chatModal" id="chatModal" tabindex="-1" role="dialog" aria-labelledby="chat-modal-header" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="chat-modal-header">Direct chatten</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <form>
+                    <div class="modal-body">
+                        
+                            <div class="messages">
+                                <div class="message">
+                                    <div class="avatar">
+                <img class="img-fluid" src="img/avatar.svg">
+                                    </div>
+                                    <div class="content">
+                                        <span class="name">Medewerker:</span>
+                                        <p>Goedemiddag, waarmee kan ik u helpen?</p>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            
+                            <div class="messageForm">
+                                <div class="inputField">
+                                    <input class="form-control form-control-lg" type="text" placeholder="Typ hier uw vraag">
+                                </div>
+                                <div class="submitBtn">
+                                    <button type="button" class="btn btn-primary btn-lg">Verstuur</button>
+                                </div>
+                            </div>
+                            
+                        
+                    </div>
+                    <div class="modal-footer">
+                        
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    
+  
 <main role="main magazine">
 
-    <!-- START visual with main page title and breadcrumb -->
-    <div class="headerImage magazineHeaderImage magazineHeaderImageSmall magazineHeaderLeftAligned headerImageBlack">
+       <!-- START visual with main page title and breadcrumb -->
+    <div class="headerImage magazineHeaderImage magazineHeaderImageSmall magazineHeaderLeftAligned headerImageDark">
+            <div class="slide" data-widescreen="true" data-img="content/gallery/large/windpark-noordoostpolder.jpg">
+                    <picture>
+                        <source srcset="content/gallery/medium/windpark-noordoostpolder.jpg" media="(max-width: 830px)">
+                        <source srcset="content/gallery/large/windpark-noordoostpolder.jpg" media="(max-width: 1250px)">
+                        <source srcset="content/gallery/widescreen/windpark-noordoostpolder.jpg" media="(min-width: 1250px)">
+                        <img src="content/gallery/large/windpark-noordoostpolder.jpg" alt="">
+                    </picture>
+                    <div class="darken"></div>
+                    <p class="copyright">
+                        <span>&copy;</span> Windpark Noordoostpolder
+                    </p>
+            </div>
 
-        <picture>
-            <source srcset="content/plastic-heroes.jpg" media="(max-width: 830px)">
-            <source srcset="content/plastic-heroes.jpg" media="(max-width: 1250px)">
-            <source srcset="content/plastic-heroes.jpg" media="(min-width: 1250px)">
-            <img src="content/plastic-heroes.jpg" alt="">
-        </picture>
-
-        <!--video src="img/bottles.mp4" type="video/mp4" loop="true" id="headervideo"></video-->
-
-        <div class="darken"></div>
-        <p class="copyright">
-            <span>&copy;</span> Windpark Noordoostpolder
-        </p>
-            
-
-            <!-- START overlay broodkruimel -->
+<!-- START overlay broodkruimel -->
             <div class="overlay breadcrumb">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-12">
                             <ul>
-                                <li><a href="beleid-en-bestuur.html">Home</a></li>
-                                <li><a href="beleid-themas.html">Beleidsthema&rsquo;s</a></li>
-                                <li><a href="beleid-klimaat.html">Klimaat en duurzaamheid</a></li>
-                                <li><a href="thema-circulaire-economie.html">Circulaire economie</a></li>
+                            <li><a href="beleid-en-bestuur.html">Home</a></li>
+                            <li><a href="beleid-klimaat.html">Klimaat en duurzaamheid</a></li>
+                            <li><a href="thema-circulaire-economie.html">Afval</a></li>
                             </ul>
                         </div>            
                     </div>
@@ -169,10 +246,11 @@
             <div class="overlay pagetitle">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-md-12 offset-lg-1">
+                        <div class="col-md-12">
                             <div class="container-fluid">
-                                <h1>Nederland volledig circulair in 2050</h1>
-                            
+
+                                <h1>Nederland volledig circulair</h1>
+                                <p class="site-branch">Visie en plannen</p>                           
                             </div>
                         </div>
                     </div>
@@ -180,29 +258,29 @@
                 </div>    <!-- .container-fluid -->
             </div>
             <!-- END overlay -->
+<!-- END overlay -->
 
-        <div class="overlay payoff">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-12 col-md-12 offset-lg-1">
-                        <div class="container-fluid">
-                                    
-                            <div class="policy-challenge">
-                                <p>
-                                    Visie en plannen
-                                </p>
+            <div class="overlay payoff">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-10 offset-lg-1 col-md-12">
+                            <div class="container-fluid">
+                                        
+                                <div class="policy-challenge">
+                                    <p>
+                                    2050: Een economie waarin we geen afval achterlaten, maar het gebruiken als grondstof
+                                    </p>
+                                </div>
+
                             </div>
-
                         </div>
+                        <!-- .col-lg-10 .offset-lg-1 col-md-12 -->
+            
                     </div>
-                    <!-- .col-lg-10 .offset-lg-1 col-md-12 -->
-        
-                </div>
-                <!-- .row -->
-            </div>    <!-- .container-fluid -->
-        </div>
-        <!-- END overlay -->
-
+                    <!-- .row -->
+                </div>    <!-- .container-fluid -->
+            </div>
+            <!-- END overlay -->
     </div>    
     <!-- END visual -->
 
@@ -216,7 +294,7 @@
                     <div class="container-fluid">
             
                         <div class="row">
-                            <div class="col-md-9">
+                            <div class="col-md-9 content-item">
                                 <div class="intro">
                                     <p>
                                         Het kabinet wil dat de Nederlandse economie in 2050 volledig circulair is. Met als tussendoel in 2030 50% minder gebruik van primaire grondstoffen (mineraal, fossiel en metalen). Om dat te bereiken moeten we nu volop aan de bak: bedrijven, overheid en industrie. Maar ook de consument is aan zet. Hoe worden we met z’n allen <em>circulair</em>? 
