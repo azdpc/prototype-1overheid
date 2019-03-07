@@ -1,0 +1,26 @@
+table {
+	
+	margin-bottom: 1rem;
+}
+
+td {
+	padding: 5px 10px;
+	border-bottom: 1px solid rgba(black, .25);
+
+	&:first-child {
+		padding-left: 0;
+	}
+
+	&:last-child {
+		padding-right: 0;
+	}
+
+}
+
+tr:nth-child(2n) td {
+	
+}
+
+tr:nth-child(2n + 1) td {
+	//background: var(--vireo-blue-light);
+}
