@@ -522,7 +522,7 @@ section, main {
     }
     
     .show button:before,
-    a.button:before {
+    a.button.show:before {
         content: "";
         display: block;
         position: absolute;
