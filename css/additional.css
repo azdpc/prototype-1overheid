@@ -1365,59 +1365,6 @@ section .policy-government-switch {
     .news .brick + .brick + .brick + .brick + .brick, .talks .brick + .brick + .brick + .brick + .brick {
       display: block; } }
 
-/* MIJN OVERHEID */
-.inbox,
-.ongoing {
-  margin-bottom: 2rem; }
-  .inbox .message,
-  .ongoing .message {
-    display: block;
-    padding: 0.5em 0;
-    text-decoration: none; }
-    .inbox .message:hover, .inbox .message:focus,
-    .ongoing .message:hover,
-    .ongoing .message:focus {
-      background-color: var(--vireo-blue-misty); }
-    .inbox .message p,
-    .ongoing .message p {
-      color: var(--black);
-      margin-bottom: 0; }
-    .inbox .message h3, .inbox .message time,
-    .ongoing .message h3,
-    .ongoing .message time {
-      position: relative;
-      font-weight: normal;
-      color: var(--black); }
-    .inbox .message h3,
-    .ongoing .message h3 {
-      margin-bottom: 0.167em; }
-    .inbox .message time,
-    .ongoing .message time {
-      padding-left: 18px; }
-    .inbox .message.new h3, .inbox .message.new time,
-    .ongoing .message.new h3,
-    .ongoing .message.new time {
-      font-weight: bold;
-      color: var(--vireo-blue-clear); }
-    .inbox .message.new h3:before,
-    .ongoing .message.new h3:before {
-      content: "";
-      display: block;
-      width: 0.4rem;
-      height: 0.4rem;
-      position: absolute;
-      left: -0.6rem;
-      top: 0.5rem;
-      border-radius: 0.2rem;
-      background-color: var(--danger); }
-      @media screen and (min-width: 768px) {
-        .inbox .message.new h3:before,
-        .ongoing .message.new h3:before {
-          left: -1rem; } }
-  .inbox .btn,
-  .ongoing .btn {
-    margin-top: 1rem; }
-
 /* ORGANISATIONS on policy and government homepage */
 .organisations {
   margin: 2rem 0; }
@@ -1717,7 +1664,6 @@ section .policy-government-switch {
         min-height: none;
         max-height: none; } }
 
-/* @import "_impactbar.scss"; */
 .pioneers .spotlight img {
   width: 100%; }
 
@@ -1981,3 +1927,177 @@ section .policy-government-switch {
   margin: 6rem 0;
   padding: 3rem 2rem 1rem;
   background-color: white; }
+
+.button-to-end {
+  text-align: right; }
+
+/* MIJN OVERHEID */
+.messages-legend p {
+  margin-bottom: 0.2rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--gray); }
+
+.inbox,
+.ongoing {
+  padding-top: 1rem;
+  margin-bottom: 2rem; }
+  .inbox .messages,
+  .ongoing .messages {
+    margin: 0 -2rem 1rem; }
+  .inbox .message,
+  .ongoing .message {
+    display: block;
+    padding: 0.2rem 0;
+    border-top: 1px solid #F0F0F0; }
+    .inbox .message:last-of-type,
+    .ongoing .message:last-of-type {
+      border-bottom: 1px solid #F0F0F0; }
+    .inbox .message .inner,
+    .ongoing .message .inner {
+      padding: 0.75rem 2rem; }
+    .inbox .message p,
+    .ongoing .message p {
+      color: var(--black);
+      margin-bottom: 0; }
+    .inbox .message h3,
+    .ongoing .message h3 {
+      display: inline-block;
+      margin-bottom: 0.167em; }
+    .inbox .message.new,
+    .ongoing .message.new {
+      /*
+            h3:before {
+                content: "";
+                display: block;
+                width: 0.8rem;
+                height: 0.8rem;
+                position: absolute;
+                left: -1rem;
+                top: 0.25rem;
+                border-radius: 0.4rem;
+                background-color: var(--danger);
+                
+                @media screen and (min-width: 768px) {
+                    left: -1.33rem;
+                }
+            }
+*/ }
+      .inbox .message.new .inner,
+      .ongoing .message.new .inner {
+        border-left: 0.5rem solid var(--vireo-blue-clear);
+        padding-left: 1.5rem; }
+      .inbox .message.new h3, .inbox .message.new time, .inbox .message.new .responsible,
+      .ongoing .message.new h3,
+      .ongoing .message.new time,
+      .ongoing .message.new .responsible {
+        font-weight: bold; }
+  .inbox a.message,
+  .ongoing a.message {
+    text-decoration: none; }
+    .inbox a.message h3, .inbox a.message time, .inbox a.message .responsible,
+    .ongoing a.message h3,
+    .ongoing a.message time,
+    .ongoing a.message .responsible {
+      position: relative;
+      color: var(--vireo-blue-clear);
+      font-weight: normal; }
+    .inbox a.message h3,
+    .ongoing a.message h3 {
+      color: var(--vireo-blue-clear);
+      padding-bottom: 1px;
+      border-bottom: 1px solid var(--white); }
+    .inbox a.message:hover .inner, .inbox a.message:focus .inner,
+    .ongoing a.message:hover .inner,
+    .ongoing a.message:focus .inner {
+      background-color: #F8F8F8; }
+    .inbox a.message:hover h3, .inbox a.message:focus h3,
+    .ongoing a.message:hover h3,
+    .ongoing a.message:focus h3 {
+      border-bottom-color: var(--vireo-blue-clear); }
+    .inbox a.message.new h3,
+    .ongoing a.message.new h3 {
+      padding-bottom: 0;
+      border-bottom: 2px solid var(--white); }
+    .inbox a.message.new:hover h3, .inbox a.message.new:focus h3,
+    .ongoing a.message.new:hover h3,
+    .ongoing a.message.new:focus h3 {
+      border-bottom-color: var(--vireo-blue-clear); }
+  .inbox .btn,
+  .ongoing .btn {
+    margin-top: 1rem; }
+
+.ongoing h2 {
+  margin-bottom: 0.75rem; }
+
+.ongoing .messages {
+  margin: 0 -1rem 1rem; }
+  .ongoing .messages .row {
+    align-items: stretch; }
+    .ongoing .messages .row .message,
+    .ongoing .messages .row .inner {
+      height: 100%; }
+
+.ongoing .message {
+  border: 1px solid #F0F0F0;
+  background-color: #F8F8F8; }
+  .ongoing .message .inner {
+    padding: 0.75rem 1rem; }
+
+.ongoing .process-stepper {
+  list-style: none;
+  display: flex;
+  margin: 1rem 0;
+  padding: 0; }
+  .ongoing .process-stepper li {
+    display: block;
+    flex: 0 0 auto;
+    position: relative;
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 0.4rem;
+    margin-right: 2rem;
+    border: 4px solid var(--vireo-blue-smoke); }
+    .ongoing .process-stepper li:before {
+      content: "";
+      width: 2.05rem;
+      height: 4px;
+      position: absolute;
+      right: 0.5rem;
+      top: 0.1rem;
+      background-color: var(--vireo-blue-smoke); }
+    .ongoing .process-stepper li:first-child:before {
+      display: none; }
+    .ongoing .process-stepper li.completed {
+      border-color: var(--green);
+      background-color: var(--green); }
+      .ongoing .process-stepper li.completed:before {
+        background-color: var(--green); }
+    .ongoing .process-stepper li.current {
+      border-color: var(--vireo-blue-clear);
+      background-color: var(--white); }
+      .ongoing .process-stepper li.current:before {
+        background-color: var(--vireo-blue-clear); }
+    .ongoing .process-stepper li.pending {
+      border-color: var(--warning);
+      background-color: var(--white); }
+      .ongoing .process-stepper li.pending:before {
+        background-color: var(--warning); }
+
+.notifications {
+  padding: 2rem 0 3rem; }
+  .notifications h2 {
+    margin-bottom: 0.75rem; }
+  .notifications .messages {
+    margin: 0 -1em; }
+  .notifications .message {
+    border-bottom: 1px solid var(--vireo-blue-smoke); }
+    .notifications .message:first-of-type {
+      border-top: 1px solid var(--vireo-blue-smoke); }
+    .notifications .message p {
+      margin-bottom: 0; }
+  .notifications .inner {
+    padding: 0.75rem 1rem; }
+  .notifications .button-to-end {
+    align-self: center; }

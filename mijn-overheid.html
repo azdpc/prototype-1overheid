@@ -405,36 +405,15 @@
 
                     <div class="loggedInElm">
                         <div class="row">
-                            <div class="col-md-12 notVisibleInFrame">
+                            <div class="col-md-8 notVisibleInFrame">
                                 <h1>Mijn Overheid van Asha Martinez</h1>
                             </div>
-                        </div>
-                    </div>
-
-
-                </div>
-
-
-
-
-<!--
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-12">
-                            
-                            <h2 class="vireo-light">Meteen regelen</h2>
-                            
-                            <div class="main-actions">
-                                <p><a class="btn btn-primary" href="#rijbewijs-aanvragen">Rijbewijs aanvragen</a></p>
-                                <p><a class="btn btn-primary" href="rijbewijs-verlengen.html">Rijbewijs verlengen</a></p>
-                                <p><a class="btn btn-primary" href="#rijbewijs-verloren-of-gestolen">Rijbewijs verloren of gestolen</a></p>
+                            <div class="col-md-4">
+                                <p class="button-to-end"><a class="btn btn-primary" href="javascript:return false;">Mijn persoonlijke gegevens</a></p>
                             </div>
-
                         </div>
-
                     </div>
                 </div>
--->
             </div>
         </div>
     </div>
@@ -454,42 +433,64 @@
                             <div class="row">
                                 <div class="col-md-12">
                                     <h2>Mijn berichten</h2>
-    
-                                    <a href="#to-this-message" class="message new">
+
+                                    <div class="messages-legend">
                                         <div class="row">
-                                            <time class="col-md-1">09-11</time>
-                                            <div class="col-md-7">
-                                                <h3>Herinnering APK keuring</h3>
-                                                <p class="summary">Uw APK verloopt op donderdag 20 december. Laat uw auto tijdig keuren om een boete te voorkomen.</p>
+                                            <div class="col-md-8">
+                                                <p>Onderwerp</p>
                                             </div>
-                                            <p class="col-md-4 responsible">RDW</p>
-                                        </div>
-                                    </a>
-    
-                                    <a href="#to-this-message-2" class="message new">
-                                        <div class="row">
-                                            <time class="col-md-1">07-11</time>
-                                            <div class="col-md-7">
-                                                <h3>Hogere kinderbijslag vanaf 1 januari</h3>
-                                                <p class="summary">Uw kind wordt binnenkort 12 jaar. Uw kinderbijslag wordt daarom verhoogd tot € 75,80 per maand.</p>
+                                            <div class="col-md-1">
+                                                <p>Datum</p>
                                             </div>
-                                            <p class="col-md-4 responsible">Belastingdienst</p>
-                                        </div>
-                                    </a>
-    
-                                    <a href="#to-this-message-3" class="message">
-                                        <div class="row">
-                                            <time class="col-md-1">31-10</time>
-                                            <div class="col-md-7">
-                                                <h3>Verleng uw rijbewijs</h3>
-                                                <p class="summary">Over zes weken verloopt uw rijbewijs. U kunt nu alvast verlengen.</p>
+                                            <div class="col-md-3">
+                                                <p>Afzender</p>
                                             </div>
-                                            <p class="col-md-4 responsible">RDW</p>
                                         </div>
-                                    </a>
+                                    </div>
     
+                                    <div class="messages">
+                                        <a href="#to-message-1" class="message new">
+                                            <div class="inner">
+                                                <div class="row">
+                                                    <div class="col-md-8">
+                                                        <h3>Herinnering APK keuring</h3>
+                                                        <p class="summary">Uw APK verloopt op donderdag 20 december. Laat uw auto tijdig keuren om een boete te voorkomen.</p>
+                                                    </div>
+                                                    <time class="col-md-1">09-11</time>
+                                                    <p class="col-md-3 responsible">RDW</p>
+                                                </div>
+                                            </div>
+                                        </a>
+        
+                                        <a href="#to-message-2" class="message new">
+                                            <div class="inner">
+                                                <div class="row">
+                                                    <div class="col-md-8">
+                                                        <h3>Hogere kinderbijslag vanaf 1 januari</h3>
+                                                        <p class="summary">Uw kind wordt binnenkort 12 jaar. Uw kinderbijslag wordt daarom verhoogd tot € 75,80 per maand.</p>
+                                                    </div>
+                                                    <time class="col-md-1">07-11</time>
+                                                    <p class="col-md-3 responsible">Belastingdienst</p>
+                                                </div>
+                                            </div>
+                                        </a>
+        
+                                        <a href="#to-message-3" class="message">
+                                            <div class="inner">
+                                                <div class="row">
+                                                    <div class="col-md-8">
+                                                        <h3>Verleng uw rijbewijs</h3>
+                                                        <p class="summary">Over zes weken verloopt uw rijbewijs. U kunt nu alvast verlengen.</p>
+                                                    </div>
+                                                    <time class="col-md-1">31-10</time>
+                                                    <p class="col-md-3 responsible">RDW</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
     
-                                    <p><a class="btn btn-primary" href="#berichten">Al mijn berichten</a></p>
+                                    <p class="follow-up"><a href="#berichten">Al mijn berichten</a></p>
     
                                 </div>
                             </div>
@@ -500,35 +501,68 @@
                         <div class="ongoing">
                             <div class="row">
                                 <div class="col-md-12">
-                                    <h2>Mijn aanvragen</h2>
+                                    <h2>Mijn lopende zaken</h2>
                                 </div>
+                            </div>
 
-                                <div class="col-md-6">
-                                    <a href="#to-process-1" class="message new">
-                                        <div class="row">
-                                            <time class="col-md-2">06-11</time>
-                                            <div class="col-md-10">
-                                                <h3>Rijbewijs verlengen</h3>
-                                                <p>Uw nieuwe rijbewijs is onderweg. Ophalen kan vanaf <strong>donderdag 15 november</strong>.</p>                                
+                            <div class="messages">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="message">
+                                            <div class="inner">
+                                                <div class="row">
+    <!--                                                 <time class="col-md-2">06-11</time> -->
+                                                    <div class="col-md-10">
+                                                        <h3>Rijbewijs verlengen</h3>
+                                                        
+                                                        <ol class="process-stepper">
+                                                            <li class="requested completed">
+                                                              <span class="visually-hidden">In behandeling genomen op 13-02</span>
+                                                            </li>
+                                                            <li class="processing current">
+                                                            </li>
+                                                            <li class="delivered open">
+                                                            </li>
+                                                        </ol>
+                                                        
+                                                        <p class="status">Uw nieuwe rijbewijs wordt gemaakt. Ophalen kan vanaf <strong>donderdag 15 november</strong>.</p>                                
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                    </a>
-                                </div>
+                                    </div>
+    
+                                    <div class="col-md-6">
+                                        <div class="message">
+                                            <div class="inner">
+<!--                                                 <time class="col-md-2">18-10</time> -->
+                                                <h3>Aanvraag sloopvergunning</h3>
 
-                                <div class="col-md-6">
-                                    <a href="#to-process-2" class="message">
-                                        <div class="row">
-                                            <time class="col-md-2">18-10</time>
-                                            <div class="col-md-10">
-                                                <h3>Sloopvergunning voor bijkeuken</h3>
-                                                <p>Uw aanvraag is in behandeling. U ontvangt een besluit voor <strong>vrijdag 14 december</strong>.</p>                                
+                                                <ol class="process-stepper">
+                                                    <li class="requested completed">
+                                                      <span class="visually-hidden">Online ingediend op 24-02</span>
+                                                    </li>
+                                                    <li class="accepted pending">
+                                                    </li>
+                                                    <li class="processing open">
+                                                    </li>
+                                                    <li class="approved open">
+                                                    </li>
+                                                    <li class="archived open">
+                                                    </li>
+                                                </ol>
+
+                                                <p>Uw aanvraag is niet volledig. <br />Wij missen nog de kadastrale tekening.</p>
+                                                <p><a class="btn btn-warning" href="#todo">Aanvraag aanvullen</a></p>
                                             </div>
                                         </div>
-                                    </a>
+                                    </div>
                                 </div>
+                            </div>
 
+                            <div class="row">
                                 <div class="col-md-12">
-                                    <p><a class="btn btn-primary" href="#lopend">Al mijn aanvragen</a></p>
+                                    <p class="follow-up"><a class="" href="#lopend">Al mijn lopende zaken</a></p>
                                 </div>
                             </div>
                         </div>
@@ -536,12 +570,81 @@
 
 
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<div class="loggedInElm">
+<main class="actionable">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-10 offset-lg-1 col-md-12">
+                <div class="container-fluid">
+
+                        <!-- START inbox -->
+                        <div class="notifications">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h2>Mijn attenderingen</h2>
+
+                                    <div class="messages-legend">
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <p>Bezorging</p>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <p>Filters</p>
+                                            </div>
+                                            <div class="col-md-5">
+                                                <p>Attenderingen van</p>
+                                            </div>
+                                            <div class="col-md-2">
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="messages">
+                                        <div class="message">
+                                            <div class="inner">
+                                                <div class="row">
+                                                    <div class="col-md-3">
+                                                        <p>asha_martinez@gmail.com</p>
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <p>
+                                                            <span>2613VL</span>
+                                                            <span>302</span>
+                                                            <span>binnen 500m</span>
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-md-5">
+                                                        Gemeente Barendrecht, provincie Zuid-Holland, Hoogheemraadschap Delfland
+                                                    </div>
+                                                    <div class="col-md-2 button-to-end">
+                                                        <p><a class="btn btn-primary" href="#notificaties">Aanpassen</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- EINDE inbox -->
+
+
 
                 </div>
             </div>
         </div>
     </div>
 </main>
+</div>
+
+
 
 
 

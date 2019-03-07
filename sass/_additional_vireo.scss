@@ -1571,66 +1571,6 @@ section {
 }
 
 
-/* MIJN OVERHEID */
-.inbox,
-.ongoing {
-    margin-bottom: 2rem;
-    .message {
-        display: block;
-        padding: 0.5em 0;
-        text-decoration: none;
-        
-        &:hover,
-        &:focus {
-            background-color: var(--vireo-blue-misty);
-        }
-
-        p {
-            color: var(--black);
-            margin-bottom: 0;
-        }
-        
-        h3, time {
-            position: relative;
-            font-weight: normal;
-            color: var(--black);
-        }
-        h3 {
-            margin-bottom: 0.167em;
-        }
-        time {
-            padding-left: 18px;
-        }
-
-        &.new {
-            h3, time {
-                font-weight: bold;
-                color: var(--vireo-blue-clear);            
-            }
-            
-            h3:before {
-                content: "";
-                display: block;
-                width: 0.4rem;
-                height: 0.4rem;
-                position: absolute;
-                left: -0.6rem;
-                top: 0.5rem;
-                border-radius: 0.2rem;
-                background-color: var(--danger);
-                
-                @media screen and (min-width: 768px) {
-                    left: -1rem;
-                }
-            }
-        }
-    }
-    
-    .btn {
-        margin-top: 1rem;
-    }
-}
-
 
 /* ORGANISATIONS on policy and government homepage */
 .organisations {
