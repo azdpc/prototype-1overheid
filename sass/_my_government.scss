@@ -4,6 +4,7 @@
 
 /* MIJN OVERHEID */
 
+
 .messages-legend {
     p {
         margin-bottom: 0.2rem;
@@ -11,6 +12,9 @@
         text-transform: uppercase;
         letter-spacing: 0.1em;
         color: var(--gray);
+    }
+    @media screen and (max-width: 480px) {
+        display: none;
     }
 }
 
@@ -22,7 +26,11 @@
     margin-bottom: 2rem;
 
     .messages {
-        margin: 0 -2rem 1rem;
+        margin: 0 0 1rem;
+
+        @media screen and (min-width: 960px) {
+            margin: 0 -2rem 1rem;        
+        }
     }
 
     .message {
@@ -37,7 +45,11 @@
         }
 
         .inner {
-            padding: 0.75rem 2rem;            
+            padding: 0.75rem 1rem;
+
+            @media screen and (min-width: 960px) {
+                padding: 0.75rem 2rem;            
+            }
         }
         
         p {
@@ -53,7 +65,11 @@
         &.new {
             .inner {
                 border-left: 0.5rem solid var(--vireo-blue-clear);
-                padding-left: 1.5rem;
+                padding-left: 0.5rem;
+
+                @media screen and (min-width: 960px) {
+                    padding-left: 1.5rem;
+                }
             }
             
             h3, time, .responsible {
@@ -130,7 +146,9 @@
     }
     
     .messages {
-        margin: 0 -1rem 1rem;
+        @media screen and (min-width: 960px) {
+            margin: 0 -1rem 1rem;        
+        }
         
         .row {
             align-items: stretch;
@@ -139,12 +157,23 @@
             .inner {
                 height: 100%;
             }
+            
+            & > div {
+                @media screen and (max-width: 480px) {
+                    margin-bottom: 1rem;
+
+                    &:last-of-child {
+                        margin-bottom: 0;
+                    }
+                }
+                
+            }
         }
     }
     .message {
         border: 1px solid #F0F0F0;
         background-color: #F8F8F8;
-        
+
         .inner {
             padding: 0.75rem 1rem;
         }
@@ -217,7 +246,9 @@
     }
     
     .messages {
-        margin: 0 -1em;
+        @media screen and (min-width: 960px) {
+            margin: 0 -1em;            
+        }
     }
     .message {
         border-bottom: 1px solid var(--vireo-blue-smoke);
@@ -231,7 +262,10 @@
         }
     }
     .inner {
-        padding: 0.75rem 1rem;
+        padding: 0.75rem 0;
+        @media screen and (min-width: 960px) {
+            padding: 0.75rem 1rem;
+        }
     }
     .button-to-end {
         align-self: center;
