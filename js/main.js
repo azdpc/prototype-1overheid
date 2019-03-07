@@ -136,7 +136,18 @@ function handleModuleForm(){
 
         $('.btn-next-question').on('click', function(e){
             e.preventDefault();
-            showNextQuestion();
+
+            if( $(this).hasClass('btn-delay') ) {
+            	$(this).addClass('is-loading');
+
+				setTimeout(function() {
+					showNextQuestion();
+				}, 2000);
+				
+            } else {
+            	showNextQuestion();	
+            }
+            
         });
 
         $('.btn-prev-question').on('click', function(e){
