@@ -1365,6 +1365,8 @@ blockquote {
     img {
         display: block;
         width: 50%;
+        max-height: 200px;
+        object-fit: cover;
     }
     a {
         text-decoration: none;
