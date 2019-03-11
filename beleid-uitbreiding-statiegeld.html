@@ -1,359 +1,306 @@
 <!DOCTYPE html>
-<html lang="nl-NL"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Plastic | Beleid en bestuur | 1overheid</title>
-  <meta name="description" content="Prototype voor 1overheid: informatie, diensten, beleid en bestuur">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/additional.css">
+<html lang="nl-NL">
 
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Plastic | Beleid en bestuur | 1overheid</title>
+    <meta name="description" content="Prototype voor 1overheid: informatie, diensten, beleid en bestuur">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/additional.css">
 </head>
 
 <body cz-shortcut-listen="true" class="government">
-<header>
-<div class="container-fluid">
-    <div>
-        <nav class="navbar navbar-light">
-            <a href="beleid-en-bestuur.html" class="navbar-brand">
-                <img src="img/een-overheid-groen.svg" alt="1overheid">
-                <em class="payoff">Wetten en regels, visie en plannen</em>
-            </a>
-            
-            <div class="navbar-options"> 
-                <div class="search-wrapper">
-                    <button class="dropdown-toggle" type="button" id="dropdownSearchButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <span>zoeken</span>
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownSearchButton">
-                        <div class="container-fluid">
-
-                            <div class="row">
-                            <div class="col-lg-10 offset-lg-1 col-md-12">
+    <header>
+        <div class="container-fluid">
+            <div>
+                <nav class="navbar navbar-light">
+                    <a href="beleid-en-bestuur.html" class="navbar-brand">
+                        <img src="img/een-overheid-groen.svg" alt="1overheid">
+                        <em class="payoff">Wetten en regels, visie en plannen</em>
+                    </a>
+                    <div class="navbar-options">
+                        <div class="search-wrapper">
+                            <button class="dropdown-toggle" type="button" id="dropdownSearchButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span>zoeken</span>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownSearchButton">
                                 <div class="container-fluid">
-                                    <form action="#">
-                                        <fieldset>
-                                            <input type="search" />
-                                            <input class="btn btn-primary btn-lg" type="submit" value="zoeken" />
-                                        </fieldset>
-                                    </form>
+                                    <div class="row">
+                                        <div class="col-lg-10 offset-lg-1 col-md-12">
+                                            <div class="container-fluid">
+                                                <form action="#">
+                                                    <fieldset>
+                                                        <input type="search" />
+                                                        <input class="btn btn-primary btn-lg" type="submit" value="zoeken" />
+                                                    </fieldset>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            </div>
-
                         </div>
-                    </div>
-                </div>
-                
-                
-                <div class="contact-wrapper">
-                    <button class="dropdown-toggle" type="button" id="dropdownContactButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <span>contact</span>
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownContactButton">
-                        <div class="container-fluid">
-
-                            <div class="row">
-                              <div class="col-lg-10 offset-lg-1 col-md-12">
-                                <p>Contactinformatie</p>
-                              </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="menu-wrapper">
-                    <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <span>menu</span>
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <div class="container-fluid">
-
-                            <div class="row">
-                                <div class="col-lg-10 offset-lg-1 col-md-12">
-                                    <p>
-                                        Hoofdmenu van 1Overheid beleid en bestuur
-                                    </p>
+                        <div class="contact-wrapper">
+                            <button class="dropdown-toggle" type="button" id="dropdownContactButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span>contact</span>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownContactButton">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-lg-10 offset-lg-1 col-md-12">
+                                            <p>Contactinformatie</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            
                         </div>
-                    </div>
-                </div>
-
-            </div>
-            
-
-        </nav>
-    </div>
-
-</div>    
-</header>
-
-<header>
-    <div class="loggedInElm">
-        <div id="login-foldout" class="navbar-pinned expanded">
-            <div class="container-fluid">
-
-                <div class="navbar-pinned-content">
-                    <div class="row align-items-center">
-                        <div class="col-8">
-                                Ingelogd als Asha Martinez
-                        </div>
-                        <div class="col-4">
-                            <div class="button-wrapper float-right">
-                                <button class="btn btn-sm btn-success logoutBtn">Uitloggen</button>
+                        <div class="menu-wrapper">
+                            <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span>menu</span>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-lg-10 offset-lg-1 col-md-12">
+                                            <p>
+                                                Hoofdmenu van 1Overheid beleid en bestuur
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-
+                </nav>
             </div>
         </div>
-    </div>
-</header>
-
-<main role="main magazine">
-
-    <!-- START visual with main page title and breadcrumb -->
-    <div class="headerImage smallHeaderImage headerImageDark">
-        <picture>
-            <source srcset="content/fabriek-recycling.jpg" media="(max-width: 830px)">
-            <source srcset="content/fabriek-recycling.jpg" media="(max-width: 1250px)">
-            <source srcset="content/fabriek-recycling.jpg" media="(min-width: 1250px)">
-            <img src="content/fabriek-recycling.jpg" alt="">
-        </picture>
-        <div class="darken"></div>
-        <p class="copyright">
-            <span>&copy;</span> Windpark Noordoostpolder
-        </p>
-            
-
+    </header>
+    <header>
+        <div class="loggedInElm">
+            <div id="login-foldout" class="navbar-pinned expanded">
+                <div class="container-fluid">
+                    <div class="navbar-pinned-content">
+                        <div class="row align-items-center">
+                            <div class="col-8">
+                                Ingelogd als Asha Martinez
+                            </div>
+                            <div class="col-4">
+                                <div class="button-wrapper float-right">
+                                    <button class="btn btn-sm btn-success logoutBtn">Uitloggen</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main role="main magazine">
+        <!-- START visual with main page title and breadcrumb -->
+        <div class="headerImage smallHeaderImage headerImageDark">
+            <picture>
+                <source srcset="content/fabriek-recycling.jpg" media="(max-width: 830px)">
+                <source srcset="content/fabriek-recycling.jpg" media="(max-width: 1250px)">
+                <source srcset="content/fabriek-recycling.jpg" media="(min-width: 1250px)">
+                <img src="content/fabriek-recycling.jpg" alt="">
+            </picture>
+            <div class="darken"></div>
+            <p class="copyright">
+                <span>&copy;</span> Windpark Noordoostpolder
+            </p>
             <!-- START overlay broodkruimel -->
             <div class="overlay breadcrumb">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-12">
                             <ul>
-                            <li><a href="beleid-en-bestuur.html">Home</a></li>
-                            <li><a href="beleid-klimaat.html">Klimaat en milieu</a></li>
-                            <li><a href="thema-circulaire-economie.html">Afval</a></li>
+                                <li><a href="beleid-en-bestuur.html">Home</a></li>
+                                <li><a href="beleid-klimaat.html">Klimaat en milieu</a></li>
+                                <li><a href="thema-circulaire-economie.html">Afval</a></li>
                             </ul>
-                        </div>            
+                        </div>
                     </div>
                     <!-- .row -->
-                </div>    <!-- .container-fluid -->
+                </div> <!-- .container-fluid -->
             </div>
             <!-- EINDE overlay broodkruimel -->
-            
             <div class="overlay pagetitle">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-12">
                             <div class="container-fluid">
-                                    <p class="site-branch">
-                                        Visie en plannen
-                                    </p>
-                                        <h1>Uitbreiding regeling statiegeld</h1>
+                                <p class="site-branch">
+                                    Visie en plannen
+                                </p>
+                                <h1>Uitbreiding regeling statiegeld</h1>
                             </div>
                         </div>
                     </div>
                     <!-- .row -->
-                </div>    <!-- .container-fluid -->
+                </div> <!-- .container-fluid -->
             </div>
             <!-- END overlay -->
-
-
             <div class="overlay payoff">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-lg-12 col-md-12">
                             <div class="container-fluid">
-                                        
                                 <div class="policy-challenge">
-                                    
                                 </div>
-
                             </div>
                         </div>
                         <!-- .col-lg-10 .offset-lg-1 col-md-12 -->
-            
                     </div>
                     <!-- .row -->
-                </div>    <!-- .container-fluid -->
+                </div> <!-- .container-fluid -->
             </div>
             <!-- END overlay -->
-    </div>    
-    <!-- END visual -->
-
-    <section class="government ">
-        <!-- START intro en navigatie naar onderliggende pagina's -->
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-10 col-md-12">
-    
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-md-9 content-item">
-                                <div class="intro">
-                                    <p>
-                                        Zwerfafval kan de bodem of het water verontreinigen. Het trekt ongedierte aan. En het is gevaarlijk voor dieren die het afval opeten of erin verstrikt raken. Zo’n 40% van het zwerfafval bestaat nu uit kleine plastic flesjes. Als dit niet snel terugloopt gaat het Rijk op 1 januari 2021 ook statiegeld heffen op kleine flesjes.
-                                  </p>
-                              </div>
-                              <div class="content-item">
-                                  <p>
-
-
-
-Ieder jaar komen tussen de 50 en 100 miljoen flesjes in het zwerfafval terecht. Dit is 40% van het totaal. Bedrijven en gemeenten krijgen eerst de kans om samen de plastic flesjes in het zwerfafval sterk te verminderen. Dit moet ervoor zorgen dat in het najaar van 2020:
-
-                                  <ul>
-                                      <li>het aantal kleine plastic flesjes in het zwerfafval met 70% tot 90% is verminderd.</li>
-                                      <li>90% van deze flessen wordt hergebruikt.</li>
-                                  </ul>
-                                      </p>
-                                      <p>
-Lukt dit niet? Dan voert het Rijk op 1 januari 2021 statiegeld in op kleine plastic flesjes.
-                                     </p>
+        </div>
+        <!-- END visual -->
+        <section class="government ">
+            <!-- START intro en navigatie naar onderliggende pagina's -->
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-10 col-md-12">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-9 content-item">
+                                    <div class="intro">
+                                        <p>
+                                            Er komt vanaf 2021 statiegeld op kleine plastic flessen, tenzij het de verpakkingsindustrie lukt de hoeveelheid plastic flesjes in het zwerfafval te verminderen met 70% tot 90%. Verder moet de industrie voor 2021 90% van de plastic flesjes hergebruiken.
+                                        </p>
+                                    </div>
+                                    <div class="content-item">
+                                        <p>
+                                            Zwerfafval kan de bodem of het water verontreinigen. Het trekt ongedierte aan. En het is gevaarlijk voor dieren die het afval opeten of erin verstrikt raken. Toch komen elk jaar tussen de 50 en 100 miljoen plastic flesjes in het zwerfafval terecht. Dit is 40% van het totaal.
+                                        </p>
+                                        <blockquote>
+                                            &ldquo;Statiegeld helpt - dat weten we - dus de invoering van statiegeld op kleine flesjes zet ik in gang. Maar als een andere aanpak sneller hetzelfde resultaat boekt, is statiegeld niet nodig&rdquo;
+                                        </blockquote>
+                                        <p class="follow-up">
+                                            <a href="beleid-bewindspersoon.html">Staatssecretaris Stientje van Veldhoven</a>
+                                        </p>
+                                        <p>
+                                            De verpakkingsindustrie krijgt dus eerst zelf de kans om het aantal plastic flesjes in het zwerfafval sterk te verminderen. En om nog beter na te denken over recycling en gebruik van herbruikbare materialen. Dit moet ervoor zorgen dat in het najaar van 2020:
+                                        </p>
+                                        <ul>
+                                            <li>het aantal kleine plastic flesjes in het zwerfafval met 70% tot 90% is verminderd.</li>
+                                            <li>90% van deze flessen wordt hergebruikt.</li>
+                                        </ul>
+                                        <p>
+                                            Lukt dit niet? Dan voert het Rijk op 1 januari 2021 statiegeld in op kleine plastic flesjes van 0,5 liter. Het bedrijfsleven is tegen uitbreiding van statiegeld vanwege de hoge kosten.
+                                        </p>
+                                        <p>
+                                            Het kabinet neemt in het najaar van 2020 een beslissing over het invoeren van statiegeld op deze flesjes. Bij eventuele invoering worden kleine winkeliers ontlast.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-
-    <section class="">
-        <!-- START intro en navigatie naar onderliggende pagina's -->
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-12 col-md-12">
-    
-                    <div class="container-fluid">
-            
-                        <div class="content-item">
-                            <!-- <h2 class="with-bar">Direct regelen</h2> -->
-                            <ul class="row subnav topics-list">
-    
-                            </ul>
+        </section>
+        <section class="">
+            <!-- START intro en navigatie naar onderliggende pagina's -->
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12">
+                        <div class="container-fluid">
+                            <div class="content-item">
+                                <!-- <h2 class="with-bar">Direct regelen</h2> -->
+                                <ul class="row subnav topics-list">
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-
-
-
-    <section class="government">
-        <!-- START intro en navigatie naar onderliggende pagina's -->
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-lg-12 col-md-12">
-
-              <div class="container-fluid">
+        </section>
+        <section class="government">
+            <!-- START intro en navigatie naar onderliggende pagina's -->
+            <div class="container-fluid">
                 <div class="row">
-                  <div class="col-md-6">
-
-                    <div class="content-item">
-                        <h2 class="with-bar">Wetten en regels</h2>
-
-                        <ul class="topics-list">
-                              <li class=""><a href="#Lorem">Verbod op gratis weggeven plastic tassen (Regeling beheer verpakkingen)</a></li>
-                              <li class=""><a href="#Lorem">Besluit beheer verpakkingen 2014</a></li>
-                              <li class=""><a href="https://ec.europa.eu/food/sites/food/files/safety/docs/cs_fcm_plastic-guidance_201110_en.pdf">Union guidelines on Regulation (EU) on plastic materials in contact with food</a></li>
-                              <li class=""><a href="#Lorem">Regeling verpakking en verpakkingsafval</a></li>
-                              <li class=""><a href="https://eur-lex.europa.eu/legal-content/NL/TXT/?uri=LEGISSUM%3Al21207">EU Richtlijnen over verpakking en verpakkingsafval</a></li>
-                              <li class=""><a href="https://eur-lex.europa.eu/legal-content/NL/TXT/?uri=CELEX:32009L0125">Europese richtlijn ecodesign voor meer gebruik van kunststof producten</a></li>
-                              <li class=""><a href="www.ruimteinregels.nl/wp-content/uploads/2016/05/Folder-ruimte-in-regels-web-V1.pdf">Programma ruimte in regels voor groene groei</a></li>
-                        </ul>
-
-
-
+                    <div class="col-lg-12 col-md-12">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="content-item">
+                                        <h2 class="with-bar">Wetten en regels</h2>
+                                        <ul class="topics-list">
+                                            <li class=""><a href="#Lorem">Verbod op gratis weggeven plastic tassen (Regeling beheer verpakkingen)</a></li>
+                                            <li class=""><a href="#Lorem">Besluit beheer verpakkingen 2014</a></li>
+                                            <li class=""><a href="https://ec.europa.eu/food/sites/food/files/safety/docs/cs_fcm_plastic-guidance_201110_en.pdf">Union guidelines on Regulation (EU) on plastic materials in contact with food</a></li>
+                                            <li class=""><a href="#Lorem">Regeling verpakking en verpakkingsafval</a></li>
+                                            <li class=""><a href="https://eur-lex.europa.eu/legal-content/NL/TXT/?uri=LEGISSUM%3Al21207">EU Richtlijnen over verpakking en verpakkingsafval</a></li>
+                                            <li class=""><a href="https://eur-lex.europa.eu/legal-content/NL/TXT/?uri=CELEX:32009L0125">Europese richtlijn ecodesign voor meer gebruik van kunststof producten</a></li>
+                                            <li class=""><a href="www.ruimteinregels.nl/wp-content/uploads/2016/05/Folder-ruimte-in-regels-web-V1.pdf">Programma ruimte in regels voor groene groei</a></li>
+                                        </ul>
+                                    </div>
+                                    <p class="follow-up">
+                                        <a class="more" href="#">Alle wetten rondom statiegeld</a>
+                                    </p>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="content-item ">
+                                        <h2 class="with-bar">Documenten</h2>
+                                        <ul class="topics-list">
+                                            <li class=""><a href="#Lorem">Kamerbrief Plastic Pact</a></li>
+                                            <li class=""><a href="#Lorem">Kamerbrief evaluatie-programma-van-afval-naar-grondstof</a></li>
+                                            <li class=""><a href="#Lorem">Rapport evaluatie VANG 2014-2016</a></li>
+                                            <li class=""><a href="#Lorem">Ketenakkoord kunststofkringloop</a></li>
+                                            <li class=""><a href="#Lorem">Kamerbrief tussenevaluatie raamovereenkomst verpakkingen 2013-2022</a></li>
+                                            <li class=""><a href="#Lorem">Tussenevaluatie Raamovereenkomst Verpakkingen 2013-2022</a></li>
+                                            <li class=""><a href="#Lorem">Programma-van-maatregelen-kaderrichtlijn-mariene-strategie over oa opruimen en voorkomen van plastic zwerfafval in water</a></li>
+                                            <li class=""><a href="#Lorem">Aanpak draagtassen onder andere gratis plastic-tassen</a></li>
+                                        </ul>
+                                    </div>
+                                    <p class="follow-up">
+                                        <a class="more" href="#">Alle documenten over statiegeld</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-
-                    <p class="follow-up">
-                      <a class="more" href="#">Alle wetten rondom statiegeld</a>
-                    </p>
-
-                  </div>
-
-                  <div class="col-md-6">
-                    <div class="content-item ">
-                      <h2 class="with-bar">Documenten</h2>
-
-                      <ul class="topics-list">
-                        <li class=""><a href="#Lorem">Kamerbrief Plastic Pact</a></li>
-                        <li class=""><a href="#Lorem">Kamerbrief evaluatie-programma-van-afval-naar-grondstof</a></li>
-                        <li class=""><a href="#Lorem">Rapport evaluatie VANG 2014-2016</a></li>
-                        <li class=""><a href="#Lorem">Ketenakkoord kunststofkringloop</a></li>
-                        <li class=""><a href="#Lorem">Kamerbrief tussenevaluatie raamovereenkomst verpakkingen 2013-2022</a></li>
-                        <li class=""><a href="#Lorem">Tussenevaluatie Raamovereenkomst Verpakkingen 2013-2022</a></li>
-                        <li class=""><a href="#Lorem">Programma-van-maatregelen-kaderrichtlijn-mariene-strategie over oa opruimen en voorkomen van plastic zwerfafval in water</a></li>
-                        <li class=""><a href="#Lorem">Aanpak draagtassen onder andere gratis plastic-tassen</a></li>
-                      </ul>
-
-                    </div>
-
-                    <p class="follow-up">
-                      <a class="more" href="#">Alle documenten over statiegeld</a>
-                    </p>
-                  </div>
-
-
                 </div>
-              </div>
-            </div>
-        </div>
-    </section>
-    <!-- EINDE intro en subnavigatie-->
-
-
-
-    <section class="government">
-        <!-- START intro en navigatie naar onderliggende pagina's -->
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-lg-12 col-md-12">
-
-              <div class="container-fluid">
-                    <div class="content-item ">
-                      <h2 class="with-bar">Organisaties</h2>
-                      <ul class=" row topics-list">
-                            <li class="col-md-6"><a href="#Lorem">Ministerie van Economische Zaken en Klimaat</a></li>
-                            <li class="col-md-6"><a href="#Lorem">Ministerie van Infrastructuur en Waterstaat</a></li>
-                            <li class="col-md-6"><a href="#Lorem">Vereniging van Nederlandse Gemeenten (VNG)</a></li>
-                            <li class="col-md-6"><a href="#Lorem">Nederlandse Vereniging van Reinigingsdirecteuren (NVRD)</a></li>
-                            <li class="col-md-6"><a href="#Lorem">Koninklijk Nederlands Normalisatie-Instituut (NEN)</a></li>
-                            <li class="col-md-6"><a href="#Lorem">Europees Milieuagentschap</a></li>
-                            <li class="col-md-6"><a href="#Lorem">The Ocean cleanup</a></li>
-                        </ul>
-
+        </section>
+        <!-- EINDE intro en subnavigatie-->
+        <section class="government">
+            <!-- START intro en navigatie naar onderliggende pagina's -->
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12">
+                        <div class="container-fluid">
+                            <div class="content-item ">
+                                <h2 class="with-bar">Organisaties</h2>
+                                <ul class=" row topics-list">
+                                    <li class="col-md-6"><a href="#Lorem">Ministerie van Economische Zaken en Klimaat</a></li>
+                                    <li class="col-md-6"><a href="#Lorem">Ministerie van Infrastructuur en Waterstaat</a></li>
+                                    <li class="col-md-6"><a href="#Lorem">Vereniging van Nederlandse Gemeenten (VNG)</a></li>
+                                    <li class="col-md-6"><a href="#Lorem">Nederlandse Vereniging van Reinigingsdirecteuren (NVRD)</a></li>
+                                    <li class="col-md-6"><a href="#Lorem">Koninklijk Nederlands Normalisatie-Instituut (NEN)</a></li>
+                                    <li class="col-md-6"><a href="#Lorem">Europees Milieuagentschap</a></li>
+                                    <li class="col-md-6"><a href="#Lorem">The Ocean cleanup</a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-              </div>
-            </div>
-        </div>
-    </section>
-    <!-- EINDE intro en subnavigatie-->
-
-
+                </div>
+        </section>
+        <!-- EINDE intro en subnavigatie-->
     </main>
-
-  <footer>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12">
-                <span class="align-middle lead">De Rijksoverheid. Voor Nederland</span>
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <span class="align-middle lead">De Rijksoverheid. Voor Nederland</span>
+                </div>
             </div>
         </div>
-    </div>
-</footer>
-
-<div class="modal fade contactModal" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contact-modal-header" aria-hidden="true">
+    </footer>
+    <div class="modal fade contactModal" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contact-modal-header" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -364,15 +311,13 @@ Lukt dit niet? Dan voert het Rijk op 1 januari 2021 statiegeld in op kleine plas
                         <span aria-hidden="true">×</span>
                     </button>
                 </div>
-               
                 <div class="modal-footer">
                     <button type="button" class="btn btn-primary">Direct chatten</button>
                 </div>
-                
             </div>
         </div>
     </div>
-  <script src="js/main.js"></script>
+    <script src="js/main.js"></script>
+</body>
 
-</body></html>
-
+</html>
