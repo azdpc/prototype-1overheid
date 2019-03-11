@@ -3,6 +3,14 @@
 	margin-bottom: 1rem;
 }
 
+
+.btn-primary {
+/*	min-width: 220px;
+	text-align: left;*/
+}
+
+
+
 .loader {
 	display: none;
 
@@ -19,10 +27,18 @@
 	border: 3px solid rgba(white, .2);
 	border-top-color: rgba(white, 1);
 	animation: spin 1.3s infinite linear;
+
 }
 
-.is-loading .loader {
-	display: inline-block;
+
+.is-loading {
+	.text {
+		display: none;
+	}
+
+	.loader {
+		display: inline-block;
+	}
 }
 
 

@@ -257,24 +257,24 @@ button.beforeLogin img {
 :root {
   --black: #000;
   --tarmac: #222;
-  --vireo-blue-misty: #F0FAFF;
-  --vireo-blue-light: #E6F9FF;
-  --vireo-blue-smoke: #C2E2F2;
-  --vireo-blue-clear: #007BC7;
-  --vireo-blue-shade: #0073AD;
+  --vireo-blue-misty:  #F0FAFF;
+  --vireo-blue-light:  #E6F9FF;
+  --vireo-blue-smoke:  #C2E2F2;
+  --vireo-blue-clear:  #007BC7;
+  --vireo-blue-shade:  #0073AD;
   --vireo-green-misty: #F0F8F8;
   --vireo-green-light: #DAEFEC;
   --vireo-green-smoke: #B7E5DC;
   --vireo-green-clear: #009F85;
   --vireo-green-shade: #00856F;
-  --vireo-yellow: #ffb612;
-  --vireo-yellow-light: #fefbdd;
-  --vireo-green-misty-trans: rgba(240, 248, 248, 0.85);
-  --vireo-green-light-trans: rgba(223, 247, 245, 0.85);
-  --vireo-button-green: #50AA00;
+  --vireo-yellow:         #ffb612;
+  --vireo-yellow-light:   #fefbdd;
+  --vireo-green-misty-trans:  rgba(240,248,248,0.85);
+  --vireo-green-light-trans:  rgba(223,247,245,0.85);
+  --vireo-button-green:       #50AA00;
   --vireo-button-green-hover: #4A9600;
-  --vireo-warning-red: #CC0000;
-  --vireo-ruby: #CA005D; }
+  --vireo-warning-red:        #CC0000;
+  --vireo-ruby:               #CA005D; }
 
 /* Import RO webfonts */
 @font-face {
@@ -1396,6 +1396,10 @@ td {
   padding: 2rem 0;
   margin-bottom: 1rem; }
 
+.btn-primary {
+  /*	min-width: 220px;
+	text-align: left;*/ }
+
 .loader {
   display: none;
   position: relative;
@@ -1410,6 +1414,9 @@ td {
   border: 3px solid rgba(255, 255, 255, 0.2);
   border-top-color: white;
   animation: spin 1.3s infinite linear; }
+
+.is-loading .text {
+  display: none; }
 
 .is-loading .loader {
   display: inline-block; }
@@ -1514,7 +1521,7 @@ td {
     top: 0;
     bottom: 0;
     z-index: 8;
-    background: linear-gradient(180deg, transparent 0%, transparent 33%, rgba(0, 84, 70, 0.2) 100%), linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.2) 25%, rgba(0, 0, 0, 0.4) 100%); }
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 33%, rgba(0, 84, 70, 0.2) 100%), linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.2) 25%, rgba(0, 0, 0, 0.4) 100%); }
   @media (min-width: 361px) {
     .headerImage .overlay h1 {
       font-size: 2rem;

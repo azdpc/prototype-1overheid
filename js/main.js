@@ -46,7 +46,13 @@ function handleLogin(){
         var $questions = $qform.find('.question');
         var $start = $qform.find('.start');
         $start.addClass('active');
-        $questions.removeClass('active');              
+        $questions.removeClass('active');
+
+
+        if($(this).hasClass('to-home')) {
+        	window.location.href = 'home.html';
+        }
+
     });
 }
 function login(){
@@ -67,6 +73,7 @@ function logout(){
     sessionStorage.loginStatus = "loggedOut";
     sessionStorage.prefilStatus = "notPrefilled";
   	$('html').trigger( "logout" );
+
 	//location.reload();
 }
 
