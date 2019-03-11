@@ -825,6 +825,8 @@ section, main {
       background-position: 0 0; }
       .vireo-list li.check::before {
         display: none; }
+  .vireo-list.vireo-list-yellow li::before {
+    background-color: var(--vireo-yellow); }
 
 .vireo-cost {
   display: block;
@@ -1162,7 +1164,7 @@ blockquote {
   list-style: none;
   padding: 0; }
   .topics-list li {
-    margin: 1rem 0 1.5rem; }
+    margin: 1rem 0 .5rem; }
   .topics-list.tight {
     margin-top: 2rem; }
     .topics-list.tight li {
@@ -1380,6 +1382,10 @@ section .policy-government-switch {
   .organisations .content-item {
     margin-top: 0; }
 
+/* HELPERS */
+.padded {
+  padding: 2rem 0; }
+
 /* GENERIC */
 table {
   margin-bottom: 1rem; }
@@ -1393,8 +1399,11 @@ td {
     padding-right: 0; }
 
 .form-island {
-  padding: 2rem 0;
-  margin-bottom: 1rem; }
+  padding: 2rem 1rem;
+  margin-bottom: 1rem;
+  background-color: white;
+  border: 1px solid #F0F0F0;
+  border-radius: 3px; }
 
 .btn-primary {
   /*	min-width: 220px;
@@ -2063,6 +2072,9 @@ td {
       .ongoing .message.new time,
       .ongoing .message.new .responsible {
         font-weight: bold; }
+    .inbox .message.notification .inner,
+    .ongoing .message.notification .inner {
+      border-left: 0.5rem solid var(--warning); }
   .inbox a.message,
   .ongoing a.message {
     text-decoration: none; }
@@ -2121,6 +2133,16 @@ td {
   background-color: #F8F8F8; }
   .ongoing .message .inner {
     padding: 0.75rem 1rem; }
+  .ongoing .message.needs-input {
+    border-left: 4px solid var(--warning); }
+  .ongoing .message .notification {
+    padding: .5rem;
+    border: 2px solid #FFB612;
+    background-color: #fff4dc;
+    border-radius: 4px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='20' viewBox='0 0 22 20'%3E%3Cpath fill='%23FFB612' d='M22.8,17.3 L13.6,1.1 C12.9,-0.1 11.1,-0.1 10.4,1.1 L1.2,17.3 C0.6,18.5 1.4,20 2.8,20 L21.2,20 C22.6,20 23.4,18.5 22.8,17.3 Z M10.9,6.1 L13.4,5.8 L13.1,10.5 L13.1,13 L10.8,13 L10.8,6.1 L10.9,6.1 Z M12,17.8 C10.9,17.8 10.3,17.2 10.3,16 C10.3,15 10.9,14.1 12,14.1 C13.1,14.1 13.7,14.8 13.7,16 C13.7,17 13.1,17.8 12,17.8 Z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: top 1rem right 1rem; }
 
 .ongoing .process-stepper {
   list-style: none;
@@ -2142,7 +2164,7 @@ td {
       height: 4px;
       position: absolute;
       right: 0.5rem;
-      top: 0.1rem;
+      top: 0rem;
       background-color: var(--vireo-blue-smoke); }
     .ongoing .process-stepper li:first-child:before {
       display: none; }
