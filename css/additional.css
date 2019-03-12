@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /**
  * File:        additional.scss
  * Description: Stylesheet for additional one government presentation
@@ -257,24 +258,24 @@ button.beforeLogin img {
 :root {
   --black: #000;
   --tarmac: #222;
-  --vireo-blue-misty:  #F0FAFF;
-  --vireo-blue-light:  #E6F9FF;
-  --vireo-blue-smoke:  #C2E2F2;
-  --vireo-blue-clear:  #007BC7;
-  --vireo-blue-shade:  #0073AD;
+  --vireo-blue-misty: #F0FAFF;
+  --vireo-blue-light: #E6F9FF;
+  --vireo-blue-smoke: #C2E2F2;
+  --vireo-blue-clear: #007BC7;
+  --vireo-blue-shade: #0073AD;
   --vireo-green-misty: #F0F8F8;
   --vireo-green-light: #DAEFEC;
   --vireo-green-smoke: #B7E5DC;
   --vireo-green-clear: #009F85;
   --vireo-green-shade: #00856F;
-  --vireo-yellow:         #ffb612;
-  --vireo-yellow-light:   #fefbdd;
-  --vireo-green-misty-trans:  rgba(240,248,248,0.85);
-  --vireo-green-light-trans:  rgba(223,247,245,0.85);
-  --vireo-button-green:       #50AA00;
+  --vireo-yellow: #ffb612;
+  --vireo-yellow-light: #fefbdd;
+  --vireo-green-misty-trans: rgba(240, 248, 248, 0.85);
+  --vireo-green-light-trans: rgba(223, 247, 245, 0.85);
+  --vireo-button-green: #50AA00;
   --vireo-button-green-hover: #4A9600;
-  --vireo-warning-red:        #CC0000;
-  --vireo-ruby:               #CA005D; }
+  --vireo-warning-red: #CC0000;
+  --vireo-ruby: #CA005D; }
 
 /* Import RO webfonts */
 @font-face {
@@ -452,6 +453,9 @@ section, main {
     .breadcrumb a:hover, .breadcrumb a:focus {
       color: var(--black);
       background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='12' viewBox='-1.305 -0.312 16 12'%3E%3Cpath fill='%23000000' d='M9.333 11.275L7.654 9.689l2.718-2.992-.598.115H0V4.513h9.774l.598.091L7.6 1.587 9.278 0l5.117 5.662z'/%3E%3C/svg%3E"); }
+  .actionable .breadcrumb a:hover, .actionable .breadcrumb a:focus {
+    color: var(--black);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='12' viewBox='-1.305 -0.312 16 12'%3E%3Cpath fill='%23000000' d='M9.333 11.275L7.654 9.689l2.718-2.992-.598.115H0V4.513h9.774l.598.091L7.6 1.587 9.278 0l5.117 5.662z'/%3E%3C/svg%3E"); }
   .government .breadcrumb {
     background-color: var(--vireo-green-light-trans);
     width: 100%;
@@ -1525,6 +1529,15 @@ td {
       z-index: 15;
       width: 100%;
       margin: 0; }
+    .headerImage .overlay .show-site-branch {
+      position: relative; }
+      .headerImage .overlay .show-site-branch .site-branch {
+        background-color: var(--vireo-green-shade);
+        padding: 0.4rem 1rem;
+        position: absolute;
+        left: 15px;
+        top: 100%;
+        font-size: 1.25rem; }
   .headerImage .subtitle {
     margin-bottom: 0; }
   .headerImage .darken {
@@ -1534,7 +1547,7 @@ td {
     top: 0;
     bottom: 0;
     z-index: 8;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 33%, rgba(0, 84, 70, 0.2) 100%), linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.2) 25%, rgba(0, 0, 0, 0.4) 100%); }
+    background: linear-gradient(180deg, transparent 0%, rgba(0, 84, 70, 0.1) 66%, rgba(0, 84, 70, 0.4) 100%), linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.15) 66%, rgba(0, 0, 0, 0.3) 100%); }
   @media (min-width: 361px) {
     .headerImage .overlay h1 {
       font-size: 2rem;
@@ -1543,29 +1556,20 @@ td {
     .headerImage .overlay.pagetitle {
       bottom: 1.5rem; }
     .headerImage .overlay h1 {
-      font-size: 2.7rem; }
-    .headerImage .site-branch {
-      margin: -0.1em 0 0;
-      font-size: 1.25rem; } }
+      font-size: 2.7rem; } }
   @media (min-width: 768px) {
     .headerImage .overlay h1 {
-      font-size: 3rem; }
-    .headerImage .site-branch {
-      font-size: 1.5rem; } }
+      font-size: 3rem; } }
   @media (min-width: 1024px) {
     .headerImage .overlay.pagetitle {
       bottom: 1.8rem; }
     .headerImage .overlay h1 {
-      font-size: 3.6rem; }
-    .headerImage .site-branch {
-      font-size: 1.8rem; } }
+      font-size: 3.6rem; } }
   @media (min-width: 1200px) {
     .headerImage .overlay.pagetitle {
       bottom: 2.4rem; }
     .headerImage .overlay h1 {
-      font-size: 4rem; }
-    .headerImage .site-branch {
-      font-size: 1.8rem; } }
+      font-size: 4rem; } }
   .headerImage.personHeaderImage .role {
     max-width: 20em;
     margin: 0;
@@ -1677,7 +1681,7 @@ td {
       .headerImage.magazineHeaderImage .policy-challenge {
         font-size: 3rem; } }
   .headerImage.magazineHeaderImageSmall {
-    max-height: 480px; }
+    max-height: 180px; }
     @media (min-width: 361px) {
       .headerImage.magazineHeaderImageSmall h1 {
         font-size: 2rem;
@@ -1687,35 +1691,43 @@ td {
       .headerImage.magazineHeaderImageSmall .policy-challenge {
         font-size: 1.2rem; } }
     @media (min-width: 576px) {
-      .headerImage.magazineHeaderImageSmall .overlay.pagetitle {
-        bottom: auto;
-        top: 6rem; }
-      .headerImage.magazineHeaderImageSmall h1 {
-        font-size: 2.4rem;
-        line-height: 1.1; }
-      .headerImage.magazineHeaderImageSmall .site-branch {
-        font-size: 1.25rem; } }
+      .headerImage.magazineHeaderImageSmall {
+        max-height: 320px; }
+        .headerImage.magazineHeaderImageSmall .overlay.pagetitle {
+          bottom: auto;
+          top: 6rem; }
+        .headerImage.magazineHeaderImageSmall h1 {
+          font-size: 2.4rem;
+          line-height: 1.1; }
+        .headerImage.magazineHeaderImageSmall .site-branch {
+          font-size: 1.25rem; } }
     @media (min-width: 768px) {
-      .headerImage.magazineHeaderImageSmall h1 {
-        font-size: 3rem; }
-      .headerImage.magazineHeaderImageSmall .site-branch {
-        font-size: 1.33rem; } }
+      .headerImage.magazineHeaderImageSmall {
+        max-height: 480px; }
+        .headerImage.magazineHeaderImageSmall h1 {
+          font-size: 3rem; }
+        .headerImage.magazineHeaderImageSmall .site-branch {
+          font-size: 1.33rem; } }
     @media (min-width: 1024px) {
-      .headerImage.magazineHeaderImageSmall .overlay.pagetitle {
-        top: 8rem; }
-      .headerImage.magazineHeaderImageSmall h1 {
-        font-size: 4rem; }
-      .headerImage.magazineHeaderImageSmall .site-branch {
-        font-size: 1.5rem; } }
+      .headerImage.magazineHeaderImageSmall {
+        max-height: 320px; }
+        .headerImage.magazineHeaderImageSmall .overlay.pagetitle {
+          top: 8rem; }
+        .headerImage.magazineHeaderImageSmall h1 {
+          font-size: 4rem; }
+        .headerImage.magazineHeaderImageSmall .site-branch {
+          font-size: 1.5rem; } }
     @media (min-width: 1200px) {
-      .headerImage.magazineHeaderImageSmall .overlay.pagetitle {
-        top: 8rem; }
-      .headerImage.magazineHeaderImageSmall h1 {
-        font-size: 5rem; }
-      .headerImage.magazineHeaderImageSmall .site-branch {
-        font-size: 1.8rem; }
-      .headerImage.magazineHeaderImageSmall .policy-challenge {
-        font-size: 2.4rem; } }
+      .headerImage.magazineHeaderImageSmall {
+        max-height: 480px; }
+        .headerImage.magazineHeaderImageSmall .overlay.pagetitle {
+          top: 8rem; }
+        .headerImage.magazineHeaderImageSmall h1 {
+          font-size: 5rem; }
+        .headerImage.magazineHeaderImageSmall .site-branch {
+          font-size: 1.8rem; }
+        .headerImage.magazineHeaderImageSmall .policy-challenge {
+          font-size: 2.4rem; } }
   .headerImage.magazineHeaderLeftAligned h1 {
     text-align: left; }
   .headerImage.smallHeaderImage {
@@ -1793,8 +1805,9 @@ td {
     bottom: auto;
     top: 5.5rem; }
   .pioneers .quote:before {
-    content: "\2033";
+    content: "”";
     font-size: 4.5em;
+    font-weight: normal;
     color: var(--white);
     position: absolute;
     top: -5rem;
