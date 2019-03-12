@@ -352,6 +352,10 @@ section, main {
 /* FORM START & QUESTION STEPS */
 .questions {
 	padding: 0;
+
+    &--padding-top {
+        padding-top: 2rem;
+    }
 	
 	.start {
 		display: none;

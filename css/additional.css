@@ -258,24 +258,24 @@ button.beforeLogin img {
 :root {
   --black: #000;
   --tarmac: #222;
-  --vireo-blue-misty: #F0FAFF;
-  --vireo-blue-light: #E6F9FF;
-  --vireo-blue-smoke: #C2E2F2;
-  --vireo-blue-clear: #007BC7;
-  --vireo-blue-shade: #0073AD;
+  --vireo-blue-misty:  #F0FAFF;
+  --vireo-blue-light:  #E6F9FF;
+  --vireo-blue-smoke:  #C2E2F2;
+  --vireo-blue-clear:  #007BC7;
+  --vireo-blue-shade:  #0073AD;
   --vireo-green-misty: #F0F8F8;
   --vireo-green-light: #DAEFEC;
   --vireo-green-smoke: #B7E5DC;
   --vireo-green-clear: #009F85;
   --vireo-green-shade: #00856F;
-  --vireo-yellow: #ffb612;
-  --vireo-yellow-light: #fefbdd;
-  --vireo-green-misty-trans: rgba(240, 248, 248, 0.85);
-  --vireo-green-light-trans: rgba(223, 247, 245, 0.85);
-  --vireo-button-green: #50AA00;
+  --vireo-yellow:         #ffb612;
+  --vireo-yellow-light:   #fefbdd;
+  --vireo-green-misty-trans:  rgba(240,248,248,0.85);
+  --vireo-green-light-trans:  rgba(223,247,245,0.85);
+  --vireo-button-green:       #50AA00;
   --vireo-button-green-hover: #4A9600;
-  --vireo-warning-red: #CC0000;
-  --vireo-ruby: #CA005D; }
+  --vireo-warning-red:        #CC0000;
+  --vireo-ruby:               #CA005D; }
 
 /* Import RO webfonts */
 @font-face {
@@ -496,6 +496,8 @@ section, main {
 /* FORM START & QUESTION STEPS */
 .questions {
   padding: 0; }
+  .questions--padding-top {
+    padding-top: 2rem; }
   .questions .start {
     display: none; }
     .questions .start.active {
@@ -1169,9 +1171,8 @@ blockquote {
   padding: 0; }
   .topics-list li {
     margin: 1rem 0 1.5rem; }
-  .topics-list.tight:not(:first-child) {
+  .topics-list.tight {
     margin-top: 2rem; }
-
     .topics-list.tight li {
       margin: 0.4rem 0 0.6rem; }
     .topics-list.tight a {
