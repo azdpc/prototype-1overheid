@@ -45,19 +45,6 @@
                     </div>
                 </div>
                 
-                <div class="account-wrapper">
-                    <div class="loggedInElm">
-                        <a class="button show" href="mijn-overheid.html">
-                            <span>mijn overheid</span>
-                            <strong class="notification">3 <span class="visually-hidden">nieuwe berichten</span></strong>
-                        </a>
-                    </div>
-                    <div class="loggedOutElm">
-                        <a class="button" href="mijn-overheid.html">
-                            <span>mijn overheid</span>
-                        </a>
-                    </div>
-                </div>
                 
                 <div class="contact-wrapper">
                     <button class="dropdown-toggle" type="button" id="dropdownContactButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -105,29 +92,6 @@
 
 </div>    
 </header>
-
-<banner>
-    <div class="loggedInElm">
-        <div id="login-foldout" class="navbar-pinned expanded">
-            <div class="container-fluid">
-
-                <div class="navbar-pinned-content">
-                    <div class="row align-items-center">
-                        <div class="col-8">
-                                Ingelogd als Asha Martinez
-                        </div>
-                        <div class="col-4">
-                            <div class="button-wrapper float-right">
-                                <button class="btn btn-sm btn-success logoutBtn">Uitloggen</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-</banner>
 
 <div class="modal fade loginmodal" id="loginForm" tabindex="-1" role="dialog" aria-labelledby="modal-header" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
@@ -278,6 +242,7 @@
                         <div class="col-md-12">
                             <div class="container-fluid">
                                 <h1>Duurzame energie</h1>
+                                <p class="site-branch">Visie en plannen</p>
                             </div>
                         </div>
                     </div>
@@ -495,53 +460,55 @@ Marjanne en Gerard hebben hun <a href="energiezuinig-huis.html">huis energiezuin
 
                     <!-- START policy -->
                     <div class="row content-item">
-                        <div class="col-md-5">
-                            <h2 class="with-bar">Beleid en toekomstplannen</h2>
-
-                            <ul class="topics-list">
-                                <li>
-                                    <a href="#lorem">Alles over het Energieakkoord</a></li>
-                                </li>
-                                <li>
-                                    <a href="#lorem">De energieagenda tot 2050</a></li>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="col-md-6 offset-md-1">
-                            <div class="loggedOutElm">
-                                <h2 class="with-bar">Beleid <span class="local">in uw gemeente</span></h2>
-    
-                                <p>Wat doet uw gemeente aan duurzame energie?</p>
-                                
-                                <div class="main-actions">
-                                    <div class="button-wrapper digid">
-                                        <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#loginForm">Log in voor het lokale beleid
-                                            <img src="img/digid-logo.svg" alt="digid" />
-                                        </button>
+                        <div class="col-md-6">
+                            <div class="">
+                                <h2 class="with-bar">Wat zijn de plannen <span class="local">in uw gemeente</span></h2>
+                                <form action="#bla" method="GET">
+                                    <label for="gemeente">Uw gemeente</label>
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                    <div class="input-group mb-8">
+                                        
+                                        <input type="text" class="form-control" id="gemeente" placeholder="" value="" list="list-gemeenten">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-primary" id="button-addon2">Zoek</button>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
+                                        </div>
+                                    </div>
 
-                            <div class="loggedInElm">
-                                <h2 class="with-bar">Beleid <span class="local">in Den Haag</span></h2>
-    
-                                <h4>Den Haag Aardgasvrij</h4>
-<p>De gemeente wil dat in 2030 er in alle gebouwen in de stad geen aardgas wordt gebruikt. Samen met inwoners, ondernemers en maatschappelijke instellingen in de stad gaat ze aan de slag om dit voor elkaar te krijgen. U kunt zelf ook maatregelen nemen.</p>
-<p class="follow-up tight"><a href="#lorem">Lees meer over Den Haag aardgasvrij</a></p>
-
-<ul class="topics-list tight">
-    <li><a href="#kliaamtbestendig" data-orig-href="https://www.denhaag.nl/nl/in-de-stad/natuur-en-milieu/duurzaamheid/den-haag-klimaatbestendig-maken.htm">Den Haag klimaatbestendig</a></li>
-    <li><a href="#duurzaam-ondernemen" data-orig-href="https://www.denhaag.nl/nl/in-de-stad/ondernemen/zaken-doen-met-de-gemeente/ondersteuning-voor-duurzame-ondernemers.htm">Ondersteuning voor duurzame ondernemers</a></li>
-    <li><a href="#elektrisch-rijden" data-orig-href="https://www.denhaag.nl/nl/in-de-stad/verkeer-en-vervoer/snellaadstations-elektrische-autos.htm">Elektrisch rijden in Den Haag</a></li>
-</ul>
-
-
+                                </form>
                             </div>
                             
                             
 
                         </div>
+
+
+                        <div class="col-md-5">
+                            <div class="col-sm-12">
+                                <h2 class="with-bar">Betrokken overheidsinstanties</h2>
+                            </div>
+                            
+                            <div class="col-sm-12">
+                                <ul class="topics-list">
+                                    <li>
+                                        <a href="beleid-ministerie-ienw.html">Ministerie van Economische Zaken en Klimaat</a></li>
+                                    </li>
+                                    <li>
+                                        <a href="beleid-ministerie-ienw.html">Ministerie van Infrastructuur en Waterstaat </a></li>
+                                    </li>
+                                    <li>
+                                        <a href="#lorem">Rijksdienst voor Ondernemend Nederland</a></li>
+                                    </li>
+                                    <li>
+                                        <a href="#lorem">Milieu Centraal</a></li>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+
                     </div>
                     <!-- EINDE policy -->
 
@@ -596,28 +563,7 @@ Marjanne en Gerard hebben hun <a href="energiezuinig-huis.html">huis energiezuin
                     </div>
 
 
-                    <div class="row content-item">
-                        <div class="col-sm-12">
-                            <h2 class="with-bar">Betrokken overheidsinstanties</h2>
-                        </div>
-                        
-                        <div class="col-sm-6">
-                            <ul class="topics-list">
-                                <li>
-                                    <a href="beleid-ministerie-ienw.html">Ministerie van Economische Zaken en Klimaat</a></li>
-                                </li>
-                                <li>
-                                    <a href="beleid-ministerie-ienw.html">Ministerie van Infrastructuur en Waterstaat </a></li>
-                                </li>
-                                <li>
-                                    <a href="#lorem">Rijksdienst voor Ondernemend Nederland</a></li>
-                                </li>
-                                <li>
-                                    <a href="#lorem">Milieu Centraal</a></li>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+
 
 
                 </div>

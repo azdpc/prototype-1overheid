@@ -1,268 +1,221 @@
 <!DOCTYPE html>
-<html lang="nl-NL"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Mijn Overheid | 1overheid</title>
-  <meta name="description" content="Prototype voor 1overheid: informatie, diensten, beleid en bestuur">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/additional.css">
+<html lang="nl-NL">
 
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Mijn Overheid | 1overheid</title>
+    <meta name="description" content="Prototype voor 1overheid: informatie, diensten, beleid en bestuur">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/additional.css">
 </head>
 
 <body cz-shortcut-listen="true">
-  <header>
-    <div class="container-fluid">
-        <div class="notVisibleInFrame">
-            <nav class="navbar navbar-light">
-                <a href="home.html" class="navbar-brand">
-                    <img src="img/een-overheid.svg" alt="1overheid">
-                    <em class="payoff">alles regelen op 1 plek</em>
-                </a>
-                
-                <div class="navbar-options">
-                    <div class="search-wrapper">
-                        <button class="dropdown-toggle" type="button" id="dropdownSearchButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <span>zoeken</span>
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownSearchButton">
-                            <div class="container-fluid">
-
-<div class="row">
-    <div class="col-lg-10 offset-lg-1 col-md-12">
+    <header>
         <div class="container-fluid">
-            <form action="#">
-                <fieldset>
-                    <input type="search" />
-                    <input class="btn btn-primary btn-lg" type="submit" value="zoeken" />
-                </fieldset>
-            </form>
-        </div>
-    </div>
-</div>
-
+            <div class="notVisibleInFrame">
+                <nav class="navbar navbar-light">
+                    <a href="home.html" class="navbar-brand">
+                        <img src="img/een-overheid.svg" alt="1overheid">
+                        <em class="payoff">alles regelen op 1 plek</em>
+                    </a>
+                    <div class="navbar-options">
+                        <div class="search-wrapper">
+                            <button class="dropdown-toggle" type="button" id="dropdownSearchButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span>zoeken</span>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownSearchButton">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-lg-10 offset-lg-1 col-md-12">
+                                            <div class="container-fluid">
+                                                <form action="#">
+                                                    <fieldset>
+                                                        <input type="search" />
+                                                        <input class="btn btn-primary btn-lg" type="submit" value="zoeken" />
+                                                    </fieldset>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="account-wrapper">
+                            <div class="loggedInElm">
+                                <a class="button show" href="mijn-overheid.html">
+                                    <span>mijn overheid</span>
+                                    <strong class="notification">3 <span class="visually-hidden">nieuwe berichten</span></strong>
+                                </a>
+                            </div>
+                            <div class="loggedOutElm">
+                                <a class="button show" href="mijn-overheid.html">
+                                    <span>mijn overheid</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="contact-wrapper">
+                            <button class="dropdown-toggle" type="button" id="dropdownContactButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span>contact</span>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownContactButton">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-lg-10 offset-lg-1 col-md-12">
+                                            <p>Contactinformatie</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-wrapper">
+                            <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span>menu</span>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-lg-10 offset-lg-1 col-md-12">
+                                            <div class="row themes-list">
+                                                <!-- START thema geld -->
+                                                <div class="col-sm-4">
+                                                    <a href="#thema-geld">
+                                                        <h3>
+                                                            <div class="icon">
+                                                                <img src="content/icons/9000-budget.svg" />
+                                                            </div>
+                                                            Geld
+                                                        </h3>
+                                                        <p>Bijstand aanvragen, Voorwaarden WW bekijken, Aangifte doen, ...</p>
+                                                    </a>
+                                                </div>
+                                                <!-- EINDE thema geld -->
+                                                <!-- START thema wonen -->
+                                                <div class="col-sm-4">
+                                                    <a href="wonen.html">
+                                                        <h3>
+                                                            <div class="icon">
+                                                                <img src="content/icons/5202-laag-huis.svg" />
+                                                            </div>
+                                                            Wonen en omgeving
+                                                        </h3>
+                                                    </a>
+                                                </div>
+                                                <!-- EINDE thema wonen -->
+                                                <!-- START thema -->
+                                                <div class="col-sm-4">
+                                                    <a href="#thema-familie">
+                                                        <h3>
+                                                            <div class="icon">
+                                                                <img src="content/icons/4029-familie.svg" />
+                                                            </div>
+                                                            Familie
+                                                        </h3>
+                                                        <p>Geboorte aangeven, Kind erkennen, Jeugdhulp aanvragen, ...</p>
+                                                    </a>
+                                                </div>
+                                                <!-- EINDE thema -->
+                                                <!-- START thema -->
+                                                <div class="col-sm-4">
+                                                    <a href="#thema-reizen">
+                                                        <h3>
+                                                            <div class="icon">
+                                                                <img src="content/icons/8012-reisbagage.svg" />
+                                                            </div>
+                                                            Reizen
+                                                        </h3>
+                                                        <p>Paspoort of ID-kaart aanvragen, Nederlandse nationaliteit verkrijgen, ...</p>
+                                                    </a>
+                                                </div>
+                                                <!-- EINDE thema -->
+                                                <!-- START thema -->
+                                                <div class="col-sm-4">
+                                                    <a href="#thema-onderwijs">
+                                                        <h3>
+                                                            <div class="icon">
+                                                                <img src="content/icons/4082-onderwijs.svg" />
+                                                            </div>
+                                                            Onderwijs
+                                                        </h3>
+                                                        <p>Overzicht schoolvakanties, Studiefinanciering aanvragen, Inschrijven voor studie, ...</p>
+                                                    </a>
+                                                </div>
+                                                <!-- EINDE thema -->
+                                                <!-- START thema -->
+                                                <div class="col-sm-4">
+                                                    <a href="#thema-recht">
+                                                        <h3>
+                                                            <div class="icon">
+                                                                <img src="content/icons/7001-recht-aka-veiligheid-en-justitie.svg" />
+                                                            </div>
+                                                            Recht
+                                                        </h3>
+                                                        <p>Identiteitsfraude melden, Geluidsoverlast doorgeven, ...</p>
+                                                    </a>
+                                                </div>
+                                                <!-- EINDE thema -->
+                                                <!-- START thema -->
+                                                <div class="col-sm-4">
+                                                    <a href="verkeer.html">
+                                                        <h3>
+                                                            <div class="icon">
+                                                                <img src="content/icons/5003-auto.svg" />
+                                                            </div>
+                                                            Vervoer
+                                                        </h3>
+                                                        <p>Rijbewijs verlengen, Verkeersregels checken,OV-chipkaart aanvragen ...</p>
+                                                    </a>
+                                                </div>
+                                                <!-- EINDE thema -->
+                                                <!-- START thema -->
+                                                <div class="col-sm-4">
+                                                    <a href="#thema-gezondheid">
+                                                        <h3>
+                                                            <div class="icon">
+                                                                <img src="content/icons/4028-zorg.svg" />
+                                                            </div>
+                                                            Gezondheid
+                                                        </h3>
+                                                        <p>WMO-aanvragen, Aangifte doen van overlijden, Vergoedingen basisverzekering bekijken ...</p>
+                                                    </a>
+                                                </div>
+                                                <!-- EINDE thema -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    
-                    <div class="account-wrapper">
-                        <div class="loggedInElm">
-                            <a class="button show" href="mijn-overheid.html">
-                                <span>mijn overheid</span>
-                                <strong class="notification">3 <span class="visually-hidden">nieuwe berichten</span></strong>
-                            </a>
-                        </div>
-                        <div class="loggedOutElm">
-                            <a class="button show" href="mijn-overheid.html">
-                                <span>mijn overheid</span>
-                            </a>
-                        </div>
-                    </div>                    
-
-                    <div class="contact-wrapper">
-                        <button class="dropdown-toggle" type="button" id="dropdownContactButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <span>contact</span>
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownContactButton">
-                            <div class="container-fluid">
-
-<div class="row">
-    <div class="col-lg-10 offset-lg-1 col-md-12">
-                                    <p>Contactinformatie</p>
-    </div>
-</div>
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="menu-wrapper">
-                        <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <span>menu</span>
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <div class="container-fluid">
-
-
-<div class="row">
-    <div class="col-lg-10 offset-lg-1 col-md-12">
-
-                    <div class="row themes-list">
-                        
-                        <!-- START thema geld -->
-                        <div class="col-sm-4">
-
-<a href="#thema-geld">
-    <h3>
-        <div class="icon">
-            <img src="content/icons/9000-budget.svg" />
-        </div>
-        Geld
-    </h3>
-    <p>Bijstand aanvragen, Voorwaarden WW bekijken, Aangifte doen, ...</p>
-</a>
-
-                        </div>
-                        <!-- EINDE thema geld -->
-
-                        <!-- START thema wonen -->
-                        <div class="col-sm-4">
-<a href="#thema-wonen">
-    <h3>
-        <div class="icon">
-            <img src="content/icons/5202-laag-huis.svg" />
-        </div>
-        Wonen
-    </h3>
-    <p>Woning huren, Woning kopen, Energielabel aanvragen, ...</p>
-</a>
-
-                        </div>
-                        <!-- EINDE thema wonen -->
-
-                        <!-- START thema -->
-                        <div class="col-sm-4">
-
-<a href="#thema-familie">
-    <h3>
-        <div class="icon">
-            <img src="content/icons/4029-familie.svg" />
-        </div>
-        Familie
-    </h3>
-    <p>Geboorte aangeven, Kind erkennen, Jeugdhulp aanvragen, ...</p>
-</a>
-
-                        </div>
-                        <!-- EINDE thema -->
-
-                        <!-- START thema -->
-                        <div class="col-sm-4">
-
-<a href="#thema-reizen">
-    <h3>
-        <div class="icon">
-            <img src="content/icons/8012-reisbagage.svg" />
-        </div>
-        Reizen
-    </h3>
-    <p>Paspoort of ID-kaart aanvragen, Nederlandse nationaliteit verkrijgen, ...</p>
-</a>
-
-                        </div>
-                        <!-- EINDE thema -->
-
-                        <!-- START thema -->
-                        <div class="col-sm-4">
-
-<a href="#thema-onderwijs">
-    <h3>
-        <div class="icon">
-            <img src="content/icons/4082-onderwijs.svg" />
-        </div>        
-        Onderwijs
-    </h3>
-    <p>Overzicht schoolvakanties, Studiefinanciering aanvragen, Inschrijven voor studie, ...</p>
-</a>
-
-                        </div>
-                        <!-- EINDE thema -->
-
-                        <!-- START thema -->
-                        <div class="col-sm-4">
-
-<a href="#thema-recht">
-    <h3>
-        <div class="icon">
-            <img src="content/icons/7001-recht-aka-veiligheid-en-justitie.svg" />
-        </div>
-        Recht
-    </h3>
-    <p>Identiteitsfraude melden, Geluidsoverlast doorgeven, ...</p>
-</a>
-
-                        </div>
-                        <!-- EINDE thema -->
-
-                        <!-- START thema -->
-                        <div class="col-sm-4">
-
-<a href="verkeer.html">
-    <h3>
-        <div class="icon">
-            <img src="content/icons/5003-auto.svg" />
-        </div>
-        Verkeer
-    </h3>
-    <p>Rijbewijs verlengen, Verkeersregels checken,OV-chipkaart aanvragen ...</p>
-</a>
-
-                        </div>
-                        <!-- EINDE thema -->
-
-                        <!-- START thema -->
-                        <div class="col-sm-4">
-
-<a href="#thema-gezondheid">
-    <h3>
-        <div class="icon">
-            <img src="content/icons/4028-zorg.svg" />
-        </div>
-        Gezondheid
-    </h3>
-    <p>WMO-aanvragen, Aangifte doen van overlijden, Vergoedingen basisverzekering bekijken ...</p>
-</a>
-
-                        </div>
-                        <!-- EINDE thema -->
-
-                    </div>
-
-    </div>
-</div>
-
-                                
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                
-
-            </nav>
-        </div>
-
-    </div>    
-</header>
-
-<banner>
-    <div class="loggedInElm">
-        <div id="login-foldout" class="navbar-pinned expanded">
-            <div class="container-fluid">
-
-                <div class="navbar-pinned-content">
-                    <div class="row align-items-center">
-                        <div class="col-8">
-                                Ingelogd als Asha Martinez
-                        </div>
-                        <div class="col-4">
-                                <button class="btn btn-success logoutBtn float-right">Uitloggen</button>
-                        </div>
-                    </div>
-                </div>
-
+                </nav>
             </div>
         </div>
-    </div>
-</banner>
-
-
-<div class="modal fade loginmodal" id="loginForm" tabindex="-1" role="dialog" aria-labelledby="modal-header" aria-hidden="true">
+    </header>
+    <banner>
+        <div class="loggedInElm">
+            <div id="login-foldout" class="navbar-pinned expanded">
+                <div class="container-fluid">
+                    <div class="navbar-pinned-content">
+                        <div class="row align-items-center">
+                            <div class="col-8">
+                                Ingelogd als Asha Martinez
+                            </div>
+                            <div class="col-4">
+                                <button class="btn btn-success logoutBtn float-right">Uitloggen</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </banner>
+    <div class="modal fade loginmodal" id="loginForm" tabindex="-1" role="dialog" aria-labelledby="modal-header" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <h3 class="modal-title" id="modal-header">
-          <img src="img/digid-logo.svg" alt="digid">Login met DigiD
+                        <img src="img/digid-logo.svg" alt="digid">Login met DigiD
                     </h3>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">×</span>
@@ -272,7 +225,7 @@
                     <div class="modal-body">
                         <div class="form-group">
                             <label for="gebruikersnaam">DigiD gebruikersnaam</label>
-            <input type="text" class="form-control" id="gebruikersnaam" placeholder="DigiD gebruikersnaam" value="asha_madhavan">
+                            <input type="text" class="form-control" id="gebruikersnaam" placeholder="DigiD gebruikersnaam" value="asha_madhavan">
                         </div>
                         <div class="form-group">
                             <label for="wachtwoord">Wachtwoord</label>
@@ -286,40 +239,37 @@
             </div>
         </div>
     </div>
-
-<div class="modal fade contactModal" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contact-modal-header" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h3 class="modal-title" id="contact-modal-header">Heeft u een vraag of hulp nodig?</h3>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">×</span>
-                </button>
+    <div class="modal fade contactModal" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contact-modal-header" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="contact-modal-header">Heeft u een vraag of hulp nodig?</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <form>
+                    <div class="modal-body">
+                        <p>U kunt op contact met ons opnemen via:</p>
+                        <ul>
+                            <li class="phone">
+                                <a href="tel:1400">Bel naar 1400</a>
+                            </li>
+                            <li class="app">
+                                <a href="#">App uw vraag naar 1400</a>
+                            </li>
+                            <li class="chat">
+                                <a class="openChat" data-toggle="modal" data-target="#chatModal" href="#">Direct chatten</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </form>
             </div>
-            <form>
-                <div class="modal-body">
-                    <p>U kunt op contact met ons opnemen via:</p>
-                    <ul>
-                        <li class="phone">
-                            <a href="tel:1400">Bel naar 1400</a>
-                        </li>
-                        <li class="app">
-                            <a href="#">App uw vraag naar 1400</a>
-                        </li>
-                        <li class="chat">
-                            <a class="openChat" data-toggle="modal" data-target="#chatModal" href="#">Direct chatten</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="modal-footer">
-                    
-                </div>
-            </form>
         </div>
     </div>
-</div>
-
-<div class="modal fade chatModal" id="chatModal" tabindex="-1" role="dialog" aria-labelledby="chat-modal-header" aria-hidden="true">
+    <div class="modal fade chatModal" id="chatModal" tabindex="-1" role="dialog" aria-labelledby="chat-modal-header" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -330,329 +280,290 @@
                 </div>
                 <form>
                     <div class="modal-body">
-                        
-                            <div class="messages">
-                                <div class="message">
-                                    <div class="avatar">
-                <img class="img-fluid" src="img/avatar.svg">
-                                    </div>
-                                    <div class="content">
-                                        <span class="name">Medewerker:</span>
-                                        <p>Goedemiddag, waarmee kan ik u helpen?</p>
-                                    </div>
+                        <div class="messages">
+                            <div class="message">
+                                <div class="avatar">
+                                    <img class="img-fluid" src="img/avatar.svg">
+                                </div>
+                                <div class="content">
+                                    <span class="name">Medewerker:</span>
+                                    <p>Goedemiddag, waarmee kan ik u helpen?</p>
                                 </div>
                             </div>
-                        
-                            
-                            <div class="messageForm">
-                                <div class="inputField">
-                                    <input class="form-control form-control-lg" type="text" placeholder="Typ hier uw vraag">
-                                </div>
-                                <div class="submitBtn">
-                                    <button type="button" class="btn btn-primary btn-lg">Verstuur</button>
-                                </div>
+                        </div>
+                        <div class="messageForm">
+                            <div class="inputField">
+                                <input class="form-control form-control-lg" type="text" placeholder="Typ hier uw vraag">
                             </div>
-                            
-                        
+                            <div class="submitBtn">
+                                <button type="button" class="btn btn-primary btn-lg">Verstuur</button>
+                            </div>
+                        </div>
                     </div>
                     <div class="modal-footer">
-                        
                     </div>
                 </form>
             </div>
         </div>
     </div>
-  
-<main role="main" class="actionable">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12">
-                <ul class="breadcrumb">
-                    <li><a href="home.html">Home</a></li>
-                </ul>                
+    <main role="main" class="actionable">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <ul class="breadcrumb">
+                        <li><a href="home.html">Home</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-
-        <div class="row">
-            <div class="col-lg-10 offset-lg-1 col-md-12">
-                <div class="container-fluid">
-                    <div class="row">
-                    </div>
-
-                    <div class="loggedOutElm">
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1 col-md-12">
+                    <div class="container-fluid">
                         <div class="row">
-                            <div class="col-md-12 notVisibleInFrame">
-                                <h1>Mijn Overheid</h1>
-                                
-                                <div>
-                                    <p>Log in om uw berichten en lopende aanvragen te bekijken</p>
+                        </div>
+                        <div class="loggedOutElm">
+                            <div class="row">
+                                <div class="col-md-12 notVisibleInFrame">
+                                    <h1>Mijn Overheid</h1>
+                                    <div>
+                                        <p>Log in om uw berichten en lopende aanvragen te bekijken</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        
-                        <div class="row">
-                            <div class="col-md-6 loginbox">
+                            <div class="row">
+                                <div class="col-md-6 loginbox">
                                     <div class="button-wrapper digid">
                                         <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#loginForm">Inloggen op Mijn Overheid
                                             <img src="img/digid-logo.svg" alt="digid" />
                                         </button>
-                                    </div>      
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-
-
-                    <div class="loggedInElm">
-                        <div class="row">
-                            <div class="col-md-8 notVisibleInFrame">
-                                <h1>Mijn Overheid van Asha Martinez</h1>
-                            </div>
-                            <div class="col-md-4">
-                                <p class="button-to-end"><a class="btn btn-primary" href="javascript:return false;">Mijn persoonlijke gegevens</a></p>
+                        <div class="loggedInElm">
+                            <div class="row">
+                                <div class="col-md-8 notVisibleInFrame">
+                                    <h1>Mijn Overheid van Asha Martinez</h1>
+                                </div>
+                                <div class="col-md-4">
+                                    <p class="button-to-end"><a class="btn btn-primary" href="javascript:return false;">Mijn persoonlijke gegevens</a></p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</main>
-
-
-
-<main class="informative">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-10 offset-lg-1 col-md-12">
-                <div class="container-fluid">
-
-                    <div class="loggedInElm">
-                        <!-- START inbox -->
-                        <div class="inbox">                        
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <h2>Mijn berichten</h2>
-
-                                    <div class="messages-legend">
-                                        <div class="row">
-                                            <div class="col-md-8">
-                                                <p>Onderwerp</p>
-                                            </div>
-                                            <div class="col-md-1">
-                                                <p>Datum</p>
-                                            </div>
-                                            <div class="col-md-3">
-                                                <p>Afzender</p>
-                                            </div>
-                                        </div>
-                                    </div>
-    
-                                    <div class="messages">
-                                        <a href="#to-message-1" class="message new">
-                                            <div class="inner">
-                                                <div class="row">
-                                                    <div class="col-md-8">
-                                                        <h3>Herinnering APK keuring</h3>
-                                                        <p class="summary">Uw APK verloopt op donderdag 20 december. Laat uw auto tijdig keuren om een boete te voorkomen.</p>
-                                                    </div>
-                                                    <time class="col-md-1">09-11</time>
-                                                    <p class="col-md-3 responsible">RDW</p>
-                                                </div>
-                                            </div>
-                                        </a>
-        
-                                        <a href="#to-message-2" class="message new">
-                                            <div class="inner">
-                                                <div class="row">
-                                                    <div class="col-md-8">
-                                                        <h3>Hogere kinderbijslag vanaf 1 januari</h3>
-                                                        <p class="summary">Uw kind wordt binnenkort 12 jaar. Uw kinderbijslag wordt daarom verhoogd tot € 75,80 per maand.</p>
-                                                    </div>
-                                                    <time class="col-md-1">07-11</time>
-                                                    <p class="col-md-3 responsible">Belastingdienst</p>
-                                                </div>
-                                            </div>
-                                        </a>
-        
-                                        <a href="#to-message-3" class="message">
-                                            <div class="inner">
-                                                <div class="row">
-                                                    <div class="col-md-8">
-                                                        <h3>Verleng uw rijbewijs</h3>
-                                                        <p class="summary">Over zes weken verloopt uw rijbewijs. U kunt nu alvast verlengen.</p>
-                                                    </div>
-                                                    <time class="col-md-1">31-10</time>
-                                                    <p class="col-md-3 responsible">RDW</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-
-    
-                                    <p class="follow-up"><a href="#berichten">Al mijn berichten</a></p>
-    
-                                </div>
-                            </div>
-                        </div>
-                        <!-- EINDE inbox -->
-
-                        <!-- START ongoing -->
-                        <div class="ongoing">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <h2>Mijn lopende zaken</h2>
-                                </div>
-                            </div>
-
-                            <div class="messages">
+    </main>
+    <main class="informative">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1 col-md-12">
+                    <div class="container-fluid">
+                        <div class="loggedInElm">
+                            <!-- START inbox -->
+                            <div class="inbox">
                                 <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="message">
-                                            <div class="inner">
-                                                <div class="row">
-    <!--                                                 <time class="col-md-2">06-11</time> -->
-                                                    <div class="col-md-10">
-                                                        <h3>Rijbewijs verlengen</h3>
-                                                        
-                                                        <ol class="process-stepper">
-                                                            <li class="requested completed">
-                                                              <span class="visually-hidden">In behandeling genomen op 13-02</span>
-                                                            </li>
-                                                            <li class="processing current">
-                                                            </li>
-                                                            <li class="delivered open">
-                                                            </li>
-                                                        </ol>
-                                                        
-                                                        <p class="status">Uw nieuwe rijbewijs wordt gemaakt. Ophalen kan vanaf <strong>donderdag 15 november</strong>.</p>                                
+                                    <div class="col-md-12">
+                                        <h2>Mijn berichten</h2>
+                                        <div class="messages-legend">
+                                            <div class="row">
+                                                <div class="col-md-8">
+                                                    <p>Onderwerp</p>
+                                                </div>
+                                                <div class="col-md-1">
+                                                    <p>Datum</p>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <p>Afzender</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="messages">
+                                            <a href="#to-message-1" class="message new">
+                                                <div class="inner">
+                                                    <div class="row">
+                                                        <div class="col-md-8">
+                                                            <h3>Herinnering APK keuring</h3>
+                                                            <p class="summary">Uw APK verloopt op donderdag 20 december. Laat uw auto tijdig keuren om een boete te voorkomen.</p>
+                                                        </div>
+                                                        <time class="col-md-1">09-11</time>
+                                                        <p class="col-md-3 responsible">RDW</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#to-message-2" class="message new">
+                                                <div class="inner">
+                                                    <div class="row">
+                                                        <div class="col-md-8">
+                                                            <h3>Hogere kinderbijslag vanaf 1 januari</h3>
+                                                            <p class="summary">Uw kind wordt binnenkort 12 jaar. Uw kinderbijslag wordt daarom verhoogd tot € 75,80 per maand.</p>
+                                                        </div>
+                                                        <time class="col-md-1">07-11</time>
+                                                        <p class="col-md-3 responsible">Belastingdienst</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#to-message-3" class="message">
+                                                <div class="inner">
+                                                    <div class="row">
+                                                        <div class="col-md-8">
+                                                            <h3>Verleng uw rijbewijs</h3>
+                                                            <p class="summary">Over zes weken verloopt uw rijbewijs. U kunt nu alvast verlengen.</p>
+                                                        </div>
+                                                        <time class="col-md-1">31-10</time>
+                                                        <p class="col-md-3 responsible">RDW</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <p class="follow-up"><a href="#berichten">Al mijn berichten</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- EINDE inbox -->
+                            <!-- START ongoing -->
+                            <div class="ongoing">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h2>Mijn lopende zaken</h2>
+                                    </div>
+                                </div>
+                                <div class="messages">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="message">
+                                                <div class="inner">
+                                                    <div class="row">
+                                                        <!--                                                 <time class="col-md-2">06-11</time> -->
+                                                        <div class="col-md-10">
+                                                            <h3>Rijbewijs verlengen</h3>
+                                                            <ol class="process-stepper">
+                                                                <li class="requested completed">
+                                                                    <span class="visually-hidden">In behandeling genomen op 13-02</span>
+                                                                </li>
+                                                                <li class="processing current">
+                                                                </li>
+                                                                <li class="delivered open">
+                                                                </li>
+                                                            </ol>
+                                                            <p class="status">Uw nieuwe rijbewijs wordt gemaakt. Ophalen kan vanaf <strong>donderdag 15 november</strong>.</p>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-    
-                                    <div class="col-md-6">
-                                        <div class="message">
-                                            <div class="inner">
-<!--                                                 <time class="col-md-2">18-10</time> -->
-                                                <h3>Aanvraag sloopvergunning</h3>
-
-                                                <ol class="process-stepper">
-                                                    <li class="requested completed">
-                                                      <span class="visually-hidden">Online ingediend op 24-02</span>
-                                                    </li>
-                                                    <li class="accepted pending">
-                                                    </li>
-                                                    <li class="processing open">
-                                                    </li>
-                                                    <li class="approved open">
-                                                    </li>
-                                                    <li class="archived open">
-                                                    </li>
-                                                </ol>
-
-                                                <p>Uw aanvraag is niet volledig. <br />Wij missen nog de kadastrale tekening.</p>
-                                                <p><a class="btn btn-warning" href="#todo">Aanvraag aanvullen</a></p>
+                                        <div class="col-md-6">
+                                            <div class="message needs-input">
+                                                <div class="inner">
+                                                    <!--                                                 <time class="col-md-2">18-10</time> -->
+                                                    <h3>Aanvraag sloopvergunning</h3>
+                                                    <ol class="process-stepper">
+                                                        <li class="requested completed">
+                                                            <span class="visually-hidden">Online ingediend op 24-02</span>
+                                                        </li>
+                                                        <li class="accepted pending">
+                                                        </li>
+                                                        <li class="processing open">
+                                                        </li>
+                                                        <li class="approved open">
+                                                        </li>
+                                                        <li class="archived open">
+                                                        </li>
+                                                    </ol>
+                                                    <div class="notification">
+                                                    <p>Uw aanvraag is niet volledig. <br />Wij missen nog de kadastrale tekening.</p>
+                                                    <p><a class="btn btn-warning" href="#todo">Aanvraag aanvullen</a></p>
+                                                     </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <p class="follow-up"><a class="" href="#lopend">Al mijn lopende zaken</a></p>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <p class="follow-up"><a class="" href="#lopend">Al mijn lopende zaken</a></p>
+                                    </div>
                                 </div>
                             </div>
+                            <!-- EINDE ongoing -->
                         </div>
-                        <!-- EINDE ongoing -->
-
-
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</main>
-
-<div class="loggedInElm">
-<main class="actionable">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-10 offset-lg-1 col-md-12">
-                <div class="container-fluid">
-
-                        <!-- START inbox -->
-                        <div class="notifications">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <h2>Mijn attenderingen</h2>
-
-                                    <div class="messages-legend">
-                                        <div class="row">
-                                            <div class="col-md-3">
-                                                <p>Bezorging</p>
-                                            </div>
-                                            <div class="col-md-2">
-                                                <p>Filters</p>
-                                            </div>
-                                            <div class="col-md-5">
-                                                <p>Attenderingen van</p>
-                                            </div>
-                                            <div class="col-md-2">
+    </main>
+    <div class="loggedInElm">
+        <main class="actionable">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-10 offset-lg-1 col-md-12">
+                        <div class="container-fluid">
+                            <!-- START inbox -->
+                            <div class="notifications">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h2>Bekendmakingen uit mijn omgeving</h2>
+                                        <div class="messages-legend">
+                                            <div class="row">
+                                                <div class="col-md-3">
+                                                    <p>Opgegeven e-mail</p>
+                                                </div>
+                                                <div class="col-md-1">
+                                                    <p>Postcode</p>
+                                                </div>
+                                                <div class="col-md-1">
+                                                    <p>Afstand</p>
+                                                </div>
+                                                <div class="col-md-5">
+                                                    <p>Afzender</p>
+                                                </div>
+                                                <div class="col-md-2">
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-    
-                                    <div class="messages">
-                                        <div class="message">
-                                            <div class="inner">
-                                                <div class="row">
-                                                    <div class="col-md-3">
-                                                        <p>asha_martinez@gmail.com</p>
-                                                    </div>
-                                                    <div class="col-md-2">
-                                                        <p>
-                                                            <span>2613VL</span>
-                                                            <span>302</span>
-                                                            <span>binnen 500m</span>
-                                                        </p>
-                                                    </div>
-                                                    <div class="col-md-5">
-                                                        Gemeente Barendrecht, provincie Zuid-Holland, Hoogheemraadschap Delfland
-                                                    </div>
-                                                    <div class="col-md-2 button-to-end">
-                                                        <p><a class="btn btn-primary" href="#notificaties">Aanpassen</a></p>
+                                        <div class="messages">
+                                            <div class="message">
+                                                <div class="inner">
+                                                    <div class="row">
+                                                        <div class="col-md-3">
+                                                            <p>asha_martinez@gmail.com</p>
+                                                        </div>
+                                                        <div class="col-md-1">
+                                                            <p>
+                                                                <span>2613VL</span>
+                                                            </p>
+                                                        </div>
+                                                        <div class="col-md-1">
+                                                            <p>
+                                                                <span>500m</span>
+                                                            </p>
+                                                        </div>
+                                                        <div class="col-md-5">
+                                                            Gemeente Barendrecht, provincie Zuid-Holland, Hoogheemraadschap Delfland
+                                                        </div>
+                                                        <div class="col-md-2 button-to-end">
+                                                            <p><a class="btn btn-primary" href="#notificaties">Aanpassen</a></p>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
+                            <!-- EINDE inbox -->
                         </div>
-                        <!-- EINDE inbox -->
-
-
-
+                    </div>
                 </div>
             </div>
-        </div>
+        </main>
     </div>
-</main>
-</div>
-
-
-
-
-
     <div class="modal fade loginmodal" id="loginToStartForm" tabindex="-1" role="dialog" aria-labelledby="modal-header" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <h3 class="modal-title" id="modal-header">
-          <img src="img/digid-logo.svg" alt="digid"> Login met DigiD
+                        <img src="img/digid-logo.svg" alt="digid"> Login met DigiD
                     </h3>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">×</span>
@@ -662,7 +573,7 @@
                     <div class="modal-body">
                         <div class="form-group">
                             <label for="gebruikersnaam">DigiD gebruikersnaam</label>
-            <input type="text" class="form-control" id="gebruikersnaam" placeholder="DigiD gebruikersnaam" value="asha_madhavan">
+                            <input type="text" class="form-control" id="gebruikersnaam" placeholder="DigiD gebruikersnaam" value="asha_madhavan">
                         </div>
                         <div class="form-group">
                             <label for="wachtwoord">Wachtwoord</label>
@@ -676,20 +587,16 @@
             </div>
         </div>
     </div>
-
-
-
-<footer>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12">
-                <span class="align-middle lead">1overheid: voor al uw overheidszaken.</span>
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <span class="align-middle lead">1overheid: voor al uw overheidszaken.</span>
+                </div>
             </div>
         </div>
-    </div>
-</footer>
-
-<div class="modal fade contactModal" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contact-modal-header" aria-hidden="true">
+    </footer>
+    <div class="modal fade contactModal" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contact-modal-header" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -700,14 +607,13 @@
                         <span aria-hidden="true">×</span>
                     </button>
                 </div>
-               
                 <div class="modal-footer">
                     <button type="button" class="btn btn-primary">Direct chatten</button>
                 </div>
-                
             </div>
         </div>
     </div>
-  <script src="js/main.js"></script>
+    <script src="js/main.js"></script>
+</body>
 
-</body></html>
+</html>

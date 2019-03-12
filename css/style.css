@@ -3959,10 +3959,11 @@ input[type="button"].btn-block {
   .alert-info .alert-link {
     color: #062c33; }
 
+
 .alert-warning {
-  color: #856404;
-  background-color: #fff3cd;
-  border-color: #ffeeba; }
+  color: #000;
+  background-color: #fefbdd;
+  border-color: #ffb612; }
   .alert-warning hr {
     border-top-color: #ffe8a1; }
   .alert-warning .alert-link {

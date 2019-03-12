@@ -805,6 +805,12 @@ section, main {
     		}
 		}
 	}
+
+    &.vireo-list-yellow {
+        li::before {
+            background-color: var(--vireo-yellow);
+        }
+    }
 }
 
 
@@ -1543,6 +1549,15 @@ section {
     }
 }
 
+.subject-blocks {
+    @extend .persons-summary;
+
+    img {
+        max-height: 200px;
+        object-fit: cover;
+    }
+}
+
 .news {
     @extend .persons-summary;
     
@@ -1602,3 +1617,11 @@ section {
     }
 }
 
+
+
+
+/* HELPERS */
+
+.padded {
+    padding: 2rem 0;
+}
