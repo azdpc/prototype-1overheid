@@ -1827,10 +1827,11 @@ td {
     margin: 0.5em 0 1.0em; }
   .policy-priorities .intro p {
     font-size: 0.875em; }
-  .policy-priorities .priority-tiles {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap; }
+  @media (min-width: 50em) {
+    .policy-priorities .priority-tiles {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap; } }
   .policy-priorities .priority {
     position: relative;
     flex: 0 0 27.5%;

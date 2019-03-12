@@ -16,15 +16,9 @@
   padding: 3rem 2rem 3rem 2rem;
   margin-top: -3rem;
   border: 4px solid white;
-  display: grid;
-  grid-template-columns: [fact-start] repeat(3, 1fr) [description-start] repeat(7, 1fr) [description-end] 2fr [toggle-end];
-  grid-gap: 15px; }
+}
 
-.impactbar__header {
-  display: contents;
-  align-items: flex-end;
-  position: relative;
-  margin-left: -19%; }
+
 
 .impactbar__fact {
   /*		position: absolute;
@@ -82,3 +76,20 @@
     max-height: 21rem; }
     .impactbar.is-expanded button svg {
       transform: rotate(180deg); }
+
+
+  @media (min-width: 50em) {
+    .impactbar {
+      display: grid;
+      grid-template-columns: [fact-start] repeat(3, 1fr) [description-start] repeat(7, 1fr) [description-end] 2fr [toggle-end];
+      grid-gap: 15px;
+    }
+
+    .impactbar__header {
+      display: contents;
+      align-items: flex-end;
+      position: relative;
+      margin-left: -19%; 
+    }
+
+  }
