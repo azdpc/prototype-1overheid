@@ -1169,8 +1169,9 @@ blockquote {
   padding: 0; }
   .topics-list li {
     margin: 1rem 0 1.5rem; }
-  .topics-list.tight {
+  .topics-list.tight:not(:first-child) {
     margin-top: 2rem; }
+
     .topics-list.tight li {
       margin: 0.4rem 0 0.6rem; }
     .topics-list.tight a {
