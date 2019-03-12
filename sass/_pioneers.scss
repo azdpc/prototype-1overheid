@@ -78,8 +78,9 @@
         }
         
         &:before {
-            content: "\2033";
+            content: "”";
             font-size: 4.5em;
+            font-weight: normal;
             color: var(--white);
             position: absolute;
             top: -5rem;
