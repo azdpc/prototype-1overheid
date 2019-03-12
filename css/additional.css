@@ -638,7 +638,7 @@ section, main {
   border-color: transparent;
   border-bottom-color: var(--vireo-blue-light); }
 
-.government .navbar-options .dropdown-menu.show > .container-fluid:before {
+.navbar-options .dropdown-menu.show > .container-fluid:before {
   content: "";
   display: block;
   width: 3em;
@@ -648,11 +648,6 @@ section, main {
   bottom: 100%;
   z-index: 18;
   border-bottom: 10px solid var(--white); }
-
-.government .navbar-options .dropdown-menu.show > .container-fluid:before {
-  display: none;
-}
-
   @media screen and (min-width: 321px) {
     .navbar-options .dropdown-menu.show > .container-fluid:before {
       width: 4em;
@@ -1267,7 +1262,7 @@ blockquote {
     margin: 0;
     font-family: "RO Serif", serif;
     font-size: 1rem;
-    line-height: 1.2;
+    line-height: 1.33;
     color: var(--black); }
   @media screen and (min-width: 576px) {
     .spotlight-item img {
@@ -1552,7 +1547,10 @@ td {
     top: 0;
     bottom: 0;
     z-index: 8;
-    background: linear-gradient(180deg, transparent 0%, rgba(0, 84, 70, 0.1) 66%, rgba(0, 84, 70, 0.4) 100%), linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.15) 66%, rgba(0, 0, 0, 0.3) 100%); }
+    /*
+        background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,84,70,0.1) 66%, rgba(0,84,70,0.4) 100%),
+                    linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.15) 66%, rgba(0,0,0,0.3) 100%);
+*/ }
   @media (min-width: 361px) {
     .headerImage .overlay h1 {
       font-size: 2rem;
@@ -1636,12 +1634,18 @@ td {
       font-size: 2rem;
       max-width: 12em; }
     .headerImage.magazineHeaderImage .policy-challenge {
-      max-width: 20em;
-      font-family: "RO Serif", serif;
+      max-width: 18em;
+      font-family: "RO Sans", serif;
       font-style: italic;
+      -webkit-font-smoothing: antialiased;
       font-size: 1.125rem;
-      line-height: 1.3;
-      color: var(--white); }
+      line-height: 1.1;
+      color: var(--white);
+      background: var(--vireo-ruby);
+      padding: 1rem 1rem 1.2rem; }
+      .headerImage.magazineHeaderImage .policy-challenge p {
+        margin: 0;
+        font-size: 1em; }
     @media (min-width: 361px) {
       .headerImage.magazineHeaderImage h1 {
         font-size: 2.4rem;
@@ -1650,41 +1654,35 @@ td {
       .headerImage.magazineHeaderImage .policy-challenge {
         font-size: 1.2rem; } }
     @media (min-width: 576px) {
-      .headerImage.magazineHeaderImage .overlay {
-        bottom: 3rem; }
-        .headerImage.magazineHeaderImage .overlay.pagetitle {
-          bottom: auto;
-          top: 6rem; }
+      .headerImage.magazineHeaderImage .overlay.pagetitle {
+        bottom: auto;
+        top: 6rem; }
       .headerImage.magazineHeaderImage h1 {
         font-size: 4.5rem;
         line-height: 1.1; }
       .headerImage.magazineHeaderImage .policy-challenge {
-        font-size: 1.5rem; } }
+        font-size: 1.25rem; } }
     @media (min-width: 768px) {
       .headerImage.magazineHeaderImage h1 {
         font-size: 6rem; }
       .headerImage.magazineHeaderImage .policy-challenge {
-        font-size: 2rem; } }
+        font-size: 1.5rem; } }
     @media (min-width: 1024px) {
       .headerImage.magazineHeaderImage .overlay {
-        bottom: 1rem; }
+        bottom: 0; }
         .headerImage.magazineHeaderImage .overlay.pagetitle {
           bottom: auto;
           top: 8rem; }
       .headerImage.magazineHeaderImage h1 {
         font-size: 7rem; }
       .headerImage.magazineHeaderImage .policy-challenge {
-        font-size: 2.4rem; } }
+        font-size: 1.8rem; } }
     @media (min-width: 1200px) {
-      .headerImage.magazineHeaderImage .overlay {
-        bottom: 2rem; }
-        .headerImage.magazineHeaderImage .overlay.pagetitle {
-          bottom: auto;
-          top: 8rem; }
+      .headerImage.magazineHeaderImage .overlay.pagetitle {
+        bottom: auto;
+        top: 8rem; }
       .headerImage.magazineHeaderImage h1 {
-        font-size: 8rem; }
-      .headerImage.magazineHeaderImage .policy-challenge {
-        font-size: 3rem; } }
+        font-size: 8rem; } }
   .headerImage.magazineHeaderImageSmall {
     max-height: 180px; }
     @media (min-width: 361px) {
@@ -1692,8 +1690,7 @@ td {
         font-size: 2rem;
         line-height: 1.1;
         text-align: center; }
-      .headerImage.magazineHeaderImageSmall .site-branch,
-      .headerImage.magazineHeaderImageSmall .policy-challenge {
+      .headerImage.magazineHeaderImageSmall .site-branch {
         font-size: 1.2rem; } }
     @media (min-width: 576px) {
       .headerImage.magazineHeaderImageSmall {
@@ -1730,9 +1727,7 @@ td {
         .headerImage.magazineHeaderImageSmall h1 {
           font-size: 5rem; }
         .headerImage.magazineHeaderImageSmall .site-branch {
-          font-size: 1.8rem; }
-        .headerImage.magazineHeaderImageSmall .policy-challenge {
-          font-size: 2.4rem; } }
+          font-size: 1.8rem; } }
   .headerImage.magazineHeaderLeftAligned h1 {
     text-align: left; }
   .headerImage.smallHeaderImage {

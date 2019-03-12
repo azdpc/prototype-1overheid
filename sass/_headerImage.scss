@@ -1,4 +1,6 @@
 
+
+
 /* HEADER VISUAL on governance and policy branch */
 .headerImage {
     position: relative;
@@ -89,8 +91,10 @@
         top: 0;
         bottom: 0;
         z-index: 8;
+/*
         background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,84,70,0.1) 66%, rgba(0,84,70,0.4) 100%),
                     linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.15) 66%, rgba(0,0,0,0.3) 100%);
+*/
     }
 
 
@@ -254,12 +258,19 @@
             max-width: 12em;
         }
         .policy-challenge {
-            max-width: 20em;
-            font-family: "RO Serif", serif;
+            max-width: 18em;
+            font-family: "RO Sans", serif;
             font-style: italic;
+            -webkit-font-smoothing: antialiased;
             font-size: 1.125rem;
-            line-height: 1.3;
+            line-height: 1.1;
             color: var(--white);
+            background: var(--vireo-ruby);
+            padding: 1rem 1rem 1.2rem;
+            p {
+                margin: 0;
+                font-size: 1em;
+            }
         }
         
         @media (min-width: 361px) {
@@ -274,7 +285,7 @@
         }
         @media (min-width: 576px) {
             .overlay {
-                bottom: 3rem;
+//                 bottom: 3rem;
                 
                 &.pagetitle {
                     bottom: auto;
@@ -286,7 +297,7 @@
                 line-height: 1.1;
             }
             .policy-challenge {
-                font-size: 1.5rem;                
+                font-size: 1.25rem;                
             }
         }
         @media (min-width: 768px) {
@@ -294,12 +305,12 @@
                 font-size: 6rem;
             }
             .policy-challenge {
-                font-size: 2rem;                
+                font-size: 1.5rem;                
             }
         }
         @media (min-width: 1024px) {
             .overlay {
-                bottom: 1rem;
+                bottom: 0;
                 
                 &.pagetitle {
                     bottom: auto;
@@ -310,12 +321,12 @@
                 font-size: 7rem;
             }
             .policy-challenge {
-                font-size: 2.4rem;                
+                font-size: 1.8rem;                
             }
         }
         @media (min-width: 1200px) {
             .overlay {
-                bottom: 2rem;
+//                 bottom: 2rem;
                 
                 &.pagetitle {
                     bottom: auto;
@@ -324,9 +335,6 @@
             }
             h1 {
                 font-size: 8rem;
-            }
-            .policy-challenge {
-                font-size: 3rem;
             }
         }   
         
@@ -343,8 +351,7 @@
                 line-height: 1.1;
                 text-align: center;
             }
-            .site-branch,
-            .policy-challenge {
+            .site-branch {
                 font-size: 1.2rem;                
             }
         }
@@ -397,9 +404,6 @@
             }
             .site-branch {
                 font-size: 1.8rem;
-            }
-            .policy-challenge {
-                font-size: 2.4rem;
             }
         }
     }
