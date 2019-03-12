@@ -638,7 +638,7 @@ section, main {
   border-color: transparent;
   border-bottom-color: var(--vireo-blue-light); }
 
-.navbar-options .dropdown-menu.show > .container-fluid:before {
+.government .navbar-options .dropdown-menu.show > .container-fluid:before {
   content: "";
   display: block;
   width: 3em;
@@ -648,6 +648,11 @@ section, main {
   bottom: 100%;
   z-index: 18;
   border-bottom: 10px solid var(--white); }
+
+.government .navbar-options .dropdown-menu.show > .container-fluid:before {
+  display: none;
+}
+
   @media screen and (min-width: 321px) {
     .navbar-options .dropdown-menu.show > .container-fluid:before {
       width: 4em;
@@ -1840,10 +1845,11 @@ td {
     margin: 0.5em 0 1.0em; }
   .policy-priorities .intro p {
     font-size: 0.875em; }
-  .policy-priorities .priority-tiles {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap; }
+  @media (min-width: 50em) {
+    .policy-priorities .priority-tiles {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap; } }
   .policy-priorities .priority {
     position: relative;
     flex: 0 0 27.5%;
