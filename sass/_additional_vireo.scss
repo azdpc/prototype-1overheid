@@ -566,6 +566,10 @@ section, main {
             right: 6em;
         }
     }
+
+    .government & .dropdown-menu.show > .container-fluid:before {
+        display: none;
+    }
     
     .search-wrapper button:after {
         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Cpath fill='none' stroke='%23007BC7' d='M17.5 12c0 3.037-2.466 5.499-5.5 5.499S6.5 15.037 6.5 12 8.966 6.501 12 6.501 17.5 8.963 17.5 12z'/%3E%3Cpath fill='none' stroke='%23007BC7' stroke-linecap='round' d='M15.637 16.122l6.696 6.794'/%3E%3C/svg%3E");
