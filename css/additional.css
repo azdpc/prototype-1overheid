@@ -2045,6 +2045,54 @@ td {
   padding: 3rem 2rem 1rem;
   background-color: white; }
 
+.visual-info {
+  overflow: hidden; }
+  .visual-info.key-amounts .circle {
+    display: block;
+    margin: 0 auto 1rem;
+    width: 7rem;
+    height: 7rem;
+    padding: 0.5rem;
+    border-radius: 50%;
+    background-color: var(--vireo-blue-smoke);
+    color: var(--white);
+    text-align: center; }
+    .visual-info.key-amounts .circle img {
+      display: block;
+      width: 100%;
+      position: relative;
+      z-index: 8; }
+    .visual-info.key-amounts .circle.breakout img {
+      width: 150%;
+      top: -25%;
+      left: 10%; }
+  .visual-info.key-amounts .deposit {
+    display: block;
+    text-align: center;
+    position: relative;
+    z-index: 10; }
+  .visual-info.key-amounts .currency {
+    color: var(--vireo-blue-shade);
+    font-size: 1.5rem;
+    position: relative;
+    top: -0.45rem; }
+  .visual-info.key-amounts .amount {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--vireo-blue-shade); }
+    .visual-info.key-amounts .amount .kern {
+      letter-spacing: -0.05em; }
+    .visual-info.key-amounts .amount sup {
+      position: relative;
+      left: -0.75rem;
+      font-size: 1.8rem;
+      bottom: -0.2rem; }
+  .visual-info.key-amounts em {
+    display: block;
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height: 1.2; }
+
 .button-to-end {
   text-align: right; }
 

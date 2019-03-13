@@ -1,0 +1,71 @@
+.visual-info {
+    overflow: hidden;
+    
+    &.key-amounts {
+        .circle {
+            display: block;
+            margin: 0 auto 1rem;
+            width: 7rem;
+            height: 7rem;
+            padding: 0.5rem;
+            border-radius: 50%;
+            background-color: var(--vireo-blue-smoke);
+            color: var(--white);
+            text-align: center;
+            
+            img {
+                display: block;
+                width: 100%;
+                position: relative;
+//                 top: -30%;
+//                 left: -12.5%;
+                z-index: 8;
+            }
+            
+            &.breakout {
+                img {
+                    width: 150%;
+                    top: -25%;
+                    left: 10%;
+                }
+            }
+        }
+        
+        .deposit {
+            display: block;
+            text-align: center;
+            position: relative;
+            z-index: 10;
+        }
+        
+        .currency {
+            color: var(--vireo-blue-shade);
+            font-size: 1.5rem;
+            position: relative;
+            top: -0.45rem;
+        }
+        .amount {
+            font-size: 3rem;
+            font-weight: bold;
+            color: var(--vireo-blue-shade);
+            
+            .kern {
+                letter-spacing: -0.05em;
+            }
+            
+            sup {
+                position: relative;
+                left: -0.75rem;
+                font-size: 1.8rem;
+                bottom: -0.2rem;
+            }
+        }
+        
+        em {
+            display: block;
+            text-align: center;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+    }
+}
