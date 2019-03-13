@@ -1,5 +1,7 @@
 // Staat deze er wel of niet?
 .pioneers {
+    position: relative;
+    
     .spotlight img {
     	width: 100%;
     }
@@ -28,7 +30,7 @@
             width: 60vw;
         }
     }
-    
+        
     .spotlight {
         border: 8px solid var(--white);
         width: 60vw;
@@ -113,6 +115,42 @@
         .label-pioneers {
             font-weight: bold;
             color: var(--vireo-green-clear);            
+        }
+    }
+    
+    
+    .pioneers-slidenav {
+        position: absolute;
+        bottom: 12rem;
+        left: 50%;
+        margin-left: -10rem;
+        width: 20rem;
+        
+        ul {
+            list-style: none;
+            margin: 2em 0 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        li {
+            flex: 0 0 auto;
+            margin: 0 1rem;
+        }
+        a {
+            display: block;
+            width: 1.6rem;
+            height: 1.6rem;
+            padding: 0.4rem;
+            border-radius: 0.6rem;
+            background-color: var(--white);
+        }
+        .current-slide span {
+            display: block;
+            width: 0.8rem;
+            height: 0.8rem;
+            border-radius: 0.4rem;
+            background-color: var(--vireo-green-clear);
         }
     }
 }

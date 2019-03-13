@@ -1751,96 +1751,116 @@ td {
         min-height: none;
         max-height: none; } }
 
-.pioneers .spotlight img {
-  width: 100%; }
-
-.pioneers .pioneer-intro {
-  position: relative;
-  z-index: 10;
-  margin-bottom: -15rem; }
-
-.pioneers h2 + .intro {
-  margin: 0.5em 0 1.0em; }
-
-.pioneers .intro p {
-  font-size: 0.875em; }
-
-.pioneers .pioneer-case {
+.pioneers {
   position: relative; }
-
-.pioneers .map img {
-  display: block;
-  width: 60vw; }
-
-.pioneers .spotlight {
-  border: 8px solid var(--white);
-  width: 60vw;
-  position: absolute;
-  top: 22.5%;
-  right: 15vw; }
-
-.pioneers .line {
-  width: 8vw;
-  height: auto;
-  position: absolute;
-  right: 100%;
-  top: 0;
-  margin-right: 1.7rem; }
-  .pioneers .line svg {
+  .pioneers .spotlight img {
     width: 100%; }
-
-.pioneers .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 50%;
-  background: var(--white);
-  padding: 0 2rem 0.5rem 0; }
-
-.pioneers .quote {
-  width: 100%;
-  position: absolute;
-  left: 100%;
-  bottom: 0;
-  margin: 0;
-  padding: 0 2rem;
-  font-weight: bold;
-  font-size: 2rem;
-  line-height: 1.25;
-  color: var(--white);
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2); }
-  .pioneers .quote.top {
-    bottom: auto;
-    top: 5.5rem; }
-  .pioneers .quote:before {
-    content: "”";
-    font-size: 4.5em;
-    font-weight: normal;
-    color: var(--white);
-    position: absolute;
-    top: -5rem;
-    left: 1.5rem; }
-
-.pioneers h3 {
-  position: relative;
-  padding: 0.9rem 0;
-  margin: 0;
-  font-size: 1.3125rem;
-  font-weight: normal; }
-  @media screen and (min-width: 576px) {
-    .pioneers h3 {
-      font-size: 1.5rem; } }
-  .pioneers h3:before {
-    content: "";
+  .pioneers .pioneer-intro {
+    position: relative;
+    z-index: 10;
+    margin-bottom: -15rem; }
+  .pioneers h2 + .intro {
+    margin: 0.5em 0 1.0em; }
+  .pioneers .intro p {
+    font-size: 0.875em; }
+  .pioneers .pioneer-case {
+    position: relative; }
+  .pioneers .map img {
     display: block;
-    width: 10rem;
+    width: 60vw; }
+  .pioneers .spotlight {
+    border: 8px solid var(--white);
+    width: 60vw;
     position: absolute;
-    left: -2rem;
+    top: 22.5%;
+    right: 15vw; }
+  .pioneers .line {
+    width: 8vw;
+    height: auto;
+    position: absolute;
+    right: 100%;
     top: 0;
-    border-top: 4px solid var(--vireo-green-clear); }
-  .pioneers h3 .label-pioneers {
+    margin-right: 1.7rem; }
+    .pioneers .line svg {
+      width: 100%; }
+  .pioneers .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    background: var(--white);
+    padding: 0 2rem 0.5rem 0; }
+  .pioneers .quote {
+    width: 100%;
+    position: absolute;
+    left: 100%;
+    bottom: 0;
+    margin: 0;
+    padding: 0 2rem;
     font-weight: bold;
-    color: var(--vireo-green-clear); }
+    font-size: 2rem;
+    line-height: 1.25;
+    color: var(--white);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2); }
+    .pioneers .quote.top {
+      bottom: auto;
+      top: 5.5rem; }
+    .pioneers .quote:before {
+      content: "”";
+      font-size: 4.5em;
+      font-weight: normal;
+      color: var(--white);
+      position: absolute;
+      top: -5rem;
+      left: 1.5rem; }
+  .pioneers h3 {
+    position: relative;
+    padding: 0.9rem 0;
+    margin: 0;
+    font-size: 1.3125rem;
+    font-weight: normal; }
+    @media screen and (min-width: 576px) {
+      .pioneers h3 {
+        font-size: 1.5rem; } }
+    .pioneers h3:before {
+      content: "";
+      display: block;
+      width: 10rem;
+      position: absolute;
+      left: -2rem;
+      top: 0;
+      border-top: 4px solid var(--vireo-green-clear); }
+    .pioneers h3 .label-pioneers {
+      font-weight: bold;
+      color: var(--vireo-green-clear); }
+  .pioneers .pioneers-slidenav {
+    position: absolute;
+    bottom: 12rem;
+    left: 50%;
+    margin-left: -10rem;
+    width: 20rem; }
+    .pioneers .pioneers-slidenav ul {
+      list-style: none;
+      margin: 2em 0 0;
+      padding: 0;
+      display: flex;
+      justify-content: center; }
+    .pioneers .pioneers-slidenav li {
+      flex: 0 0 auto;
+      margin: 0 1rem; }
+    .pioneers .pioneers-slidenav a {
+      display: block;
+      width: 1.6rem;
+      height: 1.6rem;
+      padding: 0.4rem;
+      border-radius: 0.6rem;
+      background-color: var(--white); }
+    .pioneers .pioneers-slidenav .current-slide span {
+      display: block;
+      width: 0.8rem;
+      height: 0.8rem;
+      border-radius: 0.4rem;
+      background-color: var(--vireo-green-clear); }
 
 .policy-priorities {
   padding-top: 2rem; }

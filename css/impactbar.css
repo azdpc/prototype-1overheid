@@ -1,8 +1,8 @@
 .impact {
   position: relative;
   background-color: var(--vireo-green-misty);
-  padding-top: 1rem;
-  padding-bottom: 8rem; }
+  padding-top: 4rem;
+  padding-bottom: 12rem; }
 
 .impactbar {
   position: absolute;
