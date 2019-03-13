@@ -1,12 +1,12 @@
 .background {
 	
 	&--pioneers {
-		background: linear-gradient(var(--vireo-green-misty) 30%, var(--vireo-yellow-light) 70%);
+		background: linear-gradient(var(--vireo-green-misty) 30%, var(--vireo-yellow-misty) 70%);
 
 	}
 
 	&--change {
-		background-color: var(--vireo-yellow-light);
+		background-color: var(--vireo-yellow-misty);
 	}
 
 }

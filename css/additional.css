@@ -270,6 +270,7 @@ button.beforeLogin img {
   --vireo-green-shade: #00856F;
   --vireo-yellow: #ffb612;
   --vireo-yellow-light: #fefbdd;
+  --vireo-yellow-misty: #F9F4D2;
   --vireo-green-misty-trans: rgba(240, 248, 248, 0.85);
   --vireo-green-light-trans: rgba(223, 247, 245, 0.85);
   --vireo-button-green: #50AA00;
@@ -1850,9 +1851,9 @@ td {
       margin: 0 1rem; }
     .pioneers .pioneers-slidenav a {
       display: block;
-      width: 1.6rem;
-      height: 1.6rem;
-      padding: 0.4rem;
+      width: 1.4rem;
+      height: 1.4rem;
+      padding: 0.3rem;
       border-radius: 0.6rem;
       background-color: var(--white); }
     .pioneers .pioneers-slidenav .current-slide span {
@@ -2027,10 +2028,10 @@ td {
     padding-top: 0.4rem; }
 
 .background--pioneers {
-  background: linear-gradient(var(--vireo-green-misty) 30%, var(--vireo-yellow-light) 70%); }
+  background: linear-gradient(var(--vireo-green-misty) 30%, var(--vireo-yellow-misty) 70%); }
 
 .background--change {
-  background-color: var(--vireo-yellow-light); }
+  background-color: var(--vireo-yellow-misty); }
 
 .highlight {
   margin: 6rem 0;
