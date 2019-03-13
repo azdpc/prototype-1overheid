@@ -895,7 +895,9 @@ section, main {
   @media screen and (min-width: 576px) {
     .content-item {
       margin-top: 2em;
-      margin-bottom: 2em; } }
+      margin-bottom: 2em; }
+      .content-item.extra-space {
+        margin-top: 4em; } }
   .content-item h2 {
     font-weight: bold; }
   .content-item h2.with-bar {
@@ -950,6 +952,9 @@ blockquote {
   background-size: 1em;
   background-position: 0 0.44rem; }
 
+.topics-list + .follow-up {
+  margin-top: 2rem; }
+
 .actionable a:not(.btn),
 .government .actionable a:not(.btn) {
   color: var(--vireo-blue-clear); }
@@ -985,6 +990,8 @@ blockquote {
   @media screen and (min-width: 576px) {
     .intro {
       font-size: 1.5rem; } }
+  .intro.tight-space-after {
+    margin-bottom: -2rem; }
   .government .intro {
     font-family: "RO Serif", serif; }
   .intro p {

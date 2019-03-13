@@ -892,6 +892,11 @@ section, main {
     @media screen and (min-width: 576px) {
         margin-top: 2em;
         margin-bottom: 2em;
+
+        &.extra-space {
+            margin-top: 4em;
+//             margin-bottom: 4em;
+        }
     }    
 /*
     @media screen and (min-width: 1024px) {
@@ -979,8 +984,12 @@ blockquote {
             background-size: 1em;
             background-position: 0 0.44rem;
         }
-    }    
+    }
 }
+.topics-list + .follow-up {
+    margin-top: 2rem;
+}
+
 .actionable,
 .government .actionable {
     a:not(.btn) {
@@ -1032,6 +1041,10 @@ blockquote {
     
     @media screen and (min-width: 576px) {
         font-size: 1.5rem;
+    }
+    
+    &.tight-space-after {
+        margin-bottom: -2rem;
     }
     
     .government & {
