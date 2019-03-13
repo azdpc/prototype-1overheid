@@ -352,6 +352,10 @@ section, main {
 /* FORM START & QUESTION STEPS */
 .questions {
 	padding: 0;
+
+    &--padding-top {
+        padding-top: 2rem;
+    }
 	
 	.start {
 		display: none;
@@ -561,6 +565,10 @@ section, main {
             width: 4em;
             right: 6em;
         }
+    }
+
+    .government & .dropdown-menu.show > .container-fluid:before {
+        display: none;
     }
     
     .search-wrapper button:after {
