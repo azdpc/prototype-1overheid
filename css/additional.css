@@ -258,24 +258,24 @@ button.beforeLogin img {
 :root {
   --black: #000;
   --tarmac: #222;
-  --vireo-blue-misty:  #F0FAFF;
-  --vireo-blue-light:  #E6F9FF;
-  --vireo-blue-smoke:  #C2E2F2;
-  --vireo-blue-clear:  #007BC7;
-  --vireo-blue-shade:  #0073AD;
+  --vireo-blue-misty: #F0FAFF;
+  --vireo-blue-light: #E6F9FF;
+  --vireo-blue-smoke: #C2E2F2;
+  --vireo-blue-clear: #007BC7;
+  --vireo-blue-shade: #0073AD;
   --vireo-green-misty: #F0F8F8;
   --vireo-green-light: #DAEFEC;
   --vireo-green-smoke: #B7E5DC;
   --vireo-green-clear: #009F85;
   --vireo-green-shade: #00856F;
-  --vireo-yellow:         #ffb612;
-  --vireo-yellow-light:   #fefbdd;
-  --vireo-green-misty-trans:  rgba(240,248,248,0.85);
-  --vireo-green-light-trans:  rgba(223,247,245,0.85);
-  --vireo-button-green:       #50AA00;
+  --vireo-yellow: #ffb612;
+  --vireo-yellow-light: #fefbdd;
+  --vireo-green-misty-trans: rgba(240, 248, 248, 0.85);
+  --vireo-green-light-trans: rgba(223, 247, 245, 0.85);
+  --vireo-button-green: #50AA00;
   --vireo-button-green-hover: #4A9600;
-  --vireo-warning-red:        #CC0000;
-  --vireo-ruby:               #CA005D; }
+  --vireo-warning-red: #CC0000;
+  --vireo-ruby: #CA005D; }
 
 /* Import RO webfonts */
 @font-face {
@@ -1217,6 +1217,9 @@ blockquote {
 
 .government .topics-list.subnav li:before {
   border-top-color: var(--vireo-green-clear); }
+
+h2.with-bar + .topics-list.tight {
+  margin-top: 0; }
 
 /*  "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='12' viewBox='-1.208 -0.312 16 12'%3E%3Cpath fill='%23007BC7' d='M0 5.662L5.117 0l1.678 1.587-2.772 3.017.598-.091h9.774v2.299H4.621l-.598-.115 2.718 2.992-1.679 1.586z'/%3E%3C/svg%3E"
  *

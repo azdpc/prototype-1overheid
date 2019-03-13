@@ -1345,7 +1345,6 @@ blockquote {
             background-size: 1.1em;
         }       
     }
-
 }
 .government .topics-list {
     a {
@@ -1359,6 +1358,9 @@ blockquote {
     }
 }
 
+h2.with-bar + .topics-list.tight {
+    margin-top: 0;
+}
 
 
 
