@@ -899,7 +899,8 @@ section, main {
       .content-item.extra-space {
         margin-top: 4em; } }
   .content-item h2 {
-    font-weight: bold; }
+    font-weight: bold;
+    margin-top: 1.6em; }
   .content-item h2.with-bar {
     position: relative;
     padding: 0.9rem 0;
