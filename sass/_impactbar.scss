@@ -8,16 +8,20 @@
 .impactbar {
     position: relative;
     z-index: 9;
-    background-color: rgb(202,0,93);
-    background-color: var(--vireo-yellow-light);
+//     background-color: rgb(202,0,93);
+//     background-color: var(--vireo-yellow-light);
+    background-color: var(--vireo-ruby);
     padding: 3rem 2rem 3rem 2rem;
 	border: 4px solid white;
+	color: white;
 
+/*
 	@media (min-width: 50em) {
 		display: grid;
 		grid-template-columns: [fact-start] repeat(3, 1fr) [description-start] repeat(7, 1fr) [description-end] 2fr [toggle-end];
 		grid-gap: 15px;
 	}
+*/
 	
 }
 
@@ -40,7 +44,7 @@
 		font-size: 72px;
 		line-height: .75;
 		font-weight: bold;
-		grid-column: fact-start / description-start;
+// 		grid-column: fact-start / description-start;
 	}
 
 	.impactbar__explanation {
@@ -51,7 +55,7 @@
 		font-family: "RO Serif", serif;
 		font-style: italic;
 		padding-top: 0.5rem;
-		grid-column: description;
+// 		grid-column: description;
 
 		&::before {
 			content: '';
@@ -60,7 +64,7 @@
 			top: 0;
 			width: 8rem;
 			height: 1px;
-			background-color: black;
+			background-color: white;
 		}
 		
 	}
@@ -69,10 +73,10 @@
 		padding: 3rem 0;
 		//max-height: 0;
 		height: auto;
-		grid-column: description;
+// 		grid-column: description;
 
 		a:not(.btn) {
-			color: black;
+			color: white;
 		}
 
 	}
@@ -85,7 +89,7 @@
 		button {
 			background-color: transparent;
 			border: none;
-			color: black;
+			color: white;
 
 			svg {
 			transform-origin: 50% 50%;

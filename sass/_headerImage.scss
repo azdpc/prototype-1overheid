@@ -46,6 +46,7 @@
         h1 {
             margin: 0;
             font-weight: bold;
+            line-height: 1;
             color: var(--white);
             text-shadow: 0px 0px 0.4em rgba(0,0,0,0.6);
         }
@@ -67,15 +68,14 @@
         
         .show-site-branch {
             position: relative;
-            
-            .site-branch {
-                background-color: var(--vireo-green-shade);
-                padding: 0.4rem 1rem;
-                position: absolute;
-                left: 15px;
-                top: 100%;
-                font-size: 1.25rem;
-            }
+        }
+        .site-branch {
+            background-color: var(--vireo-green-shade);
+            padding: 0.2rem 0.5rem;
+            position: absolute;
+            left: 15px;
+            top: 100%;
+            font-size: 1rem;
         }
         
     }
@@ -116,6 +116,11 @@
             h1 {
                 font-size: 2.7rem;
             }
+            
+            .site-branch {
+                padding: 0.3rem 0.5rem;
+                font-size: 1.125rem;
+            }
         }
     }
     @media (min-width: 768px) {
@@ -133,6 +138,11 @@
 
             h1 {
                 font-size: 3.6rem;
+            }
+            
+            .site-branch {
+                font-size: 1.25rem;
+                padding: 0.4rem 1rem;
             }
         }
     }
@@ -249,7 +259,7 @@
         .overlay {
             &.pagetitle {
                 bottom: auto;
-                top: 4rem; 
+                top: 4.5rem; 
             }
         }
         
@@ -262,11 +272,11 @@
             font-family: "RO Sans", serif;
             font-style: italic;
             -webkit-font-smoothing: antialiased;
-            font-size: 1.125rem;
+            font-size: 1rem;
             line-height: 1.1;
             color: var(--white);
             background: var(--vireo-ruby);
-            padding: 1rem 1rem 1.2rem;
+            padding: 0.3rem 0.4rem 0.5rem;
             p {
                 margin: 0;
                 font-size: 1em;
@@ -297,6 +307,7 @@
                 line-height: 1.1;
             }
             .policy-challenge {
+                padding: 1rem 1rem 1.2rem;
                 font-size: 1.25rem;                
             }
         }
@@ -341,18 +352,24 @@
     }
     
     &.magazineHeaderImageSmall {
-        max-height: 180px;
+        max-height: 210px;
+
+
+        .overlay.pagetitle {
+        }
+        h1 {
+            font-size: 2rem;
+            line-height: 1;
+        }
+
 
         @media (min-width: 361px) {
-//             max-height: 180px;
+//             max-height: 210px;
 
             h1 {
                 font-size: 2rem;
-                line-height: 1.1;
+                line-height: 1;
                 text-align: center;
-            }
-            .site-branch {
-                font-size: 1.2rem;                
             }
         }
         @media (min-width: 576px) {
@@ -366,18 +383,12 @@
                 font-size: 2.4rem;
                 line-height: 1.1;
             }
-            .site-branch {
-                font-size: 1.25rem;                
-            }
         }
         @media (min-width: 768px) {
             max-height: 480px;
 
             h1 {
                 font-size: 3rem;
-            }
-            .site-branch {
-                font-size: 1.33rem;                
             }
         }
         @media (min-width: 1024px) {
@@ -389,9 +400,6 @@
             h1 {
                 font-size: 4rem;
             }
-            .site-branch {
-                font-size: 1.5rem;                
-            }
         }
         @media (min-width: 1200px) {
             max-height: 480px;
@@ -401,9 +409,6 @@
             }
             h1 {
                 font-size: 5rem;
-            }
-            .site-branch {
-                font-size: 1.8rem;
             }
         }
     }
