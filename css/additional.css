@@ -2236,9 +2236,6 @@ td {
     margin-bottom: 1rem;
     line-height: 1.2; }
 
-.button-to-end {
-  text-align: right; }
-
 /* MIJN OVERHEID */
 .messages-legend p {
   margin-bottom: 0.2rem;
@@ -2247,9 +2244,25 @@ td {
   letter-spacing: 0.1em;
   color: var(--gray); }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .messages-legend {
     display: none; } }
+
+@media screen and (max-width: 768px) {
+  .message-legend-single {
+    margin-bottom: 0;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--gray); }
+  .message-legend-single + p {
+    margin-bottom: 1rem; } }
+
+@media screen and (min-width: 769px) {
+  .message-legend-single {
+    display: none; }
+  .button-to-end {
+    text-align: right; } }
 
 .inbox,
 .ongoing {
@@ -2440,8 +2453,6 @@ td {
     border-bottom: 1px solid var(--vireo-blue-smoke); }
     .notifications .message:first-of-type {
       border-top: 1px solid var(--vireo-blue-smoke); }
-    .notifications .message p {
-      margin-bottom: 0; }
   .notifications .inner {
     padding: 0.75rem 0; }
     @media screen and (min-width: 960px) {
