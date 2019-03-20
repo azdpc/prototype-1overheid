@@ -1,34 +1,93 @@
 .timeline {
     .pioneers + & {
-        margin-top: -5rem;    
+        margin-top: 0;
+        padding-top: 3rem;
     }
     
-    @media screen and (min-width: 60em) {
+    .timeline-wrapper {
+        padding-bottom: 8rem;
+        margin-bottom: 2rem;
+    }
+    
+    ul {
+        list-style: none;
+        position: relative;
+        max-width: 20rem;
+        margin: 0 15px;
+        padding: 2rem 0 0;
+        border-left: 4px solid var(--vireo-green-clear);
+        
+        &.to-end {
+            &:after {
+                content: "";
+                display: block;
+                width: 0.8rem;
+                height: 0.8rem;
+                background: var(--white);
+                border-radius: 0.4rem;
+                border: 4px solid var(--vireo-green-clear);
+                position: absolute;
+                left: -0.4rem;
+                bottom: 0;
+            }
+        }
+        
+        li {
+            padding: 0 0 2rem 2rem;
+            
+            &:before {
+                content: "";
+                width: 1rem;
+                height: 0;
+                position: absolute;
+                left: 0;
+                margin-top: 0.6rem;
+                border-top: 4px solid var(--vireo-green-clear);
+            }
+
+            &.endpoint {
+                overflow: visible;
+                height: 1.2rem;
+                padding-bottom: 0;
+                
+                &:before {
+                    display: none;
+                }
+                
+                time {
+                    font-size: 1.25em;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    
+    
+    @media screen and (min-width: 768px) {
+        .pioneers + & {
+            margin-top: -5rem;
+            padding-top: 0;
+        }
+
         .timeline-wrapper {
             padding: 9rem 0 15rem;        
         }
 
         ul {
             height: 0;
-            position: relative;
             width: 80%;
+            max-width: none;
+            border: 0;
             border-top: 4px solid var(--vireo-green-clear);
-            list-style: none;
-            padding: 0;
             margin: 0;
+            padding: 0;
             
             &.to-end {
                 &:after {
-                    content: "";
-                    display: block;
-                    width: 0.8rem;
-                    height: 0.8rem;
-                    background: var(--white);
-                    border-radius: 0.4rem;
-                    border: 4px solid var(--vireo-green-clear);
-                    position: absolute;
                     right: -0.4rem;
                     top: -0.5rem;
+                    bottom: auto;
+                    left: auto;
                 }
             }
             
@@ -45,15 +104,16 @@
                 position: absolute;
                 width: 12rem;
                 padding-left: 0.5rem;
-                
+
                 &:before {
-                    content: "";
+                    left: auto;
                     width: 0;
                     height: 1rem;
-                    position: absolute;
+                    margin-top: 0;
+                    border: 0;
                     border-left: 4px solid var(--vireo-green-clear);
                 }
-                
+                                
                 &.above {
                     bottom: 0;
                     padding-bottom: 2rem;
@@ -81,16 +141,8 @@
                     }
                     
                     &.endpoint {
+                        height: auto;
                         right: 0;
-                        
-                        &:before {
-                            display: none;
-                        }
-                        
-                        time {
-                            font-size: 1.25em;
-                            font-weight: bold;
-                        }
                     }
                 }
             }

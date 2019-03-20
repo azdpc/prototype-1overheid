@@ -1,7 +1,3 @@
-.button-to-end {
-    text-align: right;
-}
-
 /* MIJN OVERHEID */
 
 
@@ -13,10 +9,38 @@
         letter-spacing: 0.1em;
         color: var(--gray);
     }
-    @media screen and (max-width: 480px) {
+}
+
+@media screen and (max-width: 768px) {
+    .messages-legend {
         display: none;
     }
 }
+
+
+@media screen and (max-width: 768px) {
+    .message-legend-single {
+        margin-bottom: 0;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: var(--gray);        
+    }
+    .message-legend-single + p {
+        margin-bottom: 1rem;
+    }
+}
+@media screen and (min-width: 769px) {
+    .message-legend-single {
+        display: none;
+    }    
+
+    .button-to-end {
+        text-align: right;
+    }
+}
+
+
 
 
 
@@ -281,11 +305,7 @@
         
         &:first-of-type {
             border-top: 1px solid var(--vireo-blue-smoke);            
-        }
-        
-        p {
-            margin-bottom: 0;
-        }
+        }        
     }
     .inner {
         padding: 0.75rem 0;

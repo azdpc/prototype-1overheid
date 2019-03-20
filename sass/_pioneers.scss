@@ -2,14 +2,9 @@
 .pioneers {
     position: relative;
     
-    .spotlight img {
-    	width: 100%;
-    }
-
     .pioneer-intro {
         position: relative;
         z-index: 10;
-        margin-bottom: -15rem;
     }
 
     h2 + .intro {
@@ -24,77 +19,35 @@
         position: relative;    
     }
     
-    .map {
-        img {
-            display: block;
-            width: 60vw;
-        }
-    }
-        
     .spotlight {
+        margin: 0 15px;
         border: 8px solid var(--white);
-        width: 60vw;
-        position: absolute;
-        top: 22.5%;
-        right: 15vw;
-    }
-    
-    .line {
-        width: 8vw;
-        height: auto;
-        position: absolute;
-        right: 100%;
-        top: 0;
-        margin-right: 1.7rem;
+        background-color: var(--white);
         
-        svg {
-            width: 100%;
+        img {
+        	width: 100%;
         }
+    }
+
+    
+    .map img,
+    .line {
+        display: none;
     }
         
     .overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 50%;
         background: var(--white);
         padding: 0 2rem 0.5rem 0;        
     }
     
     .quote {
-        width: 100%;
-        position: absolute;
-        left: 100%;
-        bottom: 0;
-        margin: 0;
-        padding: 0 2rem;
-        font-weight: bold;
-        font-size: 2rem;
-        line-height: 1.25;
-        color: var(--white);
-        text-shadow: 0 0 10px rgba(0,0,0,0.2);
-        
-        &.top {
-            bottom: auto;
-            top: 5.5rem;
-        }
-        
-        &:before {
-            content: "”";
-            font-size: 4.5em;
-            font-weight: normal;
-            color: var(--white);
-            position: absolute;
-            top: -5rem;
-            left: 1.5rem;
-        }
-    }
-    
+        display: none;
+    }    
     
     h3 {
         position: relative;
         padding: 0.9rem 0;
-        margin: 0;
+        margin: 1.2rem 0 0;
         font-size: 1.3125rem;
         font-weight: normal;
 
@@ -105,9 +58,9 @@
 		&:before {
 			content: "";
 			display: block;
-			width: 10rem;
+			width: 8rem;
 			position: absolute;
-			left: -2rem;
+			left: 0;
 			top: 0;
 			border-top: 4px solid var(--vireo-green-clear);			
 		}
@@ -120,11 +73,6 @@
     
     
     .pioneers-slidenav {
-        position: absolute;
-        bottom: 12rem;
-        left: 50%;
-        margin-left: -10rem;
-        width: 20rem;
         
         ul {
             list-style: none;
@@ -151,6 +99,97 @@
             height: 0.8rem;
             border-radius: 0.4rem;
             background-color: var(--vireo-green-clear);
+        }
+    }
+
+
+    @media screen and (min-width: 1024px) {
+        .map {
+            img {
+                display: block;
+                width: 60vw;
+            }
+        }
+
+        .line {
+            display: block;
+            width: 8vw;
+            height: auto;
+            position: absolute;
+            right: 100%;
+            top: 0;
+            margin-right: 1.7rem;
+            
+            svg {
+                width: 100%;
+            }
+        }
+        
+        .spotlight {
+            position: absolute;
+            width: 60vw;
+            top: 22.5%;
+            right: 15vw;
+            margin: 0;
+        }
+
+        .pioneer-intro {
+            margin-bottom: -15rem;        
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50%;
+        }
+
+        h3 {
+            margin: 0;
+            
+    		&:before {
+    			width: 10rem;
+    			left: -2rem;
+    		}
+            
+        }
+
+        .quote {
+            display: block;
+            width: 100%;
+            position: absolute;
+            left: 100%;
+            bottom: 0;
+            margin: 0;
+            padding: 0 2rem;
+            font-weight: bold;
+            font-size: 2rem;
+            line-height: 1.25;
+            color: var(--white);
+            text-shadow: 0 0 10px rgba(0,0,0,0.2);
+            
+            &.top {
+                bottom: auto;
+                top: 5.5rem;
+            }
+            
+            &:before {
+                content: "”";
+                font-size: 4.5em;
+                font-weight: normal;
+                color: var(--white);
+                position: absolute;
+                top: -5rem;
+                left: 1.5rem;
+            }
+        }
+
+        .pioneers-slidenav {
+            position: absolute;
+            bottom: 12rem;
+            left: 50%;
+            margin-left: -10rem;
+            width: 20rem;            
         }
     }
 }
