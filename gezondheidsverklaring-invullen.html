@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="nl-NL">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Gezondheidsverklaring | 1overheid</title>
+    <meta name="description" content="Prototype voor 1overheid: informatie, diensten, beleid en bestuur">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/additional.css">
+</head>
+
+<body cz-shortcut-listen="true">
+    <header>
+        <div class="container-fluid">
+            <div class="notVisibleInFrame">
+                <nav class="navbar navbar-light">
+                    <a href="home.html" class="navbar-brand">
+                        <img src="img/een-overheid.svg" alt="1overheid">
+                        <em class="payoff">alles regelen op 1 plek</em>
+                    </a>
+                    <div class="navbar-options">
+                        <div class="search-wrapper">
+                            <button class="dropdown-toggle" type="button" id="dropdownSearchButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span>zoeken</span>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownSearchButton">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-lg-10 offset-lg-1 col-md-12">
+                                            <div class="container-fluid">
+                                                <form action="#">
+                                                    <fieldset>
+                                                        <input type="search" />
+                                                        <input class="btn btn-primary btn-lg" type="submit" value="zoeken" />
+                                                    </fieldset>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="account-wrapper">
+                            <div class="loggedInElm">
+                                <a class="button show" href="mijn-overheid.html">
+                                    <span>mijn overheid</span>
+                                    <strong class="notification">3 <span class="visually-hidden">nieuwe berichten</span></strong>
+                                </a>
+                            </div>
+                            <div class="loggedOutElm">
+                                <a class="button" href="mijn-overheid.html">
+                                    <span>mijn overheid</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="contact-wrapper">
+                            <button class="dropdown-toggle" type="button" id="dropdownContactButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span>contact</span>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownContactButton">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-lg-10 offset-lg-1 col-md-12">
+                                            <p>Heeft u een vraag over het invullen van uw gezondheidsverklaring, bel Informatie Rijksoverheid 1400</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-wrapper">
+                            <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span>menu</span>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-lg-10 offset-lg-1 col-md-12">
+                                            <div class="row themes-list">
+                                                <!-- START thema geld -->
+                                                <div class="col-sm-4">
+                                                    <a href="#thema-geld">
+                                                        <h3>
+                                                            <div class="icon">
+                                                                <img src="content/icons/9000-budget.svg" />
+                                                            </div>
+                                                            Geld
+                                                        </h3>
+                                                        <p>Bijstand aanvragen, Voorwaarden WW bekijken, Aangifte doen, ...</p>
+                                                    </a>
+                                                </div>
+                                                <!-- EINDE thema geld -->
+                                                <!-- START thema wonen -->
+                                                <div class="col-sm-4">
+                                                <a href="wonen.html">
+                                                    <h3>
+                                                        <div class="icon">
+                                                        <img src="content/icons/5202-laag-huis.svg" />
+                                                        </div>
+                                                        Wonen en omgeving
+                                                    </h3>
+                                                </a>
+                                                </div>
+                                                <!-- EINDE thema wonen -->
+                                                <!-- START thema -->
+                                                <div class="col-sm-4">
+                                                    <a href="#thema-familie">
+                                                        <h3>
+                                                            <div class="icon">
+                                                                <img src="content/icons/4029-familie.svg" />
+                                                            </div>
+                                                            Familie
+                                                        </h3>
+                                                        <p>Geboorte aangeven, Kind erkennen, Jeugdhulp aanvragen, ...</p>
+                                                    </a>
+                                                </div>
+                                                <!-- EINDE thema -->
+                                                <!-- START thema -->
+                                                <div class="col-sm-4">
+                                                    <a href="#thema-reizen">
+                                                        <h3>
+                                                            <div class="icon">
+                                                                <img src="content/icons/8012-reisbagage.svg" />
+                                                            </div>
+                                                            Reizen
+                                                        </h3>
+                                                        <p>Paspoort of ID-kaart aanvragen, Nederlandse nationaliteit verkrijgen, ...</p>
+                                                    </a>
+                                                </div>
+                                                <!-- EINDE thema -->
+                                                <!-- START thema -->
+                                                <div class="col-sm-4">
+                                                    <a href="#thema-onderwijs">
+                                                        <h3>
+                                                            <div class="icon">
+                                                                <img src="content/icons/4082-onderwijs.svg" />
+                                                            </div>
+                                                            Onderwijs
+                                                        </h3>
+                                                        <p>Overzicht schoolvakanties, Studiefinanciering aanvragen, Inschrijven voor studie, ...</p>
+                                                    </a>
+                                                </div>
+                                                <!-- EINDE thema -->
+                                                <!-- START thema -->
+                                                <div class="col-sm-4">
+                                                    <a href="#thema-recht">
+                                                        <h3>
+                                                            <div class="icon">
+                                                                <img src="content/icons/7001-recht-aka-veiligheid-en-justitie.svg" />
+                                                            </div>
+                                                            Recht
+                                                        </h3>
+                                                        <p>Identiteitsfraude melden, Geluidsoverlast doorgeven, ...</p>
+                                                    </a>
+                                                </div>
+                                                <!-- EINDE thema -->
+                                                <!-- START thema -->
+                                                <div class="col-sm-4">
+                                                    <a href="verkeer.html">
+                                                        <h3>
+                                                            <div class="icon">
+                                                                <img src="content/icons/5003-auto.svg" />
+                                                            </div>
+                                                            Vervoer
+                                                        </h3>
+                                                        <p>Rijbewijs verlengen, Verkeersregels checken,OV-chipkaart aanvragen ...</p>
+                                                    </a>
+                                                </div>
+                                                <!-- EINDE thema -->
+                                                <!-- START thema -->
+                                                <div class="col-sm-4">
+                                                    <a href="#thema-gezondheid">
+                                                        <h3>
+                                                            <div class="icon">
+                                                                <img src="content/icons/4028-zorg.svg" />
+                                                            </div>
+                                                            Gezondheid
+                                                        </h3>
+                                                        <p>WMO-aanvragen, Aangifte doen van overlijden, Vergoedingen basisverzekering bekijken ...</p>
+                                                    </a>
+                                                </div>
+                                                <!-- EINDE thema -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--
+<div id="" class="navBtns collapse">
+    <div>
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Vul hier uw zoekterm in" aria-label="zoekterm">
+            <div class="input-group-append">
+                <button class="btn-outline-secondary search-btn" type="submit">&nbsp;</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="loggedInElm">
+        <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span>U bent ingelogd als</span>
+            <span class="defaultName">
+              Tobias <span id="radioValue">het Voorbeeld</span>
+            </span>
+        </button>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="aanvragen.html">Mijn aanvragen</a>
+              <button class="dropdown-item logoutBtn">Uitloggen</button>
+        </div>
+    </div>
+
+    <div class="loggedOutElm">
+        <button type="button" class="btn btn-light loginBtn" data-toggle="modal" data-target="#loginForm">Inloggen
+            <img src="img/digid-logo.svg" alt="digid">
+        </button>
+    </div>
+    <div>
+        <a class="btn btn-light" data-toggle="modal" data-target="#contactModal" href="#">Contact</a>
+    </div>
+</div>
+-->
+                </nav>
+            </div>
+            <div class="visibleInFrame">
+                <nav class="navbar navbar-light">
+                    <a href="index.html" class="navbar-brand">
+                        <img src="img/een-overheid.svg" alt="1overheid">
+                    </a>
+                    <div class="justify-content-end">
+                        <div class="dropdown loggedInElm">
+                            <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Maarten
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton1">
+                                <a class="dropdown-item" href="aanvragen.html">Mijn aanvragen</a>
+                                <a class="dropdown-item logoutBtn" href="l#">Uitloggen</a>
+                            </div>
+                        </div>
+                        <div class="loggedOutElm">
+                            <button type="button" class="btn btn-light loginBtn" data-toggle="modal" data-target="#loginForm">Inloggen
+                                <img src="img/digid-logo.svg" alt="digid">
+                            </button>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <banner>
+        <div class="loggedInElm">
+            <div id="login-foldout" class="navbar-pinned expanded">
+                <div class="container-fluid">
+                    <div class="navbar-pinned-content">
+                        <div class="row align-items-center">
+                            <div class="col-8">
+                                Ingelogd als Asha Martinez
+                            </div>
+                            <div class="col-4">
+                                <div class="button-wrapper float-right">
+                                    <button class="btn btn-sm btn-success logoutBtn">Uitloggen</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </banner>
+    <div class="modal fade loginmodal" id="loginForm" tabindex="-1" role="dialog" aria-labelledby="modal-header" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="modal-header">
+                        <img src="img/digid-logo.svg" alt="digid">Login met DigiD
+                    </h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <form>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="gebruikersnaam">DigiD gebruikersnaam</label>
+                            <input type="text" class="form-control" id="gebruikersnaam" placeholder="DigiD gebruikersnaam" value="asha_madhavan">
+                        </div>
+                        <div class="form-group">
+                            <label for="wachtwoord">Wachtwoord</label>
+                            <input type="password" class="form-control" id="wachtwoord" placeholder="Wachtwoord" value="********">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" id="loginBtn">Inloggen</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade contactModal" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contact-modal-header" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="contact-modal-header">Heeft u een vraag of hulp nodig?</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <form>
+                    <div class="modal-body">
+                        <p>U kunt op contact met ons opnemen via:</p>
+                        <ul>
+                            <li class="phone">
+                                <a href="tel:1400">Bel naar 1400</a>
+                            </li>
+                            <li class="app">
+                                <a href="#">App uw vraag naar 1400</a>
+                            </li>
+                            <li class="chat">
+                                <a class="openChat" data-toggle="modal" data-target="#chatModal" href="#">Direct chatten</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade chatModal" id="chatModal" tabindex="-1" role="dialog" aria-labelledby="chat-modal-header" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="chat-modal-header">Direct chatten</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <form>
+                    <div class="modal-body">
+                        <div class="messages">
+                            <div class="message">
+                                <div class="avatar">
+                                    <img class="img-fluid" src="img/avatar.svg">
+                                </div>
+                                <div class="content">
+                                    <span class="name">Medewerker:</span>
+                                    <p>Goedemiddag, waarmee kan ik u helpen?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="messageForm">
+                            <div class="inputField">
+                                <input class="form-control form-control-lg" type="text" placeholder="Typ hier uw vraag">
+                            </div>
+                            <div class="submitBtn">
+                                <button type="button" class="btn btn-primary btn-lg">Verstuur</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <main role="main" class="actionable">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <ul class="breadcrumb">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="verkeer.html">Vervoer</a></li>
+                        <li><a href="rijbewijs.html">Rijbewijs</a></li>
+                        <li><a href="gezondheidsverklaring-invullen.html">Gezondheidsverklaring</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1 col-md-12">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12 notVisibleInFrame">
+                                <h1>Gezondheidsverklaring invullen</h1>
+                                <p>
+                                Voor het aanvragen van een nieuw rijbewijs of bij het verlengen van uw rijbewijs als u ouder dan 75 jaar bent, moet u een gezondheidsverklaring invullen. U doet dit bij het CBR.
+                                </p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid checkContainer">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <!-- Use 8 of 12 columns from medium screens onward, to keep form focussed -->
+                                <form class="questions" action="#">
+                                    <div class="start active">
+                                        <div class="questionWrapper">
+                                            <div class="questionHeader">
+                                                <div class="row">
+                                                    <div class="col-sm-6">
+                                                        <h3 class="vireo-light">
+                                                            De volgende informatie wordt aan u gevraagd:
+                                                        </h3>
+                                                        <ul class="vireo-list">
+                                                            <li>
+                                                                Welke medicijnen gebruikt u?
+                                                            </li>
+                                                            <li>
+                                                                Heeft u een ziekte die van invloed kan zijn op uw rijvaardigheid?
+                                                            </li>
+                                                            <li>
+                                                                Heeft u een lichamelijke beperking waardoor u alleen met een aangepaste auto mag rijden?
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-sm-4 separator">
+                                                        <h3 class="vireo-light">
+                                                            Kosten
+                                                        </h3>
+                                                        <p>
+                                                            <strong class="vireo-cost vireo-cost-xl">&euro;&thinsp;37,80</strong>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            </br>
+                                            <a href="https://www.cbr.nl/nl/rijbewijs-houden/nl/gezondheidsverklaring/gezondheidsverklaring-invullen.htm">
+                                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="">Direct invullen bij het CBR</button></a>
+                            </br></br>
+                                            <div class="questionHelp">
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                        <div class="grouped">
+                                                            <button type="button" class="btn btn-toggle toggle-next">Vragen over het invullen van uw gezondheidverklaring</button>
+                                                            <div class="helpItems">
+
+                                                                 <h3 class="helpQuestion toggle-next">Kan ik ook een verklaring invullen zonder DigiD?</h3>
+                                                                <div class="helpAnswer">
+                                                                    <p>Kunt of wilt u geen DigiD aanvragen? Koop dan een <a href="#lorem">Gezondheidsverklaring op papier</a>. Wees u er van bewust dat de verwerking van een papieren Gezondheidsverklaring, per gewone post, waarschijnlijk langer duurt dan wanneer u deze digitaal indient. Ook kunt u zonder DigiD de status van de verwerking niet volgen op Mijn Overheid.
+                                                                    </p>
+                                                                    <p>
+                                                                        <a href="#lorem">Ga naar de papieren versie</a>
+                                                                    </p>
+                                                                </div>
+
+                                                                 <h3 class="helpQuestion toggle-next">Welke stappen doorloop ik als ik online mijn gezondheidsverklaring invul</h3>
+                                                                <div class="helpAnswer">
+                                                                    <p>
+                                                                    De Gezondheidsverklaring vult u zelf in. Want het gaat om uw persoonlijke gegevens en die zijn vertrouwelijk. Op Mijn CBR logt u in met DigiD met de extra controle via SMS of App. Heeft u nog geen DigiD met sms-controle of App? Vraag die dan aan op www.digid.nl. Beantwoord de vragen van de Gezondheidsverklaring en betaal via iDeal (€ 37,80).
+
+                                                                    Nadat u de Gezondheidsverklaring heeft ingevuld en betaald, ontvangt u van het CBR direct de ontvangstbevestiging van uw ingediende Gezondheidsverklaring. Vervolgens ontvangt u zo snel mogelijk (maximaal binnen 3 weken) via het CBR een bericht met meer informatie.<p>
+                                                                        <a href="#lorem">Meer over de procedure</a>
+                                                                    </p>
+                                                                </div>
+                                                                <h3 class="helpQuestion toggle-next">Wanneer moet ik een gezondheidverklaring invullen?</h3>
+                                                                <div class="helpAnswer">
+                                                                    <p>Je moet lichamelijk en geestelijk gezond genoeg zijn om je rijbewijs te halen. Dit checkt het CBR met een Gezondheidsverklaring. Aan het begin van je rijopleiding vul je jouw Gezondheidsverklaring in op de website van het CBR. Zodat weten we zeker dat je veilig de weg op gaat. Als later je gezondheidssituaie wijzigd zal je opnieuw een gezondheidsverklaring moeten invullen om je rijbewijs te kunnen verlengen.
+                                                                    </p>
+                                                                    <p>
+                                                                        <a href="#lorem">Meer informatie over de gezondheidsverklaring</a>
+                                                                    </p>
+                                                                
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <span class="align-middle lead">1overheid: voor al uw overheidszaken.</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/main.js"></script>
+</body>
+
+</html>
