@@ -2,6 +2,7 @@
 Prototype van één ingang van waaruit de burger of professional al zijn overheidszaken kan regelen en relevante overheidsinformatie kan opzoeken. Het prototype is ontwikkeld door een multidisciplinair team van de Dienst Publiek & Communicatie van het ministerie van Algemene Zaken.
 
 Diverse onderdelen en pagina's van het prototype: https://azdpc.github.io/prototype-1overheid/
+
 Een aantal video's van diverse 'flows' in het prototype: https://www.platformrijksoverheiddemo.nl/organisatie/online-advies/prototype-1overheid
 
 ## Doel van het prototype
