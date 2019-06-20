@@ -43,4 +43,4 @@ Het ‘Prototype 1Overheid’ is gelieerd aan het programma ‘Mens Centraal’ 
 - Prototype ‘Overheidsbrede onderwerpen’ van de Dienst Publiek & Communicatie (DPC) van het ministerie van Algemene Zaken.
 
 ## Contact
-Voor meer informatie kunt u contact opnemen met de <A HREF="mailto:dpc@minaz.nl.nl">Dienst Publiek & Communicatie (DPC)</A>.
+Voor meer informatie kunt u contact opnemen met de <A HREF="mailto:dpc@minaz.nl">Dienst Publiek & Communicatie (DPC)</A>.
