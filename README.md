@@ -7,7 +7,7 @@ Een aantal video's van diverse 'flows' in het prototype: https://www.platformrij
 
 ## Doel van het prototype
 
-Het doel van het prototype was de gebruiker centraal te stellen en een ‘ideale  gebruikerservaring’ te laten zien uitgaande van de volgende uitgangspunten:
+Het doel van het prototype was de gebruiker centraal te stellen en een ‘ideale  gebruikerservaring’ te laten zien, uitgaande van de volgende uitgangspunten:
 - Communiceer vanuit 'één overheid' richting de gebruiker en niet vanuit alle overheden en overheidsorganisaties apart (=minder versnippering van overheidsinformatie)
 - Maak de informatie meer relevant voor de gebruiker, bijvoorbeeld persoonlijker en locatiegebonden
 - Biedt naast informatie ook meer transacties. Taken helemaal kunnen afronden in plaats van alleen informeren en doorverwijzen.
