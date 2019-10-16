@@ -5,7 +5,7 @@ Diverse onderdelen en pagina's van het prototype: https://azdpc.github.io/protot
 
 Een aantal video's van diverse 'flows' in het prototype: https://www.platformrijksoverheiddemo.nl/organisatie/online-advies/prototype-1overheid
 
-## Doel van het prototype
+## Doel van het prototype 
 
 Het doel van het prototype was de gebruiker centraal te stellen en een ‘ideale  gebruikerservaring’ te laten zien uitgaande van de volgende uitgangspunten:
 - Communiceer vanuit 'één overheid' richting de gebruiker en niet vanuit alle overheden en overheidsorganisaties apart (=minder versnippering van overheidsinformatie)
