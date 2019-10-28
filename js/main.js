@@ -24,6 +24,30 @@ function setIframeStatus () {
     }
 }
 
+// Include HTML
+function includeHTML() {
+    var z, i, elmnt, file, xhttp;
+    z = document.getElementsByTagName("*");
+    for (i = 0; i < z.length; i++) {
+        elmnt = z[i];
+        file = elmnt.getAttribute("azdpc-include-html");
+        if (file) {
+        xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4) {
+            if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+            if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+            elmnt.removeAttribute("azdpc-include-html");
+            includeHTML();
+            }
+        }      
+        xhttp.open("GET", file, true);
+        xhttp.send();
+        return;
+        }
+    }
+};
+
 function handleLogin(){
 
     if (sessionStorage.loginStatus === "loggedIn"){
@@ -40,6 +64,7 @@ function handleLogin(){
 
     $('.logoutBtn').on('click', function(e){
         e.preventDefault();
+        console.log('dude')
         logout();
 
         var $qform = $('form.questions');
@@ -374,6 +399,7 @@ function toggleButton() {
 
 //$(function() {
 $.when($.ready).then(function() {
+    includeHTML();
     handleLogin();
     handlePrefill();
     disableLinks();
@@ -381,29 +407,4 @@ $.when($.ready).then(function() {
     setIframeStatus();
     handleHelpTexts();
     toggleButton();
-    includeHTML();
 });
-
-// Include HTML
-function includeHTML() {
-    var z, i, elmnt, file, xhttp;
-    z = document.getElementsByTagName("*");
-    for (i = 0; i < z.length; i++) {
-        elmnt = z[i];
-        file = elmnt.getAttribute("azdpc-include-html");
-        if (file) {
-        xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function() {
-            if (this.readyState == 4) {
-            if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-            if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-            elmnt.removeAttribute("azdpc-include-html");
-            includeHTML();
-            }
-        }      
-        xhttp.open("GET", file, true);
-        xhttp.send();
-        return;
-        }
-    }
-};

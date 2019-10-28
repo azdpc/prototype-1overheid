@@ -1,13 +1,13 @@
 <header>
-        <div class="container-fluid">
-            <div class="notVisibleInFrame">
-                <nav class="navbar navbar-light">
-                    <h1 class="navbar-brand">
-                        <img src="img/een-overheid.svg" alt="1overheid">
-                        <em class="payoff">alles regelen op 1 plek</em>
-                    </h1>
-                    <div class="navbar-options">
-                        <!--
+    <div class="container-fluid">
+        <div class="notVisibleInFrame">
+            <nav class="navbar navbar-light">
+                <a href="home.html" class="navbar-brand">
+                    <img src="img/een-overheid.svg" alt="1overheid">
+                    <em class="payoff">alles regelen op 1 plek</em>
+                </a>
+                <div class="navbar-options">
+                    <!--
                     <div class="search-wrapper">
                         <button class="dropdown-toggle" type="button" id="dropdownSearchButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <span>zoeken</span>
@@ -32,153 +32,266 @@
                         </div>
                     </div>
                     -->
-                        <div class="account-wrapper">
-                            <div class="loggedInElm">
-                                <a class="button show" href="mijn-overheid.html">
-                                    <span>mijn overheid</span>
-                                    <strong class="notification">3 <span class="visually-hidden">nieuwe berichten</span></strong>
-                                </a>
-                            </div>
-                            <div class="loggedOutElm">
-                                <a class="button" href="mijn-overheid.html">
-                                    <span>mijn overheid</span>
-                                </a>
-                            </div>
+                    <div class="account-wrapper">
+                        <div class="loggedInElm">
+                            <a class="button show" href="mijn-overheid.html">
+                                <span>mijn overheid</span>
+                                <strong class="notification">3 <span class="visually-hidden">nieuwe
+                                        berichten</span></strong>
+                            </a>
                         </div>
-                        <div class="contact-wrapper">
-                            <button class="dropdown-toggle" type="button" id="dropdownContactButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span>contact</span>
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownContactButton">
-                                <div class="container-fluid">
-                                    <div class="row">
-                                        <div class="col-lg-10 offset-lg-1 col-md-12">
-                                            <p>Contactinformatie</p>
-                                        </div>
+                        <div class="loggedOutElm">
+                            <a class="button" href="mijn-overheid.html">
+                                <span>mijn overheid</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contact-wrapper">
+                        <button class="dropdown-toggle" type="button" id="dropdownContactButton" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            <span>contact</span>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownContactButton">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-lg-10 offset-lg-1 col-md-12">
+                                        <p>Contactinformatie</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="menu-wrapper">
-                            <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span>menu</span>
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <div class="container-fluid">
-                                    <div class="row">
-                                        <div class="col-lg-10 offset-lg-1 col-md-12">
-                                            <div class="row themes-list">
-                                                <!-- START thema geld -->
-                                                <div class="col-sm-4">
-                                                    <a href="#thema-geld">
-                                                        <h3>
-                                                            <div class="icon">
-                                                                <img src="content/icons/9000-budget.svg" />
-                                                            </div>
-                                                            Geld
-                                                        </h3>
-                                                        <p>Bijstand aanvragen, Voorwaarden WW bekijken, Aangifte doen, ...</p>
-                                                    </a>
-                                                </div>
-                                                <!-- EINDE thema geld -->
-                                                <!-- START thema wonen -->
-                                                <div class="col-sm-4">
-                                                    <a href="wonen.html">
-                                                        <h3>
-                                                            <div class="icon">
-                                                                <img src="content/icons/5202-laag-huis.svg" />
-                                                            </div>
-                                                            Wonen en omgeving
-                                                        </h3>
-                                                    </a>
-                                                </div>
-                                                <!-- EINDE thema wonen -->
-                                                <!-- START thema -->
-                                                <div class="col-sm-4">
-                                                    <a href="#thema-familie">
-                                                        <h3>
-                                                            <div class="icon">
-                                                                <img src="content/icons/4029-familie.svg" />
-                                                            </div>
-                                                            Familie
-                                                        </h3>
-                                                        <p>Geboorte aangeven, Kind erkennen, Jeugdhulp aanvragen, ...</p>
-                                                    </a>
-                                                </div>
-                                                <!-- EINDE thema -->
-                                                <!-- START thema -->
-                                                <div class="col-sm-4">
-                                                    <a href="reizen.html">
-                                                        <h3>
-                                                            <div class="icon">
-                                                                <img src="content/icons/8012-reisbagage.svg" />
-                                                            </div>
-                                                            Reizen
-                                                        </h3>
-                                                        <p>Paspoort of ID-kaart aanvragen, reisadviezen, ...</p>
-                                                    </a>
-                                                </div>
-                                                <!-- EINDE thema -->
-                                                <!-- START thema -->
-                                                <div class="col-sm-4">
-                                                    <a href="onderwijs.html">
-                                                        <h3>
-                                                            <div class="icon">
-                                                                <img src="content/icons/4082-onderwijs.svg" />
-                                                            </div>
-                                                            Onderwijs
-                                                        </h3>
-                                                        <p>Overzicht schoolvakanties, Studiefinanciering aanvragen, Inschrijven voor studie, ...</p>
-                                                    </a>
-                                                </div>
-                                                <!-- EINDE thema -->
-                                                <!-- START thema -->
-                                                <div class="col-sm-4">
-                                                    <a href="#thema-recht">
-                                                        <h3>
-                                                            <div class="icon">
-                                                                <img src="content/icons/7001-recht-aka-veiligheid-en-justitie.svg" />
-                                                            </div>
-                                                            Recht
-                                                        </h3>
-                                                        <p>Identiteitsfraude melden, Geluidsoverlast doorgeven, ...</p>
-                                                    </a>
-                                                </div>
-                                                <!-- EINDE thema -->
-                                                <!-- START thema -->
-                                                <div class="col-sm-4">
-                                                    <a href="verkeer.html">
-                                                        <h3>
-                                                            <div class="icon">
-                                                                <img src="content/icons/5003-auto.svg" />
-                                                            </div>
-                                                            Vervoer
-                                                        </h3>
-                                                        <p>Rijbewijs verlengen, Verkeersregels checken,OV-chipkaart aanvragen ...</p>
-                                                    </a>
-                                                </div>
-                                                <!-- EINDE thema -->
-                                                <!-- START thema -->
-                                                <div class="col-sm-4">
-                                                    <a href="#thema-gezondheid">
-                                                        <h3>
-                                                            <div class="icon">
-                                                                <img src="content/icons/4028-zorg.svg" />
-                                                            </div>
-                                                            Gezondheid
-                                                        </h3>
-                                                        <p>WMO-aanvragen, Aangifte doen van overlijden, Vergoedingen basisverzekering bekijken ...</p>
-                                                    </a>
-                                                </div>
-                                                <!-- EINDE thema -->
+                    </div>
+                    <div class="menu-wrapper">
+                        <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            <span>menu</span>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-lg-10 offset-lg-1 col-md-12">
+                                        <div class="row themes-list">
+                                            <!-- START thema geld -->
+                                            <div class="col-sm-4">
+                                                <a href="#thema-geld">
+                                                    <h3>
+                                                        <div class="icon">
+                                                            <img src="content/icons/9000-budget.svg" />
+                                                        </div>
+                                                        Geld
+                                                    </h3>
+                                                    <p>Bijstand aanvragen, Voorwaarden WW bekijken, Aangifte doen, ...
+                                                    </p>
+                                                </a>
                                             </div>
+                                            <!-- EINDE thema geld -->
+                                            <!-- START thema wonen -->
+                                            <div class="col-sm-4">
+                                                <a href="wonen.html">
+                                                    <h3>
+                                                        <div class="icon">
+                                                            <img src="content/icons/5202-laag-huis.svg" />
+                                                        </div>
+                                                        Wonen en omgeving
+                                                    </h3>
+                                                </a>
+                                            </div>
+                                            <!-- EINDE thema wonen -->
+                                            <!-- START thema -->
+                                            <div class="col-sm-4">
+                                                <a href="#thema-familie">
+                                                    <h3>
+                                                        <div class="icon">
+                                                            <img src="content/icons/4029-familie.svg" />
+                                                        </div>
+                                                        Familie
+                                                    </h3>
+                                                    <p>Geboorte aangeven, Kind erkennen, Jeugdhulp aanvragen, ...</p>
+                                                </a>
+                                            </div>
+                                            <!-- EINDE thema -->
+                                            <!-- START thema -->
+                                            <div class="col-sm-4">
+                                                <a href="reizen.html">
+                                                    <h3>
+                                                        <div class="icon">
+                                                            <img src="content/icons/8012-reisbagage.svg" />
+                                                        </div>
+                                                        Reizen
+                                                    </h3>
+                                                    <p>Paspoort of ID-kaart aanvragen, reisadviezen, ...</p>
+                                                </a>
+                                            </div>
+                                            <!-- EINDE thema -->
+                                            <!-- START thema -->
+                                            <div class="col-sm-4">
+                                                <a href="onderwijs.html">
+                                                    <h3>
+                                                        <div class="icon">
+                                                            <img src="content/icons/4082-onderwijs.svg" />
+                                                        </div>
+                                                        Onderwijs
+                                                    </h3>
+                                                    <p>Overzicht schoolvakanties, Studiefinanciering aanvragen,
+                                                        Inschrijven voor studie, ...</p>
+                                                </a>
+                                            </div>
+                                            <!-- EINDE thema -->
+                                            <!-- START thema -->
+                                            <div class="col-sm-4">
+                                                <a href="#thema-recht">
+                                                    <h3>
+                                                        <div class="icon">
+                                                            <img
+                                                                src="content/icons/7001-recht-aka-veiligheid-en-justitie.svg" />
+                                                        </div>
+                                                        Recht
+                                                    </h3>
+                                                    <p>Identiteitsfraude melden, Geluidsoverlast doorgeven, ...</p>
+                                                </a>
+                                            </div>
+                                            <!-- EINDE thema -->
+                                            <!-- START thema -->
+                                            <div class="col-sm-4">
+                                                <a href="verkeer.html">
+                                                    <h3>
+                                                        <div class="icon">
+                                                            <img src="content/icons/5003-auto.svg" />
+                                                        </div>
+                                                        Vervoer
+                                                    </h3>
+                                                    <p>Rijbewijs verlengen, Verkeersregels checken,OV-chipkaart
+                                                        aanvragen ...</p>
+                                                </a>
+                                            </div>
+                                            <!-- EINDE thema -->
+                                            <!-- START thema -->
+                                            <div class="col-sm-4">
+                                                <a href="#thema-gezondheid">
+                                                    <h3>
+                                                        <div class="icon">
+                                                            <img src="content/icons/4028-zorg.svg" />
+                                                        </div>
+                                                        Gezondheid
+                                                    </h3>
+                                                    <p>WMO-aanvragen, Aangifte doen van overlijden, Vergoedingen
+                                                        basisverzekering bekijken ...</p>
+                                                </a>
+                                            </div>
+                                            <!-- EINDE thema -->
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </nav>
-            </div>
+                </div>
+            </nav>
         </div>
-    </header>
+    </div>
+</header>
+<!-- Login modal -->
+<div class="modal fade loginmodal" id="loginForm" tabindex="-1" role="dialog" aria-labelledby="modal-header"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="modal-header">
+                    <img src="img/digid-logo.svg" alt="digid">Login met DigiD
+                </h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <form>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="gebruikersnaam">DigiD gebruikersnaam</label>
+                        <input type="text" class="form-control" id="gebruikersnaam" placeholder="DigiD gebruikersnaam"
+                            value="asha_madhavan">
+                    </div>
+                    <div class="form-group">
+                        <label for="wachtwoord">Wachtwoord</label>
+                        <input type="password" class="form-control" id="wachtwoord" placeholder="Wachtwoord"
+                            value="********">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" id="loginBtn">Inloggen</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- Contact modal -->
+<div class="modal fade contactModal" id="contactModal" tabindex="-1" role="dialog"
+    aria-labelledby="contact-modal-header" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="contact-modal-header">Heeft u een vraag of hulp nodig?</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <form>
+                <div class="modal-body">
+                    <p>U kunt op contact met ons opnemen via:</p>
+                    <ul>
+                        <li class="phone">
+                            <a href="tel:1400">Bel naar 1400</a>
+                        </li>
+                        <li class="app">
+                            <a href="#">App uw vraag naar 1400</a>
+                        </li>
+                        <li class="chat">
+                            <a class="openChat" data-toggle="modal" data-target="#chatModal" href="#">Direct
+                                chatten</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- Chat modal -->
+<div class="modal fade chatModal" id="chatModal" tabindex="-1" role="dialog" aria-labelledby="chat-modal-header"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="chat-modal-header">Direct chatten</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <form>
+                <div class="modal-body">
+                    <div class="messages">
+                        <div class="message">
+                            <div class="avatar">
+                                <img class="img-fluid" src="img/avatar.svg">
+                            </div>
+                            <div class="content">
+                                <span class="name">Medewerker:</span>
+                                <p>Goedemiddag, waarmee kan ik u helpen?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="messageForm">
+                        <div class="inputField">
+                            <input class="form-control form-control-lg" type="text" placeholder="Typ hier uw vraag">
+                        </div>
+                        <div class="submitBtn">
+                            <button type="button" class="btn btn-primary btn-lg">Verstuur</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
