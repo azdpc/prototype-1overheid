@@ -1,0 +1,13 @@
+{
+    "scripts": {
+        "dev": "lite-server"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/pimdubois/repository.git"
+    },
+    "private": true,
+    "devDependencies": {
+        "lite-server": "^2.5.4"
+    }
+}

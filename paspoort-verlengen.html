@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="nl-NL">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Paspoort verlengen | 1overheid</title>
+    <meta name="description" content="Prototype voor 1overheid: informatie, diensten, beleid en bestuur">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/additional.css">
+</head>
+
+<body cz-shortcut-listen="true">
+    <!-- include header -->
+    <div azdpc-include-html="header.html"></div>
+    <!-- Logged in as Asha / banner -->
+    <banner>
+        <div class="loggedInElm">
+            <div id="login-foldout" class="navbar-pinned expanded">
+                <div class="container-fluid">
+                    <div class="navbar-pinned-content">
+                        <div class="row align-items-center">
+                            <div class="col-8">
+                                Ingelogd als Asha Martinez
+                            </div>
+                            <div class="col-4">
+                                <div class="button-wrapper float-right">
+                                    <button class="btn btn-sm btn-success logoutBtn">Uitloggen</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </banner>
+
+    <main role="main" class="actionable">
+        <div class="container-fluid checkContainer">
+            <div class="row">
+                <div class="col-12">
+                    <ul class="breadcrumb">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="reizen.html">Reizen</a></li>
+                        <li><a href="paspoort.html">Paspoort en ID-kaart</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1 col-md-12">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12 notVisibleInFrame">
+                                <h1>Paspoort en ID-kaart verlengen</h1>
+                            </div>
+                        </div>
+                        <form class="questions mt-3 mb-3">
+                            <div class="start active">
+                                <div class="questionWrapper">
+                                    <p>Wilt u een DigiD gebruiken voor uw aanvraag?</p>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="grouped aft-space subtask">
+                                                <div class="row">
+                                                    <div class="col-5">
+                                                        <div class="custom-control custom-radio">
+                                                            <input class="custom-control-input" type="radio"
+                                                                name="radio-paspoort" id="digid" value="digid" checked>
+                                                            <label class="custom-control-label" for="digid">
+                                                                <h2>DigiD</h2>
+                                                                <img src="img/digid-logo.svg" alt="digid" width="45"
+                                                                    height="45">
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-7">
+                                                        <p>U kunt uw hele aanvraag online afhandelen.</p>
+                                                        <p>Uw gegevens worden automatisch ingevuld.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="grouped aft-space subtask">
+                                                <div class="row">
+                                                    <div class="col-5">
+                                                        <div class="custom-control custom-radio">
+                                                            <input class="custom-control-input" type="radio"
+                                                                name="radio-paspoort" id="no-digid" value="no-digid">
+                                                            <label class="custom-control-label" for="no-digid">
+                                                                <h2>Zonder DigiD</h2>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-7">
+                                                        <p>Als u nog geen DigiD hebt kunt u die tegelijk met uw
+                                                            paspoort/ID-kaart aanvragen</p>
+                                                        <p>We vertellen u later in het proces hoe dat moet</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="grouped aft-space subtask">
+                                                <div class="row">
+                                                    <div class="col-5">
+                                                        <div class="custom-control custom-radio">
+                                                            <input class="custom-control-input" type="radio"
+                                                                name="radio-paspoort" id="eidas" value="eidas">
+                                                            <label class="custom-control-label" for="eidas">
+                                                                <h2>eIDAS</h2>
+                                                                <img src="img/eidas-logo.svg" alt="eidas" width="35"
+                                                                    height="50">
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-7">
+                                                        <p>English text here Lorem ipsum dolor sit amet, consectetur
+                                                            adipisicing
+                                                            elit. Dicta, fuga?</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="questions">
+                                        <div class="notPreFilledElm">
+                                            <div class="form-row">
+                                                <div class="form-control">
+                                                    <button type="button" class="btn btn-link">Vorige</button>
+                                                    <div class="button-wrapper button-next">
+                                                        <button type="button" class="btn btn-primary"
+                                                            data-toggle="modal" data-target="#loginToStartForm">
+                                                            <span class="text">Volgende</span>
+                                                            <span class="loader"></span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="questionHelp">
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <div class="grouped">
+                                                        <button type="button" class="btn btn-toggle toggle-next">Hulp
+                                                            bij paspoort
+                                                            en ID-kaart verlengen</button>
+                                                        <div class="helpItems">
+                                                            <h3 class="helpQuestion toggle-next">Welke stappen doorloop ik als ik mijn paspoort of ID-kaart verleng?</h3>
+                                                            <div class="helpAnswer">
+                                                                <p>Content</p>
+                                                            </div>
+                                                            <h3 class="helpQuestion toggle-next">Eisen aan de pasfoto</h3>
+                                                            <div class="helpAnswer">
+                                                                <p>Content</p>
+                                                            </div>
+                                                            <h3 class="helpQuestion toggle-next">Ik heb een vraag of klaar over mijn paspoort of ID-kaart</h3>
+                                                            <div class="helpAnswer">
+                                                                <p>Content</p>
+                                                            </div>
+                                                            <h3 class="helpQuestion toggle-next">Mijn paspoort is verlopen, maar ik heb hem nu nodig. Wat moet ik doen?</h3>
+                                                            <div class="helpAnswer">
+                                                                <p>Content</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- START overzicht -->
+                            <div class="question">
+                                <div class="questionWrapper">
+                                    <div class="progress mb-4">
+                                        <div class="progress-bar" role="progressbar" style="width: 12%"
+                                            aria-valuenow="12" aria-valuemin="0" aria-valuemax="100"><span>12%</span>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col-sm-12 questionHeader">
+
+                                            <div class="grouped aft-space subtask">
+                                                <p>U kunt kiezen: Wij vullen uw gegevens automatisch in of u kunt zelf
+                                                    uw gegevens invullen.</p>
+
+                                                <ul class="vireo-list">
+                                                    <li>
+                                                        Naam
+                                                    </li>
+                                                    <li>
+                                                        Thuisadres
+                                                    </li>
+                                                    <li>
+                                                        BSN nummer
+                                                    </li>
+                                                    <li>
+                                                        Geboortedatum en geboorteplaats
+                                                    </li>
+                                                    <li>
+                                                        Documentnummer huidig paspoort of ID-kaart
+                                                    </li>
+                                                    <li>
+                                                        Pasfoto
+                                                    </li>
+                                                    <li>
+                                                        E-mailadres
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="preFilledElm">
+                                        <div class="form-row">
+
+                                        </div>
+                                    </div>
+                                    <div class="notPreFilledElm">
+                                        <div class="form-row">
+
+                                            <div class="form-control">
+                                                <button type="button" class="btn btn-link">Zelf invullen</button>
+                                                <div class="button-wrapper button-next">
+                                                    <button type="submit"
+                                                        class="btn btn-primary btn-next-question btn-delay">
+                                                        <span class="text">Gebruik mijn gegevens</span>
+                                                        <span class="loader"></span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="questionHelp">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="grouped">
+
+                                                    <button type="button" class="btn btn-toggle toggle-next">Hulp bij
+                                                        dit overzicht</button>
+                                                    <div class="helpItems">
+                                                        <h3 class="helpQuestion toggle-next">Wat is het
+                                                            burgerservicenummer (BSN)?</h3>
+                                                        <div class="helpAnswer">
+                                                            <p>Het burgerservicenummer (BSN) is uw eigen persoonsnummer
+                                                                voor contact met de overheid. Bijvoorbeeld voor zorg of
+                                                                belastingen. U krijgt een BSN toegekend als u zich
+                                                                inschrijft in de Basisregistratie Personen (BRP).</p>
+                                                            <p><a
+                                                                    href="https://www.rijksoverheid.nl/onderwerpen/privacy-en-persoonsgegevens/vraag-en-antwoord/wat-is-het-burgerservicenummer-bsn">Meer
+                                                                    over het BSN</a></p>
+                                                        </div>
+                                                        <h3 class="helpQuestion toggle-next">Waar vind ik het documentnummer op mijn huidige paspoort of ID-kaart?</h3>
+                                                        <div class="helpAnswer">
+                                                            <p>content</p>
+                                                        </div>
+                                                        <h3 class="helpQuestion toggle-next">Hoe voeg ik mijn digitale vingerafdruk toe?</h3>
+                                                        <div class="helpAnswer">
+                                                            <p>content</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- EINDE overzicht -->
+                            <!-- START overzicht -->
+                            <div class="question">
+                                <div class="questionWrapper">
+                                    <div class="progress mb-4">
+                                        <div class="progress-bar" role="progressbar" style="width: 24%"
+                                            aria-valuenow="24" aria-valuemin="0" aria-valuemax="100"><span>24%</span>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col-sm-12 questionHeader">
+                                            <p>De volgende gegevens komen op uw nieuwe paspoort:</p>
+                                            <ul class="vireo-list">
+                                                <li>
+                                                    Asha Martinez
+                                                </li>
+                                                <li>
+                                                    Geboren op 17 april 1977 in Den Haag
+                                                </li>
+                                                <li>
+                                                    BSN: 465039182
+                                                </li>
+                                            </ul>
+                                            <p>Aan het eind sturen we een bevestiging naar uw e-mail:</p>
+                                            <ul class="vireo-list">
+                                                <li>
+                                                    E-mail: ashamartinez235@gmail.com
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="preFilledElm">
+                                        <div class="form-row">
+                                            <!--
+                                <div class="form-group col-md-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="nl-check" id="nl-check1-li" value="ja" checked="">
+                                        <label class="form-check-label" for="nl-check1-li">
+                                            Ja
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="nl-check" id="nl-check2-li" data-stop="country" value="nee">
+                                        <label class="form-check-label" for="nl-check2-li">
+                                            Nee
+                                        </label>
+                                    </div>
+                                </div>
+-->
+                                        </div>
+                                    </div>
+                                    <div class="notPreFilledElm">
+                                        <div class="form-row">
+                                            <div class="form-control">
+                                                <button type="button" class="btn btn-link">Foutje gezien?</button>
+                                                <div class="button-wrapper button-next">
+                                                    <button type="submit" class="btn btn-primary btn-next-question">Ja,
+                                                        alles klopt</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="questionHelp">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="grouped">
+                                                    <button type="button" class="btn btn-toggle toggle-next">Hulp bij
+                                                        dit overzicht</button>
+                                                    <div class="helpItems">
+                                                        <h3 class="helpQuestion toggle-next">Wat is het
+                                                            burgerservicenummer (BSN)?</h3>
+                                                        <div class="helpAnswer">
+                                                            <p>Het burgerservicenummer (BSN) is uw eigen persoonsnummer
+                                                                voor contact met de overheid. Bijvoorbeeld voor zorg of
+                                                                belastingen. U krijgt een BSN toegekend als u zich
+                                                                inschrijft in de Basisregistratie Personen (BRP).</p>
+                                                            <p><a
+                                                                    href="https://www.rijksoverheid.nl/onderwerpen/privacy-en-persoonsgegevens/vraag-en-antwoord/wat-is-het-burgerservicenummer-bsn">Meer
+                                                                    over het BSN</a></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- EINDE overzicht -->
+                            <!-- START spoed of niet -->
+                            <div class="question">
+                                <div class="questionWrapper">
+                                    <div class="progress mb-4">
+                                        <div class="progress-bar" role="progressbar" style="width: 36%"
+                                            aria-valuenow="36" aria-valuemin="0" aria-valuemax="100"><span>36%</span>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col-sm-8 questionHeader">
+                                            <p>Wat wilt u aanvragen?</p>
+                                            <!--
+                                                                <button class="toggleHint collapsed" type="button" data-toggle="collapse" data-target="#ink-check-hint-txt" aria-expanded="false" aria-controls="ink-check-hint-txt">Hint</button>
+                                                                <div class="hintTxt collapse" id="ink-check-hint-txt">
+                                                                    <p>Bijstand is er voor mensen die niet genoeg geld hebben om van te leven. Als u voldoende
+                                                                        inkomen heeft, heeft u geen recht op een bijstandsuitkering.</p>
+                                                                    <p class="h3">Wat telt mee als inkomen?</p>
+                                                                    <p>Salaris, uitkering, alimentatie en heffingskortingen van de belastingdienst.</p>
+                                                                </div>
+                                -->
+                                        </div>
+                                    </div>
+                                    <div class="preFilledElm">
+                                        <div class="form-row">
+                                            <!--
+                                                                <div class="form-group col-md-12">
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="radio" name="ink-check" id="ink-check1-li" value="ja" checked="">
+                                                                        <label class="form-check-label" for="ink-check1-li">
+                                                                            Ja
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="radio" name="ink-check" id="ink-check2-li" data-stop="ink" value="nee">
+                                                                        <label class="form-check-label" for="ink-check2-li">
+                                                                            Nee
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                -->
+                                        </div>
+                                    </div>
+                                    <div class="notPreFilledElm">
+                                        <div class="form-row">
+                                            <div class="row">
+                                                <div class="form-group col-md-4">
+                                                    <div class="grouped">
+                                                        <div class="row">
+                                                            <div class="col-6">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="radio"
+                                                                        name="product-check" id="product-paspoort"
+                                                                        value="paspoort" checked="checked">
+                                                                    <label class="form-check-label"
+                                                                        for="product-paspoort">
+                                                                        Paspoort
+                                                                        <strong
+                                                                            class="vireo-cost">&euro;&thinsp;75,00</strong>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-6">
+                                                                <p>Met een paspoort kunt u wereldwijd reizen.</p>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="form-group col-md-4">
+                                                    <div class="grouped">
+                                                        <div class="row">
+                                                            <div class="col-6">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="radio"
+                                                                        name="product-check" id="product-id-kaart"
+                                                                        value="id-kaart">
+                                                                    <label class="form-check-label"
+                                                                        for="product-id-kaart">
+                                                                        ID-kaart
+                                                                        <strong
+                                                                            class="vireo-cost">&euro;&thinsp;35,00</strong>
+                                                                    </label>
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="col-6">
+                                                                <p>Voor reizen bionnen de EU, de EER, Monaco, San
+                                                                    Marino,
+                                                                    Turkije en Zwitserland.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group col-md-4">
+                                                    <div class="grouped">
+                                                        <div class="row">
+                                                            <div class="col-6">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="radio"
+                                                                        name="product-check"
+                                                                        id="product-paspoort-en-id-kaart"
+                                                                        value="paspoort-en-id-kaart">
+                                                                    <label class="form-check-label"
+                                                                        for="product-paspoort-en-id-kaart">
+                                                                        Paspoort en ID-kaart
+                                                                        <strong
+                                                                            class="vireo-cost">&euro;&thinsp;99,95</strong>
+                                                                    </label>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-control">
+                                                <button type="button"
+                                                    class="btn btn-link btn-prev-question mr-2">Vorige</button>
+                                                <div class="button-wrapper button-next">
+                                                    <button type="submit"
+                                                        class="btn btn-primary btn-next-question">Volgende</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- EINDE spoed of niet -->
+                            <!-- START pasfoto -->
+                            <div class="question">
+                                <div class="questionWrapper">
+                                    <div class="progress mb-4">
+                                        <div class="progress-bar" role="progressbar" style="width: 48%"
+                                            aria-valuenow="48" aria-valuemin="0" aria-valuemax="100"><span>48%</span>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col-sm-12 questionHeader">
+                                            <p>U heeft een pasfoto in uw profiel.</p>
+                                            <div class="grouped aft-space subtask">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <div class="frame-35-45">
+                                                            <img src="content/pasfoto-asha.jpg"
+                                                                alt="Uw huidige pasfoto" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <ul class="vireo-list">
+                                                            <li class="attention">Uw pasfoto is ouder dan 5 jaar</li>
+                                                        </ul>
+                                                        <p>
+                                                            Het kan zijn dat de pasfoto nog voldoende op u lijkt. Dan
+                                                            kunt u deze gebruiken.
+                                                        </p>
+                                                        <p>
+                                                            <button class="btn btn-secondary"
+                                                                onclick="return false;">Pasfoto checken</button>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                        <button class="btn btn-secondary" onclick="return false;">Nieuwe
+                                                            pasfoto toevoegen</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="preFilledElm">
+                                        <div class="form-row">
+                                        </div>
+                                    </div>
+                                    <div class="notPreFilledElm">
+                                        <div class="form-control">
+                                            <button type="button"
+                                                class="btn btn-link btn-prev-question mr-2">Vorige</button>
+                                            <div class="button-wrapper button-next">
+                                                <button type="submit"
+                                                    class="btn btn-primary btn-next-question">Volgende</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="questionHelp">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="grouped">
+                                                    <button type="button" class="btn btn-toggle toggle-next">Hulp bij
+                                                        pasfoto</button>
+                                                    <div class="helpItems">
+                                                        <h3 class="helpQuestion toggle-next">Eisen aan de pasfoto</h3>
+                                                        <div class="helpAnswer">
+                                                            <p>De pasfoto op uw paspoort moet voldoen aan bepaalde
+                                                                eisen. Bijvoorbeeld wat betreft het formaat, de
+                                                                fotokwaliteit, de achtergrond en uw gezichtsuitdrukking.
+                                                            </p>
+                                                            <p>
+                                                                <a
+                                                                    href="https://www.rijksoverheid.nl/onderwerpen/paspoort-en-identiteitskaart/eisen-pasfoto-paspoort-id-kaart">Bekijk
+                                                                    alle eisen aan de pasfoto</a>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- EINDE pasfoto -->
+                            <!-- START spoed of niet -->
+                            <div class="question">
+                                <div class="questionWrapper">
+                                    <div class="progress mb-4">
+                                        <div class="progress-bar" role="progressbar" style="width: 60%"
+                                            aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"><span>60%</span>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col-sm-8 questionHeader">
+                                            <p>Hoe snel wilt u uw paspoort hebben?</p>
+                                            <!--
+                                    <button class="toggleHint collapsed" type="button" data-toggle="collapse" data-target="#ink-check-hint-txt" aria-expanded="false" aria-controls="ink-check-hint-txt">Hint</button>
+                                    <div class="hintTxt collapse" id="ink-check-hint-txt">
+                                        <p>Bijstand is er voor mensen die niet genoeg geld hebben om van te leven. Als u voldoende
+                                            inkomen heeft, heeft u geen recht op een bijstandsuitkering.</p>
+                                        <p class="h3">Wat telt mee als inkomen?</p>
+                                        <p>Salaris, uitkering, alimentatie en heffingskortingen van de belastingdienst.</p>
+                                    </div>
+    -->
+                                        </div>
+                                    </div>
+                                    <div class="preFilledElm">
+                                        <div class="form-row">
+                                            <!--
+                                    <div class="form-group col-md-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="ink-check" id="ink-check1-li" value="ja" checked="">
+                                            <label class="form-check-label" for="ink-check1-li">
+                                                Ja
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="ink-check" id="ink-check2-li" data-stop="ink" value="nee">
+                                            <label class="form-check-label" for="ink-check2-li">
+                                                Nee
+                                            </label>
+                                        </div>
+                                    </div>
+    -->
+                                        </div>
+                                    </div>
+                                    <div class="notPreFilledElm">
+                                        <div class="form-row">
+                                            <div class="form-group col-6">
+                                                <div class="grouped">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio" name="ink-check"
+                                                            id="ink-check1" value="nee" checked="checked">
+                                                        <label class="form-check-label" for="ink-check1">
+                                                            Over 5 werkdagen
+                                                            <small>Standaard</small>
+                                                            <strong class="vireo-cost">&euro;&thinsp;75,00</strong>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-6">
+                                                <div class="grouped">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio" name="ink-check"
+                                                            id="ink-check2" data-stop="ink" value="ja">
+                                                        <label class="form-check-label" for="ink-check2">
+                                                            Over 2 werkdagen
+                                                            <small>Mits voor 14.00 uur besteld</small>
+                                                            <strong class="vireo-cost">&euro;&thinsp;95,00</strong>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-control">
+                                                <button type="button"
+                                                    class="btn btn-link btn-prev-question mr-2">Vorige</button>
+                                                <div class="button-wrapper button-next">
+                                                    <button type="submit"
+                                                        class="btn btn-primary btn-next-question">Volgende</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="questionHelp">
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <div class="grouped">
+                                                        <button type="button" class="btn btn-toggle toggle-next">Opzoeken</button>
+                                                        <div class="helpItems">
+                                                            <h3 class="helpQuestion toggle-next">Noodpaspoort aanvragen
+                                                                </h3>
+                                                            <div class="helpAnswer">
+                                                                <p>Content</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                </div>
+                            </div>
+                            <!-- EINDE spoed of niet -->
+                            <!-- START ophalen bezorgen -->
+                            <div class="question">
+                                <div class="questionWrapper">
+                                    <div class="progress mb-4">
+                                        <div class="progress-bar" role="progressbar" style="width: 72%"
+                                            aria-valuenow="72" aria-valuemin="0" aria-valuemax="100"><span>72%</span>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col-sm-8 questionHeader">
+                                            <p>Wilt u uw paspoort ophalen of laten bezorgen?</p>
+                                        </div>
+                                    </div>
+                                    <div class="preFilledElm">
+                                        <div class="form-row">
+                                        </div>
+                                    </div>
+                                    <div class="notPreFilledElm">
+                                        <div class="form-row">
+                                            <div class="form-group col-md-12">
+                                                <fieldset class="grouped">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio" name="env-check"
+                                                            id="env-check1-li" value="ophalen-gemeente"
+                                                            checked="checked">
+                                                        <label class="form-check-label" for="env-check1-li">
+                                                            Ophalen bij gemeente Den Haag
+                                                            <small>Kies zelf een stadsdeelkantoor</small>
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio" name="env-check"
+                                                            id="env-check2-li" value="ophalen-hema">
+                                                        <label class="form-check-label" for="env-check2-li">
+                                                            Ophalen bij een PostNL servicepunt
+                                                            <small>Kies een servicepunt bij u in de buurt</small>
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio" name="env-check"
+                                                            id="env-check3-li" value="bezorgen-thuis">
+                                                        <label class="form-check-label" for="env-check3-li">
+                                                            Bezorgen op mijn thuisadres
+                                                            <small>Kootwijkerstraat 38, 2583 ZR Den Haag</small>
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio" name="env-check"
+                                                            id="env-check4-li" value="bezorgen-elders">
+                                                        <label class="form-check-label" for="env-check4-li">
+                                                            Bezorgen op een ander adres
+                                                            <small>Geef zelf een adres op</small>
+                                                        </label>
+                                                    </div>
+                                                </fieldset><!-- .grouped -->
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-control">
+                                                <button type="button"
+                                                    class="btn btn-link btn-prev-question mr-2">Vorige</button>
+                                                <div class="button-wrapper button-next">
+                                                    <button type="submit"
+                                                        class="btn btn-primary btn-next-question">Volgende</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--
+                        <div data-stop-reason="verm" class="reason">
+                            <div class="progress mb-4">
+                                <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
+                            </div>
+                            <h2>U heeft geen recht op bijstand.</h2>
+                            <p>Omdat u voldoende vermogen heeft.</p>
+                            <h3>Wat valt onder vermogen?</h3>
+                            <p>Onder vermogen vallen eigendommen, bijvoorbeeld waardevolle sieraden, een auto of spaargeld. Ook
+                                grond of een huis in Nederland of in het buitenland horen tot het vermogen.</p>
+                            <button type="button" class="btn btn-primary changeAwnser btn-sm">Antwoord wijzigen</button>
+                            <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#contactModal">Heeft u hulp nodig?</button>
+                        </div>
+    -->
+                            </div>
+                            <!-- EINDE ophalen bezorgen -->
+                            <!-- START betalen -->
+                            <div class="question">
+                                <div class="questionWrapper">
+                                    <div class="progress mb-4">
+                                        <div class="progress-bar" role="progressbar" style="width: 84%"
+                                            aria-valuenow="84" aria-valuemin="0" aria-valuemax="100"><span>84%</span>
+                                        </div>
+                                    </div>
+                                    <div class="questionHeader">
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <h3 class="vireo-light">Uw aanvraag</h3>
+                                                <ul class="vireo-list vireo-summary-list">
+                                                    <li>
+                                                        Verlenging paspoort documentnummer xxxx
+                                                    </li>
+                                                    <li>
+                                                        10 jaar geldig
+                                                    </li>
+                                                    <li>
+                                                        Klaar na 5 werkdagen
+                                                    </li>
+                                                    <li>
+                                                        Wordt bezorgd op:<br>
+                                                        Kootwijkerstraat 38, 2583 ZR Den Haag
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-sm-4 separator">
+                                                <h3 class="vireo-light">
+                                                    Totaalbedrag
+                                                </h3>
+                                                <p>
+                                                    <strong class="vireo-cost">&euro;&thinsp;75,00</strong>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <p>Hoe wilt u uw nieuwe paspoort betalen?</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="preFilledElm">
+                                        <div class="form-row">
+                                        </div>
+                                    </div>
+                                    <div class="notPreFilledElm">
+                                        <div class="form-row">
+                                            <div class="form-group col-md-12">
+                                                <div class="grouped">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio" name="env-payment"
+                                                            id="env-check1-tr" value="ideal" checked="checked">
+                                                        <label class="form-check-label" for="env-check1-tr">
+                                                            iDeal
+                                                        </label>
+                                                        <div class="payment-options">
+                                                            <select>
+                                                                <option>Kies uw bank ...</option>
+                                                                <option>ABN Amro</option>
+                                                                <option>ASN</option>
+                                                                <option>Bunq</option>
+                                                                <option>ING</option>
+                                                                <option>Knab</option>
+                                                                <option>Rabobank</option>
+                                                                <option>SNS bank</option>
+                                                                <option>Triodos</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="grouped">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio" name="env-payment"
+                                                            id="env-check2-tr" value="paypal">
+                                                        <label class="form-check-label" for="env-check2-tr">
+                                                            Paypal
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="grouped">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio" name="env-payment"
+                                                            id="env-check3-tr" value="creditcard">
+                                                        <label class="form-check-label" for="env-check3-tr">
+                                                            Creditcard
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-control">
+                                                <button type="button"
+                                                    class="btn btn-link btn-prev-question mr-2">Vorige</button>
+                                                <div class="button-wrapper button-next">
+                                                    <button type="submit"
+                                                        class="btn btn-primary btn-next-question">Betalen</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- EINDE betalen -->
+                            <!-- START klaar en afgerond! -->
+                            <div class="question">
+                                <div class="questionWrapper">
+                                    <div class="form-row">
+                                        <div class="col-sm-12 questionHeader">
+                                            <p class="success">We hebben uw betaling ontvangen en gaan aan de slag!
+                                                <button
+                                                    class="btn btn-sm btn-success logoutBtn to-home">Uitloggen</button>
+                                            </p>
+                                            <p>We sturen een bevestiging naar ashamartinez@gmail.com.</p>
+                                            <p>Uw paspoort wordt uiterlijk <strong>13 november</strong> bezorgd op Kootwijkerstraat 38, 2583 ZR Den Haag</p>
+                                            <div class="grouped">
+                                                <div>
+                                                    <h3>Let op!</h3>
+                                                    <p>U moet het paspoort zelf ophalen binnen 3 maanden.</p>
+                                                    <p>Neem uw oude paspoort mee; deze moet u inleveren.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="preFilledElm">
+                                        <div class="form-row">
+                                        </div>
+                                    </div>
+                                    <div class="notPreFilledElm">
+                                        <div class="form-row">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- EINDE klaar en afgerond! -->
+                        </form>
+                    </div>
+                    <!-- Login modal -->
+                    <div class="modal fade loginmodal" id="loginToStartForm" tabindex="-1" role="dialog"
+                        aria-labelledby="modal-header" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3 class="modal-title" id="modal-header">
+                                        <img src="img/digid-logo.svg" alt="digid"> Login met DigiD
+                                    </h3>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">×</span>
+                                    </button>
+                                </div>
+                                <form>
+                                    <div class="modal-body">
+                                        <div class="form-group">
+                                            <label for="gebruikersnaam">DigiD gebruikersnaam</label>
+                                            <input type="text" class="form-control" id="gebruikersnaam"
+                                                placeholder="DigiD gebruikersnaam" value="asha_madhavan">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="wachtwoord">Wachtwoord</label>
+                                            <input type="password" class="form-control" id="wachtwoord"
+                                                placeholder="Wachtwoord" value="********">
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary"
+                                            id="loginAndStartBtn">Inloggen</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Send modal -->
+                    <div class="modal fade sendModal" id="sendModal" tabindex="-1" role="dialog"
+                        aria-labelledby="send-modal-header" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3 class="modal-title" id="send-modal-header">
+                                        Uw aanvraag is verstuurd
+                                    </h3>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">×</span>
+                                    </button>
+                                </div>
+                                <form>
+                                    <div class="modal-body">
+                                        <p>Wij hebben uw aanvraag voor een bijstandsuitkering in behandeling genomen.
+                                            Binnen 8 weken krijgt u een beslissing op uw aanvraag. Heeft u recht op
+                                            bijstand? Dan krijgt u dit vanaf het moment dat u de aanvraag heeft gedaan.
+                                        </p>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- Include footer -->
+    <div azdpc-include-html="footer.html"></div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
