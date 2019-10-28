@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="nl-NL">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Paspoort | 1overheid</title>
+    <meta name="description" content="Prototype voor 1overheid: informatie, diensten, beleid en bestuur">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/additional.css">
+</head>
+
+<body cz-shortcut-listen="true">
+    <!-- include header -->
+    <div azdpc-include-html="header.html"></div>
+    <!-- Logged in as Asha / banner -->
+    <banner>
+        <div class="loggedInElm">
+            <div id="login-foldout" class="navbar-pinned expanded">
+                <div class="container-fluid">
+                    <div class="navbar-pinned-content">
+                        <div class="row align-items-center">
+                            <div class="col-8">
+                                Ingelogd als Asha Martinez
+                            </div>
+                            <div class="col-4">
+                                <button class="btn btn-success logoutBtn float-right">Uitloggen</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </banner>
+    <main role="main" class="actionable">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <ul class="breadcrumb">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="verkeer.html">Reizen</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1 col-md-12">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12 notVisibleInFrame">
+                                <h1>Paspoort en ID-kaart</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h2 class="vireo-light">Meteen regelen</h2>
+                                <div class="main-actions">
+                                    <p><a class="btn btn-primary" href="paspoort-verlengen.html">Aanvragen of
+                                            verlengen</a></p>
+                                    <p><a class="btn btn-primary" href="#kwijt-of-gestolen">Kwijt of gestolen</a></p>
+                                    <p><a class="btn btn-primary" href="#noodpaspoort-aanvragen">Noodpaspoort
+                                            aanvragen</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <main class="informative">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1 col-md-12">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12">
+                                <h2 class="vireo-light">Opzoeken</h2>
+                                <div class="toggleSet">
+                                    <h3 class="toggleTopic toggle-next">Verschillen paspoort en ID-kaart</h3>
+                                    <div class="toggleContent">
+                                        <p>
+                                            <a href="#een-dummy-link-die-niets-doet">content</a>
+                                        </p>
+                                    </div>
+                                    <h3 class="toggleTopic toggle-next">Kosten paspoort en ID-kaart</h3>
+                                    <div class="toggleContent">
+                                        <p>
+                                            <a href="#een-dummy-link-die-niets-doet">content</a>
+                                        </p>
+                                    </div>
+                                    <h3 class="toggleTopic toggle-next">Hoe snel is een paspoort/ ID-kaart klaar?</h3>
+                                    <div class="toggleContent">
+                                        <p>
+                                            <a href="#een-dummy-link-die-niets-doet">content</a>
+                                        </p>
+                                    </div>
+                                    <h3 class="toggleTopic toggle-next">Mijn paspoort is verlopen, maar ik heb hem nu nodig. Wat moet ik doen?</h3>
+                                    <div class="toggleContent">
+                                        <p>
+                                            <a href="#een-dummy-link-die-niets-doet">content</a>
+                                        </p>
+                                    </div>
+                                    <h3 class="toggleTopic toggle-next">Mijn paspoort is gestolen.</h3>
+                                    <div class="toggleContent">
+                                        <p>
+                                            <a href="#een-dummy-link-die-niets-doet">content</a>
+                                        </p>
+                                    </div>
+                                    <h3 class="toggleTopic toggle-next">Veilige kopie identiteitsbewijs</h3>
+                                    <div class="toggleContent">
+                                        <p>
+                                            <a href="#een-dummy-link-die-niets-doet">content</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="modal fade loginmodal" id="loginToStartForm" tabindex="-1" role="dialog" aria-labelledby="modal-header"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="modal-header">
+                        <img src="img/digid-logo.svg" alt="digid"> Login met DigiD
+                    </h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <form>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="gebruikersnaam">DigiD gebruikersnaam</label>
+                            <input type="text" class="form-control" id="gebruikersnaam"
+                                placeholder="DigiD gebruikersnaam" value="asha_madhavan">
+                        </div>
+                        <div class="form-group">
+                            <label for="wachtwoord">Wachtwoord</label>
+                            <input type="password" class="form-control" id="wachtwoord" placeholder="Wachtwoord"
+                                value="********">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" id="loginAndStartBtn">Inloggen</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    </main>
+    <!-- Include footer -->
+    <div azdpc-include-html="footer.html"></div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
