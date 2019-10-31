@@ -7041,3 +7041,19 @@ footer {
   .chatModal .messageForm .inputField {
     margin-right: 15px;
     width: 100%; }
+
+
+.callout {
+  padding: 15px;
+  background: #fff;
+  border-radius: 4px;
+  border-left: 5px transparent solid;
+}
+
+.callout p {
+  margin-bottom: 0;
+}
+
+.callout-primary {
+  border-left-color: var(--primary);
+}
