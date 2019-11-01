@@ -54,7 +54,7 @@
                         </div>
                         <form class="questions mt-3 mb-3">
                             <!-- START overzicht -->
-                            <div class="question">
+                            <div class="question active">
                                 <div class="questionWrapper">
                                     <div class="form-row">
                                         <div class="col-sm-12 questionHeader">
@@ -1598,7 +1598,7 @@
                             </div>
                             <!-- EINDE book appointment to submit -->
                             <!-- START Payment -->
-                            <div class="question active">
+                            <div class="question">
                                 <div class="questionWrapper">
                                     <div class="form-row mb-3">
                                         <div class="col-sm-12 questionHeader">
@@ -1706,11 +1706,11 @@
 
                                             <div class="form-row">
                                                 <div class="form-control">
-                                                    <button type="button" class="btn btn-link">Previous</button>
+                                                    <button type="button"
+                                                        class="btn btn-link btn-prev-question mr-2">Previous</button>
                                                     <div class="button-wrapper button-next">
-                                                        <button type="submit" class="btn btn-primary">
-                                                            <span class="text">Pay</span>
-                                                        </button>
+                                                        <button type="submit"
+                                                            class="btn btn-primary btn-next-question">Pay</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1762,6 +1762,16 @@
                                 </div>
                             </div>
                             <!-- EINDE Payment -->
+                            <!-- START thank you page -->
+                            <div class="question">
+                                <div class="questionWrapper">
+                                    <div class="success">
+                                        Thank you! We have received your payment. We will send you an email to confirm
+                                        your appointment.
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- EINDE thank you page -->
                         </form>
                     </div>
                     <!-- Login modal -->
