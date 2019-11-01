@@ -54,7 +54,7 @@
                         </div>
                         <form class="questions mt-3 mb-3">
                             <!-- START overzicht -->
-                            <div class="question active">
+                            <div class="question">
                                 <div class="questionWrapper">
                                     <div class="form-row">
                                         <div class="col-sm-12 questionHeader">
@@ -1429,15 +1429,16 @@
                                         <div class="month-picker text-center mb-1">
                                             <span class="arrow arrow-previous"></span>
                                             <div class="dropdown">
-                                                <button class="btn btn-link dropdown-toggle" type="button" id="dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                  November 2019
+                                                <button class="btn btn-link dropdown-toggle" type="button" id="dropdown"
+                                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    November 2019
                                                 </button>
                                                 <div class="dropdown-menu" aria-labelledby="dropdown">
-                                                  <button class="dropdown-item" type="button">November 2019</button>
-                                                  <button class="dropdown-item" type="button">December 2019</button>
-                                                  <button class="dropdown-item" type="button">January 2020</button>
+                                                    <button class="dropdown-item" type="button">November 2019</button>
+                                                    <button class="dropdown-item" type="button">December 2019</button>
+                                                    <button class="dropdown-item" type="button">January 2020</button>
                                                 </div>
-                                              </div>
+                                            </div>
                                             <span class="arrow arrow-next"></span>
                                         </div>
                                         <div class="calendar-container mb-3">
@@ -1529,10 +1530,10 @@
                                                             name="radio-calendar" id="Q10D" value="Q10D">
                                                         <label class="custom-control-label" for="Q10D">03:00 am</label>
                                                     </div>
-    
+
                                                 </div>
                                             </div>
-                                            </div>
+                                        </div>
                                     </div>
 
                                     <div class="notPreFilledElm">
@@ -1597,9 +1598,167 @@
                             </div>
                             <!-- EINDE book appointment to submit -->
                             <!-- START Payment -->
-                            <div class="question">
+                            <div class="question active">
                                 <div class="questionWrapper">
-                                    Betalen!
+                                    <div class="form-row mb-3">
+                                        <div class="col-sm-12 questionHeader">
+                                            <p class="vireo-light">Your application</p>
+                                            <ul class="vireo-list">
+                                                <li>Renewal passport document nr xxxxx</li>
+                                                <li>You have booked an appointment to submit your application with our
+                                                    <a>external service provider in Perth</a><br>
+                                                    Your appointment: November 28 at 02:00 pm
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="questionHeader w-100">
+                                            <p class="vireo-light">To be paid</p>
+                                            <div class="row mb-3">
+                                                <div class="col-6">
+                                                    <p>1 passport adult</p>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="vireo-cost">&euro;75,00</div>
+                                                    <small>AU$ 121,39</small>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <div class="col-6">
+                                                    <p>Service fee Perth</p>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="vireo-cost">&euro;35,00</div>
+                                                    <small>AU$ 56,00</small>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <div class="col-6">
+                                                    <p>Postage</p>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="vireo-cost">&euro;10,00</div>
+                                                    <small>AU$ 25,00</small>
+                                                </div>
+                                            </div>
+                                            <div class="total mb-3">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <p>Total amount:</p>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="vireo-cost">&euro;120,00</div>
+                                                        <small>AU$ 221,39</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="questions">
+                                        <div class="notPreFilledElm">
+                                            <div class="form-row">
+                                                <div class="form-group col-md-12">
+                                                    <div class="grouped">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio"
+                                                                name="env-payment" id="env-check1-tr" value="ideal"
+                                                                checked="checked">
+                                                            <label class="form-check-label" for="env-check1-tr">
+                                                                iDeal
+                                                            </label>
+                                                            <div class="payment-options">
+                                                                <select>
+                                                                    <option>Kies uw bank ...</option>
+                                                                    <option>ABN Amro</option>
+                                                                    <option>ASN</option>
+                                                                    <option>Bunq</option>
+                                                                    <option>ING</option>
+                                                                    <option>Knab</option>
+                                                                    <option>Rabobank</option>
+                                                                    <option>SNS bank</option>
+                                                                    <option>Triodos</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="grouped">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio"
+                                                                name="env-payment" id="env-check2-tr" value="paypal">
+                                                            <label class="form-check-label" for="env-check2-tr">
+                                                                Paypal
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="grouped">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio"
+                                                                name="env-payment" id="env-check3-tr"
+                                                                value="creditcard">
+                                                            <label class="form-check-label" for="env-check3-tr">
+                                                                Creditcard
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-row">
+                                                <div class="form-control">
+                                                    <button type="button" class="btn btn-link">Previous</button>
+                                                    <div class="button-wrapper button-next">
+                                                        <button type="submit" class="btn btn-primary">
+                                                            <span class="text">Pay</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="questionHelp">
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <div class="grouped">
+                                                        <button type="button" class="btn btn-toggle toggle-next">Help
+                                                            with renewing your passport</button>
+                                                        <div class="helpItems">
+                                                            <h3 class="helpQuestion toggle-next">What are the costs for
+                                                                renewing my passport?</h3>
+                                                            <div class="helpAnswer">
+                                                                <p>Content</p>
+                                                            </div>
+                                                            <h3 class="helpQuestion toggle-next">What are the
+                                                                requirements for passport photos?</h3>
+                                                            <div class="helpAnswer">
+                                                                <p>Content</p>
+                                                            </div>
+                                                            <h3 class="helpQuestion toggle-next">Where can I get
+                                                                passport photos made that meet the requirements?</h3>
+                                                            <div class="helpAnswer">
+                                                                <p>Content</p>
+                                                            </div>
+                                                            <h3 class="helpQuestion toggle-next">Can I check whether my
+                                                                photo meets the requirements?</h3>
+                                                            <div class="helpAnswer">
+                                                                <p>Content</p>
+                                                            </div>
+                                                            <h3 class="helpQuestion toggle-next">How can I check if I
+                                                                have Dutch nationality?</h3>
+                                                            <div class="helpAnswer">
+                                                                <p>Content</p>
+                                                            </div>
+                                                            <h3 class="helpQuestion toggle-next">Do you have a question
+                                                                or do you need help?</h3>
+                                                            <div class="helpAnswer">
+                                                                <p>Content</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
                             <!-- EINDE Payment -->
