@@ -394,6 +394,24 @@ function toggleButton() {
 
 }
 
+function selectDay() {
+    let $calendarContainer = $('.calendar-container');
+    $calendarContainer.find('.item.available').on('click tap', function (){
+        const $this = $(this);
+        let dateString = $this.data('date');
+        let dateObject = new Date(dateString);
+        let datePicked = dateObject.toLocaleString('en', {
+            'weekday': 'long',
+            'day': '2-digit',
+            'month': 'long'
+        });
+
+        $calendarContainer.find('.active').removeClass('active');
+        $this.addClass('active');
+        $('.date-block').show();
+        $('.date-picked').text('').text(datePicked);
+    });
+}
 
 
 
@@ -407,4 +425,5 @@ $.when($.ready).then(function() {
     setIframeStatus();
     handleHelpTexts();
     toggleButton();
+    selectDay();
 });
