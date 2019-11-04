@@ -1133,20 +1133,25 @@ blockquote {
             padding-bottom: 0.6em;
             border-bottom: 1px solid var(--vireo-blue-clear);
 */ }
-    .themes-list a:hover .icon, .themes-list a:focus .icon {
-      background-color: var(--white); }
+    /* .themes-list a:hover .icon, .themes-list a:focus .icon {
+      background-color: var(--white); } */
   .themes-list .icon {
     position: absolute;
     left: 10px;
     top: 0;
     width: 4rem;
     height: 4rem;
-    border-radius: 2rem; }
+    border-radius: 2rem;
+    background-color: var(--white); }
     .themes-list .icon img {
       display: block;
       width: 3rem;
       height: auto;
       margin: 0.5rem auto 0; }
+    .themes-list .icon.icon-png img {
+      height: 44px;
+      width: auto;
+    }
 
 .dropdown-menu .themes-list {
   margin-bottom: 1rem; }
