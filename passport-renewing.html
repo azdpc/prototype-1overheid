@@ -63,7 +63,7 @@
                                             <div class="grouped aft-space subtask">
                                                 <div class="row">
                                                     <div class="col-5">
-                                                        <div class="custom-control custom-radio">
+                                                        <div class="custom-control custom-radio" data-target="#noteModalDigid" data-toggle="modal">
                                                             <input class="custom-control-input" type="radio"
                                                                 name="radio-paspoort" id="digid" value="digid">
                                                             <label class="custom-control-label" for="digid">
@@ -1169,7 +1169,7 @@
                                         </div>
                                     </div>
                                     <div class="grouped">
-                                        <h3>Is your firstname or lastname different from the name stated in your Dutch
+                                        <h3>Is your first name or last name different from the name stated in your Dutch
                                             passport?</h3>
 
                                         <div class="custom-control custom-radio mb-3">
@@ -1453,6 +1453,7 @@
                                         <div class="form-row">
                                             <div class="col-sm-12 questionHeader">
                                                 <h3>Where do you want to submit your passport application?</h3>
+                                                <h4>In Australia:</h4>
                                                 <div class="custom-control custom-radio mb-3" data-toggle="modal"
                                                     data-target="#noteModal">
                                                     <input class="custom-control-input" type="radio" name="radio-submit"
@@ -1472,7 +1473,7 @@
                                                     <label class="custom-control-label" for="Q9C">Adelaide (pop-up desk
                                                         18-20 November)</label>
                                                 </div>
-                                                <h3 class="mt-3">In the Netherlands</h3>
+                                                <h4 class="mt-3">In the Netherlands:</h4>
                                                 <div class="custom-control custom-radio mb-3">
                                                     <input class="custom-control-input" type="radio" name="radio-submit"
                                                         id="Q9D" value="Q9D">
@@ -1971,6 +1972,7 @@
                         </div>
                     </div>
                     <!-- Please note modal -->
+                    <!-- External sevice -->
                     <div class="modal fade" id="noteModal" tabindex="-1" role="dialog">
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
@@ -1987,6 +1989,24 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- DigiD -->
+                    <div class="modal fade" id="noteModalDigid" tabindex="-1" role="dialog">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <img src="content/icons/warning.svg" width="30" height="30" />
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p><strong>Please note:</strong> you have chosen to apply with DigiD. This means you can not complete this application online and have to submit it in person.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>

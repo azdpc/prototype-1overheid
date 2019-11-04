@@ -816,8 +816,9 @@ section, main {
   .vireo-list li {
     list-style: none;
     position: relative;
-    margin: 0 0 0.6em;
-    padding-left: 20px; }
+    margin: 0 0 1.2em;
+    padding-left: 20px;
+    line-height: 1; }
     .vireo-list li::before {
       content: "";
       display: block;
