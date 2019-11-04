@@ -279,7 +279,7 @@ function handleModuleForm(){
     function scrollInView(elem) {
         $([document.documentElement, document.body]).animate({
                 scrollTop: $(elem).offset().top - 80
-        }, 10);        
+        }, 500);   
     }
 
     function resetBtnStates(){
@@ -408,15 +408,12 @@ function selectDay() {
 
         $calendarContainer.find('.active').removeClass('active');
         $this.addClass('active');
-        $('.date-block').show();
-        $('.date-picked').text('').text(datePicked);
+        $('.date-block').show(500);
+        $('.date-picked').text(datePicked);
     });
 }
 
-
-
-//$(function() {
-$.when($.ready).then(function() {
+$(function () {
     includeHTML();
     handleLogin();
     handlePrefill();
