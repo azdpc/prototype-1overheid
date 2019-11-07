@@ -704,6 +704,7 @@ main.government.light {
   padding: 15px 15px 5px;
   /* Extra options based on radio checked state */
 }
+.grouped-primary { background-color: var(--primary); color: var(--white); }
 .grouped .row + .row,
 .grouped + .grouped {
   margin-top: 10px;
@@ -1050,7 +1051,6 @@ main.government.light {
   position: relative;
   margin: 0 0 1.2em;
   padding-left: 20px;
-  line-height: 1;
 }
 .vireo-list li::before {
   content: "";

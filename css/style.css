@@ -7080,3 +7080,32 @@ footer {
 .total { border-top: 3px solid var(--primary); padding: 15px 0; font-weight: bold; }
 
 .no-background { background: transparent; }
+.ui-autocomplete-term { font-weight: bold; color: var(--primary); }
+
+ol.custom-ordered-list {
+  list-style: none;
+  counter-reset: my-counter;
+  margin: 0;
+  padding-left: 40px;
+  width: 100%;
+}
+ol.custom-ordered-list li {
+  counter-increment: my-counter;
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+ol.custom-ordered-list li::before {
+  content: counter(my-counter);
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  left: -40px;
+  background: var(--white);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  color: var(--primary);
+  text-align: center;
+  line-height: 30px;
+}
+ol.custom-ordered-list li .title { font-size: 20px; font-weight: bold; }
