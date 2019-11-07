@@ -661,15 +661,12 @@ main.government.light {
 }
 .questions .progress {
   background-color: var(--white);
-  height: 0.6rem;
+  height: 1rem;
   border-radius: 0.3rem;
 }
 .questions .progress .progress-bar {
-  height: 0.6rem;
+  height: 1rem;
   border-radius: 0.3rem;
-}
-.questions .progress span {
-  display: none;
 }
 .questions label small {
   display: block;
@@ -3157,3 +3154,5 @@ td:last-child {
 .notifications .button-to-end {
   align-self: center;
 }
+
+.country-selector .form-control { background-color: --var(white); padding: 0.375rem 0.75rem; border: 1px solid #ced4da; margin: 0; }

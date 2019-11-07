@@ -413,6 +413,13 @@ function selectDay() {
     });
 }
 
+// quick fix
+function changeTitle() {
+    $('.change-title').on('click tap', function (){
+        $('.header-title').text('Paspoort verlengen');
+    });
+}
+
 $(function () {
     includeHTML();
     handleLogin();
@@ -423,4 +430,5 @@ $(function () {
     handleHelpTexts();
     toggleButton();
     selectDay();
+    changeTitle();
 });

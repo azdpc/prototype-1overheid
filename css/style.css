@@ -7078,3 +7078,5 @@ footer {
 .month-picker .arrow-next:after { right: 0; border-left: .3em solid; border-bottom: .3em solid transparent; border-top: .3em solid transparent; }
 
 .total { border-top: 3px solid var(--primary); padding: 15px 0; font-weight: bold; }
+
+.no-background { background: transparent; }
