@@ -7110,3 +7110,12 @@ ol.custom-ordered-list li::before {
   line-height: 30px;
 }
 ol.custom-ordered-list li .title { font-size: 20px; font-weight: bold; }
+
+.dropdown-menu-item { padding: 5px 25px 5px 0; position: relative; display: block; font-weight: bold; }
+.dropdown-menu-item:after { position: absolute; right: 0; margin-left: 10px; top: 50%; transform: translateY(-50%); content: ''; width: 16px; height: 12px; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='12' viewBox='-1.305 -0.312 16 12'%3E%3Cpath fill='%23007BC7' d='M9.333 11.275L7.654 9.689l2.718-2.992-.598.115H0V4.513h9.774l.598.091L7.6 1.587 9.278 0l5.117 5.662z'/%3E%3C/svg%3E") 0 0 no-repeat; }
+@media (min-width: 768px) {
+  .dropdown-menu-item:after { right: auto; }
+}
+
+.footer-lang-switch { background: var(--primary); padding: 25px 15px; }
+.footer-lang-switch a, .footer-lang-switch a:hover { color: var(--white); text-decoration: underline; }
