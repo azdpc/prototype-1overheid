@@ -398,7 +398,6 @@
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
                             <!-- EINDE select country -->
                             <!-- START type of documents -->
@@ -542,14 +541,14 @@
                                                     November 2019
                                                 </button>
                                                 <div class="dropdown-menu" aria-labelledby="dropdown">
-                                                    <button class="dropdown-item" type="button">November 2019</button>
-                                                    <button class="dropdown-item" type="button">December 2019</button>
-                                                    <button class="dropdown-item" type="button">January 2020</button>
+                                                    <button class="dropdown-item calendar-month" type="button" data-month="november">November 2019</button>
+                                                    <button class="dropdown-item calendar-month" type="button" data-month="december">December 2019</button>
+                                                    <button class="dropdown-item calendar-month" type="button" data-month="january">January 2020</button>
                                                 </div>
                                             </div>
                                             <span class="arrow arrow-next"></span>
                                         </div>
-                                        <div class="calendar-container mb-3">
+                                        <div class="calendar-container mb-3" data-month="november">
                                             <div class="calendar-head d-inline-flex flex-row">
                                                 <div class="item">MON</div>
                                                 <div class="item">TUE</div>
@@ -602,6 +601,127 @@
                                                 <div class="item available" data-date="11/28/2019"><span>28</span></div>
                                                 <div class="item"><span>29</span></div>
                                                 <div class="item"><span>30</span></div>
+                                                <div class="item"><span></span></div>
+                                            </div>
+                                        </div>
+                                        <div class="calendar-container mb-3" data-month="december" style="display: none;">
+                                            <div class="calendar-head d-inline-flex flex-row">
+                                                <div class="item">MON</div>
+                                                <div class="item">TUE</div>
+                                                <div class="item">WED</div>
+                                                <div class="item">THU</div>
+                                                <div class="item">FRI</div>
+                                                <div class="item">SAT</div>
+                                                <div class="item">SUN</div>
+                                            </div>
+                                            <div class="day-container mb-2">
+                                                <div class="item"></div>
+                                                <div class="item"></div>
+                                                <div class="item"></div>
+                                                <div class="item"></div>
+                                                <div class="item"></div>
+                                                <div class="item"></div>
+                                                <div class="item"><span>1</span></div>
+                                            </div>
+                                            <div class="day-container mb-2">
+                                                <div class="item available" data-date="12/02/2019"><span>2</span></div>
+                                                <div class="item"><span>3</span></div>
+                                                <div class="item available" data-date="12/04/2019"><span>4</span></div>
+                                                <div class="item available" data-date="12/05/2019"><span>5</span></div>
+                                                <div class="item"><span>6</span></div>
+                                                <div class="item"><span>7</span></div>
+                                                <div class="item"><span>8</span></div>
+                                            </div>
+                                            <div class="day-container mb-2">
+                                                <div class="item available" data-date="12/09/2019"><span>9</span></div>
+                                                <div class="item"><span>10</span></div>
+                                                <div class="item available" data-date="12/11/2019"><span>11</span></div>
+                                                <div class="item available" data-date="12/12/2019"><span>12</span></div>
+                                                <div class="item"><span>13</span></div>
+                                                <div class="item"><span>14</span></div>
+                                                <div class="item"><span>15</span></div>
+                                            </div>
+                                            <div class="day-container mb-2">
+                                                <div class="item available" data-date="12/16/2019"><span>16</span></div>
+                                                <div class="item"><span>17</span></div>
+                                                <div class="item available" data-date="12/18/2019"><span>18</span></div>
+                                                <div class="item available" data-date="12/19/2019"><span>19</span></div>
+                                                <div class="item"><span>20</span></div>
+                                                <div class="item"><span>21</span></div>
+                                                <div class="item"><span>22</span></div>
+                                            </div>
+                                            <div class="day-container mb-2">
+                                                <div class="item available" data-date="12/23/2019"><span>23</span></div>
+                                                <div class="item available" data-date="12/24/2019"><span>24</span></div>
+                                                <div class="item"><span>25</span></div>
+                                                <div class="item"><span>26</span></div>
+                                                <div class="item"><span>27</span></div>
+                                                <div class="item"><span>28</span></div>
+                                                <div class="item"><span>29</span></div>
+                                            </div>
+                                            <div class="day-container mb-2">
+                                                <div class="item"><span>30</span></div>
+                                                <div class="item"><span>31</span></div>
+                                                <div class="item"><span></span></div>
+                                                <div class="item"><span></span></div>
+                                                <div class="item"><span></span></div>
+                                                <div class="item"><span></span></div>
+                                                <div class="item"><span></span></div>
+                                            </div>
+                                        </div>
+                                        <div class="calendar-container mb-3" data-month="january" style="display: none;">
+                                            <div class="calendar-head d-inline-flex flex-row">
+                                                <div class="item">MON</div>
+                                                <div class="item">TUE</div>
+                                                <div class="item">WED</div>
+                                                <div class="item">THU</div>
+                                                <div class="item">FRI</div>
+                                                <div class="item">SAT</div>
+                                                <div class="item">SUN</div>
+                                            </div>
+                                            <div class="day-container mb-2">
+                                                <div class="item"><span></span></div>
+                                                <div class="item"><span></span></div>
+                                                <div class="item"><span>1</span></div>
+                                                <div class="item"><span>2</span></div>
+                                                <div class="item"><span>3</span></div>
+                                                <div class="item"><span>4</span></div>
+                                                <div class="item"><span>5</span></div>
+                                            </div>
+                                            <div class="day-container mb-2">
+                                                <div class="item available" data-date="01/06/2020"><span>6</span></div>
+                                                <div class="item"><span>7</span></div>
+                                                <div class="item available" data-date="01/08/2020"><span>8</span></div>
+                                                <div class="item available" data-date="01/09/2020"><span>9</span></div>
+                                                <div class="item"><span>10</span></div>
+                                                <div class="item"><span>11</span></div>
+                                                <div class="item"><span>12</span></div>
+                                            </div>
+                                            <div class="day-container mb-2">
+                                                <div class="item available" data-date="01/13/2020"><span>13</span></div>
+                                                <div class="item"><span>14</span></div>
+                                                <div class="item available" data-date="01/15/2020"><span>15</span></div>
+                                                <div class="item available" data-date="01/06/2020"><span>16</span></div>
+                                                <div class="item"><span>17</span></div>
+                                                <div class="item"><span>18</span></div>
+                                                <div class="item"><span>19</span></div>
+                                            </div>
+                                            <div class="day-container mb-2">
+                                                <div class="item available" data-date="01/20/2020"><span>20</span></div>
+                                                <div class="item"><span>21</span></div>
+                                                <div class="item available" data-date="01/22/2020"><span>22</span></div>
+                                                <div class="item available" data-date="01/23/2020"><span>23</span></div>
+                                                <div class="item"><span>24</span></div>
+                                                <div class="item"><span>25</span></div>
+                                                <div class="item"><span>26</span></div>
+                                            </div>
+                                            <div class="day-container mb-2">
+                                                <div class="item available" data-date="01/27/2020"><span>27</span></div>
+                                                <div class="item"><span>28</span></div>
+                                                <div class="item available" data-date="01/29/2020"><span>29</span></div>
+                                                <div class="item available" data-date="01/30/2020"><span>30</span></div>
+                                                <div class="item"><span>31</span></div>
+                                                <div class="item"><span></span></div>
                                                 <div class="item"><span></span></div>
                                             </div>
                                         </div>
@@ -820,63 +940,6 @@
     <script src="js/main.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
         integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
-    <script>
-        $(function () {
-            let countries = ["Afghanistan", "Albania", "Algeria", "Andorra", "Angola", "Anguilla",
-                "Antigua &amp; Barbuda", "Argentina", "Armenia", "Aruba", "Australia", "Austria",
-                "Azerbaijan", "Bahamas", "Bahrain", "Bangladesh", "Barbados", "Belarus", "Belgium",
-                "Belize", "Benin", "Bermuda", "Bhutan", "Bolivia", "Bosnia &amp; Herzegovina", "Botswana",
-                "Brazil", "British Virgin Islands", "Brunei", "Bulgaria", "Burkina Faso", "Burundi",
-                "Cambodia", "Cameroon", "Cape Verde", "Cayman Islands", "Chad", "Chile", "China",
-                "Colombia", "Congo", "Cook Islands", "Costa Rica", "Cote D Ivoire", "Croatia",
-                "Cruise Ship", "Cuba", "Cyprus", "Czech Republic", "Denmark", "Djibouti", "Dominica",
-                "Dominican Republic", "Ecuador", "Egypt", "El Salvador", "Equatorial Guinea", "Estonia",
-                "Ethiopia", "Falkland Islands", "Faroe Islands", "Fiji", "Finland", "France",
-                "French Polynesia", "French West Indies", "Gabon", "Gambia", "Georgia", "Germany", "Ghana",
-                "Gibraltar", "Greece", "Greenland", "Grenada", "Guam", "Guatemala", "Guernsey", "Guinea",
-                "Guinea Bissau", "Guyana", "Haiti", "Honduras", "Hong Kong", "Hungary", "Iceland", "India",
-                "Indonesia", "Iran", "Iraq", "Ireland", "Isle of Man", "Israel", "Italy", "Jamaica",
-                "Japan", "Jersey", "Jordan", "Kazakhstan", "Kenya", "Kuwait", "Kyrgyz Republic", "Laos",
-                "Latvia", "Lebanon", "Lesotho", "Liberia", "Libya", "Liechtenstein", "Lithuania",
-                "Luxembourg", "Macau", "Macedonia", "Madagascar", "Malawi", "Malaysia", "Maldives", "Mali",
-                "Malta", "Mauritania", "Mauritius", "Mexico", "Moldova", "Monaco", "Mongolia", "Montenegro",
-                "Montserrat", "Morocco", "Mozambique", "Namibia", "Nepal", "Netherlands",
-                "Netherlands Antilles", "New Caledonia", "New Zealand", "Nicaragua", "Niger", "Nigeria",
-                "Norway", "Oman", "Pakistan", "Palestine", "Panama", "Papua New Guinea", "Paraguay", "Peru",
-                "Philippines", "Poland", "Portugal", "Puerto Rico", "Qatar", "Reunion", "Romania", "Russia",
-                "Rwanda", "Saint Pierre &amp; Miquelon", "Samoa", "San Marino", "Satellite", "Saudi Arabia",
-                "Senegal", "Serbia", "Seychelles", "Sierra Leone", "Singapore", "Slovakia", "Slovenia",
-                "South Africa", "South Korea", "Spain", "Sri Lanka", "St Kitts &amp; Nevis", "St Lucia",
-                "St Vincent", "St. Lucia", "Sudan", "Suriname", "Swaziland", "Sweden", "Switzerland",
-                "Syria", "Taiwan", "Tajikistan", "Tanzania", "Thailand", "Timor L'Este", "Togo", "Tonga",
-                "Trinidad &amp; Tobago", "Tunisia", "Turkey", "Turkmenistan", "Turks &amp; Caicos",
-                "Uganda", "Ukraine", "United Arab Emirates", "United Kingdom", "Uruguay", "Uzbekistan",
-                "Venezuela", "Vietnam", "Virgin Islands (US)", "Yemen", "Zambia", "Zimbabwe"
-            ];
-            let boldSearchSuggestion = "<span class='ui-autocomplete-term'>%s</span>";
-            $("#countries").autocomplete({
-                source: countries,
-                minLength: 2,
-                open: function (e, ui) {
-                    let autocompleteData = $(this).data('uiAutocomplete');
-                    let styledTerm = boldSearchSuggestion.replace('%s', autocompleteData.term);
-
-                    autocompleteData
-                        .menu
-                        .element
-                        .find('div')
-                        .each(function () {
-                            let $this = $(this);
-                            let regex = new RegExp(autocompleteData.term, "gi");
-
-                            $this.html($this.text().replace(regex, function (matched) {
-                                return boldSearchSuggestion.replace('%s', matched);
-                            }));
-                        });
-                }
-            });
-        });
-    </script>
 </body>
 
 </html>

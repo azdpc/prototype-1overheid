@@ -391,24 +391,46 @@ function toggleButton() {
 //
 		
 	});
+}
 
+function selectMonth() {
+    $('.calendar-month').on('click tap', function (e) {
+        e.preventDefault();
+
+        let that = $(this);
+        let thisMonth = that.attr('data-month');
+        let $calendarContainer = $('.calendar-container');
+
+        that.parents('.month-picker').find('#dropdown').text(that.text());
+        
+        $calendarContainer.hide();
+
+        $calendarContainer.each(function () {
+            let $this = $(this);
+
+            if ($this.data('month') === thisMonth) {
+                $this.fadeIn('slow');
+            }
+        });
+    });
 }
 
 function selectDay() {
     let $calendarContainer = $('.calendar-container');
-    $calendarContainer.find('.item.available').on('click tap', function (){
-        const $this = $(this);
+    $calendarContainer.find('.item.available').on('click tap', function () {
+        let $this = $(this);
         let dateString = $this.data('date');
         let dateObject = new Date(dateString);
         let datePicked = dateObject.toLocaleString('en', {
-            'weekday': 'long',
+            'weekday': 'short',
             'day': '2-digit',
-            'month': 'long'
+            'month': 'long',
+            'year': 'numeric'
         });
 
         $calendarContainer.find('.active').removeClass('active');
         $this.addClass('active');
-        $('.date-block').show(500);
+        $('.date-block').fadeIn('slow');
         $('.date-picked').text(datePicked);
     });
 }
@@ -420,6 +442,62 @@ function changeTitle() {
     });
 }
 
+function autocompleteCountries() {
+    let countries = ["Afghanistan", "Albania", "Algeria", "Andorra", "Angola", "Anguilla",
+        "Antigua &amp; Barbuda", "Argentina", "Armenia", "Aruba", "Australia", "Austria",
+        "Azerbaijan", "Bahamas", "Bahrain", "Bangladesh", "Barbados", "Belarus", "Belgium",
+        "Belize", "Benin", "Bermuda", "Bhutan", "Bolivia", "Bosnia &amp; Herzegovina", "Botswana",
+        "Brazil", "British Virgin Islands", "Brunei", "Bulgaria", "Burkina Faso", "Burundi",
+        "Cambodia", "Cameroon", "Cape Verde", "Cayman Islands", "Chad", "Chile", "China",
+        "Colombia", "Congo", "Cook Islands", "Costa Rica", "Cote D Ivoire", "Croatia",
+        "Cruise Ship", "Cuba", "Cyprus", "Czech Republic", "Denmark", "Djibouti", "Dominica",
+        "Dominican Republic", "Ecuador", "Egypt", "El Salvador", "Equatorial Guinea", "Estonia",
+        "Ethiopia", "Falkland Islands", "Faroe Islands", "Fiji", "Finland", "France",
+        "French Polynesia", "French West Indies", "Gabon", "Gambia", "Georgia", "Germany", "Ghana",
+        "Gibraltar", "Greece", "Greenland", "Grenada", "Guam", "Guatemala", "Guernsey", "Guinea",
+        "Guinea Bissau", "Guyana", "Haiti", "Honduras", "Hong Kong", "Hungary", "Iceland", "India",
+        "Indonesia", "Iran", "Iraq", "Ireland", "Isle of Man", "Israel", "Italy", "Jamaica",
+        "Japan", "Jersey", "Jordan", "Kazakhstan", "Kenya", "Kuwait", "Kyrgyz Republic", "Laos",
+        "Latvia", "Lebanon", "Lesotho", "Liberia", "Libya", "Liechtenstein", "Lithuania",
+        "Luxembourg", "Macau", "Macedonia", "Madagascar", "Malawi", "Malaysia", "Maldives", "Mali",
+        "Malta", "Mauritania", "Mauritius", "Mexico", "Moldova", "Monaco", "Mongolia", "Montenegro",
+        "Montserrat", "Morocco", "Mozambique", "Namibia", "Nepal", "Netherlands",
+        "Netherlands Antilles", "New Caledonia", "New Zealand", "Nicaragua", "Niger", "Nigeria",
+        "Norway", "Oman", "Pakistan", "Palestine", "Panama", "Papua New Guinea", "Paraguay", "Peru",
+        "Philippines", "Poland", "Portugal", "Puerto Rico", "Qatar", "Reunion", "Romania", "Russia",
+        "Rwanda", "Saint Pierre &amp; Miquelon", "Samoa", "San Marino", "Satellite", "Saudi Arabia",
+        "Senegal", "Serbia", "Seychelles", "Sierra Leone", "Singapore", "Slovakia", "Slovenia",
+        "South Africa", "South Korea", "Spain", "Sri Lanka", "St Kitts &amp; Nevis", "St Lucia",
+        "St Vincent", "St. Lucia", "Sudan", "Suriname", "Swaziland", "Sweden", "Switzerland",
+        "Syria", "Taiwan", "Tajikistan", "Tanzania", "Thailand", "Timor L'Este", "Togo", "Tonga",
+        "Trinidad &amp; Tobago", "Tunisia", "Turkey", "Turkmenistan", "Turks &amp; Caicos",
+        "Uganda", "Ukraine", "United Arab Emirates", "United Kingdom", "Uruguay", "Uzbekistan",
+        "Venezuela", "Vietnam", "Virgin Islands (US)", "Yemen", "Zambia", "Zimbabwe"
+    ];
+    let boldSearchSuggestion = "<span class='ui-autocomplete-term'>%s</span>";
+    $("#countries").autocomplete({
+        source: countries,
+        minLength: 2,
+        open: function (e, ui) {
+            let autocompleteData = $(this).data('uiAutocomplete');
+            let styledTerm = boldSearchSuggestion.replace('%s', autocompleteData.term);
+
+            autocompleteData
+                .menu
+                .element
+                .find('div')
+                .each(function () {
+                    let $this = $(this);
+                    let regex = new RegExp(autocompleteData.term, "gi");
+
+                    $this.html($this.text().replace(regex, function (matched) {
+                        return boldSearchSuggestion.replace('%s', matched);
+                    }));
+                });
+        }
+    });
+};
+
 $(function () {
     includeHTML();
     handleLogin();
@@ -429,6 +507,8 @@ $(function () {
     setIframeStatus();
     handleHelpTexts();
     toggleButton();
+    selectMonth();
     selectDay();
     changeTitle();
+    autocompleteCountries();
 });
