@@ -7082,6 +7082,7 @@ footer {
 .no-background { background: transparent; }
 .ui-autocomplete-term { font-weight: bold; color: var(--primary); }
 
+.grouped.grouped-light { background-color: #cfeaf7; }
 ol.custom-ordered-list {
   list-style: none;
   counter-reset: my-counter;
