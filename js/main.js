@@ -475,6 +475,11 @@ function autocompleteCountries() {
         "Venezuela", "Vietnam", "Virgin Islands (US)", "Yemen", "Zambia", "Zimbabwe"
     ];
     let boldSearchSuggestion = "<span class='ui-autocomplete-term'>%s</span>";
+    
+    if ($("#countries").length === 0) {
+        return;
+    }
+
     $("#countries").autocomplete({
         source: countries,
         minLength: 2,
