@@ -7044,8 +7044,8 @@ footer {
 
 
 .callout {
-  padding: 15px;
-  background: #fff;
+  padding: 5px 15px;
+  background: transparent;
   border-radius: 4px;
   border-left: 5px transparent solid;
 }

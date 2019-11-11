@@ -683,6 +683,12 @@ main.government.light {
   padding: 0;
   margin: 1em 0 3em;
 }
+.questions .personal-information .form-control {
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  padding: 0.375rem 0.75rem;
+  margin: 0;
+}
 .questions .btn-link {
   background-color: transparent;
   color: var(--vireo-blue-clear);
@@ -718,9 +724,9 @@ main.government.light {
 .grouped.aft-space {
   margin-bottom: 10px;
 }
-.grouped label + div {
+/* .grouped label + div {
   display: none;
-}
+} */
 .grouped input[type="radio"]:checked + label + div {
   display: block;
 }
