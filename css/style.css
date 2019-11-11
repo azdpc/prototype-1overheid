@@ -7119,3 +7119,6 @@ ol.custom-ordered-list li .title { font-size: 20px; font-weight: bold; }
 
 .footer-lang-switch { background: var(--primary); padding: 25px 15px; }
 .footer-lang-switch a, .footer-lang-switch a:hover { color: var(--white); text-decoration: underline; }
+
+.ui-state-active,
+.ui-widget-content .ui-state-active { background: var(--vireo-blue-misty); border-color: #c5c5c5; color: #333; }

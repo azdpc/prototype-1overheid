@@ -4,7 +4,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Passport renewing | 1overheid</title>
+    <title>Visa and immigration | 1overheid</title>
     <meta name="description" content="Prototype voor 1overheid: informatie, diensten, beleid en bestuur">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
@@ -390,7 +390,7 @@
                                     <div class="form-row">
                                         <div class="form-control">
                                             <button type="button"
-                                                    class="btn btn-link btn-prev-question mr-2">Previous</button>
+                                                class="btn btn-link btn-prev-question mr-2">Previous</button>
                                             <div class="button-wrapper button-next">
                                                 <button type="submit"
                                                     class="btn btn-primary btn-next-question">Next</button>
@@ -414,50 +414,141 @@
 
                                         <div class="row">
                                             <div class="col-sm-6">
-                                                <div class="custom-control custom-checkbox mb-3">
-                                                    <input class="custom-control-input" type="checkbox" name="checkbox"
-                                                        id="Q1" value="Q1">
-                                                    <label class="custom-control-label" for="Q1">Birth
-                                                        certificate</label>
+                                                <div class="form-row align-items-center mb-3">
+                                                    <div class="col">
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input class="custom-control-input" type="checkbox"
+                                                                name="checkbox" id="Q1" value="Q1">
+                                                            <label class="custom-control-label" for="Q1">Birth
+                                                                certificate</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-auto my-1">
+                                                        <label class="mr-sm-2 sr-only" for="amount1">Amount</label>
+                                                        <select class="custom-select custom-select-sm mr-sm-2"
+                                                            id="amount1">
+                                                            <option selected>1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                            <option value="4">4</option>
+                                                            <option value="5">5</option>
+                                                        </select>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="col-sm-6">
-                                                <div class="custom-control custom-checkbox mb-3">
-                                                    <input class="custom-control-input" type="checkbox" name="checkbox"
-                                                        id="Q2" value="Q2">
-                                                    <label class="custom-control-label" for="Q2">Marriage
-                                                        certificate</label>
+                                                <div class="form-row align-items-center mb-3">
+                                                    <div class="col">
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input class="custom-control-input" type="checkbox"
+                                                                name="checkbox" id="Q2" value="Q2">
+                                                            <label class="custom-control-label" for="Q2">Marriage
+                                                                certificate</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-auto my-1">
+                                                        <label class="mr-sm-2 sr-only" for="amount2">Amount</label>
+                                                        <select class="custom-select custom-select-sm mr-sm-2"
+                                                            id="amount2">
+                                                            <option selected>1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                            <option value="4">4</option>
+                                                            <option value="5">5</option>
+                                                        </select>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="col-sm-6">
-                                                <div class="custom-control custom-checkbox mb-3">
-                                                    <input class="custom-control-input" type="checkbox" name="checkbox"
-                                                        id="Q3" value="Q3">
-                                                    <label class="custom-control-label" for="Q3">Death
-                                                        certificate</label>
+                                                <div class="form-row align-items-center mb-3">
+                                                    <div class="col">
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input class="custom-control-input" type="checkbox"
+                                                                name="checkbox" id="Q3" value="Q3">
+                                                            <label class="custom-control-label" for="Q3">Death
+                                                                certificate</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-auto my-1">
+                                                        <label class="mr-sm-2 sr-only" for="amount3">Amount</label>
+                                                        <select class="custom-select custom-select-sm mr-sm-2"
+                                                            id="amount3">
+                                                            <option selected>1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                            <option value="4">4</option>
+                                                            <option value="5">5</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-row align-items-center mb-3">
+                                                    <div class="col">
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input class="custom-control-input" type="checkbox"
+                                                                name="checkbox" id="Q4" value="Q4">
+                                                            <label class="custom-control-label" for="Q4">Diploma</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-auto my-1">
+                                                        <label class="mr-sm-2 sr-only" for="amount4">Amount</label>
+                                                        <select class="custom-select custom-select-sm mr-sm-2"
+                                                            id="amount4">
+                                                            <option selected>1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                            <option value="4">4</option>
+                                                            <option value="5">5</option>
+                                                        </select>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="col-sm-6">
-                                                <div class="custom-control custom-checkbox mb-3">
-                                                    <input class="custom-control-input" type="checkbox" name="checkbox"
-                                                        id="Q4" value="Q4">
-                                                    <label class="custom-control-label" for="Q4">Lorem ipsum
-                                                        dolor</label>
+                                                <div class="form-row align-items-center mb-3">
+                                                    <div class="col">
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input class="custom-control-input" type="checkbox"
+                                                                name="checkbox" id="Q5" value="Q5">
+                                                            <label class="custom-control-label" for="Q5">Lorem
+                                                                ipsum</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-auto my-1">
+                                                        <label class="mr-sm-2 sr-only" for="amount5">Amount</label>
+                                                        <select class="custom-select custom-select-sm mr-sm-2"
+                                                            id="amount5">
+                                                            <option selected>1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                            <option value="4">4</option>
+                                                            <option value="5">5</option>
+                                                        </select>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="col-sm-6">
-                                                <div class="custom-control custom-checkbox mb-3">
-                                                    <input class="custom-control-input" type="checkbox" name="checkbox"
-                                                        id="Q5" value="Q5">
-                                                    <label class="custom-control-label" for="Q5">Lorem ipsum</label>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6">
-                                                <div class="custom-control custom-checkbox mb-3">
-                                                    <input class="custom-control-input" type="checkbox" name="checkbox"
-                                                        id="Q6" value="Q6">
-                                                    <label class="custom-control-label" for="Q6">Lorem ipsum dolor
-                                                        sit</label>
+                                                <div class="form-row align-items-center mb-3">
+                                                    <div class="col">
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input class="custom-control-input" type="checkbox"
+                                                                name="checkbox" id="Q5" value="Q5">
+                                                            <label class="custom-control-label" for="Q5">Lorem
+                                                                ipsum</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-auto my-1">
+                                                        <label class="mr-sm-2 sr-only" for="amount5">Amount</label>
+                                                        <select class="custom-select custom-select-sm mr-sm-2"
+                                                            id="amount5">
+                                                            <option selected>1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                            <option value="4">4</option>
+                                                            <option value="5">5</option>
+                                                        </select>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -541,9 +632,12 @@
                                                     November 2019
                                                 </button>
                                                 <div class="dropdown-menu" aria-labelledby="dropdown">
-                                                    <button class="dropdown-item calendar-month" type="button" data-month="november">November 2019</button>
-                                                    <button class="dropdown-item calendar-month" type="button" data-month="december">December 2019</button>
-                                                    <button class="dropdown-item calendar-month" type="button" data-month="january">January 2020</button>
+                                                    <button class="dropdown-item calendar-month" type="button"
+                                                        data-month="november">November 2019</button>
+                                                    <button class="dropdown-item calendar-month" type="button"
+                                                        data-month="december">December 2019</button>
+                                                    <button class="dropdown-item calendar-month" type="button"
+                                                        data-month="january">January 2020</button>
                                                 </div>
                                             </div>
                                             <span class="arrow arrow-next"></span>
@@ -604,7 +698,8 @@
                                                 <div class="item"><span></span></div>
                                             </div>
                                         </div>
-                                        <div class="calendar-container mb-3" data-month="december" style="display: none;">
+                                        <div class="calendar-container mb-3" data-month="december"
+                                            style="display: none;">
                                             <div class="calendar-head d-inline-flex flex-row">
                                                 <div class="item">MON</div>
                                                 <div class="item">TUE</div>
@@ -669,7 +764,8 @@
                                                 <div class="item"><span></span></div>
                                             </div>
                                         </div>
-                                        <div class="calendar-container mb-3" data-month="january" style="display: none;">
+                                        <div class="calendar-container mb-3" data-month="january"
+                                            style="display: none;">
                                             <div class="calendar-head d-inline-flex flex-row">
                                                 <div class="item">MON</div>
                                                 <div class="item">TUE</div>
