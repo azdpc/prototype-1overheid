@@ -49,8 +49,6 @@ function includeHTML() {
 };
 
 function handleLogin(){
-    console.log(sessionStorage)
-
     if (sessionStorage.loginStatus === "loggedIn"){
         login();
     }
@@ -376,9 +374,7 @@ function toggleButton() {
 		thisButton.on('click', function(e) {
 			e.preventDefault();
 			var thisButton = $(this);
-			console.log(thisButton.attr('aria-controls'));
 			toggleEl = $('#' + thisButton.attr('aria-controls'));
-
 			toggleEl.toggleClass('is-expanded');
 
 		});
