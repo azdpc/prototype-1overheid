@@ -37,6 +37,7 @@ Op verschillende momenten tijdens de realisatie van het prototype vond gebruiker
 Het ‘Prototype 1Overheid’ is gelieerd aan het programma ‘Mens Centraal’ van het ministerie van BZK.
 
 ## Versies
+- v1.3 - Prototype 1Overheid en Loket Buitenland, DPC en Ministerie van Buitenlandse Zaken, Den Haag, 14 november 2019 
 - v1.2 - Prototype 1Overheid, DPC Den Haag, 18 maart 2019, zie https://azdpc.github.io/prototype-1overheid/
 - v1.1 - Prototype 'Vireo', DPC Den Haag, 12 november 2018
 - v1.0 - Prototype 'Fieldlab Prototype 1 overheid', Zwolle 28 september 2018, https://github.com/RDBreed/fieldlab, zie https://rdbreed.github.io/fieldlab/
