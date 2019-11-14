@@ -493,6 +493,18 @@ function autocompleteCountries() {
     });
 };
 
+function showHideAmountDocuments() {
+    const $selectDocumentBlock = $('.select-documents-block');
+    const $input = $selectDocumentBlock.find('input[type="checkbox"]');
+
+    $input.on('click tap', function () {
+        const $this = $(this);
+        const id = $this.attr('id');
+
+        $this.prop("checked") ? $selectDocumentBlock.find('.'+ id +'').show() : $selectDocumentBlock.find('.'+ id +'').hide();
+    });
+}
+
 $(function () {
     includeHTML();
     handleLogin();
@@ -506,4 +518,5 @@ $(function () {
     selectDay();
     changeTitle();
     autocompleteCountries();
+    showHideAmountDocuments();
 });

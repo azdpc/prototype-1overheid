@@ -10312,3 +10312,7 @@ ol.custom-ordered-list li .title {
   border-color: #c5c5c5;
   color: #333;
 }
+
+.select-documents-block .form-row {
+  height: 39px;
+}
