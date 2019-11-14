@@ -502,7 +502,7 @@ function showHideAmountDocuments() {
         const currentClass = $this.attr('id');
         const $selectTarget = $selectDocumentBlock.find('.'+ currentClass);
 
-        $this.prop("checked") ? $selectTarget.show() : $selectTarget.hide();
+        $selectTarget.toggle();
     });
 }
 
