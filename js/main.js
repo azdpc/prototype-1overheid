@@ -40,7 +40,7 @@ function includeHTML() {
             elmnt.removeAttribute("azdpc-include-html");
             includeHTML();
             }
-        }      
+        }
         xhttp.open("GET", file, true);
         xhttp.send();
         return;
@@ -49,13 +49,14 @@ function includeHTML() {
 };
 
 function handleLogin(){
+    console.log(sessionStorage)
 
     if (sessionStorage.loginStatus === "loggedIn"){
         login();
     }
-    if (sessionStorage.loginStatus === "loggedOut"){
-        logout();
-    }
+    // if (sessionStorage.loginStatus === "loggedOut"){
+    //     logout();
+    // }
 
     $('#loginBtn').on('click', function(e){
         e.preventDefault();
@@ -64,15 +65,7 @@ function handleLogin(){
 
     $('.logoutBtn').on('click', function(e){
         e.preventDefault();
-        console.log('dude')
         logout();
-
-        var $qform = $('form.questions');
-        var $questions = $qform.find('.question');
-        var $start = $qform.find('.start');
-        $start.addClass('active');
-        $questions.removeClass('active');
-
 
         if($(this).hasClass('to-home')) {
         	window.location.href = 'home.html';
@@ -99,7 +92,7 @@ function logout(){
     sessionStorage.prefilStatus = "notPrefilled";
   	$('html').trigger( "logout" );
 
-	//location.reload();
+	location.reload();
 }
 
 
@@ -146,8 +139,9 @@ function handleModuleForm(){
         $('#loginAndStartBtn').on('click', function(e){
             e.preventDefault();
             login();
-            currQNr = 0;
+            currQNr++;
             $start.removeClass('active');
+            $currentQuestion.removeClass('active');
             $currentQuestion = $($questions[currQNr]);
             $currentQuestion.addClass('active');
 //             resetBtnStates();
@@ -175,11 +169,11 @@ function handleModuleForm(){
 				setTimeout(function() {
 					showNextQuestion();
 				}, 2000);
-				
+
             } else {
-            	showNextQuestion();	
+            	showNextQuestion();
             }
-            
+
         });
 
         $('.btn-prev-question').on('click', function(e){
@@ -256,7 +250,7 @@ function handleModuleForm(){
             $currentQuestion.addClass('active');
 
             scrollInView($currentQuestion);
-            
+
 //             resetBtnStates();
 //             validateInput();
 //             setNextPrevBtns();
@@ -279,7 +273,7 @@ function handleModuleForm(){
     function scrollInView(elem) {
         $([document.documentElement, document.body]).animate({
                 scrollTop: $(elem).offset().top - 80
-        }, 500);   
+        }, 500);
     }
 
     function resetBtnStates(){
@@ -364,7 +358,7 @@ function handleHelpTexts() {
 			if (toggleEl.hasClass('collapsed')) {
 				toggleEl.next().show();
 			} else {
-				toggleEl.next().hide();				
+				toggleEl.next().hide();
 			}
 			toggleEl.toggleClass('collapsed');
 		}).next().hide();
@@ -378,18 +372,18 @@ function toggleButton() {
 	$('.toggle-button').each( function() {
 		var thisButton = $(this);
 		//console.log(thisButton);
-		
+
 		thisButton.on('click', function(e) {
 			e.preventDefault();
 			var thisButton = $(this);
 			console.log(thisButton.attr('aria-controls'));
 			toggleEl = $('#' + thisButton.attr('aria-controls'));
-			
+
 			toggleEl.toggleClass('is-expanded');
 
 		});
 //
-		
+
 	});
 }
 
@@ -402,7 +396,7 @@ function selectMonth() {
         let $calendarContainer = $('.calendar-container');
 
         that.parents('.month-picker').find('#dropdown').text(that.text());
-        
+
         $calendarContainer.hide();
 
         $calendarContainer.each(function () {
@@ -475,7 +469,7 @@ function autocompleteCountries() {
         "Venezuela", "Vietnam", "Virgin Islands (US)", "Yemen", "Zambia", "Zimbabwe"
     ];
     let boldSearchSuggestion = "<span class='ui-autocomplete-term'>%s</span>";
-    
+
     if ($("#countries").length === 0) {
         return;
     }

@@ -63,26 +63,6 @@
                                     data-target="#loginForm">
                                     <span>inloggen</span>
                                 </button>
-
-                                <!--
-                            <button class="dropdown-toggle" type="button" id="dropdownAccountButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span>inloggen</span>
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownAccountButton">
-                                <div class="container-fluid">
-
-<div class="row">
-    <div class="col-lg-10 offset-lg-1 col-md-12">
-                                    <p>
-                                        Lorem ipsum account.
-                                    </p>
-    </div>
-</div>
-
-
-                                </div>
-                            </div>
--->
                             </div>
                         </div>
 
@@ -103,7 +83,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="menu-wrapper">
                             <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
                                 aria-haspopup="true" aria-expanded="false">
@@ -402,9 +381,6 @@
             </div>
         </div>
     </div>
-
-
-
     <main role="main" class="actionable">
         <div class="container-fluid">
             <div class="row">
@@ -414,16 +390,10 @@
                     </ul>
                 </div>
             </div>
-
             <div class="row">
                 <div class="col-lg-10 offset-lg-1 col-md-12">
                     <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-12">
-                                <h1>Reizen</h1>
-                            </div>
-                        </div>
-
+                        <h1>Reizen</h1>
                         <div class="toggleSet toggleMainNav">
                             <div class="row">
                                 <div class="col-md-4">
@@ -434,21 +404,20 @@
                                             <li><a href="#een-link">Overige reisadviezen</a></li>
                                         </ul>
                                     </div>
-
-                                    <h2 class="toggleTopic toggle-next">Paspoort en ID-kaart</h2>
+                                    <h2 class="toggleTopic toggle-next">Reisdocumenten</h2>
                                     <div class="toggleContent">
                                         <ul>
                                             <li><a href="paspoort.html">Paspoort en ID-kaart</a></li>
+                                            <li><a href="#">Wat kost een reisdocument?</a></li>
+                                            <li><a href="#">Voor welke landen is mijn reisdocument geldig?</a></li>
                                         </ul>
                                     </div>
-
                                     <h2 class="toggleTopic toggle-next">Contactgegevens op reis</h2>
                                     <div class="toggleContent">
                                         <ul>
                                             <li><a href="#een-link">Contactpersoon in noodsituaties</a></li>
                                         </ul>
                                     </div>
-
                                     <h2 class="toggleTopic toggle-next">Reizen buiten Europa</h2>
                                     <div class="toggleContent">
                                         <ul>
@@ -458,7 +427,6 @@
                                         </ul>
                                     </div>
                                 </div>
-
                                 <div class="col-md-4">
                                     <h2 class="toggleTopic toggle-next">Reizen met kinderen</h2>
                                     <div class="toggleContent">
@@ -467,7 +435,6 @@
                                             <li><a href="#een-link">Toestemming voor 1 ouder</a></li>
                                         </ul>
                                     </div>
-
                                     <h2 class="toggleTopic toggle-next">Hulp in het buitenland</h2>
                                     <div class="toggleContent">
                                         <ul>
@@ -476,7 +443,6 @@
                                             <li><a href="#een-link">Gezondheidszorg</a></li>
                                         </ul>
                                     </div>
-
                                     <h2 class="toggleTopic toggle-next">Reizen binnen Europa</h2>
                                     <div class="toggleContent">
                                         <ul>
@@ -484,31 +450,14 @@
                                             <li><a href="#een-link">Reizen naar Groot Brittannie</a></li>
                                         </ul>
                                     </div>
-
-
                                 </div>
                             </div>
-                        </div>
-                    </div>
-    </main>
-
-    <!--
-<main class="informative">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-10 offset-lg-1 col-md-12">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-12">
-
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</main>
--->
+    </main>
 
     <div class="modal fade loginmodal" id="loginToStartForm" tabindex="-1" role="dialog" aria-labelledby="modal-header"
         aria-hidden="true">
@@ -544,38 +493,8 @@
     </div>
     </main>
 
-
-    <footer>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-12">
-                    <!--                 <span class="align-middle lead">E&eacute;n overheid &mdash; voor regelen en opzoeken, voor beleid en bestuur</span> -->
-                    <span class="align-middle lead">1overheid: voor al uw overheidszaken.</span>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <div class="modal fade contactModal" id="contactModal" tabindex="-1" role="dialog"
-        aria-labelledby="contact-modal-header" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h3 class="modal-title" id="contact-modal-header">
-                        Contact
-                    </h3>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">×</span>
-                    </button>
-                </div>
-
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary">Direct chatten</button>
-                </div>
-
-            </div>
-        </div>
-    </div>
+    <!-- Include footer -->
+    <div azdpc-include-html="footer.html"></div>
     <script src="js/main.js"></script>
 
 </body>
