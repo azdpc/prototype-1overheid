@@ -2,22 +2,43 @@
 <html lang="nl-NL">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta
+        http-equiv="Content-Type"
+        content="text/html; charset=UTF-8"
+    >
+    <meta
+        http-equiv="x-ua-compatible"
+        content="ie=edge"
+    >
     <title>Child benefit payment dates | 1overheid</title>
-    <meta name="description" content="Prototype voor 1overheid: informatie, diensten, beleid en bestuur">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/additional.css">
+    <meta
+        name="description"
+        content="Prototype voor 1overheid: informatie, diensten, beleid en bestuur"
+    >
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    >
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+    <link
+        rel="stylesheet"
+        href="css/additional.css"
+    >
 </head>
 
 <body cz-shortcut-listen="true">
-       <!-- include header -->
+    <!-- include header -->
     <div azdpc-include-html="header-en.html"></div>
-    
+
     <banner>
         <div class="loggedInElm">
-            <div id="login-foldout" class="navbar-pinned expanded">
+            <div
+                id="login-foldout"
+                class="navbar-pinned expanded"
+            >
                 <div class="container-fluid">
                     <div class="navbar-pinned-content">
                         <div class="row align-items-center">
@@ -33,14 +54,35 @@
             </div>
         </div>
     </banner>
-    <div class="modal fade loginmodal" id="loginForm" tabindex="-1" role="dialog" aria-labelledby="modal-header" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
+    <div
+        class="modal fade loginmodal"
+        id="loginForm"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="modal-header"
+        aria-hidden="true"
+    >
+        <div
+            class="modal-dialog modal-dialog-centered"
+            role="document"
+        >
             <div class="modal-content">
                 <div class="modal-header">
-                    <h3 class="modal-title" id="modal-header">
-                        <img src="img/digid-logo.svg" alt="digid">Login met DigiD
+                    <h3
+                        class="modal-title"
+                        id="modal-header"
+                    >
+                        <img
+                            src="img/digid-logo.svg"
+                            alt="digid"
+                        >Login met DigiD
                     </h3>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                    >
                         <span aria-hidden="true">×</span>
                     </button>
                 </div>
@@ -48,26 +90,60 @@
                     <div class="modal-body">
                         <div class="form-group">
                             <label for="gebruikersnaam">DigiD gebruikersnaam</label>
-                            <input type="text" class="form-control" id="gebruikersnaam" placeholder="DigiD gebruikersnaam" value="asha_madhavan">
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="gebruikersnaam"
+                                placeholder="DigiD gebruikersnaam"
+                                value="asha_madhavan"
+                            >
                         </div>
                         <div class="form-group">
                             <label for="wachtwoord">Wachtwoord</label>
-                            <input type="password" class="form-control" id="wachtwoord" placeholder="Wachtwoord" value="********">
+                            <input
+                                type="password"
+                                class="form-control"
+                                id="wachtwoord"
+                                placeholder="Wachtwoord"
+                                value="********"
+                            >
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" id="loginBtn">Inloggen</button>
+                        <button
+                            type="button"
+                            class="btn btn-primary"
+                            id="loginBtn"
+                        >Inloggen</button>
                     </div>
                 </form>
             </div>
         </div>
     </div>
-    <div class="modal fade contactModal" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contact-modal-header" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
+    <div
+        class="modal fade contactModal"
+        id="contactModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="contact-modal-header"
+        aria-hidden="true"
+    >
+        <div
+            class="modal-dialog modal-dialog-centered"
+            role="document"
+        >
             <div class="modal-content">
                 <div class="modal-header">
-                    <h3 class="modal-title" id="contact-modal-header">Heeft u een vraag of hulp nodig?</h3>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <h3
+                        class="modal-title"
+                        id="contact-modal-header"
+                    >Heeft u een vraag of hulp nodig?</h3>
+                    <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                    >
                         <span aria-hidden="true">×</span>
                     </button>
                 </div>
@@ -82,7 +158,12 @@
                                 <a href="#">App uw vraag naar 1400</a>
                             </li>
                             <li class="chat">
-                                <a class="openChat" data-toggle="modal" data-target="#chatModal" href="#">Direct chatten</a>
+                                <a
+                                    class="openChat"
+                                    data-toggle="modal"
+                                    data-target="#chatModal"
+                                    href="#"
+                                >Direct chatten</a>
                             </li>
                         </ul>
                     </div>
@@ -92,12 +173,30 @@
             </div>
         </div>
     </div>
-    <div class="modal fade chatModal" id="chatModal" tabindex="-1" role="dialog" aria-labelledby="chat-modal-header" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div
+        class="modal fade chatModal"
+        id="chatModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="chat-modal-header"
+        aria-hidden="true"
+    >
+        <div
+            class="modal-dialog modal-lg modal-dialog-centered"
+            role="document"
+        >
             <div class="modal-content">
                 <div class="modal-header">
-                    <h3 class="modal-title" id="chat-modal-header">Direct chatten</h3>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <h3
+                        class="modal-title"
+                        id="chat-modal-header"
+                    >Direct chatten</h3>
+                    <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                    >
                         <span aria-hidden="true">×</span>
                     </button>
                 </div>
@@ -106,7 +205,10 @@
                         <div class="messages">
                             <div class="message">
                                 <div class="avatar">
-                                    <img class="img-fluid" src="img/avatar.svg">
+                                    <img
+                                        class="img-fluid"
+                                        src="img/avatar.svg"
+                                    >
                                 </div>
                                 <div class="content">
                                     <span class="name">Medewerker:</span>
@@ -116,10 +218,17 @@
                         </div>
                         <div class="messageForm">
                             <div class="inputField">
-                                <input class="form-control form-control-lg" type="text" placeholder="Typ hier uw vraag">
+                                <input
+                                    class="form-control form-control-lg"
+                                    type="text"
+                                    placeholder="Typ hier uw vraag"
+                                >
                             </div>
                             <div class="submitBtn">
-                                <button type="button" class="btn btn-primary btn-lg">Verstuur</button>
+                                <button
+                                    type="button"
+                                    class="btn btn-primary btn-lg"
+                                >Verstuur</button>
                             </div>
                         </div>
                     </div>
@@ -129,7 +238,10 @@
             </div>
         </div>
     </div>
-    <main role="main" class="actionable">
+    <main
+        role="main"
+        class="actionable"
+    >
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12">
@@ -146,54 +258,21 @@
                         <div class="row">
                             <div class="col-md-12 notVisibleInFrame">
                                 <h1>Child benefit payment dates</h1>
-                                 <div class="callout callout-primary mb-3 mt-3">
+                                <div class="callout callout-primary mb-3 mt-3">
                                     <p>This information on this page is also available in:<br>
                                         <a href="child-benefit-payment-dates-pl.html">Polski</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                  
-<!--
-                        <div class="row">
-                            <div class="col-12">
-                                <table>
-                                    <tr>
-                                        <td>Plastic fles voor frisdrank van 1 liter of groter</td>
-                                        <td>€0,25</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Glazen bierflesje</td>
-                                        <td>€0,10</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Beugelflessen</td>
-                                        <td>€0,20</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Bierkrat (leeg)</td>
-                                        <td>€1,50</td>
-                                    </tr>
-                                </table>
-                            </div>
-                        </div>
--->
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="intro">
-                                    <p>
-                                        On <strong>2 january 2020</strong> you will receive the next payment.
-                                    <h3>Other payment dates in 2020</h3>
-                                    <p>    1 April 2020: child benefit for the 1st quarter of 2020<br>
-   1 July 2020: child benefit for the 2nd quarter of 2020<br>
-    1 October 2020: child benefit for the 3rd quarter of 2020</p>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <p>On <strong>2 January 2020</strong> you will receive the next payment.</p>
+                    <h3>Other payment dates in 2020</h3>
+                    <p> 1 April 2020: child benefit for the 1st quarter of 2020<br>
+                        1 July 2020: child benefit for the 2nd quarter of 2020<br>
+                        1 October 2020: child benefit for the 3rd quarter of 2020</p>
                 </div>
             </div>
+        </div>
         </div>
     </main>
     <main class="informative">
@@ -201,36 +280,57 @@
             <div class="row">
                 <div class="col-lg-10 offset-lg-1 col-md-12">
                     <div class="toggleSet">
-                     
-                        </div>
-                        <h3 class="toggleTopic toggle-next">I have not received my child benefit</h3>
-                        <div class="toggleContent">
-                            <p>
-                               Check your payment date and contact your bank before contacting us if a payment is late.
-                            </p>
-                            <a href="./child-benefit-late.html">More information on late payments</a>
-                        </div>
 
-                        <h3 class="toggleTopic toggle-next">I have changed my bank account</h3>
-                        <div class="toggleContent">
-                            <p>
-                                You can change the bank account online through Manage Child Benefit.
-                            </p>
-                            <a href="./manage-child-benefit.html">Manage Child Benefit</a>
-                        </div>
+                    </div>
+                    <h3 class="toggleTopic toggle-next">I have not received my child benefit</h3>
+                    <div class="toggleContent">
+                        <p>
+                            Check your payment date and contact your bank before contacting us if a payment is late.
+                        </p>
+                        <a href="./child-benefit-late.html">More information on late payments</a>
+                    </div>
+
+                    <h3 class="toggleTopic toggle-next">I have changed my bank account</h3>
+                    <div class="toggleContent">
+                        <p>
+                            You can change the bank account online through Manage Child Benefit.
+                        </p>
+                        <a href="./manage-child-benefit.html">Manage Child Benefit</a>
                     </div>
                 </div>
             </div>
         </div>
+        </div>
     </main>
-    <div class="modal fade loginmodal" id="loginToStartForm" tabindex="-1" role="dialog" aria-labelledby="modal-header" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
+    <div
+        class="modal fade loginmodal"
+        id="loginToStartForm"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="modal-header"
+        aria-hidden="true"
+    >
+        <div
+            class="modal-dialog modal-dialog-centered"
+            role="document"
+        >
             <div class="modal-content">
                 <div class="modal-header">
-                    <h3 class="modal-title" id="modal-header">
-                        <img src="img/digid-logo.svg" alt="digid"> Login met DigiD
+                    <h3
+                        class="modal-title"
+                        id="modal-header"
+                    >
+                        <img
+                            src="img/digid-logo.svg"
+                            alt="digid"
+                        > Login met DigiD
                     </h3>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                    >
                         <span aria-hidden="true">×</span>
                     </button>
                 </div>
@@ -238,35 +338,72 @@
                     <div class="modal-body">
                         <div class="form-group">
                             <label for="gebruikersnaam">DigiD gebruikersnaam</label>
-                            <input type="text" class="form-control" id="gebruikersnaam" placeholder="DigiD gebruikersnaam" value="asha_madhavan">
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="gebruikersnaam"
+                                placeholder="DigiD gebruikersnaam"
+                                value="asha_madhavan"
+                            >
                         </div>
                         <div class="form-group">
                             <label for="wachtwoord">Wachtwoord</label>
-                            <input type="password" class="form-control" id="wachtwoord" placeholder="Wachtwoord" value="********">
+                            <input
+                                type="password"
+                                class="form-control"
+                                id="wachtwoord"
+                                placeholder="Wachtwoord"
+                                value="********"
+                            >
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" id="loginAndStartBtn">Inloggen</button>
+                        <button
+                            type="button"
+                            class="btn btn-primary"
+                            id="loginAndStartBtn"
+                        >Inloggen</button>
                     </div>
                 </form>
             </div>
         </div>
     </div>
     </main>
-    
-    <div class="modal fade contactModal" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contact-modal-header" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
+
+    <div
+        class="modal fade contactModal"
+        id="contactModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="contact-modal-header"
+        aria-hidden="true"
+    >
+        <div
+            class="modal-dialog modal-dialog-centered"
+            role="document"
+        >
             <div class="modal-content">
                 <div class="modal-header">
-                    <h3 class="modal-title" id="contact-modal-header">
+                    <h3
+                        class="modal-title"
+                        id="contact-modal-header"
+                    >
                         Contact
                     </h3>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                    >
                         <span aria-hidden="true">×</span>
                     </button>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-primary">Direct chatten</button>
+                    <button
+                        type="button"
+                        class="btn btn-primary"
+                    >Direct chatten</button>
                 </div>
             </div>
         </div>
