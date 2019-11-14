@@ -499,9 +499,10 @@ function showHideAmountDocuments() {
 
     $input.on('click tap', function () {
         const $this = $(this);
-        const id = $this.attr('id');
+        const currentClass = $this.attr('id');
+        const $selectTarget = $selectDocumentBlock.find('.'+ currentClass);
 
-        $this.prop("checked") ? $selectDocumentBlock.find('.'+ id +'').show() : $selectDocumentBlock.find('.'+ id +'').hide();
+        $this.prop("checked") ? $selectTarget.show() : $selectTarget.hide();
     });
 }
 
