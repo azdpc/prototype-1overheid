@@ -3,15 +3,17 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Home | 1overheid</title>
+    <title>Money and tax | 1overheid</title>
     <meta name="description" content="Prototype voor 1overheid: informatie, diensten, beleid en bestuur">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/additional.css">
+
 </head>
 
-<body cz-shortcut-listen="true" class="home">
+<body cz-shortcut-listen="true">
     <!-- include header -->
     <div azdpc-include-html="header-en.html"></div>
     <!-- Logged in as Asha / banner -->
@@ -26,26 +28,6 @@
                             </div>
                             <div class="col-4">
                                 <button class="btn btn-success logoutBtn float-right">Logout</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </banner>
-    <banner role="search">
-        <div class="navbar-pinned expanded search-wrapper">
-            <div class="navbar-pinned-content">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-lg-10 offset-lg-1 col-md-12">
-                            <div class="container-fluid">
-                                <form action="zoek-resultaten.html">
-                                    <fieldset>
-                                        <input type="search" />
-                                        <input class="btn btn-primary btn-lg" type="submit" value="search" />
-                                    </fieldset>
-                                </form>
                             </div>
                         </div>
                     </div>
@@ -112,6 +94,7 @@
                         </ul>
                     </div>
                     <div class="modal-footer">
+
                     </div>
                 </form>
             </div>
@@ -129,6 +112,7 @@
                 </div>
                 <form>
                     <div class="modal-body">
+
                         <div class="messages">
                             <div class="message">
                                 <div class="avatar">
@@ -140,6 +124,8 @@
                                 </div>
                             </div>
                         </div>
+
+
                         <div class="messageForm">
                             <div class="inputField">
                                 <input class="form-control form-control-lg" type="text" placeholder="Typ hier uw vraag">
@@ -148,165 +134,110 @@
                                 <button type="button" class="btn btn-primary btn-lg">Verstuur</button>
                             </div>
                         </div>
+
+
                     </div>
                     <div class="modal-footer">
+
                     </div>
                 </form>
             </div>
         </div>
     </div>
+
     <main role="main" class="actionable">
         <div class="container-fluid">
             <div class="row">
+                <div class="col-12">
+                    <ul class="breadcrumb">
+                        <li><a href="home-en.html">Home</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
                 <div class="col-lg-10 offset-lg-1 col-md-12">
                     <div class="container-fluid">
-                        <div class="row themes-list">
-                            <!-- START thema geld -->
-                            <div class="col-sm-6">
-                                <a href="#thema-geld">
-                                <a href="money-tax.html">
-                                    <h3>
-                                        <div class="icon">
-                                            <img src="content/icons/9000-budget.svg" />
-                                        </div>
-                                        Money and tax
-                                    </h3>
-                                    <p>Income tax, municipal taxes, benefits, allowances, social security</p>
-                                </a>
+                        <div class="row">
+                            <div class="col-12">
+                                <h1>Money and tax</h1>
                             </div>
-                            <!-- EINDE thema geld -->
-                            <!-- START thema wonen -->
-                            <div class="col-sm-6">
-                                <a href="#thema-wonen">
-                                    <h3>
-                                        <div class="icon">
-                                            <img src="content/icons/5202-laag-huis.svg" />
-                                        </div>
-                                        Housing and local services
-                                    </h3>
-                                    <p>Waste and recycling, buying or renting a home, registering at a municipality</p>
-                                </a>
+                        </div>
+
+                        <div class="toggleSet toggleMainNav">
+                            <!-- <div class="col-12">
+                                <p><a href="income-tax.html">Income tax</a></p>
+                                <p><a href="motor-verhicle.tax.html">Motor vehicle tax</a></p>
+                                <p><a href="municipal-taxes.html">Municipal taxes</a></p>
+                            </div> -->
+
+                            <h2 class="toggleTopic toggle-next">Taxes</h2>
+                            <div class="toggleContent">
+                                <ul>
+                                    <!-- <li><a href="visiting-netherlands.html">Visiting the Netherlands</a></li> -->
+                             <p><a href="income-tax.html">Income tax</a></p>
+                                <p><a href="motor-verhicle.tax.html">Motor vehicle tax</a></p>
+                                <p><a href="municipal-taxes.html">Municipal taxes</a></p>
+                                </ul>
                             </div>
-                            <!-- EINDE thema wonen -->
-                            <!-- START thema -->
-                            <div class="col-sm-6">
-                                <a href="passport-nationality.html">
-                                    <h3>
-                                        <div class="icon icon-png">
-                                            <img src="content/icons/paspoort.png" />
-                                        </div>
-                                        Passport and nationality
-                                    </h3>
-                                    <p>Passport and ID card, Dutch citizenship, voting</p>
-                                </a>
+                            <h2 class="toggleTopic toggle-next">Benefits</h2>
+                            <div class="toggleContent">
+                                <ul>
+                                    <li><a href="child-benefit.html">Child benefit</a></li>
+                                    <li><a href="childcare-benefit">Childcare benefit</a></li>
+                                    <li><a href="healthcare-allowance">Healthcare allowance</a></li>
+                                    <li><a href="rent-benefit">Rent benefit</a></li>
+                                   
+                                </ul>
                             </div>
-                            <!-- EINDE thema -->
-                            <!-- START thema -->
-                            <div class="col-sm-6">
-                                <a href="#theme-familie">
-                                    <h3>
-                                        <div class="icon">
-                                            <img src="content/icons/4029-familie.svg" />
-                                        </div>
-                                        Family
-                                    </h3>
-                                    <p>Birth, marriage, divorce, death</p>
-                                </a>
+                            <h2 class="toggleTopic toggle-next">Social security</h2>
+                            <div class="toggleContent">
+                                <ul>
+                                    <li><a href="">...</a></li>
+                                    <li><a href="">...</a></li>
+                                    <li><a href="">...</a></li>
+                                </ul>
                             </div>
-                            <!-- EINDE thema -->
-                            <!-- START thema -->
-                            <div class="col-sm-6">
-                                <a href="visa-and-immigration.html">
-                                    <h3>
-                                        <div class="icon icon-png">
-                                            <img src="content/icons/immigratie.png" />
-                                        </div>
-                                        Visa and immigration
-                                    </h3>
-                                    <p>Visa for the Netherlands, residence and work permit</p>
-                                </a>
-                            </div>
-                            <!-- EINDE thema -->
-                            <!-- START thema -->
-                            <div class="col-sm-6">
-                                <a href="#thema-onderwijs">
-                                    <h3>
-                                        <div class="icon">
-                                            <img src="content/icons/4082-onderwijs.svg" />
-                                        </div>
-                                        Education
-                                    </h3>
-                                    <p>School holidays, studying, student finance, enrolling in higher education, scholarships</p>
-                                </a>
-                            </div>
-                            <!-- EINDE thema -->
-                            <!-- START thema -->
-                            <div class="col-sm-6">
-                                <a href="travel.html">
-                                    <h3>
-                                        <div class="icon">
-                                            <img src="content/icons/8012-reisbagage.svg" />
-                                        </div>
-                                        Travel and living abroad
-                                    </h3>
-                                    <p>Travel advice, urgent assistance abroad, living abroad, returning to the Netherlands</p>
-                                </a>
-                            </div>
-                            <!-- EINDE thema -->
-                            <!-- START thema -->
-                            <div class="col-sm-6">
-                                <a href="#thema-verkeer">
-                                    <h3>
-                                        <div class="icon">
-                                            <img src="content/icons/5003-auto.svg" />
-                                        </div>
-                                        Transportation
-                                    </h3>
-                                    <p>Driving license, traffic rules, public transportation, number plate registration</p>
-                                </a>
-                            </div>
-                            <!-- EINDE thema -->
-                            <!-- START thema -->
-                            <div class="col-sm-6">
-                                <a href="#thema-gezondheid">
-                                    <h3>
-                                        <div class="icon">
-                                            <img src="content/icons/4028-zorg.svg" />
-                                        </div>
-                                        Health care
-                                    </h3>
-                                    <p>Health insurance, hospitals nearby, general practitioners</p>
-                                </a>
-                            </div>
-                            <!-- EINDE thema -->
-                            <!-- START thema -->
-                            <div class="col-sm-6">
-                                <a href="#thema-werk">
-                                    <h3>
-                                        <div class="icon icon-png">
-                                            <img src="content/icons/werk-en-pensioen.png" />
-                                        </div>
-                                        Work and pension
-                                    </h3>
-                                    <p>Income, retirement, minimum wage</p>
-                                </a>
-                            </div>
-                            <!-- EINDE thema -->
-                            <!-- START thema -->
-                            <div class="col-sm-6">
-                                <a href="#thema-recht">
-                                    <h3>
-                                        <div class="icon">
-                                            <img src="content/icons/7001-recht-aka-veiligheid-en-justitie.svg" />
-                                        </div>
-                                        Justice
-                                    </h3>
-                                    <p>Certificate of conduct (VOG), finding a lawyer</p>
-                                </a>
-                            </div>
-                            <!-- EINDE thema -->
                         </div>
                     </div>
+                    <!-- <div class="questionHelp">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="grouped">
+                                    <button type="button" class="btn btn-toggle toggle-next">Help with document
+                                            legalisation</button>
+                                    <div class="helpItems">
+                                        <h3 class="helpQuestion toggle-next">Conditions to travel without visa to the
+                                            Netherlands</h3>
+                                        <div class="helpAnswer">
+                                            <p>Content</p>
+                                        </div>
+                                        <h3 class="helpQuestion toggle-next">Residence permit lost or stolen</h3>
+                                        <div class="helpAnswer">
+                                            <p>Content</p>
+                                        </div>
+                                        <h3 class="helpQuestion toggle-next">How much does the visa cost?</h3>
+                                        <div class="helpAnswer">
+                                            <p>Content</p>
+                                        </div>
+                                        <h3 class="helpQuestion toggle-next">Any questions?</h3>
+                                        <div class="helpAnswer">
+                                            <p>Content</p>
+                                        </div>
+                                        <h3 class="helpQuestion toggle-next">How does it take to process my visa
+                                            application?</h3>
+                                        <div class="helpAnswer">
+                                            <p>Content</p>
+                                        </div>
+                                        <h3 class="helpQuestion toggle-next">Different types of visa</h3>
+                                        <div class="helpAnswer">
+                                            <p>Content</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
                 </div>
             </div>
         </div>
