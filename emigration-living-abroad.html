@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="nl-NL">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Emigration and living abroad | 1overheid</title>
+    <meta name="description" content="Prototype voor 1overheid: informatie, diensten, beleid en bestuur">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/additional.css">
+
+</head>
+
+<body cz-shortcut-listen="true">
+    <!-- include header -->
+    <div azdpc-include-html="header-en.html"></div>
+    <!-- Logged in as Asha / banner -->
+    <banner>
+        <div class="loggedInElm">
+            <div id="login-foldout" class="navbar-pinned expanded">
+                <div class="container-fluid">
+                    <div class="navbar-pinned-content">
+                        <div class="row align-items-center">
+                            <div class="col-8">
+                                Logged in as Asha Martinez
+                            </div>
+                            <div class="col-4">
+                                <button class="btn btn-success logoutBtn float-right">Logout</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </banner>
+
+    <div class="modal fade loginmodal" id="loginForm" tabindex="-1" role="dialog" aria-labelledby="modal-header"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="modal-header">
+                        <img src="img/digid-logo.svg" alt="digid">Login with DigiD
+                    </h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <form>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="gebruikersnaam">DigiD username</label>
+                            <input type="text" class="form-control" id="gebruikersnaam"
+                                placeholder="DigiD gebruikersnaam" value="asha_madhavan">
+                        </div>
+                        <div class="form-group">
+                            <label for="wachtwoord">Password</label>
+                            <input type="password" class="form-control" id="wachtwoord" placeholder="Password"
+                                value="********">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" id="loginBtn">Login</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade contactModal" id="contactModal" tabindex="-1" role="dialog"
+        aria-labelledby="contact-modal-header" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="contact-modal-header">Heeft u een vraag of hulp nodig?</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <form>
+                    <div class="modal-body">
+                        <p>U kunt op contact met ons opnemen via:</p>
+                        <ul>
+                            <li class="phone">
+                                <a href="tel:1400">Bel naar 1400</a>
+                            </li>
+                            <li class="app">
+                                <a href="#">App uw vraag naar 1400</a>
+                            </li>
+                            <li class="chat">
+                                <a class="openChat" data-toggle="modal" data-target="#chatModal" href="#">Direct
+                                    chatten</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade chatModal" id="chatModal" tabindex="-1" role="dialog" aria-labelledby="chat-modal-header"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="chat-modal-header">Direct chatten</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <form>
+                    <div class="modal-body">
+
+                        <div class="messages">
+                            <div class="message">
+                                <div class="avatar">
+                                    <img class="img-fluid" src="img/avatar.svg">
+                                </div>
+                                <div class="content">
+                                    <span class="name">Medewerker:</span>
+                                    <p>Goedemiddag, waarmee kan ik u helpen?</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="messageForm">
+                            <div class="inputField">
+                                <input class="form-control form-control-lg" type="text" placeholder="Typ hier uw vraag">
+                            </div>
+                            <div class="submitBtn">
+                                <button type="button" class="btn btn-primary btn-lg">Verstuur</button>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="modal-footer">
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <main role="main" class="actionable">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <ul class="breadcrumb">
+                        <li><a href="home-en.html">Home</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1 col-md-12">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12">
+                                <h1>Emigration and living abroad</h1>
+                            </div>
+                        </div>
+
+                        <div class="toggleSet toggleMainNav">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <h2 class="toggleTopic toggle-next">Leaving the Netherlands</h2>
+                                    <div class="toggleContent">
+                                        <ul>
+                                            <li><a href="leaving-the-netherlands.html">Leaving the Netherlands</a></li>
+                                            <li><a href="work-pension-leaving-netherlands.html">Work and pension</a></li>
+                                            <li><a href="family-leaving-netherlands.html">Family</a></li>
+                                            <li><a href="tax-benefits-leaving-netherlands.html">Tax and benefits</a></li>
+                                                                                </ul>
+                                    </div>
+
+                                 
+                                    <h2 class="toggleTopic toggle-next">While you are abroad</h2>
+                                    <div class="toggleContent">
+                                        <ul>
+                                             <li><a href="apply-use-dutch-documents-abroad.html">Applying for and using Dutch documents abroad</a></li>
+                                            <li><a href="work-pension-living-outside-netherlands.html">Work and pension abroad</a></li>
+                                            <li><a href="living-family-outside-netherlands.html">Living with your family abroad</a></li>
+                                            <li><a href="dutch-tax-benefits-living-abroad.html">Dutch tax and benefits abroad</a></li>
+                                            <li><a href="voting-dutch-elections-abroad.html">Voting for Dutch elections from abroad</a></li>
+                                            <li><a href="studying-outside-of-the-netherlands.html">Studying abroad</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <h2 class="toggleTopic toggle-next">Move back to the Netherlands (remigration)</h2>
+                                    <div class="toggleContent">
+                                        <ul>
+                                            <li><a href="#een-link">Moving back to the Netherlands</a></li>
+                                            <li><a href="#lorem">Work and pension</a></li>
+                                            <li><a href="#een-link">Family</a></li>
+                                            <li><a href="#een-link">Tax and benefits</a></li>
+                                            <li><a href="#een-link">Foreign documents</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                         </div>
+                            </div>
+                        </div>
+                    </div>
+    </main>
+    <div class="modal fade loginmodal" id="loginToStartForm" tabindex="-1" role="dialog" aria-labelledby="modal-header"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="modal-header">
+                        <img src="img/digid-logo.svg" alt="digid"> Login met DigiD
+                    </h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <form>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="gebruikersnaam">DigiD gebruikersnaam</label>
+                            <input type="text" class="form-control" id="gebruikersnaam"
+                                placeholder="DigiD gebruikersnaam" value="asha_madhavan">
+                        </div>
+                        <div class="form-group">
+                            <label for="wachtwoord">Wachtwoord</label>
+                            <input type="password" class="form-control" id="wachtwoord" placeholder="Wachtwoord"
+                                value="********">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" id="loginAndStartBtn">Inloggen</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    </main>
+
+
+    <!-- Include footer -->
+    <div azdpc-include-html="footer-en.html"></div>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
