@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="nl-NL">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title> Work and pension when you move back to the Netherlands | 1overheid</title>
+    <meta name="description" content="Prototype voor 1overheid: informatie, diensten, beleid en bestuur">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/additional.css">
+</head>
+
+<body cz-shortcut-listen="true">
+    <!-- include header -->
+    <div azdpc-include-html="header-en.html"></div>
+    <!-- Logged in as Asha / banner -->
+    <banner>
+        <div class="loggedInElm">
+            <div id="login-foldout" class="navbar-pinned expanded">
+                <div class="container-fluid">
+                    <div class="navbar-pinned-content">
+                        <div class="row align-items-center">
+                            <div class="col-8">
+                                Logged in as Asha Martinez
+                            </div>
+                            <div class="col-4">
+                                <button class="btn btn-success logoutBtn float-right">Logout</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </banner>
+    <main role="main" class="actionable">
+        <div class="container-fluid checkContainer">
+            <div class="row">
+                <div class="col-12">
+                    <ul class="breadcrumb">
+                        <li class="d-none d-md-block"><a href="home-en.html">Home</a></li>
+                        <li><a href="emigration-living-abroad.html">Emigration and living abroad</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1 col-md-12">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12 notVisibleInFrame">
+                                <h1> Work and pension when you move back to the Netherlands</h1>
+                                <p class="vireo-light">Get it done</p>
+                                <div class="main-actions">
+                                    <p><a class="btn btn-primary" href="">Back to the Netherlands: what to do?</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Login modal -->
+                    <div class="modal fade loginmodal" id="loginToStartForm" tabindex="-1" role="dialog"
+                        aria-labelledby="modal-header" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3 class="modal-title" id="modal-header">
+                                        <img src="img/digid-logo.svg" alt="digid"> Login met DigiD
+                                    </h3>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">×</span>
+                                    </button>
+                                </div>
+                                <form>
+                                    <div class="modal-body">
+                                        <div class="form-group">
+                                            <label for="gebruikersnaam">DigiD gebruikersnaam</label>
+                                            <input type="text" class="form-control" id="gebruikersnaam"
+                                                placeholder="DigiD gebruikersnaam" value="asha_madhavan">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="wachtwoord">Wachtwoord</label>
+                                            <input type="password" class="form-control" id="wachtwoord"
+                                                placeholder="Wachtwoord" value="********">
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary"
+                                            id="loginAndStartBtn">Inloggen</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Send modal -->
+                    <div class="modal fade sendModal" id="sendModal" tabindex="-1" role="dialog"
+                        aria-labelledby="send-modal-header" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3 class="modal-title" id="send-modal-header">
+                                        Uw aanvraag is verstuurd
+                                    </h3>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">×</span>
+                                    </button>
+                                </div>
+                                <form>
+                                    <div class="modal-body">
+                                        <p>Wij hebben uw aanvraag voor een bijstandsuitkering in behandeling genomen.
+                                            Binnen 8 weken krijgt u een beslissing op uw aanvraag. Heeft u recht op
+                                            bijstand? Dan krijgt u dit vanaf het moment dat u de aanvraag heeft gedaan.
+                                        </p>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Please note modal -->
+                    <!-- External sevice -->
+                    <div class="modal fade" id="noteModal" tabindex="-1" role="dialog">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <img src="content/icons/warning.svg" width="30" height="30" />
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p><strong>Please note:</strong> you have chosen to apply at an external service
+                                        provider. You will have to pay an additional service fee.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- DigiD -->
+                    <div class="modal fade" id="noteModalDigid" tabindex="-1" role="dialog">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <img src="content/icons/warning.svg" width="30" height="30" />
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p><strong>Please note:</strong> you have chosen to apply without DigiD. This means
+                                        you can not complete this application online and have to submit it in person.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <main class="informative">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1 col-md-12">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12">
+                                <h2 class="vireo-light">Find an answer</h2>
+                                <div class="toggleSet">
+                                    <h3 class="toggleTopic toggle-next">Pets</h3>
+                                    <div class="toggleContent">
+                                        <p>
+                                            <a href="#een-dummy-link-die-niets-doet">Bringing your pet to the Netherlands</a>
+                                
+                                        </p>
+                                      
+                             
+                                    </div>
+                                     
+                                  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Include footer -->
+    <div azdpc-include-html="footer-en.html"></div>
+    <script src="js/main.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+        integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+</body>
+
+</html>
