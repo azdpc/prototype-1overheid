@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="nl-NL">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Emigration and living abroad| 1overheid</title>
+  <meta name="description" content="Prototype voor 1overheid: informatie, diensten, beleid en bestuur">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/additional.css">
+</head>
+
+<body cz-shortcut-listen="true">
+  <!-- include header -->
+  <div azdpc-include-html="header-en.html"></div>
+  <!-- Logged in as Asha / banner -->
+  <banner>
+    <div class="loggedInElm">
+      <div id="login-foldout" class="navbar-pinned expanded">
+        <div class="container-fluid">
+          <div class="navbar-pinned-content">
+            <div class="row align-items-center">
+              <div class="col-8">
+                Logged in as Asha Martinez
+              </div>
+              <div class="col-4">
+                <button class="btn btn-success logoutBtn float-right">Logout</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </banner>
+  <main>
+    <section class="actionable">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <ul class="breadcrumb">
+              <li class="d-none d-md-block"><a href="home-en.html">Home</a></li>
+              </li>
+              <li><a href="outside-the-netherlands-work-pension.html">Emigration and living abroad</a>
+              </li>
+              </li>
+              <li class="d-none d-md-block"><a href="claiming-aow-pension.html">Work and pension when you leave the
+                  Netherlands</a>
+              </li>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-10 offset-lg-1 col-md-12">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-12 notVisibleInFrame">
+                  <h1>Claiming AOW pension if you live outside the Netherlands</h1>
+                  <div class="callout callout-primary mb-3 mt-3">
+                    <p>This information on this page is also available in:<br>
+                      <a href="#">Polski</a>
+                  </div>
+                  <p>
+                    If you live outside the Netherlands, how to claim an AOW pension depends on where you live. There
+                    are
+                    three possibilities.
+                  </p>
+                  <ol>
+                    <li class="mb-3">
+                      <b>You live in a country of the</b> <a href="">(EU)European Union</a>.<br>
+                      You have a choice. You can submit your AOW pension
+                      claim to the pension agency in the country where you live, or in the country where you were last
+                      insured.
+                    </li>
+                    <li class="mb-3"><b>You live in a country with which the Netherlands has a <a href="">social
+                          security
+                          agreement</a> or in a country of
+                        the <a href="">EEA (European Economic Area)</a>.</b><br>
+                      If you are insured under that country's state pension scheme, you
+                      should contact the pension agency in that country.<br>
+                      If you are <i>not</i> insured under that country's
+                      state
+                      pension scheme, you should contact the pension agency in the country where you were last insured.
+                      If
+                      that was the Netherlands, please <a href="">download and fill out the claim form</a> and <a
+                        href="">get in touch with the
+                        Social
+                        Insurance Bank (SVB)</a>.</li>
+                    <li class="mb-3">
+                      <b>If you live in a country not referred to above.</b><br>
+                      In that case, please <a href="">download and fill out the claim
+                        form</a> and <a href="">get in touch with the
+                        Social
+                        Insurance Bank (SVB)</a>.<br><br>
+                      You should contact your pension agency at least 6 months before your pension age.
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </section>
+    <div class="container">
+      <div class="questionHelp">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="helpItems">
+              <h3 class="helpQuestion toggle-next">All about work and pension outside of the Netherlands
+              </h3>
+              <div class="helpAnswer">
+                <p>Answer some questions to find out what you need to arrange to receive AOW abroad.</p>
+                <p><a href="">Work and pension abroad</a></p>
+              </div>
+              <h3 class="helpQuestion toggle-next">All about work and pension in the Netherlands
+
+              </h3>
+              <div class="helpAnswer">
+                <p>Answer some questions to find out what you need to arrange to receive AOW in the
+                  Netherlands
+                </p>
+                <p><a href="">Work and pension in the Netherlands</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <div class="modal fade loginmodal" id="loginToStartForm" tabindex="-1" role="dialog" aria-labelledby="modal-header"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="modal-header">
+            <img src="img/digid-logo.svg" alt="digid"> Login met DigiD
+          </h3>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <form>
+          <div class="modal-body">
+            <div class="form-group">
+              <label for="gebruikersnaam">DigiD gebruikersnaam</label>
+              <input type="text" class="form-control" id="gebruikersnaam" placeholder="DigiD gebruikersnaam"
+                value="asha_madhavan">
+            </div>
+            <div class="form-group">
+              <label for="wachtwoord">Wachtwoord</label>
+              <input type="password" class="form-control" id="wachtwoord" placeholder="Wachtwoord" value="********">
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" id="loginAndStartBtn">Inloggen</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  </main>
+  <!-- Include footer -->
+  <div azdpc-include-html="footer-en.html"></div>
+  <script src="js/main.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+    integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+</body>
+
+</html>

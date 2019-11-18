@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="nl-NL">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Emigration and living abroad| 1overheid</title>
+    <meta name="description" content="Prototype voor 1overheid: informatie, diensten, beleid en bestuur">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/additional.css">
+</head>
+
+<body cz-shortcut-listen="true">
+    <!-- include header -->
+    <div azdpc-include-html="header-en.html"></div>
+    <!-- Logged in as Asha / banner -->
+    <banner>
+        <div class="loggedInElm">
+            <div id="login-foldout" class="navbar-pinned expanded">
+                <div class="container-fluid">
+                    <div class="navbar-pinned-content">
+                        <div class="row align-items-center">
+                            <div class="col-8">
+                                Logged in as Asha Martinez
+                            </div>
+                            <div class="col-4">
+                                <button class="btn btn-success logoutBtn float-right">Logout</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </banner>
+    <main>
+        <section class="actionable">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <ul class="breadcrumb">
+                            <li class="d-none d-md-block"><a href="home-en.html">Home</a></li>
+                            </li>
+                            <li><a href="outside-the-netherlands-work-pension.html">Emigration and living abroad</a>
+                            </li>
+                            </li>
+                            <li class="d-none d-md-block"><a href="receiving-aow-abroad.html">Receiving AOW abroad</a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-10 offset-lg-1 col-md-12">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-12 notVisibleInFrame">
+                                    <!-- Start  -->
+
+                                    <h1>Receiving AOW abroad: what to do?</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-fluid checkContainer">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <!-- Use 8 of 12 columns from medium screens onward, to keep form focussed -->
+                                    <form class="questions" action="#">
+                                        <div class="start active">
+                                            <div class="questionWrapper">
+                                                <div class="questionHeader">
+                                                    <p>If you live outside of the Netherlands, you can’t alwasy receive
+                                                        an AOW pension.
+                                                        Answer 3 questions and find out if you can receive AOW in your
+                                                        country and what you
+                                                        need to do.
+                                                    </p>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="notPreFilledElm">
+                                                        <div class="col-md-12">
+                                                            <div class="form-control">
+                                                                <div class="button-wrapper">
+                                                                    <button type="button"
+                                                                        class="btn btn-primary btn-lg btn-delay"
+                                                                        id="startFlowBtn">Start de checklist</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="questionHelp">
+                                                    <div class="row">
+                                                        <div class="col-sm-12">
+                                                            <div class="grouped">
+                                                                <button type="button"
+                                                                    class="btn btn-toggle toggle-next">Help with the
+                                                                    checklist</button>
+                                                                <div class="helpItems">
+
+                                                                    <h3 class="helpQuestion toggle-next">Lorem, ipsum
+                                                                        dolor.</h3>
+                                                                    <div class="helpAnswer">
+                                                                        <p>...
+                                                                        </p>
+                                                                    </div>
+
+                                                                    <h3 class="helpQuestion toggle-next">Lorem, ipsum
+                                                                        dolor.</h3>
+                                                                    <div class="helpAnswer">
+                                                                        <p>
+                                                                            <a href="#lorem">Lorem, ipsum dolor.</a>
+                                                                        </p>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- START vraag 1-->
+                                        <div class="question ">
+                                            <div class="questionWrapper">
+                                                <div class="progress mb-4">
+                                                    <div class="progress-bar" role="progressbar" style="width: 25%"
+                                                        aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                        <span>25%</span></div>
+                                                </div>
+                                                <div class="form-row">
+                                                    <div class="col-sm-12 questionHeader">
+
+                                                        <div class="grouped aft-space subtask">
+                                                            <h2>What is your date of birth?</h2>
+                                                            <div class="input-group country-selector mb-3">
+                                                                <input type="text" class="form-control" id="birthdate"
+                                                                    placeholder="for example: 23-06-1988"
+                                                                    aria-label="birthdate"
+                                                                    aria-describedby="date-of-birth">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="preFilledElm">
+                                                    <div class="form-row">
+
+                                                    </div>
+                                                </div>
+                                                <div class="notPreFilledElm">
+                                                    <div class="form-row">
+
+                                                        <div class="form-control">
+                                                            <!-- <button type="button"
+                                                                class="btn btn-link btn-prev-question mr-2">Previous</button> -->
+                                                            <div class="button-wrapper button-next">
+                                                                <button type="submit"
+                                                                    class="btn btn-primary btn-next-question">
+                                                                    <span class="text">Next</span>
+                                                                    <span class="loader"></span>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="questionHelp">
+                                                    <div class="row">
+                                                        <div class="col-sm-12">
+                                                            <div class="grouped">
+
+                                                                <button type="button"
+                                                                    class="btn btn-toggle toggle-next">Help with this
+                                                                    question</button>
+                                                                <div class="helpItems">
+                                                                    <h3 class="helpQuestion toggle-next">Lorem, ipsum
+                                                                        dolor.</h3>
+                                                                    <div class="helpAnswer">
+                                                                        <p>Lorem, ipsum dolor.</p>
+                                                                        <p><a href="#lorem">Lorem, ipsum dolor.</a></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- EINDE vraag 1-->
+                                        <!-- start vraag 2 -->
+                                        <div class="question ">
+                                            <div class="questionWrapper">
+                                                <div class="progress mb-4">
+                                                    <div class="progress-bar" role="progressbar" style="width: 50%"
+                                                        aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                                        <span>50%</span></div>
+                                                </div>
+                                                <div class="form-row">
+                                                    <div class="col-sm-12 questionHeader">
+
+                                                        <div class="grouped aft-space subtask">
+                                                            <h3>In which country do you live?</h3>
+                                                            <div class="ui-widget input-group country-selector mb-3">
+                                                                <input type="text" class="form-control" id="countries"
+                                                                    placeholder="Choose country.." aria-label="Country"
+                                                                    aria-describedby="choose-country">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="preFilledElm">
+                                                    <div class="form-row">
+
+                                                    </div>
+                                                </div>
+                                                <div class="notPreFilledElm">
+                                                    <div class="form-row">
+                                                        <div class="form-control">
+                                                            <button type="button"
+                                                                class="btn btn-link btn-prev-question mr-2">Previous</button>
+                                                            <div class="button-wrapper button-next">
+                                                                <button type="submit"
+                                                                    class="btn btn-primary btn-next-question">
+                                                                    <span class="text">Next</span>
+                                                                    <span class="loader"></span>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="questionHelp">
+                                                    <div class="row">
+                                                        <div class="col-sm-12">
+                                                            <div class="grouped">
+
+                                                                <button type="button"
+                                                                    class="btn btn-toggle toggle-next">Help with this
+                                                                    question</button>
+                                                                <div class="helpItems">
+                                                                    <h3 class="helpQuestion toggle-next">Lorem, ipsum
+                                                                        dolor.</h3>
+                                                                    <div class="helpAnswer">
+                                                                        <p>Lorem, ipsum dolor.</p>
+                                                                        <p><a href="#lorem">Lorem, ipsum dolor.</a></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <!-- EINDE vraag 2-->
+
+                                        <!-- start vraag 3 -->
+                                        <div class="question ">
+                                            <div class="questionWrapper">
+                                                <div class="progress mb-4">
+                                                    <div class="progress-bar" role="progressbar" style="width: 75%"
+                                                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                                        <span>75%</span></div>
+                                                </div>
+                                                <div class="form-row">
+                                                    <div class="col-sm-12 questionHeader">
+                                                        <div class="grouped aft-space subtask">
+                                                            <h2>How many years did you live and/or work in the
+                                                                Netherlands?
+                                                            </h2>
+                                                            <div class="ui-widget input-group country-selector mb-3">
+                                                                <input type="text" class="form-control" id="years"
+                                                                    placeholder="Years.." aria-label="years"
+                                                                    aria-describedby="years">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="notPreFilledElm">
+                                                    <div class="form-row">
+                                                        <div class="form-control">
+                                                            <button type="button"
+                                                                class="btn btn-link btn-prev-question mr-2">Previous</button>
+                                                            <div class="button-wrapper button-next">
+                                                                <button type="submit"
+                                                                    class="btn btn-primary btn-next-question">
+                                                                    <span class="text">Next</span>
+                                                                    <span class="loader"></span>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="questionHelp">
+                                                    <div class="row">
+                                                        <div class="col-sm-12">
+                                                            <div class="grouped">
+
+                                                                <button type="button"
+                                                                    class="btn btn-toggle toggle-next">Help with this
+                                                                    question</button>
+                                                                <div class="helpItems">
+                                                                    <h3 class="helpQuestion toggle-next">Lorem, ipsum
+                                                                        dolor.</h3>
+                                                                    <div class="helpAnswer">
+                                                                        <p>Lorem, ipsum dolor.</p>
+                                                                        <p><a href="#lorem">Lorem, ipsum dolor.</a></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- EINDE vraag 3-->
+
+                                        <!-- start resultaat -->
+                                        <div class="question">
+                                            <div class="questionWrapper">
+                                                <div class="form-row">
+                                                    <div class="col-sm-12 questionHeader">
+                                                        <p>Based on the answers you gave us, the following actions,
+                                                            information and tips apply to your situation:</p>
+                                                        <div class="callout callout-primary mb-3 mt-3">
+                                                            <p>Your AOW pension age is: <b>11 November 2020</b></p>
+                                                        </div>
+                                                        <div class="callout callout-primary mb-3 mt-3">
+                                                            <p>You can receive 18 years x 2% = 36% to the <a
+                                                                    href="#">basic amount</a></p>
+                                                        </div>
+                                                        <div class="callout callout-primary mb-3 mt-3">
+                                                            <p>As you live in Canada, you can receive a <b>top-up of
+                                                                    20%</b></p>
+                                                        </div>
+                                                        <h3 class="vireo-light">What you need to do</h3>
+                                                        <p><button class="btn btn-primary">Apply for AOW
+                                                                pension</button>
+                                                        </p>
+                                                        <p><button class="btn btn-primary">Register as a
+                                                                non-resident</button></p>
+                                                    </div>
+
+                                                </div>
+                                                <div class="questionHelp">
+                                                    <div class="grouped">
+                                                        <h3 class="vireo-light mt-1">Suggestion!</h3>
+                                                        <div class="callout callout-success mb-5 mt-3">
+                                                            <p><b>Make your life easier with DigiD</b><br>
+                                                                With your DigiD you can identify yourself online, when
+                                                                dealing with the government, educational institutions,
+                                                                healthcare organisations or your pension fund.</p>
+                                                            <p><a href="#">Find more about DigiD and apply online</a>
+                                                            </p>
+                                                        </div>
+                                                        <div class="callout callout-primary mb-3 mt-3">
+                                                            <p><b>Would you like to save this page?</b></p>
+                                                            <p><a href="#">Save this page as a PDF</a>
+                                                                <p><a href="#">Send this page to my email address</a>
+                                                                </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- EINDE resultaat-->
+
+
+                                        <!-- EINDE alle vragen -->
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!--
+            <main class="informative">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-10 offset-lg-1 col-md-12">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="toggleSet">
+                                            <h2 class="toggleTopic toggle-next">Welke soorten hypotheken zijn er?</h2>
+                                            <div class="toggleContent">
+                                                <p>
+                                                    Er zijn verschillende soorten hypotheken. Bijvoorbeeld een aflossingsvrije hypotheek of een spaarhypotheek. <a href="#bla">Lees meer over de hypotheeksoorten</a>.
+                                                </p>
+                                            </div>
+                                            <h2 class="toggleTopic toggle-next">Met welke kosten krijg ik te maken als ik een huis koop?</h2>
+                                            <div class="toggleContent">
+                                                <p>
+                                                    Als u een huis koopt gaat u de hypotheek betalen. Daarnaast betaalt u de aankoopkosten, taxatiekosten, overdrachtskosten en de eventuele makelaarskosten en bouwkundige keuring, Verder moet u rekening houden met verzekeringen en onroerendezaakbelasting. <a href="#">Meer informatie over de kosten</a>.
+                                                </p>
+                                            </div>
+                                            <h2 class="toggleTopic toggle-next">Hoe zwaar telt mijn studieschuld mee voor mijn hypotheek?</h2>
+                                            <div class="toggleContent">
+                                                <p>
+                                                    Uw studieschuld telt deels mee bij het berekenen van uw hypotheek. Hoe zwaar de schuld meetelt hangt af van de beurs die u heeft gehad. Hoeveel u al heeft afgelost, maakt meestal geen verschil. De hypotheekverstrekker kijkt naar de hoogte van de oorspronkelijke schuld. <a href="">Meer informatie over het meetellen van de studieschuld</a>.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        -->
+    </main>
+
+    <div class="modal fade loginmodal" id="loginToStartForm" tabindex="-1" role="dialog" aria-labelledby="modal-header"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="modal-header">
+                        <img src="img/digid-logo.svg" alt="digid"> Login met DigiD
+                    </h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <form>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="gebruikersnaam">DigiD gebruikersnaam</label>
+                            <input type="text" class="form-control" id="gebruikersnaam"
+                                placeholder="DigiD gebruikersnaam" value="asha_madhavan">
+                        </div>
+                        <div class="form-group">
+                            <label for="wachtwoord">Wachtwoord</label>
+                            <input type="password" class="form-control" id="wachtwoord" placeholder="Wachtwoord"
+                                value="********">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" id="loginAndStartBtn">Inloggen</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    </main>
+    <!-- Include footer -->
+    <div azdpc-include-html="footer-en.html"></div>
+    <script src="js/main.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+        integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+</body>
+
+</html>

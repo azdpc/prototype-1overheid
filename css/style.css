@@ -10127,6 +10127,14 @@ footer .lead {
   border-left-color: var(--primary);
 }
 
+.callout-success {
+  border-left-color: var(--success);
+}
+
+.callout-warning {
+  border-left-color: var(--warning);
+}
+
 /* Calendar */
 .calendar-container {
   background-color: var(--vireo-blue-misty);
