@@ -464,16 +464,37 @@ function autocompleteCountries() {
         "Uganda", "Ukraine", "United Arab Emirates", "United Kingdom", "Uruguay", "Uzbekistan",
         "Venezuela", "Vietnam", "Virgin Islands (US)", "Yemen", "Zambia", "Zimbabwe"
     ];
-    let boldSearchSuggestion = "<span class='ui-autocomplete-term'>%s</span>";
 
-    if ($("#countries").length === 0) {
-        return;
-    }
+    let countriesNL = ["Afghanistan", "Albanië", "Algerije", "Andorra", "Angola", "Anguilla", "Antigua Barbuda", "Argentinië", "Armenië", "Aruba", "Australië", "Oostenrijk", " Azerbeidzjan "," Bahama's "," Bahrein "," Bangladesh "," Barbados "," Wit-Rusland "," België "," Belize "," Benin "," Bermuda "," Bhutan "," Bolivia "," Bosnië; Herzegovina "," Botswana "," Brazilië "," Britse Maagdeneilanden "," Brunei "," Bulgarije "," Burkina Faso "," Burundi "," Cambodja "," Kameroen "," Canada "," Kaapverdië " , "Kaaimaneilanden", "Tsjaad", "Chili", "China", "Colombia", "Congo", "Cook Eilanden", "Costa Rica", "Ivoorkust", "Kroatië", "Cruiseschip" , "Cuba", "Cyprus", "Tsjechië", "Denemarken", "Djibouti", "Dominica", "Dominicaanse Republiek", "Ecuador", "Egypte", "El Salvador", "Equatoriaal-Guinea", " Estland "," Ethiopië "," Falkland-eilanden "," Faeröer "," Fiji "," Finland "," Frankrijk "," Frans-Polynesië "," Frans-West-Indië "," Gabon "," Gambia "," Georgië "," Duitsland "," Ghana "," Gibraltar "," Griekenland "," Groenland "," Grenada "," Guam "," Guatemala "," Guernsey "," Gu inea "," Guinee-Bissau "," Guyana "," Haïti "," Honduras "," Hong Kong "," Hongarije "," IJsland "," India "," Indonesië "," Iran "," Irak "," Ierland "," Isle of Man "," Israel "," Italy "," Jamaica "," Japan "," Jersey "," Jordan "," Kazakhstan "," Kenya "," Koeweit "," Kirgizische Republiek ", "Laos", "Letland", "Libanon", "Lesotho", "Liberia", "Libië", "Liechtenstein", "Litouwen", "Luxemburg", "Macau", "Macedonië", "Madagascar", "Malawi "," Maleisië "," Malediven "," Mali "," Malta "," Mauritanië "," Mauritius "," Mexico "," Moldavië "," Monaco "," Mongolië "," Montenegro "," Montserrat ", "Marokko", "Mozambique", "Namibië", "Nepal", "Nederland", "Nederlandse Antillen", "Nieuw-Caledonië", "Nieuw-Zeeland", "Nicaragua", "Niger", "Nigeria", "Noorwegen" , "Oman", "Pakistan", "Palestina", "Panama", "Papoea-Nieuw-Guinea", "Paraguay", "Peru", "Filipijnen", "Polen", "Portugal", "Puerto Rico", "Qatar "," Reunion "," Romania "," Russia "," Rwanda "," Saint Pierre Miquelon "," Samoa "," San Marino "," Satellite "," Saudi Arabia "," Senegal "," Serbia ", "Se ychelles "," Sierra Leone "," Singapore "," Slowakije "," Slovenië "," Zuid-Afrika "," Zuid-Korea "," Spanje "," Sri Lanka "," St Kitts Nevis "," St Lucia ", "St Vincent", "St. Lucia "," Sudan "," Suriname "," Swaziland "," Zweden "," Zwitserland "," Syrië "," Taiwan "," Tadzjikistan "," Tanzania "," Thailand "," Timor L'Este ", "Togo", "Tonga", "Trinidad Tobago", "Tunesië", "Turkije", "Turkmenistan", "Turks Caicos", "Oeganda", "Oekraïne", "Verenigde Arabische Emiraten", "Verenigd Koninkrijk", " Uruguay "," Oezbekistan "," Venezuela "," Vietnam "," Maagdeneilanden (VS) "," Jemen "," Zambia "," Zimbabwe "];
+    let boldSearchSuggestion = "<span class='ui-autocomplete-term'>%s</span>";
 
     $("#countries").autocomplete({
         source: countries,
         minLength: 2,
         open: function (e, ui) {
+            let autocompleteData = $(this).data('uiAutocomplete');
+            let styledTerm = boldSearchSuggestion.replace('%s', autocompleteData.term);
+
+            autocompleteData
+                .menu
+                .element
+                .find('div')
+                .each(function () {
+                    let $this = $(this);
+                    let regex = new RegExp(autocompleteData.term, "gi");
+
+                    $this.html($this.text().replace(regex, function (matched) {
+                        return boldSearchSuggestion.replace('%s', matched);
+                    }));
+                });
+        }
+    });
+
+    $("#countriesNL").autocomplete({
+        source: countriesNL,
+        minLength: 2,
+        open: function (e, ui) {
+            console.log('test')
             let autocompleteData = $(this).data('uiAutocomplete');
             let styledTerm = boldSearchSuggestion.replace('%s', autocompleteData.term);
 

@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="nl-NL">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Werk en pensioen | 1overheid</title>
+    <meta name="description" content="Prototype voor 1overheid: informatie, diensten, beleid en bestuur">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/additional.css">
+</head>
+
+<body cz-shortcut-listen="true">
+    <!-- include header -->
+    <div azdpc-include-html="header.html"></div>
+    <!-- Logged in as Asha / banner -->
+    <banner>
+        <div class="loggedInElm">
+            <div id="login-foldout" class="navbar-pinned expanded">
+                <div class="container-fluid">
+                    <div class="navbar-pinned-content">
+                        <div class="row align-items-center">
+                            <div class="col-8">
+                                Logged in as Asha Martinez
+                            </div>
+                            <div class="col-4">
+                                <button class="btn btn-success logoutBtn float-right">Logout</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </banner>
+    <main role="main" class="actionable">
+        <div class="container-fluid checkContainer">
+            <div class="row">
+                <div class="col-12">
+                    <ul class="breadcrumb">
+                        <li class="d-none d-md-block"><a href="home-en.html">Home</a></li>
+                        <li class="d-none d-md-block"><a href="emigreren-buitenland-wonen.html">Emigreren en buiten
+                                Nederland wonen</a></li>
+                        <li><a href="werk-en-pensioen.html">Werk en pensioen</a>
+                        <li class="d-none d-md-block"><a href="werk-en-pensioen-wat-regelen.html">Weg uit Nederland: wat
+                                moet ik regelen?</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1 col-md-12">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12 notVisibleInFrame">
+                                <h1>Weg uit Nederland: wat
+                                    moet ik regelen?</h1>
+                            </div>
+                            <div class="col-12">
+                                <form class="questions" action="">
+                                    <!-- START vraag 1 -->
+                                    <div class="question active">
+                                        <p>Bent u van plan om vanuit Nederland te verhuizen naar een ander land?
+                                            Beantwoord de
+                                            volgende vragen voor een persoonlijk overzicht van dingen die u moet
+                                            regelen.
+                                        </p>
+                                        <div class="questionWrapper">
+                                            <div class="progress mb-4">
+                                                <div class="progress-bar" role="progressbar" style="width: 20%"
+                                                    aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                                                    <span>20%</span>
+                                                </div>
+                                            </div>
+                                            <p><b>Beantwoord 4 vragen om te zien wat u in uw situatie moet
+                                                    regelen:</b></p>
+                                            <div class="grouped mb-3">
+                                                <h3>Naar welk land gaat u emigreren?</h3>
+                                                <div class="ui-widget input-group country-selector mb-3">
+                                                    <input type="text" class="form-control" id="countriesNL"
+                                                        placeholder="Kies een land.." aria-label="Country"
+                                                        aria-describedby="choose-country">
+                                                </div>
+                                            </div>
+                                            <button type="submit" class="btn btn-primary btn-next-question">Volgende
+                                                vraag</button>
+                                        </div>
+                                        <div class="questionHelp">
+                                            <div class="grouped">
+                                                <h2 class="vireo-light mt-3">Opzoeken</h2>
+                                                <div class="toggleSet">
+                                                    <h3 class="toggleTopic toggle-next">Kan ik mijn AOW pensioen afkopen
+                                                        als
+                                                        ik
+                                                        emigreer?</h3>
+                                                    <div class="toggleContent">
+                                                        <p>
+                                                            <a href="#een-dummy-link-die-niets-doet">Lorem, ipsum
+                                                                dolor.</a>
+                                                        </p>
+                                                    </div>
+                                                    <h3 class="toggleTopic toggle-next">Betaaldagen AOW</h3>
+                                                    <div class="toggleContent">
+                                                        <p>
+                                                            <a href="#een-dummy-link-die-niets-doet">Lorem, ipsum
+                                                                dolor.</a>
+                                                        </p>
+                                                    </div>
+                                                    <h3 class="toggleTopic toggle-next">Wat is AOW?</h3>
+                                                    <div class="toggleContent">
+                                                        <p>
+                                                            <a href="#een-dummy-link-die-niets-doet">Lorem, ipsum
+                                                                dolor.</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- EINDE vraag 1 -->
+                                    <!-- START vraag 2 -->
+                                    <div class="question ">
+                                        <div class="questionWrapper">
+                                            <div class="progress mb-4">
+                                                <div class="progress-bar" role="progressbar" style="width: 40%"
+                                                    aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+                                                    <span>40%</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="grouped mb-3">
+                                                <h3>In welke gemeente in Nederland woont u?</h3>
+                                                <div class="input-group country-selector mb-3">
+                                                    <input type="text" class="form-control"
+                                                        placeholder="Selecteer een gemeente.." aria-label="Country"
+                                                        aria-describedby="choose-country">
+                                                </div>
+                                            </div>
+                                            <button type="submit" class="btn btn-primary btn-next-question">Volgende
+                                                vraag</button>
+                                        </div>
+                                    </div>
+                                    <!-- EINDE vraag 2 -->
+                                    <!-- START vraag 3 -->
+                                    <div class="question ">
+                                        <div class="questionWrapper">
+                                            <div class="progress mb-4">
+                                                <div class="progress-bar" role="progressbar" style="width: 60%"
+                                                    aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                                                    <span>60%</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="grouped mb-3">
+                                                <h3>Wat is uw gezinssituatie?</h3>
+                                                <div class="input-group country-selector mb-3">
+                                                    <input type="text" class="form-control"
+                                                        placeholder="Gezinssituatie.." aria-label="Country"
+                                                        aria-describedby="choose-country">
+                                                </div>
+                                            </div>
+                                            <button type="submit" class="btn btn-primary btn-next-question">Volgende
+                                                vraag</button>
+                                        </div>
+                                    </div>
+                                    <!-- EINDE vraag 3 -->
+                                    <!-- START vraag 4 -->
+                                    <div class="question ">
+                                        <div class="questionWrapper">
+                                            <div class="progress mb-4">
+                                                <div class="progress-bar" role="progressbar" style="width: 80%"
+                                                    aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                                                    <span>80%</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="grouped mb-3">
+                                                <h3>Verhuizen er huisdieren mee?</h3>
+                                                <div class="custom-control custom-radio mb-3">
+                                                    <input class="custom-control-input" type="radio" name="huisdieren"
+                                                        id="Q2A" value="Q2A" checked>
+                                                    <label class="custom-control-label" for="Q2A">Ja</label>
+                                                </div>
+                                                <div class="custom-control custom-radio mb-3">
+                                                    <input class="custom-control-input" type="radio" name="huisdieren"
+                                                        id="Q2B" value="Q2B">
+                                                    <label class="custom-control-label" for="Q2B">Nee</label>
+                                                </div>
+                                            </div>
+                                            <button type="submit" class="btn btn-primary btn-next-question">Volgende
+                                                vraag</button>
+                                        </div>
+                                    </div>
+                                    <!-- EINDE vraag 4 -->
+                                    <!-- START thank you page -->
+                                    <div class="question ">
+                                        <div class="questionWrapper">
+                                            <p>Op basis van de antwoorden die u heeft gegeven geldt voor u het volgende:
+                                            </p>
+                                            <div class="callout callout-primary mb-3 mt-3">
+                                                <p><b>Werkvergunning</b><br>
+                                                    Informeer bij de <a href="#">ambassade van Duitsland</a> of u een
+                                                    Werkvergunning nodig heeft.</p>
+                                            </div>
+                                            <div class="callout callout-primary mb-3 mt-3">
+                                                <p><b>Pensioen</b><br>
+                                                    Als u in Duitsland woont, blijft u recht houden op AOW pensioen. Per
+                                                    jaar dat u buiten NL woont, wordt u 2% gekort op uw AOW. Om toch een
+                                                    volledige AOW pensioen te krijgen, kunt u zich <a href="">vrijwillig
+                                                        verzekeren</a>.</p>
+                                            </div>
+                                            <div class="callout callout-primary mb-3 mt-3">
+                                                <p><b>Kinderbijslag</b><br>
+                                                    U houdt na emigratie naar Duitsland recht op [€...] Kinderbijslag
+                                                </p>
+                                            </div>
+                                            <div class="callout callout-primary mb-3 mt-3">
+                                                <p><b>Huisdieren</b><br>
+                                                    uw hond moet gevaccineerd zijn tegen hondsdolheid. Hij hoeft niet in
+                                                    quarantaine.
+                                                </p>
+                                            </div>
+
+                                            <h3 class="vireo-light mt-5">Wat moet u regelen?</h3>
+                                            <p><a href="#" class="btn btn-primary">Uitschrijven gemeente Utrecht</a></p>
+                                            <p><a href="#" class="btn btn-primary">Voorlopige belastingaanslag
+                                                    stopzetten</a></p>
+                                            <p><a href="#" class="btn btn-primary">Huurtoeslag stopzetten</a></p>
+                                            <p><a href="#" class="btn btn-primary">Verhuizing doorgeven voor
+                                                    Kinderbijslag</a></p>
+                                        </div>
+                                        <div class="questionHelp">
+                                            <div class="grouped">
+                                                <h3 class="vireo-light mt-1">Tips!</h3>
+                                                <div class="callout callout-success mb-3 mt-3">
+                                                    <p><b>Vraag een DigiD aan</b><br>
+                                                        Wanneer u nog geen DigiD heeft kunt u er het beste voor uw
+                                                        vertrek een aanvragen.</p>
+                                                    <p><a href="#">Lees meer over DigiD en hoe u die kunt aanvragen</a>
+                                                    </p>
+                                                </div>
+                                                <div class="callout callout-success mb-3 mt-3">
+                                                    <p><b>Neem uw pensioen mee naar het buitenland</b></p>
+                                                    <p>In bepaalde gevallen kunt u uw in Nederland opgebouwde pensioen
+                                                        overdragen aan een pensioeninstelling in het land waar u gaat
+                                                        wonen.<br>
+                                                        <a href="">Lees meer over pensioen meenemen</a>
+                                                    </p>
+                                                </div>
+                                                <div class="callout callout-success mb-5 mt-3">
+                                                    <p><b>Zet de registratie van uw auto stop</b></p>
+                                                    <p>Als u uw auto met Nederlandse kenteken wilt uitvoeren, moet u de
+                                                        registratie van de auto bij de RDW beeindigen.<br>
+                                                        <a href="">Lees meer over auto uitvoeren</a>
+                                                    </p>
+                                                </div>
+                                                <div class="callout callout-primary mb-3 mt-3">
+                                                    <p><b>Wilt u deze pagina bewaren?</b></p>
+                                                    <p><a href="">Bewaar deze pagina als PDF</a></p>
+                                                    <p><a href="">Stuur deze pagina naar mijn e-mailadres</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <!-- EINDE thank you page -->
+
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- Login modal -->
+                    <div class="modal fade loginmodal" id="loginToStartForm" tabindex="-1" role="dialog"
+                        aria-labelledby="modal-header" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3 class="modal-title" id="modal-header">
+                                        <img src="img/digid-logo.svg" alt="digid"> Login met DigiD
+                                    </h3>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">×</span>
+                                    </button>
+                                </div>
+                                <form>
+                                    <div class="modal-body">
+                                        <div class="form-group">
+                                            <label for="gebruikersnaam">DigiD gebruikersnaam</label>
+                                            <input type="text" class="form-control" id="gebruikersnaam"
+                                                placeholder="DigiD gebruikersnaam" value="asha_madhavan">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="wachtwoord">Wachtwoord</label>
+                                            <input type="password" class="form-control" id="wachtwoord"
+                                                placeholder="Wachtwoord" value="********">
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary"
+                                            id="loginAndStartBtn">Inloggen</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Send modal -->
+                    <div class="modal fade sendModal" id="sendModal" tabindex="-1" role="dialog"
+                        aria-labelledby="send-modal-header" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3 class="modal-title" id="send-modal-header">
+                                        Uw aanvraag is verstuurd
+                                    </h3>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">×</span>
+                                    </button>
+                                </div>
+                                <form>
+                                    <div class="modal-body">
+                                        <p>Wij hebben uw aanvraag voor een bijstandsuitkering in behandeling genomen.
+                                            Binnen 8 weken krijgt u een beslissing op uw aanvraag. Heeft u recht op
+                                            bijstand? Dan krijgt u dit vanaf het moment dat u de aanvraag heeft gedaan.
+                                        </p>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Please note modal -->
+                    <!-- External sevice -->
+                    <div class="modal fade" id="noteModal" tabindex="-1" role="dialog">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <img src="content/icons/warning.svg" width="30" height="30" />
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p><strong>Please note:</strong> you have chosen to apply at an external service
+                                        provider. You will have to pay an additional service fee.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- DigiD -->
+                    <div class="modal fade" id="noteModalDigid" tabindex="-1" role="dialog">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <img src="content/icons/warning.svg" width="30" height="30" />
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p><strong>Please note:</strong> you have chosen to apply without DigiD. This means
+                                        you can not complete this application online and have to submit it in person.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Include footer -->
+    <div azdpc-include-html="footer.html"></div>
+    <script src="js/main.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+        integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+</body>
+
+</html>
