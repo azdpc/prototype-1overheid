@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="nl-NL">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>My passport or ID card is lost or stolen abroad | 1overheid</title>
+  <meta name="description" content="Prototype voor 1overheid: informatie, diensten, beleid en bestuur">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/additional.css">
+</head>
+
+<body cz-shortcut-listen="true">
+  <!-- include header -->
+  <div azdpc-include-html="header-en.html"></div>
+  <!-- Logged in as Asha / banner -->
+  <banner>
+    <div class="loggedInElm">
+      <div id="login-foldout" class="navbar-pinned expanded">
+        <div class="container-fluid">
+          <div class="navbar-pinned-content">
+            <div class="row align-items-center">
+              <div class="col-8">
+                Logged in as Asha Martinez
+              </div>
+              <div class="col-4">
+                <button class="btn btn-success logoutBtn float-right">Logout</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </banner>
+  <main>
+    <section class="actionable">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <ul class="breadcrumb">
+              <li class="d-none d-md-block"><a href="home-en.html">Home</a></li>
+              <li><a href="passport-nationality.html">Passport, identity and nationality</a></li>
+                <li><a href="passport-id.html">Passport and ID-card</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-10 offset-lg-1 col-md-12">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-12 notVisibleInFrame">
+                  <h1>My passport or ID-card is lost or stolen abroad</h1>
+
+                  <p>
+                   If your Dutch passport or identity card (ID card) is lost or stolen abroad, the steps you need to take depend on how soon you will be travelling.</p>
+  <h3>Are you travelling within 3 weeks?</h3>
+  <p>If you need to travel within 3 weeks, you must <a href="">apply for an emergency travel document</a>. 
+
+   <h3> I will not be travelling within 4 weeks</h3>
+<p>If you are not travelling within 4 weeks, you have time to <a href="">apply for a new passport or ID card while you are abroad</a>. On average applications take 3 weeks to process. You have to book an appoinment at a Dutch Embassy or Consulate. Take in consideration that it may take a few days to make the appointment.</p>
+
+<div class="callout callout-success"><p>If you are in a country without a Dutch Embassy or Consulate please <a href="">get in touch with us</a>.
+
+<h3>Reporting the theft or loss</h3>
+<p>The Dutch government does not require you to report the theft or loss of your passport to the local police. But you are advised to do so. Ask for written proof that you have filed a police report. This document may be required by your insurer or the local authorities.<p>
+
+
+<div class="callout callout-success"><p>If you lost your passport due to a robbery, read the information on <a href="">how to handle with robbery and theft while abroad</a>.
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <div class="container">
+    
+    </div>
+  </main>
+  <div class="modal fade loginmodal" id="loginToStartForm" tabindex="-1" role="dialog" aria-labelledby="modal-header"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="modal-header">
+            <img src="img/digid-logo.svg" alt="digid"> Login met DigiD
+          </h3>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <form>
+          <div class="modal-body">
+            <div class="form-group">
+              <label for="gebruikersnaam">DigiD gebruikersnaam</label>
+              <input type="text" class="form-control" id="gebruikersnaam" placeholder="DigiD gebruikersnaam"
+                value="asha_madhavan">
+            </div>
+            <div class="form-group">
+              <label for="wachtwoord">Wachtwoord</label>
+              <input type="password" class="form-control" id="wachtwoord" placeholder="Wachtwoord" value="********">
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" id="loginAndStartBtn">Inloggen</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  </main>
+  <!-- Include footer -->
+  <div azdpc-include-html="footer-en.html"></div>
+  <script src="js/main.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+    integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+</body>
+
+</html>
