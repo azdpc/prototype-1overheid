@@ -122,9 +122,9 @@
                                         <div class="question ">
                                             <div class="questionWrapper">
                                                 <div class="progress mb-4">
-                                                    <div class="progress-bar" role="progressbar" style="width: 25%"
-                                                        aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                                                        <span>25%</span></div>
+                                                    <div class="progress-bar" role="progressbar" style="width: 20%"
+                                                        aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                                                        <span>20%</span></div>
                                                 </div>
                                                 <div class="form-row">
                                                     <div class="col-sm-12 questionHeader">
@@ -188,9 +188,9 @@
                                         <div class="question ">
                                             <div class="questionWrapper">
                                                 <div class="progress mb-4">
-                                                    <div class="progress-bar" role="progressbar" style="width: 50%"
-                                                        aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-                                                        <span>50%</span></div>
+                                                    <div class="progress-bar" role="progressbar" style="width: 40%"
+                                                        aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+                                                        <span>40%</span></div>
                                                 </div>
                                                 <div class="form-row">
                                                     <div class="col-sm-12 questionHeader">
@@ -254,9 +254,9 @@
                                         <div class="question ">
                                             <div class="questionWrapper">
                                                 <div class="progress mb-4">
-                                                    <div class="progress-bar" role="progressbar" style="width: 75%"
-                                                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                                                        <span>75%</span></div>
+                                                    <div class="progress-bar" role="progressbar" style="width: 60%"
+                                                        aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                                                        <span>60%</span></div>
                                                 </div>
                                                 <div class="form-row">
                                                     <div class="col-sm-12 questionHeader">
@@ -310,13 +310,80 @@
                                             </div>
                                         </div>
                                         <!-- EINDE vraag 3-->
+                                          <!-- START vraag 4 -->
+                                    <div class="question">
+                                        <div class="questionWrapper">
+                                            <div class="progress mb-4">
+                                                <div class="progress-bar" role="progressbar" style="width: 80%"
+                                                    aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                                                    <span>80%</span>
+                                                </div>
+                                            </div>
+                                            <div class="grouped mb-3">
+                                                <h3>Are you registered as a non-resident in the Netherlands</h3>
+                                                <div class="custom-control custom-radio mb-3">
+                                                    <input class="custom-control-input" type="radio"
+                                                        name="gezinssituatie" id="Q1A" value="Q1A" checked>
+                                                    <label class="custom-control-label" for="Q1A">Yes</label>
+                                                </div>
+                                                <div class="custom-control custom-radio mb-3">
+                                                    <input class="custom-control-input" type="radio"
+                                                        name="gezinssituatie" id="Q1B" value="Q1B">
+                                                    <label class="custom-control-label" for="Q1B">No</label>
+                                                </div>
+                                                <div class="custom-control custom-radio mb-3">
+                                                    <input class="custom-control-input" type="radio"
+                                                        name="gezinssituatie" id="Q1C" value="Q1C">
+                                                    <label class="custom-control-label" for="Q1C">I don't know</label>
+                                                </div>
+                                                                              
+                                    </div>
+                                      <div class="notPreFilledElm">
+                                                    <div class="form-row">
+                                                        <div class="form-control">
+                                                            <button type="button"
+                                                                class="btn btn-link btn-prev-question mr-2">Previous</button>
+                                                            <div class="button-wrapper button-next">
+                                                                <button type="submit"
+                                                                    class="btn btn-primary btn-next-question">
+                                                                    <span class="text">Next</span>
+                                                                    <span class="loader"></span>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="questionHelp">
+                                                    <div class="row">
+                                                        <div class="col-sm-12">
+                                                            <div class="grouped">
+
+                                                                <button type="button"
+                                                                    class="btn btn-toggle toggle-next">Help with this
+                                                                    question</button>
+                                                                <div class="helpItems">
+                                                                    <h3 class="helpQuestion toggle-next">Lorem, ipsum
+                                                                        dolor.</h3>
+                                                                    <div class="helpAnswer">
+                                                                        <p>Lorem, ipsum dolor.</p>
+                                                                        <p><a href="#lorem">Lorem, ipsum dolor.</a></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    <!-- EINDE vraag 4 -->
 
                                         <!-- start resultaat -->
                                         <div class="question">
                                             <div class="questionWrapper">
                                                 <div class="form-row">
                                                     <div class="col-sm-12 questionHeader">
-                                                        <p>Based on the answers you gave us, the following actions,
+                                                        <p>You are entitled to apply for AOW pension. Based on the answers you gave us, the following actions,
                                                             information and tips apply to your situation:</p>
                                                         <div class="callout callout-primary mb-3 mt-3">
                                                             <p>Your AOW pension age is: <b>11 November 2020</b></p>
@@ -329,18 +396,23 @@
                                                             <p>As you live in Canada, you can receive a <b>top-up of
                                                                     20%</b></p>
                                                         </div>
+                                                               <div class="callout callout-primary mb-3 mt-3">
+                                                            <p>You are not registered as a non-resident in the Netherlands. And you don't have a citizen service number (BSN). When you register as a non-resident you will receive a BSN.</p>
+                                                        </div>
                                                         <h3 class="vireo-light">What you need to do</h3>
+                                                         <p><button class="btn btn-primary">Register as a
+                                                                non-resident</button></p>
                                                         <p><button class="btn btn-primary">Apply for AOW
                                                                 pension</button>
                                                         </p>
-                                                        <p><button class="btn btn-primary">Register as a
-                                                                non-resident</button></p>
+                                                      
                                                     </div>
 
                                                 </div>
                                                 <div class="questionHelp">
                                                     <div class="grouped">
                                                         <h3 class="vireo-light mt-1">Suggestion</h3>
+                                                         
                                                         <div class="callout callout-success mb-5 mt-3">
                                                             <p><b>Make your life easier with DigiD</b><br>
                                                                 With your DigiD you can identify yourself online, when
