@@ -929,6 +929,28 @@ function showHideAmountDocuments() {
     });
 }
 
+function getSetBirthdate() {
+    const $sendButton = $('.sendDate');
+
+    $('#birthdate').keypress(function(e){
+        if (e.keyCode === 13) {
+            $sendButton.click();
+        }
+    });
+
+    $sendButton.on('click tap', function () {
+        let dateString = $('#birthdate').val();
+        let dateObject = new Date(dateString);
+        let datePicked = dateObject.toLocaleString('en', {
+            'day': '2-digit',
+            'month': 'long',
+            'year': 'numeric'
+        });
+        console.log(dateString)
+        $('.newBirthdate').text(datePicked);
+    });
+}
+
 $(function () {
     includeHTML();
     handleLogin();
@@ -943,4 +965,5 @@ $(function () {
     changeTitle();
     autocompleteCountries();
     showHideAmountDocuments();
+    getSetBirthdate();
 });

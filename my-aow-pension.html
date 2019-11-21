@@ -2,14 +2,35 @@
 <html lang="nl-NL">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta
+        http-equiv="Content-Type"
+        content="text/html; charset=UTF-8"
+    >
+    <meta
+        http-equiv="x-ua-compatible"
+        content="ie=edge"
+    >
     <title>What is my AOW pension age? | 1overheid</title>
-    <meta name="description" content="Prototype voor 1overheid: informatie, diensten, beleid en bestuur">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/additional.css">
+    <meta
+        name="description"
+        content="Prototype voor 1overheid: informatie, diensten, beleid en bestuur"
+    >
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    >
+    <link
+        rel="stylesheet"
+        href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+    >
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+    <link
+        rel="stylesheet"
+        href="css/additional.css"
+    >
 </head>
 
 <body cz-shortcut-listen="true">
@@ -18,7 +39,10 @@
     <!-- Logged in as Asha / banner -->
     <banner>
         <div class="loggedInElm">
-            <div id="login-foldout" class="navbar-pinned expanded">
+            <div
+                id="login-foldout"
+                class="navbar-pinned expanded"
+            >
                 <div class="container-fluid">
                     <div class="navbar-pinned-content">
                         <div class="row align-items-center">
@@ -41,12 +65,12 @@
                     <div class="col-12">
                         <ul class="breadcrumb">
                             <li class="d-none d-md-block"><a href="home-en.html">Home</a></li>
-                                              <li><a href="work-pension.html">Work and pension</a>
+                            <li><a href="work-pension.html">Work and pension</a>
                             </li>
-                         
+
                             <li class="d-none d-md-block"><a href="work-pension-aow.html">AOW pension</a>
                             </li>
-                         
+
                         </ul>
                     </div>
                 </div>
@@ -65,7 +89,10 @@
                             <div class="row">
                                 <div class="col-md-8">
                                     <!-- Use 8 of 12 columns from medium screens onward, to keep form focussed -->
-                                    <form class="questions" action="#">
+                                    <form
+                                        class="questions"
+                                        action="#"
+                                    >
                                         <div class="start active">
                                             <div class="questionWrapper">
                                                 <div class="form-row">
@@ -73,13 +100,19 @@
                                                         <div class="grouped aft-space subtask">
                                                             <h2>What is your date of birth?</h2>
                                                             <div class="input-group country-selector mb-3">
-                                                                <input type="text" class="form-control" id="birthdate"
-                                                                    placeholder="for example: 23-06-1988"
+                                                                <input
+                                                                    type="date"
+                                                                    class="form-control"
+                                                                    id="birthdate"
                                                                     aria-label="birthdate"
-                                                                    aria-describedby="date-of-birth">
+                                                                    aria-describedby="date-of-birth"
+                                                                >
                                                             </div>
-                                                            <button type="submit" class="btn btn-primary btn-delay mb-3"
-                                                                id="startFlowBtn">
+                                                            <button
+                                                                type="submit"
+                                                                class="btn btn-primary btn-delay mb-3"
+                                                                id="startFlowBtn"
+                                                            >
                                                                 <span class="text">View</span>
                                                                 <span class="loader"></span>
                                                             </button>
@@ -90,8 +123,10 @@
                                                     <div class="row">
                                                         <div class="col-sm-12">
                                                             <div class="grouped">
-                                                                <button type="button"
-                                                                    class="btn btn-toggle toggle-next">Help with this
+                                                                <button
+                                                                    type="button"
+                                                                    class="btn btn-toggle toggle-next"
+                                                                >Help with this
                                                                     question</button>
                                                                 <div class="helpItems">
                                                                     <h3 class="helpQuestion toggle-next">Lorem, ipsum
@@ -121,8 +156,10 @@
                                                     </div>
                                                 </div>
                                                 <div class="notPreFilledElm">
-                                                    <p><a href="outside-the-netherlands-work-pension.html"
-                                                            class="btn btn-primary">Back to
+                                                    <p><a
+                                                            href="outside-the-netherlands-work-pension.html"
+                                                            class="btn btn-primary"
+                                                        >Back to
                                                             work and pension</a></p>
 
                                                 </div>
@@ -130,7 +167,10 @@
                                                     <div class="row">
                                                         <div class="col-sm-12">
                                                             <div class="grouped">
-                                                                <button type="button" class="btn btn-toggle">Find an
+                                                                <button
+                                                                    type="button"
+                                                                    class="btn btn-toggle"
+                                                                >Find an
                                                                     answer</button>
                                                                 <div class="helpItems">
                                                                     <h3 class="helpQuestion toggle-next">Payment dates
@@ -210,15 +250,35 @@
         -->
     </main>
 
-    <div class="modal fade loginmodal" id="loginToStartForm" tabindex="-1" role="dialog" aria-labelledby="modal-header"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
+    <div
+        class="modal fade loginmodal"
+        id="loginToStartForm"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="modal-header"
+        aria-hidden="true"
+    >
+        <div
+            class="modal-dialog modal-dialog-centered"
+            role="document"
+        >
             <div class="modal-content">
                 <div class="modal-header">
-                    <h3 class="modal-title" id="modal-header">
-                        <img src="img/digid-logo.svg" alt="digid"> Login met DigiD
+                    <h3
+                        class="modal-title"
+                        id="modal-header"
+                    >
+                        <img
+                            src="img/digid-logo.svg"
+                            alt="digid"
+                        > Login met DigiD
                     </h3>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                    >
                         <span aria-hidden="true">×</span>
                     </button>
                 </div>
@@ -226,17 +286,31 @@
                     <div class="modal-body">
                         <div class="form-group">
                             <label for="gebruikersnaam">DigiD gebruikersnaam</label>
-                            <input type="text" class="form-control" id="gebruikersnaam"
-                                placeholder="DigiD gebruikersnaam" value="asha_madhavan">
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="gebruikersnaam"
+                                placeholder="DigiD gebruikersnaam"
+                                value="asha_madhavan"
+                            >
                         </div>
                         <div class="form-group">
                             <label for="wachtwoord">Wachtwoord</label>
-                            <input type="password" class="form-control" id="wachtwoord" placeholder="Wachtwoord"
-                                value="********">
+                            <input
+                                type="password"
+                                class="form-control"
+                                id="wachtwoord"
+                                placeholder="Wachtwoord"
+                                value="********"
+                            >
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" id="loginAndStartBtn">Inloggen</button>
+                        <button
+                            type="button"
+                            class="btn btn-primary"
+                            id="loginAndStartBtn"
+                        >Inloggen</button>
                     </div>
                 </form>
             </div>
@@ -246,8 +320,11 @@
     <!-- Include footer -->
     <div azdpc-include-html="footer-en.html"></div>
     <script src="js/main.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
-        integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <script
+        src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+        integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+        crossorigin="anonymous"
+    ></script>
 </body>
 
 </html>
