@@ -1,0 +1,1285 @@
+<!DOCTYPE html>
+<html lang="nl-NL">
+
+<head>
+    <meta
+        http-equiv="Content-Type"
+        content="text/html; charset=UTF-8"
+    >
+    <meta
+        http-equiv="x-ua-compatible"
+        content="ie=edge"
+    >
+    <title>Passport renewing | 1overheid</title>
+    <meta
+        name="description"
+        content="Prototype voor 1overheid: informatie, diensten, beleid en bestuur"
+    >
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    >
+    <link
+        rel="stylesheet"
+        href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+    >
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+    <link
+        rel="stylesheet"
+        href="css/additional.css"
+    >
+</head>
+
+<body cz-shortcut-listen="true">
+    <!-- include header -->
+    <div azdpc-include-html="header-en.html"></div>
+    <!-- Logged in as Asha / banner -->
+    <banner>
+        <div class="loggedInElm">
+            <div
+                id="login-foldout"
+                class="navbar-pinned expanded"
+            >
+                <div class="container-fluid">
+                    <div class="navbar-pinned-content">
+                        <div class="row align-items-center">
+                            <div class="col-8">
+                                Logged in as Asha Martinez
+                            </div>
+                            <div class="col-4">
+                                <button class="btn btn-success logoutBtn float-right">Logout</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </banner>
+    <main
+        role="main"
+        class="actionable"
+    >
+        <div class="container-fluid checkContainer">
+            <div class="row">
+                <div class="col-12">
+                    <ul class="breadcrumb">
+                        <li class="d-none d-md-block"><a href="home-en.html">Home</a></li>
+                        <li class="d-none d-md-block"><a href="visa-and-immigration.html">Visa and immigration</a></li>
+                        <li><a href="moving-to-the-netherlands.html">Moving to the Netherlands</a></li>
+                        <li class="d-none d-md-block"><a href="service-mvv-application.html">MVV sticker application</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1 col-md-12">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12 notVisibleInFrame">
+                            </div>
+                        </div>
+                        <form class="questions mt-3 mb-3">
+                            <!-- START overzicht -->
+                            <div class="question active">
+                                <div class="questionWrapper">
+                                    <h3>A passport or ID card in 5 easy steps...</h3>
+                                    <div class="grouped grouped-light">
+                                        <ol class="custom-ordered-list">
+                                            <li class="mb-3">
+                                                <div class="title">Enter your V-number.</div>
+                                            </li>
+                                            <li class="mb-3">
+                                                <div class="title">Select departure date.</div>
+                                            </li>
+                                            <li class="mb-3">
+                                                <div class="title">Check your personal data.</div>
+                                            </li>
+                                            <li class="mb-3">
+                                                <div class="title">Get your personal checklist</div>
+                                            </li>
+                                            <li class="mb-3">
+                                                <div class="title">Book your appointment and apply in person.</div>
+                                            </li>
+                                        </ol>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-control">
+                                            <div class="button-wrapper button-next">
+                                                <button
+                                                    type="submit"
+                                                    class="btn btn-primary btn-next-question"
+                                                >Next</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="questionHelp">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="grouped">
+                                                    <button
+                                                        type="button"
+                                                        class="btn btn-toggle"
+                                                    >Help applying for your MVV?</button>
+                                                    <div class="helpItems">
+                                                        <h3 class="helpQuestion toggle-next">Contact us</h3>
+                                                        <div class="helpAnswer">
+                                                            <p><a href="">Contact details</a></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- EINDE overzicht -->
+
+                            <!-- START 1 -->
+                            <div class="question">
+                                <div class="questionWrapper">
+                                    <h3>1. MVV-sticker application: V-number</h3>
+                                    <div class="grouped aft-space subtask">
+                                        <div class="input-group mb-3">
+                                            <input
+                                                type="text"
+                                                class="form-control reset-style"
+                                                placeholder="For example: V12345678"
+                                                aria-label="vnumber"
+                                                aria-describedby="vnumber"
+                                            >
+                                            <div class="input-group-append">
+                                                <button
+                                                    type="submit"
+                                                    class="btn btn-primary btn-next-question"
+                                                >
+                                                    <span class="text">Next</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <p>You receive a V-number when your host applies for your residence permit at
+                                            the Dutch Immigration Service (IND).</p>
+                                    </div>
+                                    <div class="questionHelp">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="grouped">
+                                                    <button
+                                                        type="button"
+                                                        class="btn btn-toggle"
+                                                    >Search</button>
+                                                    <div class="helpItems">
+                                                        <h3 class="helpQuestion toggle-next">Consular fees mvv-sticker
+                                                        </h3>
+                                                        <div class="helpAnswer">
+                                                            <p><a href="#">Lorem, ipsum dolor.</a></p>
+                                                        </div>
+                                                        <h3 class="helpQuestion toggle-next">Residence permit lost or
+                                                            stolen</h3>
+                                                        <div class="helpAnswer">
+                                                            <p><a href="#">Lorem, ipsum dolor.</a></p>
+                                                        </div>
+                                                        <h3 class="helpQuestion toggle-next">How much does the visa
+                                                            cost?</h3>
+                                                        <div class="helpAnswer">
+                                                            <p><a href="#">Lorem, ipsum dolor.</a></p>
+                                                        </div>
+                                                        <h3 class="helpQuestion toggle-next">Ay questions?</h3>
+                                                        <div class="helpAnswer">
+                                                            <p><a href="#">Lorem, ipsum dolor.</a></p>
+                                                        </div>
+                                                        <h3 class="helpQuestion toggle-next">How does it take to process
+                                                            my visa application?</h3>
+                                                        <div class="helpAnswer">
+                                                            <p><a href="#">Lorem, ipsum dolor.</a></p>
+                                                        </div>
+                                                        <h3 class="helpQuestion toggle-next">Different types of visa
+                                                        </h3>
+                                                        <div class="helpAnswer">
+                                                            <p><a href="#">Lorem, ipsum dolor.</a></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- EINDE 1 -->
+                            <!-- START 2 -->
+                            <div class="question ">
+                                <div class="questionWrapper">
+                                    <div class="form-row">
+                                        <div class="col-sm-12 questionHeader">
+
+                                            <div class="grouped aft-space subtask">
+                                                <h3>2. MVV-sticker application: intended date of departure</h3>
+                                                <p>Date of intended departure for the Netherlands</p>
+                                                <div class="input-group country-selector mb-3">
+                                                    <input
+                                                        type="date"
+                                                        class="form-control reset-style"
+                                                        aria-label="birthdate"
+                                                        aria-describedby="date-of-birth"
+                                                    >
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="preFilledElm">
+                                        <div class="form-row">
+
+                                        </div>
+                                    </div>
+                                    <div class="notPreFilledElm">
+                                        <div class="form-row">
+
+                                            <div class="form-control">
+                                                <button
+                                                    type="button"
+                                                    class="btn btn-link btn-prev-question mr-2"
+                                                >Previous</button>
+                                                <div class="button-wrapper button-next">
+                                                    <button
+                                                        type="submit"
+                                                        class="btn btn-primary btn-next-question"
+                                                    >Next</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="questionHelp">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="grouped">
+                                                    <button
+                                                        type="button"
+                                                        class="btn btn-toggle"
+                                                    >Help
+                                                        with the application steps</button>
+                                                    <div class="helpItems">
+                                                        <h3 class="helpQuestion toggle-next">Contact us</h3>
+                                                        <div class="helpAnswer">
+                                                            <p><a href="">Contact details</a></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- EINDE 2 -->
+                            <!-- START 4 -->
+                            <div class="question ">
+                                <div class="questionWrapper">
+                                    <div class="grouped">
+                                        <h3>3. MVV-sticker application: your data</h3>
+                                        <p>The personal data below is registered on your V-number. You can choose to use
+                                            this data or fill it out manually
+                                        </p>
+                                        <ul class="vireo-list">
+                                            <li>
+                                                Name
+                                            </li>
+                                            <li>
+                                                Home address
+                                            </li>
+                                            <li>
+                                                Phone number
+                                            </li>
+                                            <li>
+                                                Date of birth
+                                            </li>
+                                            <li>
+                                                Passport number
+                                            </li>
+                                            <li>
+                                                MVV: employment
+                                            </li>
+                                            <li>
+                                                emailaddress
+                                            </li>
+                                        </ul>
+                                        <p><a href="#">Fill out manually?</a></p>
+
+                                    </div>
+                                    <div class="notPreFilledElm">
+                                        <div class="form-row">
+                                            <div class="form-control">
+                                                <button
+                                                    type="button"
+                                                    class="btn btn-link btn-prev-question mr-2"
+                                                >Previous</button>
+                                                <div class="button-wrapper button-next">
+                                                    <button
+                                                        type="submit"
+                                                        class="btn btn-primary btn-next-question"
+                                                    >Next</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="questionHelp">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="grouped">
+                                                    <button
+                                                        type="button"
+                                                        class="btn btn-toggle"
+                                                    >Help
+                                                        with the application steps</button>
+                                                    <div class="helpItems">
+                                                        <h3 class="helpQuestion toggle-next">Contact us</h3>
+                                                        <div class="helpAnswer">
+                                                            <p><a href="">Contact details</a></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- EINDE 4 -->
+                            <!-- START 5 -->
+                            <div class="question">
+                                <div class="questionWrapper">
+                                    <div class="form-row">
+                                        <div class="grouped">
+                                            <h3>3. MVV-sticker application: check your data</h3>
+                                            <p>The following information will be placed in your MVV-sticker</p>
+                                            <div>
+                                                <ul class="vireo-list">
+                                                    <li>
+                                                        Ching Chong
+                                                    </li>
+                                                    <li>
+                                                        Born on 4 December 1988
+                                                    </li>
+                                                    <li>
+                                                        MVV-sticker: visa type D
+                                                    </li>
+                                                    <li>
+                                                        Validaty: 01-12-2019 until 01-03-2019
+                                                    </li>
+                                                </ul>
+                                                <p>At the end of your application we will send you a confirmation:</p>
+                                                <ul class="vireo-list">
+                                                    <li>
+                                                        Email: chingchong@gmail.com
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <p><a href="#">Click to correct</a></p>
+                                        </div>
+
+
+                                        <div class="form-control">
+                                            <button
+                                                type="button"
+                                                class="btn btn-link btn-prev-question mr-2"
+                                            >Previous</button>
+                                            <div class="button-wrapper button-next">
+                                                <button
+                                                    type="submit"
+                                                    class="btn btn-primary btn-next-question"
+                                                >Next</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="questionHelp">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="grouped">
+                                                    <button
+                                                        type="button"
+                                                        class="btn btn-toggle"
+                                                    >Help
+                                                        with the application steps</button>
+                                                    <div class="helpItems">
+                                                        <h3 class="helpQuestion toggle-next">Contact us</h3>
+                                                        <div class="helpAnswer">
+                                                            <p><a href="">Contact details</a></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- EINDE 5 -->
+                            <!-- START 6 -->
+                            <div class="question">
+                                <div class="questionWrapper">
+                                    <div class="grouped">
+                                        <h3>4. This is your personal checklist:</h3>
+                                        <p>You need to bring the following documents to your appointment.</p>
+
+                                        <ul class="vireo-list">
+                                            <li><a href="#">Personal data overview</a></li>
+                                            <li>Your passport</li>
+                                            <li>A photo that meets the Dutch requirements
+                                            </li>
+                                            <li>A copy of the IND approval letter
+                                            </li>
+                                            <li>All other documents listed in this letter and photocopy of each of these
+                                                documents.</li>
+                                        </ul>
+                                        <p class="small">Your personal data overview and checklist will be sent
+                                            automatically to your
+                                            email address after you have scheduled your appointment.
+                                        </p>
+
+                                    </div>
+                                    <div class="notPreFilledElm">
+                                        <div class="form-row">
+                                            <div class="form-control">
+                                                <button
+                                                    type="button"
+                                                    class="btn btn-link btn-prev-question mr-2"
+                                                >Previous</button>
+                                                <div class="button-wrapper button-next">
+                                                    <button
+                                                        type="submit"
+                                                        class="btn btn-primary btn-next-question"
+                                                    >Next</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="questionHelp">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="grouped">
+                                                    <button
+                                                        type="button"
+                                                        class="btn btn-toggle"
+                                                    >Help
+                                                        with the application steps</button>
+                                                    <div class="helpItems">
+                                                        <h3 class="helpQuestion toggle-next">Contact us</h3>
+                                                        <div class="helpAnswer">
+                                                            <p><a href="">Contact details</a></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- EINDE 6-->
+                            <!-- START 7 -->
+                            <div class="question">
+                                <div class="questionWrapper">
+                                    <div class="grouped">
+                                        <h3>5. MVV-sticker application: book your appointment</h3>
+                                        <p>In which country do you want to make an appointment for the MVV-sticker
+                                            application? </p>
+                                        <div class="ui-widget input-group country-selector mb-3">
+                                            <input
+                                                type="text"
+                                                class="form-control"
+                                                id="countries"
+                                                placeholder="Choose country.."
+                                                aria-label="Country"
+                                                aria-describedby="choose-country"
+                                            >
+                                        </div>
+
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-control">
+                                            <button
+                                                type="button"
+                                                class="btn btn-link btn-prev-question mr-2"
+                                            >Previous</button>
+                                            <div class="button-wrapper button-next">
+                                                <button
+                                                    type="submit"
+                                                    class="btn btn-primary btn-next-question"
+                                                >Next</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="questionHelp">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="grouped">
+                                                    <button
+                                                        type="button"
+                                                        class="btn btn-toggle"
+                                                    >Help
+                                                        with the application steps</button>
+                                                    <div class="helpItems">
+                                                        <h3 class="helpQuestion toggle-next">Contact us</h3>
+                                                        <div class="helpAnswer">
+                                                            <p><a href="">Contact details</a></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- EINDE 7 -->
+                            <!-- START 8 -->
+                            <div class="question ">
+                                <div class="questionWrapper">
+
+                                    <div class="grouped">
+                                        <h3>Book your appointment</h3>
+                                        <p>Where do you want to submit your MVV-sticker application in China?
+                                        </p>
+
+                                        <div class="custom-control custom-radio mb-3">
+                                            <input
+                                                class="custom-control-input"
+                                                type="radio"
+                                                name="radio-au-passport"
+                                                id="Q5A"
+                                                value="Q5A"
+                                                checked
+                                            >
+                                            <label
+                                                class="custom-control-label"
+                                                for="Q5A"
+                                            >Beijing embassy</label>
+                                        </div>
+                                        <div class="custom-control custom-radio mb-3">
+                                            <input
+                                                class="custom-control-input"
+                                                type="radio"
+                                                name="radio-au-passport"
+                                                id="Q5B"
+                                                value="Q5B"
+                                            >
+                                            <label
+                                                class="custom-control-label"
+                                                for="Q5B"
+                                            >Shanghai consulate general</label>
+                                        </div>
+                                        <div class="custom-control custom-radio mb-3">
+                                            <input
+                                                class="custom-control-input"
+                                                type="radio"
+                                                name="radio-au-passport"
+                                                id="Q5C"
+                                                value="Q5C"
+                                            >
+                                            <label
+                                                class="custom-control-label"
+                                                for="Q5C"
+                                            >Guangzhou consulate general</label>
+                                        </div>
+
+                                    </div>
+                                    <div class="notPreFilledElm">
+                                        <div class="form-row">
+                                            <div class="form-control">
+                                                <button
+                                                    type="button"
+                                                    class="btn btn-link btn-prev-question mr-2"
+                                                >Previous</button>
+                                                <div class="button-wrapper button-next">
+                                                    <button
+                                                        type="submit"
+                                                        class="btn btn-primary btn-next-question"
+                                                    >Next</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="questionHelp">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="grouped">
+                                                    <button
+                                                        type="button"
+                                                        class="btn btn-toggle"
+                                                    >Help
+                                                        with the application steps</button>
+                                                    <div class="helpItems">
+                                                        <h3 class="helpQuestion toggle-next">Contact us</h3>
+                                                        <div class="helpAnswer">
+                                                            <p><a href="">Contact details</a></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- EINDE 8 -->
+                            <!-- START 9 -->
+                            <div class="question ">
+                                <div class="questionWrapper">
+
+                                    <div class="grouped">
+                                        <h3>Book an appointment to submit your MVV-sticker application Shanghai</h3>
+                                        <p>Click on any day with a green dot to see available slots:</p>
+
+                                        <div class="month-picker text-center mb-1">
+                                            <span class="arrow arrow-previous"></span>
+                                            <div class="dropdown">
+                                                <button
+                                                    class="btn btn-link dropdown-toggle"
+                                                    type="button"
+                                                    id="dropdown"
+                                                    data-toggle="dropdown"
+                                                    aria-haspopup="true"
+                                                    aria-expanded="false"
+                                                >
+                                                    November 2019
+                                                </button>
+                                                <div
+                                                    class="dropdown-menu"
+                                                    aria-labelledby="dropdown"
+                                                >
+                                                    <button
+                                                        class="dropdown-item calendar-month"
+                                                        type="button"
+                                                        data-month="november"
+                                                    >November 2019</button>
+                                                    <button
+                                                        class="dropdown-item calendar-month"
+                                                        type="button"
+                                                        data-month="december"
+                                                    >December 2019</button>
+                                                    <button
+                                                        class="dropdown-item calendar-month"
+                                                        type="button"
+                                                        data-month="january"
+                                                    >January 2020</button>
+                                                </div>
+                                            </div>
+                                            <span class="arrow arrow-next"></span>
+                                        </div>
+                                        <div
+                                            class="calendar-container mb-3"
+                                            data-month="november"
+                                        >
+                                            <div class="calendar-head d-inline-flex flex-row">
+                                                <div class="item">MON</div>
+                                                <div class="item">TUE</div>
+                                                <div class="item">WED</div>
+                                                <div class="item">THU</div>
+                                                <div class="item">FRI</div>
+                                                <div class="item">SAT</div>
+                                                <div class="item">SUN</div>
+                                            </div>
+                                            <div class="day-container mb-2">
+                                                <div class="item"></div>
+                                                <div class="item"></div>
+                                                <div class="item"></div>
+                                                <div class="item"></div>
+                                                <div class="item"><span>1</span></div>
+                                                <div class="item"><span>2</span></div>
+                                                <div class="item"><span>3</span></div>
+                                            </div>
+                                            <div class="day-container mb-2">
+                                                <div class="item"><span>4</span></div>
+                                                <div class="item"><span>5</span></div>
+                                                <div
+                                                    class="item available"
+                                                    data-date="11/6/2019"
+                                                ><span>6</span></div>
+                                                <div
+                                                    class="item available"
+                                                    data-date="11/7/2019"
+                                                ><span>7</span></div>
+                                                <div
+                                                    class="item available"
+                                                    data-date="11/8/2019"
+                                                ><span>8</span></div>
+                                                <div class="item"><span>9</span></div>
+                                                <div class="item"><span>10</span></div>
+                                            </div>
+                                            <div class="day-container mb-2">
+                                                <div class="item"><span>11</span></div>
+                                                <div class="item"><span>12</span></div>
+                                                <div
+                                                    class="item available"
+                                                    data-date="11/13/2019"
+                                                ><span>13</span></div>
+                                                <div
+                                                    class="item available"
+                                                    data-date="11/14/2019"
+                                                ><span>14</span></div>
+                                                <div
+                                                    class="item available"
+                                                    data-date="11/15/2019"
+                                                ><span>15</span></div>
+                                                <div class="item"><span>16</span></div>
+                                                <div class="item"><span>17</span></div>
+                                            </div>
+                                            <div class="day-container mb-2">
+                                                <div class="item"><span>18</span></div>
+                                                <div class="item"><span>19</span></div>
+                                                <div
+                                                    class="item available"
+                                                    data-date="11/20/2019"
+                                                ><span>20</span></div>
+                                                <div
+                                                    class="item available"
+                                                    data-date="11/21/2019"
+                                                ><span>21</span></div>
+                                                <div class="item"><span>22</span></div>
+                                                <div class="item"><span>23</span></div>
+                                                <div class="item"><span>24</span></div>
+                                            </div>
+                                            <div class="day-container mb-2">
+                                                <div class="item"><span>25</span></div>
+                                                <div class="item"><span>26</span></div>
+                                                <div
+                                                    class="item available"
+                                                    data-date="11/27/2019"
+                                                ><span>27</span></div>
+                                                <div
+                                                    class="item available"
+                                                    data-date="11/28/2019"
+                                                ><span>28</span></div>
+                                                <div class="item"><span>29</span></div>
+                                                <div class="item"><span>30</span></div>
+                                                <div class="item"><span></span></div>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="calendar-container mb-3"
+                                            data-month="december"
+                                            style="display: none;"
+                                        >
+                                            <div class="calendar-head d-inline-flex flex-row">
+                                                <div class="item">MON</div>
+                                                <div class="item">TUE</div>
+                                                <div class="item">WED</div>
+                                                <div class="item">THU</div>
+                                                <div class="item">FRI</div>
+                                                <div class="item">SAT</div>
+                                                <div class="item">SUN</div>
+                                            </div>
+                                            <div class="day-container mb-2">
+                                                <div class="item"></div>
+                                                <div class="item"></div>
+                                                <div class="item"></div>
+                                                <div class="item"></div>
+                                                <div class="item"></div>
+                                                <div class="item"></div>
+                                                <div class="item"><span>1</span></div>
+                                            </div>
+                                            <div class="day-container mb-2">
+                                                <div
+                                                    class="item available"
+                                                    data-date="12/02/2019"
+                                                ><span>2</span></div>
+                                                <div class="item"><span>3</span></div>
+                                                <div
+                                                    class="item available"
+                                                    data-date="12/04/2019"
+                                                ><span>4</span></div>
+                                                <div
+                                                    class="item available"
+                                                    data-date="12/05/2019"
+                                                ><span>5</span></div>
+                                                <div class="item"><span>6</span></div>
+                                                <div class="item"><span>7</span></div>
+                                                <div class="item"><span>8</span></div>
+                                            </div>
+                                            <div class="day-container mb-2">
+                                                <div
+                                                    class="item available"
+                                                    data-date="12/09/2019"
+                                                ><span>9</span></div>
+                                                <div class="item"><span>10</span></div>
+                                                <div
+                                                    class="item available"
+                                                    data-date="12/11/2019"
+                                                ><span>11</span></div>
+                                                <div
+                                                    class="item available"
+                                                    data-date="12/12/2019"
+                                                ><span>12</span></div>
+                                                <div class="item"><span>13</span></div>
+                                                <div class="item"><span>14</span></div>
+                                                <div class="item"><span>15</span></div>
+                                            </div>
+                                            <div class="day-container mb-2">
+                                                <div
+                                                    class="item available"
+                                                    data-date="12/16/2019"
+                                                ><span>16</span></div>
+                                                <div class="item"><span>17</span></div>
+                                                <div
+                                                    class="item available"
+                                                    data-date="12/18/2019"
+                                                ><span>18</span></div>
+                                                <div
+                                                    class="item available"
+                                                    data-date="12/19/2019"
+                                                ><span>19</span></div>
+                                                <div class="item"><span>20</span></div>
+                                                <div class="item"><span>21</span></div>
+                                                <div class="item"><span>22</span></div>
+                                            </div>
+                                            <div class="day-container mb-2">
+                                                <div
+                                                    class="item available"
+                                                    data-date="12/23/2019"
+                                                ><span>23</span></div>
+                                                <div
+                                                    class="item available"
+                                                    data-date="12/24/2019"
+                                                ><span>24</span></div>
+                                                <div class="item"><span>25</span></div>
+                                                <div class="item"><span>26</span></div>
+                                                <div class="item"><span>27</span></div>
+                                                <div class="item"><span>28</span></div>
+                                                <div class="item"><span>29</span></div>
+                                            </div>
+                                            <div class="day-container mb-2">
+                                                <div class="item"><span>30</span></div>
+                                                <div class="item"><span>31</span></div>
+                                                <div class="item"><span></span></div>
+                                                <div class="item"><span></span></div>
+                                                <div class="item"><span></span></div>
+                                                <div class="item"><span></span></div>
+                                                <div class="item"><span></span></div>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="calendar-container mb-3"
+                                            data-month="january"
+                                            style="display: none;"
+                                        >
+                                            <div class="calendar-head d-inline-flex flex-row">
+                                                <div class="item">MON</div>
+                                                <div class="item">TUE</div>
+                                                <div class="item">WED</div>
+                                                <div class="item">THU</div>
+                                                <div class="item">FRI</div>
+                                                <div class="item">SAT</div>
+                                                <div class="item">SUN</div>
+                                            </div>
+                                            <div class="day-container mb-2">
+                                                <div class="item"><span></span></div>
+                                                <div class="item"><span></span></div>
+                                                <div class="item"><span>1</span></div>
+                                                <div class="item"><span>2</span></div>
+                                                <div class="item"><span>3</span></div>
+                                                <div class="item"><span>4</span></div>
+                                                <div class="item"><span>5</span></div>
+                                            </div>
+                                            <div class="day-container mb-2">
+                                                <div
+                                                    class="item available"
+                                                    data-date="01/06/2020"
+                                                ><span>6</span></div>
+                                                <div class="item"><span>7</span></div>
+                                                <div
+                                                    class="item available"
+                                                    data-date="01/08/2020"
+                                                ><span>8</span></div>
+                                                <div
+                                                    class="item available"
+                                                    data-date="01/09/2020"
+                                                ><span>9</span></div>
+                                                <div class="item"><span>10</span></div>
+                                                <div class="item"><span>11</span></div>
+                                                <div class="item"><span>12</span></div>
+                                            </div>
+                                            <div class="day-container mb-2">
+                                                <div
+                                                    class="item available"
+                                                    data-date="01/13/2020"
+                                                ><span>13</span></div>
+                                                <div class="item"><span>14</span></div>
+                                                <div
+                                                    class="item available"
+                                                    data-date="01/15/2020"
+                                                ><span>15</span></div>
+                                                <div
+                                                    class="item available"
+                                                    data-date="01/06/2020"
+                                                ><span>16</span></div>
+                                                <div class="item"><span>17</span></div>
+                                                <div class="item"><span>18</span></div>
+                                                <div class="item"><span>19</span></div>
+                                            </div>
+                                            <div class="day-container mb-2">
+                                                <div
+                                                    class="item available"
+                                                    data-date="01/20/2020"
+                                                ><span>20</span></div>
+                                                <div class="item"><span>21</span></div>
+                                                <div
+                                                    class="item available"
+                                                    data-date="01/22/2020"
+                                                ><span>22</span></div>
+                                                <div
+                                                    class="item available"
+                                                    data-date="01/23/2020"
+                                                ><span>23</span></div>
+                                                <div class="item"><span>24</span></div>
+                                                <div class="item"><span>25</span></div>
+                                                <div class="item"><span>26</span></div>
+                                            </div>
+                                            <div class="day-container mb-2">
+                                                <div
+                                                    class="item available"
+                                                    data-date="01/27/2020"
+                                                ><span>27</span></div>
+                                                <div class="item"><span>28</span></div>
+                                                <div
+                                                    class="item available"
+                                                    data-date="01/29/2020"
+                                                ><span>29</span></div>
+                                                <div
+                                                    class="item available"
+                                                    data-date="01/30/2020"
+                                                ><span>30</span></div>
+                                                <div class="item"><span>31</span></div>
+                                                <div class="item"><span></span></div>
+                                                <div class="item"><span></span></div>
+                                            </div>
+                                        </div>
+
+
+                                        <div
+                                            class="date-block"
+                                            style="display: none;"
+                                        >
+                                            <p class="date-picked"></p>
+
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <div class="custom-control custom-radio mb-3">
+                                                        <input
+                                                            class="custom-control-input"
+                                                            type="radio"
+                                                            name="radio-calendar"
+                                                            id="Q10A"
+                                                            value="Q10A"
+                                                            checked
+                                                        >
+                                                        <label
+                                                            class="custom-control-label"
+                                                            for="Q10A"
+                                                        >11:00 am</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="custom-control custom-radio mb-3">
+                                                        <input
+                                                            class="custom-control-input"
+                                                            type="radio"
+                                                            name="radio-calendar"
+                                                            id="Q10B"
+                                                            value="Q10B"
+                                                        >
+                                                        <label
+                                                            class="custom-control-label"
+                                                            for="Q10B"
+                                                        >11:30 am</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="custom-control custom-radio mb-3">
+                                                        <input
+                                                            class="custom-control-input"
+                                                            type="radio"
+                                                            name="radio-calendar"
+                                                            id="Q10C"
+                                                            value="Q10C"
+                                                        >
+                                                        <label
+                                                            class="custom-control-label"
+                                                            for="Q10C"
+                                                        >02:00 pm</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="custom-control custom-radio mb-3">
+                                                        <input
+                                                            class="custom-control-input"
+                                                            type="radio"
+                                                            name="radio-calendar"
+                                                            id="Q10D"
+                                                            value="Q10D"
+                                                        >
+                                                        <label
+                                                            class="custom-control-label"
+                                                            for="Q10D"
+                                                        >03:00 pm</label>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="notPreFilledElm">
+                                        <div class="form-row">
+                                            <div class="form-control">
+                                                <button
+                                                    type="button"
+                                                    class="btn btn-link btn-prev-question mr-2"
+                                                >Previous</button>
+                                                <div class="button-wrapper button-next">
+                                                    <button
+                                                        type="submit"
+                                                        class="btn btn-primary btn-next-question"
+                                                    >Next</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="questionHelp">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="grouped">
+                                                    <button
+                                                        type="button"
+                                                        class="btn btn-toggle"
+                                                    >Help
+                                                        with the application steps</button>
+                                                    <div class="helpItems">
+                                                        <h3 class="helpQuestion toggle-next">Contact us</h3>
+                                                        <div class="helpAnswer">
+                                                            <p><a href="">Contact details</a></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- EINDE 9 -->
+                            <!-- START thank you page -->
+                            <div class="question">
+                                <div class="questionWrapper">
+                                    <h4>We look forward to meeting you!</h4>
+                                    <p>A confirmation of your data, the checklist and your appointment have been
+                                        sent to your email address. Or as the Dutch say: “Jippie! Hoera! U heeft een
+                                        bureaucratische handeling succesvol afgerond!” :-D </p>
+                                    <p>Once you have the long-stay visa in your passport, you can then travel to the
+                                        Netherlands. </p>
+                                    <p>Do not forget to also make an appointment at an IND office in the Netherlands
+                                        to collect your residence card:<br>
+                                        <a href="https://ind.nl/en/pages/making-an-appointment-online.aspx
+                                        ">https://ind.nl/en/pages/making-an-appointment-online.aspx
+                                        </a></p>
+                                </div>
+                            </div>
+                            <!-- EINDE thank you page -->
+                        </form>
+                    </div>
+                    <!-- Login modal -->
+                    <div
+                        class="modal fade loginmodal"
+                        id="loginToStartForm"
+                        tabindex="-1"
+                        role="dialog"
+                        aria-labelledby="modal-header"
+                        aria-hidden="true"
+                    >
+                        <div
+                            class="modal-dialog modal-dialog-centered"
+                            role="document"
+                        >
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3
+                                        class="modal-title"
+                                        id="modal-header"
+                                    >
+                                        <img
+                                            src="img/digid-logo.svg"
+                                            alt="digid"
+                                        > Login met DigiD
+                                    </h3>
+                                    <button
+                                        type="button"
+                                        class="close"
+                                        data-dismiss="modal"
+                                        aria-label="Close"
+                                    >
+                                        <span aria-hidden="true">×</span>
+                                    </button>
+                                </div>
+                                <form>
+                                    <div class="modal-body">
+                                        <div class="form-group">
+                                            <label for="gebruikersnaam">DigiD gebruikersnaam</label>
+                                            <input
+                                                type="text"
+                                                class="form-control"
+                                                id="gebruikersnaam"
+                                                placeholder="DigiD gebruikersnaam"
+                                                value="asha_madhavan"
+                                            >
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="wachtwoord">Wachtwoord</label>
+                                            <input
+                                                type="password"
+                                                class="form-control"
+                                                id="wachtwoord"
+                                                placeholder="Wachtwoord"
+                                                value="********"
+                                            >
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button
+                                            type="button"
+                                            class="btn btn-primary"
+                                            id="loginAndStartBtn"
+                                        >Inloggen</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Send modal -->
+                    <div
+                        class="modal fade sendModal"
+                        id="sendModal"
+                        tabindex="-1"
+                        role="dialog"
+                        aria-labelledby="send-modal-header"
+                        aria-hidden="true"
+                    >
+                        <div
+                            class="modal-dialog modal-dialog-centered"
+                            role="document"
+                        >
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3
+                                        class="modal-title"
+                                        id="send-modal-header"
+                                    >
+                                        Uw aanvraag is verstuurd
+                                    </h3>
+                                    <button
+                                        type="button"
+                                        class="close"
+                                        data-dismiss="modal"
+                                        aria-label="Close"
+                                    >
+                                        <span aria-hidden="true">×</span>
+                                    </button>
+                                </div>
+                                <form>
+                                    <div class="modal-body">
+                                        <p>Wij hebben uw aanvraag voor een bijstandsuitkering in behandeling genomen.
+                                            Binnen 8 weken krijgt u een beslissing op uw aanvraag. Heeft u recht op
+                                            bijstand? Dan krijgt u dit vanaf het moment dat u de aanvraag heeft gedaan.
+                                        </p>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Please note modal -->
+                    <!-- External sevice -->
+                    <div
+                        class="modal fade"
+                        id="noteModal"
+                        tabindex="-1"
+                        role="dialog"
+                    >
+                        <div
+                            class="modal-dialog"
+                            role="document"
+                        >
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <img
+                                        src="content/icons/warning.svg"
+                                        width="30"
+                                        height="30"
+                                    />
+                                    <button
+                                        type="button"
+                                        class="close"
+                                        data-dismiss="modal"
+                                        aria-label="Close"
+                                    >
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p><strong>Please note:</strong> you have chosen to apply at an external service
+                                        provider. You will have to pay an additional service fee.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- DigiD -->
+                    <div
+                        class="modal fade"
+                        id="noteModalDigid"
+                        tabindex="-1"
+                        role="dialog"
+                    >
+                        <div
+                            class="modal-dialog"
+                            role="document"
+                        >
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <img
+                                        src="content/icons/warning.svg"
+                                        width="30"
+                                        height="30"
+                                    />
+                                    <button
+                                        type="button"
+                                        class="close"
+                                        data-dismiss="modal"
+                                        aria-label="Close"
+                                    >
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p><strong>Please note:</strong> you have chosen to apply without DigiD. This means
+                                        you can not complete this application online and have to submit it in person.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- Include footer -->
+    <div azdpc-include-html="footer-en.html"></div>
+    <script src="js/main.js"></script>
+    <script
+        src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+        integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+        crossorigin="anonymous"
+    ></script>
+</body>
+
+</html>
