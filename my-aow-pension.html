@@ -103,14 +103,13 @@
                                                                 <input
                                                                     type="date"
                                                                     class="form-control"
-                                                                    id="birthdate"
                                                                     aria-label="birthdate"
                                                                     aria-describedby="date-of-birth"
                                                                 >
                                                             </div>
                                                             <button
                                                                 type="submit"
-                                                                class="btn btn-primary btn-delay mb-3"
+                                                                class="btn btn-primary btn-delay mb-3 send-date"
                                                                 id="startFlowBtn"
                                                             >
                                                                 <span class="text">View</span>
@@ -149,8 +148,12 @@
                                                     <div class="col-sm-12 questionHeader">
                                                         <p><b>Your AOW pension age</b></p>
                                                         <ul class="list-unstyled">
-                                                            <li>Your date of birth is: 11-11-1953</li>
-                                                            <li>Your AOW pension age is: <b>11-03-2020</b></li>
+                                                            <li>Your date of birth is: <span
+                                                                    class="newBirthdate"></span></li>
+                                                            <li>Your AOW pension age is: <b><span
+                                                                        class="new-pension-date"
+                                                                    ></span></b></li>
+                                                            <!-- 796 maanden -->
                                                             <li>Your AOW pension age is: <b>66 + 4 months</b></li>
                                                         </ul>
                                                     </div>

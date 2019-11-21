@@ -930,24 +930,50 @@ function showHideAmountDocuments() {
 }
 
 function getSetBirthdate() {
-    const $sendButton = $('.sendDate');
+    const $sendButton = $('.send-date');
+    const $dateInput = $('input[type="date"]');
 
-    $('#birthdate').keypress(function(e){
+    $dateInput.keypress(function(e){
         if (e.keyCode === 13) {
+            e.preventDefault();
             $sendButton.click();
         }
     });
 
     $sendButton.on('click tap', function () {
-        let dateString = $('#birthdate').val();
+        let dateString = $dateInput.val();
         let dateObject = new Date(dateString);
         let datePicked = dateObject.toLocaleString('en', {
             'day': '2-digit',
             'month': 'long',
             'year': 'numeric'
         });
-        console.log(dateString)
-        $('.newBirthdate').text(datePicked);
+
+        console.log(dateString);
+        const $newPensionDate = $('.new-pension-date');
+        const $newBirthdate = $('.newBirthdate');
+
+        if ($newPensionDate.length) {
+            let getBirthdate = dateObject.getMonth();
+            let newPensionDate = new Date(dateObject.setMonth(getBirthdate + 796));
+            let newPensionDatePicked = newPensionDate.toLocaleString('en', {
+                'day': '2-digit',
+                'month': 'long',
+                'year': 'numeric'
+            });
+
+            if (!dateString) {
+                $newPensionDate.text('-');
+            } else {
+                $newPensionDate.text(newPensionDatePicked);
+            }
+        }
+
+        if (!dateString) {
+            $newBirthdate.text('-');
+        } else {
+            $newBirthdate.text(datePicked);
+        }
     });
 }
 
