@@ -985,6 +985,31 @@ function getSetBirthdate() {
     });
 }
 
+function passportFlow() {
+    $('input[name="radio-paspoort"').on('change', function() {
+        const $passportFlow = $('.passport-flow');
+
+        $passportFlow.removeAttr('data-toggle data-target');
+
+        $passportFlow.attr('href', '/' + this.value + '.html');
+
+        if (this.value === 'digid') {
+            $passportFlow.attr({
+                'data-toggle': 'modal',
+                'data-target': '#loginToStartForm'
+            });
+            $passportFlow.removeAttr('href');
+        }
+    });
+}
+
+function passportFlowDigid() {
+    $('#passportFlowDigid').on('click tap', function () {
+        login();
+        return location.href='home.html'
+    });
+}
+
 $(function () {
     includeHTML();
     handleLogin();
@@ -1000,4 +1025,6 @@ $(function () {
     autocompleteCountries();
     showHideAmountDocuments();
     getSetBirthdate();
+    passportFlow();
+    passportFlowDigid();
 });
