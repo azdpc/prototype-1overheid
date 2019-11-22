@@ -2,14 +2,32 @@
 <html lang="nl-NL">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta
+        http-equiv="Content-Type"
+        content="text/html; charset=UTF-8"
+    >
 
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta
+        http-equiv="x-ua-compatible"
+        content="ie=edge"
+    >
     <title>Register as a non-resident (RNI) | 1overheid</title>
-    <meta name="description" content="Prototype voor 1overheid: informatie, diensten, beleid en bestuur">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/additional.css">
+    <meta
+        name="description"
+        content="Prototype voor 1overheid: informatie, diensten, beleid en bestuur"
+    >
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    >
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+    <link
+        rel="stylesheet"
+        href="css/additional.css"
+    >
 
 </head>
 
@@ -19,7 +37,10 @@
     <!-- Logged in as Asha / banner -->
     <banner>
         <div class="loggedInElm">
-            <div id="login-foldout" class="navbar-pinned expanded">
+            <div
+                id="login-foldout"
+                class="navbar-pinned expanded"
+            >
                 <div class="container-fluid">
                     <div class="navbar-pinned-content">
                         <div class="row align-items-center">
@@ -36,15 +57,35 @@
         </div>
     </banner>
 
-    <div class="modal fade loginmodal" id="loginForm" tabindex="-1" role="dialog" aria-labelledby="modal-header"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
+    <div
+        class="modal fade loginmodal"
+        id="loginForm"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="modal-header"
+        aria-hidden="true"
+    >
+        <div
+            class="modal-dialog modal-dialog-centered"
+            role="document"
+        >
             <div class="modal-content">
                 <div class="modal-header">
-                    <h3 class="modal-title" id="modal-header">
-                        <img src="img/digid-logo.svg" alt="digid">Login with DigiD
+                    <h3
+                        class="modal-title"
+                        id="modal-header"
+                    >
+                        <img
+                            src="img/digid-logo.svg"
+                            alt="digid"
+                        >Login with DigiD
                     </h3>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                    >
                         <span aria-hidden="true">×</span>
                     </button>
                 </div>
@@ -52,30 +93,61 @@
                     <div class="modal-body">
                         <div class="form-group">
                             <label for="gebruikersnaam">DigiD username</label>
-                            <input type="text" class="form-control" id="gebruikersnaam"
-                                placeholder="DigiD gebruikersnaam" value="asha_madhavan">
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="gebruikersnaam"
+                                placeholder="DigiD gebruikersnaam"
+                                value="asha_madhavan"
+                            >
                         </div>
                         <div class="form-group">
                             <label for="wachtwoord">Password</label>
-                            <input type="password" class="form-control" id="wachtwoord" placeholder="Password"
-                                value="********">
+                            <input
+                                type="password"
+                                class="form-control"
+                                id="wachtwoord"
+                                placeholder="Password"
+                                value="********"
+                            >
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" id="loginBtn">Login</button>
+                        <button
+                            type="button"
+                            class="btn btn-primary"
+                            id="loginBtn"
+                        >Login</button>
                     </div>
                 </form>
             </div>
         </div>
     </div>
 
-    <div class="modal fade contactModal" id="contactModal" tabindex="-1" role="dialog"
-        aria-labelledby="contact-modal-header" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
+    <div
+        class="modal fade contactModal"
+        id="contactModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="contact-modal-header"
+        aria-hidden="true"
+    >
+        <div
+            class="modal-dialog modal-dialog-centered"
+            role="document"
+        >
             <div class="modal-content">
                 <div class="modal-header">
-                    <h3 class="modal-title" id="contact-modal-header">Heeft u een vraag of hulp nodig?</h3>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <h3
+                        class="modal-title"
+                        id="contact-modal-header"
+                    >Heeft u een vraag of hulp nodig?</h3>
+                    <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                    >
                         <span aria-hidden="true">×</span>
                     </button>
                 </div>
@@ -90,7 +162,12 @@
                                 <a href="#">App uw vraag naar 1400</a>
                             </li>
                             <li class="chat">
-                                <a class="openChat" data-toggle="modal" data-target="#chatModal" href="#">Direct
+                                <a
+                                    class="openChat"
+                                    data-toggle="modal"
+                                    data-target="#chatModal"
+                                    href="#"
+                                >Direct
                                     chatten</a>
                             </li>
                         </ul>
@@ -103,13 +180,30 @@
         </div>
     </div>
 
-    <div class="modal fade chatModal" id="chatModal" tabindex="-1" role="dialog" aria-labelledby="chat-modal-header"
-        aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div
+        class="modal fade chatModal"
+        id="chatModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="chat-modal-header"
+        aria-hidden="true"
+    >
+        <div
+            class="modal-dialog modal-lg modal-dialog-centered"
+            role="document"
+        >
             <div class="modal-content">
                 <div class="modal-header">
-                    <h3 class="modal-title" id="chat-modal-header">Direct chatten</h3>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <h3
+                        class="modal-title"
+                        id="chat-modal-header"
+                    >Direct chatten</h3>
+                    <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                    >
                         <span aria-hidden="true">×</span>
                     </button>
                 </div>
@@ -119,7 +213,10 @@
                         <div class="messages">
                             <div class="message">
                                 <div class="avatar">
-                                    <img class="img-fluid" src="img/avatar.svg">
+                                    <img
+                                        class="img-fluid"
+                                        src="img/avatar.svg"
+                                    >
                                 </div>
                                 <div class="content">
                                     <span class="name">Medewerker:</span>
@@ -131,10 +228,17 @@
 
                         <div class="messageForm">
                             <div class="inputField">
-                                <input class="form-control form-control-lg" type="text" placeholder="Typ hier uw vraag">
+                                <input
+                                    class="form-control form-control-lg"
+                                    type="text"
+                                    placeholder="Typ hier uw vraag"
+                                >
                             </div>
                             <div class="submitBtn">
-                                <button type="button" class="btn btn-primary btn-lg">Verstuur</button>
+                                <button
+                                    type="button"
+                                    class="btn btn-primary btn-lg"
+                                >Verstuur</button>
                             </div>
                         </div>
 
@@ -150,7 +254,10 @@
 
 
 
-    <main role="main" class="actionable">
+    <main
+        role="main"
+        class="actionable"
+    >
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12">
@@ -166,71 +273,102 @@
                         <div class="row">
                             <div class="col-12">
                                 <h1>Register as a non-resident (RNI)</h1>
-                                                              
-                                <p>If you are living outside the Netherlands you can register as a non-resident in the Non-resident Records Database (RNI). 
 
-                              You can also register if you move to the Netherlands for less than 4 months.</p><p>There are 2 ways you can register in the RNI.</p>
-                          
-                                                                                          
-                                                            <p><b>1. In person in the Netherlands</b><br>
-                                                              You can register in the RNI in person at one of the <a href="">nineteen RNI-municipalities</a>. To register you need to make an appointment.</p>
-                                                           <a class="btn btn-primary" href="">Make an appointment with an RNI municipality</a>
-                                                            </p>
+                                <p>If you live outside the Netherlands you can register as a non-resident in the
+                                    Non-resident Records Database (RNI).
 
-                                                                  <p><b>2. Apply for a passport</b><br>
-                                                               If you are outside the Netherlands, we recommend that you apply for a passport. With the passport application you are automatically registered as a non-resident and will receive a citizen service number (BSN).</p>
-                                                           <a class="btn btn-primary" href="service-intro-passport-application.html">Apply for a passport</a>
-                                                            </p>
-                                                           
- 
-                                 </div> 
-                            <div class="col-12">
-                                                           
-                                                            
-                                                           
-                                                      
+                                    You can also register if you move to the Netherlands for less than 4 months.</p>
+                                <p class="mb-5">You can be registered in the RNI in 2 ways:</p>
+
+
+                                <p><b>1. In person in the Netherlands</b><br>
+                                    You can register in the RNI in person at one of the <a href="">nineteen
+                                        RNI-municipalities</a>. To register you need to make an appointment.</p>
+                                <p><a
+                                        class="btn btn-primary mb-3"
+                                        href="#"
+                                    >Make an appointment at an RNI municipality</a>
+                                </p>
+
+                                <p><b>2. Apply for a passport</b><br>
+                                    If you live outside the Netherlands, we recommend that you apply for a passport. By
+                                    applying for a passport you will be automatically registered as a non-resident and
+                                    you will get a citizen service number (BSN).</p>
+                                <a
+                                    class="btn btn-primary"
+                                    href="service-intro-passport-application.html"
+                                >Apply for a passport</a>
+                                </p>
+
+
+                            </div>
                         </div>
-                    </div>
-                    <div class="questionHelp mt-5">
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <div class="grouped">
-                                    <button type="button" class="btn btn-toggle">About this service</button>
-                                            <h3 class="helpQuestion toggle-next">What are the fees for an application or renewal through this service?</h3>
+                        <div class="questionHelp mt-5">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="grouped">
+                                        <button
+                                            type="button"
+                                            class="btn btn-toggle"
+                                        >About this service</button>
+                                        <h3 class="helpQuestion toggle-next">What are the fees for an application or
+                                            renewal through this service?</h3>
                                         <div class="helpAnswer">
                                             <p>...</p>
                                         </div>
 
-                                         <div class="helpItems">
-                                        <h3 class="helpQuestion toggle-next">How long does it take to process my application?</h3>
-                                        <div class="helpAnswer">
-                                            <p>...</p>
-                                        </div>
+                                        <div class="helpItems">
+                                            <h3 class="helpQuestion toggle-next">How long does it take to process my
+                                                application?</h3>
+                                            <div class="helpAnswer">
+                                                <p>...</p>
+                                            </div>
 
-                                    <div class="helpItems">
-                                      <h3 class="helpQuestion toggle-next">Can I apply or renew my passport or ID-card in other ways than through this online service?</h3>
-                                          <div class="helpAnswer">
-                                            <p>...</p>
+                                            <div class="helpItems">
+                                                <h3 class="helpQuestion toggle-next">Can I apply or renew my passport or
+                                                    ID-card in other ways than through this online service?</h3>
+                                                <div class="helpAnswer">
+                                                    <p>...</p>
+                                                </div>
+
+
+
+                                            </div>
                                         </div>
-                                   
-                               
-                                       
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
 
     </main>
-    <div class="modal fade loginmodal" id="loginToStartForm" tabindex="-1" role="dialog" aria-labelledby="modal-header"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
+    <div
+        class="modal fade loginmodal"
+        id="loginToStartForm"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="modal-header"
+        aria-hidden="true"
+    >
+        <div
+            class="modal-dialog modal-dialog-centered"
+            role="document"
+        >
             <div class="modal-content">
                 <div class="modal-header">
-                    <h3 class="modal-title" id="modal-header">
-                        <img src="img/digid-logo.svg" alt="digid"> Login met DigiD
+                    <h3
+                        class="modal-title"
+                        id="modal-header"
+                    >
+                        <img
+                            src="img/digid-logo.svg"
+                            alt="digid"
+                        > Login met DigiD
                     </h3>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                    >
                         <span aria-hidden="true">×</span>
                     </button>
                 </div>
@@ -238,17 +376,31 @@
                     <div class="modal-body">
                         <div class="form-group">
                             <label for="gebruikersnaam">DigiD gebruikersnaam</label>
-                            <input type="text" class="form-control" id="gebruikersnaam"
-                                placeholder="DigiD gebruikersnaam" value="asha_madhavan">
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="gebruikersnaam"
+                                placeholder="DigiD gebruikersnaam"
+                                value="asha_madhavan"
+                            >
                         </div>
                         <div class="form-group">
                             <label for="wachtwoord">Wachtwoord</label>
-                            <input type="password" class="form-control" id="wachtwoord" placeholder="Wachtwoord"
-                                value="********">
+                            <input
+                                type="password"
+                                class="form-control"
+                                id="wachtwoord"
+                                placeholder="Wachtwoord"
+                                value="********"
+                            >
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" id="loginAndStartBtn">Inloggen</button>
+                        <button
+                            type="button"
+                            class="btn btn-primary"
+                            id="loginAndStartBtn"
+                        >Inloggen</button>
                     </div>
                 </form>
             </div>
