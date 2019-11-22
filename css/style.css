@@ -10189,7 +10189,8 @@ footer .lead {
   color: var(--white);
 }
 
-.date-picked {
+.date-picked,
+.date-picked-nl {
   font-weight: bold;
 }
 

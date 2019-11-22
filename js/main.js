@@ -417,11 +417,19 @@ function selectDay() {
             'month': 'long',
             'year': 'numeric'
         });
+        let datePickedNL = dateObject.toLocaleString('nl', {
+            'weekday': 'short',
+            'day': '2-digit',
+            'month': 'long',
+            'year': 'numeric'
+        });
+
 
         $calendarContainer.find('.active').removeClass('active');
         $this.addClass('active');
         $('.date-block').fadeIn('slow');
         $('.date-picked').text(datePicked);
+        $('.date-picked-nl').text(datePickedNL);
     });
 }
 
