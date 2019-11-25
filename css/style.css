@@ -10325,3 +10325,10 @@ ol.custom-ordered-list li .title {
 .select-documents-block .form-row {
   height: 39px;
 }
+
+.test {
+  width: 2px;
+  background: var(--primary);
+  height: 100%;
+  margin: 0 10px;
+}
