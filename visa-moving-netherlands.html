@@ -2,14 +2,32 @@
 <html lang="nl-NL">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta
+        http-equiv="Content-Type"
+        content="text/html; charset=UTF-8"
+    >
 
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta
+        http-equiv="x-ua-compatible"
+        content="ie=edge"
+    >
     <title>Visa and immigration | 1overheid</title>
-    <meta name="description" content="Prototype voor 1overheid: informatie, diensten, beleid en bestuur">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/additional.css">
+    <meta
+        name="description"
+        content="Prototype voor 1overheid: informatie, diensten, beleid en bestuur"
+    >
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    >
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+    <link
+        rel="stylesheet"
+        href="css/additional.css"
+    >
 
 </head>
 
@@ -19,7 +37,10 @@
     <!-- Logged in as Asha / banner -->
     <banner>
         <div class="loggedInElm">
-            <div id="login-foldout" class="navbar-pinned expanded">
+            <div
+                id="login-foldout"
+                class="navbar-pinned expanded"
+            >
                 <div class="container-fluid">
                     <div class="navbar-pinned-content">
                         <div class="row align-items-center">
@@ -36,15 +57,35 @@
         </div>
     </banner>
 
-    <div class="modal fade loginmodal" id="loginForm" tabindex="-1" role="dialog" aria-labelledby="modal-header"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
+    <div
+        class="modal fade loginmodal"
+        id="loginForm"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="modal-header"
+        aria-hidden="true"
+    >
+        <div
+            class="modal-dialog modal-dialog-centered"
+            role="document"
+        >
             <div class="modal-content">
                 <div class="modal-header">
-                    <h3 class="modal-title" id="modal-header">
-                        <img src="img/digid-logo.svg" alt="digid">Login with DigiD
+                    <h3
+                        class="modal-title"
+                        id="modal-header"
+                    >
+                        <img
+                            src="img/digid-logo.svg"
+                            alt="digid"
+                        >Login with DigiD
                     </h3>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                    >
                         <span aria-hidden="true">×</span>
                     </button>
                 </div>
@@ -52,30 +93,61 @@
                     <div class="modal-body">
                         <div class="form-group">
                             <label for="gebruikersnaam">DigiD username</label>
-                            <input type="text" class="form-control" id="gebruikersnaam"
-                                placeholder="DigiD gebruikersnaam" value="asha_madhavan">
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="gebruikersnaam"
+                                placeholder="DigiD gebruikersnaam"
+                                value="asha_madhavan"
+                            >
                         </div>
                         <div class="form-group">
                             <label for="wachtwoord">Password</label>
-                            <input type="password" class="form-control" id="wachtwoord" placeholder="Password"
-                                value="********">
+                            <input
+                                type="password"
+                                class="form-control"
+                                id="wachtwoord"
+                                placeholder="Password"
+                                value="********"
+                            >
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" id="loginBtn">Login</button>
+                        <button
+                            type="button"
+                            class="btn btn-primary"
+                            id="loginBtn"
+                        >Login</button>
                     </div>
                 </form>
             </div>
         </div>
     </div>
 
-    <div class="modal fade contactModal" id="contactModal" tabindex="-1" role="dialog"
-        aria-labelledby="contact-modal-header" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
+    <div
+        class="modal fade contactModal"
+        id="contactModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="contact-modal-header"
+        aria-hidden="true"
+    >
+        <div
+            class="modal-dialog modal-dialog-centered"
+            role="document"
+        >
             <div class="modal-content">
                 <div class="modal-header">
-                    <h3 class="modal-title" id="contact-modal-header">Heeft u een vraag of hulp nodig?</h3>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <h3
+                        class="modal-title"
+                        id="contact-modal-header"
+                    >Heeft u een vraag of hulp nodig?</h3>
+                    <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                    >
                         <span aria-hidden="true">×</span>
                     </button>
                 </div>
@@ -90,7 +162,12 @@
                                 <a href="#">App uw vraag naar 1400</a>
                             </li>
                             <li class="chat">
-                                <a class="openChat" data-toggle="modal" data-target="#chatModal" href="#">Direct
+                                <a
+                                    class="openChat"
+                                    data-toggle="modal"
+                                    data-target="#chatModal"
+                                    href="#"
+                                >Direct
                                     chatten</a>
                             </li>
                         </ul>
@@ -103,13 +180,30 @@
         </div>
     </div>
 
-    <div class="modal fade chatModal" id="chatModal" tabindex="-1" role="dialog" aria-labelledby="chat-modal-header"
-        aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div
+        class="modal fade chatModal"
+        id="chatModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="chat-modal-header"
+        aria-hidden="true"
+    >
+        <div
+            class="modal-dialog modal-lg modal-dialog-centered"
+            role="document"
+        >
             <div class="modal-content">
                 <div class="modal-header">
-                    <h3 class="modal-title" id="chat-modal-header">Direct chatten</h3>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <h3
+                        class="modal-title"
+                        id="chat-modal-header"
+                    >Direct chatten</h3>
+                    <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                    >
                         <span aria-hidden="true">×</span>
                     </button>
                 </div>
@@ -119,7 +213,10 @@
                         <div class="messages">
                             <div class="message">
                                 <div class="avatar">
-                                    <img class="img-fluid" src="img/avatar.svg">
+                                    <img
+                                        class="img-fluid"
+                                        src="img/avatar.svg"
+                                    >
                                 </div>
                                 <div class="content">
                                     <span class="name">Medewerker:</span>
@@ -131,10 +228,17 @@
 
                         <div class="messageForm">
                             <div class="inputField">
-                                <input class="form-control form-control-lg" type="text" placeholder="Typ hier uw vraag">
+                                <input
+                                    class="form-control form-control-lg"
+                                    type="text"
+                                    placeholder="Typ hier uw vraag"
+                                >
                             </div>
                             <div class="submitBtn">
-                                <button type="button" class="btn btn-primary btn-lg">Verstuur</button>
+                                <button
+                                    type="button"
+                                    class="btn btn-primary btn-lg"
+                                >Verstuur</button>
                             </div>
                         </div>
 
@@ -150,14 +254,17 @@
 
 
 
-    <main role="main" class="actionable">
+    <main
+        role="main"
+        class="actionable"
+    >
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12">
                     <ul class="breadcrumb">
                         <li class="d-none d-md-block"><a href="home-en.html">Home</a></li>
                         <li><a href="visa-and-immigration.html">Visa and immigration</a></li>
-                        <li class="d-none d-md-block"><a href="visa-moving-netherlands.html">Moving to the Netherlands</a></li>
+                        <li class="d-none d-md-block">Moving to the Netherlands</li>
                     </ul>
                 </div>
             </div>
@@ -176,7 +283,10 @@
                                 <div class="col-12">
                                     <h2 class="vireo-light">Get it done</h2>
                                     <div class="main-actions">
-                                        <p><a class="btn btn-primary" href="visa-document-legalised.html">Get your document legalised</a></p>
+                                        <p><a
+                                                class="btn btn-primary"
+                                                href="visa-document-legalised.html"
+                                            >Get your document legalised</a></p>
                                     </div>
                                     <!-- <p>Do I need a residence permit or Visa?</p>
                                     <div class="mb-5">
@@ -196,7 +306,7 @@
                                         <p>Find out what is important to arrange before you leave.</p>
                                         <p><a href="">Bringing personal goods into the Netherlands</a></p>
                                         <p><a href="visa-legalisation.html">Important documents that need legalisation for use in the Netherlands (link naar tool legalisation)</a></p>
-                                    </div>                                
+                                    </div>
                                     <div>
                                         <h3>Arrangements after arriving in the Netherlands</h3>
                                         <p>There are several things you need to arrange when you are in the Netherlands.</p>
@@ -209,51 +319,72 @@
                         </div>
                     </div>
                     <div class="questionHelp">
-                            <div class="row">
-                                <div class="col-sm-12">
-                                    <div class="grouped">
-                                        <h2 class="mt-2 vireo-light">Find information</h2>
-                                        <div class="helpItems">
-                                            <h3 class="helpQuestion toggle-next">Do I need a visa for the Netherlands?</h3>
-                                            <div class="helpAnswer">
-                                                <p>Content</p>
-                                            </div>
-                                            <h3 class="helpQuestion toggle-next">Residence permit lost or stolen</h3>
-                                            <div class="helpAnswer">
-                                                <p>Content</p>
-                                            </div>
-                                            <h3 class="helpQuestion toggle-next">How much does the visa cost?</h3>
-                                            <div class="helpAnswer">
-                                                <p>Content</p>
-                                            </div>
-                                            <h3 class="helpQuestion toggle-next">Any questions?</h3>
-                                            <div class="helpAnswer">
-                                                <p>Content</p>
-                                            </div>
-                                            <h3 class="helpQuestion toggle-next">How does it take to process my visa application?</h3>
-                                            <div class="helpAnswer">
-                                                <p>Content</p>
-                                            </div>
-                                            <h3 class="helpQuestion toggle-next">Different types of visa</h3>
-                                            <div class="helpAnswer">
-                                                <p>Content</p>
-                                            </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="grouped">
+                                    <h2 class="mt-2 vireo-light">Find information</h2>
+                                    <div class="helpItems">
+                                        <h3 class="helpQuestion toggle-next">Do I need a visa for the Netherlands?</h3>
+                                        <div class="helpAnswer">
+                                            <p>Content</p>
+                                        </div>
+                                        <h3 class="helpQuestion toggle-next">Residence permit lost or stolen</h3>
+                                        <div class="helpAnswer">
+                                            <p>Content</p>
+                                        </div>
+                                        <h3 class="helpQuestion toggle-next">How much does the visa cost?</h3>
+                                        <div class="helpAnswer">
+                                            <p>Content</p>
+                                        </div>
+                                        <h3 class="helpQuestion toggle-next">Any questions?</h3>
+                                        <div class="helpAnswer">
+                                            <p>Content</p>
+                                        </div>
+                                        <h3 class="helpQuestion toggle-next">How does it take to process my visa
+                                            application?</h3>
+                                        <div class="helpAnswer">
+                                            <p>Content</p>
+                                        </div>
+                                        <h3 class="helpQuestion toggle-next">Different types of visa</h3>
+                                        <div class="helpAnswer">
+                                            <p>Content</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
 
     </main>
-    <div class="modal fade loginmodal" id="loginToStartForm" tabindex="-1" role="dialog" aria-labelledby="modal-header"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
+    <div
+        class="modal fade loginmodal"
+        id="loginToStartForm"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="modal-header"
+        aria-hidden="true"
+    >
+        <div
+            class="modal-dialog modal-dialog-centered"
+            role="document"
+        >
             <div class="modal-content">
                 <div class="modal-header">
-                    <h3 class="modal-title" id="modal-header">
-                        <img src="img/digid-logo.svg" alt="digid"> Login met DigiD
+                    <h3
+                        class="modal-title"
+                        id="modal-header"
+                    >
+                        <img
+                            src="img/digid-logo.svg"
+                            alt="digid"
+                        > Login met DigiD
                     </h3>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                    >
                         <span aria-hidden="true">×</span>
                     </button>
                 </div>
@@ -261,17 +392,31 @@
                     <div class="modal-body">
                         <div class="form-group">
                             <label for="gebruikersnaam">DigiD gebruikersnaam</label>
-                            <input type="text" class="form-control" id="gebruikersnaam"
-                                placeholder="DigiD gebruikersnaam" value="asha_madhavan">
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="gebruikersnaam"
+                                placeholder="DigiD gebruikersnaam"
+                                value="asha_madhavan"
+                            >
                         </div>
                         <div class="form-group">
                             <label for="wachtwoord">Wachtwoord</label>
-                            <input type="password" class="form-control" id="wachtwoord" placeholder="Wachtwoord"
-                                value="********">
+                            <input
+                                type="password"
+                                class="form-control"
+                                id="wachtwoord"
+                                placeholder="Wachtwoord"
+                                value="********"
+                            >
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" id="loginAndStartBtn">Inloggen</button>
+                        <button
+                            type="button"
+                            class="btn btn-primary"
+                            id="loginAndStartBtn"
+                        >Inloggen</button>
                     </div>
                 </form>
             </div>

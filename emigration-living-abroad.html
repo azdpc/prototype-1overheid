@@ -2,14 +2,32 @@
 <html lang="nl-NL">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta
+        http-equiv="Content-Type"
+        content="text/html; charset=UTF-8"
+    >
 
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta
+        http-equiv="x-ua-compatible"
+        content="ie=edge"
+    >
     <title>Emigration and living abroad | 1overheid</title>
-    <meta name="description" content="Prototype voor 1overheid: informatie, diensten, beleid en bestuur">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/additional.css">
+    <meta
+        name="description"
+        content="Prototype voor 1overheid: informatie, diensten, beleid en bestuur"
+    >
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    >
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+    <link
+        rel="stylesheet"
+        href="css/additional.css"
+    >
 
 </head>
 
@@ -19,7 +37,10 @@
     <!-- Logged in as Asha / banner -->
     <banner>
         <div class="loggedInElm">
-            <div id="login-foldout" class="navbar-pinned expanded">
+            <div
+                id="login-foldout"
+                class="navbar-pinned expanded"
+            >
                 <div class="container-fluid">
                     <div class="navbar-pinned-content">
                         <div class="row align-items-center">
@@ -36,15 +57,35 @@
         </div>
     </banner>
 
-    <div class="modal fade loginmodal" id="loginForm" tabindex="-1" role="dialog" aria-labelledby="modal-header"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
+    <div
+        class="modal fade loginmodal"
+        id="loginForm"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="modal-header"
+        aria-hidden="true"
+    >
+        <div
+            class="modal-dialog modal-dialog-centered"
+            role="document"
+        >
             <div class="modal-content">
                 <div class="modal-header">
-                    <h3 class="modal-title" id="modal-header">
-                        <img src="img/digid-logo.svg" alt="digid">Login with DigiD
+                    <h3
+                        class="modal-title"
+                        id="modal-header"
+                    >
+                        <img
+                            src="img/digid-logo.svg"
+                            alt="digid"
+                        >Login with DigiD
                     </h3>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                    >
                         <span aria-hidden="true">×</span>
                     </button>
                 </div>
@@ -52,30 +93,61 @@
                     <div class="modal-body">
                         <div class="form-group">
                             <label for="gebruikersnaam">DigiD username</label>
-                            <input type="text" class="form-control" id="gebruikersnaam"
-                                placeholder="DigiD gebruikersnaam" value="asha_madhavan">
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="gebruikersnaam"
+                                placeholder="DigiD gebruikersnaam"
+                                value="asha_madhavan"
+                            >
                         </div>
                         <div class="form-group">
                             <label for="wachtwoord">Password</label>
-                            <input type="password" class="form-control" id="wachtwoord" placeholder="Password"
-                                value="********">
+                            <input
+                                type="password"
+                                class="form-control"
+                                id="wachtwoord"
+                                placeholder="Password"
+                                value="********"
+                            >
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" id="loginBtn">Login</button>
+                        <button
+                            type="button"
+                            class="btn btn-primary"
+                            id="loginBtn"
+                        >Login</button>
                     </div>
                 </form>
             </div>
         </div>
     </div>
 
-    <div class="modal fade contactModal" id="contactModal" tabindex="-1" role="dialog"
-        aria-labelledby="contact-modal-header" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
+    <div
+        class="modal fade contactModal"
+        id="contactModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="contact-modal-header"
+        aria-hidden="true"
+    >
+        <div
+            class="modal-dialog modal-dialog-centered"
+            role="document"
+        >
             <div class="modal-content">
                 <div class="modal-header">
-                    <h3 class="modal-title" id="contact-modal-header">Heeft u een vraag of hulp nodig?</h3>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <h3
+                        class="modal-title"
+                        id="contact-modal-header"
+                    >Heeft u een vraag of hulp nodig?</h3>
+                    <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                    >
                         <span aria-hidden="true">×</span>
                     </button>
                 </div>
@@ -90,7 +162,12 @@
                                 <a href="#">App uw vraag naar 1400</a>
                             </li>
                             <li class="chat">
-                                <a class="openChat" data-toggle="modal" data-target="#chatModal" href="#">Direct
+                                <a
+                                    class="openChat"
+                                    data-toggle="modal"
+                                    data-target="#chatModal"
+                                    href="#"
+                                >Direct
                                     chatten</a>
                             </li>
                         </ul>
@@ -103,13 +180,30 @@
         </div>
     </div>
 
-    <div class="modal fade chatModal" id="chatModal" tabindex="-1" role="dialog" aria-labelledby="chat-modal-header"
-        aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div
+        class="modal fade chatModal"
+        id="chatModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="chat-modal-header"
+        aria-hidden="true"
+    >
+        <div
+            class="modal-dialog modal-lg modal-dialog-centered"
+            role="document"
+        >
             <div class="modal-content">
                 <div class="modal-header">
-                    <h3 class="modal-title" id="chat-modal-header">Direct chatten</h3>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <h3
+                        class="modal-title"
+                        id="chat-modal-header"
+                    >Direct chatten</h3>
+                    <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                    >
                         <span aria-hidden="true">×</span>
                     </button>
                 </div>
@@ -119,7 +213,10 @@
                         <div class="messages">
                             <div class="message">
                                 <div class="avatar">
-                                    <img class="img-fluid" src="img/avatar.svg">
+                                    <img
+                                        class="img-fluid"
+                                        src="img/avatar.svg"
+                                    >
                                 </div>
                                 <div class="content">
                                     <span class="name">Medewerker:</span>
@@ -131,10 +228,17 @@
 
                         <div class="messageForm">
                             <div class="inputField">
-                                <input class="form-control form-control-lg" type="text" placeholder="Typ hier uw vraag">
+                                <input
+                                    class="form-control form-control-lg"
+                                    type="text"
+                                    placeholder="Typ hier uw vraag"
+                                >
                             </div>
                             <div class="submitBtn">
-                                <button type="button" class="btn btn-primary btn-lg">Verstuur</button>
+                                <button
+                                    type="button"
+                                    class="btn btn-primary btn-lg"
+                                >Verstuur</button>
                             </div>
                         </div>
 
@@ -150,12 +254,16 @@
 
 
 
-    <main role="main" class="actionable">
+    <main
+        role="main"
+        class="actionable"
+    >
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12">
                     <ul class="breadcrumb">
                         <li><a href="home-en.html">Home</a></li>
+                        <li>Emigration and living abroad</li>
                     </ul>
                 </div>
             </div>
@@ -176,7 +284,8 @@
                                     <div class="toggleContent">
                                         <ul>
                                             <li><a href="leaving-the-netherlands.html">Leaving the Netherlands</a></li>
-                                            <li><a href="leaving-the-netherlands-work-pension.html">Work and pension</a> </li>
+                                            <li><a href="leaving-the-netherlands-work-pension.html">Work and pension</a>
+                                            </li>
                                             <li><a href="leaving-the-netherlands-family.html">Family</a></li>
                                             <li><a href="leaving-the-netherlands-tax-benefits.html">Tax and benefits</a>
                                             <li><a href="leaving-the-netherlands-studying.html">Studying</a>
@@ -188,7 +297,8 @@
                                     <h2 class="toggleTopic toggle-next">Living outside the Netherlands</h2>
                                     <div class="toggleContent">
                                         <ul>
-                                            <li><a href="outside-the-netherlands.html">Living outside the Netherlands</a></li>
+                                            <li><a href="outside-the-netherlands.html">Living outside the
+                                                    Netherlands</a></li>
                                             <li><a href="outside-the-netherlands-apply-use-dutch-documents.html">Using
                                                     Dutch documents abroad</a></li>
                                             <li><a href="outside-the-netherlands-work-pension.html">Work and pension</a>
@@ -200,7 +310,7 @@
                                                     Dutch elections from abroad</a></li>
                                             <li><a href="outside-the-netherlands-studying.html">Studying</a></li>
 
-                                            
+
                                         </ul>
                                     </div>
 
@@ -223,15 +333,35 @@
                     </div>
                 </div>
     </main>
-    <div class="modal fade loginmodal" id="loginToStartForm" tabindex="-1" role="dialog" aria-labelledby="modal-header"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
+    <div
+        class="modal fade loginmodal"
+        id="loginToStartForm"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="modal-header"
+        aria-hidden="true"
+    >
+        <div
+            class="modal-dialog modal-dialog-centered"
+            role="document"
+        >
             <div class="modal-content">
                 <div class="modal-header">
-                    <h3 class="modal-title" id="modal-header">
-                        <img src="img/digid-logo.svg" alt="digid"> Login met DigiD
+                    <h3
+                        class="modal-title"
+                        id="modal-header"
+                    >
+                        <img
+                            src="img/digid-logo.svg"
+                            alt="digid"
+                        > Login met DigiD
                     </h3>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                    >
                         <span aria-hidden="true">×</span>
                     </button>
                 </div>
@@ -239,17 +369,31 @@
                     <div class="modal-body">
                         <div class="form-group">
                             <label for="gebruikersnaam">DigiD gebruikersnaam</label>
-                            <input type="text" class="form-control" id="gebruikersnaam"
-                                placeholder="DigiD gebruikersnaam" value="asha_madhavan">
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="gebruikersnaam"
+                                placeholder="DigiD gebruikersnaam"
+                                value="asha_madhavan"
+                            >
                         </div>
                         <div class="form-group">
                             <label for="wachtwoord">Wachtwoord</label>
-                            <input type="password" class="form-control" id="wachtwoord" placeholder="Wachtwoord"
-                                value="********">
+                            <input
+                                type="password"
+                                class="form-control"
+                                id="wachtwoord"
+                                placeholder="Wachtwoord"
+                                value="********"
+                            >
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" id="loginAndStartBtn">Inloggen</button>
+                        <button
+                            type="button"
+                            class="btn btn-primary"
+                            id="loginAndStartBtn"
+                        >Inloggen</button>
                     </div>
                 </form>
             </div>
