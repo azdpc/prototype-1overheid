@@ -65,9 +65,9 @@ function handleLogin(){
         e.preventDefault();
         logout();
 
-        if($(this).hasClass('to-home')) {
-        	window.location.href = 'home.html';
-        }
+        // if($(this).hasClass('to-home')) {
+        // 	window.location.href = 'home.html';
+        // }
 
     });
 }
@@ -985,30 +985,30 @@ function getSetBirthdate() {
     });
 }
 
-function passportFlow() {
-    $('input[name="radio-paspoort"').on('change', function() {
-        const $passportFlow = $('.passport-flow');
+// function passportFlow() {
+//     $('input[name="radio-paspoort"').on('change', function() {
+//         const $passportFlow = $('.passport-flow');
 
-        $passportFlow.removeAttr('data-toggle data-target');
+//         $passportFlow.removeAttr('data-toggle data-target');
 
-        $passportFlow.attr('href', '/' + this.value + '.html');
+//         $passportFlow.attr('href', '/' + this.value + '.html');
 
-        if (this.value === 'digid') {
-            $passportFlow.attr({
-                'data-toggle': 'modal',
-                'data-target': '#loginToStartForm'
-            });
-            $passportFlow.removeAttr('href');
-        }
-    });
-}
+//         if (this.value === 'digid') {
+//             $passportFlow.attr({
+//                 'data-toggle': 'modal',
+//                 'data-target': '#loginToStartForm'
+//             });
+//             $passportFlow.removeAttr('href');
+//         }
+//     });
+// }
 
-function passportFlowDigid() {
-    $('#passportFlowDigid').on('click tap', function () {
-        login();
-        return location.href='home.html'
-    });
-}
+// function passportFlowDigid() {
+//     $('#passportFlowDigid').on('click tap', function () {
+//         login();
+//         // return location.href='home.html'
+//     });
+// }
 
 $(function () {
     includeHTML();
@@ -1025,6 +1025,6 @@ $(function () {
     autocompleteCountries();
     showHideAmountDocuments();
     getSetBirthdate();
-    passportFlow();
-    passportFlowDigid();
+    // passportFlow();
+    // passportFlowDigid();
 });
