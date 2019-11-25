@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="nl-NL">
+
+<head>
+    <meta
+        http-equiv="Content-Type"
+        content="text/html; charset=UTF-8"
+    >
+
+    <meta
+        http-equiv="x-ua-compatible"
+        content="ie=edge"
+    >
+    <title>Paspoort of ID-kaart verlengen | 1overheid</title>
+    <meta
+        name="description"
+        content="Prototype voor 1overheid: informatie, diensten, beleid en bestuur"
+    >
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    >
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+    <link
+        rel="stylesheet"
+        href="css/additional.css"
+    >
+
+</head>
+
+<body cz-shortcut-listen="true">
+    <!-- include header -->
+    <div azdpc-include-html="header.html"></div>
+    <!-- Logged in as Asha / banner -->
+    <banner>
+        <div class="loggedInElm">
+            <div
+                id="login-foldout"
+                class="navbar-pinned expanded"
+            >
+                <div class="container-fluid">
+                    <div class="navbar-pinned-content">
+                        <div class="row align-items-center">
+                            <div class="col-8">
+                                Logged in as Asha Martinez
+                            </div>
+                            <div class="col-4">
+                                <button class="btn btn-success logoutBtn float-right">Logout</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </banner>
+
+    <div
+        class="modal fade loginmodal"
+        id="loginForm"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="modal-header"
+        aria-hidden="true"
+    >
+        <div
+            class="modal-dialog modal-dialog-centered"
+            role="document"
+        >
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3
+                        class="modal-title"
+                        id="modal-header"
+                    >
+                        <img
+                            src="img/digid-logo.svg"
+                            alt="digid"
+                        >Login with DigiD
+                    </h3>
+                    <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                    >
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <form>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="gebruikersnaam">DigiD username</label>
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="gebruikersnaam"
+                                placeholder="DigiD gebruikersnaam"
+                                value="asha_madhavan"
+                            >
+                        </div>
+                        <div class="form-group">
+                            <label for="wachtwoord">Password</label>
+                            <input
+                                type="password"
+                                class="form-control"
+                                id="wachtwoord"
+                                placeholder="Password"
+                                value="********"
+                            >
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button
+                            type="button"
+                            class="btn btn-primary"
+                            id="loginBtn"
+                        >Login</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div
+        class="modal fade contactModal"
+        id="contactModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="contact-modal-header"
+        aria-hidden="true"
+    >
+        <div
+            class="modal-dialog modal-dialog-centered"
+            role="document"
+        >
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3
+                        class="modal-title"
+                        id="contact-modal-header"
+                    >Heeft u een vraag of hulp nodig?</h3>
+                    <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                    >
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <form>
+                    <div class="modal-body">
+                        <p>U kunt op contact met ons opnemen via:</p>
+                        <ul>
+                            <li class="phone">
+                                <a href="tel:1400">Bel naar 1400</a>
+                            </li>
+                            <li class="app">
+                                <a href="#">App uw vraag naar 1400</a>
+                            </li>
+                            <li class="chat">
+                                <a
+                                    class="openChat"
+                                    data-toggle="modal"
+                                    data-target="#chatModal"
+                                    href="#"
+                                >Direct
+                                    chatten</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div
+        class="modal fade chatModal"
+        id="chatModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="chat-modal-header"
+        aria-hidden="true"
+    >
+        <div
+            class="modal-dialog modal-lg modal-dialog-centered"
+            role="document"
+        >
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3
+                        class="modal-title"
+                        id="chat-modal-header"
+                    >Direct chatten</h3>
+                    <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                    >
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <form>
+                    <div class="modal-body">
+
+                        <div class="messages">
+                            <div class="message">
+                                <div class="avatar">
+                                    <img
+                                        class="img-fluid"
+                                        src="img/avatar.svg"
+                                    >
+                                </div>
+                                <div class="content">
+                                    <span class="name">Medewerker:</span>
+                                    <p>Goedemiddag, waarmee kan ik u helpen?</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="messageForm">
+                            <div class="inputField">
+                                <input
+                                    class="form-control form-control-lg"
+                                    type="text"
+                                    placeholder="Typ hier uw vraag"
+                                >
+                            </div>
+                            <div class="submitBtn">
+                                <button
+                                    type="button"
+                                    class="btn btn-primary btn-lg"
+                                >Verstuur</button>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="modal-footer">
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <main
+        role="main"
+        class="actionable"
+    >
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <ul class="breadcrumb">
+                        <li class="d-none d-md-block"><a href="home.html">Home</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1 col-md-12">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12">
+                                <h1>Paspoort of ID-kaart verlengen</h1>
+
+                                <p>U kunt op 1overheid direct uw Nederlandse paspoort of ID-kaart aanvragen of verlengen. Ook als u buiten Nederland woont.</p>
+
+
+
+                                <button
+                                    type="button"
+                                    class="btn btn-primary"
+                                    onclick="location.href='paspoort-verlengen.html'"
+                                >Start aanvraag of verlengen</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="questionHelp mt-5">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="grouped">
+
+                                    <button type="button" class="btn btn-toggle toggle-next">Hulp bij het aanvragen of vernieuwen van paspoort of ID-kaart</button>
+                                          <div class="helpItems">
+                                       <h3 class="helpQuestion toggle-next">Hoe werkt het aanvragen of vernieuwen van mijn paspoort of ID-kaart online?</h3>
+                                        <div class="helpAnswer">
+                                            <p><a href="service-steps-passport-application.html">Meer informatie over de procedure</a></p>
+                                        </div>
+                                            <h3 class="helpQuestion toggle-next">Wat kost het aanvragen of verlengen van een paspoort of ID-kaart?</h3>
+
+                                        <div class="helpAnswer">
+                                            <p>...</p>
+                                        </div>
+
+                                        <h3 class="helpQuestion toggle-next">Is er een andere waarop ik mijn paspoort of ID-kaart kan aanvragen of verlengen?</h3>
+                                        <div class="helpAnswer">
+                                            <p>...</p>
+                                        </div>
+
+                                     
+                                            <h3 class="helpQuestion toggle-next"></h3>
+                                            <div class="helpAnswer">
+                                                <p>...</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div
+        class="modal fade loginmodal"
+        id="loginToStartForm"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="modal-header"
+        aria-hidden="true"
+    >
+        <div
+            class="modal-dialog modal-dialog-centered"
+            role="document"
+        >
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3
+                        class="modal-title"
+                        id="modal-header"
+                    >
+                        <img
+                            src="img/digid-logo.svg"
+                            alt="digid"
+                        > Login met DigiD
+                    </h3>
+                    <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                    >
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <form>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="gebruikersnaam">DigiD gebruikersnaam</label>
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="gebruikersnaam"
+                                placeholder="DigiD gebruikersnaam"
+                                value="asha_madhavan"
+                            >
+                        </div>
+                        <div class="form-group">
+                            <label for="wachtwoord">Wachtwoord</label>
+                            <input
+                                type="password"
+                                class="form-control"
+                                id="wachtwoord"
+                                placeholder="Wachtwoord"
+                                value="********"
+                            >
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button
+                            type="button"
+                            class="btn btn-primary"
+                            id="loginAndStartBtn"
+                        >Inloggen</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    </main>
+
+
+    <!-- Include footer -->
+    <div azdpc-include-html="footer.html"></div>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
