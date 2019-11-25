@@ -2,14 +2,32 @@
 <html lang="nl-NL">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta
+        http-equiv="Content-Type"
+        content="text/html; charset=UTF-8"
+    >
 
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta
+        http-equiv="x-ua-compatible"
+        content="ie=edge"
+    >
     <title>Visa and immigration | 1overheid</title>
-    <meta name="description" content="Prototype voor 1overheid: informatie, diensten, beleid en bestuur">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/additional.css">
+    <meta
+        name="description"
+        content="Prototype voor 1overheid: informatie, diensten, beleid en bestuur"
+    >
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    >
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+    <link
+        rel="stylesheet"
+        href="css/additional.css"
+    >
 
 </head>
 
@@ -19,7 +37,10 @@
     <!-- Logged in as Asha / banner -->
     <banner>
         <div class="loggedInElm">
-            <div id="login-foldout" class="navbar-pinned expanded">
+            <div
+                id="login-foldout"
+                class="navbar-pinned expanded"
+            >
                 <div class="container-fluid">
                     <div class="navbar-pinned-content">
                         <div class="row align-items-center">
@@ -36,15 +57,35 @@
         </div>
     </banner>
 
-    <div class="modal fade loginmodal" id="loginForm" tabindex="-1" role="dialog" aria-labelledby="modal-header"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
+    <div
+        class="modal fade loginmodal"
+        id="loginForm"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="modal-header"
+        aria-hidden="true"
+    >
+        <div
+            class="modal-dialog modal-dialog-centered"
+            role="document"
+        >
             <div class="modal-content">
                 <div class="modal-header">
-                    <h3 class="modal-title" id="modal-header">
-                        <img src="img/digid-logo.svg" alt="digid">Login with DigiD
+                    <h3
+                        class="modal-title"
+                        id="modal-header"
+                    >
+                        <img
+                            src="img/digid-logo.svg"
+                            alt="digid"
+                        >Login with DigiD
                     </h3>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                    >
                         <span aria-hidden="true">×</span>
                     </button>
                 </div>
@@ -52,30 +93,61 @@
                     <div class="modal-body">
                         <div class="form-group">
                             <label for="gebruikersnaam">DigiD username</label>
-                            <input type="text" class="form-control" id="gebruikersnaam"
-                                placeholder="DigiD gebruikersnaam" value="asha_madhavan">
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="gebruikersnaam"
+                                placeholder="DigiD gebruikersnaam"
+                                value="asha_madhavan"
+                            >
                         </div>
                         <div class="form-group">
                             <label for="wachtwoord">Password</label>
-                            <input type="password" class="form-control" id="wachtwoord" placeholder="Password"
-                                value="********">
+                            <input
+                                type="password"
+                                class="form-control"
+                                id="wachtwoord"
+                                placeholder="Password"
+                                value="********"
+                            >
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" id="loginBtn">Login</button>
+                        <button
+                            type="button"
+                            class="btn btn-primary"
+                            id="loginBtn"
+                        >Login</button>
                     </div>
                 </form>
             </div>
         </div>
     </div>
 
-    <div class="modal fade contactModal" id="contactModal" tabindex="-1" role="dialog"
-        aria-labelledby="contact-modal-header" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
+    <div
+        class="modal fade contactModal"
+        id="contactModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="contact-modal-header"
+        aria-hidden="true"
+    >
+        <div
+            class="modal-dialog modal-dialog-centered"
+            role="document"
+        >
             <div class="modal-content">
                 <div class="modal-header">
-                    <h3 class="modal-title" id="contact-modal-header">Heeft u een vraag of hulp nodig?</h3>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <h3
+                        class="modal-title"
+                        id="contact-modal-header"
+                    >Heeft u een vraag of hulp nodig?</h3>
+                    <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                    >
                         <span aria-hidden="true">×</span>
                     </button>
                 </div>
@@ -90,7 +162,12 @@
                                 <a href="#">App uw vraag naar 1400</a>
                             </li>
                             <li class="chat">
-                                <a class="openChat" data-toggle="modal" data-target="#chatModal" href="#">Direct
+                                <a
+                                    class="openChat"
+                                    data-toggle="modal"
+                                    data-target="#chatModal"
+                                    href="#"
+                                >Direct
                                     chatten</a>
                             </li>
                         </ul>
@@ -103,13 +180,30 @@
         </div>
     </div>
 
-    <div class="modal fade chatModal" id="chatModal" tabindex="-1" role="dialog" aria-labelledby="chat-modal-header"
-        aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div
+        class="modal fade chatModal"
+        id="chatModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="chat-modal-header"
+        aria-hidden="true"
+    >
+        <div
+            class="modal-dialog modal-lg modal-dialog-centered"
+            role="document"
+        >
             <div class="modal-content">
                 <div class="modal-header">
-                    <h3 class="modal-title" id="chat-modal-header">Direct chatten</h3>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <h3
+                        class="modal-title"
+                        id="chat-modal-header"
+                    >Direct chatten</h3>
+                    <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                    >
                         <span aria-hidden="true">×</span>
                     </button>
                 </div>
@@ -119,7 +213,10 @@
                         <div class="messages">
                             <div class="message">
                                 <div class="avatar">
-                                    <img class="img-fluid" src="img/avatar.svg">
+                                    <img
+                                        class="img-fluid"
+                                        src="img/avatar.svg"
+                                    >
                                 </div>
                                 <div class="content">
                                     <span class="name">Medewerker:</span>
@@ -131,10 +228,17 @@
 
                         <div class="messageForm">
                             <div class="inputField">
-                                <input class="form-control form-control-lg" type="text" placeholder="Typ hier uw vraag">
+                                <input
+                                    class="form-control form-control-lg"
+                                    type="text"
+                                    placeholder="Typ hier uw vraag"
+                                >
                             </div>
                             <div class="submitBtn">
-                                <button type="button" class="btn btn-primary btn-lg">Verstuur</button>
+                                <button
+                                    type="button"
+                                    class="btn btn-primary btn-lg"
+                                >Verstuur</button>
                             </div>
                         </div>
 
@@ -150,12 +254,21 @@
 
 
 
-    <main role="main" class="actionable">
+    <main
+        role="main"
+        class="actionable"
+    >
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12">
                     <ul class="breadcrumb">
                         <li class="d-none d-md-block"><a href="home-en.html">Home</a></li>
+                        <li class="d-none d-md-block"><a href="emigration-living-abroad.html">Emigration and living
+                                abroad</a></li>
+                        <li><a href="moving-back-to-the-netherlands.html">Moving back to the
+                                Netherlands</a></li>
+                        <li class="d-none d-md-block"><a href="service-intro-non-dutch-document-legalisation.html">Get
+                                your non-Dutch document legalised</a></li>
                     </ul>
                 </div>
             </div>
@@ -171,11 +284,17 @@
                                         <a href="#">Espa&ntilde;ol</a> | <a href="#">Fran&ccedil;ais</a> | <a
                                             href="#">切換到英文</a></p>
                                 </div>
-                                <p>Legalisation of a foreign document makes them suitable for use in the Netherlands. To legalise a document, the competent authorities sign and stamp it. Several different steps may be needed to complete the process. Most countries have agreements for this.</p>
-                          
-                               
-                                <button type="button" class="btn btn-primary"
-                                    onclick="location.href='service-non-dutch-document-legalisation.html'">Start non-Dutch document legalisation check</button>
+                                <p>Legalisation of a foreign document makes them suitable for use in the Netherlands. To
+                                    legalise a document, the competent authorities sign and stamp it. Several different
+                                    steps may be needed to complete the process. Most countries have agreements for
+                                    this.</p>
+
+
+                                <button
+                                    type="button"
+                                    class="btn btn-primary"
+                                    onclick="location.href='service-non-dutch-document-legalisation.html'"
+                                >Start non-Dutch document legalisation check</button>
                             </div>
                         </div>
                     </div>
@@ -183,16 +302,19 @@
                         <div class="row">
                             <div class="col-sm-12">
                                 <div class="grouped">
-                                    <button type="button" class="btn btn-toggle">About this service</button>
-                                            <h3 class="helpQuestion toggle-next">What is document legalisation?</h3>
-                                        <div class="helpAnswer">
-                                            <p><a href="#">Which documents can be
-                                                    legalised?</a></p>
-                                            <p><a href="#">Where can I legalise my
-                                                    document?</a></p>
-                                        </div>
+                                    <button
+                                        type="button"
+                                        class="btn btn-toggle"
+                                    >About this service</button>
+                                    <h3 class="helpQuestion toggle-next">What is document legalisation?</h3>
+                                    <div class="helpAnswer">
+                                        <p><a href="#">Which documents can be
+                                                legalised?</a></p>
+                                        <p><a href="#">Where can I legalise my
+                                                document?</a></p>
+                                    </div>
 
-                                         <div class="helpItems">
+                                    <div class="helpItems">
                                         <h3 class="helpQuestion toggle-next">Why do I need to legalise my document?</h3>
                                         <div class="helpAnswer">
                                             <p>You may need to have your foreign documents translated and legalised
@@ -206,20 +328,28 @@
                                                 translation and legalisation and how you can have your documents
                                                 legalised.</p>
 
-                                            <p>More information</p> 
-                                       <ul>  <li>   <a href="moving-to-the-netherlands.html">What to arrange before moving to the Netherlands</a></li>
-                                           <li><a href="nationality-become-dutch-citizen.html">What to arrange when you want to become a Dutch citizen</a></li></ul>
+                                            <p>More information</p>
+                                            <ul>
+                                                <li> <a href="moving-to-the-netherlands.html">What to arrange before
+                                                        moving to the Netherlands</a></li>
+                                                <li><a href="nationality-become-dutch-citizen.html">What to arrange when
+                                                        you want to become a Dutch citizen</a></li>
+                                            </ul>
                                         </div>
 
-                                    <div class="helpItems">
-                                      <h3 class="helpQuestion toggle-next">In which cases do you need to translate your document?</h3>
-                                <p>In most cases, if your document is not issued in Dutch, English, French or German,
-                                    you need to have them translated before they can be used in the Netherlands.
-                                    This depends on the language your document is issued in. In
-                                    our legalisation tool you will find out which documents can be legalised.</p> 
+                                        <div class="helpItems">
+                                            <h3 class="helpQuestion toggle-next">In which cases do you need to translate
+                                                your document?</h3>
+                                            <p>In most cases, if your document is not issued in Dutch, English, French
+                                                or German,
+                                                you need to have them translated before they can be used in the
+                                                Netherlands.
+                                                This depends on the language your document is issued in. In
+                                                our legalisation tool you will find out which documents can be
+                                                legalised.</p>
                                         </div>
-                                   
-                               
+
+
                                         <h3 class="helpQuestion toggle-next">How can I translate my document?
                                             By whom do I have my document
                                             translated?</h3>
@@ -240,6 +370,36 @@
                                         <div class="helpAnswer">
                                             <p><a href="#">Contact us</a></p>
                                         </div>
+                                        <h3 class="helpQuestion toggle-next">The legalisation process in 5 steps</h3>
+                                        <ol>
+                                            <li>
+                                                <strong>Select the country where your document is issued.</strong><br>
+                                                The process of legalisation depends on where your document is issued.
+                                            </li>
+                                            <li>
+                                                <strong>Select the language of your document.</strong><br>
+                                                The language you select will determine if you need to translate your
+                                                documented.
+                                            </li>
+                                            <li>
+                                                <strong>Select the type and number of documents you want
+                                                    to
+                                                    have legalised.</strong><br>
+                                                You can choose to legalise several documents.
+                                            </li>
+                                            <li>
+                                                <strong>Get your to do list.</strong><br>
+                                                In your to do list you will find out how you can have your documents
+                                                legalised. This list depends on the type of documents.
+                                            </li>
+                                            <li>
+                                                <strong>You may have to make an appointment</strong><br>
+                                                For some documents you need to make an appointment. This depends on
+                                                the
+                                                country you live in and the type of documents you want to have
+                                                legalised.
+                                            </li>
+                                        </ol>
                                     </div>
                                 </div>
                             </div>
@@ -247,15 +407,35 @@
                     </div>
 
     </main>
-    <div class="modal fade loginmodal" id="loginToStartForm" tabindex="-1" role="dialog" aria-labelledby="modal-header"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
+    <div
+        class="modal fade loginmodal"
+        id="loginToStartForm"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="modal-header"
+        aria-hidden="true"
+    >
+        <div
+            class="modal-dialog modal-dialog-centered"
+            role="document"
+        >
             <div class="modal-content">
                 <div class="modal-header">
-                    <h3 class="modal-title" id="modal-header">
-                        <img src="img/digid-logo.svg" alt="digid"> Login met DigiD
+                    <h3
+                        class="modal-title"
+                        id="modal-header"
+                    >
+                        <img
+                            src="img/digid-logo.svg"
+                            alt="digid"
+                        > Login met DigiD
                     </h3>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                    >
                         <span aria-hidden="true">×</span>
                     </button>
                 </div>
@@ -263,17 +443,31 @@
                     <div class="modal-body">
                         <div class="form-group">
                             <label for="gebruikersnaam">DigiD gebruikersnaam</label>
-                            <input type="text" class="form-control" id="gebruikersnaam"
-                                placeholder="DigiD gebruikersnaam" value="asha_madhavan">
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="gebruikersnaam"
+                                placeholder="DigiD gebruikersnaam"
+                                value="asha_madhavan"
+                            >
                         </div>
                         <div class="form-group">
                             <label for="wachtwoord">Wachtwoord</label>
-                            <input type="password" class="form-control" id="wachtwoord" placeholder="Wachtwoord"
-                                value="********">
+                            <input
+                                type="password"
+                                class="form-control"
+                                id="wachtwoord"
+                                placeholder="Wachtwoord"
+                                value="********"
+                            >
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" id="loginAndStartBtn">Inloggen</button>
+                        <button
+                            type="button"
+                            class="btn btn-primary"
+                            id="loginAndStartBtn"
+                        >Inloggen</button>
                     </div>
                 </form>
             </div>
