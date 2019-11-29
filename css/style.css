@@ -10135,6 +10135,10 @@ footer .lead {
   border-left-color: var(--warning);
 }
 
+.callout-default {
+  border-left-color: #747474;
+}
+
 /* Calendar */
 .calendar-container {
   background-color: var(--vireo-blue-misty);
