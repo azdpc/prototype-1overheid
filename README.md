@@ -1,13 +1,13 @@
 # Prototype 1Overheid
-Prototype van één ingang van waaruit de burger of professional al zijn overheidszaken kan regelen en relevante overheidsinformatie kan opzoeken. Het prototype is ontwikkeld door een multidisciplinair team van de Dienst Publiek & Communicatie van het ministerie van Algemene Zaken.
+Prototype van één ingang van waaruit de burger of professional al zijn overheidszaken kan regelen en relevante overheidsinformatie kan opzoeken. Het prototype is in meerdere stappen ontwikkeld door multidisciplinaire teams van de Dienst Publiek & Communicatie van het ministerie van Algemene Zaken.
 
-Diverse onderdelen en pagina's van het prototype: https://azdpc.github.io/prototype-1overheid/
+Diverse onderdelen en pagina's van het meest recente prototype: https://azdpc.github.io/prototype-1overheid/
 
 Een aantal video's van diverse 'flows' in het prototype: https://www.platformrijksoverheiddemo.nl/organisatie/online-advies/prototype-1overheid
 
 ## Doel van het prototype 
 
-Het doel van het prototype was de gebruiker centraal te stellen en een ‘ideale  gebruikerservaring’ te laten zien, uitgaande van de volgende uitgangspunten:
+Het doel van het prototype is de gebruiker centraal te stellen en een ‘ideale  gebruikerservaring’ te laten zien, uitgaande van de volgende uitgangspunten:
 - Communiceer vanuit 'één overheid' richting de gebruiker en niet vanuit alle overheden en overheidsorganisaties apart (=minder versnippering van overheidsinformatie)
 - Maak de informatie meer relevant voor de gebruiker, bijvoorbeeld persoonlijker en locatiegebonden
 - Biedt naast informatie ook meer transacties. Taken helemaal kunnen afronden in plaats van alleen informeren en doorverwijzen.
@@ -37,8 +37,8 @@ Op verschillende momenten tijdens de realisatie van het prototype vond gebruiker
 Het ‘Prototype 1Overheid’ is gelieerd aan het programma ‘Mens Centraal’ van het ministerie van BZK.
 
 ## Versies
-- v1.3 - Prototype 1Overheid en Loket Buitenland, DPC en Ministerie van Buitenlandse Zaken, Den Haag, 14 november 2019 
-- v1.2 - Prototype 1Overheid, DPC Den Haag, 18 maart 2019, zie https://azdpc.github.io/prototype-1overheid/
+- v1.3 - Prototype 1Overheid en Loket Buitenland, DPC en Ministerie van Buitenlandse Zaken, Den Haag, 14 november 2019, zie https://azdpc.github.io/prototype-1overheid/ 
+- v1.2 - Prototype 1Overheid, DPC Den Haag, 18 maart 2019
 - v1.1 - Prototype 'Vireo', DPC Den Haag, 12 november 2018
 - v1.0 - Prototype 'Fieldlab Prototype 1 overheid', Zwolle 28 september 2018, https://github.com/RDBreed/fieldlab, zie https://rdbreed.github.io/fieldlab/
 - Prototype ‘Overheidsbrede onderwerpen’ van de Dienst Publiek & Communicatie (DPC) van het ministerie van Algemene Zaken.
