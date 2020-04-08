@@ -1,13 +1,19 @@
 {
-    "scripts": {
-        "dev": "lite-server"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/pimdubois/repository.git"
-    },
-    "private": true,
-    "devDependencies": {
-        "lite-server": "^2.5.4"
-    }
+  "scripts": {
+    "preinstall": "npx npm-force-resolutions",
+    "dev": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/pimdubois/repository.git"
+  },
+  "private": true,
+  "devDependencies": {
+    "lite-server": "^2.5.4",
+    "minimist": "^1.2.5",
+    "npm-force-resolutions": "0.0.3"
+  },
+  "resolutions": {
+    "minimist": "^1.2.5"
+  }
 }
