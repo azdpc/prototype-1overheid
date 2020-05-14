@@ -857,6 +857,56 @@ function autocompleteCountries() {
     "Zwolle"]
     let boldSearchSuggestion = "<span class='ui-autocomplete-term'>%s</span>";
 
+    var availableTags = [
+        {
+            label: "Duitsland",
+            number: "+555 555 11 11"
+        },
+        {
+            label: "Frankrijk",
+            
+            number: "+555 555 22 22"
+        },
+        {
+            label: "Belgie",
+            
+            number: "+555 555 33 33"
+        },
+        {
+            label: "Oostenrijk",
+            
+            number: "+555 555 44 44"
+        },
+        {
+            label: "Spanje",
+            
+            number: "+555 555 55 55"
+        },
+        {
+            label: "Rusland",
+            
+            number: "+555 555 66 66"
+        },
+        {
+            label: "Verenigde Staten",
+            
+            number: "+555 555 77 77"
+        },
+        {
+            label: "MEXICO",
+            
+            number: "+555 555 88 88"
+        },
+      ];
+      $( "#tags" ).autocomplete({
+        source: availableTags,
+        select: function( event, ui ) {
+            $('.country-information').show();
+            $('.number-holder').text(ui.item.number);
+            $('.country-holder').text(ui.item.label);
+        }
+      });
+
     $("#countries").autocomplete({
         source: countries,
         minLength: 2,

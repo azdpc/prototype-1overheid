@@ -15,215 +15,179 @@
 <body cz-shortcut-listen="true">
     <!-- include header -->
     <div azdpc-include-html="header.html"></div>
-    <main class="contact-page">
-        <section class="actionable">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-12">
-                        <ul class="breadcrumb">
-                            <li class="d-none d-md-block"><a href="home.html">Home</a></li>
-                        </ul>
-                    </div>
+    <main class="actionable contact-page">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <ul class="breadcrumb">
+                        <li class="d-none d-md-block"><a href="home.html">Home</a></li>
+                    </ul>
                 </div>
-                <div class="row">
-                    <div class="col-lg-10 offset-lg-1 col-md-12">
-                        <div class="container-fluid">
-                            <div class="row contact__header">
-                                <div class="col-md-12 notVisibleInFrame">
-                                    <h1>Contact</h1>
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <div class="aft-space subtask mb-4">
-                                                <div class="row">
-                                                    <div class="col-1 icon"></div>
-                                                    <div class="col-11">
-                                                        <div class="number">+31 247 247 247</div>
-                                                        <a href="#">Buiten EU bellen tegen lokaal tarief?</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div id="accordion" class="contact__socials">
+            </div>
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1 col-md-12">
+                    <div class="container-fluid">
+                        <div class="row contact__header">
+                            <div class="col-md-12 notVisibleInFrame">
+                                <h1>Contact</h1>
                                 <div class="row">
-                                    <div class="col-6 col-md-4">
-                                        <div class="grouped aft-space subtask">
+                                    <div class="col-12">
+                                        <div class="aft-space subtask mb-4">
                                             <div class="row">
-                                                <div class="col-3 icon email"></div>
-                                                <div class="col-9">
-                                                    <h3>Email</h3>
-                                                    <p>We proberen uw vraag binnen 48 uur te beantwoorden.</p>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <div class="btn chevron-down" data-toggle="collapse"
-                                                        data-target="#collapseOne" aria-expanded="true"
-                                                        aria-controls="collapseOne">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-6 col-md-4">
-                                        <div class="grouped aft-space subtask">
-                                            <div class="row">
-                                                <div class="col-3 icon whatsapp"></div>
-                                                <div class="col-9">
-                                                    <h3>Whatsapp</h3>
-                                                    <p>Voeg het nummer eerst toe aan uw contacten.
-                                                        We proberen uw vraag binnen 30 minuten te beantwoorden.
+                                                <div class="col-1 icon"></div>
+                                                <div class="col-11">
+                                                    <div class="number">+31 247 247 247</div>
+                                                    <p>Vanuit EU: lokaal tarief. Buiten EU: internationaal tarief.
                                                     </p>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <div class="btn chevron-down" data-toggle="collapse"
-                                                        data-target="#collapseTwo" aria-expanded="true"
-                                                        aria-controls="collapseTwo">
+                                                    <a data-toggle="collapse" href="#collapseExample" role="button"
+                                                        aria-expanded="false" aria-controls="collapseExample">Buiten
+                                                        EU bellen tegen lokaal tarief?</a>
+
+                                                    <div class="collapse" id="collapseExample">
+                                                        <div class="card card-body">
+                                                            <div class="ui-widget input-group country-selector mb-3">
+                                                                <input type="text" class="form-control" id="tags"
+                                                                    placeholder="Kies een land.." aria-label="Country"
+                                                                    aria-describedby="choose-country">
+                                                            </div>
+                                                            <p class="country-information" style="display: none;">
+                                                                Vanuit <span class="country-holder"
+                                                                    style="font-weight: bold;"></span> kunt u <span
+                                                                    class="number-holder"
+                                                                    style="font-weight: bold;"></span> bellen
+                                                            </p>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-6 col-md-4">
-                                        <div class="grouped aft-space subtask">
-                                            <div class="row">
-                                                <div class="col-3 icon twitter"></div>
-                                                <div class="col-9">
-                                                    <h3>Twitter</h3>
-                                                    <p>We proberen uw vraag binnen 24 uur te beantwoorden.</p>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <div class="btn chevron-down" data-toggle="collapse"
-                                                        data-target="#collapseThree" aria-expanded="true"
-                                                        aria-controls="collapseThree">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                                <div>
-                                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
-                                        data-parent="#accordion">
-                                        <div class="card-body">
-                                            1- Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
-                                            terry richardson ad squid. 3 wolf moon officia aute, non cupidatat
-                                            skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch
-                                            3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee
-                                            nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer
-                                            labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
-                                            butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
-                                            aesthetic synth nesciunt you probably haven't heard of them accusamus labore
-                                            sustainable VHS.
-                                        </div>
-                                    </div>
-
-                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
-                                        data-parent="#accordion">
-                                        <div class="card-body">
-                                            2- Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
-                                            terry richardson ad squid. 3 wolf moon officia aute, non cupidatat
-                                            skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch
-                                            3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee
-                                            nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer
-                                            labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
-                                            butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
-                                            aesthetic synth nesciunt you probably haven't heard of them accusamus labore
-                                            sustainable VHS.
-                                        </div>
-                                    </div>
-
-                                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
-                                        data-parent="#accordion">
-                                        <div class="card-body">
-                                            3- Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
-                                            terry richardson ad squid. 3 wolf moon officia aute, non cupidatat
-                                            skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch
-                                            3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee
-                                            nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer
-                                            labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
-                                            butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
-                                            aesthetic synth nesciunt you probably haven't heard of them accusamus labore
-                                            sustainable VHS.
-                                        </div>
-                                    </div>
-
-                                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
-                                        data-parent="#accordion">
-                                        <div class="card-body">
-                                            4- Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
-                                            terry richardson ad squid. 3 wolf moon officia aute, non cupidatat
-                                            skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch
-                                            3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee
-                                            nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer
-                                            labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
-                                            butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
-                                            aesthetic synth nesciunt you probably haven't heard of them accusamus labore
-                                            sustainable VHS.
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-        </section>
-        <section>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-10 offset-lg-1 col-md-12">
-                        <div class="container-fluid">
+
+                        <div id="accordion" class="contact__socials">
                             <div class="row">
-                                <div class="col-12">
-                                    <div class="toggleSet">
-                                        <h3 class="toggleTopic toggle-next">Adresgegevens ambassades</h3>
-                                        <div class="toggleContent">
-                                            <p>
-                                                Bekijk de adresgegevens van ambassades.
-                                            </p>
+                                <div class="col-6 col-md-4">
+                                    <div class="grouped aft-space subtask">
+                                        <div class="row">
+                                            <div class="col-3 icon email"></div>
+                                            <div class="col-9">
+                                                <h3>E-mail</h3>
+                                                <p>We proberen uw vraag binnen 48 uur te beantwoorden.</p>
+                                            </div>
                                         </div>
-                                        <h3 class="toggleTopic toggle-next">Contactgegevens Caribische Koninkrijksdelen</h3>
-                                        <div class="toggleContent">
-                                            <p>
-                                                Bekijk de contactgegevens van de Caribische Koninkrijksdelen.
-                                            </p>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="btn chevron-down" data-toggle="collapse"
+                                                    data-target="#collapseOne" aria-expanded="true"
+                                                    aria-controls="collapseOne">
+                                                </div>
+                                            </div>
                                         </div>
-                                        <h3 class="toggleTopic toggle-next">Hoge belkosten voorkomen op reis</h3>
-                                        <div class="toggleContent">
-                                            <p>
-                                                <ul>
-                                                    <li>Koop een lokale simkaart en bel tegen lokaal tarief</li>
-                                                    <li>Vraag uw telefoonprovider naar mogelijkheden om goedkoper vanuit het buitenland naar Nederland te bellen.</li>
-                                                </ul>
-                                            </p>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <div class="grouped aft-space subtask">
+                                        <div class="row">
+                                            <div class="col-3 icon whatsapp"></div>
+                                            <div class="col-9">
+                                                <h3>Whatsapp</h3>
+                                                <p>Voeg het nummer eerst toe aan uw contacten.
+                                                    We proberen uw vraag binnen 30 minuten te beantwoorden.
+                                                </p>
+                                            </div>
                                         </div>
-                                        <h3 class="toggleTopic toggle-next">Klachten</h3>
-                                        <div class="toggleContent">
-                                            <p>
-                                                Klacht melden
-                                            </p>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="btn chevron-down" data-toggle="collapse"
+                                                    data-target="#collapseTwo" aria-expanded="true"
+                                                    aria-controls="collapseTwo">
+                                                </div>
+                                            </div>
                                         </div>
-                                        <h3 class="toggleTopic toggle-next">Suggesties</h3>
-                                        <div class="toggleContent">
-                                            <p>
-                                                Heeft u een tip of opmerking over onze dienstverlening? Laat het ons weten via het contactformulier.
-                                            </p>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <div class="grouped aft-space subtask">
+                                        <div class="row">
+                                            <div class="col-3 icon twitter"></div>
+                                            <div class="col-9">
+                                                <h3>Twitter</h3>
+                                                <p>We proberen uw vraag binnen 24 uur te beantwoorden.</p>
+                                            </div>
                                         </div>
-                                        <h3 class="toggleTopic toggle-next">Privacy</h3>
-                                        <div class="toggleContent">
-                                            <p>
-                                                Privacyinformatie
-                                            </p>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="btn chevron-down" data-toggle="collapse"
+                                                    data-target="#collapseThree" aria-expanded="true"
+                                                    aria-controls="collapseThree">
+                                                </div>
+                                            </div>
                                         </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div>
+                                <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        1- Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                                        terry richardson ad squid. 3 wolf moon officia aute, non cupidatat
+                                        skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch
+                                        3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee
+                                        nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer
+                                        labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
+                                        butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+                                        aesthetic synth nesciunt you probably haven't heard of them accusamus labore
+                                        sustainable VHS.
+                                    </div>
+                                </div>
+
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        2- Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                                        terry richardson ad squid. 3 wolf moon officia aute, non cupidatat
+                                        skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch
+                                        3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee
+                                        nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer
+                                        labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
+                                        butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+                                        aesthetic synth nesciunt you probably haven't heard of them accusamus labore
+                                        sustainable VHS.
+                                    </div>
+                                </div>
+
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        3- Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                                        terry richardson ad squid. 3 wolf moon officia aute, non cupidatat
+                                        skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch
+                                        3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee
+                                        nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer
+                                        labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
+                                        butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+                                        aesthetic synth nesciunt you probably haven't heard of them accusamus labore
+                                        sustainable VHS.
+                                    </div>
+                                </div>
+
+                                <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        4- Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                                        terry richardson ad squid. 3 wolf moon officia aute, non cupidatat
+                                        skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch
+                                        3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee
+                                        nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer
+                                        labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
+                                        butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+                                        aesthetic synth nesciunt you probably haven't heard of them accusamus labore
+                                        sustainable VHS.
                                     </div>
                                 </div>
                             </div>
@@ -231,7 +195,64 @@
                     </div>
                 </div>
             </div>
-        </section>
+    </main>
+    <main class="informative">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1 col-md-12">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="toggleSet">
+                                    <h3 class="toggleTopic toggle-next">Adresgegevens ambassades</h3>
+                                    <div class="toggleContent">
+                                        <p>
+                                            Bekijk de adresgegevens van ambassades.
+                                        </p>
+                                    </div>
+                                    <h3 class="toggleTopic toggle-next">Contactgegevens Caribische Koninkrijksdelen
+                                    </h3>
+                                    <div class="toggleContent">
+                                        <p>
+                                            Bekijk de contactgegevens van de Caribische Koninkrijksdelen.
+                                        </p>
+                                    </div>
+                                    <h3 class="toggleTopic toggle-next">Hoge belkosten voorkomen op reis</h3>
+                                    <div class="toggleContent">
+                                        <p>
+                                            <ul>
+                                                <li>Koop een lokale simkaart en bel tegen lokaal tarief</li>
+                                                <li>Vraag uw telefoonprovider naar mogelijkheden om goedkoper vanuit
+                                                    het buitenland naar Nederland te bellen.</li>
+                                            </ul>
+                                        </p>
+                                    </div>
+                                    <h3 class="toggleTopic toggle-next">Klachten</h3>
+                                    <div class="toggleContent">
+                                        <p>
+                                            Klacht melden
+                                        </p>
+                                    </div>
+                                    <h3 class="toggleTopic toggle-next">Suggesties</h3>
+                                    <div class="toggleContent">
+                                        <p>
+                                            Heeft u een tip of opmerking over onze dienstverlening? Laat het ons
+                                            weten via het contactformulier.
+                                        </p>
+                                    </div>
+                                    <h3 class="toggleTopic toggle-next">Privacy</h3>
+                                    <div class="toggleContent">
+                                        <p>
+                                            Privacyinformatie
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <!-- Include footer -->
     <div azdpc-include-html="footer.html"></div>
