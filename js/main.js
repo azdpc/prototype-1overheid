@@ -983,6 +983,14 @@ $(".btn").click(function() {
     }
 }); 
 
+$(".start-convo").click(function() {
+    $('.contact-chat.chatModal').css('display', 'flex');
+}); 
+
+$(".contact-chat .close").click(function() {
+    $('.contact-chat.chatModal').css('display', 'none');
+}); 
+
 function showHideAmountDocuments() {
     const $selectDocumentBlock = $('.select-documents-block');
     const $input = $selectDocumentBlock.find('input[type="checkbox"]');

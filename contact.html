@@ -29,7 +29,9 @@
                     <div class="container-fluid">
                         <div class="row contact__header">
                             <div class="col-md-12 notVisibleInFrame">
-                                <h1>Contact</h1>
+                                <h1>Contact 1</h1>
+                                <a href="/contact-2.html">Contact 2</a>
+                                <a href="/contact-3.html">Contact 3</a>
                                 <div class="row mt-4 mb-4">
                                     <div class="col-12">
                                         <div class="aft-space subtask mb-4">
@@ -75,8 +77,9 @@
                                 <div class="col-12 col-md-6">
                                     <div class="contact__blocks">
                                         <div class="row">
-                                            <div class="col-3 icon whatsapp"></div>
-                                            <div class="col-9">
+                                            <div class="col-2 icon whatsapp"
+                                                style="background-position: right top; background-size: 30px;"></div>
+                                            <div class="col-10">
                                                 <h3>WhatsApp</h3>
                                                 <p><a href="https://wa.me/31682387796">+316 8238 7796</a><br />
                                                     Stuur direct een WhatsApp-bericht. </p>
@@ -116,8 +119,9 @@
                                 <div class="col-12 col-md-6">
                                     <div class="contact__blocks">
                                         <div class="row">
-                                            <div class="col-3 icon email"></div>
-                                            <div class="col-9">
+                                            <div class="col-2 icon email"
+                                                style="background-position: right top; background-size: 30px;"></div>
+                                            <div class="col-10">
                                                 <h3>Contactformulier</h3>
                                                 <p><a href="">Contactformulier</a></p>
                                             </div>
@@ -154,8 +158,9 @@
                                 <div class="col-12 col-md-6">
                                     <div class="contact__blocks">
                                         <div class="row">
-                                            <div class="col-3 icon twitter"></div>
-                                            <div class="col-9">
+                                            <div class="col-2 icon twitter"
+                                                style="background-position: right top; background-size: 30px;"></div>
+                                            <div class="col-10">
                                                 <h3>Twitter</h3>
                                                 <p><a href="https://twitter.com/247bz">@247BZ</a></p>
                                             </div>
@@ -192,13 +197,14 @@
                                 <div class="col-12 col-md-6">
                                     <div class="contact__blocks">
                                         <div class="row">
-                                            <div class="col-3 icon chat"></div>
-                                            <div class="col-9">
+                                            <div class="col-2 icon chat"
+                                                style="background-position: right top; background-size: 30px;"></div>
+                                            <div class="col-10">
                                                 <h3>Chat</h3>
-                                                <p>
-                                                    <input type="text" placeholder="Stel uw vraag" />
-                                                    <button type="submit">Start gesprek</button>
-                                                </p>
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control" placeholder="Stel uw vraag" />
+                                                    <button type="submit" class="btn btn-primary start-convo">Start gesprek</button>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -275,6 +281,43 @@
             </div>
         </div>
     </main>
+    <div class="contact-chat chatModal" id="chatModal" tabindex="-1" role="dialog" aria-labelledby="chat-modal-header" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="chat-modal-header">Direct chatten</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <form>
+                    <div class="modal-body">
+                        <div class="messages">
+                            <div class="message">
+                                <div class="avatar">
+                                    <img class="img-fluid" src="img/avatar.svg">
+                                </div>
+                                <div class="content">
+                                    <span class="name">Medewerker:</span>
+                                    <p>Goedemiddag, waarmee kan ik u helpen?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="messageForm">
+                            <div class="inputField">
+                                <input class="form-control form-control-lg" type="text" placeholder="Typ hier uw vraag">
+                            </div>
+                            <div class="submitBtn">
+                                <button type="button" class="btn btn-primary btn-lg">Verstuur</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
     <!-- Include footer -->
     <div azdpc-include-html="footer.html"></div>
     <script src="js/main.js"></script>
