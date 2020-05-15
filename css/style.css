@@ -10354,7 +10354,7 @@ ol.custom-ordered-list li .title {
   padding: 15px;
   margin-bottom: 30px;
   border-radius: .5em;
-  min-height: 130px;
+  min-height: 145px;
   position: relative;
 }
 
@@ -10393,7 +10393,7 @@ ol.custom-ordered-list li .title {
 .contact-page .chevron-down {
   text-align: center;
   position: absolute;
-  bottom: 0;
+  bottom: 10px;
 }
 
 .contact-page .chevron-down.open {
