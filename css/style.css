@@ -10348,6 +10348,10 @@ ol.custom-ordered-list li .title {
   font-size: 35px;
 }
 
+.contact-page .contact__socials p {
+  margin-bottom: 0;
+}
+
 .contact-page .contact__socials .icon {
   background-repeat: no-repeat;
   background-size: 40px;
@@ -10371,13 +10375,10 @@ ol.custom-ordered-list li .title {
 }
 
 .contact-page .chevron-down {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xml:space='preserve' version='1.1' style='shape-rendering:geometricPrecision;text-rendering:geometricPrecision;image-rendering:optimizeQuality;' viewBox='0 0 668 468.75' x='0px' y='0px' fill-rule='evenodd' clip-rule='evenodd'%3E%3Cpath class='fil0' d='M363 363l293 -292c16,-17 16,-43 0,-59 -16,-16 -43,-16 -59,0l-263 263 -263 -263c-17,-16 -43,-16 -59,0 -16,16 -16,42 0,59l292 292c17,16 43,16 59,0z' /%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-size: 16px;
-  background-position: center;
-  width: 100%;
+  text-align: center;
 }
 
-.contact-page .chevron-down:active {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xml:space='preserve' version='1.1' style='shape-rendering:geometricPrecision;text-rendering:geometricPrecision;image-rendering:optimizeQuality;' viewBox='0 0 668 468.75' x='0px' y='0px' fill-rule='evenodd' clip-rule='evenodd'%3E%3Cpath class='fil0' d='M363 363l293 -292c16,-17 16,-43 0,-59 -16,-16 -43,-16 -59,0l-263 263 -263 -263c-17,-16 -43,-16 -59,0 -16,16 -16,42 0,59l292 292c17,16 43,16 59,0z' /%3E%3C/svg%3E") !important;
+.contact-page .chevron-down .btn {
+  width: 50px;
+  height: 35px;
 }

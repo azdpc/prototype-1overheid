@@ -859,26 +859,26 @@ function autocompleteCountries() {
 
     var availableTags = [
         {
-            label: "Duitsland",
+            label: "Albanië",
             number: "+555 555 11 11"
         },
         {
-            label: "Frankrijk",
+            label: "China",
             
             number: "+555 555 22 22"
         },
         {
-            label: "Belgie",
+            label: "Cuba",
             
             number: "+555 555 33 33"
         },
         {
-            label: "Oostenrijk",
+            label: "Ghana",
             
             number: "+555 555 44 44"
         },
         {
-            label: "Spanje",
+            label: "Irak",
             
             number: "+555 555 55 55"
         },
@@ -893,7 +893,7 @@ function autocompleteCountries() {
             number: "+555 555 77 77"
         },
         {
-            label: "MEXICO",
+            label: "Turkije",
             
             number: "+555 555 88 88"
         },
@@ -973,6 +973,12 @@ function autocompleteCountries() {
         }
     });
 };
+
+$(".btn").click(function() { 
+    if ($(".collapse").hasClass("show")) {
+        console.log('lol');
+    }    
+}); 
 
 function showHideAmountDocuments() {
     const $selectDocumentBlock = $('.select-documents-block');
