@@ -974,6 +974,12 @@ function autocompleteCountries() {
     });
 };
 
+$(".btn").click(function() { 
+    if ($(".collapse").hasClass("show")) {
+        console.log('lol');
+    }    
+}); 
+
 function showHideAmountDocuments() {
     const $selectDocumentBlock = $('.select-documents-block');
     const $input = $selectDocumentBlock.find('input[type="checkbox"]');
