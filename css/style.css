@@ -10348,6 +10348,10 @@ ol.custom-ordered-list li .title {
   font-size: 35px;
 }
 
+.contact-page .contact__socials p {
+  margin-bottom: 0;
+}
+
 .contact-page .contact__socials .icon {
   background-repeat: no-repeat;
   background-size: 40px;
