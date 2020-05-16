@@ -974,10 +974,21 @@ function autocompleteCountries() {
     });
 };
 
-$(".btn").click(function() { 
-    if ($(".collapse").hasClass("show")) {
-        console.log('lol');
-    }    
+$(".btn").click(function() {
+    if (!$(this).parent().parent().find('.collapse').hasClass("show")) {
+        $('.chevron-down').removeClass('open');
+        $(this).parent().addClass('open');
+    } else {
+        $(this).parent().removeClass('open');
+    }
+}); 
+
+$(".start-convo").click(function() {
+    $('.contact-chat.chatModal').css('display', 'flex');
+}); 
+
+$(".contact-chat .close").click(function() {
+    $('.contact-chat.chatModal').css('display', 'none');
 }); 
 
 function showHideAmountDocuments() {

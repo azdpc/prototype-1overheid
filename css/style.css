@@ -10337,6 +10337,10 @@ ol.custom-ordered-list li .title {
   margin: 0 10px;
 }
 
+.contact-page {
+  position: relative;
+}
+
 .contact-page .contact__header .icon {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 80' x='0px' y='0px'%3E%3Cg%3E%3Cpath d='M55.1064,44.9414c-.7558-2.3828-4.1738-4.9355-10.4492-7.8047a6.596,6.596,0,0,0-7.9941,1.7022A43.6326,43.6326,0,0,1,30.332,33.668a43.5946,43.5946,0,0,1-5.17-6.3321,6.5987,6.5987,0,0,0,1.7012-7.9931c-2.8692-6.2754-5.4219-9.6934-7.8047-10.4492a3.086,3.086,0,0,0-2.5518.2578c-.081.0468-8.0595,4.8037-7.7666,8.2236.6953,8.127,7.6387,17.7158,13.9043,23.9805S38.498,54.5645,46.625,55.26c.0615.0058.123.0078.1855.0078,3.4053,0,7.9922-7.6953,8.0381-7.7744A3.0868,3.0868,0,0,0,55.1064,44.9414Zm-1.9843,1.544c-1.6387,2.81-5.0547,6.8808-6.3272,6.7822-7.59-.65-16.7217-7.3106-22.7363-13.3262S11.3828,24.7949,10.7324,17.2051c-.1123-1.3086,3.9737-4.6875,6.7822-6.3272a1.034,1.034,0,0,1,.5293-.1465,1.3628,1.3628,0,0,1,.41.0694c1.0068.3183,3.2012,1.9609,6.5908,9.374a4.7728,4.7728,0,0,1-1.7568,6.0781,1,1,0,0,0-.3242,1.3672A44.2184,44.2184,0,0,0,28.918,35.082,44.2184,44.2184,0,0,0,36.38,41.0361a1.0063,1.0063,0,0,0,1.3652-.32,4.7805,4.7805,0,0,1,6.08-1.7607c7.4131,3.39,9.0557,5.584,9.374,6.5908A1.0942,1.0942,0,0,1,53.1221,46.4854Z' /%3E%3C/g%3E%3C/svg%3E");
   background-repeat: no-repeat;
@@ -10345,7 +10349,41 @@ ol.custom-ordered-list li .title {
 }
 
 .contact-page .contact__header .number {
-  font-size: 35px;
+  font-size: 24px;
+}
+
+@media (min-width: 768px) {
+  .contact-page .contact__header .number {
+    font-size: 35px;
+  }
+}
+
+.contact-page .contact__blocks {
+  background-color: #fff;
+  font-size: 0.89em;
+  padding: 15px;
+  margin-bottom: 30px;
+  border-radius: .5em;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .contact-page .contact__blocks {
+    min-height: 165px;
+  }
+}
+
+@media (min-width: 768px) {
+  .contact-page .contact__blocks .card-body {
+    margin-bottom: 10px;
+  }
+}
+
+.contact-page .warning-text {
+  padding-left: 15px; 
+  border-left: 5px solid #007bc7; 
+  margin: 10px 0;
+  border-radius: 4px;
 }
 
 .contact-page .contact__socials p {
@@ -10378,7 +10416,26 @@ ol.custom-ordered-list li .title {
   text-align: center;
 }
 
+@media (min-width: 768px) {
+  .contact-page .chevron-down {
+    position: absolute;
+    bottom: 10px;
+  }
+}
+
+.contact-page .chevron-down.open {
+  transform: rotate(180deg);
+  transform: .3s all ease-in-out;
+}
+
 .contact-page .chevron-down .btn {
   width: 50px;
   height: 35px;
+}
+
+.contact-chat.chatModal {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 0;
 }
