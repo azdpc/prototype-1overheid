@@ -10140,6 +10140,10 @@ footer .lead {
   border-left-color: #747474;
 }
 
+.callout h2 {
+  margin-top: 0;
+}
+
 /* Calendar */
 .calendar-container {
   background-color: var(--vireo-blue-misty);
