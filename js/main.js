@@ -897,6 +897,16 @@ function autocompleteCountries() {
             
             number: "+555 555 88 88"
         },
+        {
+            label: "'Verenigd Koninkrijk",
+            
+            number: "+555 555 99 99"
+        },
+        {
+            label: "Curaçao",
+            
+            number: "+555 555 12 34"
+        },
       ];
       $( "#tags" ).autocomplete({
         source: availableTags,
@@ -990,6 +1000,11 @@ $(".start-convo").click(function() {
 $(".contact-chat .close").click(function() {
     $('.contact-chat.chatModal').css('display', 'none');
 }); 
+
+if ($('.content-item').children().first().is('h2')) {
+    $('.content-item').children().first().css('margin-top', '0');    
+}
+
 
 function showHideAmountDocuments() {
     const $selectDocumentBlock = $('.select-documents-block');
