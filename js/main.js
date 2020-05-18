@@ -897,6 +897,16 @@ function autocompleteCountries() {
             
             number: "+555 555 88 88"
         },
+        {
+            label: "'Verenigd Koninkrijk",
+            
+            number: "+555 555 99 99"
+        },
+        {
+            label: "Curaçao",
+            
+            number: "+555 555 12 34"
+        },
       ];
       $( "#tags" ).autocomplete({
         source: availableTags,
