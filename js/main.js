@@ -1001,6 +1001,11 @@ $(".contact-chat .close").click(function() {
     $('.contact-chat.chatModal').css('display', 'none');
 }); 
 
+if ($('.content-item').children().first().is('h2')) {
+    $('.content-item').children().first().css('margin-top', '0');    
+}
+
+
 function showHideAmountDocuments() {
     const $selectDocumentBlock = $('.select-documents-block');
     const $input = $selectDocumentBlock.find('input[type="checkbox"]');
