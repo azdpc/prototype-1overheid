@@ -10452,3 +10452,7 @@ ol.custom-ordered-list li .title {
   bottom: 0;
   right: 0;
 }
+
+.home .search-wrapper {
+  display: none;
+}
