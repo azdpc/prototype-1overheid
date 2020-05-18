@@ -10113,6 +10113,7 @@ footer .lead {
 
 
 .callout {
+  margin-top: 2em;
   padding: 5px 15px;
   background: transparent;
   border-radius: 4px;
@@ -10431,7 +10432,7 @@ ol.custom-ordered-list li .title {
 @media (min-width: 768px) {
   .contact-page .chevron-down {
     position: absolute;
-    bottom: 10px;
+    bottom: 0;
   }
 }
 
