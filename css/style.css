@@ -10374,6 +10374,7 @@ ol.custom-ordered-list li .title {
 @media (min-width: 768px) {
   .contact-page .contact__blocks {
     min-height: 165px;
+    text-align: center;
   }
 }
 
@@ -10396,8 +10397,15 @@ ol.custom-ordered-list li .title {
 
 .contact-page .contact__socials .icon {
   background-repeat: no-repeat;
-  background-size: 40px;
+  background-size: 30px;
   background-position: top;
+}
+
+@media (min-width: 768px) {
+  .contact-page .contact__socials .icon {
+    background-size: 25px;
+    height: 35px;
+  }
 }
 
 .contact-page .contact__socials .icon.email {
