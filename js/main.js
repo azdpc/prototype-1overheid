@@ -985,6 +985,10 @@ function contactBlocksOpenAndClose() {
             $(this).parent().removeClass('open');
         }
     }); 
+
+    $('.dropdown__link').click(function() {
+        $(this).children('.chevron-down').toggleClass('chevron-down--open');
+    })
 }
 
 function showHideChatModal () {
