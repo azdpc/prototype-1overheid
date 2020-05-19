@@ -10448,12 +10448,30 @@ ol.custom-ordered-list li .title {
 
 .contact-page .chevron-down.open {
   transform: rotate(180deg);
-  transform: .3s all ease-in-out;
+  transition: .3s all ease-in-out;
 }
 
 .contact-page .chevron-down .btn {
   width: 50px;
   height: 35px;
+}
+
+.dropdown__link{
+  display: flex;
+  align-items: center;
+}
+
+.dropdown__link .chevron-down {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  transition: .3s all ease-in-out;
+}
+
+.dropdown__link .chevron-down--open {
+  transform: rotate(180deg);
+  transition: .3s all ease-in-out;
 }
 
 .contact-chat.chatModal {
@@ -10466,13 +10484,13 @@ ol.custom-ordered-list li .title {
 .crisis__bar {
   display: none;
   position: relative;
-  background-color: var(--vireo-blue-clear);
+  background-color: var(--vireo-ruby);
   color: #fff;
   padding: 30px 0;
 }
 
-.crisis__bar--red {
-  background-color: var(--vireo-ruby);
+.crisis__bar--show {
+  display: block;
 }
 
 .crisis__content {

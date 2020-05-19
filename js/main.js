@@ -860,62 +860,54 @@ function autocompleteCountries() {
     var availableTags = [
         {
             label: "Albanië",
-            number: "+555 555 11 11"
+            number: "+555 555 11 11",
         },
         {
             label: "China",
-            
-            number: "+555 555 22 22"
+            number: "+555 555 22 22",
         },
         {
             label: "Cuba",
-            
-            number: "+555 555 33 33"
+            number: "+555 555 33 33",
         },
         {
             label: "Ghana",
-            
-            number: "+555 555 44 44"
+            number: "+555 555 44 44",
         },
         {
             label: "Irak",
-            
-            number: "+555 555 55 55"
+            number: "+555 555 55 55",
         },
         {
             label: "Rusland",
-            
-            number: "+555 555 66 66"
+            number: "+555 555 66 66",
         },
         {
             label: "Verenigde Staten",
-            
-            number: "+555 555 77 77"
+            number: "+555 555 77 77",
         },
         {
             label: "Turkije",
-            
-            number: "+555 555 88 88"
+            number: "+555 555 88 88",
         },
         {
-            label: "'Verenigd Koninkrijk",
-            
-            number: "+555 555 99 99"
+            label: "Verenigd Koninkrijk",
+            number: "+555 555 99 99",
         },
         {
             label: "Curaçao",
-            
-            number: "+555 555 12 34"
+            number: "+555 555 12 34",
         },
       ];
-      $( "#tags" ).autocomplete({
-        source: availableTags,
-        select: function( event, ui ) {
-            $('.country-information').show();
-            $('.number-holder').text(ui.item.number);
-            $('.country-holder').text(ui.item.label);
-        }
-      });
+
+    $( "#tags" ).autocomplete({
+    source: availableTags,
+    select: function( event, ui ) {
+        $('.country-information').show();
+        $('.number-holder').text(ui.item.number).attr("href", "tel:" + ui.item.number);
+        $('.country-holder').text(ui.item.label);
+    }
+    });
 
     $("#countries").autocomplete({
         source: countries,
@@ -993,6 +985,10 @@ function contactBlocksOpenAndClose() {
             $(this).parent().removeClass('open');
         }
     }); 
+
+    $('.dropdown__link').click(function() {
+        $(this).children('.chevron-down').toggleClass('chevron-down--open');
+    })
 }
 
 function showHideChatModal () {
@@ -1014,15 +1010,7 @@ function detectH2Tags() {
 
 function crisisBar() {
     $('.show-crisis__bar').click(() => {
-        $('.crisis__bar').show();
-    });
-
-    $('.close-crisis__bar').click(() => {
-        $('.crisis__bar').hide();
-    });
-
-    $('.switch').click(() => {
-        $('.crisis__bar').toggleClass("crisis__bar--red");
+        $('.crisis__bar').toggleClass('crisis__bar--show');
     });
 }
 
