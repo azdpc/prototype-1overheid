@@ -10414,6 +10414,11 @@ ol.custom-ordered-list li .title {
   }
 }
 
+.contact-page .start-convo {
+  width: 100%;
+  padding: 0.375rem 0;
+}
+
 .contact-page .contact__socials .icon.email {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' viewBox='0 0 100 125' style='enable-background:new 0 0 100 100;' xml:space='preserve'%3E%3Cpath d='M1,20.1v59.7h98V20.1H1z M92.3,23.2L50,50.5L7.7,23.2H92.3z M4.1,76.8V24.5L50,54.1l45.9-29.6v52.3H4.1z' /%3E%3C/svg%3E");
 }
