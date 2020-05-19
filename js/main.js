@@ -1014,15 +1014,7 @@ function detectH2Tags() {
 
 function crisisBar() {
     $('.show-crisis__bar').click(() => {
-        $('.crisis__bar').show();
-    });
-
-    $('.close-crisis__bar').click(() => {
-        $('.crisis__bar').hide();
-    });
-
-    $('.switch').click(() => {
-        $('.crisis__bar').toggleClass("crisis__bar--red");
+        $('.crisis__bar').toggleClass('crisis__bar--show');
     });
 }
 

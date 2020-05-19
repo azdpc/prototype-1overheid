@@ -10466,13 +10466,13 @@ ol.custom-ordered-list li .title {
 .crisis__bar {
   display: none;
   position: relative;
-  background-color: var(--vireo-blue-clear);
+  background-color: var(--vireo-ruby);
   color: #fff;
   padding: 30px 0;
 }
 
-.crisis__bar--red {
-  background-color: var(--vireo-ruby);
+.crisis__bar--show {
+  display: block;
 }
 
 .crisis__content {
