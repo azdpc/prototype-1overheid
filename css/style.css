@@ -10465,7 +10465,7 @@ ol.custom-ordered-list li .title {
   position: relative;
   width: 18px;
   height: 18px;
-  margin-left: 10px;
+  margin-right: 10px;
   transition: .3s all ease-in-out;
 }
 
