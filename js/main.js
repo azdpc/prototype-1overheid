@@ -984,25 +984,46 @@ function autocompleteCountries() {
     });
 };
 
-$(".btn").click(function() {
-    if (!$(this).parent().parent().find('.collapse').hasClass("show")) {
-        $('.chevron-down').removeClass('open');
-        $(this).parent().addClass('open');
-    } else {
-        $(this).parent().removeClass('open');
+function contactBlocksOpenAndClose() {
+    $(".btn").click(function() {
+        if (!$(this).parent().parent().find('.collapse').hasClass("show")) {
+            $('.chevron-down').removeClass('open');
+            $(this).parent().addClass('open');
+        } else {
+            $(this).parent().removeClass('open');
+        }
+    }); 
+}
+
+function showHideChatModal () {
+    $(".start-convo").click(function() {
+        $('.contact-chat.chatModal').css('display', 'flex');
+    }); 
+    
+    $(".contact-chat .close").click(function() {
+        $('.contact-chat.chatModal').css('display', 'none');
+    }); 
+}
+
+
+function detectH2Tags() {
+    if ($('.content-item').children().first().is('h2')) {
+        $('.content-item').children().first().css('margin-top', '0');    
     }
-}); 
+}
 
-$(".start-convo").click(function() {
-    $('.contact-chat.chatModal').css('display', 'flex');
-}); 
+function crisisBar() {
+    $('.show-crisis__bar').click(() => {
+        $('.crisis__bar').show();
+    });
 
-$(".contact-chat .close").click(function() {
-    $('.contact-chat.chatModal').css('display', 'none');
-}); 
+    $('.close-crisis__bar').click(() => {
+        $('.crisis__bar').hide();
+    });
 
-if ($('.content-item').children().first().is('h2')) {
-    $('.content-item').children().first().css('margin-top', '0');    
+    $('.switch').click(() => {
+        $('.crisis__bar').toggleClass("crisis__bar--red");
+    });
 }
 
 
@@ -1107,6 +1128,10 @@ $(function () {
     autocompleteCountries();
     showHideAmountDocuments();
     getSetBirthdate();
+    detectH2Tags();
+    showHideChatModal();
+    contactBlocksOpenAndClose();
+    crisisBar();
     // passportFlow();
     // passportFlowDigid();
 });

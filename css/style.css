@@ -10463,6 +10463,40 @@ ol.custom-ordered-list li .title {
   right: 0;
 }
 
+.crisis__bar {
+  display: none;
+  position: relative;
+  background-color: var(--vireo-blue-clear);
+  color: #fff;
+  padding: 30px 0;
+}
+
+.crisis__bar--red {
+  background-color: var(--vireo-ruby);
+}
+
+.crisis__content {
+  border-left: 4px solid #fff;
+  border-radius: 2px;
+  padding-left: 15px;
+}
+
+.crisis__bar h2 {
+  font-weight: bold;
+}
+
+.crisis__bar p {
+  margin-bottom: 0;
+}
+
+.close-crisis__bar {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  opacity: 0.9;
+  cursor: pointer;
+}
+
 .home .navbar-options .search-wrapper {
   display: none;
 }
