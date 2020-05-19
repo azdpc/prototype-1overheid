@@ -997,6 +997,10 @@ main.government.light {
   font-size: 1.5rem;
 }
 
+.dropdown-menu.show input[type="search"] {
+  background-color: #fff;
+}
+
 .search-wrapper input[type="submit"] {
   position: absolute;
   right: 5px;
