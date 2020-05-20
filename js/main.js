@@ -900,80 +900,88 @@ function autocompleteCountries() {
         },
       ];
 
-    $( "#tags" ).autocomplete({
-    source: availableTags,
-    select: function( event, ui ) {
-        $('.country-information').show();
-        $('.number-holder').text(ui.item.number).attr("href", "tel:" + ui.item.number);
-        $('.country-holder').text(ui.item.label);
+    if ($('#tags').length) {
+        $( "#tags" ).autocomplete({
+        source: availableTags,
+        select: function( event, ui ) {
+            $('.country-information').show();
+            $('.number-holder').text(ui.item.number).attr("href", "tel:" + ui.item.number);
+            $('.country-holder').text(ui.item.label);
+        }
+        });
     }
-    });
 
-    $("#countries").autocomplete({
-        source: countries,
-        minLength: 2,
-        open: function (e, ui) {
-            let autocompleteData = $(this).data('uiAutocomplete');
-            let styledTerm = boldSearchSuggestion.replace('%s', autocompleteData.term);
+    if ($('#countries').length) {
+        $("#countries").autocomplete({
+            source: countries,
+            minLength: 2,
+            open: function (e, ui) {
+                let autocompleteData = $(this).data('uiAutocomplete');
+                let styledTerm = boldSearchSuggestion.replace('%s', autocompleteData.term);
 
-            autocompleteData
-                .menu
-                .element
-                .find('div')
-                .each(function () {
-                    let $this = $(this);
-                    let regex = new RegExp(autocompleteData.term, "gi");
+                autocompleteData
+                    .menu
+                    .element
+                    .find('div')
+                    .each(function () {
+                        let $this = $(this);
+                        let regex = new RegExp(autocompleteData.term, "gi");
 
-                    $this.html($this.text().replace(regex, function (matched) {
-                        return boldSearchSuggestion.replace('%s', matched);
-                    }));
-                });
-        }
-    });
+                        $this.html($this.text().replace(regex, function (matched) {
+                            return boldSearchSuggestion.replace('%s', matched);
+                        }));
+                    });
+            }
+        });
+    }
+    
+    if ($('#countriesNL').length) {
+        $("#countriesNL").autocomplete({
+            source: countriesNL,
+            minLength: 2,
+            open: function (e, ui) {
+                let autocompleteData = $(this).data('uiAutocomplete');
+                let styledTerm = boldSearchSuggestion.replace('%s', autocompleteData.term);
 
-    $("#countriesNL").autocomplete({
-        source: countriesNL,
-        minLength: 2,
-        open: function (e, ui) {
-            let autocompleteData = $(this).data('uiAutocomplete');
-            let styledTerm = boldSearchSuggestion.replace('%s', autocompleteData.term);
+                autocompleteData
+                    .menu
+                    .element
+                    .find('div')
+                    .each(function () {
+                        let $this = $(this);
+                        let regex = new RegExp(autocompleteData.term, "gi");
 
-            autocompleteData
-                .menu
-                .element
-                .find('div')
-                .each(function () {
-                    let $this = $(this);
-                    let regex = new RegExp(autocompleteData.term, "gi");
+                        $this.html($this.text().replace(regex, function (matched) {
+                            return boldSearchSuggestion.replace('%s', matched);
+                        }));
+                    });
+            }
+        });
+    }
 
-                    $this.html($this.text().replace(regex, function (matched) {
-                        return boldSearchSuggestion.replace('%s', matched);
-                    }));
-                });
-        }
-    });
+    if ($('#gemeenten').length) {
+        $("#gemeenten").autocomplete({
+            source: gemeenten,
+            minLength: 2,
+            open: function (e, ui) {
+                let autocompleteData = $(this).data('uiAutocomplete');
+                let styledTerm = boldSearchSuggestion.replace('%s', autocompleteData.term);
 
-    $("#gemeenten").autocomplete({
-        source: gemeenten,
-        minLength: 2,
-        open: function (e, ui) {
-            let autocompleteData = $(this).data('uiAutocomplete');
-            let styledTerm = boldSearchSuggestion.replace('%s', autocompleteData.term);
+                autocompleteData
+                    .menu
+                    .element
+                    .find('div')
+                    .each(function () {
+                        let $this = $(this);
+                        let regex = new RegExp(autocompleteData.term, "gi");
 
-            autocompleteData
-                .menu
-                .element
-                .find('div')
-                .each(function () {
-                    let $this = $(this);
-                    let regex = new RegExp(autocompleteData.term, "gi");
-
-                    $this.html($this.text().replace(regex, function (matched) {
-                        return boldSearchSuggestion.replace('%s', matched);
-                    }));
-                });
-        }
-    });
+                        $this.html($this.text().replace(regex, function (matched) {
+                            return boldSearchSuggestion.replace('%s', matched);
+                        }));
+                    });
+            }
+        });
+    }
 };
 
 function contactBlocksOpenAndClose() {
@@ -1116,10 +1124,10 @@ $(function () {
     autocompleteCountries();
     showHideAmountDocuments();
     getSetBirthdate();
-    detectH2Tags();
     showHideChatModal();
     contactBlocksOpenAndClose();
     crisisBar();
+    detectH2Tags();
     // passportFlow();
     // passportFlowDigid();
 });
