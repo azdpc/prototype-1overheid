@@ -10524,9 +10524,8 @@ ol.custom-ordered-list li .title {
   background-color: #f1f1f1;
 }
 
-
-@media (min-width: 768px) {
-  .ambassade__block {
+@media (min-width: 992px) {
+  .container {
     height: 325px;
   }
 }
