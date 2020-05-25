@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="nl-NL">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Ambassade Washington | 1overheid</title>
+    <meta name="description" content="Prototype voor 1overheid: informatie, diensten, beleid en bestuur">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/additional.css">
+</head>
+
+<body cz-shortcut-listen="true">
+    <!-- include header -->
+    <div azdpc-include-html="header.html"></div>
+    <main class="actionable">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <ul class="breadcrumb">
+                        <li class="d-none d-md-block"><a href="home.html">Home</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1 col-md-12">
+                    <div class="container-fluid">
+                        <div class="row contact__header">
+                            <div class="col-md-12 notVisibleInFrame">
+                                <h1>Ambassades</h1>
+                                <input id="finder" type="text">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </main>
+    <main style="padding: 30px 0;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1 col-md-12">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12">
+                            <div id="results"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Include footer -->
+    <div azdpc-include-html="footer.html"></div>
+    <script src="js/main.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+        integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+</body>
+
+</html>
