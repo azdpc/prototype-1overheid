@@ -861,42 +861,62 @@ function autocompleteCountries() {
         {
             label: "Albanië",
             number: "+555 555 11 11",
+            value: 'Albanië',
         },
         {
             label: "China",
             number: "+555 555 22 22",
+            value: 'China',
         },
         {
             label: "Cuba",
             number: "+555 555 33 33",
+            value: 'Cuba',
         },
         {
             label: "Ghana",
             number: "+555 555 44 44",
+            value: 'Ghana',
         },
         {
             label: "Irak",
             number: "+555 555 55 55",
+            value: 'Irak',
         },
         {
             label: "Rusland",
             number: "+555 555 66 66",
+            value: 'Rusland',
         },
         {
             label: "Verenigde Staten",
             number: "+555 555 77 77",
+            value: 'Verenigde Staten',
+        },
+        {
+            label: "Amerika",
+            number: "+555 555 77 77",
+            value: 'Verenigde Staten',
         },
         {
             label: "Turkije",
             number: "+555 555 88 88",
+            value: 'Turkije',
         },
         {
             label: "Verenigd Koninkrijk",
             number: "+555 555 99 99",
+            value: 'Verenigd Koninkrijk',
+        },
+        {
+            label: "Engeland",
+            number: "+555 555 99 99",
+            value: 'Verenigd Koninkrijk',
         },
         {
             label: "Curaçao",
             number: "+555 555 12 34",
+            value: 'Curaçao',
         },
       ];
 
@@ -907,6 +927,16 @@ function autocompleteCountries() {
             $('.country-information').show();
             $('.number-holder').text(ui.item.number).attr("href", "tel:" + ui.item.number);
             $('.country-holder').text(ui.item.label);
+        }
+        });
+    }
+
+    if ($('#ambassades').length) {
+        $( "#ambassades" ).autocomplete({
+        source: availableTags,
+        select: function( event, ui ) {
+            $('.multiselect').show();
+            $('.ambassade__results').css('display', 'flex');
         }
         });
     }
@@ -984,6 +1014,37 @@ function autocompleteCountries() {
     }
 };
 
+var expanded = false;
+
+function showCheckboxes() {
+  var checkboxes = $("#checkboxes");
+    if (expanded) {
+        checkboxes.show();
+        expanded = false;
+    } else {
+        checkboxes.hide();
+        expanded = true;
+    }
+
+    $('#checkboxes label input').click(function() {
+        $('#checkboxes label input').each(function(index, value) {
+            $('.ambassade__block').last().hide();
+        });      
+    });
+}
+
+function showAdvancedSearch() {
+    $('.advanced__box label input').click(function() {
+        $('.advanced__box label input').each(function(index, value) {
+            $('.ambassade__block').last().hide();
+        });      
+    });
+
+    $('.advanced__search').click(() => {
+        $('.advanced__box').toggleClass('show');
+    });
+}
+
 function contactBlocksOpenAndClose() {
     $(".btn").click(function() {
         if (!$(this).parent().parent().find('.collapse').hasClass("show")) {
@@ -994,9 +1055,10 @@ function contactBlocksOpenAndClose() {
         }
     }); 
 
-    $('.dropdown__link').click(function() {
+    $('.dropdown__text').click(function() {
         $(this).children('.chevron-down').toggleClass('chevron-down--open');
-    })
+    });
+    
 }
 
 function showHideChatModal () {
@@ -1128,6 +1190,8 @@ $(function () {
     contactBlocksOpenAndClose();
     crisisBar();
     detectH2Tags();
+    showCheckboxes();
+    showAdvancedSearch();
     // passportFlow();
     // passportFlowDigid();
 });
