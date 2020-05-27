@@ -10777,3 +10777,27 @@ ol.custom-ordered-list li .title {
 .advanced__box {
   margin-top: 10px;
 }
+
+.nav-tabs {
+  border: 0;
+}
+
+.nav-link {
+  font-size: 12px;
+  border: none !important;
+}
+
+@media (min-width: 768px) {
+  .nav-link {
+    font-size: initial;
+  }
+}
+
+.nav-link:hover {
+  border: none;
+}
+
+.nav-link.active {
+  background-color: var(--vireo-blue-misty) !important;
+  text-decoration: none;
+}

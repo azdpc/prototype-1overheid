@@ -1041,8 +1041,8 @@ function filterSearch() {
     var firstCheckbox = $('#one')[0];
     var secondCheckbox = $('#two')[0];
 
-    firstCheckbox.checked = false;
-    secondCheckbox.checked = false;
+    if (firstCheckbox) firstCheckbox.checked = false;
+    if (secondCheckbox) secondCheckbox.checked = false;
 
     $('#one').click(() => {
         $('.chicago').parent().toggleClass('hide');
