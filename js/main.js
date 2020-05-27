@@ -1056,9 +1056,10 @@ function contactBlocksOpenAndClose() {
     }); 
 
     $('.dropdown__text').click(function() {
-        $(this).children('.chevron-down').toggleClass('chevron-down--open');
-    });
-    
+        console.log('clicked');
+        
+        $(this).find('.chevron-down').toggleClass('chevron-down--open');
+    });    
 }
 
 function showHideChatModal () {
