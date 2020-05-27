@@ -10526,18 +10526,16 @@ ol.custom-ordered-list li .title {
 
 .ambassade__block--clickable {
   background-color: var(--vireo-blue-misty);
-  cursor: pointer;
   margin-bottom: 25px;
 }
 @media (min-width: 768px) {
   .ambassade__block--clickable {
-    min-height: 200px;
+    min-height: 175px;
   }
 }
 
 .ambassade__block--clickable a{
   color: #000;
-  text-decoration: none;
 }
 
 .ambassade__block--clickable h4 {
@@ -10650,6 +10648,7 @@ ol.custom-ordered-list li .title {
   font-weight: 400;
   line-height: 1.5;
   color: #495057;
+  background: transparent;
 }
 
 .overSelect {
