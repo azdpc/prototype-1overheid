@@ -10679,7 +10679,22 @@ ol.custom-ordered-list li .title {
   display: block;
 }
 
-.balies {
+.dropdown__text-wrapper {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  border-bottom: 2px solid var(--primary);
+}
+
+@media (min-width: 576px) {
+  .dropdown__text-wrapper {
+    height: 30px;
+  }
+}
+
+.dropdown__text-wrapper h3 {
+  margin-bottom: 0;
+  color: var(--primary);
 }
 
 .balie {
