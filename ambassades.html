@@ -29,11 +29,11 @@
                     <div class="container-fluid">
                         <div class="row contact__header">
                             <div class="col-md-12 notVisibleInFrame">
-                                <a href="ambassades.html">Amb1</a>
-                                <a href="ambassades2.html">Amb2</a>
+                                <a href="ambassades.html">Versie 1</a>
+                                <a href="ambassades2.html">Versie 2</a>
                                 <h1>Contact met de Nederlandse ambassades</h1><br />
-                                <h2>Wilt u een ambassade bereiken vanuit Nederland? 
-                                    <br />Bel:  0031 247 247 247</h2>
+                                <h2>Wilt u een ambassade bereiken vanuit Nederland?
+                                    <br />Bel: <a href="tel:+31247247247">+31 247 247 247</a></h2>
                             </div>
                         </div>
                     </div>
@@ -47,228 +47,145 @@
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-12">
+                                <h2>Vind een Nederlandse ambassade of consulaat</h2>
                                 <div class="ui-widget input-group country-selector">
                                     <input type="text" class="form-control" id="ambassades"
                                         placeholder="Kies een land.." aria-label="Country"
-                                        aria-describedby="choose-country">
+                                        aria-describedby="choose-country" style="position: relative;">
+                                        <div class="use-my-location"><div class="icon-wrapper"><div class="icon location"></div></div></div>
                                 </div>
 
                                 <div class="multiselect">
-                                  <div class="selectBox" onclick="showCheckboxes()">
-                                    <select>
-                                      <option>Select an option</option>
-                                    </select>
-                                    <div class="overSelect"></div>
-                                  </div>
-                                  <div id="checkboxes">
-                                    <label for="one">
-                                      <input type="checkbox" id="one" />First checkbox</label>
-                                    <label for="two">
-                                      <input type="checkbox" id="two" />Second checkbox</label>
-                                    <label for="three">
-                                      <input type="checkbox" id="three" />Third checkbox</label>
-                                  </div>
+                                    <div class="selectBox" onclick="showCheckboxes()">
+                                        <select>
+                                            <option>Wat wilt u regelen?</option>
+                                        </select>
+                                        <div class="overSelect"></div>
+                                    </div>
+                                    <div id="checkboxes">
+                                        <label for="one">
+                                            <input type="checkbox" id="one" />Paspoort of ID kaart</label>
+                                        <label for="two">
+                                            <input type="checkbox" id="two" />DigiD</label>
+                                        <label for="three">
+                                            <input type="checkbox" id="three" />MVV</label>
+                                        <label for="four">
+                                            <input type="checkbox" id="four" />Visa</label>
+                                        <label for="five">
+                                            <input type="checkbox" id="five" />Consulaire verklaringen</label>
+                                        <label for="six">
+                                            <input type="checkbox" id="six" />Legalisaties</label>
+                                        <label for="seven">
+                                            <input type="checkbox" id="seven" />Inburgeringsexamens</label>
+                                        <label for="eight">
+                                            <input type="checkbox" id="eight" />Optie procedure</label>
+                                        <label for="nine">
+                                            <input type="checkbox" id="nine" />Naturalisatie procedure</label>
+                                        <label for="ten">
+                                            <input type="checkbox" id="ten" />Hulp bij nood</label>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="row ambassade__results">
                             <div class="col-12">
                                 <h3>Resultaten</h3>
+                                <p class="bahamas">Er is geen ambassade of consulaat in dit land, u kunt terecht bij een Nederlandse ambassade of consulaat in:</p>
+                                <h3 class="bahamas">Alternatieven</h3>
                             </div>
                             <div class="col-12 col-sm-4">
-                                <div class="ambassade__block">
-                                    <h4>Nederlandse ambassade in Teheran, Iran</h4>
-                                    <div class="row">
-                                        <div class="col-2 icon pointer"></div>
-                                        <div class="col-10">
-                                            No. 60 West Arghavan street<br />
-                                            Dibaji North street Farmanieh  - Teheran
+                                <div class="ambassade__block ambassade__block--clickable">
+                                    <a href="">
+                                        <h4>Consulaat-generaal in Chicago</h4>
+                                        <div class="row">
+                                            <div class="col-2 icon pointer"></div>
+                                            <div class="col-10">
+                                                303 E. Wacker DriveSuite 2600Chicago, IL 60601
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-2 icon phone"></div>
-                                        <div class="col-10">
-                                            Telefoon: +12345789 
+                                        <div class="row">
+                                            <div class="col-2 icon phone"></div>
+                                            <div class="col-10">
+                                                Telefoon: +13127801314
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-sm-4">
-                                <div class="ambassade__block">
-                                    <h4>Nederlandse ambassade in Teheran, Iran</h4>
-                                    <div class="row">
-                                        <div class="col-2 icon pointer"></div>
-                                        <div class="col-10">
-                                            No. 60 West Arghavan street<br />
-                                            Dibaji North street Farmanieh  - Teheran
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-2 icon phone"></div>
-                                        <div class="col-10">
-                                            Telefoon: +12345789 
-                                        </div>
-                                    </div>
+                                    </a>
                                 </div>
                             </div>
                             <div class="col-12 col-sm-4">
-                                <div class="ambassade__block">
-                                    <h4>Nederlandse ambassade in Teheran, Iran</h4>
-                                    <div class="row">
-                                        <div class="col-2 icon pointer"></div>
-                                        <div class="col-10">
-                                            No. 60 West Arghavan street<br />
-                                            Dibaji North street Farmanieh  - Teheran
+                                <div class="ambassade__block ambassade__block--clickable washington">
+                                    <a href="ambassade-washington.html">
+                                        <h4>Nederlandse ambassade in Washington</h4>
+                                        <div class="row">
+                                            <div class="col-2 icon pointer"></div>
+                                            <div class="col-10">
+                                                4200 Linnean Avenue NW Washington, DC 20008
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-2 icon phone"></div>
-                                        <div class="col-10">
-                                            Telefoon: +12345789 
+                                        <div class="row">
+                                            <div class="col-2 icon phone"></div>
+                                            <div class="col-10">
+                                                Telefoon: +12022445300
+                                            </div>
                                         </div>
-                                    </div>
+                                    </a>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row alphabet-list">
-                            <div class="col-12">
-                                <h3>Continenten</h3>
-                            </div>
-                            <div class="col-12 col-sm-4 letter">
-                                <div class="dropdown__text" data-toggle="collapse" href="#collapseExample" role="button"
-                                    aria-expanded="false" aria-controls="collapseExample">
-                                    <div style="font-size: 30px;">A</div>
-                                    <div class="chevron-down">
-                                        <svg xmlns:dc="http://purl.org/dc/elements/1.1/"
-                                            xmlns:cc="http://creativecommons.org/ns#"
-                                            xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-                                            xmlns:svg="http://www.w3.org/2000/svg"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-                                            xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-                                            viewBox="0 0 96 120" version="1.1" x="0px" y="0px">
-                                            <g transform="translate(0,-312.06665)">
-                                                <path
-                                                    style="color:#007bc7;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#007bc7;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#007bc7;solid-opacity:1;vector-effect:none;fill:#007bc7;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:7.99999952;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
-                                                    d="m 87.989871,336.72877 a 4.0003998,4.0003998 0 0 0 -2.820312,1.1836 L 47.989871,373.84205 10.810183,337.91237 a 4.0003998,4.0003998 0 0 0 -2.8906244,-1.16406 4.0003998,4.0003998 0 0 0 -2.6679688,6.91406 l 39.9570312,38.61718 a 4.0003998,4.0003998 0 0 0 5.5625,0 l 39.957032,-38.61718 a 4.0003998,4.0003998 0 0 0 -2.738282,-6.9336 z" />
-                                            </g>
-                                        </svg>
-                                    </div>
-                                </div>
-                                <div class="collapse" id="collapseExample">
-                                    <ul>
-                                        <li>Afrika</li>
-                                        <li>Antartica</li>
-                                        <li>Azië</li>
-                                    </ul>
+                            <div class="col-12 col-sm-4">
+                                <div class="ambassade__block ambassade__block--clickable">
+                                    <a href="">
+                                        <h4>Consulaat-generaal in Miami</h4>
+                                        <div class="row">
+                                            <div class="col-2 icon pointer"></div>
+                                            <div class="col-10">
+                                                701 Brickell Ave., Suite 500Miami, FL 33131
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-2 icon phone"></div>
+                                            <div class="col-10">
+                                                Telefoon: +17868660480
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
-                            <div class="col-12 col-sm-4 letter">
-                                <div class="dropdown__text" data-toggle="collapse" href="#collapseExample2" role="button"
-                                    aria-expanded="false" aria-controls="collapseExample2">
-                                    <div style="font-size: 30px;">E</div>
-                                    <div class="chevron-down">
-                                        <svg xmlns:dc="http://purl.org/dc/elements/1.1/"
-                                            xmlns:cc="http://creativecommons.org/ns#"
-                                            xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-                                            xmlns:svg="http://www.w3.org/2000/svg"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-                                            xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-                                            viewBox="0 0 96 120" version="1.1" x="0px" y="0px">
-                                            <g transform="translate(0,-312.06665)">
-                                                <path
-                                                    style="color:#007bc7;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#007bc7;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#007bc7;solid-opacity:1;vector-effect:none;fill:#007bc7;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:7.99999952;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
-                                                    d="m 87.989871,336.72877 a 4.0003998,4.0003998 0 0 0 -2.820312,1.1836 L 47.989871,373.84205 10.810183,337.91237 a 4.0003998,4.0003998 0 0 0 -2.8906244,-1.16406 4.0003998,4.0003998 0 0 0 -2.6679688,6.91406 l 39.9570312,38.61718 a 4.0003998,4.0003998 0 0 0 5.5625,0 l 39.957032,-38.61718 a 4.0003998,4.0003998 0 0 0 -2.738282,-6.9336 z" />
-                                            </g>
-                                        </svg>
-                                    </div>
-                                </div>
-                                <div class="collapse" id="collapseExample2">
-                                    <ul>
-                                        <li>Europa</li>
-                                    </ul>
+                            <div class="col-12 col-sm-4">
+                                <div class="ambassade__block ambassade__block--clickable">
+                                    <a href="">
+                                        <h4>Consulaat-generaal in New York</h4>
+                                        <div class="row">
+                                            <div class="col-2 icon pointer"></div>
+                                            <div class="col-10">
+                                                666 Third Ave., 19th FloorNew York, NY 10017
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-2 icon phone"></div>
+                                            <div class="col-10">
+                                                Telefoon: +16465572200
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
-                            <div class="col-12 col-sm-4 letter">
-                                <div class="dropdown__text" data-toggle="collapse" href="#collapseExample3" role="button"
-                                    aria-expanded="false" aria-controls="collapseExample3">
-                                    <div style="font-size: 30px;">N</div>
-                                    <div class="chevron-down">
-                                        <svg xmlns:dc="http://purl.org/dc/elements/1.1/"
-                                            xmlns:cc="http://creativecommons.org/ns#"
-                                            xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-                                            xmlns:svg="http://www.w3.org/2000/svg"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-                                            xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-                                            viewBox="0 0 96 120" version="1.1" x="0px" y="0px">
-                                            <g transform="translate(0,-312.06665)">
-                                                <path
-                                                    style="color:#007bc7;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#007bc7;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#007bc7;solid-opacity:1;vector-effect:none;fill:#007bc7;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:7.99999952;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
-                                                    d="m 87.989871,336.72877 a 4.0003998,4.0003998 0 0 0 -2.820312,1.1836 L 47.989871,373.84205 10.810183,337.91237 a 4.0003998,4.0003998 0 0 0 -2.8906244,-1.16406 4.0003998,4.0003998 0 0 0 -2.6679688,6.91406 l 39.9570312,38.61718 a 4.0003998,4.0003998 0 0 0 5.5625,0 l 39.957032,-38.61718 a 4.0003998,4.0003998 0 0 0 -2.738282,-6.9336 z" />
-                                            </g>
-                                        </svg>
-                                    </div>
-                                </div>
-                                <div class="collapse" id="collapseExample3">
-                                    <ul>
-                                        <li>Noord-Amerika</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-12 col-sm-4 letter">
-                                <div class="dropdown__text" data-toggle="collapse" href="#collapseExample4" role="button"
-                                    aria-expanded="false" aria-controls="collapseExample4">
-                                    <div style="font-size: 30px;">O</div>
-                                    <div class="chevron-down">
-                                        <svg xmlns:dc="http://purl.org/dc/elements/1.1/"
-                                            xmlns:cc="http://creativecommons.org/ns#"
-                                            xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-                                            xmlns:svg="http://www.w3.org/2000/svg"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-                                            xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-                                            viewBox="0 0 96 120" version="1.1" x="0px" y="0px">
-                                            <g transform="translate(0,-312.06665)">
-                                                <path
-                                                    style="color:#007bc7;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#007bc7;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#007bc7;solid-opacity:1;vector-effect:none;fill:#007bc7;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:7.99999952;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
-                                                    d="m 87.989871,336.72877 a 4.0003998,4.0003998 0 0 0 -2.820312,1.1836 L 47.989871,373.84205 10.810183,337.91237 a 4.0003998,4.0003998 0 0 0 -2.8906244,-1.16406 4.0003998,4.0003998 0 0 0 -2.6679688,6.91406 l 39.9570312,38.61718 a 4.0003998,4.0003998 0 0 0 5.5625,0 l 39.957032,-38.61718 a 4.0003998,4.0003998 0 0 0 -2.738282,-6.9336 z" />
-                                            </g>
-                                        </svg>
-                                    </div>
-                                </div>
-                                <div class="collapse" id="collapseExample4">
-                                    <ul>
-                                        <li>Oceanië</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-12 col-sm-4 letter">
-                                <div class="dropdown__text" data-toggle="collapse" href="#collapseExample5" role="button"
-                                    aria-expanded="false" aria-controls="collapseExample5">
-                                    <div style="font-size: 30px;">Z</div>
-                                    <div class="chevron-down">
-                                        <svg xmlns:dc="http://purl.org/dc/elements/1.1/"
-                                            xmlns:cc="http://creativecommons.org/ns#"
-                                            xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-                                            xmlns:svg="http://www.w3.org/2000/svg"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-                                            xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-                                            viewBox="0 0 96 120" version="1.1" x="0px" y="0px">
-                                            <g transform="translate(0,-312.06665)">
-                                                <path
-                                                    style="color:#007bc7;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#007bc7;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#007bc7;solid-opacity:1;vector-effect:none;fill:#007bc7;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:7.99999952;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
-                                                    d="m 87.989871,336.72877 a 4.0003998,4.0003998 0 0 0 -2.820312,1.1836 L 47.989871,373.84205 10.810183,337.91237 a 4.0003998,4.0003998 0 0 0 -2.8906244,-1.16406 4.0003998,4.0003998 0 0 0 -2.6679688,6.91406 l 39.9570312,38.61718 a 4.0003998,4.0003998 0 0 0 5.5625,0 l 39.957032,-38.61718 a 4.0003998,4.0003998 0 0 0 -2.738282,-6.9336 z" />
-                                            </g>
-                                        </svg>
-                                    </div>
-                                </div>
-                                <div class="collapse" id="collapseExample5">
-                                    <ul>
-                                        <li>Zuid-Amerika</li>
-                                    </ul>
+                            <div class="col-12 col-sm-4">
+                                <div class="ambassade__block ambassade__block--clickable">
+                                    <a href="">
+                                        <h4>Consulaat-generaal in San Francisco</h4>
+                                        <div class="row">
+                                            <div class="col-2 icon pointer"></div>
+                                            <div class="col-10">
+                                                120 Kearny Street, Suite 3100San Francisco, CA 94104
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-2 icon phone"></div>
+                                            <div class="col-10">
+                                                Telefoon: +1415291203324
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>

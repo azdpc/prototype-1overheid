@@ -473,7 +473,7 @@ function autocompleteCountries() {
         "Venezuela", "Vietnam", "Virgin Islands (US)", "Yemen", "Zambia", "Zimbabwe"
     ];
 
-    let countriesNL = ["Afghanistan", "Albanië", "Algerije", "Andorra", "Angola", "Anguilla", "Antigua Barbuda", "Argentinië", "Armenië", "Aruba", "Australië", "Oostenrijk", " Azerbeidzjan "," Bahama's "," Bahrein "," Bangladesh "," Barbados "," Wit-Rusland "," België "," Belize "," Benin "," Bermuda "," Bhutan "," Bolivia "," Bosnië; Herzegovina "," Botswana "," Brazilië "," Britse Maagdeneilanden "," Brunei "," Bulgarije "," Burkina Faso "," Burundi "," Cambodja "," Kameroen "," Canada "," Kaapverdië " , "Kaaimaneilanden", "Tsjaad", "Chili", "China", "Colombia", "Congo", "Cook Eilanden", "Costa Rica", "Ivoorkust", "Kroatië", "Cruiseschip" , "Cuba", "Cyprus", "Tsjechië", "Denemarken", "Djibouti", "Dominica", "Dominicaanse Republiek", "Ecuador", "Egypte", "El Salvador", "Equatoriaal-Guinea", " Estland "," Ethiopië "," Falkland-eilanden "," Faeröer "," Fiji "," Finland "," Frankrijk "," Frans-Polynesië "," Frans-West-Indië "," Gabon "," Gambia "," Georgië "," Duitsland "," Ghana "," Gibraltar "," Griekenland "," Groenland "," Grenada "," Guam "," Guatemala "," Guernsey "," Gu inea "," Guinee-Bissau "," Guyana "," Haïti "," Honduras "," Hong Kong "," Hongarije "," IJsland "," India "," Indonesië "," Iran "," Irak "," Ierland "," Isle of Man "," Israel "," Italy "," Jamaica "," Japan "," Jersey "," Jordan "," Kazakhstan "," Kenya "," Koeweit "," Kirgizische Republiek ", "Laos", "Letland", "Libanon", "Lesotho", "Liberia", "Libië", "Liechtenstein", "Litouwen", "Luxemburg", "Macau", "Macedonië", "Madagascar", "Malawi "," Maleisië "," Malediven "," Mali "," Malta "," Mauritanië "," Mauritius "," Mexico "," Moldavië "," Monaco "," Mongolië "," Montenegro "," Montserrat ", "Marokko", "Mozambique", "Namibië", "Nepal", "Nederland", "Nederlandse Antillen", "Nieuw-Caledonië", "Nieuw-Zeeland", "Nicaragua", "Niger", "Nigeria", "Noorwegen" , "Oman", "Pakistan", "Palestina", "Panama", "Papoea-Nieuw-Guinea", "Paraguay", "Peru", "Filipijnen", "Polen", "Portugal", "Puerto Rico", "Qatar "," Reunion "," Romania "," Russia "," Rwanda "," Saint Pierre Miquelon "," Samoa "," San Marino "," Satellite "," Saudi Arabia "," Senegal "," Serbia ", "Se ychelles "," Sierra Leone "," Singapore "," Slowakije "," Slovenië "," Zuid-Afrika "," Zuid-Korea "," Spanje "," Sri Lanka "," St Kitts Nevis "," St Lucia ", "St Vincent", "St. Lucia "," Sudan "," Suriname "," Swaziland "," Zweden "," Zwitserland "," Syrië "," Taiwan "," Tadzjikistan "," Tanzania "," Thailand "," Timor L'Este ", "Togo", "Tonga", "Trinidad Tobago", "Tunesië", "Turkije", "Turkmenistan", "Turks Caicos", "Oeganda", "Oekraïne", "Verenigde Arabische Emiraten", "Verenigd Koninkrijk", " Uruguay "," Oezbekistan "," Venezuela "," Vietnam "," Maagdeneilanden (VS) "," Jemen "," Zambia "," Zimbabwe "];
+    let countriesNL = ["Afghanistan", "Albanië", "Algerije", "Andorra", "Angola", "Anguilla", "Antigua Barbuda", "Argentinië", "Armenië", "Aruba", "Australië", "Oostenrijk", " Azerbeidzjan "," Bahama's "," Bahrein "," Bangladesh "," Barbados "," Wit-Rusland "," België "," Belize "," Benin "," Bermuda "," Bhutan "," Bolivia "," Bosnië; Herzegovina "," Botswana "," Brazilië "," Britse Maagdeneilanden "," Brunei "," Bulgarije "," Burkina Faso "," Burundi "," Cambodja "," Kameroen "," Canada "," Kaapverdië " , "Kaaimaneilanden", "Tsjaad", "Chili", "China", "Colombia", "Congo", "Cook Eilanden", "Costa Rica", "Ivoorkust", "Kroatië", "Cruiseschip" , "Cuba", "Cyprus", "Tsjechië", "Denemarken", "Djibouti", "Dominica", "Dominicaanse Republiek", "Ecuador", "Egypte", "El Salvador", "Equatoriaal-Guinea", " Estland "," Ethiopië "," Falkland-eilanden "," Faeröer "," Fiji "," Finland "," Frankrijk "," Frans-Polynesië "," Frans-West-Indië "," Gabon "," Gambia "," Georgië "," Duitsland "," Ghana "," Gibraltar "," Griekenland "," Groenland "," Grenada "," Guam "," Guatemala "," Guernsey "," Gu inea "," Guinee-Bissau "," Guyana "," Haïti "," Honduras "," Hong Kong "," Hongarije "," IJsland "," India "," Indonesië "," Iran "," Irak "," Ierland "," Isle of Man "," Israel "," Italy "," Jamaica "," Japan "," Jersey "," Jordan "," Kazakhstan "," Kenya "," Koeweit "," Kirgizische Republiek ", "Laos", "Letland", "Libanon", "Lesotho", "Liberia", "Libië", "Liechtenstein", "Litouwen", "Luxemburg", "Macau", "Macedonië", "Madagascar", "Malawi "," Maleisië "," Malediven "," Mali "," Malta "," Mauritanië "," Mauritius "," Mexico "," Moldavië "," Monaco "," Mongolië "," Montenegro "," Montserrat ", "Marokko", "Mozambique", "Namibië", "Nepal", "Nederland", "Nederlandse Antillen", "Nieuw-Caledonië", "Nieuw-Zeeland", "Nicaragua", "Niger", "Nigeria", "Noorwegen" , "Oman", "Pakistan", "Palestina", "Panama", "Papoea-Nieuw-Guinea", "Paraguay", "Peru", "Filipijnen", "Polen", "Portugal", "Puerto Rico", "Qatar "," Reunion "," Romania "," Russia "," Rwanda "," Saint Pierre Miquelon "," Samoa "," San Marino "," Satellite "," Saudi Arabia "," Senegal "," Serbia ", "Se ychelles "," Sierra Leone "," Singapore "," Slowakije "," Slovenië "," Zuid-Afrika "," Zuid-Korea "," Spanje "," Sri Lanka "," St Kitts Nevis "," St Lucia ", "St Vincent", "St. Lucia "," Sudan "," Suriname "," Swaziland "," Zweden "," Zwitserland "," Syrië "," Taiwan "," Tadzjikistan "," Tanzania "," Thailand "," Timor L'Este ", "Togo", "Tonga", "Trinidad Tobago", "Tunesië", "Turkije", "Turkmenistan", "Turks Caicos", "Oeganda", "Oekraïne", "Verenigde Arabische Emiraten", "Verenigd Koninkrijk", " Uruguay "," Oezbekistan "," Venezuela "," Verenigde Staten "," Vietnam "," Maagdeneilanden (VS) "," Jemen "," Zambia "," Zimbabwe ", "Washington"];
 
     let gemeenten = ["Aa en Hunze",
     "Aalburg",
@@ -932,12 +932,18 @@ function autocompleteCountries() {
     }
 
     if ($('#ambassades').length) {
+        $('#ambassades').val('');
+
         $( "#ambassades" ).autocomplete({
-        source: availableTags,
-        select: function( event, ui ) {
-            $('.multiselect').show();
-            $('.ambassade__results').css('display', 'flex');
-        }
+            source: countriesNL,
+            select: function( event, ui ) {
+                if (ui.item && ui.item.label === " Bahama's ") {
+                    $('.ambassade__results .bahamas').css('display', 'block');
+                }
+                
+                $('.ambassade__results').css('display', 'flex');
+                $('.multiselect').show();
+            },
         });
     }
 
@@ -1025,23 +1031,23 @@ function showCheckboxes() {
         checkboxes.hide();
         expanded = true;
     }
-
-    $('#checkboxes label input').click(function() {
-        $('#checkboxes label input').each(function(index, value) {
-            $('.ambassade__block').last().hide();
-        });      
-    });
 }
 
-function showAdvancedSearch() {
-    $('.advanced__box label input').click(function() {
-        $('.advanced__box label input').each(function(index, value) {
-            $('.ambassade__block').last().hide();
-        });      
-    });
-
+function filterSearch() {
     $('.advanced__search').click(() => {
         $('.advanced__box').toggleClass('show');
+    });
+
+    $('#two')[0].checked = false;
+    $('#two').click(() => {
+        $('.ambassade__block--clickable').parent().toggleClass('hide');
+        $('.ambassade__block--clickable.washington').parent().toggleClass('show');
+    });
+
+    $('.alphabetical li').click((index) => {
+        $('#ambassades').val(index.currentTarget.textContent);
+        $("#ambassades").data("ui-autocomplete")._trigger("select")
+
     });
 }
 
@@ -1192,7 +1198,7 @@ $(function () {
     crisisBar();
     detectH2Tags();
     showCheckboxes();
-    showAdvancedSearch();
+    filterSearch();
     // passportFlow();
     // passportFlowDigid();
 });

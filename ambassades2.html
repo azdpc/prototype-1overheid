@@ -29,11 +29,11 @@
                     <div class="container-fluid">
                         <div class="row contact__header">
                             <div class="col-md-12 notVisibleInFrame">
-                                <a href="ambassades.html">Amb1</a>
-                                <a href="ambassades2.html">Amb2</a>
+                                <a href="ambassades.html">Versie 1</a>
+                                <a href="ambassades2.html">Versie 2</a>
                                 <h1>Contact met de Nederlandse ambassades</h1><br />
-                                <h2>Wilt u een ambassade bereiken vanuit Nederland? 
-                                    <br />Bel:  0031 247 247 247</h2>
+                                <h2>Wilt u een ambassade bereiken vanuit Nederland?
+                                    <br />Bel: <a href="tel:+31247247247">+31 247 247 247</a></h2>
                             </div>
                         </div>
                     </div>
@@ -47,228 +47,544 @@
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-12">
+                                <h2>Vind een Nederlandse ambassade of consulaat</h2>
                                 <div class="ui-widget input-group country-selector">
                                     <input type="text" class="form-control" id="ambassades"
                                         placeholder="Kies een land.." aria-label="Country"
-                                        aria-describedby="choose-country">
+                                        aria-describedby="choose-country" style="position: relative;">
+                                        <div class="use-my-location"><div class="icon-wrapper"><div class="icon location"></div></div></div>
                                 </div>
-                                <div class="advanced__search">Uitgebreid zoeken</div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-12 advanced__box">
-                                <div class="row">
-                                    <div class="col-12">
+                                <div class="below-search-country">
+                                    <div class="advanced__search">Filteren op</div>
+                                </div>
+
+                                <div class="advanced__box">
+                                    <h4>Wat wilt u regelen?</h4>
+                                    <div id="checkboxes2">
                                         <label for="one">
-                                            <input type="checkbox" id="one" />First checkbox</label>
+                                            <input type="checkbox" id="one" />Paspoort of ID kaart</label>
                                         <label for="two">
-                                            <input type="checkbox" id="two" />Second checkbox</label>
+                                            <input type="checkbox" id="two" />DigiD</label>
                                         <label for="three">
-                                            <input type="checkbox" id="three" />Third checkbox</label>
-                                    </div>                                
+                                            <input type="checkbox" id="three" />MVV</label>
+                                        <label for="four">
+                                            <input type="checkbox" id="four" />Visa</label>
+                                        <label for="five">
+                                            <input type="checkbox" id="five" />Consulaire verklaringen</label>
+                                        <label for="six">
+                                            <input type="checkbox" id="six" />Legalisaties</label>
+                                        <label for="seven">
+                                            <input type="checkbox" id="seven" />Inburgeringsexamens</label>
+                                        <label for="eight">
+                                            <input type="checkbox" id="eight" />Optie procedure</label>
+                                        <label for="nine">
+                                            <input type="checkbox" id="nine" />Naturalisatie procedure</label>
+                                        <label for="ten">
+                                            <input type="checkbox" id="ten" />Hulp bij nood</label>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="row ambassade__results">
                             <div class="col-12">
                                 <h3>Resultaten</h3>
+                                <p class="bahamas">Er is geen ambassade of consulaat in dit land, u kunt terecht bij een Nederlandse ambassade of consulaat in:</p>
+                                <h3 class="bahamas">Alternatieven</h3>
                             </div>
                             <div class="col-12 col-sm-4">
-                                <div class="ambassade__block">
-                                    <h4>Nederlandse ambassade in Teheran, Iran</h4>
-                                    <div class="row">
-                                        <div class="col-2 icon pointer"></div>
-                                        <div class="col-10">
-                                            No. 60 West Arghavan street<br />
-                                            Dibaji North street Farmanieh  - Teheran
+                                <div class="ambassade__block ambassade__block--clickable">
+                                    <a href="">
+                                        <h4>Consulaat-generaal in Chicago</h4>
+                                        <div class="row">
+                                            <div class="col-2 icon pointer"></div>
+                                            <div class="col-10">
+                                                303 E. Wacker DriveSuite 2600Chicago, IL 60601
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-2 icon phone"></div>
-                                        <div class="col-10">
-                                            Telefoon: +12345789 
+                                        <div class="row">
+                                            <div class="col-2 icon phone"></div>
+                                            <div class="col-10">
+                                                Telefoon: +13127801314
+                                            </div>
                                         </div>
-                                    </div>
+                                    </a>
                                 </div>
                             </div>
                             <div class="col-12 col-sm-4">
-                                <div class="ambassade__block">
-                                    <h4>Nederlandse ambassade in Teheran, Iran</h4>
-                                    <div class="row">
-                                        <div class="col-2 icon pointer"></div>
-                                        <div class="col-10">
-                                            No. 60 West Arghavan street<br />
-                                            Dibaji North street Farmanieh  - Teheran
+                                <div class="ambassade__block ambassade__block--clickable washington">
+                                    <a href="ambassade-washington.html">
+                                        <h4>Nederlandse ambassade in Washington</h4>
+                                        <div class="row">
+                                            <div class="col-2 icon pointer"></div>
+                                            <div class="col-10">
+                                                4200 Linnean Avenue NW Washington, DC 20008
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-2 icon phone"></div>
-                                        <div class="col-10">
-                                            Telefoon: +12345789 
+                                        <div class="row">
+                                            <div class="col-2 icon phone"></div>
+                                            <div class="col-10">
+                                                Telefoon: +12022445300
+                                            </div>
                                         </div>
-                                    </div>
+                                    </a>
                                 </div>
                             </div>
                             <div class="col-12 col-sm-4">
-                                <div class="ambassade__block">
-                                    <h4>Nederlandse ambassade in Teheran, Iran</h4>
-                                    <div class="row">
-                                        <div class="col-2 icon pointer"></div>
-                                        <div class="col-10">
-                                            No. 60 West Arghavan street<br />
-                                            Dibaji North street Farmanieh  - Teheran
+                                <div class="ambassade__block ambassade__block--clickable">
+                                    <a href="">
+                                        <h4>Consulaat-generaal in Miami</h4>
+                                        <div class="row">
+                                            <div class="col-2 icon pointer"></div>
+                                            <div class="col-10">
+                                                701 Brickell Ave., Suite 500Miami, FL 33131
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-2 icon phone"></div>
-                                        <div class="col-10">
-                                            Telefoon: +12345789 
+                                        <div class="row">
+                                            <div class="col-2 icon phone"></div>
+                                            <div class="col-10">
+                                                Telefoon: +17868660480
+                                            </div>
                                         </div>
-                                    </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-4">
+                                <div class="ambassade__block ambassade__block--clickable">
+                                    <a href="">
+                                        <h4>Consulaat-generaal in New York</h4>
+                                        <div class="row">
+                                            <div class="col-2 icon pointer"></div>
+                                            <div class="col-10">
+                                                666 Third Ave., 19th FloorNew York, NY 10017
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-2 icon phone"></div>
+                                            <div class="col-10">
+                                                Telefoon: +16465572200
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-4">
+                                <div class="ambassade__block ambassade__block--clickable">
+                                    <a href="">
+                                        <h4>Consulaat-generaal in San Francisco</h4>
+                                        <div class="row">
+                                            <div class="col-2 icon pointer"></div>
+                                            <div class="col-10">
+                                                120 Kearny Street, Suite 3100San Francisco, CA 94104
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-2 icon phone"></div>
+                                            <div class="col-10">
+                                                Telefoon: +1415291203324
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
-                        <div class="row alphabet-list">
-                            <div class="col-12">
-                                <h3>Landen</h3>
-                            </div>
-                            <div class="col-12 col-sm-4 letter">
-                                <div class="dropdown__text" data-toggle="collapse" href="#collapseExample" role="button"
-                                    aria-expanded="false" aria-controls="collapseExample">
-                                    <div style="font-size: 30px;">A</div>
-                                    <div class="chevron-down">
-                                        <svg xmlns:dc="http://purl.org/dc/elements/1.1/"
-                                            xmlns:cc="http://creativecommons.org/ns#"
-                                            xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-                                            xmlns:svg="http://www.w3.org/2000/svg"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-                                            xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-                                            viewBox="0 0 96 120" version="1.1" x="0px" y="0px">
-                                            <g transform="translate(0,-312.06665)">
-                                                <path
-                                                    style="color:#007bc7;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#007bc7;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#007bc7;solid-opacity:1;vector-effect:none;fill:#007bc7;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:7.99999952;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
-                                                    d="m 87.989871,336.72877 a 4.0003998,4.0003998 0 0 0 -2.820312,1.1836 L 47.989871,373.84205 10.810183,337.91237 a 4.0003998,4.0003998 0 0 0 -2.8906244,-1.16406 4.0003998,4.0003998 0 0 0 -2.6679688,6.91406 l 39.9570312,38.61718 a 4.0003998,4.0003998 0 0 0 5.5625,0 l 39.957032,-38.61718 a 4.0003998,4.0003998 0 0 0 -2.738282,-6.9336 z" />
-                                            </g>
-                                        </svg>
-                                    </div>
-                                </div>
-                                <div class="collapse" id="collapseExample">
+                        <div class="topics alphabetical two-columns">
+                            <div class="column">
+                              <div class="topic">
+                                  <h2>A</h2>
+                                  <div class="subtopics">
                                     <ul>
-                                        <li>Albanië</li>
-                                    </ul>
+                                      <li>Afghanistan</li>
+                                      <li>Albanië</li>
+                                      <li>Algerije</li>
+                                      <li>Amerikaans-Samoa</li>
+                                      <li>Amerikaanse Maagdeneilanden</li>
+                                      <li>Andorra</li>
+                                      <li>Angola</li>
+                                      <li>Anguilla</li>
+                                      <li>Antigua en Barbuda</li>
+                                      <li>Argentinië</li>
+                                      <li>Armenië</li>
+                                      <li>Australië</li>
+                                      <li>Azerbeidzjan</li>
+                                      <li>Azoren</li>
+                                      </ul>
+                                  </div>
                                 </div>
-                            </div>
-                            <div class="col-12 col-sm-4 letter">
-                                <div class="dropdown__text" data-toggle="collapse" href="#collapseExample2" role="button"
-                                    aria-expanded="false" aria-controls="collapseExample2">
-                                    <div style="font-size: 30px;">C</div>
-                                    <div class="chevron-down">
-                                        <svg xmlns:dc="http://purl.org/dc/elements/1.1/"
-                                            xmlns:cc="http://creativecommons.org/ns#"
-                                            xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-                                            xmlns:svg="http://www.w3.org/2000/svg"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-                                            xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-                                            viewBox="0 0 96 120" version="1.1" x="0px" y="0px">
-                                            <g transform="translate(0,-312.06665)">
-                                                <path
-                                                    style="color:#007bc7;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#007bc7;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#007bc7;solid-opacity:1;vector-effect:none;fill:#007bc7;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:7.99999952;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
-                                                    d="m 87.989871,336.72877 a 4.0003998,4.0003998 0 0 0 -2.820312,1.1836 L 47.989871,373.84205 10.810183,337.91237 a 4.0003998,4.0003998 0 0 0 -2.8906244,-1.16406 4.0003998,4.0003998 0 0 0 -2.6679688,6.91406 l 39.9570312,38.61718 a 4.0003998,4.0003998 0 0 0 5.5625,0 l 39.957032,-38.61718 a 4.0003998,4.0003998 0 0 0 -2.738282,-6.9336 z" />
-                                            </g>
-                                        </svg>
-                                    </div>
-                                </div>
-                                <div class="collapse" id="collapseExample2">
+                              <div class="topic">
+                                  <h2>B</h2>
+                                  <div class="subtopics">
                                     <ul>
-                                        <li>China</li>
-                                        <li>Cuba</li>
-                                    </ul>
+                                      <li>Bahama's</li>
+                                      <li>Bahrein</li>
+                                      <li>Bangladesh</li>
+                                      <li>Barbados</li>
+                                      <li>Belarus (Wit-Rusland)</li>
+                                      <li>België</li>
+                                      <li>Belize</li>
+                                      <li>Benin</li>
+                                      <li>Bermuda</li>
+                                      <li>Bhutan</li>
+                                      <li>Bolivia</li>
+                                      <li>Bosnië en Herzegovina</li>
+                                      <li>Botswana</li>
+                                      <li>Brazilië</li>
+                                      <li>Britse Maagdeneilanden</li>
+                                      <li>Brunei Darussalam</li>
+                                      <li>Bulgarije</li>
+                                      <li>Burkina Faso</li>
+                                      <li>Burundi</li>
+                                      </ul>
+                                  </div>
                                 </div>
-                            </div>
-                            <div class="col-12 col-sm-4 letter">
-                                <div class="dropdown__text" data-toggle="collapse" href="#collapseExample3" role="button"
-                                    aria-expanded="false" aria-controls="collapseExample3">
-                                    <div style="font-size: 30px;">N</div>
-                                    <div class="chevron-down">
-                                        <svg xmlns:dc="http://purl.org/dc/elements/1.1/"
-                                            xmlns:cc="http://creativecommons.org/ns#"
-                                            xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-                                            xmlns:svg="http://www.w3.org/2000/svg"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-                                            xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-                                            viewBox="0 0 96 120" version="1.1" x="0px" y="0px">
-                                            <g transform="translate(0,-312.06665)">
-                                                <path
-                                                    style="color:#007bc7;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#007bc7;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#007bc7;solid-opacity:1;vector-effect:none;fill:#007bc7;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:7.99999952;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
-                                                    d="m 87.989871,336.72877 a 4.0003998,4.0003998 0 0 0 -2.820312,1.1836 L 47.989871,373.84205 10.810183,337.91237 a 4.0003998,4.0003998 0 0 0 -2.8906244,-1.16406 4.0003998,4.0003998 0 0 0 -2.6679688,6.91406 l 39.9570312,38.61718 a 4.0003998,4.0003998 0 0 0 5.5625,0 l 39.957032,-38.61718 a 4.0003998,4.0003998 0 0 0 -2.738282,-6.9336 z" />
-                                            </g>
-                                        </svg>
-                                    </div>
-                                </div>
-                                <div class="collapse" id="collapseExample3">
+                              <div class="topic">
+                                  <h2>C</h2>
+                                  <div class="subtopics">
                                     <ul>
-                                        <li>Noord-Amerika</li>
-                                    </ul>
+                                      <li>Cambodja</li>
+                                      <li>Canada</li>
+                                      <li>Canarische eilanden</li>
+                                      <li>Centraal-Afrikaanse Republiek</li>
+                                      <li>Chili</li>
+                                      <li>China</li>
+                                      <li>Colombia</li>
+                                      <li>Comoren</li>
+                                      <li>Congo, de Republiek</li>
+                                      <li>Congo, Democratische Republiek</li>
+                                      <li>Cookeilanden</li>
+                                      <li>Costa Rica</li>
+                                      <li>Cuba</li>
+                                      <li>Cyprus</li>
+                                      </ul>
+                                  </div>
                                 </div>
-                            </div>
-                            <div class="col-12 col-sm-4 letter">
-                                <div class="dropdown__text" data-toggle="collapse" href="#collapseExample4" role="button"
-                                    aria-expanded="false" aria-controls="collapseExample4">
-                                    <div style="font-size: 30px;">O</div>
-                                    <div class="chevron-down">
-                                        <svg xmlns:dc="http://purl.org/dc/elements/1.1/"
-                                            xmlns:cc="http://creativecommons.org/ns#"
-                                            xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-                                            xmlns:svg="http://www.w3.org/2000/svg"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-                                            xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-                                            viewBox="0 0 96 120" version="1.1" x="0px" y="0px">
-                                            <g transform="translate(0,-312.06665)">
-                                                <path
-                                                    style="color:#007bc7;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#007bc7;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#007bc7;solid-opacity:1;vector-effect:none;fill:#007bc7;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:7.99999952;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
-                                                    d="m 87.989871,336.72877 a 4.0003998,4.0003998 0 0 0 -2.820312,1.1836 L 47.989871,373.84205 10.810183,337.91237 a 4.0003998,4.0003998 0 0 0 -2.8906244,-1.16406 4.0003998,4.0003998 0 0 0 -2.6679688,6.91406 l 39.9570312,38.61718 a 4.0003998,4.0003998 0 0 0 5.5625,0 l 39.957032,-38.61718 a 4.0003998,4.0003998 0 0 0 -2.738282,-6.9336 z" />
-                                            </g>
-                                        </svg>
-                                    </div>
-                                </div>
-                                <div class="collapse" id="collapseExample4">
+                              <div class="topic">
+                                  <h2>D</h2>
+                                  <div class="subtopics">
                                     <ul>
-                                        <li>Oceanië</li>
-                                    </ul>
+                                      <li>Denemarken</li>
+                                      <li>Djibouti</li>
+                                      <li>Dominica</li>
+                                      <li>Dominicaanse Republiek</li>
+                                      <li>Duitsland</li>
+                                      </ul>
+                                  </div>
                                 </div>
-                            </div>
-                            <div class="col-12 col-sm-4 letter">
-                                <div class="dropdown__text" data-toggle="collapse" href="#collapseExample5" role="button"
-                                    aria-expanded="false" aria-controls="collapseExample5">
-                                    <div style="font-size: 30px;">Z</div>
-                                    <div class="chevron-down">
-                                        <svg xmlns:dc="http://purl.org/dc/elements/1.1/"
-                                            xmlns:cc="http://creativecommons.org/ns#"
-                                            xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-                                            xmlns:svg="http://www.w3.org/2000/svg"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-                                            xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-                                            viewBox="0 0 96 120" version="1.1" x="0px" y="0px">
-                                            <g transform="translate(0,-312.06665)">
-                                                <path
-                                                    style="color:#007bc7;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#007bc7;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#007bc7;solid-opacity:1;vector-effect:none;fill:#007bc7;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:7.99999952;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
-                                                    d="m 87.989871,336.72877 a 4.0003998,4.0003998 0 0 0 -2.820312,1.1836 L 47.989871,373.84205 10.810183,337.91237 a 4.0003998,4.0003998 0 0 0 -2.8906244,-1.16406 4.0003998,4.0003998 0 0 0 -2.6679688,6.91406 l 39.9570312,38.61718 a 4.0003998,4.0003998 0 0 0 5.5625,0 l 39.957032,-38.61718 a 4.0003998,4.0003998 0 0 0 -2.738282,-6.9336 z" />
-                                            </g>
-                                        </svg>
-                                    </div>
-                                </div>
-                                <div class="collapse" id="collapseExample5">
+                              <div class="topic">
+                                  <h2>E</h2>
+                                  <div class="subtopics">
                                     <ul>
-                                        <li>Zuid-Amerika</li>
-                                    </ul>
+                                      <li>Ecuador</li>
+                                      <li>Egypte</li>
+                                      <li>El Salvador</li>
+                                      <li>Equatoriaal-Guinea</li>
+                                      <li>Eritrea</li>
+                                      <li>Estland</li>
+                                      <li>Ethiopië</li>
+                                      </ul>
+                                  </div>
                                 </div>
-                            </div>
-                        </div>
+                              <div class="topic">
+                                  <h2>F</h2>
+                                  <div class="subtopics">
+                                    <ul>
+                                      <li>Fiji</li>
+                                      <li>Filipijnen</li>
+                                      <li>Finland</li>
+                                      <li>Frankrijk</li>
+                                      <li>Frans-Guyana</li>
+                                      <li>Frans-Polynesië</li>
+                                      </ul>
+                                  </div>
+                                </div>
+                              <div class="topic">
+                                  <h2>G</h2>
+                                  <div class="subtopics">
+                                    <ul>
+                                      <li>Gabon</li>
+                                      <li>Gambia</li>
+                                      <li>Georgië</li>
+                                      <li>Ghana</li>
+                                      <li>Gibraltar</li>
+                                      <li>Grenada</li>
+                                      <li>Griekenland</li>
+                                      <li>Groenland</li>
+                                      <li>Guadeloupe</li>
+                                      <li>Guatemala</li>
+                                      <li>Guernsey</li>
+                                      <li>Guinee</li>
+                                      <li>Guinee-Bissau</li>
+                                      <li>Guyana</li>
+                                      </ul>
+                                  </div>
+                                </div>
+                              <div class="topic">
+                                  <h2>H</h2>
+                                  <div class="subtopics">
+                                    <ul>
+                                      <li>Hawaï</li>
+                                      <li>Haïti</li>
+                                      <li>Heilige Stoel / Vaticaanstad</li>
+                                      <li>Honduras</li>
+                                      <li>Hongarije</li>
+                                      <li>Hongkong SAR</li>
+                                      </ul>
+                                  </div>
+                                </div>
+                              <div class="topic">
+                                  <h2>I</h2>
+                                  <div class="subtopics">
+                                    <ul>
+                                      <li>Ierland</li>
+                                      <li>IJsland</li>
+                                      <li>India</li>
+                                      <li>Indonesië</li>
+                                      <li>Irak</li>
+                                      <li>Iran</li>
+                                      <li>Israël</li>
+                                      <li>Italië</li>
+                                      <li>Ivoorkust</li>
+                                      </ul>
+                                  </div>
+                                </div>
+                              <div class="topic">
+                                  <h2>J</h2>
+                                  <div class="subtopics">
+                                    <ul>
+                                      <li>Jamaica</li>
+                                      <li>Japan</li>
+                                      <li>Jemen</li>
+                                      <li>Jersey</li>
+                                      <li>Jordanië</li>
+                                      </ul>
+                                  </div>
+                                </div>
+                              <div class="topic">
+                                  <h2>K</h2>
+                                  <div class="subtopics">
+                                    <ul>
+                                      <li>Kaaimaneilanden</li>
+                                      <li>Kaapverdië</li>
+                                      <li>Kameroen</li>
+                                      <li>Kazachstan</li>
+                                      <li>Kenia</li>
+                                      <li>Kirgizië</li>
+                                      <li>Kiribati</li>
+                                      <li>Koeweit</li>
+                                      <li>Kosovo</li>
+                                      <li>Kroatië</li>
+                                      </ul>
+                                  </div>
+                                </div>
+                              <div class="topic">
+                                  <h2>L</h2>
+                                  <div class="subtopics">
+                                    <ul>
+                                      <li>Laos</li>
+                                      <li>Lesotho</li>
+                                      <li>Letland</li>
+                                      <li>Libanon</li>
+                                      <li>Liberia</li>
+                                      <li>Libië</li>
+                                      <li>Liechtenstein</li>
+                                      <li>Litouwen</li>
+                                      <li>Luxemburg</li>
+                                      </ul>
+                                  </div>
+                                </div>
+                              </div>
+                          <div class="column">
+                              <div class="topic">
+                                  <h2>M</h2>
+                                  <div class="subtopics">
+                                    <ul>
+                                      <li>Macau SAR</li>
+                                      <li>Madagaskar</li>
+                                      <li>Madeira-eilanden</li>
+                                      <li>Malawi</li>
+                                      <li>Maldiven</li>
+                                      <li>Maleisië</li>
+                                      <li>Mali</li>
+                                      <li>Malta</li>
+                                      <li>Marokko</li>
+                                      <li>Marshalleilanden</li>
+                                      <li>Martinique</li>
+                                      <li>Mauritanië</li>
+                                      <li>Mauritius</li>
+                                      <li>Mexico</li>
+                                      <li>Micronesia</li>
+                                      <li>Moldavië</li>
+                                      <li>Monaco</li>
+                                      <li>Mongolië</li>
+                                      <li>Montenegro</li>
+                                      <li>Montserrat</li>
+                                      <li>Mozambique</li>
+                                      <li>Myanmar</li>
+                                      </ul>
+                                  </div>
+                                </div>
+                              <div class="topic">
+                                  <h2>N</h2>
+                                  <div class="subtopics">
+                                    <ul>
+                                      <li>Namibië</li>
+                                      <li>Nauru</li>
+                                      <li>Nepal</li>
+                                      <li>Nicaragua</li>
+                                      <li>Nieuw-Caledonië</li>
+                                      <li>Nieuw-Zeeland</li>
+                                      <li>Niger</li>
+                                      <li>Nigeria</li>
+                                      <li>Niue</li>
+                                      <li>Noord Macedonië</li>
+                                      <li>Noord-Korea</li>
+                                      <li>Noorwegen</li>
+                                      </ul>
+                                  </div>
+                                </div>
+                              <div class="topic">
+                                  <h2>O</h2>
+                                  <div class="subtopics">
+                                    <ul>
+                                      <li>Oekraïne</li>
+                                      <li>Oezbekistan</li>
+                                      <li>Oman</li>
+                                      <li>Oost-Timor</li>
+                                      <li>Oostenrijk</li>
+                                      </ul>
+                                  </div>
+                                </div>
+                              <div class="topic">
+                                  <h2>P</h2>
+                                  <div class="subtopics">
+                                    <ul>
+                                      <li>Pakistan</li>
+                                      <li>Palau</li>
+                                      <li>Palestijnse Gebieden</li>
+                                      <li>Panama</li>
+                                      <li>Papoea-Nieuw-Guinea</li>
+                                      <li>Paraguay</li>
+                                      <li>Peru</li>
+                                      <li>Pitcairneilanden</li>
+                                      <li>Polen</li>
+                                      <li>Portugal</li>
+                                      <li>Puerto Rico</li>
+                                      </ul>
+                                  </div>
+                                </div>
+                              <div class="topic">
+                                  <h2>Q</h2>
+                                  <div class="subtopics">
+                                    <ul>
+                                      <li>Qatar</li>
+                                      </ul>
+                                  </div>
+                                </div>
+                              <div class="topic">
+                                  <h2>R</h2>
+                                  <div class="subtopics">
+                                    <ul>
+                                      <li>Roemenië</li>
+                                      <li>Rusland</li>
+                                      <li>Rwanda</li>
+                                      </ul>
+                                  </div>
+                                </div>
+                              <div class="topic">
+                                  <h2>S</h2>
+                                  <div class="subtopics">
+                                    <ul>
+                                      <li>Saint Kitts en Nevis</li>
+                                      <li>Saint Lucia</li>
+                                      <li>Saint Vincent en de Grenadines</li>
+                                      <li>Salomonseilanden</li>
+                                      <li>Samoa</li>
+                                      <li>San Marino</li>
+                                      <li>Sao Tomé en Principe</li>
+                                      <li>Saoedi-Arabië</li>
+                                      <li>Senegal</li>
+                                      <li>Servië</li>
+                                      <li>Seychellen</li>
+                                      <li>Sierra Leone</li>
+                                      <li>Singapore</li>
+                                      <li>Slovenië</li>
+                                      <li>Slowakije</li>
+                                      <li>Somalië</li>
+                                      <li>Spanje</li>
+                                      <li>Sri Lanka</li>
+                                      <li>Sudan</li>
+                                      <li>Suriname</li>
+                                      <li>Swaziland</li>
+                                      <li>Syrië</li>
+                                      </ul>
+                                  </div>
+                                </div>
+                              <div class="topic">
+                                  <h2>T</h2>
+                                  <div class="subtopics">
+                                    <ul>
+                                      <li>Tadzjikistan</li>
+                                      <li>Taiwan</li>
+                                      <li>Tanzania</li>
+                                      <li>Thailand</li>
+                                      <li>Togo</li>
+                                      <li>Tokelau-eilanden</li>
+                                      <li>Tonga</li>
+                                      <li>Trinidad en Tobago</li>
+                                      <li>Tsjaad</li>
+                                      <li>Tsjechië</li>
+                                      <li>Tunesië</li>
+                                      <li>Turkije</li>
+                                      <li>Turkmenistan</li>
+                                      <li>Tuvalu</li>
+                                      </ul>
+                                  </div>
+                                </div>
+                              <div class="topic">
+                                  <h2>U</h2>
+                                  <div class="subtopics">
+                                    <ul>
+                                      <li>Uganda</li>
+                                      <li>Uruguay</li>
+                                      </ul>
+                                  </div>
+                                </div>
+                              <div class="topic">
+                                  <h2>V</h2>
+                                  <div class="subtopics">
+                                    <ul>
+                                      <li>Vanuatu</li>
+                                      <li>Venezuela</li>
+                                      <li>Verenigd Koninkrijk</li>
+                                      <li>Verenigde Arabische Emiraten</li>
+                                      <li>Verenigde Staten van Amerika</li>
+                                      <li>Vietnam</li>
+                                      </ul>
+                                  </div>
+                                </div>
+                              <div class="topic">
+                                  <h2>W</h2>
+                                  <div class="subtopics">
+                                    <ul>
+                                      <li>Wallis en Futuna</li>
+                                      </ul>
+                                  </div>
+                                </div>
+                              <div class="topic">
+                                  <h2>Z</h2>
+                                  <div class="subtopics">
+                                    <ul>
+                                      <li>Zambia</li>
+                                      <li>Zimbabwe</li>
+                                      <li>Zuid-Afrika</li>
+                                      <li>Zuid-Korea</li>
+                                      <li>Zuid-Sudan</li>
+                                      <li>Zweden</li>
+                                      <li>Zwitserland</li>
+                                      </ul>
+                                  </div>
+                                </div>
+                              </div>
+                          </div>
                     </div>
                 </div>
             </div>
