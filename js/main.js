@@ -922,12 +922,12 @@ function autocompleteCountries() {
 
     if ($('#tags').length) {
         $( "#tags" ).autocomplete({
-        source: availableTags,
-        select: function( event, ui ) {
-            $('.country-information').show();
-            $('.number-holder').text(ui.item.number).attr("href", "tel:" + ui.item.number);
-            $('.country-holder').text(ui.item.label);
-        }
+            source: availableTags,
+            select: function( event, ui ) {
+                $('.country-information').show();
+                $('.number-holder').text(ui.item.number).attr("href", "tel:" + ui.item.number);
+                $('.country-holder').text(ui.item.label);
+            }
         });
     }
 
@@ -938,11 +938,22 @@ function autocompleteCountries() {
             source: countriesNL,
             select: function( event, ui ) {
                 if (ui.item && ui.item.label === " Bahama's ") {
-                    $('.ambassade__results .bahamas').css('display', 'block');
+                    $('.ambassade__results .bahamas').css({
+                        'display': 'block',
+                        'margin-bottom': '30px'
+                    });
+                } else {
+                    $('.ambassade__results .bahamas').css('display', 'none');
                 }
 
-                $('.ambassade__results').css('display', 'flex');
                 $('.multiselect').show();
+                $('.ambassade__results').css('display', 'none');
+                $('.ambassade__wrapper').addClass('is-loading');
+
+                setTimeout(() => {
+                    $('.ambassade__wrapper').removeClass('is-loading');
+                    $('.ambassade__results').css('display', 'flex');
+                }, 1000)
             },
         });
     }
@@ -1050,6 +1061,14 @@ function filterSearch() {
         if (secondCheckbox.checked) {
             $('.chicago').parent().addClass('hide');
         }
+
+        $('.ambassade__results').css('display', 'none');
+        $('.ambassade__wrapper').addClass('is-loading');
+
+        setTimeout(() => {
+            $('.ambassade__wrapper').removeClass('is-loading');
+            $('.ambassade__results').css('display', 'flex');
+        }, 500)
     });
 
     $('#two').click(() => {
@@ -1058,6 +1077,14 @@ function filterSearch() {
         if (firstCheckbox.checked) {
             $('.chicago').parent().addClass('hide');
         }
+
+        $('.ambassade__results').css('display', 'none');
+        $('.ambassade__wrapper').addClass('is-loading');
+
+        setTimeout(() => {
+            $('.ambassade__wrapper').removeClass('is-loading');
+            $('.ambassade__results').css('display', 'flex');
+        }, 500)
     });
 
     $('.alphabetical li').click((index) => {

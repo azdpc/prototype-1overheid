@@ -10535,7 +10535,6 @@ ol.custom-ordered-list li .title {
 }
 
 .ambassade__block--clickable a {
-  color: #000;
 }
 
 .ambassade__block--clickable h4 {
@@ -10661,6 +10660,11 @@ ol.custom-ordered-list li .title {
   cursor: pointer;
 }
 
+.ambassade__wrapper .loader {
+  border: 3px solid rgba(0, 0, 0, 0.2) !important;
+  border-top-color: #000 !important;
+}
+
 .ambassade__results {
   display: none;
   margin-top: 24px;
@@ -10687,6 +10691,10 @@ ol.custom-ordered-list li .title {
 #checkboxes label {
   display: block;
   margin: .5rem 0;
+}
+
+#checkboxes label input {
+  margin-right: 5px;
 }
 
 #checkboxes2 label{
