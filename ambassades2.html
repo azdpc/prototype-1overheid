@@ -2,603 +2,608 @@
 <html lang="nl-NL">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Nederlandse ambassades | 1overheid</title>
-    <meta name="description" content="Prototype voor 1overheid: informatie, diensten, beleid en bestuur">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/additional.css">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Nederlandse ambassades | 1overheid</title>
+  <meta name="description" content="Prototype voor 1overheid: informatie, diensten, beleid en bestuur">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/additional.css">
 </head>
 
 <body cz-shortcut-listen="true">
-    <!-- include header -->
-    <div azdpc-include-html="header.html"></div>
-    <main class="actionable">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12">
-                    <ul class="breadcrumb">
-                        <li class="d-none d-md-block"><a href="home.html">Home</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-10 offset-lg-1 col-md-12">
-                    <div class="container-fluid">
-                        <div class="row contact__header">
-                            <div class="col-md-12 notVisibleInFrame">
-                                <a href="ambassades.html">Versie 1</a>
-                                <a href="ambassades2.html">Versie 2</a>
-                                <h1>Contact met de Nederlandse ambassades</h1><br />
-                                <h2>Wilt u een ambassade bereiken vanuit Nederland?
-                                    <br />Bel: <a href="tel:+31247247247">+31 247 247 247</a></h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    </main>
-    <main style="padding: 30px 0;">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-10 offset-lg-1 col-md-12">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-12">
-                                <h2>Vind een Nederlandse ambassade of consulaat</h2>
-                                <div class="ui-widget input-group country-selector">
-                                    <input type="text" class="form-control" id="ambassades"
-                                        placeholder="Kies een land.." aria-label="Country"
-                                        aria-describedby="choose-country" style="position: relative;">
-                                        <div class="use-my-location"><div class="icon-wrapper"><div class="icon location"></div></div></div>
-                                </div>
-                                <div class="below-search-country">
-                                    <div class="advanced__search">Filteren op</div>
-                                </div>
-
-                                <div class="advanced__box">
-                                    <h4>Wat wilt u regelen?</h4>
-                                    <div id="checkboxes2">
-                                        <label for="one">
-                                            <input type="checkbox" id="one" />Paspoort of ID kaart</label>
-                                        <label for="two">
-                                            <input type="checkbox" id="two" />DigiD</label>
-                                        <label for="three">
-                                            <input type="checkbox" id="three" />MVV</label>
-                                        <label for="four">
-                                            <input type="checkbox" id="four" />Visa</label>
-                                        <label for="five">
-                                            <input type="checkbox" id="five" />Consulaire verklaringen</label>
-                                        <label for="six">
-                                            <input type="checkbox" id="six" />Legalisaties</label>
-                                        <label for="seven">
-                                            <input type="checkbox" id="seven" />Inburgeringsexamens</label>
-                                        <label for="eight">
-                                            <input type="checkbox" id="eight" />Optie procedure</label>
-                                        <label for="nine">
-                                            <input type="checkbox" id="nine" />Naturalisatie procedure</label>
-                                        <label for="ten">
-                                            <input type="checkbox" id="ten" />Hulp bij nood</label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row ambassade__results">
-                            <div class="col-12">
-                                <h3>Resultaten</h3>
-                                <p class="bahamas">Er is geen ambassade of consulaat in dit land. U kunt terecht bij een van de volgende Nederlandse ambassades of consulaten.</p>
-                                <h3 class="bahamas">Alternatieven</h3>
-                            </div>
-                            
-                            <div class="col-12 col-sm-4">
-                                <div class="ambassade__block ambassade__block--clickable washington">
-                                    <a href="ambassade-washington.html">
-                                    <h4>Nederlandse ambassade in Washington</h4>
-                                    </a>
-                                    <div class="row">
-                                        <div class="col-2 icon pointer"></div>
-                                        <div class="col-10">
-                                            4200 Linnean Avenue NW Washington, DC 20008
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-2 icon phone"></div>
-                                        <div class="col-10">
-                                            Telefoon:
-                                            <a href="tel:+12022445300">
-                                                +12022445300
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-sm-4">
-                                <div class="ambassade__block ambassade__block--clickable chicago">
-                                    <a href="">
-                                        <h4>Consulaat-generaal in Chicago</h4>
-                                    </a>
-                                    <div class="row">
-                                        <div class="col-2 icon pointer"></div>
-                                        <div class="col-10">
-                                            303 E. Wacker DriveSuite 2600 Chicago, IL 60601
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-2 icon phone"></div>
-                                        <div class="col-10">
-                                            Telefoon: <a href="tel:+13127801314">+13127801314</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-sm-4">
-                                <div class="ambassade__block ambassade__block--clickable miami">
-                                    <a href="">
-                                        <h4>Consulaat-generaal in Miami</h4>
-                                    </a>
-                                    <div class="row">
-                                        <div class="col-2 icon pointer"></div>
-                                        <div class="col-10">
-                                            701 Brickell Ave., Suite 500 Miami, FL 33131
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-2 icon phone"></div>
-                                        <div class="col-10">
-                                            Telefoon: <a href="tel:+17868660480">+17868660480</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-sm-4">
-                                <div class="ambassade__block ambassade__block--clickable ny">
-                                    <a href="">
-                                        <h4>Consulaat-generaal in New York</h4>
-                                    </a>
-                                    <div class="row">
-                                        <div class="col-2 icon pointer"></div>
-                                        <div class="col-10">
-                                            666 Third Ave., 19th Floor New York, NY 10017
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-2 icon phone"></div>
-                                        <div class="col-10">
-                                            Telefoon: <a href="tel:+16465572200">+16465572200</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-sm-4">
-                                <div class="ambassade__block ambassade__block--clickable sf">
-                                    <a href="">
-                                        <h4>Consulaat-generaal in San Francisco</h4>
-                                    </a>
-                                    <div class="row">
-                                        <div class="col-2 icon pointer"></div>
-                                        <div class="col-10">
-                                            120 Kearny Street, Suite 3100 San Francisco, CA 94104
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-2 icon phone"></div>
-                                        <div class="col-10">
-                                            Telefoon: <a href="tel:+1415291203324">+1415291203324</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="topics alphabetical two-columns">
-                            <div class="column">
-                              <div class="topic">
-                                  <h2>A</h2>
-                                  <div class="subtopics">
-                                    <ul>
-                                      <li>Afghanistan</li>
-                                      <li>Albanië</li>
-                                      <li>Algerije</li>
-                                      <li>Amerikaans-Samoa</li>
-                                      <li>Amerikaanse Maagdeneilanden</li>
-                                      <li>Andorra</li>
-                                      <li>Angola</li>
-                                      <li>Anguilla</li>
-                                      <li>Antigua en Barbuda</li>
-                                      <li>Argentinië</li>
-                                      <li>Armenië</li>
-                                      <li>Australië</li>
-                                      <li>Azerbeidzjan</li>
-                                      <li>Azoren</li>
-                                      </ul>
-                                  </div>
-                                </div>
-                              <div class="topic">
-                                  <h2>B</h2>
-                                  <div class="subtopics">
-                                    <ul>
-                                      <li>Bahama's</li>
-                                      <li>Bahrein</li>
-                                      <li>Bangladesh</li>
-                                      <li>Barbados</li>
-                                      <li>Belarus (Wit-Rusland)</li>
-                                      <li>België</li>
-                                      <li>Belize</li>
-                                      <li>Benin</li>
-                                      <li>Bermuda</li>
-                                      <li>Bhutan</li>
-                                      <li>Bolivia</li>
-                                      <li>Bosnië en Herzegovina</li>
-                                      <li>Botswana</li>
-                                      <li>Brazilië</li>
-                                      <li>Britse Maagdeneilanden</li>
-                                      <li>Brunei Darussalam</li>
-                                      <li>Bulgarije</li>
-                                      <li>Burkina Faso</li>
-                                      <li>Burundi</li>
-                                      </ul>
-                                  </div>
-                                </div>
-                              <div class="topic">
-                                  <h2>C</h2>
-                                  <div class="subtopics">
-                                    <ul>
-                                      <li>Cambodja</li>
-                                      <li>Canada</li>
-                                      <li>Canarische eilanden</li>
-                                      <li>Centraal-Afrikaanse Republiek</li>
-                                      <li>Chili</li>
-                                      <li>China</li>
-                                      <li>Colombia</li>
-                                      <li>Comoren</li>
-                                      <li>Congo, de Republiek</li>
-                                      <li>Congo, Democratische Republiek</li>
-                                      <li>Cookeilanden</li>
-                                      <li>Costa Rica</li>
-                                      <li>Cuba</li>
-                                      <li>Cyprus</li>
-                                      </ul>
-                                  </div>
-                                </div>
-                              <div class="topic">
-                                  <h2>D</h2>
-                                  <div class="subtopics">
-                                    <ul>
-                                      <li>Denemarken</li>
-                                      <li>Djibouti</li>
-                                      <li>Dominica</li>
-                                      <li>Dominicaanse Republiek</li>
-                                      <li>Duitsland</li>
-                                      </ul>
-                                  </div>
-                                </div>
-                              <div class="topic">
-                                  <h2>E</h2>
-                                  <div class="subtopics">
-                                    <ul>
-                                      <li>Ecuador</li>
-                                      <li>Egypte</li>
-                                      <li>El Salvador</li>
-                                      <li>Equatoriaal-Guinea</li>
-                                      <li>Eritrea</li>
-                                      <li>Estland</li>
-                                      <li>Ethiopië</li>
-                                      </ul>
-                                  </div>
-                                </div>
-                              <div class="topic">
-                                  <h2>F</h2>
-                                  <div class="subtopics">
-                                    <ul>
-                                      <li>Fiji</li>
-                                      <li>Filipijnen</li>
-                                      <li>Finland</li>
-                                      <li>Frankrijk</li>
-                                      <li>Frans-Guyana</li>
-                                      <li>Frans-Polynesië</li>
-                                      </ul>
-                                  </div>
-                                </div>
-                              <div class="topic">
-                                  <h2>G</h2>
-                                  <div class="subtopics">
-                                    <ul>
-                                      <li>Gabon</li>
-                                      <li>Gambia</li>
-                                      <li>Georgië</li>
-                                      <li>Ghana</li>
-                                      <li>Gibraltar</li>
-                                      <li>Grenada</li>
-                                      <li>Griekenland</li>
-                                      <li>Groenland</li>
-                                      <li>Guadeloupe</li>
-                                      <li>Guatemala</li>
-                                      <li>Guernsey</li>
-                                      <li>Guinee</li>
-                                      <li>Guinee-Bissau</li>
-                                      <li>Guyana</li>
-                                      </ul>
-                                  </div>
-                                </div>
-                              <div class="topic">
-                                  <h2>H</h2>
-                                  <div class="subtopics">
-                                    <ul>
-                                      <li>Hawaï</li>
-                                      <li>Haïti</li>
-                                      <li>Heilige Stoel / Vaticaanstad</li>
-                                      <li>Honduras</li>
-                                      <li>Hongarije</li>
-                                      <li>Hongkong SAR</li>
-                                      </ul>
-                                  </div>
-                                </div>
-                              <div class="topic">
-                                  <h2>I</h2>
-                                  <div class="subtopics">
-                                    <ul>
-                                      <li>Ierland</li>
-                                      <li>IJsland</li>
-                                      <li>India</li>
-                                      <li>Indonesië</li>
-                                      <li>Irak</li>
-                                      <li>Iran</li>
-                                      <li>Israël</li>
-                                      <li>Italië</li>
-                                      <li>Ivoorkust</li>
-                                      </ul>
-                                  </div>
-                                </div>
-                              <div class="topic">
-                                  <h2>J</h2>
-                                  <div class="subtopics">
-                                    <ul>
-                                      <li>Jamaica</li>
-                                      <li>Japan</li>
-                                      <li>Jemen</li>
-                                      <li>Jersey</li>
-                                      <li>Jordanië</li>
-                                      </ul>
-                                  </div>
-                                </div>
-                              <div class="topic">
-                                  <h2>K</h2>
-                                  <div class="subtopics">
-                                    <ul>
-                                      <li>Kaaimaneilanden</li>
-                                      <li>Kaapverdië</li>
-                                      <li>Kameroen</li>
-                                      <li>Kazachstan</li>
-                                      <li>Kenia</li>
-                                      <li>Kirgizië</li>
-                                      <li>Kiribati</li>
-                                      <li>Koeweit</li>
-                                      <li>Kosovo</li>
-                                      <li>Kroatië</li>
-                                      </ul>
-                                  </div>
-                                </div>
-                              <div class="topic">
-                                  <h2>L</h2>
-                                  <div class="subtopics">
-                                    <ul>
-                                      <li>Laos</li>
-                                      <li>Lesotho</li>
-                                      <li>Letland</li>
-                                      <li>Libanon</li>
-                                      <li>Liberia</li>
-                                      <li>Libië</li>
-                                      <li>Liechtenstein</li>
-                                      <li>Litouwen</li>
-                                      <li>Luxemburg</li>
-                                      </ul>
-                                  </div>
-                                </div>
-                              </div>
-                          <div class="column">
-                              <div class="topic">
-                                  <h2>M</h2>
-                                  <div class="subtopics">
-                                    <ul>
-                                      <li>Macau SAR</li>
-                                      <li>Madagaskar</li>
-                                      <li>Madeira-eilanden</li>
-                                      <li>Malawi</li>
-                                      <li>Maldiven</li>
-                                      <li>Maleisië</li>
-                                      <li>Mali</li>
-                                      <li>Malta</li>
-                                      <li>Marokko</li>
-                                      <li>Marshalleilanden</li>
-                                      <li>Martinique</li>
-                                      <li>Mauritanië</li>
-                                      <li>Mauritius</li>
-                                      <li>Mexico</li>
-                                      <li>Micronesia</li>
-                                      <li>Moldavië</li>
-                                      <li>Monaco</li>
-                                      <li>Mongolië</li>
-                                      <li>Montenegro</li>
-                                      <li>Montserrat</li>
-                                      <li>Mozambique</li>
-                                      <li>Myanmar</li>
-                                      </ul>
-                                  </div>
-                                </div>
-                              <div class="topic">
-                                  <h2>N</h2>
-                                  <div class="subtopics">
-                                    <ul>
-                                      <li>Namibië</li>
-                                      <li>Nauru</li>
-                                      <li>Nepal</li>
-                                      <li>Nicaragua</li>
-                                      <li>Nieuw-Caledonië</li>
-                                      <li>Nieuw-Zeeland</li>
-                                      <li>Niger</li>
-                                      <li>Nigeria</li>
-                                      <li>Niue</li>
-                                      <li>Noord Macedonië</li>
-                                      <li>Noord-Korea</li>
-                                      <li>Noorwegen</li>
-                                      </ul>
-                                  </div>
-                                </div>
-                              <div class="topic">
-                                  <h2>O</h2>
-                                  <div class="subtopics">
-                                    <ul>
-                                      <li>Oekraïne</li>
-                                      <li>Oezbekistan</li>
-                                      <li>Oman</li>
-                                      <li>Oost-Timor</li>
-                                      <li>Oostenrijk</li>
-                                      </ul>
-                                  </div>
-                                </div>
-                              <div class="topic">
-                                  <h2>P</h2>
-                                  <div class="subtopics">
-                                    <ul>
-                                      <li>Pakistan</li>
-                                      <li>Palau</li>
-                                      <li>Palestijnse Gebieden</li>
-                                      <li>Panama</li>
-                                      <li>Papoea-Nieuw-Guinea</li>
-                                      <li>Paraguay</li>
-                                      <li>Peru</li>
-                                      <li>Pitcairneilanden</li>
-                                      <li>Polen</li>
-                                      <li>Portugal</li>
-                                      <li>Puerto Rico</li>
-                                      </ul>
-                                  </div>
-                                </div>
-                              <div class="topic">
-                                  <h2>Q</h2>
-                                  <div class="subtopics">
-                                    <ul>
-                                      <li>Qatar</li>
-                                      </ul>
-                                  </div>
-                                </div>
-                              <div class="topic">
-                                  <h2>R</h2>
-                                  <div class="subtopics">
-                                    <ul>
-                                      <li>Roemenië</li>
-                                      <li>Rusland</li>
-                                      <li>Rwanda</li>
-                                      </ul>
-                                  </div>
-                                </div>
-                              <div class="topic">
-                                  <h2>S</h2>
-                                  <div class="subtopics">
-                                    <ul>
-                                      <li>Saint Kitts en Nevis</li>
-                                      <li>Saint Lucia</li>
-                                      <li>Saint Vincent en de Grenadines</li>
-                                      <li>Salomonseilanden</li>
-                                      <li>Samoa</li>
-                                      <li>San Marino</li>
-                                      <li>Sao Tomé en Principe</li>
-                                      <li>Saoedi-Arabië</li>
-                                      <li>Senegal</li>
-                                      <li>Servië</li>
-                                      <li>Seychellen</li>
-                                      <li>Sierra Leone</li>
-                                      <li>Singapore</li>
-                                      <li>Slovenië</li>
-                                      <li>Slowakije</li>
-                                      <li>Somalië</li>
-                                      <li>Spanje</li>
-                                      <li>Sri Lanka</li>
-                                      <li>Sudan</li>
-                                      <li>Suriname</li>
-                                      <li>Swaziland</li>
-                                      <li>Syrië</li>
-                                      </ul>
-                                  </div>
-                                </div>
-                              <div class="topic">
-                                  <h2>T</h2>
-                                  <div class="subtopics">
-                                    <ul>
-                                      <li>Tadzjikistan</li>
-                                      <li>Taiwan</li>
-                                      <li>Tanzania</li>
-                                      <li>Thailand</li>
-                                      <li>Togo</li>
-                                      <li>Tokelau-eilanden</li>
-                                      <li>Tonga</li>
-                                      <li>Trinidad en Tobago</li>
-                                      <li>Tsjaad</li>
-                                      <li>Tsjechië</li>
-                                      <li>Tunesië</li>
-                                      <li>Turkije</li>
-                                      <li>Turkmenistan</li>
-                                      <li>Tuvalu</li>
-                                      </ul>
-                                  </div>
-                                </div>
-                              <div class="topic">
-                                  <h2>U</h2>
-                                  <div class="subtopics">
-                                    <ul>
-                                      <li>Uganda</li>
-                                      <li>Uruguay</li>
-                                      </ul>
-                                  </div>
-                                </div>
-                              <div class="topic">
-                                  <h2>V</h2>
-                                  <div class="subtopics">
-                                    <ul>
-                                      <li>Vanuatu</li>
-                                      <li>Venezuela</li>
-                                      <li>Verenigd Koninkrijk</li>
-                                      <li>Verenigde Arabische Emiraten</li>
-                                      <li>Verenigde Staten van Amerika</li>
-                                      <li>Vietnam</li>
-                                      </ul>
-                                  </div>
-                                </div>
-                              <div class="topic">
-                                  <h2>W</h2>
-                                  <div class="subtopics">
-                                    <ul>
-                                      <li>Wallis en Futuna</li>
-                                      </ul>
-                                  </div>
-                                </div>
-                              <div class="topic">
-                                  <h2>Z</h2>
-                                  <div class="subtopics">
-                                    <ul>
-                                      <li>Zambia</li>
-                                      <li>Zimbabwe</li>
-                                      <li>Zuid-Afrika</li>
-                                      <li>Zuid-Korea</li>
-                                      <li>Zuid-Sudan</li>
-                                      <li>Zweden</li>
-                                      <li>Zwitserland</li>
-                                      </ul>
-                                  </div>
-                                </div>
-                              </div>
-                          </div>
-                    </div>
-                </div>
-            </div>
+  <!-- include header -->
+  <div azdpc-include-html="header.html"></div>
+  <main class="actionable">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <ul class="breadcrumb">
+            <li class="d-none d-md-block"><a href="home.html">Home</a></li>
+          </ul>
         </div>
-    </main>
-    <!-- Include footer -->
-    <div azdpc-include-html="footer.html"></div>
-    <script src="js/main.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
-        integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+      </div>
+      <div class="row">
+        <div class="col-lg-10 offset-lg-1 col-md-12">
+          <div class="container-fluid">
+            <div class="row contact__header">
+              <div class="col-md-12 notVisibleInFrame">
+                <a href="ambassades.html">Versie 1</a>
+                <a href="ambassades2.html">Versie 2</a>
+                <h1>Contact met de Nederlandse ambassades</h1><br />
+                <h2>Wilt u een ambassade bereiken vanuit Nederland?
+                  <br />Bel: <a href="tel:+31247247247">+31 247 247 247</a></h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <main style="padding: 30px 0;">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-10 offset-lg-1 col-md-12">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12">
+                <h2>Vind een Nederlandse ambassade of consulaat</h2>
+                <div class="ui-widget input-group country-selector">
+                  <input type="text" class="form-control" id="ambassades" placeholder="Kies een land.."
+                    aria-label="Country" aria-describedby="choose-country" style="position: relative;">
+                  <div class="use-my-location">
+                    <div class="icon-wrapper">
+                      <div class="icon location"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="below-search-country">
+                  <div class="advanced__search">Filteren op</div>
+                </div>
+
+                <div class="advanced__box">
+                  <h4>Wat wilt u regelen?</h4>
+                  <div id="checkboxes2">
+                    <label for="one">
+                      <input type="checkbox" id="one" />Paspoort of ID kaart</label>
+                    <label for="two">
+                      <input type="checkbox" id="two" />DigiD</label>
+                    <label for="three">
+                      <input type="checkbox" id="three" />MVV</label>
+                    <label for="four">
+                      <input type="checkbox" id="four" />Visa</label>
+                    <label for="five">
+                      <input type="checkbox" id="five" />Consulaire verklaringen</label>
+                    <label for="six">
+                      <input type="checkbox" id="six" />Legalisaties</label>
+                    <label for="seven">
+                      <input type="checkbox" id="seven" />Inburgeringsexamens</label>
+                    <label for="eight">
+                      <input type="checkbox" id="eight" />Optie procedure</label>
+                    <label for="nine">
+                      <input type="checkbox" id="nine" />Naturalisatie procedure</label>
+                    <label for="ten">
+                      <input type="checkbox" id="ten" />Hulp bij nood</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row ambassade__results">
+              <div class="col-12">
+                <h3>Resultaten</h3>
+                <p class="bahamas">Er is geen ambassade of consulaat in dit land. U kunt terecht bij een van de volgende
+                  Nederlandse ambassades of consulaten.</p>
+                <h3 class="bahamas">Alternatieven</h3>
+              </div>
+
+              <div class="col-12 col-sm-4">
+                <div class="ambassade__block ambassade__block--clickable washington">
+                  <a href="ambassade-washington.html">
+                    <h4>Nederlandse ambassade in Washington</h4>
+                  </a>
+                  <div class="row">
+                    <div class="col-2 icon pointer"></div>
+                    <div class="col-10">
+                      4200 Linnean Avenue NW Washington, DC 20008
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-2 icon phone"></div>
+                    <div class="col-10">
+                      Telefoon:
+                      <a href="tel:+12022445300">
+                        +12022445300
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-4">
+                <div class="ambassade__block ambassade__block--clickable chicago">
+                  <a href="">
+                    <h4>Consulaat-generaal in Chicago</h4>
+                  </a>
+                  <div class="row">
+                    <div class="col-2 icon pointer"></div>
+                    <div class="col-10">
+                      303 E. Wacker DriveSuite 2600 Chicago, IL 60601
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-2 icon phone"></div>
+                    <div class="col-10">
+                      Telefoon: <a href="tel:+13127801314">+13127801314</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-4">
+                <div class="ambassade__block ambassade__block--clickable miami">
+                  <a href="">
+                    <h4>Consulaat-generaal in Miami</h4>
+                  </a>
+                  <div class="row">
+                    <div class="col-2 icon pointer"></div>
+                    <div class="col-10">
+                      701 Brickell Ave., Suite 500 Miami, FL 33131
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-2 icon phone"></div>
+                    <div class="col-10">
+                      Telefoon: <a href="tel:+17868660480">+17868660480</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-4">
+                <div class="ambassade__block ambassade__block--clickable ny">
+                  <a href="">
+                    <h4>Consulaat-generaal in New York</h4>
+                  </a>
+                  <div class="row">
+                    <div class="col-2 icon pointer"></div>
+                    <div class="col-10">
+                      666 Third Ave., 19th Floor New York, NY 10017
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-2 icon phone"></div>
+                    <div class="col-10">
+                      Telefoon: <a href="tel:+16465572200">+16465572200</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-4">
+                <div class="ambassade__block ambassade__block--clickable sf">
+                  <a href="">
+                    <h4>Consulaat-generaal in San Francisco</h4>
+                  </a>
+                  <div class="row">
+                    <div class="col-2 icon pointer"></div>
+                    <div class="col-10">
+                      120 Kearny Street, Suite 3100 San Francisco, CA 94104
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-2 icon phone"></div>
+                    <div class="col-10">
+                      Telefoon: <a href="tel:+1415291203324">+1415291203324</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="topics alphabetical two-columns">
+              <div class="column">
+                <div class="topic">
+                  <h2>A</h2>
+                  <div class="subtopics">
+                    <ul>
+                      <li>Afghanistan</li>
+                      <li>Albanië</li>
+                      <li>Algerije</li>
+                      <li>Amerikaans-Samoa</li>
+                      <li>Amerikaanse Maagdeneilanden</li>
+                      <li>Andorra</li>
+                      <li>Angola</li>
+                      <li>Anguilla</li>
+                      <li>Antigua en Barbuda</li>
+                      <li>Argentinië</li>
+                      <li>Armenië</li>
+                      <li>Australië</li>
+                      <li>Azerbeidzjan</li>
+                      <li>Azoren</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="topic">
+                  <h2>B</h2>
+                  <div class="subtopics">
+                    <ul>
+                      <li>Bahama's</li>
+                      <li>Bahrein</li>
+                      <li>Bangladesh</li>
+                      <li>Barbados</li>
+                      <li>Belarus (Wit-Rusland)</li>
+                      <li>België</li>
+                      <li>Belize</li>
+                      <li>Benin</li>
+                      <li>Bermuda</li>
+                      <li>Bhutan</li>
+                      <li>Bolivia</li>
+                      <li>Bosnië en Herzegovina</li>
+                      <li>Botswana</li>
+                      <li>Brazilië</li>
+                      <li>Britse Maagdeneilanden</li>
+                      <li>Brunei Darussalam</li>
+                      <li>Bulgarije</li>
+                      <li>Burkina Faso</li>
+                      <li>Burundi</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="topic">
+                  <h2>C</h2>
+                  <div class="subtopics">
+                    <ul>
+                      <li>Cambodja</li>
+                      <li>Canada</li>
+                      <li>Canarische eilanden</li>
+                      <li>Centraal-Afrikaanse Republiek</li>
+                      <li>Chili</li>
+                      <li>China</li>
+                      <li>Colombia</li>
+                      <li>Comoren</li>
+                      <li>Congo, de Republiek</li>
+                      <li>Congo, Democratische Republiek</li>
+                      <li>Cookeilanden</li>
+                      <li>Costa Rica</li>
+                      <li>Cuba</li>
+                      <li>Cyprus</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="topic">
+                  <h2>D</h2>
+                  <div class="subtopics">
+                    <ul>
+                      <li>Denemarken</li>
+                      <li>Djibouti</li>
+                      <li>Dominica</li>
+                      <li>Dominicaanse Republiek</li>
+                      <li>Duitsland</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="topic">
+                  <h2>E</h2>
+                  <div class="subtopics">
+                    <ul>
+                      <li>Ecuador</li>
+                      <li>Egypte</li>
+                      <li>El Salvador</li>
+                      <li>Equatoriaal-Guinea</li>
+                      <li>Eritrea</li>
+                      <li>Estland</li>
+                      <li>Ethiopië</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="topic">
+                  <h2>F</h2>
+                  <div class="subtopics">
+                    <ul>
+                      <li>Fiji</li>
+                      <li>Filipijnen</li>
+                      <li>Finland</li>
+                      <li>Frankrijk</li>
+                      <li>Frans-Guyana</li>
+                      <li>Frans-Polynesië</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="topic">
+                  <h2>G</h2>
+                  <div class="subtopics">
+                    <ul>
+                      <li>Gabon</li>
+                      <li>Gambia</li>
+                      <li>Georgië</li>
+                      <li>Ghana</li>
+                      <li>Gibraltar</li>
+                      <li>Grenada</li>
+                      <li>Griekenland</li>
+                      <li>Groenland</li>
+                      <li>Guadeloupe</li>
+                      <li>Guatemala</li>
+                      <li>Guernsey</li>
+                      <li>Guinee</li>
+                      <li>Guinee-Bissau</li>
+                      <li>Guyana</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="topic">
+                  <h2>H</h2>
+                  <div class="subtopics">
+                    <ul>
+                      <li>Hawaï</li>
+                      <li>Haïti</li>
+                      <li>Heilige Stoel / Vaticaanstad</li>
+                      <li>Honduras</li>
+                      <li>Hongarije</li>
+                      <li>Hongkong SAR</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="topic">
+                  <h2>I</h2>
+                  <div class="subtopics">
+                    <ul>
+                      <li>Ierland</li>
+                      <li>IJsland</li>
+                      <li>India</li>
+                      <li>Indonesië</li>
+                      <li>Irak</li>
+                      <li>Iran</li>
+                      <li>Israël</li>
+                      <li>Italië</li>
+                      <li>Ivoorkust</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="topic">
+                  <h2>J</h2>
+                  <div class="subtopics">
+                    <ul>
+                      <li>Jamaica</li>
+                      <li>Japan</li>
+                      <li>Jemen</li>
+                      <li>Jersey</li>
+                      <li>Jordanië</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="topic">
+                  <h2>K</h2>
+                  <div class="subtopics">
+                    <ul>
+                      <li>Kaaimaneilanden</li>
+                      <li>Kaapverdië</li>
+                      <li>Kameroen</li>
+                      <li>Kazachstan</li>
+                      <li>Kenia</li>
+                      <li>Kirgizië</li>
+                      <li>Kiribati</li>
+                      <li>Koeweit</li>
+                      <li>Kosovo</li>
+                      <li>Kroatië</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="topic">
+                  <h2>L</h2>
+                  <div class="subtopics">
+                    <ul>
+                      <li>Laos</li>
+                      <li>Lesotho</li>
+                      <li>Letland</li>
+                      <li>Libanon</li>
+                      <li>Liberia</li>
+                      <li>Libië</li>
+                      <li>Liechtenstein</li>
+                      <li>Litouwen</li>
+                      <li>Luxemburg</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="column">
+                <div class="topic">
+                  <h2>M</h2>
+                  <div class="subtopics">
+                    <ul>
+                      <li>Macau SAR</li>
+                      <li>Madagaskar</li>
+                      <li>Madeira-eilanden</li>
+                      <li>Malawi</li>
+                      <li>Maldiven</li>
+                      <li>Maleisië</li>
+                      <li>Mali</li>
+                      <li>Malta</li>
+                      <li>Marokko</li>
+                      <li>Marshalleilanden</li>
+                      <li>Martinique</li>
+                      <li>Mauritanië</li>
+                      <li>Mauritius</li>
+                      <li>Mexico</li>
+                      <li>Micronesia</li>
+                      <li>Moldavië</li>
+                      <li>Monaco</li>
+                      <li>Mongolië</li>
+                      <li>Montenegro</li>
+                      <li>Montserrat</li>
+                      <li>Mozambique</li>
+                      <li>Myanmar</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="topic">
+                  <h2>N</h2>
+                  <div class="subtopics">
+                    <ul>
+                      <li>Namibië</li>
+                      <li>Nauru</li>
+                      <li>Nepal</li>
+                      <li>Nicaragua</li>
+                      <li>Nieuw-Caledonië</li>
+                      <li>Nieuw-Zeeland</li>
+                      <li>Niger</li>
+                      <li>Nigeria</li>
+                      <li>Niue</li>
+                      <li>Noord Macedonië</li>
+                      <li>Noord-Korea</li>
+                      <li>Noorwegen</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="topic">
+                  <h2>O</h2>
+                  <div class="subtopics">
+                    <ul>
+                      <li>Oekraïne</li>
+                      <li>Oezbekistan</li>
+                      <li>Oman</li>
+                      <li>Oost-Timor</li>
+                      <li>Oostenrijk</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="topic">
+                  <h2>P</h2>
+                  <div class="subtopics">
+                    <ul>
+                      <li>Pakistan</li>
+                      <li>Palau</li>
+                      <li>Palestijnse Gebieden</li>
+                      <li>Panama</li>
+                      <li>Papoea-Nieuw-Guinea</li>
+                      <li>Paraguay</li>
+                      <li>Peru</li>
+                      <li>Pitcairneilanden</li>
+                      <li>Polen</li>
+                      <li>Portugal</li>
+                      <li>Puerto Rico</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="topic">
+                  <h2>Q</h2>
+                  <div class="subtopics">
+                    <ul>
+                      <li>Qatar</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="topic">
+                  <h2>R</h2>
+                  <div class="subtopics">
+                    <ul>
+                      <li>Roemenië</li>
+                      <li>Rusland</li>
+                      <li>Rwanda</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="topic">
+                  <h2>S</h2>
+                  <div class="subtopics">
+                    <ul>
+                      <li>Saint Kitts en Nevis</li>
+                      <li>Saint Lucia</li>
+                      <li>Saint Vincent en de Grenadines</li>
+                      <li>Salomonseilanden</li>
+                      <li>Samoa</li>
+                      <li>San Marino</li>
+                      <li>Sao Tomé en Principe</li>
+                      <li>Saoedi-Arabië</li>
+                      <li>Senegal</li>
+                      <li>Servië</li>
+                      <li>Seychellen</li>
+                      <li>Sierra Leone</li>
+                      <li>Singapore</li>
+                      <li>Slovenië</li>
+                      <li>Slowakije</li>
+                      <li>Somalië</li>
+                      <li>Spanje</li>
+                      <li>Sri Lanka</li>
+                      <li>Sudan</li>
+                      <li>Suriname</li>
+                      <li>Swaziland</li>
+                      <li>Syrië</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="topic">
+                  <h2>T</h2>
+                  <div class="subtopics">
+                    <ul>
+                      <li>Tadzjikistan</li>
+                      <li>Taiwan</li>
+                      <li>Tanzania</li>
+                      <li>Thailand</li>
+                      <li>Togo</li>
+                      <li>Tokelau-eilanden</li>
+                      <li>Tonga</li>
+                      <li>Trinidad en Tobago</li>
+                      <li>Tsjaad</li>
+                      <li>Tsjechië</li>
+                      <li>Tunesië</li>
+                      <li>Turkije</li>
+                      <li>Turkmenistan</li>
+                      <li>Tuvalu</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="topic">
+                  <h2>U</h2>
+                  <div class="subtopics">
+                    <ul>
+                      <li>Uganda</li>
+                      <li>Uruguay</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="topic">
+                  <h2>V</h2>
+                  <div class="subtopics">
+                    <ul>
+                      <li>Vanuatu</li>
+                      <li>Venezuela</li>
+                      <li>Verenigd Koninkrijk</li>
+                      <li>Verenigde Arabische Emiraten</li>
+                      <li>Verenigde Staten van Amerika</li>
+                      <li>Vietnam</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="topic">
+                  <h2>W</h2>
+                  <div class="subtopics">
+                    <ul>
+                      <li>Wallis en Futuna</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="topic">
+                  <h2>Z</h2>
+                  <div class="subtopics">
+                    <ul>
+                      <li>Zambia</li>
+                      <li>Zimbabwe</li>
+                      <li>Zuid-Afrika</li>
+                      <li>Zuid-Korea</li>
+                      <li>Zuid-Sudan</li>
+                      <li>Zweden</li>
+                      <li>Zwitserland</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- Include footer -->
+  <div azdpc-include-html="footer.html"></div>
+  <script src="js/main.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+    integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
 </body>
 
 </html>
