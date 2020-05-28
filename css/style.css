@@ -10786,26 +10786,26 @@ ol.custom-ordered-list li .title {
   margin-top: 10px;
 }
 
-.nav-tabs {
+.contact-tabs .nav-tabs {
   border: 0;
 }
 
-.nav-link {
+.contact-tabs .nav-link {
   font-size: 12px;
   border: none !important;
 }
 
 @media (min-width: 768px) {
-  .nav-link {
+  .contact-tabs .nav-link {
     font-size: initial;
   }
 }
 
-.nav-link:hover {
+.contact-tabs .nav-link:hover {
   border: none;
 }
 
-.nav-link.active {
+.contact-tabs .nav-link.active {
   background-color: var(--vireo-blue-misty) !important;
   text-decoration: none;
 }

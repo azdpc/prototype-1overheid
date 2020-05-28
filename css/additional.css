@@ -447,7 +447,7 @@ main.government.light {
   background-color: var(--vireo-green-light);
 }
 
-main.tabs {
+main.contact-tabs  {
   padding: 0;
   padding-top: 5px;
   background-color: #d7e9f2;
