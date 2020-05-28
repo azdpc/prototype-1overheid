@@ -450,7 +450,7 @@ main.government.light {
 main.tabs {
   padding: 0;
   padding-top: 5px;
-  background-color: var(--vireo-blue-shade);
+  background-color: #d7e9f2;
 }
 
 /* NAVBAR, LOGO & PAYOFF */
