@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="nl-NL">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Nederlandse ambassades | 1overheid</title>
+    <meta name="description" content="Prototype voor 1overheid: informatie, diensten, beleid en bestuur">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/additional.css">
+</head>
+
+<body cz-shortcut-listen="true">
+    <!-- include header -->
+    <div azdpc-include-html="header.html"></div>
+    <main class="actionable">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <ul class="breadcrumb">
+                        <li class="d-none d-md-block"><a href="home.html">Home</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1 col-md-12">
+                    <div class="container-fluid">
+                        <div class="row contact__header">
+                            <div class="col-md-12 notVisibleInFrame">
+                                <a href="ambassades.html">Versie 1</a>
+                                <a href="ambassades2.html">Versie 2</a>
+                                <h1>Contact met de Nederlandse ambassades</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <main style="padding: 30px 0;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1 col-md-12">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12">
+                                <h2>Vind een Nederlandse ambassade of consulaat</h2>
+                                <div class="ui-widget input-group country-selector">
+                                    <input type="text" class="form-control" id="ambassades"
+                                        placeholder="Kies een land.." aria-label="Country"
+                                        aria-describedby="choose-country" style="position: relative;">
+                                    <div class="use-my-location">
+                                        <div class="icon-wrapper">
+                                            <div class="icon location"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="multiselect">
+                                    <div class="selectBox" onclick="showCheckboxes()">
+                                        <select>
+                                            <option>Wat wilt u regelen?</option>
+                                        </select>
+                                        <div class="overSelect"></div>
+                                    </div>
+                                    <div id="checkboxes">
+                                        <label for="one">
+                                            <input type="checkbox" id="one" />Paspoort of ID kaart</label>
+                                        <label for="two">
+                                            <input type="checkbox" id="two" />DigiD</label>
+                                        <label for="three">
+                                            <input type="checkbox" id="three" />MVV</label>
+                                        <label for="four">
+                                            <input type="checkbox" id="four" />Visa</label>
+                                        <label for="five">
+                                            <input type="checkbox" id="five" />Consulaire verklaringen</label>
+                                        <label for="six">
+                                            <input type="checkbox" id="six" />Legalisaties</label>
+                                        <label for="seven">
+                                            <input type="checkbox" id="seven" />Inburgeringsexamens</label>
+                                        <label for="eight">
+                                            <input type="checkbox" id="eight" />Optie procedure</label>
+                                        <label for="nine">
+                                            <input type="checkbox" id="nine" />Naturalisatie procedure</label>
+                                        <label for="ten">
+                                            <input type="checkbox" id="ten" />Hulp bij nood</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ambassade__wrapper">
+                            <span class="loader"></span>
+                            <div class="row ambassade__results">
+                                <div class="col-12">
+                                    <h3>Resultaten</h3>
+                                    <p class="bahamas">Er is geen ambassade of consulaat in dit land. U kunt terecht bij
+                                        een
+                                        van de volgende Nederlandse ambassades of consulaten.</p>
+                                    <h3 class="bahamas">Alternatieven</h3>
+                                </div>
+                                <div class="col-12 col-sm-4">
+                                    <div class="ambassade__block ambassade__block--clickable washington">
+                                        <a href="ambassade-washington.html">
+                                            <h4>Nederlandse ambassade in Washington</h4>
+                                        </a>
+                                        <div class="row">
+                                            <div class="col-2 icon pointer"></div>
+                                            <div class="col-10">
+                                                4200 Linnean Avenue NW Washington, DC 20008
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-2 icon phone"></div>
+                                            <div class="col-10">
+                                                Telefoon:
+                                                <a href="tel:+12022445300">
+                                                    +12022445300
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-4">
+                                    <div class="ambassade__block ambassade__block--clickable chicago">
+                                        <a href="">
+                                            <h4>Consulaat-generaal in Chicago</h4>
+                                        </a>
+                                        <div class="row">
+                                            <div class="col-2 icon pointer"></div>
+                                            <div class="col-10">
+                                                303 E. Wacker DriveSuite 2600 Chicago, IL 60601
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-2 icon phone"></div>
+                                            <div class="col-10">
+                                                Telefoon: <a href="tel:+13127801314">+13127801314</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-4">
+                                    <div class="ambassade__block ambassade__block--clickable miami">
+                                        <a href="">
+                                            <h4>Consulaat-generaal in Miami</h4>
+                                        </a>
+                                        <div class="row">
+                                            <div class="col-2 icon pointer"></div>
+                                            <div class="col-10">
+                                                701 Brickell Ave., Suite 500 Miami, FL 33131
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-2 icon phone"></div>
+                                            <div class="col-10">
+                                                Telefoon: <a href="tel:+17868660480">+17868660480</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-4">
+                                    <div class="ambassade__block ambassade__block--clickable ny">
+                                        <a href="">
+                                            <h4>Consulaat-generaal in New York</h4>
+                                        </a>
+                                        <div class="row">
+                                            <div class="col-2 icon pointer"></div>
+                                            <div class="col-10">
+                                                666 Third Ave., 19th Floor New York, NY 10017
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-2 icon phone"></div>
+                                            <div class="col-10">
+                                                Telefoon: <a href="tel:+16465572200">+16465572200</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-4">
+                                    <div class="ambassade__block ambassade__block--clickable sf">
+                                        <a href="">
+                                            <h4>Consulaat-generaal in San Francisco</h4>
+                                        </a>
+                                        <div class="row">
+                                            <div class="col-2 icon pointer"></div>
+                                            <div class="col-10">
+                                                120 Kearny Street, Suite 3100 San Francisco, CA 94104
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-2 icon phone"></div>
+                                            <div class="col-10">
+                                                Telefoon: <a href="tel:+1415291203324">+1415291203324</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Include footer -->
+    <div azdpc-include-html="footer.html"></div>
+    <script src="js/main.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+        integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+</body>
+
+</html>
