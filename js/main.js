@@ -857,7 +857,7 @@ function autocompleteCountries() {
     "Zwolle"]
     let boldSearchSuggestion = "<span class='ui-autocomplete-term'>%s</span>";
 
-    var availableTags = [
+    var availableTagsNL = [
         {
             label: "Albanië",
             number: "+555 555 11 11",
@@ -918,11 +918,85 @@ function autocompleteCountries() {
             number: "+555 555 12 34",
             value: 'Curaçao',
         },
-      ];
+    ];
 
-    if ($('#tags').length) {
-        $( "#tags" ).autocomplete({
-            source: availableTags,
+    var availableTagsEN = [
+        {
+            label: "Albania",
+            number: "+555 555 11 11",
+            value: 'Albania',
+        },
+        {
+            label: "China",
+            number: "+555 555 22 22",
+            value: 'China',
+        },
+        {
+            label: "Cuba",
+            number: "+555 555 33 33",
+            value: 'Cuba',
+        },
+        {
+            label: "Ghana",
+            number: "+555 555 44 44",
+            value: 'Ghana',
+        },
+        {
+            label: "Iraq",
+            number: "+555 555 55 55",
+            value: 'Iraq',
+        },
+        {
+            label: "Russia",
+            number: "+555 555 66 66",
+            value: 'Russia',
+        },
+        {
+            label: "United States",
+            number: "+555 555 77 77",
+            value: 'United States',
+        },
+        {
+            label: "America",
+            number: "+555 555 77 77",
+            value: 'United States',
+        },
+        {
+            label: "Turkey",
+            number: "+555 555 88 88",
+            value: 'Turkey',
+        },
+        {
+            label: "United Kingdom",
+            number: "+555 555 99 99",
+            value: 'United Kingdom',
+        },
+        {
+            label: "England",
+            number: "+555 555 99 99",
+            value: 'United Kingdom',
+        },
+        {
+            label: "Curacao",
+            number: "+555 555 12 34",
+            value: 'Curacao',
+        },
+    ];
+
+    if ($('#tagsEN').length) {
+        $( "#tagsEN" ).autocomplete({
+            source: availableTagsEN,
+            select: function( event, ui ) {
+                $('.country-information').show();
+                $('.number-holder').text(ui.item.number).attr("href", "tel:" + ui.item.number);
+                $('.country-holder').text(ui.item.label);
+            }
+        });
+    }
+
+    if ($('#tagsNL').length) {
+        $( "#tagsNL" ).autocomplete({
+            source: availableTagsNL,
             select: function( event, ui ) {
                 $('.country-information').show();
                 $('.number-holder').text(ui.item.number).attr("href", "tel:" + ui.item.number);
