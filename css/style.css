@@ -10527,6 +10527,7 @@ ol.custom-ordered-list li .title {
 .ambassade__block--clickable {
   background-color: var(--vireo-blue-misty);
   margin-bottom: 25px;
+  line-height: 20px;
 }
 @media (min-width: 768px) {
   .ambassade__block--clickable {
@@ -10534,11 +10535,13 @@ ol.custom-ordered-list li .title {
   }
 }
 
-.ambassade__block--clickable a {
+.ambassade__block--clickable .icon {
+  background-position: top !important;
 }
 
 .ambassade__block--clickable h4 {
   text-decoration: underline;
+  margin-bottom: 16px;
 }
 
 .ambassade__block ul {
@@ -10569,7 +10572,7 @@ ol.custom-ordered-list li .title {
   background-repeat: no-repeat;
   height: 35px;
   background-position: center;
-  background-size: 20px;
+  background-size: 22px;
 }
 
 .icon.address {
