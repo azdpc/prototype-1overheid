@@ -38,7 +38,7 @@ Het ‘Prototype 1Overheid’ is gelieerd aan het programma ‘Mens Centraal’ 
 
 ## Versies
 - v1.4 - Prototype 1Overheid en Loket Buitenland, DPC en Ministerie van Buitenlandse Zaken, Den Haag, 28 mei 2020. Aan het prototype zijn o.a. een contactpagina toegevoegd, en contactinformatie van Nederlandse ambassades en consulaten.
-- v1.3 - Prototype 1Overheid en Loket Buitenland, DPC en Ministerie van Buitenlandse Zaken, Den Haag, 14 november 2019. Het protoype voorziet nu ook in informatie voor Nederlanders woonachtig in het buitenland. Er is een Engelse website aan het prototype toegevoegd waarin ook taalwissels mohelijk zijn.
+- v1.3 - Prototype 1Overheid en Loket Buitenland, DPC en Ministerie van Buitenlandse Zaken, Den Haag, 14 november 2019. Het prototype voorziet nu ook in informatie voor Nederlanders woonachtig in het buitenland. Er is een Engelse website aan het prototype toegevoegd waarin taalwissels mogelijk zijn.
 - v1.2 - Prototype 1Overheid, DPC Den Haag, 18 maart 2019
 - v1.1 - Prototype 'Vireo', DPC Den Haag, 12 november 2018
 - v1.0 - Prototype 'Fieldlab Prototype 1 overheid', Zwolle 28 september 2018, https://github.com/RDBreed/fieldlab, zie https://rdbreed.github.io/fieldlab/
