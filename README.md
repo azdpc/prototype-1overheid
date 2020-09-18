@@ -1,5 +1,5 @@
 # Prototype 1Overheid
-Prototype van één ingang van waaruit de burger of professional al zijn overheidszaken kan regelen en relevante overheidsinformatie kan opzoeken. Het prototype is in meerdere stappen ontwikkeld door multidisciplinaire teams van de Dienst Publiek & Communicatie van het ministerie van Algemene Zaken.
+Prototype van één ingang van waaruit de burger of professional al zijn overheidszaken kan regelen en relevante overheidsinformatie kan opzoeken. Het prototype is in meerdere stappen ontwikkeld door multidisciplinaire teams van de Dienst Publiek & Communicatie van het ministerie van Algemene Zaken en de directie Consulaire Zaken en Visumbeleid van het ministerie van Buitenlandse Zaken.
 
 Diverse onderdelen en pagina's van het meest recente prototype: https://azdpc.github.io/prototype-1overheid/
 
