@@ -34,7 +34,7 @@ Het verschil in vormgeving is niet nodig voor het uitvoeren van taken of het opz
 Op verschillende momenten tijdens de realisatie van het prototype vond gebruikersonderzoek plaats. Gebruiksonderzoek vond plaats in zowel het UX-lab maar bijvoorbeeld ook in het restaurant van de Hema, de bibliotheek en op de Huishoudbeurs. Hierdoor kon het team hypotheses testen en gevalideerde keuzes maken om dit prototype te maken.
 
 ## Validatieonderzoek
-Na oplevering van v1.4 was er behoefte aan het uitvoeren van aanvullend onderzoek. Het doel van het aanvullende onderzoek is om de conclusies uit de zelf uitgevoerde gebruikersonderzoeken te valideren. En zo te valideren dat het prototype een goed fundament is voor de realisatie van de 'praktisch site' (Blauw).
+Na oplevering van v1.4 van het prototype was er behoefte aan het uitvoeren van aanvullend onderzoek. Het doel van het aanvullende onderzoek is om de conclusies uit de zelf uitgevoerde gebruikersonderzoeken te valideren. En zo te valideren dat het prototype daadwerkelijk een goed fundament is voor de realisatie van de 'praktisch site' (Blauw).
 
 Het <a href="https://github.com/azdpc/prototype-1overheid/blob/master/rapportage-loket-buitenland-ruigrok-netpanel-publicatie-v1.0.pdf">onderzoekrapport van Ruigrok Netpanel</a> is op 30 juli 2020 gepubliceerd.
 
