@@ -31,7 +31,12 @@ Ook het beeldgebruik op beide websites verschilt. In het blauwe gedeelte gebruik
 Het verschil in vormgeving is niet nodig voor het uitvoeren van taken of het opzoeken van informatie in het prototype. De verwachting is wel dat het houvast geeft aan de regelmatige bezoeker. Bijvoorbeeld doordat je aan de kleur van een button al ziet om welke deel van het prototype het gaat. Kort gezegd komt het er op neer dat op de blauwe site er vooral aandacht is voor ‘hoe kan de gebruiker zo snel en makkelijk mogelijk geholpen worden en welke problemen staan hem bij de uitvoering van een taak in de weg’. De groene site vertelt veel meer een verhaal, 'verleidt' de gebruiker en biedt achtergronden en documenten bij beleidsonderwerpen. Je kan dit ook zien als onderscheid tussen ‘burgers’ en ‘professionals’. 
 
 ## Gebruikersonderzoek
-Op verschillende momenten tijdens de realisatie van het prototype vond gebruikersonderzoek plaats. Gebruiksonderzoek vond plaats in zowel het UX-lab maar bijvoorbeeld ook in het restaurant van de Hema, de bibliotheek en op de Huishoudbeurs. Hierdoor kon het team hypotheses testen en gevalideerde keuzes maken om dit prototype te maken. Het team adviseert dat goed nader onderzoek uitgevoerd moet worden als er vervolgstappen worden gezet.
+Op verschillende momenten tijdens de realisatie van het prototype vond gebruikersonderzoek plaats. Gebruiksonderzoek vond plaats in zowel het UX-lab maar bijvoorbeeld ook in het restaurant van de Hema, de bibliotheek en op de Huishoudbeurs. Hierdoor kon het team hypotheses testen en gevalideerde keuzes maken om dit prototype te maken.
+
+## Validatieonderzoek
+Na oplevering van v1.4 was er behoefte aan het uitvoeren van aanvullend onderzoek. Het doel van het aanvullende onderzoek is om de conclusies uit de zelf uitgevoerde gebruikersonderzoeken te valideren. En zo te valideren dat het prototype een goed fundament is voor de realisatie van de 'praktisch site' (Blauw).
+
+Het onderzoekrapport is op 30 juli 2020 gepubliceerd.
 
 ## Mens Centraal
 Het ‘Prototype 1Overheid’ is gelieerd aan het programma ‘Mens Centraal’ van het ministerie van BZK.
