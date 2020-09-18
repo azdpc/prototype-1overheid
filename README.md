@@ -36,7 +36,7 @@ Op verschillende momenten tijdens de realisatie van het prototype vond gebruiker
 ## Validatieonderzoek
 Na oplevering van v1.4 was er behoefte aan het uitvoeren van aanvullend onderzoek. Het doel van het aanvullende onderzoek is om de conclusies uit de zelf uitgevoerde gebruikersonderzoeken te valideren. En zo te valideren dat het prototype een goed fundament is voor de realisatie van de 'praktisch site' (Blauw).
 
-Het onderzoekrapport is op 30 juli 2020 gepubliceerd.
+Het <a href="https://github.com/azdpc/prototype-1overheid/blob/master/rapportage-loket-buitenland-ruigrok-netpanel-publicatie-v1.0.pdf">onderzoekrapport van Ruigrok Netpanel</a> is op 30 juli 2020 gepubliceerd.
 
 ## Mens Centraal
 Het ‘Prototype 1Overheid’ is gelieerd aan het programma ‘Mens Centraal’ van het ministerie van BZK.
