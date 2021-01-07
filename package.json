@@ -9,11 +9,12 @@
   },
   "private": true,
   "devDependencies": {
-    "lite-server": "^2.5.4",
+    "lite-server": "^2.6.1",
     "minimist": "^1.2.5",
     "npm-force-resolutions": "0.0.3"
   },
   "resolutions": {
+    "axios": "^0.21.1",
     "minimist": "^1.2.5"
   }
 }
