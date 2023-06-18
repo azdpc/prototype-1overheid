@@ -987,7 +987,7 @@ blockquote {
 
 .actionable,
 .government .actionable {
-    a:not(.btn) {
+    a:not(.btn, .utrecht-button, .utrecht-button-link) {
         color: var(--vireo-blue-clear);        
     }
     .follow-up {
@@ -1002,7 +1002,7 @@ blockquote {
 
 .government,
 .actionable .government {
-    a:not(.btn) {
+    a:not(.btn, .utrecht-button, .utrecht-button-link) {
         color: var(--vireo-green-shade);        
     }
     .follow-up {
@@ -1016,7 +1016,7 @@ blockquote {
 
 .change,
 .actionable .change{
-    a:not(.btn) {
+    a:not(.btn, .utrecht-button, .utrecht-button-link) {
         color: var(--black);        
     }
     .follow-up {

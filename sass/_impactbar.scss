@@ -75,7 +75,7 @@
 		height: auto;
 // 		grid-column: description;
 
-		a:not(.btn) {
+		a:not(.btn, .utrecht-button, .utrecht-button-link) {
 			color: white;
 		}
 

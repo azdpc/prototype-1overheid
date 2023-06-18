@@ -52,7 +52,7 @@
   padding: 3rem 0;
   height: auto;
   grid-column: description; }
-  .impactbar__body a:not(.btn) {
+  .impactbar__body a:not(.btn, .utrecht-button, .utrecht-button-link) {
     color: white; }
 
 .impactbar__toggle {

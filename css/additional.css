@@ -1312,8 +1312,8 @@ blockquote:first-letter {
   margin-top: 2rem;
 }
 
-.actionable a:not(.btn),
-.government .actionable a:not(.btn) {
+.actionable a:not(.btn, .utrecht-button, .utrecht-button-link),
+.government .actionable a:not(.btn, .utrecht-button, .utrecht-button-link) {
   color: var(--vireo-blue-clear);
 }
 
@@ -1323,8 +1323,8 @@ blockquote:first-letter {
   color: var(--vireo-blue-clear);
 }
 
-.government a:not(.btn),
-.actionable .government a:not(.btn) {
+.government a:not(.btn, .utrecht-button, .utrecht-button-link),
+.actionable .government a:not(.btn, .utrecht-button, .utrecht-button-link) {
   color: var(--vireo-green-shade);
 }
 
@@ -1334,8 +1334,8 @@ blockquote:first-letter {
   color: var(--vireo-green-shade);
 }
 
-.change a:not(.btn),
-.actionable .change a:not(.btn) {
+.change a:not(.btn, .utrecht-button, .utrecht-button-link),
+.actionable .change a:not(.btn, .utrecht-button, .utrecht-button-link) {
   color: var(--black);
 }
 
@@ -2599,7 +2599,7 @@ td:last-child {
   height: auto;
 }
 
-.impactbar__body a:not(.btn) {
+.impactbar__body a:not(.btn, .utrecht-button, .utrecht-button-link) {
   color: white;
 }
 
