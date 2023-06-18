@@ -1,0 +1,9 @@
+.utrecht-button--p1o-lg {
+  --utrecht-button-padding-block-start: 0.5rem;
+  --utrecht-button-padding-block-end: 0.5rem;
+  --utrecht-button-padding-inline-start: 1rem;
+  --utrecht-button-padding-inline-end: 1rem;
+  --utrecht-button-font-size: 1.25rem;
+  --utrecht-button-line-height: 1.5;
+  --utrecht-button-border-radius: 0.3rem;
+}

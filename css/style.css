@@ -2,6 +2,7 @@
 
 @import url("../node_modules/@utrecht/component-library-css/dist/index.css");
 @import url("../dist/theme.css");
+@import url("./custom.css");
 
 :root {
   --blue: #007bff;
