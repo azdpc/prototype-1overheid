@@ -3,5 +3,14 @@
     "type": "git",
     "url": "https://github.com/azdpc/prototype-1overheid.git"
   },
-  "private": true
+  "private": true,
+  "scripts": {
+    "start": "http-server ."
+  },
+  "dependencies": {
+    "@utrecht/component-library-css": "1.0.0-alpha.528"
+  },
+  "devDependencies": {
+    "http-server": "14.1.1"
+  }
 }

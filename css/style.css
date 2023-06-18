@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+@import url("../node_modules/@utrecht/component-library-css/dist/index.css");
+
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
